@@ -1,7 +1,3 @@
-mcce-charges
-============
+This is a collaborative project between the [Gunner lab](http://www.sci.ccny.cuny.edu/~gunner/) at CCNY and the [Chodera lab](http://choderalab.org) at MSKCC.
 
-generating ligand charges
-
-first entry - read.me to let you know about some quirks (reserved names, required directories etc)
-3 tpl files (asp.tpl; his.tpl (shows atom swaps); pdd.tpl (shows how to make a bond between two units that titrate independently (here it is a heme and it's propionic acids)
+This project contains files for converting all small molecules in the PDB from the [Ligand Expo](http://ligand-expo.rcsb.org/ld-download.html) to work with MCCE.
