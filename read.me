@@ -1,0 +1,69 @@
+in the tpl files
+
+the first 3 characters should be the same for all conformers AND should be the same as found in the pdb file
+0n are neutral conformers; -n are anions;  +n are cations  
+CONFLIST ASP        ASPBK ASP01 ASP02 ASP-1
+
+right now NATOM, IATOM, and ATOMNAME are all needed 
+PROTON, PKA, ELECTRON, EM  are only needed if you want to do pK or redox titrations
+
+RXN - this should first be 0; then run MCCE through step 4 for the isolated residue - 
+ MCCE should make all the conformer types;
+ take the value for dsolv from head3.lst for the rxn field energy  
+(if there are multiple conformers for the same object 
+(eg there will be 4 protonated neutral asp made then it is nice to average the dsolve value.  
+[the 'dsolv' column gives the RXN energy in the tpl file 
+- the RXN field energy in the current run for this conformer; 
+since RXN in the tpl file is 0 you are now getting the solvation energy for this conformer type.  
+In runs with this group in the protein with the correct RXN energy in the tpl file 
+the dsolv is alway POSITIVE (meaning RXN is more negative in the isolated group than the group in the protein).  
+
+CONNECT is needed - Denise's program should do this for a file with a PDB input.  
+She just finished it so we will be testing it.
+
+RADIUS are for PB not vdw.  there are defined values based on atome type if these are not here.
+CHARGE will be set to zero if they are not here.
+
+ROTAMER - this is for making heavy atom rotamers for full conformer sampling
+TORSION - The torsion energy for the rotatable bonds
+
+VDW_RAD and VDW-EPS  for vwd.  
+if these are not present there are generic atom-atom parameters in 00always_needed.tpl
+
+from HIS - This swaps these atoms (so will be a rotation of the His ring
+ROT_SWAP HIS   0     ND1- CD2  CE1- NE2
+
+
+
+in run.prm
+run.prm syntax - the word in the () on the right is read to tag the line
+this does not care about where it is on the line (spaces don't matter)
+
+need this to define the input pdb file (any name is ok)
+prot.pdb                                                     (INPDB)
+
+/home/mcce/mcce2.5.1                                        (MCCE_HOME)   
+ok you need a directory called param04.  put your tpl files in that directory.  
+so with this example there is a directory /home/mcce/mcce2.5.1/param04   which has the asp.tpl etc files
+
+param04 goes with 
+4.0      Protein dielectric constant for DelPhi             (EPSILON_PROT)
+if you change the dielectric constant you need to change the tpl file directory 
+(and change the solution RXN field energies in the tpl file)
+
+you need to point to delphi executable directory
+/home/mcce/mcce2.5.1/bin/delphi DelPhi executable           (DELPHI_EXE)
+
+
+this will keep termini from being titratable (which is what we want )
+f        Label terminal residues?                           (TERMINALS)
+
+C, O, N, CA  are reserved atom names.  
+If they show up in a molecule they need to be changed to something else
+
+To run mcce you need
+run.prm (with the directories noted above)
+prot.pdb (the file with your coordinates - any name you want)
+
+
+
