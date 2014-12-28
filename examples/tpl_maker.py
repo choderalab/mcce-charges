@@ -3,8 +3,8 @@
 ## tpl_maker.py created by Denise M Kilburg for the Gunner Lab at CUNY-City College for the
 ## generation of ligand topology files for use in MCCE.
 
-## tpl_maker.py requires a protein data bank file, ligand code to chain id, and charge.
-## for example: tpl_maker.py 4Q6T.pdb "PO4 A" -3
+## tpl_maker.py requires a protein data bank file, ligand code, chain id, and charge.
+## for example: tpl_maker.py 4Q6T.pdb PO4 A -3
 ## At the moment, the charge represents the most negative charge on an ion and it dictates
 ## the amount of conformers made. For example: in the above PO4 example, charge = -3 will
 ## create a PO401(neutral conformer), PO4-1, PO4-2,PO4-3 conformers. At the moment, the
@@ -14,135 +14,159 @@
 ## The add_hydrogens function adds hydrogens in 2 ways. If an atom is connected to 2 or more
 ## atoms, it looks at the angles that subtend them and assigns orbitals based on geometry: 
 ## sp3 == tetrahedral, sp2 == trigonal planar, sp == linear. It then adds the proper number of
-## hydrogen atoms to fit the geometry. A Sulfur atom (S) for example
-## will be assigned sp3 if it has tetrahedral geometry, not that it has sp3 hybridization.
-## This needs to be corrected in the hydrogen_table, but for now this is how it is.
+## hydrogen atoms to fit the geometry. 
 ## If an atom only has one connection (terminal), it calculates bond distance and looks for 
 ## that bond distance in the bond_table and assigns a hybridization based on geometry.
 ## Send any questions or comments to:   dmkilburg@gmail.com
-
-## To Chodera Lab: The formatting type functions are :
-## header()
-## natom()
-## mk_iatom()
-## mk_atomname()
-## sect1_header()
-## mk_proton()
-## mk_pka()
-## mk_electron()
-## mk_EM()
-## mk_RXN()
-## mk_con_section()
-## mk_atom_param_section()
-## mk_charges()
-## Please ignore the other functions. They are unfinished and ugly.
-
 
 
 import sys
 import math
 import datetime
 
-
-class atom(object):
-    def __init__(self,name,id,e):
-        self.name = name
+class Atom(object):
+    def __init__(self,name,idnum,element):
+        self.name = name.strip()
         self.coords = []
-        self.idnum = id
-        self.connect = []
-        self.element = e
-        self.hybrid = ""
-        
-    def get_connects(self):
-        return self.connect
-    
-
-
-class hydrogen(object):
-    def __init__(self,name,connect,idnum):
-        self.name = name
-        self.connect = connect
-        self.element = 'H'
-        self.hybrid = 's'
         self.idnum = idnum
+        self.connects = []
+        self.element = element.strip()
+        self.hybrid = ""
 
-class conf(object):
+class Conformer(object):
     def __init__(self,name,charge):
         self.name = name
         self.charge = charge
 
+class Options(object):
+    def __init__(self,argv):
+        if len(sys.argv) < 4:
+            print "Usage: tpl_maker.py pdbfile ligand chain_identifier charge"
+            sys.exit (1)
+        
+        self.filename = sys.argv[1]
+        self.ligand = sys.argv[2]
+        self.chain_identifier = sys.argv[3]
+        self.charge = int(sys.argv[4])
+        if self.charge > 0:
+            print "Charge must be negative"
+            sys.exit(1)
+        self.order = 'r'
 
-######################################################
+class Pdb(object):
+    def add_atom(self,atom):
+        if atom.idnum > self.max_idnum:
+            self.max_idnum = atom.idnum
+        self.atombyid[atom.idnum] = atom
+        self.atom_list.append(atom)
 
-if len(sys.argv) < 4:
-    print "Usage: tpl_maker.py pdbfile lig_code charge"
-    sys.exit (1)
+    def add_hetatm(self,line,options):
+        if options.ligand == line[17:20] \
+                and options.chain_identifier == line[21]:
+            atom = Atom(line[12:16],int(line[6:11].strip()),line[76:78])
+            atom.coords.append(float(line[30:38]))
+            atom.coords.append(float(line[38:46]))
+            atom.coords.append(float(line[46:54]))
+            self.add_atom(atom)
 
+    def add_hydrogen(self,connect):
+        self.max_idnum += 1
+        atom = Atom("H"+str(self.hydrogen_count),self.max_idnum,'H')
+        self.hydrogen_count += 1
+        atom.connects.append(connect)
+        atom.hybrid = 's'
+        self.add_atom(atom)
+        return atom
 
-name = sys.argv[1]
-ligand = sys.argv[2]
-lig_pdb = ligand + ".pdb"
-charge = int(sys.argv[3])
-count = 0
-lig_code = ligand[0:3]
-order = 'r'
-#order = ''
-today = datetime.date.today()
+    def add_conect(self,line):
+        idnum = int(line[6:11])
+        if self.atombyid.has_key(idnum):
+            atom = self.atombyid[idnum]
+            for i in [11,16,21,26]:
+                c = line[i:i + 5].strip()
+                if c != '':
+                    atom.connects.append(int(c))
+        return
+        
+    def read_pdb(self,options,file):
+        for line in file:
+            if line.startswith("CONECT"):
+                self.add_conect(line)
+            elif line.startswith("HETATM"):
+                self.add_hetatm(line,options)
+        
+    def read_ideal_pdb(self,options,file):
+        for line in file:
+            if line.startswith("ATOM  "):
+                self.add_hetatm(line,options)
+            elif line.startswith("CONECT"):
+                self.add_conect(line)
 
+    def read(self,options):
+        with open(options.filename, 'r') as file:
+            if "ideal.pub" in options.filename:
+                self.read_ideal_pdb(options,file)
+            elif ".pdb" in options.filename:
+                self.read_pdb(options,file)
+            else:
+                print "Unknown input file type."
+                sys.exit(1)
+
+    def __init__(self,options):
+        self.atom_list = []
+        self.atombyid = {}
+        self.max_idnum = 0
+        self.hydrogen_count = 1
+        self.read(options)
 
 ################ Function Definitions ##################
 
-
-
-def main_header(name,lig_code): ## Creates the commented out Main Header 
-    output = open(lig_code+".tpl", 'w') 
-    print >>output, "#"+ "-"*78 + "#"
-    print >>output, "#" + " "*20 + "Topology File for:"
-    print >>output, "#" + " "*28 +lig_code
-    print >>output, "#" + " "*17 + "Extracted from: "+ name
-    print >>output, "#" + " "*78 + "#"
-    print >>output, "#" + " "*17 + "Created on: ", today
-    print >>output, "#" + " "*78 + "#"
-    print >>output, "#" + " "*17 + "Created with: tpl_maker.py"
-    print >>output, "#" + "-"*78 + "#"
-    output.close()
+def write_comment_header(options,tpl):
+    tpl.write('####################################\n')
+    tpl.write('# Topology File for:\n')
+    tpl.write('# {}\n'.format(options.ligand))
+    tpl.write('# Extracted from: {}\n'.format(options.filename))
+    tpl.write('#\n')
+    tpl.write('# Created on: {}\n'.format(datetime.date.today()))
+    tpl.write('#\n')
+    tpl.write('# Created with: tpl_maker.py\n')
+    tpl.write('####################################\n')
+    tpl.write('\n')
     return
 
-
-
-def header(code,charge,order): ## Creates a Header (CONFLIST)
-    output = open(code + ".tpl", 'a')
+def mk_conformers(options):
     conformers = []
+    charge = options.charge
     while charge < 0:
-        con = code+str(charge)
-        con = conf(con,charge)
+        con = options.ligand+str(charge)
+        con = Conformer(con,charge)
         conformers.append(con)
         charge += 1
-    con = code+"01"
-    con = conf(con,charge)
+    con = options.ligand+"01"
+    con = Conformer(con,charge)
     conformers.append(con)
-    print >>output, "CONFLIST" + " " + code + " "*8 + code + "BK",
-    if order == 'r':
-        for i in reversed(conformers):
-            print >>output, i.name,
-    else:
-        for i in conformers:
-            print >>output, i.name,
-    print >>output, code + "DM"    
-    print >>output, '\n'
-    output.close()
     return conformers
+
+def write_conformers(options,tpl,conformers):
+    tpl.write('CONFLIST {}        {}BK '.format(options.ligand,options.ligand))
+    if options.order == 'r':
+        conformers = reversed(conformers)
+    for conformer in conformers:
+        tpl.write('{} '.format(conformer.name))
+    tpl.write('{} '.format(options.ligand + "DM"))
+    tpl.write('\n')
+    tpl.write('\n')
+    return
 
 def mk_vectors(atom1,atom2,atom3):
     vect1 = []
     vect2 = []
     for i in range(3):
-        vect1.append(float(atom2[i])-float(atom1[i]))
-        vect2.append(float(atom3[i])-float(atom1[i]))
+        vect1.append(float(atom2.coords[i])-float(atom1.coords[i]))
+        vect2.append(float(atom3.coords[i])-float(atom1.coords[i]))
     return vect1,vect2
 
-
-def dot_prod(vect1,vect2):
+def mk_dot_prod(vect1,vect2):
     dot_prod = 0
     for i in range(3):
         dot_prod = dot_prod + vect1[i]*vect2[i]
@@ -152,20 +176,21 @@ def magnitude(vector):
     mag = math.sqrt(vector[0]**2 + vector[1]**2 + vector[2]**2)
     return mag
 
-
 def find_angle(vect1,vect2):
-        try:
-            cos_ang = dot_prod(vect1,vect2)/(magnitude(vect1)*magnitude(vect2))
-            angle = math.degrees(math.acos(cos_ang))
-            return angle
-        except:
-            return None
+    try:
+        cos_ang = mk_dot_prod(vect1,vect2)/(magnitude(vect1)*magnitude(vect2))
+        angle = math.degrees(math.acos(cos_ang))
+        return angle
+    except:
+        return None
 
 ## Bond distances from Allen, F.H.; Kennard, O. et al. (1987) Tables of 
 ## Bond Lengths determined by X-Ray and Neutron Diffraction. Part I . 
 ## Bond Lengths in Organic Compounds. J. CHEM. SOC. PERKIN TRANS
 
-bond_table = [ ## [Atom 1, Atom 2, lower limit(bond length), upper limit(bond length), hybridization of atom 1]
+## [Atom 1, Atom 2, lower limit(bond length), upper limit(bond length), hybridization of atom 1]
+
+bond_table = [
     [ "C", "C", 1.514, 1.588, 'sp3'], ## C-C
     [ "C", "C", 1.501, 1.513, 'sp2'], ## C=C
     [ "C", "C", 1.465, 1.473, 'sp'],  ## C-tb-C, tb = triple bond
@@ -219,11 +244,40 @@ bond_table = [ ## [Atom 1, Atom 2, lower limit(bond length), upper limit(bond le
 ]
 def search_bond_table(a1,a2,distance):
     for row in bond_table:
-        if row[0] == a1 and row[1] == a2 and row[2] <= distance and distance <= row[3]:
-                return row[4]
+        if row[0] == a1.element and row[1] == a2.element \
+                and row[2] <= distance and distance <= row[3]:
+            return row[4]
     return 'unknown'
 
-hydrogen_table = [ ## [Atom, number of atoms connected, hybridization, number of hydrogens to add]
+## for use when you do not have to add hydrogens
+
+hydrogen_table2 = [
+    ['C', 4, 'sp3'],
+    ['C', 3, 'sp2'],
+    ['C', 2, 'sp'],
+    ['N', 3, 'sp3'],
+    ['N', 2, 'sp2'],
+    ['O', 2, 'sp3'],
+    ['O', 1, 'sp2'],
+    ['H', 1, 's'],
+    ['S', 4, 'sp3'],
+    ['P', 4, 'sp3']
+]
+
+def search_hyd2_table(a1,connects):
+    for row in hydrogen_table2:
+        if row[0] == a1 and row[1] == connects:
+            return row[2]
+    return 'unknown'
+
+def add_hybrids(pdb):
+    for atom in pdb.atom_list:
+        connects = len(atom.connects)
+        atom.hybrid = search_hyd2_table(atom.element,connects)
+    return
+    
+## [Atom, number of atoms connected, hybridization, number of hydrogens to add]
+hydrogen_table = [
     ['C', 4, 'sp3', 0],
     ['C', 3, 'sp3', 1],
     ['C', 3, 'sp2', 0],
@@ -263,75 +317,42 @@ hydrogen_table = [ ## [Atom, number of atoms connected, hybridization, number of
     ['B', 2, 'sp2', 1],
 ]
 
-def search_hydrogen_table(a1,connections, hybridization):
+def search_hydrogen_table(atom):
     for row in hydrogen_table:
-        if row[0] == a1 and row[1] == connections and row[2] == hybridization:
+        if row[0] == atom.element and row[2] == atom.hybrid \
+                and row[1] == len(atom.connects):
             return row[3]
-    return 0
-   
+    return 0   
 
-def add_hydrogens(atom_list,con_dict): ## Work in progress
-    j = 1
-    hyd_list = []
-    for atom in atom_list:
-        con_list = atom.connect
-        if len(con_list) >= 2:
-            atom1 = atom.coords
-            for elements in atom_list:
-                if elements.idnum == con_list[0]:
-                    atom2 = elements.coords
-                elif elements.idnum == con_list[1]:
-                    atom3 = elements.coords
-                else:
-                    pass
+def add_hydrogens(pdb):
+    for atom1 in pdb.atom_list:
+        con_len = len(atom1.connects)
+        if con_len >= 2:
+            atom2 = pdb.atombyid[atom1.connects[0]]
+            atom3 = pdb.atombyid[atom1.connects[1]]
             (vector1, vector2) = mk_vectors(atom1,atom2,atom3)
             angle = find_angle(vector1,vector2)
-            atom.hybrid = geometry(angle)
-            num_hydrogens = search_hydrogen_table(atom.element,len(con_list),atom.hybrid)
-            if num_hydrogens == 0:
-                pass
-            else:
-                for i in range(num_hydrogens):
-                    atom.connect.append(j)
-                    (con_dict,hyd_list,j) = add_hydros(j,con_dict,atom.name,hyd_list)
-        elif len(con_list) == 1:
-            for elements in atom_list:
-                if elements.idnum == con_list[0]:
-                    bond = bond_length(atom.coords,elements.coords)
-                    orbital = search_bond_table(atom.element,elements.element,bond)
-                    atom.hybrid = orbital
-                    num_hydrogens = search_hydrogen_table(atom.element,len(con_list),atom.hybrid)
-                    if num_hydrogens == 0:
-                        pass
-                    else:
-                        for i in range(num_hydrogens):
-                            atom.connect.append(j)
-                            (con_dict,hyd_list,j) = add_hydros(j,con_dict,atom.name,hyd_list)
-                else:
-                    pass
-        else:
-            pass
-    return con_dict, hyd_list
+            atom1.hybrid = geometry(angle)
+        elif con_len == 1 and atom1.element != 'H':
+            atom2 = pdb.atombyid[atom1.connects[0]]
+            bond_len = bond_length(atom1,atom2)
+            orbital = search_bond_table(atom1,atom2,bond_len)
+            atom1.hybrid = orbital
 
-
+        num_hydrogens = search_hydrogen_table(atom1)
+        for i in range(num_hydrogens):
+            h_atom = pdb.add_hydrogen(atom1.idnum)
+            atom1.connects.append(h_atom.idnum)
 
 def bond_length(atom1,atom2):
     vector = []
     for i in range(3):
-        vector.append(float(atom1[i])-float(atom2[i]))
+        vector.append(atom1.coords[i] - atom2.coords[i])
     length = magnitude(vector)
     return length
 
-def add_hydros(j,con_dict,name,hyd_list): ## Work in progress
-    
-    con_dict[j] = 'H'+str(j)
-    hyd = 'H'+str(j)
-    hyd = hydrogen(hyd,name,j)
-    hyd_list.append(hyd)
-    j+= 1
-    return con_dict,hyd_list,j
-
-def geometry(angle): ## Work in progress
+# Returns hybridization based on angles. 
+def geometry(angle):
     if angle > 106 and angle < 115:
         return 'sp3'
     if angle < 183 and angle > 177:
@@ -341,350 +362,178 @@ def geometry(angle): ## Work in progress
     else:
         return 'unknown'
 
-def natom(conformers,atom_list,code,charge,hyd_list,order):
-    max_atoms = len(atom_list) + len(hyd_list)
-    min_atoms = max_atoms + charge
+def write_natom(options,tpl,pdb,conformers):
+    max_atoms = len(pdb.atom_list)
+    min_atoms = max_atoms + options.charge
     template = '{0:9}{1:10}{2:1}\n'
-    output = open(code + ".tpl", 'a')
-    output.write(template.format('NATOM',code+"BK", '0'))
-    if order == 'r':
+    tpl.write(template.format('NATOM',options.ligand+"BK", '0'))
+
+    if options.order == 'r':
         for conformer in reversed(conformers):
-            output.write(template.format('NATOM',conformer.name, str(max_atoms)))
+            tpl.write(template.format('NATOM',
+                                      conformer.name, str(max_atoms)))
             max_atoms -= 1
     else:
         for conformer in conformers:
-            output.write(template.format('NATOM',conformer.name, str(min_atoms)))
+            tpl.write(template.format('NATOM',
+                                      conformer.name, str(min_atoms)))
             min_atoms += 1
-    output.write(template.format('NATOM',code+"DM", '0'))
-    output.write('\n')
-    output.close
+            
+    tpl.write(template.format('NATOM',options.ligand+"DM", '0'))
+    tpl.write('\n')
+
     return
 
+def o_connected(atom,pdb):
+    for idnum in atom.connects:
+        if pdb.atombyid[idnum].element == 'O':
+            return True
+    return False
 
-
-def mk_lig_file(name, lig_pdb): ## grep-like function. Makes a file (ligand.pdb)
-    file = open(name)
-    output = open(lig_pdb, 'w')
-    for line in file:
-        if "HETATM" in line:
-            if ligand in line:
-                print >> output, line,
-    output.close()
-    file.close()
-    return
-
-
-def mk_atoms(lig_pdb): 
-    file = open(lig_pdb, 'r')
-    atom_list = []
-    for line in file:
-        column = line.split()
-        column0 = column[0]
-        if len(column0) > 6:
-            column[1] = atom(column[1],column0[6:],column[10])
-            atom_list.append(column[1])
-        else:
-            column[2]  = atom(column[2],column[1],column[11])
-            atom_list.append(column[2])
-    file.close()
-    return atom_list
-
-def mk_connex(lig_code,atom_list):
-    file = open(lig_code+"_con.txt", 'r')
-    i = 0
-    for line in file:
-        column = line.split()
-        for j in range(1,len(column)):
-            atom_list[i].connect.append(column[j])
-        i += 1
-    file.close()
-    return
-
-def mk_coords(lig_pdb,atom_list): 
-    file = open(lig_pdb, 'r')     
-    i = 0
-    for line in file:
-        column = line.split()
-        for j in range(6,9):
-            atom_list[i].coords.append(column[j])
-        i += 1
-    file.close()
-    return
-
-
-def mk_iatom(lig_code,atom_list,charge,hyd_list,conformers,order):
-    output = open(lig_code+".tpl", 'a')
-    template = '{0:9}{1:7}{2:4}{3:4}\n'
-    if order == 'r':
+def write_atoms(options,tpl,pdb,conformers,printer):
+    if options.order == 'r':
         conformers = reversed(conformers)
-    else:
-        pass
     for conformer in conformers:
         count = 0
-        for atom in atom_list:
-            output.write(template.format('IATOM',conformer.name, atom.name, str(count)))
-            count += 1
-            j = conformer.charge
-        for hyd in hyd_list:
-            if j < 0:
-                j += 1
-            else:
-                output.write(template.format('IATOM',conformer.name, hyd.name, str(count)))
-                count += 1
-        output.write('\n')
-    output.close()
-    return
-
-
-def mk_atomname(lig_code,atom_list,charge,hyd_list,conformers,order):
-    output = open(lig_code+".tpl", 'a')
-    template = '{0:9}{1:8}{2:>2}  {3:5}\n'
-    if order == 'r':
-        conformers = reversed(conformers)
-    else:
-        pass
-    for conformer in conformers:
-        count = 0
-        for atom in atom_list:
-            output.write(template.format("ATOMNAME",conformer.name,str(count),atom.name))
-            count += 1
         j = conformer.charge
-        for hyd in hyd_list:
-            if j < 0:
+        for atom in pdb.atom_list:
+            if j < 0 and atom.element == 'H' and o_connected(atom,pdb):
                 j += 1
             else:
-                output.write(template.format("ATOMNAME",conformer.name,str(count),hyd.name))
+                printer(tpl,conformer,atom,count)
                 count += 1
-        output.write('\n')
-    output.close()    
+        tpl.write('\n')
     return
 
-def get_con(name,lig_pdb,code): ## writes the _con.txt file that is needed 
-    output = open(code + "_con.txt", 'w') ## for the get_connects function
-    connect = open(lig_pdb)
-    for line in connect:
-        column = line.split()
-        res_num = column[1]
-        with open(name, 'r') as source:
-            for row in source:
-                if ("CONECT "+res_num) in row:
-                    rcolumn = row.split()
-             
-                    r0column = rcolumn[0]
-                    print >>output, r0column[6:] + " ".join(rcolumn[1:])
-                elif ("CONECT"+res_num) in row:
-                    rcolumn = row.split()
-                    print >>output, " ".join(rcolumn[1:])
-    connect.close()
-    output.close()
+def write_iatom(options,tpl,pdb,conformers):
+    def printer(tpl,conformer,atom,count):
+        template = '{0:9}{1:7}{2:4} {3:4}\n'
+        tpl.write(template.format('IATOM', conformer.name,
+                                  atom.name, str(count)))
+        return
+    write_atoms(options,tpl,pdb,conformers,printer)
     return
 
-
-def create_con_dict(lig_pdb): ## Creates a dictionary that assigns an
-    con_dict = {}             ## atom name to a res id number
-    with open(lig_pdb, 'r') as f:
-        for line in f:
-            column = line.split()
-            number = column[1]
-            atom = column[2]
-            con_dict[number] = atom
-
-    return con_dict
-
-
-def sect1_header(lig_code): 
-    output =  open(lig_code + ".tpl", 'a') 
-    output.write("# 1. Basic Conformer Information:\n")
-    output.write("# Number of protons and electrons, pKa, Em, and Reaction Field Energy (RXN)\n")
-    output.write('\n')
-    output.close()
+def write_atomname(options,tpl,pdb,conformers):
+    def printer(tpl,conformer,atom,count):
+        template = '{0:9}{1:8}{2:>2}  {3:5}\n'
+        tpl.write(template.format('ATOMNAME', conformer.name, \
+                                  str(count),atom.name))
+        return
+    write_atoms(options,tpl,pdb,conformers,printer)
     return
 
+def write_atom_param_section(options,tpl,pdb,conformers,vdw_dict):
+    tpl.write("# Atom Parameters:\n")
+    tpl.write("# Van Der Waals Radii. See source for reference\n")
+    def printer(tpl,conformer,atom,count):
+        template = '{0:9}{1:7}{2:5} {3:7}\n'
+        tpl.write(template.format("RADIUS",conformer.name, \
+                                  atom.name,str(vdw_dict[atom.element])))
+        return
+    write_atoms(options,tpl,pdb,conformers,printer)
+    return
 
+def write_charges(options,tpl,pdb,conformers):
+    def printer(tpl,conformer,atom,count):
+        charges = parse_g09(conformer.name+'chrg.log')
+        template = '{0:9}{1:7}{2:3} {3:7}\n'
+        tpl.write(template.format("CHARGE",conformer.name, \
+                                  atom.name,charges[i][2]))
+        return
+    write_atoms(options,tpl,pdb,conformers,printer)
+    return
 
-def mk_proton(lig_code,conformers,order):
-    output = open(lig_code+".tpl", 'a')
-    output.write("# PROTON SECTION: PROTON means charge:\n")
+def write_sect1_header(tpl): 
+    tpl.write('# 1. Basic Conformer Information:\n')
+    tpl.write('# Number of protons and electrons, pKa, Em, and Reaction Field Energy (RXN)\n')
+    tpl.write('')
+    return
+
+def write_proton(options,tpl,conformers):
+    tpl.write('# PROTON SECTION: PROTON means charge:\n')
     template = '{0:9}{1:11}{2:5}\n'
-    if order == 'r':
+    if options.order == 'r':
         conformers = reversed(conformers)
-    else:
-        pass
     for conformer in conformers:
-        output.write(template.format("PROTON",conformer.name,str(conformer.charge)))
-    
-    output.write('\n')
-
-    output.close()
+        tpl.write(template.format("PROTON",conformer.name, \
+                                      str(conformer.charge)))
+    tpl.write(template.format("PROTON",options.ligand+"DM", '0'))
+    tpl.write('\n')
     return
     
-
-
-def mk_pka(lig_code,conformers,order): 
-    output = open(lig_code+".tpl", 'a')
-    output.write("# Solution pKa Section: pKa data from CRC Handbook of Chemistry and Physics\n")
+def write_pka(options,tpl,conformers): 
+    tpl.write('# Solution pKa Section: pKa data from CRC Handbook of Chemistry and Physics\n')
     template = '{0:9}{1:11}{2:5}\n'
-    if order == 'r':
+    if options.order == 'r':
         conformers = reversed(conformers)
-    else:
-        pass
     for conformer in conformers:
-        output.write(template.format("PKA", conformer.name, "0.0"))
-    output.write(template.format("PKA", lig_code+"DM", "0.0"))
-    output.write('\n')
-    output.close()
+        tpl.write(template.format("PKA", conformer.name, "0.0"))
+    tpl.write(template.format("PKA", options.ligand+"DM", "0.0"))
+    tpl.write('\n')
     return
 
-
-def mk_electron(lig_code,conformers,order):
-    output = open(lig_code+".tpl", 'a')
-    output.write("#ELECTRON SECTION:\n")
+def write_electron(options,tpl,conformers):
+    tpl.write("#ELECTRON SECTION:\n")
     template = '{0:9}{1:11}{2:5}\n'
-    if order == 'r':
+    if options.order == 'r':
         conformers = reversed(conformers)
-    else:
-        pass
     for conformer in conformers:
-        output.write(template.format("ELECTRON",conformer.name,"0.0"))
-    
-    output.write('\n')
-    output.close()
+        tpl.write(template.format("ELECTRON",conformer.name,"0.0"))
+    tpl.write(template.format("ELECTRON",options.ligand+"DM","0.0"))
+    tpl.write('\n')
     return
 
-def mk_EM(lig_code,conformers,order): 
-    output = open(lig_code+".tpl", 'a')
+def write_EM(options,tpl,conformers): 
     template = '{0:9}{1:11}{2:5}\n'
-    output.write("# EM SECTION:\n")
-    if order == 'r':
+    tpl.write("# EM SECTION:\n")
+    if options.order == 'r':
         conformers = reversed(conformers)
-    else:
-        pass
     for conformer in conformers:
-        output.write(template.format("EM",conformer.name,"0.0"))
-    
-    output.write('\n')
-    
-    output.close()
+        tpl.write(template.format("EM",conformer.name,"0.0"))
+    tpl.write(template.format("EM",options.ligand+"DM","0.0"))
+    tpl.write('\n')
     return
 
-def mk_RXN(lig_code): 
-    output = open(lig_code+".tpl", 'a')
-    template = '{0:9}{1:11}{2:5}\n'
-    output.write("# REACTION FIELD ENERGY SECTION:\n")
-    if order == 'r':
-        conformers = reversed(conformers)
-    else:
-        pass
-    for conformer in conformers:
-        output.write(template.format("RXN",conformer.name,"0.0"))
-    
-    output.write('\n')
-    output.close()
+def write_RXN(tpl): 
+    tpl.write("# REACTION FIELD ENERGY SECTION:\n")
+    tpl.write('\n')
     return
 
-def con_header(output): 
-
-    string = "ires" + " " + "conn" + " "
-    print >>output, "#ONNECT" + "   " + "conf" + " " + "atom" + "  " + "orbital" + "  " +string*4
-    print >>output, "#ONNECT" +" " + "|-----|----|---------|" + "----|"*10
-
+def write_con_header(tpl): 
+    string = "ires" + " " + "conn "
+    tpl.write("#ONNECT" + "   " + "conf" + " " + "atom" + "  " + "orbital" \
+                  + "  " +string*4 + "\n")
+    tpl.write("#ONNECT" +" " + "|-----|----|---------|" + "----|"*10 + "\n")
     return
 
-def mk_con_section(atom_list,lig_code,con_dict,conformers,order):
-    output = open(lig_code+".tpl",'a')
-    if order == 'r':
+def write_con_section(options,tpl,pdb,conformers):
+    if options.order == 'r':
         conformers = reversed(conformers)
-    else:
-        pass
     for conformer in conformers:
-        print >>output, "#  "+ conformer.name
-        con_header(output)
+        tpl.write("#  " + conformer.name + "\n")
+        write_con_header(tpl)
         template1 = '{0:9}{1:5} {2:^4} {3:^10}'
         template2 = '{0:^4} {1:^4} '
-        template3 = '{0:9}{1:5} {2:^4} {3:^10}{4:^4} {5:^4}\n'
+        hydrogen_skips = []
         j = conformer.charge
-        for atom in atom_list:
-            con_list = atom.get_connects()
-            output.write(template1.format("CONNECT",conformer.name,atom.name,atom.hybrid))
-            if j < 0:
-                if atom.element == 'O' and atom.hybrid == 'sp3':
-                    for connects in con_list[:-1]:
-                        output.write(template2.format("0",con_dict[connects]))
+        for atom in pdb.atom_list:
+            if not(atom.idnum in hydrogen_skips):
+                tpl.write(template1.format("CONNECT",conformer.name, \
+                                           atom.name,atom.hybrid))
+                if j < 0 and atom.element == 'O' and atom.hybrid == 'sp3':
+                    connects = atom.connects[:-1]
+                    hydrogen_skips.append(connects[-1])
                     j += 1
                 else:
-                    for connects in con_list:
-                        output.write(template2.format("0",con_dict[connects]))
-            else:
-                for connects in con_list:
-                    output.write(template2.format("0",con_dict[connects]))
-            output.write('\n')
-        j = conformer.charge
-        for hyd in hyd_list:
-            if j < 0:
-                j += 1
-            else:
-                output.write(template3.format("CONNECT",conformer.name,hyd.name,hyd.hybrid,"0",hyd.connect))
+                    connects = atom.connects
 
-        output.write('\n')
-    output.close()
-    return
+                for cid in connects:
+                    tpl.write(template2.format("0", pdb.atombyid[cid].name))
 
-def mk_atom_param_section(lig_code,charge,atom_list,vdw_dict,hyd_list,conformers,order):
-    output = open(lig_code+".tpl", 'a')
-    output.write("# Atom Parameters:\n")
-    output.write("# Van Der Waals Radii. See source for reference\n")
-    template = '{0:9}{1:7}{2:3} {3:7}\n'
-    if order == 'r':
-        conformers = reversed(conformers)
-    else:
-        pass
-    for conformer in conformers:
-        for atom in atom_list:
-            output.write(template.format("RADIUS",conformer.name,atom.name,str(vdw_dict[atom.element])))
-        j = conformer.charge    
-        for hyd in hyd_list:
-            if j < 0:
-                j += 1
-            else:
-                output.write(template.format("RADIUS",conformer.name,hyd.name,str(vdw_dict['H'])))
-        output.write('\n')
-    output.write('\n')
-    output.close()
-    return
-
-def mk_charges(lig_code,charge,atom_list,hyd_list,conformers,order): ## Work in progress
-    output = open(lig_code+".tpl", 'a')
-    template = '{0:9}{1:7}{2:3} {3:7}\n'
-    if order == 'r':
-        conformers = reversed(conformers)
-    else:
-        pass
-    for conformer in conformers:
-        i = 0
-        try:
-            charges = parse_g09(conformer.name+'chrg.log')
-            for atom in atom_list:
-                output.write(template.format("CHARGE",conformer.name,atom.name,charges[i][2]))
-                i += 1
-            j = conformer.charge
-            for hyd in hyd_list:
-                if j < 0:
-                    j += 1
-                else:
-                    output.write(template.format("CHARGE",conformer.name,hyd.name,charges[i][2]))
-                    i += 1
-        except:
-            for atom in atom_list:
-                output.write(template.format("CHARGE",conformer.name,atom.name,'0.0'))
-            j = conformer.charge
-            for hyd in hyd_list:
-                if j < 0:
-                    j +=1
-                else:
-                    output.write(template.format("CHARGE",conformer.name,hyd.name,'0.0'))
-        output.write('\n')
-    output.write('\n')
-    output.close()
+                tpl.write('\n')
+        tpl.write('\n')
+    tpl.write('\n')
     return
 
 import re
@@ -693,75 +542,111 @@ def parse_g09(filename):
     found_charges=0
     charges=[]
     rex = re.compile("\s+([1-9][0-9]*)\s+([A-Za-z]{1,2})\s+(-{0,1}[0-9]+.[0-9]+)")
-    for line in open(filename):
-        if found_charges:
-            if '------------' in line:
-                return charges
-            m = re.match(rex,line)
-            if m != None:
-                charges.append(m.groups())
-            elif len(charges) > 0:
-                print "Expected to match line: " + line
-        elif 'Fitting point charges to electrostatic potential' in line:
-            found_charges=1
+    with open(filename) as g09_in:
+        for line in g09_in:
+            if found_charges:
+                if '------------' in line:
+                    return charges
+                m = re.match(rex,line)
+                if m != None:
+                    charges.append(m.groups())
+                elif len(charges) > 0:
+                    print "Expected to match line: " + line
+                elif 'Fitting point charges to electrostatic potential' in line:
+                    found_charges=1
 
     print 'Did not expect to reach the end of file ' + filename
     sys.exit(1)
    
 
-#################  Function  ###########################################
-######################## Calls ####################################
+#################  Main  ###########################################
 
-vdw_dict = {'H':'1.20','He':'1.40','C':'1.70','N':1.55,'O':1.52,'F':1.47,'NE':1.54,'SI':2.10,'P':'1.80','S':'1.80','CL':1.75,'AR':1.88,'AS':1.85,'SE':'1.90','BR':1.85,'KR':2.02,'TE':2.06,'I':1.98,'XE':2.16,'ZN':1.39,'CU':'1.40','HG':1.55,'CD':1.58,'NI':1.63,'PD':1.63,'AU':1.66,'AG':1.72,'MG':1.73,'PT':1.75,'LI':1.82,'U':1.86,'GA':1.87,'PB':2.02,'SN':2.17,'NA':2.27,'K':2.75}
-##vdw_dict contains vdw radius of atoms as written in Bondi,A. van Der Waals Volumes and Radii,
-##J.Phys.Chem, 63, 3, 1964 and http://periodic.lanl.gov/index.shtml (Los Alamos National Lab Periodic Table)
+## vdw_dict contains vdw radius of atoms as written in
+## Bondi,A. van Der Waals Volumes and Radii,
+## J.Phys.Chem, 63, 3, 1964 and http://periodic.lanl.gov/index.shtml
+## (Los Alamos National Lab Periodic Table)
 
+vdw_dict = {'H':1.20,
+            'He':1.40,
+            'C':1.70,
+            'N':1.55,
+            'O':1.52,
+            'F':1.47,
+            'NE':1.54,
+            'SI':2.10,
+            'P':1.80,
+            'S':1.80,
+            'CL':1.75,
+            'AR':1.88,
+            'AS':1.85,
+            'SE':1.90,
+            'BR':1.85,
+            'KR':2.02,
+            'TE':2.06,
+            'I':1.98,
+            'XE':2.16,
+            'ZN':1.39,
+            'CU':1.40,
+            'HG':1.55,
+            'CD':1.58,
+            'NI':1.63,
+            'PD':1.63,
+            'AU':1.66,
+            'AG':1.72,
+            'MG':1.73,
+            'PT':1.75,
+            'LI':1.82,
+            'U':1.86,
+            'GA':1.87,
+            'PB':2.02,
+            'SN':2.17,
+            'NA':2.27,
+            'K':2.75}
 
-mk_lig_file(name,lig_pdb)
+def write_tpl(options,tpl,pdb):
+    write_comment_header(options,tpl)
 
-main_header(name,lig_code)
+    if "ideal.pdb" in options.filename:
+        add_hybrids(pdb)
+    else:
+        add_hydrogens(pdb)
 
-conformers = header(lig_code,charge,order)
+    conformers = mk_conformers(options)
+    write_conformers(options,tpl,conformers)
 
-atom_list = mk_atoms(lig_pdb)
+    write_natom(options,tpl,pdb,conformers)
+    
+    write_iatom(options,tpl,pdb,conformers)
+    
+    write_atomname(options,tpl,pdb,conformers)
+    
+    write_sect1_header(tpl)
+    
+    write_proton(options,tpl,conformers)
+    
+    write_pka(options,tpl,conformers)
+    
+    write_electron(options,tpl,conformers)
+    
+    write_EM(options,tpl,conformers)
+    
+    write_RXN(tpl)
+    
+    write_con_section(options,tpl,pdb,conformers)
+    
+    write_atom_param_section(options,tpl,pdb,conformers,vdw_dict)
+    
+    #write_charges(options,tpl,pdb,conformers)
 
-get_con(name,lig_pdb,lig_code)
+    return
 
-con_dict = create_con_dict(lig_pdb)
+# Main
 
-mk_connex(lig_code,atom_list)
+def main():
+    options = Options(sys.argv)
 
-mk_coords(lig_pdb,atom_list)
+    with open(options.ligand+'.tpl','w') as tpl:
+        write_tpl(options,tpl,Pdb(options))
 
-(con_dict, hyd_list) = add_hydrogens(atom_list,con_dict)
-## The functions below this line can be commented out
-## if you do not want a certain section to be printed. However, you cannot
-## comment out the functions above, as all the functions below are dependent on
-## them.
-
-natom(conformers,atom_list,lig_code,charge,hyd_list,order)
-
-mk_iatom(lig_code,atom_list,charge,hyd_list,conformers,order)
-
-mk_atomname(lig_code,atom_list,charge,hyd_list,conformers,order)
-
-sect1_header(lig_code)
-
-mk_proton(lig_code,conformers,order)
-
-mk_pka(lig_code,conformers,order)
-
-mk_electron(lig_code,conformers,order)
-
-mk_EM(lig_code,conformers,order)
-
-mk_RXN(lig_code)
-
-mk_con_section(atom_list,lig_code,con_dict,conformers,order)
-
-mk_atom_param_section(lig_code,charge,atom_list,vdw_dict,hyd_list,conformers,order)
-
-mk_charges(lig_code,charge,atom_list,hyd_list,conformers,order)
-
-
-
+if __name__ == "__main__":
+    main ()
