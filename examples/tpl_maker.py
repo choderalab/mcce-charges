@@ -49,7 +49,7 @@ class Options(object):
         self.chain_identifier = sys.argv[3]
         self.charge = int(sys.argv[4])
         if self.charge > 0:
-            print "Charge must be negative"
+            print "Charge must be =< 0"
             sys.exit(1)
         self.order = 'r'
 
@@ -85,7 +85,9 @@ class Pdb(object):
             for i in [11,16,21,26]:
                 c = line[i:i + 5].strip()
                 if c != '':
-                    atom.connects.append(int(c))
+                    connect_id = int(c)
+                    if self.atombyid.has_key(connect_id):
+                        atom.connects.append(connect_id)
         return
         
     def read_pdb(self,options,file):
@@ -104,7 +106,7 @@ class Pdb(object):
 
     def read(self,options):
         with open(options.filename, 'r') as file:
-            if "ideal.pub" in options.filename:
+            if "ideal.pdb" in options.filename:
                 self.read_ideal_pdb(options,file)
             elif ".pdb" in options.filename:
                 self.read_pdb(options,file)
@@ -247,7 +249,7 @@ def search_bond_table(a1,a2,distance):
         if row[0] == a1.element and row[1] == a2.element \
                 and row[2] <= distance and distance <= row[3]:
             return row[4]
-    return 'unknown'
+    return 'unknownB'
 
 ## for use when you do not have to add hydrogens
 
@@ -268,7 +270,7 @@ def search_hyd2_table(a1,connects):
     for row in hydrogen_table2:
         if row[0] == a1 and row[1] == connects:
             return row[2]
-    return 'unknown'
+    return 'unknownH'
 
 def add_hybrids(pdb):
     for atom in pdb.atom_list:
@@ -360,12 +362,13 @@ def geometry(angle):
     if angle < 125 and angle > 115:
         return 'sp2'
     else:
-        return 'unknown'
+        return 'unknownA'
+    
 
 def write_natom(options,tpl,pdb,conformers):
     max_atoms = len(pdb.atom_list)
     min_atoms = max_atoms + options.charge
-    template = '{0:9}{1:10}{2:1}\n'
+    template = '{0:9}{1:11}{2:1}\n'
     tpl.write(template.format('NATOM',options.ligand+"BK", '0'))
 
     if options.order == 'r':
@@ -601,6 +604,7 @@ vdw_dict = {'H':1.20,
             'PB':2.02,
             'SN':2.17,
             'NA':2.27,
+            'FE':0.00,
             'K':2.75}
 
 def write_tpl(options,tpl,pdb):
