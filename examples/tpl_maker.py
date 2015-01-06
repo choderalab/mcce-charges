@@ -38,21 +38,6 @@ class Conformer(object):
         self.name = name
         self.charge = charge
 
-class Options(object):
-    def __init__(self,argv):
-        if len(sys.argv) < 4:
-            print "Usage: tpl_maker.py pdbfile ligand chain_identifier charge"
-            sys.exit (1)
-        
-        self.filename = sys.argv[1]
-        self.ligand = sys.argv[2]
-        self.chain_identifier = sys.argv[3]
-        self.charge = int(sys.argv[4])
-        if self.charge > 0:
-            print "Charge must be =< 0"
-            sys.exit(1)
-        self.order = 'r'
-
 class Pdb(object):
     def add_atom(self,atom):
         if atom.idnum > self.max_idnum:
@@ -106,13 +91,10 @@ class Pdb(object):
 
     def read(self,options):
         with open(options.filename, 'r') as file:
-            if "ideal.pdb" in options.filename:
+            if options.ideal:
                 self.read_ideal_pdb(options,file)
-            elif ".pdb" in options.filename:
-                self.read_pdb(options,file)
             else:
-                print "Unknown input file type."
-                sys.exit(1)
+                self.read_pdb(options,file)
 
     def __init__(self,options):
         self.atom_list = []
@@ -151,7 +133,7 @@ def mk_conformers(options):
 
 def write_conformers(options,tpl,conformers):
     tpl.write('CONFLIST {}        {}BK '.format(options.ligand,options.ligand))
-    if options.order == 'r':
+    if options.reverse_order:
         conformers = reversed(conformers)
     for conformer in conformers:
         tpl.write('{} '.format(conformer.name))
@@ -371,7 +353,7 @@ def write_natom(options,tpl,pdb,conformers):
     template = '{0:9}{1:11}{2:1}\n'
     tpl.write(template.format('NATOM',options.ligand+"BK", '0'))
 
-    if options.order == 'r':
+    if options.reverse_order:
         for conformer in reversed(conformers):
             tpl.write(template.format('NATOM',
                                       conformer.name, str(max_atoms)))
@@ -394,7 +376,7 @@ def o_connected(atom,pdb):
     return False
 
 def write_atoms(options,tpl,pdb,conformers,printer):
-    if options.order == 'r':
+    if options.reverse_order:
         conformers = reversed(conformers)
     for conformer in conformers:
         count = 0
@@ -410,7 +392,7 @@ def write_atoms(options,tpl,pdb,conformers,printer):
 
 def write_iatom(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
-        template = '{0:9}{1:7}{2:4} {3:4}\n'
+        template = '{0:9}{1:7}{2:>4} {3:4}\n'
         tpl.write(template.format('IATOM', conformer.name,
                                   atom.name, str(count)))
         return
@@ -419,7 +401,7 @@ def write_iatom(options,tpl,pdb,conformers):
 
 def write_atomname(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
-        template = '{0:9}{1:8}{2:>2}  {3:5}\n'
+        template = '{0:9}{1:8}{2:>2}  {3:>5}\n'
         tpl.write(template.format('ATOMNAME', conformer.name, \
                                   str(count),atom.name))
         return
@@ -456,7 +438,7 @@ def write_sect1_header(tpl):
 def write_proton(options,tpl,conformers):
     tpl.write('# PROTON SECTION: PROTON means charge:\n')
     template = '{0:9}{1:11}{2:5}\n'
-    if options.order == 'r':
+    if options.reverse_order:
         conformers = reversed(conformers)
     for conformer in conformers:
         tpl.write(template.format("PROTON",conformer.name, \
@@ -468,7 +450,7 @@ def write_proton(options,tpl,conformers):
 def write_pka(options,tpl,conformers): 
     tpl.write('# Solution pKa Section: pKa data from CRC Handbook of Chemistry and Physics\n')
     template = '{0:9}{1:11}{2:5}\n'
-    if options.order == 'r':
+    if options.reverse_order:
         conformers = reversed(conformers)
     for conformer in conformers:
         tpl.write(template.format("PKA", conformer.name, "0.0"))
@@ -479,7 +461,7 @@ def write_pka(options,tpl,conformers):
 def write_electron(options,tpl,conformers):
     tpl.write("#ELECTRON SECTION:\n")
     template = '{0:9}{1:11}{2:5}\n'
-    if options.order == 'r':
+    if options.reverse_order:
         conformers = reversed(conformers)
     for conformer in conformers:
         tpl.write(template.format("ELECTRON",conformer.name,"0.0"))
@@ -490,7 +472,7 @@ def write_electron(options,tpl,conformers):
 def write_EM(options,tpl,conformers): 
     template = '{0:9}{1:11}{2:5}\n'
     tpl.write("# EM SECTION:\n")
-    if options.order == 'r':
+    if options.reverse_order:
         conformers = reversed(conformers)
     for conformer in conformers:
         tpl.write(template.format("EM",conformer.name,"0.0"))
@@ -511,7 +493,7 @@ def write_con_header(tpl):
     return
 
 def write_con_section(options,tpl,pdb,conformers):
-    if options.order == 'r':
+    if options.reverse_order:
         conformers = reversed(conformers)
     for conformer in conformers:
         tpl.write("#  " + conformer.name + "\n")
@@ -610,7 +592,7 @@ vdw_dict = {'H':1.20,
 def write_tpl(options,tpl,pdb):
     write_comment_header(options,tpl)
 
-    if "ideal.pdb" in options.filename:
+    if options.ideal:
         add_hybrids(pdb)
     else:
         add_hydrogens(pdb)
@@ -647,7 +629,21 @@ def write_tpl(options,tpl,pdb):
 # Main
 
 def main():
-    options = Options(sys.argv)
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('filename', action="store", help = 'file to parse')
+    parser.add_argument('ligand', action="store",
+                        help = '3 letter code of ligand to extract from file')
+    parser.add_argument('chain_identifier', action='store',
+                        help = 'chain id for ligand')
+    parser.add_argument('charge', action='store',type=int,
+                        help = 'value of most negative charge on ligand.')
+    parser.add_argument('-p', action='store_false',dest='ideal',default =True,
+                        help = 'specifies file is Protein.pdb')
+    parser.add_argument('-r', action='store_false',dest='reverse_order', default=True,
+                        help = 'print conformers starting from negative ions')
+    options = parser.parse_args()
 
     with open(options.ligand+'.tpl','w') as tpl:
         write_tpl(options,tpl,Pdb(options))
