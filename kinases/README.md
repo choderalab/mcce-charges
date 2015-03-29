@@ -3,3 +3,5 @@
 This director contains MCCE input files for some kinases and their inhibitors.
 
 ## Manifest
+* `kinase-pdbs/` - PDB files of kinases
+
