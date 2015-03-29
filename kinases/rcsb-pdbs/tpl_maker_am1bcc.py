@@ -29,9 +29,13 @@ email: john.chodera@choderalab.org
 Examples
 --------
 
-Extract imatinib (resname STI from chain A) from PDB code 2HYY and parameterize it.
+Extract bosutinib (resname DB8 from chain A) from Abl (PDB code 3UE4) and parameterize it.
 
-> python tpl_maker_am1bcc.py -p 2HYY.pdb STI A
+> python tpl_maker_am1bcc.py -p 3UE4.pdb DB8 A 0
+
+Extract imatinib (resname STI from chain A) from Abl (PDB code 2HYY) and parameterize it.
+
+> python tpl_maker_am1bcc.py -p 2HYY.pdb STI A 0
 
 """
 
@@ -198,9 +202,7 @@ def assign_canonical_am1bcc_charges(molecule):
     omega.SetRMSThreshold(1.0)
     omega(expanded_molecule)
 
-    #oequacpac.OEAssignPartialCharges(expanded_molecule, oequacpac.OECharges_AM1BCCSym)
-    oequacpac.OEAssignPartialCharges(expanded_molecule, oequacpac.OECharges_AM1BCC)
-    #conf = expanded_molecule.GetConf(oechem.OEHasConfIdx(0))
+    oequacpac.OEAssignPartialCharges(expanded_molecule, oequacpac.OECharges_AM1BCCSym)
 
     # Copy charges back to original molecule.
     for (src_atom, dest_atom) in zip(expanded_molecule.GetAtoms(), molecule.GetAtoms()):
@@ -243,10 +245,8 @@ def mk_conformers(options, molecule, maxconf=99, verbose=True):
             tautomer.SetTitle(name)
             # DEBUG: Write molecule.
             ofs = oechem.oemolostream()
-            ofs.open(name + '.mol2')
-            ofs.SetFormat(oechem.OEFormat_MOL2H)
-            tautomer_copy = oechem.OEMol(tautomer)
-            oechem.OEWriteMolecule(ofs, tautomer_copy)
+            ofs.open(name + '-before.mol2')
+            oechem.OEWriteMolecule(ofs, tautomer)
             ofs.close()
             # Compute formal charge.
             oechem.OEAssignFormalCharges(tautomer)
@@ -255,6 +255,11 @@ def mk_conformers(options, molecule, maxconf=99, verbose=True):
                 formal_charge += atom.GetFormalCharge()
             # Assign canonical AM1BCC charges.
             assign_canonical_am1bcc_charges(tautomer)
+            # DEBUG: Write molecule.
+            ofs = oechem.oemolostream()
+            ofs.open(name + '-after.mol2')
+            oechem.OEWriteMolecule(ofs, tautomer)
+            ofs.close()
             # Create conformer.
             conformer = Conformer(name, formal_charge, tautomer)
             # Append to protomer/tautomer list.
@@ -780,11 +785,15 @@ def create_openeye_molecule(pdb):
     oechem.OEFindRingAtomsAndBonds(molecule)
     oechem.OEAssignAromaticFlags(molecule) # check aromaticity
     oechem.OEPerceiveBondOrders(molecule)
-    oechem.OEAddExplicitHydrogens(molecule)
+
+    # We must assign implicit hydrogens first so that the valence model will be correct.
+    oechem.OEAssignImplicitHydrogens(molecule)
     oechem.OEAssignFormalCharges(molecule)
 
-    # DEBUG: Change C.1 to C.3?
-
+    # Now add explicit hydrogens.
+    polarOnly = False
+    set3D = True
+    oechem.OEAddExplicitHydrogens(molecule, polarOnly, set3D)
 
     # Perceive stereochemostry.
     oechem.OEPerceiveChiral(molecule)
