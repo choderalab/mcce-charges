@@ -61,7 +61,7 @@ class Conformer(object):
 
     """
 
-    def __init__(self, name, charge, molecule=None, pKa=None):
+    def __init__(self, name, charge, molecule, pKa=None):
         """
         Create a Conformer object.
 
@@ -71,7 +71,7 @@ class Conformer(object):
             The short name of this conformer variant (usually three-letter ligand code + number)
         charge : int
             The corresponding integral total charge of this conformer.
-        molecule : openeye.oechem.OEMol, optional, default=None
+        molecule : openeye.oechem.OEMol
             Molecule corresponding to this conformer.
         pKa : float, optional, default=None
             The corresponding pKa of this conformer.
@@ -81,6 +81,10 @@ class Conformer(object):
         self.charge = charge
         self.molecule = molecule
         self.pKa = pKa
+
+        # Determine number of atoms
+        atoms = [ atom for atom in molecule.GetAtoms() ]
+        self.natoms = len(atoms)
 
 class Pdb(object):
     """
@@ -188,6 +192,7 @@ def assign_canonical_am1bcc_charges(molecule):
         Molecule is modified in place.
 
     """
+
     # Create temporary copy of molecule to parameterize.
     expanded_molecule = oechem.OEMol(molecule)
 
@@ -243,7 +248,7 @@ def mk_conformers(options, molecule, maxconf=99, verbose=True):
             # Assign conformer name.
             name = options.ligand+'%02d' % index
             tautomer.SetTitle(name)
-            # DEBUG: Write molecule.
+            # DEBUG: Write molecule before charging.
             ofs = oechem.oemolostream()
             ofs.open(name + '-before.mol2')
             oechem.OEWriteMolecule(ofs, tautomer)
@@ -254,8 +259,8 @@ def mk_conformers(options, molecule, maxconf=99, verbose=True):
             for atom in tautomer.GetAtoms():
                 formal_charge += atom.GetFormalCharge()
             # Assign canonical AM1BCC charges.
-            assign_canonical_am1bcc_charges(tautomer)
-            # DEBUG: Write molecule.
+            #assign_canonical_am1bcc_charges(tautomer)
+            # DEBUG: Write molecule after charging.
             ofs = oechem.oemolostream()
             ofs.open(name + '-after.mol2')
             oechem.OEWriteMolecule(ofs, tautomer)
@@ -266,11 +271,9 @@ def mk_conformers(options, molecule, maxconf=99, verbose=True):
             conformers.append(conformer)
             # Keep count of protomers/tautomers.
             index += 1
-            # DEBUG
+            # Show output if requested.
             if verbose:
-                atoms = [ atom for atom in tautomer.GetAtoms() ]
-                natoms = len(atoms)
-                print "%12s %+5d %8d atoms" % (name, formal_charge, natoms)
+                print "%12s %+5d %8d atoms" % (name, conformer.charge, conformer.natoms)
 
     if verbose: print "%d protomer/tautomer states were enumerated" % len(conformers)
 
@@ -508,21 +511,17 @@ def write_natom(options,tpl,pdb,conformers):
         Conformers to write information for.
 
     """
-    max_atoms = len(pdb.atom_list)
-    min_atoms = max_atoms + options.charge
     template = '{0:9}{1:11}{2:1}\n'
     tpl.write(template.format('NATOM',options.ligand+"BK", '0'))
 
     if options.reverse_order:
         for conformer in reversed(conformers):
             tpl.write(template.format('NATOM',
-                                      conformer.name, str(max_atoms)))
-            max_atoms -= 1
+                                      conformer.name, conformer.natoms))
     else:
         for conformer in conformers:
             tpl.write(template.format('NATOM',
-                                      conformer.name, str(min_atoms)))
-            min_atoms += 1
+                                      conformer.name, conformer.natoms))
 
     tpl.write(template.format('NATOM',options.ligand+"DM", '0'))
     tpl.write('\n')
