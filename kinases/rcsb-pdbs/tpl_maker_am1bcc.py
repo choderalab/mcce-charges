@@ -42,9 +42,10 @@ Extract imatinib (resname STI from chain A) from Abl (PDB code 2HYY) and paramet
 import sys
 import math
 import datetime
+import commands
 
 from openeye import oechem, oequacpac, oeomega # Requires OpenEye toolkit
-#from schrodinger import structure # Requires Schrodinger Suite
+from schrodinger import structure # Requires Schrodinger Suite
 
 class Atom(object):
     def __init__(self,name,idnum,element):
@@ -215,6 +216,57 @@ def assign_canonical_am1bcc_charges(molecule):
         dest_atom.SetFormalCharge(src_atom.GetFormalCharge())
 
     return
+
+def mk_conformers_epik(options, molecule, maxconf=99, verbose=True):
+    """
+    Enumerate the list of conformers and associated properties for each protonation and tautomeric state using epik from the Schrodinger Suite.
+
+    Parameters
+    ----------
+    options
+    molecule : openeye.oechem
+        The molecule read from the PDB whose protomer and tautomer states are to be enumerated.
+    maxconf : int, optional, default=128
+        Maximum number of protomers/tautomers to generate.
+
+    Returns
+    -------
+    conformers : list of Conformer
+        The list of protomers/tautomers generated.
+
+    """
+    conformers = list()
+
+    # Write mol2 file.
+    ofs = oechem.oemolostream()
+    ofs.open('epik-input.mol2')
+    oechem.OEWriteMolecule(ofs, molecule)
+    ofs.close()
+
+    # Write input for epik.
+    reader = structure.StructureReader("epik-input.mol2")
+    writer = structure.StructureWriter("epik-input.mae")
+    for st in reader:
+        writer.append(st)
+    reader.close()
+    writer.close()
+
+    # Run epik to enumerate protomers/tautomers and get associated state penalties.
+    cmd = '$SCHRODINGER/epik -imae epik-input.mae -omae epik-output.mae -pht 10.0 -ms 100 -nt -pKa_atom -WAIT'
+    output = commands.getoutput(cmd)
+    print output
+
+    # Read output from epik.
+    reader = structure.StructureReader("epik-output.mae")
+    writer = structure.StructureWriter("epik-output.sdf")
+    for st in reader:
+        writer.append(st)
+    reader.close()
+    writer.close()
+
+    if verbose: print "%d protomer/tautomer states were enumerated" % len(conformers)
+
+    return conformers
 
 def mk_conformers(options, molecule, maxconf=99, verbose=True):
     """
@@ -813,7 +865,8 @@ def write_tpl(options,tpl,pdb):
         add_hydrogens(pdb)
 
     # Generate list of conformers with different protonation and tautomer states.
-    conformers = mk_conformers(options, molecule)
+    #conformers = mk_conformers(options, molecule)
+    conformers = mk_conformers_epik(options, molecule)
 
     # Write the conformer definitions to the MCCE2 .tpl file.
     write_conformers(options,tpl,conformers)
