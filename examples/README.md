@@ -1,7 +1,10 @@
 mcce-charges
 ============
 
-generating ligand charges
+Examples and information useful for generating ligand charges for MCCE.
 
-first entry - read.me to let you know about some quirks (reserved names, required directories etc)
-3 tpl files (asp.tpl; his.tpl (shows atom swaps); pdd.tpl (shows how to make a bond between two units that titrate independently (here it is a heme and it's propionic acids)
+* `read.me` - description of some quirks (reserved names, required directories etc)
+* `asp.tpl` - Asp topology file
+* `his.tpl` - His topology file (demonstrating atom swaps)
+* `pdd.tpl` - heme and propionic acid; demonstrates how to make a bond between two units that titrate independently
+
