@@ -897,6 +897,13 @@ def create_openeye_molecule(pdb, options, verbose=True):
     molecule.SetTitle(options.ligand)
 
     # Write out PDB form of this molecule.
+    if verbose: print "Writing input molecule as mol2..."
+    ofs = oechem.oemolostream()
+    ofs.open(options.ligand + '.mol2')
+    oechem.OEWriteMolecule(ofs, molecule)
+    ofs.close()
+
+    # Write out PDB form of this molecule.
     if verbose: print "Writing input molecule as PDB..."
     ofs = oechem.oemolostream()
     ofs.open(options.ligand + '.pdb')
