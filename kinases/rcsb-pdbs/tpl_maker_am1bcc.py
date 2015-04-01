@@ -271,23 +271,44 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
     reader.close()
     writer.close()
 
+    # Also convert to .mol2.
+    if verbose: print "Converting output file to MOL2..."
+    reader = structure.StructureReader("epik-output.mae")
+    writer = structure.StructureWriter("epik-output.mol2")
+    for st in reader:
+        writer.append(st)
+    reader.close()
+    writer.close()
+
     # Read conformers from SDF.
     if verbose: print "Reading conformers from SDF..."
-    ifs = oechem.oemolistream()
-    ifs.SetFormat(oechem.OEFormat_SDF)
-    ifs.open('epik-output.sdf')
-    read_molecule = oechem.OEGraphMol()
+    ifs_sdf = oechem.oemolistream()
+    ifs_sdf.SetFormat(oechem.OEFormat_SDF)
+    ifs_sdf.open('epik-output.sdf')
+    sdf_molecule = oechem.OEGraphMol()
+
+    ifs_mol2 = oechem.oemolistream()
+    ifs_mol2.open('epik-output.mol2')
+    mol2_molecule = oechem.OEGraphMol()
+
     index = 1
-    while oechem.OEReadMolecule(ifs, read_molecule):
+    while oechem.OEReadMolecule(ifs_sdf, sdf_molecule):
         if verbose: print "Conformer %d" % index
+
+        # Read from mol2
+        oechem.OEReadMolecule(ifs_mol2, mol2_molecule)
+        oechem.OEAssignAromaticFlags(mol2_molecule) # check aromaticity
+
         # Get Epik data.
-        epik_Ionization_Penalty = float(oechem.OEGetSDData(read_molecule, "r_epik_Ionization_Penalty"))
-        epik_Ionization_Penalty_Charging = float(oechem.OEGetSDData(read_molecule, "r_epik_Ionization_Penalty_Charging"))
-        epik_Ionization_Penalty_Neutral = float(oechem.OEGetSDData(read_molecule, "r_epik_Ionization_Penalty_Neutral"))
-        epik_State_Penalty = float(oechem.OEGetSDData(read_molecule, "r_epik_State_Penalty"))
-        epik_Tot_Q = int(oechem.OEGetSDData(read_molecule, "i_epik_Tot_Q"))
-        # Make a copy of the read molecule.
-        molecule = oechem.OEMol(read_molecule)
+        epik_Ionization_Penalty = float(oechem.OEGetSDData(sdf_molecule, "r_epik_Ionization_Penalty"))
+        epik_Ionization_Penalty_Charging = float(oechem.OEGetSDData(sdf_molecule, "r_epik_Ionization_Penalty_Charging"))
+        epik_Ionization_Penalty_Neutral = float(oechem.OEGetSDData(sdf_molecule, "r_epik_Ionization_Penalty_Neutral"))
+        epik_State_Penalty = float(oechem.OEGetSDData(sdf_molecule, "r_epik_State_Penalty"))
+        epik_Tot_Q = int(oechem.OEGetSDData(sdf_molecule, "i_epik_Tot_Q"))
+
+        # Make a copy of the mol2 molecule.
+        molecule = oechem.OEMol(mol2_molecule)
+
         # Set name
         name = options.ligand+'%02d' % index
         molecule.SetTitle(name)
@@ -299,7 +320,9 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
         conformers.append(conformer)
         # Increment counter.
         index += 1
-    ifs.close()
+
+    ifs_sdf.close()
+    ifs_mol2.close()
 
     if verbose: print "%d protomer/tautomer states were enumerated" % len(conformers)
 
@@ -629,12 +652,9 @@ def write_atoms(options,tpl,pdb,conformers,printer):
     for conformer in conformers:
         count = 0
         j = conformer.charge
-        for atom in pdb.atom_list:
-            if j < 0 and atom.element == 'H' and o_connected(atom,pdb):
-                j += 1
-            else:
-                printer(tpl,conformer,atom,count)
-                count += 1
+        for atom in conformer.molecule.GetAtoms():
+            printer(tpl,conformer,atom,count)
+            count += 1
         tpl.write('\n')
     return
 
@@ -642,7 +662,7 @@ def write_iatom(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
         template = '{0:9}{1:7}{2:>4} {3:4}\n'
         tpl.write(template.format('IATOM', conformer.name,
-                                  atom.name, str(count)))
+                                  atom.GetName(), str(count)))
         return
     write_atoms(options,tpl,pdb,conformers,printer)
     return
@@ -651,7 +671,7 @@ def write_atomname(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
         template = '{0:9}{1:8}{2:>2}  {3:>5}\n'
         tpl.write(template.format('ATOMNAME', conformer.name, \
-                                  str(count),atom.name))
+                                  str(count),atom.GetName()))
         return
     write_atoms(options,tpl,pdb,conformers,printer)
     return
@@ -661,18 +681,19 @@ def write_atom_param_section(options,tpl,pdb,conformers,vdw_dict):
     tpl.write("# Van Der Waals Radii. See source for reference\n")
     def printer(tpl,conformer,atom,count):
         template = '{0:9}{1:7}{2:5} {3:7}\n'
+        element = oechem.OEGetAtomicSymbol(atom.GetAtomicNum()).upper()
         tpl.write(template.format("RADIUS",conformer.name, \
-                                  atom.name,str(vdw_dict[atom.element])))
+                                  atom.GetName(),str(vdw_dict[element])))
         return
     write_atoms(options,tpl,pdb,conformers,printer)
     return
 
 def write_charges(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
-        charges = parse_g09(conformer.name+'chrg.log')
         template = '{0:9}{1:7}{2:3} {3:7}\n'
+        charge = atom.GetPartialCharge()
         tpl.write(template.format("CHARGE",conformer.name, \
-                                  atom.name,charges[i][2]))
+                                  atom.name,charge))
         return
     write_atoms(options,tpl,pdb,conformers,printer)
     return
@@ -748,49 +769,19 @@ def write_con_section(options,tpl,pdb,conformers):
         write_con_header(tpl)
         template1 = '{0:9}{1:5} {2:^4} {3:^10}'
         template2 = '{0:^4} {1:^4} '
-        hydrogen_skips = []
-        j = conformer.charge
-        for atom in pdb.atom_list:
-            if not(atom.idnum in hydrogen_skips):
-                tpl.write(template1.format("CONNECT",conformer.name, \
-                                           atom.name,atom.hybrid))
-                if j < 0 and atom.element == 'O' and atom.hybrid == 'sp3':
-                    connects = atom.connects[:-1]
-                    hydrogen_skips.append(connects[-1])
-                    j += 1
-                else:
-                    connects = atom.connects
-
-                for cid in connects:
-                    tpl.write(template2.format("0", pdb.atombyid[cid].name))
-
-                tpl.write('\n')
+        for atom in conformer.molecule.GetAtoms():
+            hyb_table = ['s', 'sp', 'sp2', 'sp3', 'sp3d', 'sp3d2']
+            hybrid = hyb_table[oechem.OEGetHybridization(atom)]
+            tpl.write(template1.format("CONNECT", conformer.name, atom.GetName(), hybrid))
+            for bond in conformer.molecule.GetBonds():
+                if bond.GetBgn() == atom:
+                    tpl.write(template2.format("0", bond.GetEnd().GetName()))
+            tpl.write('\n')
         tpl.write('\n')
     tpl.write('\n')
     return
 
 import re
- 
-def parse_g09(filename):
-    found_charges=0
-    charges=[]
-    rex = re.compile("\s+([1-9][0-9]*)\s+([A-Za-z]{1,2})\s+(-{0,1}[0-9]+.[0-9]+)")
-    with open(filename) as g09_in:
-        for line in g09_in:
-            if found_charges:
-                if '------------' in line:
-                    return charges
-                m = re.match(rex,line)
-                if m != None:
-                    charges.append(m.groups())
-                elif len(charges) > 0:
-                    print "Expected to match line: " + line
-                elif 'Fitting point charges to electrostatic potential' in line:
-                    found_charges=1
-
-    print 'Did not expect to reach the end of file ' + filename
-    sys.exit(1)
-   
 
 #################  Main  ###########################################
 
@@ -837,7 +828,7 @@ vdw_dict = {'H':1.20,
             'FE':0.00,
             'K':2.75}
 
-def create_openeye_molecule(pdb, options):
+def create_openeye_molecule(pdb, options, verbose=True):
     """
     Create OpenEye molecule from PDB representation.
 
@@ -890,6 +881,13 @@ def create_openeye_molecule(pdb, options):
 
     # Set title.
     molecule.SetTitle(options.ligand)
+
+    # Write out PDB form of this molecule.
+    if verbose: print "Writing input molecule as PDB..."
+    ofs = oechem.oemolostream()
+    ofs.open(options.ligand + '.pdb')
+    oechem.OEWriteMolecule(ofs, molecule)
+    ofs.close()
 
     return molecule
 
