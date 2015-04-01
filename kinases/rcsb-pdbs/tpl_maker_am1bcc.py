@@ -39,6 +39,7 @@ Extract imatinib (resname STI from chain A) from Abl (PDB code 2HYY) and paramet
 
 """
 
+import os
 import sys
 import math
 import datetime
@@ -217,7 +218,7 @@ def assign_canonical_am1bcc_charges(molecule):
 
     return
 
-def mk_conformers_epik(options, molecule, maxconf=99, verbose=True):
+def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
     """
     Enumerate the list of conformers and associated properties for each protonation and tautomeric state using epik from the Schrodinger Suite.
 
@@ -228,6 +229,8 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True):
         The molecule read from the PDB whose protomer and tautomer states are to be enumerated.
     maxconf : int, optional, default=128
         Maximum number of protomers/tautomers to generate.
+    pH : float, optional, default=7.0
+        pH to use for conformer enumeration
 
     Returns
     -------
@@ -238,12 +241,14 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True):
     conformers = list()
 
     # Write mol2 file.
+    if verbose: print "Writing input file as mol2..."
     ofs = oechem.oemolostream()
     ofs.open('epik-input.mol2')
     oechem.OEWriteMolecule(ofs, molecule)
     ofs.close()
 
     # Write input for epik.
+    if verbose: print "Converting input file to Maestro format..."
     reader = structure.StructureReader("epik-input.mol2")
     writer = structure.StructureWriter("epik-input.mae")
     for st in reader:
@@ -252,17 +257,49 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True):
     writer.close()
 
     # Run epik to enumerate protomers/tautomers and get associated state penalties.
-    cmd = '$SCHRODINGER/epik -imae epik-input.mae -omae epik-output.mae -pht 10.0 -ms 100 -nt -pKa_atom -WAIT'
+    if verbose: print "Running Epik..."
+    cmd = '%s/epik -imae epik-input.mae -omae epik-output.mae -pht 10.0 -ms 100 -nt -pKa_atom -ph %f -WAIT' % (os.environ['SCHRODINGER'], pH)
     output = commands.getoutput(cmd)
-    print output
+    if verbose: print output
 
-    # Read output from epik.
+    # Convert output from epik from .mae to .sdf.
+    if verbose: print "Converting output file to SDF..."
     reader = structure.StructureReader("epik-output.mae")
     writer = structure.StructureWriter("epik-output.sdf")
     for st in reader:
         writer.append(st)
     reader.close()
     writer.close()
+
+    # Read conformers from SDF.
+    if verbose: print "Reading conformers from SDF..."
+    ifs = oechem.oemolistream()
+    ifs.SetFormat(oechem.OEFormat_SDF)
+    ifs.open('epik-output.sdf')
+    read_molecule = oechem.OEGraphMol()
+    index = 1
+    while oechem.OEReadMolecule(ifs, read_molecule):
+        if verbose: print "Conformer %d" % index
+        # Get Epik data.
+        epik_Ionization_Penalty = float(oechem.OEGetSDData(read_molecule, "r_epik_Ionization_Penalty"))
+        epik_Ionization_Penalty_Charging = float(oechem.OEGetSDData(read_molecule, "r_epik_Ionization_Penalty_Charging"))
+        epik_Ionization_Penalty_Neutral = float(oechem.OEGetSDData(read_molecule, "r_epik_Ionization_Penalty_Neutral"))
+        epik_State_Penalty = float(oechem.OEGetSDData(read_molecule, "r_epik_State_Penalty"))
+        epik_Tot_Q = int(oechem.OEGetSDData(read_molecule, "i_epik_Tot_Q"))
+        # Make a copy of the read molecule.
+        molecule = oechem.OEMol(read_molecule)
+        # Set name
+        name = options.ligand+'%02d' % index
+        molecule.SetTitle(name)
+        # Assign canonical AM1BCC charges.
+        if verbose: print "Assigning canonical AM1-BCC charges..."
+        assign_canonical_am1bcc_charges(molecule)
+        # Create a conformer and append it to the list.
+        conformer = Conformer(name, epik_Tot_Q, molecule)
+        conformers.append(conformer)
+        # Increment counter.
+        index += 1
+    ifs.close()
 
     if verbose: print "%d protomer/tautomer states were enumerated" % len(conformers)
 
@@ -311,7 +348,7 @@ def mk_conformers(options, molecule, maxconf=99, verbose=True):
             for atom in tautomer.GetAtoms():
                 formal_charge += atom.GetFormalCharge()
             # Assign canonical AM1BCC charges.
-            #assign_canonical_am1bcc_charges(tautomer)
+            assign_canonical_am1bcc_charges(tautomer)
             # DEBUG: Write molecule after charging.
             ofs = oechem.oemolostream()
             ofs.open(name + '-after.mol2')
@@ -800,7 +837,7 @@ vdw_dict = {'H':1.20,
             'FE':0.00,
             'K':2.75}
 
-def create_openeye_molecule(pdb):
+def create_openeye_molecule(pdb, options):
     """
     Create OpenEye molecule from PDB representation.
 
@@ -815,6 +852,8 @@ def create_openeye_molecule(pdb):
     -------
     molecule : openeye.oechem.OEMol
         Molecule representation.
+    options : options struct
+        Options structure.
 
     """
 
@@ -849,11 +888,14 @@ def create_openeye_molecule(pdb):
     # Perceive stereochemostry.
     oechem.OEPerceiveChiral(molecule)
 
+    # Set title.
+    molecule.SetTitle(options.ligand)
+
     return molecule
 
 def write_tpl(options,tpl,pdb):
     # Create an OpenEye molecule from the PDB representation.
-    molecule = create_openeye_molecule(pdb)
+    molecule = create_openeye_molecule(pdb, options)
 
     # Write the MCCE2 .tpl file header.
     write_comment_header(options, tpl)
