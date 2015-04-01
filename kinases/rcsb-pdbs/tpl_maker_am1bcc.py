@@ -299,6 +299,25 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
         oechem.OEReadMolecule(ifs_mol2, mol2_molecule)
         oechem.OEAssignAromaticFlags(mol2_molecule) # check aromaticity
 
+        # Set name
+        name = options.ligand+'%02d' % index
+        molecule.SetTitle(name)
+
+        # DEBUG: Write mol2 file.
+        if verbose: print "Writing %s to mol2..." % name
+        ofs = oechem.oemolostream()
+        ofs.open(name + '.mol2')
+        oechem.OEWriteMolecule(ofs, molecule)
+        ofs.close()
+
+        # Assign canonical AM1BCC charges.
+        try:
+            if verbose: print "Assigning canonical AM1-BCC charges..."
+            assign_canonical_am1bcc_charges(molecule)
+        except Exception as e:
+            print str(e)
+            continue
+
         # Get Epik data.
         epik_Ionization_Penalty = float(oechem.OEGetSDData(sdf_molecule, "r_epik_Ionization_Penalty"))
         epik_Ionization_Penalty_Charging = float(oechem.OEGetSDData(sdf_molecule, "r_epik_Ionization_Penalty_Charging"))
@@ -309,12 +328,6 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
         # Make a copy of the mol2 molecule.
         molecule = oechem.OEMol(mol2_molecule)
 
-        # Set name
-        name = options.ligand+'%02d' % index
-        molecule.SetTitle(name)
-        # Assign canonical AM1BCC charges.
-        if verbose: print "Assigning canonical AM1-BCC charges..."
-        assign_canonical_am1bcc_charges(molecule)
         # Create a conformer and append it to the list.
         conformer = Conformer(name, epik_Tot_Q, molecule)
         conformers.append(conformer)
@@ -693,7 +706,7 @@ def write_charges(options,tpl,pdb,conformers):
         template = '{0:9}{1:7}{2:3} {3:7}\n'
         charge = atom.GetPartialCharge()
         tpl.write(template.format("CHARGE",conformer.name, \
-                                  atom.name,charge))
+                                  atom.GetName(), charge))
         return
     write_atoms(options,tpl,pdb,conformers,printer)
     return
@@ -905,8 +918,8 @@ def write_tpl(options,tpl,pdb):
         add_hydrogens(pdb)
 
     # Generate list of conformers with different protonation and tautomer states.
-    #conformers = mk_conformers(options, molecule)
-    conformers = mk_conformers_epik(options, molecule)
+    conformers = mk_conformers(options, molecule) # use OEProton protomers/tautomers
+    #conformers = mk_conformers_epik(options, molecule) # use Epik protomers/tautomers
 
     # Write the conformer definitions to the MCCE2 .tpl file.
     write_conformers(options,tpl,conformers)
@@ -934,7 +947,7 @@ def write_tpl(options,tpl,pdb):
     
     write_atom_param_section(options,tpl,pdb,conformers,vdw_dict)
     
-    #write_charges(options,tpl,pdb,conformers)
+    write_charges(options,tpl,pdb,conformers)
 
     return
 
