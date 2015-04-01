@@ -46,7 +46,6 @@ import datetime
 import commands
 
 from openeye import oechem, oequacpac, oeomega # Requires OpenEye toolkit
-from schrodinger import structure # Requires Schrodinger Suite
 
 class Atom(object):
     def __init__(self,name,idnum,element):
@@ -239,6 +238,8 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
 
     """
     conformers = list()
+
+    from schrodinger import structure # Requires Schrodinger Suite
 
     # Write mol2 file.
     if verbose: print "Writing input file as mol2..."
