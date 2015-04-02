@@ -31,11 +31,11 @@ Examples
 
 Extract bosutinib (resname DB8 from chain A) from Abl (PDB code 3UE4) and parameterize it.
 
-> python tpl_maker_am1bcc.py -p 3UE4.pdb DB8 A 0
+> python tpl_maker_am1bcc.py -p rcsb-pdbs/3UE4.pdb DB8 A 0
 
 Extract imatinib (resname STI from chain A) from Abl (PDB code 2HYY) and parameterize it.
 
-> python tpl_maker_am1bcc.py -p 2HYY.pdb STI A 0
+> python tpl_maker_am1bcc.py -p rcsb-pdbs/2HYY.pdb STI A 0
 
 """
 
@@ -790,6 +790,8 @@ def write_con_section(options,tpl,pdb,conformers):
             for bond in conformer.molecule.GetBonds():
                 if bond.GetBgn() == atom:
                     tpl.write(template2.format("0", bond.GetEnd().GetName()))
+                if bond.GetEnd() == atom:
+                    tpl.write(template2.format("0", bond.GetBgn().GetName()))
             tpl.write('\n')
         tpl.write('\n')
     tpl.write('\n')
