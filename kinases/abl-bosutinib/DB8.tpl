@@ -1,9 +1,9 @@
 ####################################
 # Topology File for:
 # DB8
-# Extracted from: 3UE4.pdb
+# Extracted from: rcsb-pdbs/3UE4.pdb
 #
-# Created on: 2015-03-31
+# Created on: 2015-04-02
 #
 # Created with: tpl_maker_am1bcc.py
 ####################################
@@ -2282,1132 +2282,1132 @@ EM       DB8DM      0.0
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB815  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB815  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB815  C3      sp     0   C26  
+CONNECT  DB815  C3      sp     0    N1   0   C26  
 CONNECT  DB815  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB815  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB815  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB815  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB815  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB815  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB815  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB815  N1     sp2     0    C3  
-CONNECT  DB815  N2     sp2     0   C19   0   H13  
+CONNECT  DB815  N2     sp2     0    C4   0   C19   0   H13  
 CONNECT  DB815  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB815  N4     sp3     0   H15  
-CONNECT  DB815  N5     sp3     0   H16  
+CONNECT  DB815  N4     sp3     0    C2   0   C14   0   C16   0   H15  
+CONNECT  DB815  N5     sp3     0   C12   0   C18   0   C20   0   H16  
 CONNECT  DB815  O1     sp3     0   C22   0   C23  
-CONNECT  DB815  O2     sp3     0   C13  
-CONNECT  DB815  O3     sp3     0   C15  
-CONNECT  DB815 C10     sp3     0    O3   0   H17   0   H18  
-CONNECT  DB815 C11     sp2    
+CONNECT  DB815  O2     sp3     0    C1   0   C13  
+CONNECT  DB815  O3     sp3     0   C10   0   C15  
+CONNECT  DB815 C10     sp3     0    C9   0    O3   0   H17   0   H18  
+CONNECT  DB815 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB815 C12     sp3     0    N5   0   H19   0   H20   0   H21  
-CONNECT  DB815 C13     sp2     0   C15  
+CONNECT  DB815 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB815 Cl1      s      0   C24  
 CONNECT  DB815 C14     sp3     0   C18   0    N4   0   H22   0   H23  
-CONNECT  DB815 C15     sp2    
+CONNECT  DB815 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB815 Cl2      s      0   C25  
 CONNECT  DB815 C16     sp3     0   C20   0    N4   0   H24   0   H25  
-CONNECT  DB815 C17     sp2     0   C21  
-CONNECT  DB815 C18     sp3     0    N5   0   H26   0   H27  
-CONNECT  DB815 C19     sp2     0   C21  
-CONNECT  DB815 C20     sp3     0    N5   0   H28   0   H29  
-CONNECT  DB815 C21     sp2    
-CONNECT  DB815 C22     sp2     0   C24  
-CONNECT  DB815 C23     sp3     0   H30   0   H31   0   H32  
-CONNECT  DB815 C24     sp2    
-CONNECT  DB815 C25     sp2     0   C11  
-CONNECT  DB815 C26     sp2     0   C17  
-CONNECT  DB815  H1      s     
-CONNECT  DB815  H2      s     
-CONNECT  DB815  H3      s     
-CONNECT  DB815  H4      s     
-CONNECT  DB815  H5      s     
-CONNECT  DB815  H6      s     
-CONNECT  DB815  H7      s     
-CONNECT  DB815  H8      s     
-CONNECT  DB815  H9      s     
-CONNECT  DB815 H10      s     
-CONNECT  DB815 H11      s     
-CONNECT  DB815 H12      s     
-CONNECT  DB815 H13      s     
-CONNECT  DB815 H14      s     
-CONNECT  DB815 H15      s     
-CONNECT  DB815 H16      s     
-CONNECT  DB815 H17      s     
-CONNECT  DB815 H18      s     
-CONNECT  DB815 H19      s     
-CONNECT  DB815 H20      s     
-CONNECT  DB815 H21      s     
-CONNECT  DB815 H22      s     
-CONNECT  DB815 H23      s     
-CONNECT  DB815 H24      s     
-CONNECT  DB815 H25      s     
-CONNECT  DB815 H26      s     
-CONNECT  DB815 H27      s     
-CONNECT  DB815 H28      s     
-CONNECT  DB815 H29      s     
-CONNECT  DB815 H30      s     
-CONNECT  DB815 H31      s     
-CONNECT  DB815 H32      s     
+CONNECT  DB815 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB815 C18     sp3     0   C14   0    N5   0   H26   0   H27  
+CONNECT  DB815 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB815 C20     sp3     0   C16   0    N5   0   H28   0   H29  
+CONNECT  DB815 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB815 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB815 C23     sp3     0    O1   0   H30   0   H31   0   H32  
+CONNECT  DB815 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB815 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB815 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB815  H1      s      0    C1  
+CONNECT  DB815  H2      s      0    C1  
+CONNECT  DB815  H3      s      0    C1  
+CONNECT  DB815  H4      s      0    C2  
+CONNECT  DB815  H5      s      0    C2  
+CONNECT  DB815  H6      s      0    C4  
+CONNECT  DB815  H7      s      0    C5  
+CONNECT  DB815  H8      s      0    C6  
+CONNECT  DB815  H9      s      0    C7  
+CONNECT  DB815 H10      s      0    C8  
+CONNECT  DB815 H11      s      0    C9  
+CONNECT  DB815 H12      s      0    C9  
+CONNECT  DB815 H13      s      0    N2  
+CONNECT  DB815 H14      s      0    N3  
+CONNECT  DB815 H15      s      0    N4  
+CONNECT  DB815 H16      s      0    N5  
+CONNECT  DB815 H17      s      0   C10  
+CONNECT  DB815 H18      s      0   C10  
+CONNECT  DB815 H19      s      0   C12  
+CONNECT  DB815 H20      s      0   C12  
+CONNECT  DB815 H21      s      0   C12  
+CONNECT  DB815 H22      s      0   C14  
+CONNECT  DB815 H23      s      0   C14  
+CONNECT  DB815 H24      s      0   C16  
+CONNECT  DB815 H25      s      0   C16  
+CONNECT  DB815 H26      s      0   C18  
+CONNECT  DB815 H27      s      0   C18  
+CONNECT  DB815 H28      s      0   C20  
+CONNECT  DB815 H29      s      0   C20  
+CONNECT  DB815 H30      s      0   C23  
+CONNECT  DB815 H31      s      0   C23  
+CONNECT  DB815 H32      s      0   C23  
 
 #  DB814
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB814  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB814  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB814  C3      sp     0   C26  
+CONNECT  DB814  C3      sp     0    N1   0   C26  
 CONNECT  DB814  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB814  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB814  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB814  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB814  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB814  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB814  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB814  N1      sp     0    C3  
-CONNECT  DB814  N2     sp2     0   C19   0   H13  
+CONNECT  DB814  N2     sp2     0    C4   0   C19   0   H13  
 CONNECT  DB814  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB814  N4     sp3     0   H15  
-CONNECT  DB814  N5     sp3     0   H16  
+CONNECT  DB814  N4     sp3     0    C2   0   C14   0   C16   0   H15  
+CONNECT  DB814  N5     sp3     0   C12   0   C18   0   C20   0   H16  
 CONNECT  DB814  O1     sp3     0   C22   0   C23  
-CONNECT  DB814  O2     sp3     0   C13  
-CONNECT  DB814  O3     sp3     0   C15  
-CONNECT  DB814 C10     sp3     0    O3   0   H17   0   H18  
-CONNECT  DB814 C11     sp2    
+CONNECT  DB814  O2     sp3     0    C1   0   C13  
+CONNECT  DB814  O3     sp3     0   C10   0   C15  
+CONNECT  DB814 C10     sp3     0    C9   0    O3   0   H17   0   H18  
+CONNECT  DB814 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB814 C12     sp3     0    N5   0   H19   0   H20   0   H21  
-CONNECT  DB814 C13     sp2     0   C15  
+CONNECT  DB814 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB814 Cl1      s      0   C24  
 CONNECT  DB814 C14     sp3     0   C18   0    N4   0   H22   0   H23  
-CONNECT  DB814 C15     sp2    
+CONNECT  DB814 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB814 Cl2      s      0   C25  
 CONNECT  DB814 C16     sp3     0   C20   0    N4   0   H24   0   H25  
-CONNECT  DB814 C17     sp2     0   C21  
-CONNECT  DB814 C18     sp3     0    N5   0   H26   0   H27  
-CONNECT  DB814 C19     sp2     0   C21  
-CONNECT  DB814 C20     sp3     0    N5   0   H28   0   H29  
-CONNECT  DB814 C21     sp2    
-CONNECT  DB814 C22     sp2     0   C24  
-CONNECT  DB814 C23     sp3     0   H30   0   H31   0   H32  
-CONNECT  DB814 C24     sp2    
-CONNECT  DB814 C25     sp2     0   C11  
-CONNECT  DB814 C26     sp2     0   C17  
-CONNECT  DB814  H1      s     
-CONNECT  DB814  H2      s     
-CONNECT  DB814  H3      s     
-CONNECT  DB814  H4      s     
-CONNECT  DB814  H5      s     
-CONNECT  DB814  H6      s     
-CONNECT  DB814  H7      s     
-CONNECT  DB814  H8      s     
-CONNECT  DB814  H9      s     
-CONNECT  DB814 H10      s     
-CONNECT  DB814 H11      s     
-CONNECT  DB814 H12      s     
-CONNECT  DB814 H13      s     
-CONNECT  DB814 H14      s     
-CONNECT  DB814 H15      s     
-CONNECT  DB814 H16      s     
-CONNECT  DB814 H17      s     
-CONNECT  DB814 H18      s     
-CONNECT  DB814 H19      s     
-CONNECT  DB814 H20      s     
-CONNECT  DB814 H21      s     
-CONNECT  DB814 H22      s     
-CONNECT  DB814 H23      s     
-CONNECT  DB814 H24      s     
-CONNECT  DB814 H25      s     
-CONNECT  DB814 H26      s     
-CONNECT  DB814 H27      s     
-CONNECT  DB814 H28      s     
-CONNECT  DB814 H29      s     
-CONNECT  DB814 H30      s     
-CONNECT  DB814 H31      s     
-CONNECT  DB814 H32      s     
+CONNECT  DB814 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB814 C18     sp3     0   C14   0    N5   0   H26   0   H27  
+CONNECT  DB814 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB814 C20     sp3     0   C16   0    N5   0   H28   0   H29  
+CONNECT  DB814 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB814 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB814 C23     sp3     0    O1   0   H30   0   H31   0   H32  
+CONNECT  DB814 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB814 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB814 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB814  H1      s      0    C1  
+CONNECT  DB814  H2      s      0    C1  
+CONNECT  DB814  H3      s      0    C1  
+CONNECT  DB814  H4      s      0    C2  
+CONNECT  DB814  H5      s      0    C2  
+CONNECT  DB814  H6      s      0    C4  
+CONNECT  DB814  H7      s      0    C5  
+CONNECT  DB814  H8      s      0    C6  
+CONNECT  DB814  H9      s      0    C7  
+CONNECT  DB814 H10      s      0    C8  
+CONNECT  DB814 H11      s      0    C9  
+CONNECT  DB814 H12      s      0    C9  
+CONNECT  DB814 H13      s      0    N2  
+CONNECT  DB814 H14      s      0    N3  
+CONNECT  DB814 H15      s      0    N4  
+CONNECT  DB814 H16      s      0    N5  
+CONNECT  DB814 H17      s      0   C10  
+CONNECT  DB814 H18      s      0   C10  
+CONNECT  DB814 H19      s      0   C12  
+CONNECT  DB814 H20      s      0   C12  
+CONNECT  DB814 H21      s      0   C12  
+CONNECT  DB814 H22      s      0   C14  
+CONNECT  DB814 H23      s      0   C14  
+CONNECT  DB814 H24      s      0   C16  
+CONNECT  DB814 H25      s      0   C16  
+CONNECT  DB814 H26      s      0   C18  
+CONNECT  DB814 H27      s      0   C18  
+CONNECT  DB814 H28      s      0   C20  
+CONNECT  DB814 H29      s      0   C20  
+CONNECT  DB814 H30      s      0   C23  
+CONNECT  DB814 H31      s      0   C23  
+CONNECT  DB814 H32      s      0   C23  
 
 #  DB813
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB813  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB813  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB813  C3      sp     0   C26  
+CONNECT  DB813  C3      sp     0    N1   0   C26  
 CONNECT  DB813  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB813  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB813  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB813  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB813  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB813  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB813  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB813  N1      sp     0    C3  
-CONNECT  DB813  N2     sp2     0   C19   0   H13  
+CONNECT  DB813  N2     sp2     0    C4   0   C19   0   H13  
 CONNECT  DB813  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB813  N4     sp3     0   H15  
-CONNECT  DB813  N5     sp3     0   H16  
+CONNECT  DB813  N4     sp3     0    C2   0   C14   0   C16   0   H15  
+CONNECT  DB813  N5     sp3     0   C12   0   C18   0   C20   0   H16  
 CONNECT  DB813  O1     sp3     0   C22   0   C23  
-CONNECT  DB813  O2     sp3     0   C13  
-CONNECT  DB813  O3     sp3     0   C15  
-CONNECT  DB813 C10     sp3     0    O3   0   H17   0   H18  
-CONNECT  DB813 C11     sp2    
+CONNECT  DB813  O2     sp3     0    C1   0   C13  
+CONNECT  DB813  O3     sp3     0   C10   0   C15  
+CONNECT  DB813 C10     sp3     0    C9   0    O3   0   H17   0   H18  
+CONNECT  DB813 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB813 C12     sp3     0    N5   0   H19   0   H20   0   H21  
-CONNECT  DB813 C13     sp2     0   C15  
+CONNECT  DB813 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB813 Cl1      s      0   C24  
 CONNECT  DB813 C14     sp3     0   C18   0    N4   0   H22   0   H23  
-CONNECT  DB813 C15     sp2    
+CONNECT  DB813 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB813 Cl2      s      0   C25  
 CONNECT  DB813 C16     sp3     0   C20   0    N4   0   H24   0   H25  
-CONNECT  DB813 C17     sp2     0   C21  
-CONNECT  DB813 C18     sp3     0    N5   0   H26   0   H27  
-CONNECT  DB813 C19     sp2     0   C21  
-CONNECT  DB813 C20     sp3     0    N5   0   H28   0   H29  
-CONNECT  DB813 C21     sp2    
-CONNECT  DB813 C22     sp2     0   C24  
-CONNECT  DB813 C23     sp3     0   H30   0   H31   0   H32  
-CONNECT  DB813 C24     sp2    
-CONNECT  DB813 C25     sp2     0   C11  
-CONNECT  DB813 C26     sp2     0   C17  
-CONNECT  DB813  H1      s     
-CONNECT  DB813  H2      s     
-CONNECT  DB813  H3      s     
-CONNECT  DB813  H4      s     
-CONNECT  DB813  H5      s     
-CONNECT  DB813  H6      s     
-CONNECT  DB813  H7      s     
-CONNECT  DB813  H8      s     
-CONNECT  DB813  H9      s     
-CONNECT  DB813 H10      s     
-CONNECT  DB813 H11      s     
-CONNECT  DB813 H12      s     
-CONNECT  DB813 H13      s     
-CONNECT  DB813 H14      s     
-CONNECT  DB813 H15      s     
-CONNECT  DB813 H16      s     
-CONNECT  DB813 H17      s     
-CONNECT  DB813 H18      s     
-CONNECT  DB813 H19      s     
-CONNECT  DB813 H20      s     
-CONNECT  DB813 H21      s     
-CONNECT  DB813 H22      s     
-CONNECT  DB813 H23      s     
-CONNECT  DB813 H24      s     
-CONNECT  DB813 H25      s     
-CONNECT  DB813 H26      s     
-CONNECT  DB813 H27      s     
-CONNECT  DB813 H28      s     
-CONNECT  DB813 H29      s     
-CONNECT  DB813 H30      s     
-CONNECT  DB813 H31      s     
-CONNECT  DB813 H32      s     
+CONNECT  DB813 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB813 C18     sp3     0   C14   0    N5   0   H26   0   H27  
+CONNECT  DB813 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB813 C20     sp3     0   C16   0    N5   0   H28   0   H29  
+CONNECT  DB813 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB813 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB813 C23     sp3     0    O1   0   H30   0   H31   0   H32  
+CONNECT  DB813 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB813 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB813 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB813  H1      s      0    C1  
+CONNECT  DB813  H2      s      0    C1  
+CONNECT  DB813  H3      s      0    C1  
+CONNECT  DB813  H4      s      0    C2  
+CONNECT  DB813  H5      s      0    C2  
+CONNECT  DB813  H6      s      0    C4  
+CONNECT  DB813  H7      s      0    C5  
+CONNECT  DB813  H8      s      0    C6  
+CONNECT  DB813  H9      s      0    C7  
+CONNECT  DB813 H10      s      0    C8  
+CONNECT  DB813 H11      s      0    C9  
+CONNECT  DB813 H12      s      0    C9  
+CONNECT  DB813 H13      s      0    N2  
+CONNECT  DB813 H14      s      0    N3  
+CONNECT  DB813 H15      s      0    N4  
+CONNECT  DB813 H16      s      0    N5  
+CONNECT  DB813 H17      s      0   C10  
+CONNECT  DB813 H18      s      0   C10  
+CONNECT  DB813 H19      s      0   C12  
+CONNECT  DB813 H20      s      0   C12  
+CONNECT  DB813 H21      s      0   C12  
+CONNECT  DB813 H22      s      0   C14  
+CONNECT  DB813 H23      s      0   C14  
+CONNECT  DB813 H24      s      0   C16  
+CONNECT  DB813 H25      s      0   C16  
+CONNECT  DB813 H26      s      0   C18  
+CONNECT  DB813 H27      s      0   C18  
+CONNECT  DB813 H28      s      0   C20  
+CONNECT  DB813 H29      s      0   C20  
+CONNECT  DB813 H30      s      0   C23  
+CONNECT  DB813 H31      s      0   C23  
+CONNECT  DB813 H32      s      0   C23  
 
 #  DB812
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB812  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB812  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB812  C3      sp     0   C26  
+CONNECT  DB812  C3      sp     0    N1   0   C26  
 CONNECT  DB812  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB812  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB812  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB812  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB812  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB812  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB812  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB812  N1      sp     0    C3  
-CONNECT  DB812  N2     sp2     0   C19  
+CONNECT  DB812  N2     sp2     0    C4   0   C19  
 CONNECT  DB812  N3     sp2     0   C11   0   C17   0   H13  
-CONNECT  DB812  N4     sp3     0   H14  
-CONNECT  DB812  N5     sp3     0   H15  
+CONNECT  DB812  N4     sp3     0    C2   0   C14   0   C16   0   H14  
+CONNECT  DB812  N5     sp3     0   C12   0   C18   0   C20   0   H15  
 CONNECT  DB812  O1     sp3     0   C22   0   C23  
-CONNECT  DB812  O2     sp3     0   C13  
-CONNECT  DB812  O3     sp3     0   C15  
-CONNECT  DB812 C10     sp3     0    O3   0   H16   0   H17  
-CONNECT  DB812 C11     sp2    
+CONNECT  DB812  O2     sp3     0    C1   0   C13  
+CONNECT  DB812  O3     sp3     0   C10   0   C15  
+CONNECT  DB812 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB812 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB812 C12     sp3     0    N5   0   H18   0   H19   0   H20  
-CONNECT  DB812 C13     sp2     0   C15  
+CONNECT  DB812 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB812 Cl1      s      0   C24  
 CONNECT  DB812 C14     sp3     0   C18   0    N4   0   H21   0   H22  
-CONNECT  DB812 C15     sp2    
+CONNECT  DB812 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB812 Cl2      s      0   C25  
 CONNECT  DB812 C16     sp3     0   C20   0    N4   0   H23   0   H24  
-CONNECT  DB812 C17     sp2     0   C21  
-CONNECT  DB812 C18     sp3     0    N5   0   H25   0   H26  
-CONNECT  DB812 C19     sp2     0   C21  
-CONNECT  DB812 C20     sp3     0    N5   0   H27   0   H28  
-CONNECT  DB812 C21     sp2    
-CONNECT  DB812 C22     sp2     0   C24  
-CONNECT  DB812 C23     sp3     0   H29   0   H30   0   H31  
-CONNECT  DB812 C24     sp2    
-CONNECT  DB812 C25     sp2     0   C11  
-CONNECT  DB812 C26     sp2     0   C17  
-CONNECT  DB812  H1      s     
-CONNECT  DB812  H2      s     
-CONNECT  DB812  H3      s     
-CONNECT  DB812  H4      s     
-CONNECT  DB812  H5      s     
-CONNECT  DB812  H6      s     
-CONNECT  DB812  H7      s     
-CONNECT  DB812  H8      s     
-CONNECT  DB812  H9      s     
-CONNECT  DB812 H10      s     
-CONNECT  DB812 H11      s     
-CONNECT  DB812 H12      s     
-CONNECT  DB812 H13      s     
-CONNECT  DB812 H14      s     
-CONNECT  DB812 H15      s     
-CONNECT  DB812 H16      s     
-CONNECT  DB812 H17      s     
-CONNECT  DB812 H18      s     
-CONNECT  DB812 H19      s     
-CONNECT  DB812 H20      s     
-CONNECT  DB812 H21      s     
-CONNECT  DB812 H22      s     
-CONNECT  DB812 H23      s     
-CONNECT  DB812 H24      s     
-CONNECT  DB812 H25      s     
-CONNECT  DB812 H26      s     
-CONNECT  DB812 H27      s     
-CONNECT  DB812 H28      s     
-CONNECT  DB812 H29      s     
-CONNECT  DB812 H30      s     
-CONNECT  DB812 H31      s     
+CONNECT  DB812 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB812 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB812 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB812 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB812 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB812 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB812 C23     sp3     0    O1   0   H29   0   H30   0   H31  
+CONNECT  DB812 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB812 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB812 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB812  H1      s      0    C1  
+CONNECT  DB812  H2      s      0    C1  
+CONNECT  DB812  H3      s      0    C1  
+CONNECT  DB812  H4      s      0    C2  
+CONNECT  DB812  H5      s      0    C2  
+CONNECT  DB812  H6      s      0    C4  
+CONNECT  DB812  H7      s      0    C5  
+CONNECT  DB812  H8      s      0    C6  
+CONNECT  DB812  H9      s      0    C7  
+CONNECT  DB812 H10      s      0    C8  
+CONNECT  DB812 H11      s      0    C9  
+CONNECT  DB812 H12      s      0    C9  
+CONNECT  DB812 H13      s      0    N3  
+CONNECT  DB812 H14      s      0    N4  
+CONNECT  DB812 H15      s      0    N5  
+CONNECT  DB812 H16      s      0   C10  
+CONNECT  DB812 H17      s      0   C10  
+CONNECT  DB812 H18      s      0   C12  
+CONNECT  DB812 H19      s      0   C12  
+CONNECT  DB812 H20      s      0   C12  
+CONNECT  DB812 H21      s      0   C14  
+CONNECT  DB812 H22      s      0   C14  
+CONNECT  DB812 H23      s      0   C16  
+CONNECT  DB812 H24      s      0   C16  
+CONNECT  DB812 H25      s      0   C18  
+CONNECT  DB812 H26      s      0   C18  
+CONNECT  DB812 H27      s      0   C20  
+CONNECT  DB812 H28      s      0   C20  
+CONNECT  DB812 H29      s      0   C23  
+CONNECT  DB812 H30      s      0   C23  
+CONNECT  DB812 H31      s      0   C23  
 
 #  DB811
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB811  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB811  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB811  C3      sp     0   C26  
+CONNECT  DB811  C3      sp     0    N1   0   C26  
 CONNECT  DB811  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB811  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB811  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB811  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB811  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB811  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB811  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB811  N1     sp2     0    C3  
-CONNECT  DB811  N2     sp2     0   C19   0   H13  
+CONNECT  DB811  N2     sp2     0    C4   0   C19   0   H13  
 CONNECT  DB811  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB811  N4     sp3    
-CONNECT  DB811  N5     sp3     0   H15  
+CONNECT  DB811  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB811  N5     sp3     0   C12   0   C18   0   C20   0   H15  
 CONNECT  DB811  O1     sp3     0   C22   0   C23  
-CONNECT  DB811  O2     sp3     0   C13  
-CONNECT  DB811  O3     sp3     0   C15  
-CONNECT  DB811 C10     sp3     0    O3   0   H16   0   H17  
-CONNECT  DB811 C11     sp2    
+CONNECT  DB811  O2     sp3     0    C1   0   C13  
+CONNECT  DB811  O3     sp3     0   C10   0   C15  
+CONNECT  DB811 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB811 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB811 C12     sp3     0    N5   0   H18   0   H19   0   H20  
-CONNECT  DB811 C13     sp2     0   C15  
+CONNECT  DB811 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB811 Cl1      s      0   C24  
 CONNECT  DB811 C14     sp3     0   C18   0    N4   0   H21   0   H22  
-CONNECT  DB811 C15     sp2    
+CONNECT  DB811 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB811 Cl2      s      0   C25  
 CONNECT  DB811 C16     sp3     0   C20   0    N4   0   H23   0   H24  
-CONNECT  DB811 C17     sp2     0   C21  
-CONNECT  DB811 C18     sp3     0    N5   0   H25   0   H26  
-CONNECT  DB811 C19     sp2     0   C21  
-CONNECT  DB811 C20     sp3     0    N5   0   H27   0   H28  
-CONNECT  DB811 C21     sp2    
-CONNECT  DB811 C22     sp2     0   C24  
-CONNECT  DB811 C23     sp3     0   H29   0   H30   0   H31  
-CONNECT  DB811 C24     sp2    
-CONNECT  DB811 C25     sp2     0   C11  
-CONNECT  DB811 C26     sp2     0   C17  
-CONNECT  DB811  H1      s     
-CONNECT  DB811  H2      s     
-CONNECT  DB811  H3      s     
-CONNECT  DB811  H4      s     
-CONNECT  DB811  H5      s     
-CONNECT  DB811  H6      s     
-CONNECT  DB811  H7      s     
-CONNECT  DB811  H8      s     
-CONNECT  DB811  H9      s     
-CONNECT  DB811 H10      s     
-CONNECT  DB811 H11      s     
-CONNECT  DB811 H12      s     
-CONNECT  DB811 H13      s     
-CONNECT  DB811 H14      s     
-CONNECT  DB811 H15      s     
-CONNECT  DB811 H16      s     
-CONNECT  DB811 H17      s     
-CONNECT  DB811 H18      s     
-CONNECT  DB811 H19      s     
-CONNECT  DB811 H20      s     
-CONNECT  DB811 H21      s     
-CONNECT  DB811 H22      s     
-CONNECT  DB811 H23      s     
-CONNECT  DB811 H24      s     
-CONNECT  DB811 H25      s     
-CONNECT  DB811 H26      s     
-CONNECT  DB811 H27      s     
-CONNECT  DB811 H28      s     
-CONNECT  DB811 H29      s     
-CONNECT  DB811 H30      s     
-CONNECT  DB811 H31      s     
+CONNECT  DB811 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB811 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB811 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB811 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB811 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB811 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB811 C23     sp3     0    O1   0   H29   0   H30   0   H31  
+CONNECT  DB811 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB811 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB811 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB811  H1      s      0    C1  
+CONNECT  DB811  H2      s      0    C1  
+CONNECT  DB811  H3      s      0    C1  
+CONNECT  DB811  H4      s      0    C2  
+CONNECT  DB811  H5      s      0    C2  
+CONNECT  DB811  H6      s      0    C4  
+CONNECT  DB811  H7      s      0    C5  
+CONNECT  DB811  H8      s      0    C6  
+CONNECT  DB811  H9      s      0    C7  
+CONNECT  DB811 H10      s      0    C8  
+CONNECT  DB811 H11      s      0    C9  
+CONNECT  DB811 H12      s      0    C9  
+CONNECT  DB811 H13      s      0    N2  
+CONNECT  DB811 H14      s      0    N3  
+CONNECT  DB811 H15      s      0    N5  
+CONNECT  DB811 H16      s      0   C10  
+CONNECT  DB811 H17      s      0   C10  
+CONNECT  DB811 H18      s      0   C12  
+CONNECT  DB811 H19      s      0   C12  
+CONNECT  DB811 H20      s      0   C12  
+CONNECT  DB811 H21      s      0   C14  
+CONNECT  DB811 H22      s      0   C14  
+CONNECT  DB811 H23      s      0   C16  
+CONNECT  DB811 H24      s      0   C16  
+CONNECT  DB811 H25      s      0   C18  
+CONNECT  DB811 H26      s      0   C18  
+CONNECT  DB811 H27      s      0   C20  
+CONNECT  DB811 H28      s      0   C20  
+CONNECT  DB811 H29      s      0   C23  
+CONNECT  DB811 H30      s      0   C23  
+CONNECT  DB811 H31      s      0   C23  
 
 #  DB810
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB810  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB810  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB810  C3      sp     0   C26  
+CONNECT  DB810  C3      sp     0    N1   0   C26  
 CONNECT  DB810  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB810  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB810  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB810  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB810  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB810  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB810  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB810  N1      sp     0    C3  
-CONNECT  DB810  N2     sp2     0   C19   0   H13  
+CONNECT  DB810  N2     sp2     0    C4   0   C19   0   H13  
 CONNECT  DB810  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB810  N4     sp3    
-CONNECT  DB810  N5     sp3     0   H15  
+CONNECT  DB810  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB810  N5     sp3     0   C12   0   C18   0   C20   0   H15  
 CONNECT  DB810  O1     sp3     0   C22   0   C23  
-CONNECT  DB810  O2     sp3     0   C13  
-CONNECT  DB810  O3     sp3     0   C15  
-CONNECT  DB810 C10     sp3     0    O3   0   H16   0   H17  
-CONNECT  DB810 C11     sp2    
+CONNECT  DB810  O2     sp3     0    C1   0   C13  
+CONNECT  DB810  O3     sp3     0   C10   0   C15  
+CONNECT  DB810 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB810 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB810 C12     sp3     0    N5   0   H18   0   H19   0   H20  
-CONNECT  DB810 C13     sp2     0   C15  
+CONNECT  DB810 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB810 Cl1      s      0   C24  
 CONNECT  DB810 C14     sp3     0   C18   0    N4   0   H21   0   H22  
-CONNECT  DB810 C15     sp2    
+CONNECT  DB810 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB810 Cl2      s      0   C25  
 CONNECT  DB810 C16     sp3     0   C20   0    N4   0   H23   0   H24  
-CONNECT  DB810 C17     sp2     0   C21  
-CONNECT  DB810 C18     sp3     0    N5   0   H25   0   H26  
-CONNECT  DB810 C19     sp2     0   C21  
-CONNECT  DB810 C20     sp3     0    N5   0   H27   0   H28  
-CONNECT  DB810 C21     sp2    
-CONNECT  DB810 C22     sp2     0   C24  
-CONNECT  DB810 C23     sp3     0   H29   0   H30   0   H31  
-CONNECT  DB810 C24     sp2    
-CONNECT  DB810 C25     sp2     0   C11  
-CONNECT  DB810 C26     sp2     0   C17  
-CONNECT  DB810  H1      s     
-CONNECT  DB810  H2      s     
-CONNECT  DB810  H3      s     
-CONNECT  DB810  H4      s     
-CONNECT  DB810  H5      s     
-CONNECT  DB810  H6      s     
-CONNECT  DB810  H7      s     
-CONNECT  DB810  H8      s     
-CONNECT  DB810  H9      s     
-CONNECT  DB810 H10      s     
-CONNECT  DB810 H11      s     
-CONNECT  DB810 H12      s     
-CONNECT  DB810 H13      s     
-CONNECT  DB810 H14      s     
-CONNECT  DB810 H15      s     
-CONNECT  DB810 H16      s     
-CONNECT  DB810 H17      s     
-CONNECT  DB810 H18      s     
-CONNECT  DB810 H19      s     
-CONNECT  DB810 H20      s     
-CONNECT  DB810 H21      s     
-CONNECT  DB810 H22      s     
-CONNECT  DB810 H23      s     
-CONNECT  DB810 H24      s     
-CONNECT  DB810 H25      s     
-CONNECT  DB810 H26      s     
-CONNECT  DB810 H27      s     
-CONNECT  DB810 H28      s     
-CONNECT  DB810 H29      s     
-CONNECT  DB810 H30      s     
-CONNECT  DB810 H31      s     
+CONNECT  DB810 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB810 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB810 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB810 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB810 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB810 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB810 C23     sp3     0    O1   0   H29   0   H30   0   H31  
+CONNECT  DB810 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB810 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB810 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB810  H1      s      0    C1  
+CONNECT  DB810  H2      s      0    C1  
+CONNECT  DB810  H3      s      0    C1  
+CONNECT  DB810  H4      s      0    C2  
+CONNECT  DB810  H5      s      0    C2  
+CONNECT  DB810  H6      s      0    C4  
+CONNECT  DB810  H7      s      0    C5  
+CONNECT  DB810  H8      s      0    C6  
+CONNECT  DB810  H9      s      0    C7  
+CONNECT  DB810 H10      s      0    C8  
+CONNECT  DB810 H11      s      0    C9  
+CONNECT  DB810 H12      s      0    C9  
+CONNECT  DB810 H13      s      0    N2  
+CONNECT  DB810 H14      s      0    N3  
+CONNECT  DB810 H15      s      0    N5  
+CONNECT  DB810 H16      s      0   C10  
+CONNECT  DB810 H17      s      0   C10  
+CONNECT  DB810 H18      s      0   C12  
+CONNECT  DB810 H19      s      0   C12  
+CONNECT  DB810 H20      s      0   C12  
+CONNECT  DB810 H21      s      0   C14  
+CONNECT  DB810 H22      s      0   C14  
+CONNECT  DB810 H23      s      0   C16  
+CONNECT  DB810 H24      s      0   C16  
+CONNECT  DB810 H25      s      0   C18  
+CONNECT  DB810 H26      s      0   C18  
+CONNECT  DB810 H27      s      0   C20  
+CONNECT  DB810 H28      s      0   C20  
+CONNECT  DB810 H29      s      0   C23  
+CONNECT  DB810 H30      s      0   C23  
+CONNECT  DB810 H31      s      0   C23  
 
 #  DB809
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB809  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB809  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB809  C3      sp     0   C26  
+CONNECT  DB809  C3      sp     0    N1   0   C26  
 CONNECT  DB809  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB809  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB809  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB809  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB809  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB809  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB809  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB809  N1      sp     0    C3  
-CONNECT  DB809  N2     sp2     0   C19   0   H13  
+CONNECT  DB809  N2     sp2     0    C4   0   C19   0   H13  
 CONNECT  DB809  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB809  N4     sp3    
-CONNECT  DB809  N5     sp3     0   H15  
+CONNECT  DB809  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB809  N5     sp3     0   C12   0   C18   0   C20   0   H15  
 CONNECT  DB809  O1     sp3     0   C22   0   C23  
-CONNECT  DB809  O2     sp3     0   C13  
-CONNECT  DB809  O3     sp3     0   C15  
-CONNECT  DB809 C10     sp3     0    O3   0   H16   0   H17  
-CONNECT  DB809 C11     sp2    
+CONNECT  DB809  O2     sp3     0    C1   0   C13  
+CONNECT  DB809  O3     sp3     0   C10   0   C15  
+CONNECT  DB809 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB809 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB809 C12     sp3     0    N5   0   H18   0   H19   0   H20  
-CONNECT  DB809 C13     sp2     0   C15  
+CONNECT  DB809 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB809 Cl1      s      0   C24  
 CONNECT  DB809 C14     sp3     0   C18   0    N4   0   H21   0   H22  
-CONNECT  DB809 C15     sp2    
+CONNECT  DB809 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB809 Cl2      s      0   C25  
 CONNECT  DB809 C16     sp3     0   C20   0    N4   0   H23   0   H24  
-CONNECT  DB809 C17     sp2     0   C21  
-CONNECT  DB809 C18     sp3     0    N5   0   H25   0   H26  
-CONNECT  DB809 C19     sp2     0   C21  
-CONNECT  DB809 C20     sp3     0    N5   0   H27   0   H28  
-CONNECT  DB809 C21     sp2    
-CONNECT  DB809 C22     sp2     0   C24  
-CONNECT  DB809 C23     sp3     0   H29   0   H30   0   H31  
-CONNECT  DB809 C24     sp2    
-CONNECT  DB809 C25     sp2     0   C11  
-CONNECT  DB809 C26     sp2     0   C17  
-CONNECT  DB809  H1      s     
-CONNECT  DB809  H2      s     
-CONNECT  DB809  H3      s     
-CONNECT  DB809  H4      s     
-CONNECT  DB809  H5      s     
-CONNECT  DB809  H6      s     
-CONNECT  DB809  H7      s     
-CONNECT  DB809  H8      s     
-CONNECT  DB809  H9      s     
-CONNECT  DB809 H10      s     
-CONNECT  DB809 H11      s     
-CONNECT  DB809 H12      s     
-CONNECT  DB809 H13      s     
-CONNECT  DB809 H14      s     
-CONNECT  DB809 H15      s     
-CONNECT  DB809 H16      s     
-CONNECT  DB809 H17      s     
-CONNECT  DB809 H18      s     
-CONNECT  DB809 H19      s     
-CONNECT  DB809 H20      s     
-CONNECT  DB809 H21      s     
-CONNECT  DB809 H22      s     
-CONNECT  DB809 H23      s     
-CONNECT  DB809 H24      s     
-CONNECT  DB809 H25      s     
-CONNECT  DB809 H26      s     
-CONNECT  DB809 H27      s     
-CONNECT  DB809 H28      s     
-CONNECT  DB809 H29      s     
-CONNECT  DB809 H30      s     
-CONNECT  DB809 H31      s     
+CONNECT  DB809 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB809 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB809 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB809 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB809 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB809 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB809 C23     sp3     0    O1   0   H29   0   H30   0   H31  
+CONNECT  DB809 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB809 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB809 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB809  H1      s      0    C1  
+CONNECT  DB809  H2      s      0    C1  
+CONNECT  DB809  H3      s      0    C1  
+CONNECT  DB809  H4      s      0    C2  
+CONNECT  DB809  H5      s      0    C2  
+CONNECT  DB809  H6      s      0    C4  
+CONNECT  DB809  H7      s      0    C5  
+CONNECT  DB809  H8      s      0    C6  
+CONNECT  DB809  H9      s      0    C7  
+CONNECT  DB809 H10      s      0    C8  
+CONNECT  DB809 H11      s      0    C9  
+CONNECT  DB809 H12      s      0    C9  
+CONNECT  DB809 H13      s      0    N2  
+CONNECT  DB809 H14      s      0    N3  
+CONNECT  DB809 H15      s      0    N5  
+CONNECT  DB809 H16      s      0   C10  
+CONNECT  DB809 H17      s      0   C10  
+CONNECT  DB809 H18      s      0   C12  
+CONNECT  DB809 H19      s      0   C12  
+CONNECT  DB809 H20      s      0   C12  
+CONNECT  DB809 H21      s      0   C14  
+CONNECT  DB809 H22      s      0   C14  
+CONNECT  DB809 H23      s      0   C16  
+CONNECT  DB809 H24      s      0   C16  
+CONNECT  DB809 H25      s      0   C18  
+CONNECT  DB809 H26      s      0   C18  
+CONNECT  DB809 H27      s      0   C20  
+CONNECT  DB809 H28      s      0   C20  
+CONNECT  DB809 H29      s      0   C23  
+CONNECT  DB809 H30      s      0   C23  
+CONNECT  DB809 H31      s      0   C23  
 
 #  DB808
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB808  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB808  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB808  C3      sp     0   C26  
+CONNECT  DB808  C3      sp     0    N1   0   C26  
 CONNECT  DB808  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB808  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB808  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB808  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB808  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB808  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB808  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB808  N1      sp     0    C3  
-CONNECT  DB808  N2     sp2     0   C19  
+CONNECT  DB808  N2     sp2     0    C4   0   C19  
 CONNECT  DB808  N3     sp2     0   C11   0   C17   0   H13  
-CONNECT  DB808  N4     sp3    
-CONNECT  DB808  N5     sp3     0   H14  
+CONNECT  DB808  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB808  N5     sp3     0   C12   0   C18   0   C20   0   H14  
 CONNECT  DB808  O1     sp3     0   C22   0   C23  
-CONNECT  DB808  O2     sp3     0   C13  
-CONNECT  DB808  O3     sp3     0   C15  
-CONNECT  DB808 C10     sp3     0    O3   0   H15   0   H16  
-CONNECT  DB808 C11     sp2    
+CONNECT  DB808  O2     sp3     0    C1   0   C13  
+CONNECT  DB808  O3     sp3     0   C10   0   C15  
+CONNECT  DB808 C10     sp3     0    C9   0    O3   0   H15   0   H16  
+CONNECT  DB808 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB808 C12     sp3     0    N5   0   H17   0   H18   0   H19  
-CONNECT  DB808 C13     sp2     0   C15  
+CONNECT  DB808 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB808 Cl1      s      0   C24  
 CONNECT  DB808 C14     sp3     0   C18   0    N4   0   H20   0   H21  
-CONNECT  DB808 C15     sp2    
+CONNECT  DB808 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB808 Cl2      s      0   C25  
 CONNECT  DB808 C16     sp3     0   C20   0    N4   0   H22   0   H23  
-CONNECT  DB808 C17     sp2     0   C21  
-CONNECT  DB808 C18     sp3     0    N5   0   H24   0   H25  
-CONNECT  DB808 C19     sp2     0   C21  
-CONNECT  DB808 C20     sp3     0    N5   0   H26   0   H27  
-CONNECT  DB808 C21     sp2    
-CONNECT  DB808 C22     sp2     0   C24  
-CONNECT  DB808 C23     sp3     0   H28   0   H29   0   H30  
-CONNECT  DB808 C24     sp2    
-CONNECT  DB808 C25     sp2     0   C11  
-CONNECT  DB808 C26     sp2     0   C17  
-CONNECT  DB808  H1      s     
-CONNECT  DB808  H2      s     
-CONNECT  DB808  H3      s     
-CONNECT  DB808  H4      s     
-CONNECT  DB808  H5      s     
-CONNECT  DB808  H6      s     
-CONNECT  DB808  H7      s     
-CONNECT  DB808  H8      s     
-CONNECT  DB808  H9      s     
-CONNECT  DB808 H10      s     
-CONNECT  DB808 H11      s     
-CONNECT  DB808 H12      s     
-CONNECT  DB808 H13      s     
-CONNECT  DB808 H14      s     
-CONNECT  DB808 H15      s     
-CONNECT  DB808 H16      s     
-CONNECT  DB808 H17      s     
-CONNECT  DB808 H18      s     
-CONNECT  DB808 H19      s     
-CONNECT  DB808 H20      s     
-CONNECT  DB808 H21      s     
-CONNECT  DB808 H22      s     
-CONNECT  DB808 H23      s     
-CONNECT  DB808 H24      s     
-CONNECT  DB808 H25      s     
-CONNECT  DB808 H26      s     
-CONNECT  DB808 H27      s     
-CONNECT  DB808 H28      s     
-CONNECT  DB808 H29      s     
-CONNECT  DB808 H30      s     
+CONNECT  DB808 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB808 C18     sp3     0   C14   0    N5   0   H24   0   H25  
+CONNECT  DB808 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB808 C20     sp3     0   C16   0    N5   0   H26   0   H27  
+CONNECT  DB808 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB808 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB808 C23     sp3     0    O1   0   H28   0   H29   0   H30  
+CONNECT  DB808 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB808 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB808 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB808  H1      s      0    C1  
+CONNECT  DB808  H2      s      0    C1  
+CONNECT  DB808  H3      s      0    C1  
+CONNECT  DB808  H4      s      0    C2  
+CONNECT  DB808  H5      s      0    C2  
+CONNECT  DB808  H6      s      0    C4  
+CONNECT  DB808  H7      s      0    C5  
+CONNECT  DB808  H8      s      0    C6  
+CONNECT  DB808  H9      s      0    C7  
+CONNECT  DB808 H10      s      0    C8  
+CONNECT  DB808 H11      s      0    C9  
+CONNECT  DB808 H12      s      0    C9  
+CONNECT  DB808 H13      s      0    N3  
+CONNECT  DB808 H14      s      0    N5  
+CONNECT  DB808 H15      s      0   C10  
+CONNECT  DB808 H16      s      0   C10  
+CONNECT  DB808 H17      s      0   C12  
+CONNECT  DB808 H18      s      0   C12  
+CONNECT  DB808 H19      s      0   C12  
+CONNECT  DB808 H20      s      0   C14  
+CONNECT  DB808 H21      s      0   C14  
+CONNECT  DB808 H22      s      0   C16  
+CONNECT  DB808 H23      s      0   C16  
+CONNECT  DB808 H24      s      0   C18  
+CONNECT  DB808 H25      s      0   C18  
+CONNECT  DB808 H26      s      0   C20  
+CONNECT  DB808 H27      s      0   C20  
+CONNECT  DB808 H28      s      0   C23  
+CONNECT  DB808 H29      s      0   C23  
+CONNECT  DB808 H30      s      0   C23  
 
 #  DB807
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB807  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB807  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB807  C3      sp     0   C26  
+CONNECT  DB807  C3      sp     0    N1   0   C26  
 CONNECT  DB807  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB807  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB807  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB807  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB807  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB807  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB807  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB807  N1     sp2     0    C3  
-CONNECT  DB807  N2     sp2     0   C19   0   H13  
+CONNECT  DB807  N2     sp2     0    C4   0   C19   0   H13  
 CONNECT  DB807  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB807  N4     sp3     0   H15  
-CONNECT  DB807  N5     sp3    
+CONNECT  DB807  N4     sp3     0    C2   0   C14   0   C16   0   H15  
+CONNECT  DB807  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB807  O1     sp3     0   C22   0   C23  
-CONNECT  DB807  O2     sp3     0   C13  
-CONNECT  DB807  O3     sp3     0   C15  
-CONNECT  DB807 C10     sp3     0    O3   0   H16   0   H17  
-CONNECT  DB807 C11     sp2    
+CONNECT  DB807  O2     sp3     0    C1   0   C13  
+CONNECT  DB807  O3     sp3     0   C10   0   C15  
+CONNECT  DB807 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB807 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB807 C12     sp3     0    N5   0   H18   0   H19   0   H20  
-CONNECT  DB807 C13     sp2     0   C15  
+CONNECT  DB807 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB807 Cl1      s      0   C24  
 CONNECT  DB807 C14     sp3     0   C18   0    N4   0   H21   0   H22  
-CONNECT  DB807 C15     sp2    
+CONNECT  DB807 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB807 Cl2      s      0   C25  
 CONNECT  DB807 C16     sp3     0   C20   0    N4   0   H23   0   H24  
-CONNECT  DB807 C17     sp2     0   C21  
-CONNECT  DB807 C18     sp3     0    N5   0   H25   0   H26  
-CONNECT  DB807 C19     sp2     0   C21  
-CONNECT  DB807 C20     sp3     0    N5   0   H27   0   H28  
-CONNECT  DB807 C21     sp2    
-CONNECT  DB807 C22     sp2     0   C24  
-CONNECT  DB807 C23     sp3     0   H29   0   H30   0   H31  
-CONNECT  DB807 C24     sp2    
-CONNECT  DB807 C25     sp2     0   C11  
-CONNECT  DB807 C26     sp2     0   C17  
-CONNECT  DB807  H1      s     
-CONNECT  DB807  H2      s     
-CONNECT  DB807  H3      s     
-CONNECT  DB807  H4      s     
-CONNECT  DB807  H5      s     
-CONNECT  DB807  H6      s     
-CONNECT  DB807  H7      s     
-CONNECT  DB807  H8      s     
-CONNECT  DB807  H9      s     
-CONNECT  DB807 H10      s     
-CONNECT  DB807 H11      s     
-CONNECT  DB807 H12      s     
-CONNECT  DB807 H13      s     
-CONNECT  DB807 H14      s     
-CONNECT  DB807 H15      s     
-CONNECT  DB807 H16      s     
-CONNECT  DB807 H17      s     
-CONNECT  DB807 H18      s     
-CONNECT  DB807 H19      s     
-CONNECT  DB807 H20      s     
-CONNECT  DB807 H21      s     
-CONNECT  DB807 H22      s     
-CONNECT  DB807 H23      s     
-CONNECT  DB807 H24      s     
-CONNECT  DB807 H25      s     
-CONNECT  DB807 H26      s     
-CONNECT  DB807 H27      s     
-CONNECT  DB807 H28      s     
-CONNECT  DB807 H29      s     
-CONNECT  DB807 H30      s     
-CONNECT  DB807 H31      s     
+CONNECT  DB807 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB807 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB807 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB807 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB807 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB807 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB807 C23     sp3     0    O1   0   H29   0   H30   0   H31  
+CONNECT  DB807 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB807 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB807 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB807  H1      s      0    C1  
+CONNECT  DB807  H2      s      0    C1  
+CONNECT  DB807  H3      s      0    C1  
+CONNECT  DB807  H4      s      0    C2  
+CONNECT  DB807  H5      s      0    C2  
+CONNECT  DB807  H6      s      0    C4  
+CONNECT  DB807  H7      s      0    C5  
+CONNECT  DB807  H8      s      0    C6  
+CONNECT  DB807  H9      s      0    C7  
+CONNECT  DB807 H10      s      0    C8  
+CONNECT  DB807 H11      s      0    C9  
+CONNECT  DB807 H12      s      0    C9  
+CONNECT  DB807 H13      s      0    N2  
+CONNECT  DB807 H14      s      0    N3  
+CONNECT  DB807 H15      s      0    N4  
+CONNECT  DB807 H16      s      0   C10  
+CONNECT  DB807 H17      s      0   C10  
+CONNECT  DB807 H18      s      0   C12  
+CONNECT  DB807 H19      s      0   C12  
+CONNECT  DB807 H20      s      0   C12  
+CONNECT  DB807 H21      s      0   C14  
+CONNECT  DB807 H22      s      0   C14  
+CONNECT  DB807 H23      s      0   C16  
+CONNECT  DB807 H24      s      0   C16  
+CONNECT  DB807 H25      s      0   C18  
+CONNECT  DB807 H26      s      0   C18  
+CONNECT  DB807 H27      s      0   C20  
+CONNECT  DB807 H28      s      0   C20  
+CONNECT  DB807 H29      s      0   C23  
+CONNECT  DB807 H30      s      0   C23  
+CONNECT  DB807 H31      s      0   C23  
 
 #  DB806
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB806  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB806  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB806  C3      sp     0   C26  
+CONNECT  DB806  C3      sp     0    N1   0   C26  
 CONNECT  DB806  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB806  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB806  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB806  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB806  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB806  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB806  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB806  N1      sp     0    C3  
-CONNECT  DB806  N2     sp2     0   C19   0   H13  
+CONNECT  DB806  N2     sp2     0    C4   0   C19   0   H13  
 CONNECT  DB806  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB806  N4     sp3     0   H15  
-CONNECT  DB806  N5     sp3    
+CONNECT  DB806  N4     sp3     0    C2   0   C14   0   C16   0   H15  
+CONNECT  DB806  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB806  O1     sp3     0   C22   0   C23  
-CONNECT  DB806  O2     sp3     0   C13  
-CONNECT  DB806  O3     sp3     0   C15  
-CONNECT  DB806 C10     sp3     0    O3   0   H16   0   H17  
-CONNECT  DB806 C11     sp2    
+CONNECT  DB806  O2     sp3     0    C1   0   C13  
+CONNECT  DB806  O3     sp3     0   C10   0   C15  
+CONNECT  DB806 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB806 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB806 C12     sp3     0    N5   0   H18   0   H19   0   H20  
-CONNECT  DB806 C13     sp2     0   C15  
+CONNECT  DB806 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB806 Cl1      s      0   C24  
 CONNECT  DB806 C14     sp3     0   C18   0    N4   0   H21   0   H22  
-CONNECT  DB806 C15     sp2    
+CONNECT  DB806 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB806 Cl2      s      0   C25  
 CONNECT  DB806 C16     sp3     0   C20   0    N4   0   H23   0   H24  
-CONNECT  DB806 C17     sp2     0   C21  
-CONNECT  DB806 C18     sp3     0    N5   0   H25   0   H26  
-CONNECT  DB806 C19     sp2     0   C21  
-CONNECT  DB806 C20     sp3     0    N5   0   H27   0   H28  
-CONNECT  DB806 C21     sp2    
-CONNECT  DB806 C22     sp2     0   C24  
-CONNECT  DB806 C23     sp3     0   H29   0   H30   0   H31  
-CONNECT  DB806 C24     sp2    
-CONNECT  DB806 C25     sp2     0   C11  
-CONNECT  DB806 C26     sp2     0   C17  
-CONNECT  DB806  H1      s     
-CONNECT  DB806  H2      s     
-CONNECT  DB806  H3      s     
-CONNECT  DB806  H4      s     
-CONNECT  DB806  H5      s     
-CONNECT  DB806  H6      s     
-CONNECT  DB806  H7      s     
-CONNECT  DB806  H8      s     
-CONNECT  DB806  H9      s     
-CONNECT  DB806 H10      s     
-CONNECT  DB806 H11      s     
-CONNECT  DB806 H12      s     
-CONNECT  DB806 H13      s     
-CONNECT  DB806 H14      s     
-CONNECT  DB806 H15      s     
-CONNECT  DB806 H16      s     
-CONNECT  DB806 H17      s     
-CONNECT  DB806 H18      s     
-CONNECT  DB806 H19      s     
-CONNECT  DB806 H20      s     
-CONNECT  DB806 H21      s     
-CONNECT  DB806 H22      s     
-CONNECT  DB806 H23      s     
-CONNECT  DB806 H24      s     
-CONNECT  DB806 H25      s     
-CONNECT  DB806 H26      s     
-CONNECT  DB806 H27      s     
-CONNECT  DB806 H28      s     
-CONNECT  DB806 H29      s     
-CONNECT  DB806 H30      s     
-CONNECT  DB806 H31      s     
+CONNECT  DB806 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB806 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB806 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB806 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB806 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB806 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB806 C23     sp3     0    O1   0   H29   0   H30   0   H31  
+CONNECT  DB806 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB806 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB806 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB806  H1      s      0    C1  
+CONNECT  DB806  H2      s      0    C1  
+CONNECT  DB806  H3      s      0    C1  
+CONNECT  DB806  H4      s      0    C2  
+CONNECT  DB806  H5      s      0    C2  
+CONNECT  DB806  H6      s      0    C4  
+CONNECT  DB806  H7      s      0    C5  
+CONNECT  DB806  H8      s      0    C6  
+CONNECT  DB806  H9      s      0    C7  
+CONNECT  DB806 H10      s      0    C8  
+CONNECT  DB806 H11      s      0    C9  
+CONNECT  DB806 H12      s      0    C9  
+CONNECT  DB806 H13      s      0    N2  
+CONNECT  DB806 H14      s      0    N3  
+CONNECT  DB806 H15      s      0    N4  
+CONNECT  DB806 H16      s      0   C10  
+CONNECT  DB806 H17      s      0   C10  
+CONNECT  DB806 H18      s      0   C12  
+CONNECT  DB806 H19      s      0   C12  
+CONNECT  DB806 H20      s      0   C12  
+CONNECT  DB806 H21      s      0   C14  
+CONNECT  DB806 H22      s      0   C14  
+CONNECT  DB806 H23      s      0   C16  
+CONNECT  DB806 H24      s      0   C16  
+CONNECT  DB806 H25      s      0   C18  
+CONNECT  DB806 H26      s      0   C18  
+CONNECT  DB806 H27      s      0   C20  
+CONNECT  DB806 H28      s      0   C20  
+CONNECT  DB806 H29      s      0   C23  
+CONNECT  DB806 H30      s      0   C23  
+CONNECT  DB806 H31      s      0   C23  
 
 #  DB805
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB805  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB805  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB805  C3      sp     0   C26  
+CONNECT  DB805  C3      sp     0    N1   0   C26  
 CONNECT  DB805  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB805  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB805  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB805  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB805  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB805  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB805  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB805  N1      sp     0    C3  
-CONNECT  DB805  N2     sp2     0   C19   0   H13  
+CONNECT  DB805  N2     sp2     0    C4   0   C19   0   H13  
 CONNECT  DB805  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB805  N4     sp3     0   H15  
-CONNECT  DB805  N5     sp3    
+CONNECT  DB805  N4     sp3     0    C2   0   C14   0   C16   0   H15  
+CONNECT  DB805  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB805  O1     sp3     0   C22   0   C23  
-CONNECT  DB805  O2     sp3     0   C13  
-CONNECT  DB805  O3     sp3     0   C15  
-CONNECT  DB805 C10     sp3     0    O3   0   H16   0   H17  
-CONNECT  DB805 C11     sp2    
+CONNECT  DB805  O2     sp3     0    C1   0   C13  
+CONNECT  DB805  O3     sp3     0   C10   0   C15  
+CONNECT  DB805 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB805 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB805 C12     sp3     0    N5   0   H18   0   H19   0   H20  
-CONNECT  DB805 C13     sp2     0   C15  
+CONNECT  DB805 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB805 Cl1      s      0   C24  
 CONNECT  DB805 C14     sp3     0   C18   0    N4   0   H21   0   H22  
-CONNECT  DB805 C15     sp2    
+CONNECT  DB805 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB805 Cl2      s      0   C25  
 CONNECT  DB805 C16     sp3     0   C20   0    N4   0   H23   0   H24  
-CONNECT  DB805 C17     sp2     0   C21  
-CONNECT  DB805 C18     sp3     0    N5   0   H25   0   H26  
-CONNECT  DB805 C19     sp2     0   C21  
-CONNECT  DB805 C20     sp3     0    N5   0   H27   0   H28  
-CONNECT  DB805 C21     sp2    
-CONNECT  DB805 C22     sp2     0   C24  
-CONNECT  DB805 C23     sp3     0   H29   0   H30   0   H31  
-CONNECT  DB805 C24     sp2    
-CONNECT  DB805 C25     sp2     0   C11  
-CONNECT  DB805 C26     sp2     0   C17  
-CONNECT  DB805  H1      s     
-CONNECT  DB805  H2      s     
-CONNECT  DB805  H3      s     
-CONNECT  DB805  H4      s     
-CONNECT  DB805  H5      s     
-CONNECT  DB805  H6      s     
-CONNECT  DB805  H7      s     
-CONNECT  DB805  H8      s     
-CONNECT  DB805  H9      s     
-CONNECT  DB805 H10      s     
-CONNECT  DB805 H11      s     
-CONNECT  DB805 H12      s     
-CONNECT  DB805 H13      s     
-CONNECT  DB805 H14      s     
-CONNECT  DB805 H15      s     
-CONNECT  DB805 H16      s     
-CONNECT  DB805 H17      s     
-CONNECT  DB805 H18      s     
-CONNECT  DB805 H19      s     
-CONNECT  DB805 H20      s     
-CONNECT  DB805 H21      s     
-CONNECT  DB805 H22      s     
-CONNECT  DB805 H23      s     
-CONNECT  DB805 H24      s     
-CONNECT  DB805 H25      s     
-CONNECT  DB805 H26      s     
-CONNECT  DB805 H27      s     
-CONNECT  DB805 H28      s     
-CONNECT  DB805 H29      s     
-CONNECT  DB805 H30      s     
-CONNECT  DB805 H31      s     
+CONNECT  DB805 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB805 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB805 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB805 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB805 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB805 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB805 C23     sp3     0    O1   0   H29   0   H30   0   H31  
+CONNECT  DB805 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB805 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB805 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB805  H1      s      0    C1  
+CONNECT  DB805  H2      s      0    C1  
+CONNECT  DB805  H3      s      0    C1  
+CONNECT  DB805  H4      s      0    C2  
+CONNECT  DB805  H5      s      0    C2  
+CONNECT  DB805  H6      s      0    C4  
+CONNECT  DB805  H7      s      0    C5  
+CONNECT  DB805  H8      s      0    C6  
+CONNECT  DB805  H9      s      0    C7  
+CONNECT  DB805 H10      s      0    C8  
+CONNECT  DB805 H11      s      0    C9  
+CONNECT  DB805 H12      s      0    C9  
+CONNECT  DB805 H13      s      0    N2  
+CONNECT  DB805 H14      s      0    N3  
+CONNECT  DB805 H15      s      0    N4  
+CONNECT  DB805 H16      s      0   C10  
+CONNECT  DB805 H17      s      0   C10  
+CONNECT  DB805 H18      s      0   C12  
+CONNECT  DB805 H19      s      0   C12  
+CONNECT  DB805 H20      s      0   C12  
+CONNECT  DB805 H21      s      0   C14  
+CONNECT  DB805 H22      s      0   C14  
+CONNECT  DB805 H23      s      0   C16  
+CONNECT  DB805 H24      s      0   C16  
+CONNECT  DB805 H25      s      0   C18  
+CONNECT  DB805 H26      s      0   C18  
+CONNECT  DB805 H27      s      0   C20  
+CONNECT  DB805 H28      s      0   C20  
+CONNECT  DB805 H29      s      0   C23  
+CONNECT  DB805 H30      s      0   C23  
+CONNECT  DB805 H31      s      0   C23  
 
 #  DB804
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB804  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB804  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB804  C3      sp     0   C26  
+CONNECT  DB804  C3      sp     0    N1   0   C26  
 CONNECT  DB804  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB804  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB804  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB804  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB804  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB804  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB804  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB804  N1      sp     0    C3  
-CONNECT  DB804  N2     sp2     0   C19  
+CONNECT  DB804  N2     sp2     0    C4   0   C19  
 CONNECT  DB804  N3     sp2     0   C11   0   C17   0   H13  
-CONNECT  DB804  N4     sp3     0   H14  
-CONNECT  DB804  N5     sp3    
+CONNECT  DB804  N4     sp3     0    C2   0   C14   0   C16   0   H14  
+CONNECT  DB804  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB804  O1     sp3     0   C22   0   C23  
-CONNECT  DB804  O2     sp3     0   C13  
-CONNECT  DB804  O3     sp3     0   C15  
-CONNECT  DB804 C10     sp3     0    O3   0   H15   0   H16  
-CONNECT  DB804 C11     sp2    
+CONNECT  DB804  O2     sp3     0    C1   0   C13  
+CONNECT  DB804  O3     sp3     0   C10   0   C15  
+CONNECT  DB804 C10     sp3     0    C9   0    O3   0   H15   0   H16  
+CONNECT  DB804 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB804 C12     sp3     0    N5   0   H17   0   H18   0   H19  
-CONNECT  DB804 C13     sp2     0   C15  
+CONNECT  DB804 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB804 Cl1      s      0   C24  
 CONNECT  DB804 C14     sp3     0   C18   0    N4   0   H20   0   H21  
-CONNECT  DB804 C15     sp2    
+CONNECT  DB804 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB804 Cl2      s      0   C25  
 CONNECT  DB804 C16     sp3     0   C20   0    N4   0   H22   0   H23  
-CONNECT  DB804 C17     sp2     0   C21  
-CONNECT  DB804 C18     sp3     0    N5   0   H24   0   H25  
-CONNECT  DB804 C19     sp2     0   C21  
-CONNECT  DB804 C20     sp3     0    N5   0   H26   0   H27  
-CONNECT  DB804 C21     sp2    
-CONNECT  DB804 C22     sp2     0   C24  
-CONNECT  DB804 C23     sp3     0   H28   0   H29   0   H30  
-CONNECT  DB804 C24     sp2    
-CONNECT  DB804 C25     sp2     0   C11  
-CONNECT  DB804 C26     sp2     0   C17  
-CONNECT  DB804  H1      s     
-CONNECT  DB804  H2      s     
-CONNECT  DB804  H3      s     
-CONNECT  DB804  H4      s     
-CONNECT  DB804  H5      s     
-CONNECT  DB804  H6      s     
-CONNECT  DB804  H7      s     
-CONNECT  DB804  H8      s     
-CONNECT  DB804  H9      s     
-CONNECT  DB804 H10      s     
-CONNECT  DB804 H11      s     
-CONNECT  DB804 H12      s     
-CONNECT  DB804 H13      s     
-CONNECT  DB804 H14      s     
-CONNECT  DB804 H15      s     
-CONNECT  DB804 H16      s     
-CONNECT  DB804 H17      s     
-CONNECT  DB804 H18      s     
-CONNECT  DB804 H19      s     
-CONNECT  DB804 H20      s     
-CONNECT  DB804 H21      s     
-CONNECT  DB804 H22      s     
-CONNECT  DB804 H23      s     
-CONNECT  DB804 H24      s     
-CONNECT  DB804 H25      s     
-CONNECT  DB804 H26      s     
-CONNECT  DB804 H27      s     
-CONNECT  DB804 H28      s     
-CONNECT  DB804 H29      s     
-CONNECT  DB804 H30      s     
+CONNECT  DB804 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB804 C18     sp3     0   C14   0    N5   0   H24   0   H25  
+CONNECT  DB804 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB804 C20     sp3     0   C16   0    N5   0   H26   0   H27  
+CONNECT  DB804 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB804 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB804 C23     sp3     0    O1   0   H28   0   H29   0   H30  
+CONNECT  DB804 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB804 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB804 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB804  H1      s      0    C1  
+CONNECT  DB804  H2      s      0    C1  
+CONNECT  DB804  H3      s      0    C1  
+CONNECT  DB804  H4      s      0    C2  
+CONNECT  DB804  H5      s      0    C2  
+CONNECT  DB804  H6      s      0    C4  
+CONNECT  DB804  H7      s      0    C5  
+CONNECT  DB804  H8      s      0    C6  
+CONNECT  DB804  H9      s      0    C7  
+CONNECT  DB804 H10      s      0    C8  
+CONNECT  DB804 H11      s      0    C9  
+CONNECT  DB804 H12      s      0    C9  
+CONNECT  DB804 H13      s      0    N3  
+CONNECT  DB804 H14      s      0    N4  
+CONNECT  DB804 H15      s      0   C10  
+CONNECT  DB804 H16      s      0   C10  
+CONNECT  DB804 H17      s      0   C12  
+CONNECT  DB804 H18      s      0   C12  
+CONNECT  DB804 H19      s      0   C12  
+CONNECT  DB804 H20      s      0   C14  
+CONNECT  DB804 H21      s      0   C14  
+CONNECT  DB804 H22      s      0   C16  
+CONNECT  DB804 H23      s      0   C16  
+CONNECT  DB804 H24      s      0   C18  
+CONNECT  DB804 H25      s      0   C18  
+CONNECT  DB804 H26      s      0   C20  
+CONNECT  DB804 H27      s      0   C20  
+CONNECT  DB804 H28      s      0   C23  
+CONNECT  DB804 H29      s      0   C23  
+CONNECT  DB804 H30      s      0   C23  
 
 #  DB803
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB803  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB803  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB803  C3      sp     0   C26  
+CONNECT  DB803  C3      sp     0    N1   0   C26  
 CONNECT  DB803  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB803  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB803  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB803  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB803  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB803  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB803  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB803  N1     sp2     0    C3  
-CONNECT  DB803  N2     sp2     0   C19   0   H13  
+CONNECT  DB803  N2     sp2     0    C4   0   C19   0   H13  
 CONNECT  DB803  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB803  N4     sp3    
-CONNECT  DB803  N5     sp3    
+CONNECT  DB803  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB803  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB803  O1     sp3     0   C22   0   C23  
-CONNECT  DB803  O2     sp3     0   C13  
-CONNECT  DB803  O3     sp3     0   C15  
-CONNECT  DB803 C10     sp3     0    O3   0   H15   0   H16  
-CONNECT  DB803 C11     sp2    
+CONNECT  DB803  O2     sp3     0    C1   0   C13  
+CONNECT  DB803  O3     sp3     0   C10   0   C15  
+CONNECT  DB803 C10     sp3     0    C9   0    O3   0   H15   0   H16  
+CONNECT  DB803 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB803 C12     sp3     0    N5   0   H17   0   H18   0   H19  
-CONNECT  DB803 C13     sp2     0   C15  
+CONNECT  DB803 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB803 Cl1      s      0   C24  
 CONNECT  DB803 C14     sp3     0   C18   0    N4   0   H20   0   H21  
-CONNECT  DB803 C15     sp2    
+CONNECT  DB803 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB803 Cl2      s      0   C25  
 CONNECT  DB803 C16     sp3     0   C20   0    N4   0   H22   0   H23  
-CONNECT  DB803 C17     sp2     0   C21  
-CONNECT  DB803 C18     sp3     0    N5   0   H24   0   H25  
-CONNECT  DB803 C19     sp2     0   C21  
-CONNECT  DB803 C20     sp3     0    N5   0   H26   0   H27  
-CONNECT  DB803 C21     sp2    
-CONNECT  DB803 C22     sp2     0   C24  
-CONNECT  DB803 C23     sp3     0   H28   0   H29   0   H30  
-CONNECT  DB803 C24     sp2    
-CONNECT  DB803 C25     sp2     0   C11  
-CONNECT  DB803 C26     sp2     0   C17  
-CONNECT  DB803  H1      s     
-CONNECT  DB803  H2      s     
-CONNECT  DB803  H3      s     
-CONNECT  DB803  H4      s     
-CONNECT  DB803  H5      s     
-CONNECT  DB803  H6      s     
-CONNECT  DB803  H7      s     
-CONNECT  DB803  H8      s     
-CONNECT  DB803  H9      s     
-CONNECT  DB803 H10      s     
-CONNECT  DB803 H11      s     
-CONNECT  DB803 H12      s     
-CONNECT  DB803 H13      s     
-CONNECT  DB803 H14      s     
-CONNECT  DB803 H15      s     
-CONNECT  DB803 H16      s     
-CONNECT  DB803 H17      s     
-CONNECT  DB803 H18      s     
-CONNECT  DB803 H19      s     
-CONNECT  DB803 H20      s     
-CONNECT  DB803 H21      s     
-CONNECT  DB803 H22      s     
-CONNECT  DB803 H23      s     
-CONNECT  DB803 H24      s     
-CONNECT  DB803 H25      s     
-CONNECT  DB803 H26      s     
-CONNECT  DB803 H27      s     
-CONNECT  DB803 H28      s     
-CONNECT  DB803 H29      s     
-CONNECT  DB803 H30      s     
+CONNECT  DB803 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB803 C18     sp3     0   C14   0    N5   0   H24   0   H25  
+CONNECT  DB803 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB803 C20     sp3     0   C16   0    N5   0   H26   0   H27  
+CONNECT  DB803 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB803 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB803 C23     sp3     0    O1   0   H28   0   H29   0   H30  
+CONNECT  DB803 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB803 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB803 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB803  H1      s      0    C1  
+CONNECT  DB803  H2      s      0    C1  
+CONNECT  DB803  H3      s      0    C1  
+CONNECT  DB803  H4      s      0    C2  
+CONNECT  DB803  H5      s      0    C2  
+CONNECT  DB803  H6      s      0    C4  
+CONNECT  DB803  H7      s      0    C5  
+CONNECT  DB803  H8      s      0    C6  
+CONNECT  DB803  H9      s      0    C7  
+CONNECT  DB803 H10      s      0    C8  
+CONNECT  DB803 H11      s      0    C9  
+CONNECT  DB803 H12      s      0    C9  
+CONNECT  DB803 H13      s      0    N2  
+CONNECT  DB803 H14      s      0    N3  
+CONNECT  DB803 H15      s      0   C10  
+CONNECT  DB803 H16      s      0   C10  
+CONNECT  DB803 H17      s      0   C12  
+CONNECT  DB803 H18      s      0   C12  
+CONNECT  DB803 H19      s      0   C12  
+CONNECT  DB803 H20      s      0   C14  
+CONNECT  DB803 H21      s      0   C14  
+CONNECT  DB803 H22      s      0   C16  
+CONNECT  DB803 H23      s      0   C16  
+CONNECT  DB803 H24      s      0   C18  
+CONNECT  DB803 H25      s      0   C18  
+CONNECT  DB803 H26      s      0   C20  
+CONNECT  DB803 H27      s      0   C20  
+CONNECT  DB803 H28      s      0   C23  
+CONNECT  DB803 H29      s      0   C23  
+CONNECT  DB803 H30      s      0   C23  
 
 #  DB802
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB802  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB802  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB802  C3      sp     0   C26  
+CONNECT  DB802  C3      sp     0    N1   0   C26  
 CONNECT  DB802  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB802  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB802  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB802  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB802  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB802  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB802  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB802  N1      sp     0    C3  
-CONNECT  DB802  N2     sp2     0   C19   0   H13  
+CONNECT  DB802  N2     sp2     0    C4   0   C19   0   H13  
 CONNECT  DB802  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB802  N4     sp3    
-CONNECT  DB802  N5     sp3    
+CONNECT  DB802  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB802  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB802  O1     sp3     0   C22   0   C23  
-CONNECT  DB802  O2     sp3     0   C13  
-CONNECT  DB802  O3     sp3     0   C15  
-CONNECT  DB802 C10     sp3     0    O3   0   H15   0   H16  
-CONNECT  DB802 C11     sp2    
+CONNECT  DB802  O2     sp3     0    C1   0   C13  
+CONNECT  DB802  O3     sp3     0   C10   0   C15  
+CONNECT  DB802 C10     sp3     0    C9   0    O3   0   H15   0   H16  
+CONNECT  DB802 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB802 C12     sp3     0    N5   0   H17   0   H18   0   H19  
-CONNECT  DB802 C13     sp2     0   C15  
+CONNECT  DB802 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB802 Cl1      s      0   C24  
 CONNECT  DB802 C14     sp3     0   C18   0    N4   0   H20   0   H21  
-CONNECT  DB802 C15     sp2    
+CONNECT  DB802 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB802 Cl2      s      0   C25  
 CONNECT  DB802 C16     sp3     0   C20   0    N4   0   H22   0   H23  
-CONNECT  DB802 C17     sp2     0   C21  
-CONNECT  DB802 C18     sp3     0    N5   0   H24   0   H25  
-CONNECT  DB802 C19     sp2     0   C21  
-CONNECT  DB802 C20     sp3     0    N5   0   H26   0   H27  
-CONNECT  DB802 C21     sp2    
-CONNECT  DB802 C22     sp2     0   C24  
-CONNECT  DB802 C23     sp3     0   H28   0   H29   0   H30  
-CONNECT  DB802 C24     sp2    
-CONNECT  DB802 C25     sp2     0   C11  
-CONNECT  DB802 C26     sp2     0   C17  
-CONNECT  DB802  H1      s     
-CONNECT  DB802  H2      s     
-CONNECT  DB802  H3      s     
-CONNECT  DB802  H4      s     
-CONNECT  DB802  H5      s     
-CONNECT  DB802  H6      s     
-CONNECT  DB802  H7      s     
-CONNECT  DB802  H8      s     
-CONNECT  DB802  H9      s     
-CONNECT  DB802 H10      s     
-CONNECT  DB802 H11      s     
-CONNECT  DB802 H12      s     
-CONNECT  DB802 H13      s     
-CONNECT  DB802 H14      s     
-CONNECT  DB802 H15      s     
-CONNECT  DB802 H16      s     
-CONNECT  DB802 H17      s     
-CONNECT  DB802 H18      s     
-CONNECT  DB802 H19      s     
-CONNECT  DB802 H20      s     
-CONNECT  DB802 H21      s     
-CONNECT  DB802 H22      s     
-CONNECT  DB802 H23      s     
-CONNECT  DB802 H24      s     
-CONNECT  DB802 H25      s     
-CONNECT  DB802 H26      s     
-CONNECT  DB802 H27      s     
-CONNECT  DB802 H28      s     
-CONNECT  DB802 H29      s     
-CONNECT  DB802 H30      s     
+CONNECT  DB802 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB802 C18     sp3     0   C14   0    N5   0   H24   0   H25  
+CONNECT  DB802 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB802 C20     sp3     0   C16   0    N5   0   H26   0   H27  
+CONNECT  DB802 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB802 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB802 C23     sp3     0    O1   0   H28   0   H29   0   H30  
+CONNECT  DB802 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB802 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB802 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB802  H1      s      0    C1  
+CONNECT  DB802  H2      s      0    C1  
+CONNECT  DB802  H3      s      0    C1  
+CONNECT  DB802  H4      s      0    C2  
+CONNECT  DB802  H5      s      0    C2  
+CONNECT  DB802  H6      s      0    C4  
+CONNECT  DB802  H7      s      0    C5  
+CONNECT  DB802  H8      s      0    C6  
+CONNECT  DB802  H9      s      0    C7  
+CONNECT  DB802 H10      s      0    C8  
+CONNECT  DB802 H11      s      0    C9  
+CONNECT  DB802 H12      s      0    C9  
+CONNECT  DB802 H13      s      0    N2  
+CONNECT  DB802 H14      s      0    N3  
+CONNECT  DB802 H15      s      0   C10  
+CONNECT  DB802 H16      s      0   C10  
+CONNECT  DB802 H17      s      0   C12  
+CONNECT  DB802 H18      s      0   C12  
+CONNECT  DB802 H19      s      0   C12  
+CONNECT  DB802 H20      s      0   C14  
+CONNECT  DB802 H21      s      0   C14  
+CONNECT  DB802 H22      s      0   C16  
+CONNECT  DB802 H23      s      0   C16  
+CONNECT  DB802 H24      s      0   C18  
+CONNECT  DB802 H25      s      0   C18  
+CONNECT  DB802 H26      s      0   C20  
+CONNECT  DB802 H27      s      0   C20  
+CONNECT  DB802 H28      s      0   C23  
+CONNECT  DB802 H29      s      0   C23  
+CONNECT  DB802 H30      s      0   C23  
 
 #  DB801
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB801  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB801  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB801  C3      sp     0   C26  
+CONNECT  DB801  C3      sp     0    N1   0   C26  
 CONNECT  DB801  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB801  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB801  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB801  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB801  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB801  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB801  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB801  N1      sp     0    C3  
-CONNECT  DB801  N2     sp2     0   C19   0   H13  
+CONNECT  DB801  N2     sp2     0    C4   0   C19   0   H13  
 CONNECT  DB801  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB801  N4     sp3    
-CONNECT  DB801  N5     sp3    
+CONNECT  DB801  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB801  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB801  O1     sp3     0   C22   0   C23  
-CONNECT  DB801  O2     sp3     0   C13  
-CONNECT  DB801  O3     sp3     0   C15  
-CONNECT  DB801 C10     sp3     0    O3   0   H15   0   H16  
-CONNECT  DB801 C11     sp2    
+CONNECT  DB801  O2     sp3     0    C1   0   C13  
+CONNECT  DB801  O3     sp3     0   C10   0   C15  
+CONNECT  DB801 C10     sp3     0    C9   0    O3   0   H15   0   H16  
+CONNECT  DB801 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB801 C12     sp3     0    N5   0   H17   0   H18   0   H19  
-CONNECT  DB801 C13     sp2     0   C15  
+CONNECT  DB801 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB801 Cl1      s      0   C24  
 CONNECT  DB801 C14     sp3     0   C18   0    N4   0   H20   0   H21  
-CONNECT  DB801 C15     sp2    
+CONNECT  DB801 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB801 Cl2      s      0   C25  
 CONNECT  DB801 C16     sp3     0   C20   0    N4   0   H22   0   H23  
-CONNECT  DB801 C17     sp2     0   C21  
-CONNECT  DB801 C18     sp3     0    N5   0   H24   0   H25  
-CONNECT  DB801 C19     sp2     0   C21  
-CONNECT  DB801 C20     sp3     0    N5   0   H26   0   H27  
-CONNECT  DB801 C21     sp2    
-CONNECT  DB801 C22     sp2     0   C24  
-CONNECT  DB801 C23     sp3     0   H28   0   H29   0   H30  
-CONNECT  DB801 C24     sp2    
-CONNECT  DB801 C25     sp2     0   C11  
-CONNECT  DB801 C26     sp2     0   C17  
-CONNECT  DB801  H1      s     
-CONNECT  DB801  H2      s     
-CONNECT  DB801  H3      s     
-CONNECT  DB801  H4      s     
-CONNECT  DB801  H5      s     
-CONNECT  DB801  H6      s     
-CONNECT  DB801  H7      s     
-CONNECT  DB801  H8      s     
-CONNECT  DB801  H9      s     
-CONNECT  DB801 H10      s     
-CONNECT  DB801 H11      s     
-CONNECT  DB801 H12      s     
-CONNECT  DB801 H13      s     
-CONNECT  DB801 H14      s     
-CONNECT  DB801 H15      s     
-CONNECT  DB801 H16      s     
-CONNECT  DB801 H17      s     
-CONNECT  DB801 H18      s     
-CONNECT  DB801 H19      s     
-CONNECT  DB801 H20      s     
-CONNECT  DB801 H21      s     
-CONNECT  DB801 H22      s     
-CONNECT  DB801 H23      s     
-CONNECT  DB801 H24      s     
-CONNECT  DB801 H25      s     
-CONNECT  DB801 H26      s     
-CONNECT  DB801 H27      s     
-CONNECT  DB801 H28      s     
-CONNECT  DB801 H29      s     
-CONNECT  DB801 H30      s     
+CONNECT  DB801 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB801 C18     sp3     0   C14   0    N5   0   H24   0   H25  
+CONNECT  DB801 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB801 C20     sp3     0   C16   0    N5   0   H26   0   H27  
+CONNECT  DB801 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB801 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB801 C23     sp3     0    O1   0   H28   0   H29   0   H30  
+CONNECT  DB801 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB801 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB801 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB801  H1      s      0    C1  
+CONNECT  DB801  H2      s      0    C1  
+CONNECT  DB801  H3      s      0    C1  
+CONNECT  DB801  H4      s      0    C2  
+CONNECT  DB801  H5      s      0    C2  
+CONNECT  DB801  H6      s      0    C4  
+CONNECT  DB801  H7      s      0    C5  
+CONNECT  DB801  H8      s      0    C6  
+CONNECT  DB801  H9      s      0    C7  
+CONNECT  DB801 H10      s      0    C8  
+CONNECT  DB801 H11      s      0    C9  
+CONNECT  DB801 H12      s      0    C9  
+CONNECT  DB801 H13      s      0    N2  
+CONNECT  DB801 H14      s      0    N3  
+CONNECT  DB801 H15      s      0   C10  
+CONNECT  DB801 H16      s      0   C10  
+CONNECT  DB801 H17      s      0   C12  
+CONNECT  DB801 H18      s      0   C12  
+CONNECT  DB801 H19      s      0   C12  
+CONNECT  DB801 H20      s      0   C14  
+CONNECT  DB801 H21      s      0   C14  
+CONNECT  DB801 H22      s      0   C16  
+CONNECT  DB801 H23      s      0   C16  
+CONNECT  DB801 H24      s      0   C18  
+CONNECT  DB801 H25      s      0   C18  
+CONNECT  DB801 H26      s      0   C20  
+CONNECT  DB801 H27      s      0   C20  
+CONNECT  DB801 H28      s      0   C23  
+CONNECT  DB801 H29      s      0   C23  
+CONNECT  DB801 H30      s      0   C23  
 
 #  DB800
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
 #ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
 CONNECT  DB800  C1     sp3     0    O2   0    H1   0    H2   0    H3  
 CONNECT  DB800  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB800  C3      sp     0   C26  
+CONNECT  DB800  C3      sp     0    N1   0   C26  
 CONNECT  DB800  C4     sp2     0    N2   0   C26   0    H6  
 CONNECT  DB800  C5     sp2     0   C24   0   C25   0    H7  
 CONNECT  DB800  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB800  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB800  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB800  C9     sp3     0   C10   0   H11   0   H12  
+CONNECT  DB800  C9     sp3     0    C2   0   C10   0   H11   0   H12  
 CONNECT  DB800  N1      sp     0    C3  
-CONNECT  DB800  N2     sp2     0   C19  
+CONNECT  DB800  N2     sp2     0    C4   0   C19  
 CONNECT  DB800  N3     sp2     0   C11   0   C17   0   H13  
-CONNECT  DB800  N4     sp3    
-CONNECT  DB800  N5     sp3    
+CONNECT  DB800  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB800  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB800  O1     sp3     0   C22   0   C23  
-CONNECT  DB800  O2     sp3     0   C13  
-CONNECT  DB800  O3     sp3     0   C15  
-CONNECT  DB800 C10     sp3     0    O3   0   H14   0   H15  
-CONNECT  DB800 C11     sp2    
+CONNECT  DB800  O2     sp3     0    C1   0   C13  
+CONNECT  DB800  O3     sp3     0   C10   0   C15  
+CONNECT  DB800 C10     sp3     0    C9   0    O3   0   H14   0   H15  
+CONNECT  DB800 C11     sp2     0    C6   0    N3   0   C25  
 CONNECT  DB800 C12     sp3     0    N5   0   H16   0   H17   0   H18  
-CONNECT  DB800 C13     sp2     0   C15  
+CONNECT  DB800 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB800 Cl1      s      0   C24  
 CONNECT  DB800 C14     sp3     0   C18   0    N4   0   H19   0   H20  
-CONNECT  DB800 C15     sp2    
+CONNECT  DB800 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB800 Cl2      s      0   C25  
 CONNECT  DB800 C16     sp3     0   C20   0    N4   0   H21   0   H22  
-CONNECT  DB800 C17     sp2     0   C21  
-CONNECT  DB800 C18     sp3     0    N5   0   H23   0   H24  
-CONNECT  DB800 C19     sp2     0   C21  
-CONNECT  DB800 C20     sp3     0    N5   0   H25   0   H26  
-CONNECT  DB800 C21     sp2    
-CONNECT  DB800 C22     sp2     0   C24  
-CONNECT  DB800 C23     sp3     0   H27   0   H28   0   H29  
-CONNECT  DB800 C24     sp2    
-CONNECT  DB800 C25     sp2     0   C11  
-CONNECT  DB800 C26     sp2     0   C17  
-CONNECT  DB800  H1      s     
-CONNECT  DB800  H2      s     
-CONNECT  DB800  H3      s     
-CONNECT  DB800  H4      s     
-CONNECT  DB800  H5      s     
-CONNECT  DB800  H6      s     
-CONNECT  DB800  H7      s     
-CONNECT  DB800  H8      s     
-CONNECT  DB800  H9      s     
-CONNECT  DB800 H10      s     
-CONNECT  DB800 H11      s     
-CONNECT  DB800 H12      s     
-CONNECT  DB800 H13      s     
-CONNECT  DB800 H14      s     
-CONNECT  DB800 H15      s     
-CONNECT  DB800 H16      s     
-CONNECT  DB800 H17      s     
-CONNECT  DB800 H18      s     
-CONNECT  DB800 H19      s     
-CONNECT  DB800 H20      s     
-CONNECT  DB800 H21      s     
-CONNECT  DB800 H22      s     
-CONNECT  DB800 H23      s     
-CONNECT  DB800 H24      s     
-CONNECT  DB800 H25      s     
-CONNECT  DB800 H26      s     
-CONNECT  DB800 H27      s     
-CONNECT  DB800 H28      s     
-CONNECT  DB800 H29      s     
+CONNECT  DB800 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB800 C18     sp3     0   C14   0    N5   0   H23   0   H24  
+CONNECT  DB800 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB800 C20     sp3     0   C16   0    N5   0   H25   0   H26  
+CONNECT  DB800 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB800 C22     sp2     0    O1   0    C6   0   C24  
+CONNECT  DB800 C23     sp3     0    O1   0   H27   0   H28   0   H29  
+CONNECT  DB800 C24     sp2     0   Cl1   0    C5   0   C22  
+CONNECT  DB800 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB800 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB800  H1      s      0    C1  
+CONNECT  DB800  H2      s      0    C1  
+CONNECT  DB800  H3      s      0    C1  
+CONNECT  DB800  H4      s      0    C2  
+CONNECT  DB800  H5      s      0    C2  
+CONNECT  DB800  H6      s      0    C4  
+CONNECT  DB800  H7      s      0    C5  
+CONNECT  DB800  H8      s      0    C6  
+CONNECT  DB800  H9      s      0    C7  
+CONNECT  DB800 H10      s      0    C8  
+CONNECT  DB800 H11      s      0    C9  
+CONNECT  DB800 H12      s      0    C9  
+CONNECT  DB800 H13      s      0    N3  
+CONNECT  DB800 H14      s      0   C10  
+CONNECT  DB800 H15      s      0   C10  
+CONNECT  DB800 H16      s      0   C12  
+CONNECT  DB800 H17      s      0   C12  
+CONNECT  DB800 H18      s      0   C12  
+CONNECT  DB800 H19      s      0   C14  
+CONNECT  DB800 H20      s      0   C14  
+CONNECT  DB800 H21      s      0   C16  
+CONNECT  DB800 H22      s      0   C16  
+CONNECT  DB800 H23      s      0   C18  
+CONNECT  DB800 H24      s      0   C18  
+CONNECT  DB800 H25      s      0   C20  
+CONNECT  DB800 H26      s      0   C20  
+CONNECT  DB800 H27      s      0   C23  
+CONNECT  DB800 H28      s      0   C23  
+CONNECT  DB800 H29      s      0   C23  
 
 
 # Atom Parameters:
