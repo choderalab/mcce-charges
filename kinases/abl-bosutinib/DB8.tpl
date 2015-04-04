@@ -3,31 +3,234 @@
 # DB8
 # Extracted from: rcsb-pdbs/3UE4.pdb
 #
-# Created on: 2015-04-02
+# Created on: 2015-04-04
 #
 # Created with: tpl_maker_am1bcc.py
 ####################################
 
-CONFLIST DB8        DB8BK DB815 DB814 DB813 DB812 DB811 DB810 DB809 DB808 DB807 DB806 DB805 DB804 DB803 DB802 DB801 DB800 DB8DM 
+CONFLIST DB8        DB8BK DB818 DB817 DB816 DB815 DB814 DB813 DB812 DB811 DB810 DB809 DB808 DB807 DB806 DB805 DB804 DB803 DB802 DB801 DB8DM 
 
 NATOM    DB8BK      0
-NATOM    DB815      68
-NATOM    DB814      68
-NATOM    DB813      68
-NATOM    DB812      67
-NATOM    DB811      67
+NATOM    DB818      66
+NATOM    DB817      67
+NATOM    DB816      65
+NATOM    DB815      66
+NATOM    DB814      67
+NATOM    DB813      66
+NATOM    DB812      66
+NATOM    DB811      66
 NATOM    DB810      67
-NATOM    DB809      67
-NATOM    DB808      66
-NATOM    DB807      67
+NATOM    DB809      64
+NATOM    DB808      67
+NATOM    DB807      65
 NATOM    DB806      67
 NATOM    DB805      67
-NATOM    DB804      66
-NATOM    DB803      66
+NATOM    DB804      65
+NATOM    DB803      65
 NATOM    DB802      66
 NATOM    DB801      66
-NATOM    DB800      65
 NATOM    DB8DM      0
+
+IATOM    DB818    C1 0   
+IATOM    DB818    C2 1   
+IATOM    DB818    C3 2   
+IATOM    DB818    C4 3   
+IATOM    DB818    C5 4   
+IATOM    DB818    C6 5   
+IATOM    DB818    C7 6   
+IATOM    DB818    C8 7   
+IATOM    DB818    C9 8   
+IATOM    DB818    N1 9   
+IATOM    DB818    N2 10  
+IATOM    DB818    N3 11  
+IATOM    DB818    N4 12  
+IATOM    DB818    N5 13  
+IATOM    DB818    O1 14  
+IATOM    DB818    O2 15  
+IATOM    DB818    O3 16  
+IATOM    DB818   C10 17  
+IATOM    DB818   C11 18  
+IATOM    DB818   C12 19  
+IATOM    DB818   C13 20  
+IATOM    DB818   Cl1 21  
+IATOM    DB818   C14 22  
+IATOM    DB818   C15 23  
+IATOM    DB818   Cl2 24  
+IATOM    DB818   C16 25  
+IATOM    DB818   C17 26  
+IATOM    DB818   C18 27  
+IATOM    DB818   C19 28  
+IATOM    DB818   C20 29  
+IATOM    DB818   C21 30  
+IATOM    DB818   C22 31  
+IATOM    DB818   C23 32  
+IATOM    DB818   C24 33  
+IATOM    DB818   C25 34  
+IATOM    DB818   C26 35  
+IATOM    DB818    H1 36  
+IATOM    DB818    H2 37  
+IATOM    DB818    H3 38  
+IATOM    DB818    H4 39  
+IATOM    DB818    H5 40  
+IATOM    DB818    H6 41  
+IATOM    DB818    H7 42  
+IATOM    DB818    H8 43  
+IATOM    DB818    H9 44  
+IATOM    DB818   H10 45  
+IATOM    DB818   H11 46  
+IATOM    DB818   H12 47  
+IATOM    DB818   H13 48  
+IATOM    DB818   H14 49  
+IATOM    DB818   H15 50  
+IATOM    DB818   H16 51  
+IATOM    DB818   H17 52  
+IATOM    DB818   H18 53  
+IATOM    DB818   H19 54  
+IATOM    DB818   H20 55  
+IATOM    DB818   H21 56  
+IATOM    DB818   H22 57  
+IATOM    DB818   H23 58  
+IATOM    DB818   H24 59  
+IATOM    DB818   H25 60  
+IATOM    DB818   H26 61  
+IATOM    DB818   H27 62  
+IATOM    DB818   H28 63  
+IATOM    DB818   H29 64  
+IATOM    DB818   H30 65  
+
+IATOM    DB817    C1 0   
+IATOM    DB817    C2 1   
+IATOM    DB817    C3 2   
+IATOM    DB817    C4 3   
+IATOM    DB817    C5 4   
+IATOM    DB817    C6 5   
+IATOM    DB817    C7 6   
+IATOM    DB817    C8 7   
+IATOM    DB817    C9 8   
+IATOM    DB817    N1 9   
+IATOM    DB817    N2 10  
+IATOM    DB817    N3 11  
+IATOM    DB817    N4 12  
+IATOM    DB817    N5 13  
+IATOM    DB817    O1 14  
+IATOM    DB817    O2 15  
+IATOM    DB817    O3 16  
+IATOM    DB817   C10 17  
+IATOM    DB817   C11 18  
+IATOM    DB817   C12 19  
+IATOM    DB817   C13 20  
+IATOM    DB817   Cl1 21  
+IATOM    DB817   C14 22  
+IATOM    DB817   C15 23  
+IATOM    DB817   Cl2 24  
+IATOM    DB817   C16 25  
+IATOM    DB817   C17 26  
+IATOM    DB817   C18 27  
+IATOM    DB817   C19 28  
+IATOM    DB817   C20 29  
+IATOM    DB817   C21 30  
+IATOM    DB817   C22 31  
+IATOM    DB817   C23 32  
+IATOM    DB817   C24 33  
+IATOM    DB817   C25 34  
+IATOM    DB817   C26 35  
+IATOM    DB817    H1 36  
+IATOM    DB817    H2 37  
+IATOM    DB817    H3 38  
+IATOM    DB817    H4 39  
+IATOM    DB817    H5 40  
+IATOM    DB817    H6 41  
+IATOM    DB817    H7 42  
+IATOM    DB817    H8 43  
+IATOM    DB817    H9 44  
+IATOM    DB817   H10 45  
+IATOM    DB817   H11 46  
+IATOM    DB817   H12 47  
+IATOM    DB817   H13 48  
+IATOM    DB817   H14 49  
+IATOM    DB817   H15 50  
+IATOM    DB817   H16 51  
+IATOM    DB817   H17 52  
+IATOM    DB817   H18 53  
+IATOM    DB817   H19 54  
+IATOM    DB817   H20 55  
+IATOM    DB817   H21 56  
+IATOM    DB817   H22 57  
+IATOM    DB817   H23 58  
+IATOM    DB817   H24 59  
+IATOM    DB817   H25 60  
+IATOM    DB817   H26 61  
+IATOM    DB817   H27 62  
+IATOM    DB817   H28 63  
+IATOM    DB817   H29 64  
+IATOM    DB817   H30 65  
+IATOM    DB817   H31 66  
+
+IATOM    DB816    C1 0   
+IATOM    DB816    C2 1   
+IATOM    DB816    C3 2   
+IATOM    DB816    C4 3   
+IATOM    DB816    C5 4   
+IATOM    DB816    C6 5   
+IATOM    DB816    C7 6   
+IATOM    DB816    C8 7   
+IATOM    DB816    C9 8   
+IATOM    DB816    N1 9   
+IATOM    DB816    N2 10  
+IATOM    DB816    N3 11  
+IATOM    DB816    N4 12  
+IATOM    DB816    N5 13  
+IATOM    DB816    O1 14  
+IATOM    DB816    O2 15  
+IATOM    DB816    O3 16  
+IATOM    DB816   C10 17  
+IATOM    DB816   C11 18  
+IATOM    DB816   C12 19  
+IATOM    DB816   C13 20  
+IATOM    DB816   Cl1 21  
+IATOM    DB816   C14 22  
+IATOM    DB816   C15 23  
+IATOM    DB816   Cl2 24  
+IATOM    DB816   C16 25  
+IATOM    DB816   C17 26  
+IATOM    DB816   C18 27  
+IATOM    DB816   C19 28  
+IATOM    DB816   C20 29  
+IATOM    DB816   C21 30  
+IATOM    DB816   C22 31  
+IATOM    DB816   C23 32  
+IATOM    DB816   C24 33  
+IATOM    DB816   C25 34  
+IATOM    DB816   C26 35  
+IATOM    DB816    H1 36  
+IATOM    DB816    H2 37  
+IATOM    DB816    H3 38  
+IATOM    DB816    H4 39  
+IATOM    DB816    H5 40  
+IATOM    DB816    H6 41  
+IATOM    DB816    H7 42  
+IATOM    DB816    H8 43  
+IATOM    DB816    H9 44  
+IATOM    DB816   H10 45  
+IATOM    DB816   H11 46  
+IATOM    DB816   H12 47  
+IATOM    DB816   H13 48  
+IATOM    DB816   H14 49  
+IATOM    DB816   H15 50  
+IATOM    DB816   H16 51  
+IATOM    DB816   H17 52  
+IATOM    DB816   H18 53  
+IATOM    DB816   H19 54  
+IATOM    DB816   H20 55  
+IATOM    DB816   H21 56  
+IATOM    DB816   H22 57  
+IATOM    DB816   H23 58  
+IATOM    DB816   H24 59  
+IATOM    DB816   H25 60  
+IATOM    DB816   H26 61  
+IATOM    DB816   H27 62  
+IATOM    DB816   H28 63  
+IATOM    DB816   H29 64  
 
 IATOM    DB815    C1 0   
 IATOM    DB815    C2 1   
@@ -95,8 +298,6 @@ IATOM    DB815   H27 62
 IATOM    DB815   H28 63  
 IATOM    DB815   H29 64  
 IATOM    DB815   H30 65  
-IATOM    DB815   H31 66  
-IATOM    DB815   H32 67  
 
 IATOM    DB814    C1 0   
 IATOM    DB814    C2 1   
@@ -165,7 +366,6 @@ IATOM    DB814   H28 63
 IATOM    DB814   H29 64  
 IATOM    DB814   H30 65  
 IATOM    DB814   H31 66  
-IATOM    DB814   H32 67  
 
 IATOM    DB813    C1 0   
 IATOM    DB813    C2 1   
@@ -233,8 +433,6 @@ IATOM    DB813   H27 62
 IATOM    DB813   H28 63  
 IATOM    DB813   H29 64  
 IATOM    DB813   H30 65  
-IATOM    DB813   H31 66  
-IATOM    DB813   H32 67  
 
 IATOM    DB812    C1 0   
 IATOM    DB812    C2 1   
@@ -302,7 +500,6 @@ IATOM    DB812   H27 62
 IATOM    DB812   H28 63  
 IATOM    DB812   H29 64  
 IATOM    DB812   H30 65  
-IATOM    DB812   H31 66  
 
 IATOM    DB811    C1 0   
 IATOM    DB811    C2 1   
@@ -370,7 +567,6 @@ IATOM    DB811   H27 62
 IATOM    DB811   H28 63  
 IATOM    DB811   H29 64  
 IATOM    DB811   H30 65  
-IATOM    DB811   H31 66  
 
 IATOM    DB810    C1 0   
 IATOM    DB810    C2 1   
@@ -504,9 +700,6 @@ IATOM    DB809   H25 60
 IATOM    DB809   H26 61  
 IATOM    DB809   H27 62  
 IATOM    DB809   H28 63  
-IATOM    DB809   H29 64  
-IATOM    DB809   H30 65  
-IATOM    DB809   H31 66  
 
 IATOM    DB808    C1 0   
 IATOM    DB808    C2 1   
@@ -574,6 +767,7 @@ IATOM    DB808   H27 62
 IATOM    DB808   H28 63  
 IATOM    DB808   H29 64  
 IATOM    DB808   H30 65  
+IATOM    DB808   H31 66  
 
 IATOM    DB807    C1 0   
 IATOM    DB807    C2 1   
@@ -640,8 +834,6 @@ IATOM    DB807   H26 61
 IATOM    DB807   H27 62  
 IATOM    DB807   H28 63  
 IATOM    DB807   H29 64  
-IATOM    DB807   H30 65  
-IATOM    DB807   H31 66  
 
 IATOM    DB806    C1 0   
 IATOM    DB806    C2 1   
@@ -844,7 +1036,6 @@ IATOM    DB804   H26 61
 IATOM    DB804   H27 62  
 IATOM    DB804   H28 63  
 IATOM    DB804   H29 64  
-IATOM    DB804   H30 65  
 
 IATOM    DB803    C1 0   
 IATOM    DB803    C2 1   
@@ -911,7 +1102,6 @@ IATOM    DB803   H26 61
 IATOM    DB803   H27 62  
 IATOM    DB803   H28 63  
 IATOM    DB803   H29 64  
-IATOM    DB803   H30 65  
 
 IATOM    DB802    C1 0   
 IATOM    DB802    C2 1   
@@ -1047,71 +1237,206 @@ IATOM    DB801   H28 63
 IATOM    DB801   H29 64  
 IATOM    DB801   H30 65  
 
-IATOM    DB800    C1 0   
-IATOM    DB800    C2 1   
-IATOM    DB800    C3 2   
-IATOM    DB800    C4 3   
-IATOM    DB800    C5 4   
-IATOM    DB800    C6 5   
-IATOM    DB800    C7 6   
-IATOM    DB800    C8 7   
-IATOM    DB800    C9 8   
-IATOM    DB800    N1 9   
-IATOM    DB800    N2 10  
-IATOM    DB800    N3 11  
-IATOM    DB800    N4 12  
-IATOM    DB800    N5 13  
-IATOM    DB800    O1 14  
-IATOM    DB800    O2 15  
-IATOM    DB800    O3 16  
-IATOM    DB800   C10 17  
-IATOM    DB800   C11 18  
-IATOM    DB800   C12 19  
-IATOM    DB800   C13 20  
-IATOM    DB800   Cl1 21  
-IATOM    DB800   C14 22  
-IATOM    DB800   C15 23  
-IATOM    DB800   Cl2 24  
-IATOM    DB800   C16 25  
-IATOM    DB800   C17 26  
-IATOM    DB800   C18 27  
-IATOM    DB800   C19 28  
-IATOM    DB800   C20 29  
-IATOM    DB800   C21 30  
-IATOM    DB800   C22 31  
-IATOM    DB800   C23 32  
-IATOM    DB800   C24 33  
-IATOM    DB800   C25 34  
-IATOM    DB800   C26 35  
-IATOM    DB800    H1 36  
-IATOM    DB800    H2 37  
-IATOM    DB800    H3 38  
-IATOM    DB800    H4 39  
-IATOM    DB800    H5 40  
-IATOM    DB800    H6 41  
-IATOM    DB800    H7 42  
-IATOM    DB800    H8 43  
-IATOM    DB800    H9 44  
-IATOM    DB800   H10 45  
-IATOM    DB800   H11 46  
-IATOM    DB800   H12 47  
-IATOM    DB800   H13 48  
-IATOM    DB800   H14 49  
-IATOM    DB800   H15 50  
-IATOM    DB800   H16 51  
-IATOM    DB800   H17 52  
-IATOM    DB800   H18 53  
-IATOM    DB800   H19 54  
-IATOM    DB800   H20 55  
-IATOM    DB800   H21 56  
-IATOM    DB800   H22 57  
-IATOM    DB800   H23 58  
-IATOM    DB800   H24 59  
-IATOM    DB800   H25 60  
-IATOM    DB800   H26 61  
-IATOM    DB800   H27 62  
-IATOM    DB800   H28 63  
-IATOM    DB800   H29 64  
+ATOMNAME DB818    0     C1
+ATOMNAME DB818    1     C2
+ATOMNAME DB818    2     C3
+ATOMNAME DB818    3     C4
+ATOMNAME DB818    4     C5
+ATOMNAME DB818    5     C6
+ATOMNAME DB818    6     C7
+ATOMNAME DB818    7     C8
+ATOMNAME DB818    8     C9
+ATOMNAME DB818    9     N1
+ATOMNAME DB818   10     N2
+ATOMNAME DB818   11     N3
+ATOMNAME DB818   12     N4
+ATOMNAME DB818   13     N5
+ATOMNAME DB818   14     O1
+ATOMNAME DB818   15     O2
+ATOMNAME DB818   16     O3
+ATOMNAME DB818   17    C10
+ATOMNAME DB818   18    C11
+ATOMNAME DB818   19    C12
+ATOMNAME DB818   20    C13
+ATOMNAME DB818   21    Cl1
+ATOMNAME DB818   22    C14
+ATOMNAME DB818   23    C15
+ATOMNAME DB818   24    Cl2
+ATOMNAME DB818   25    C16
+ATOMNAME DB818   26    C17
+ATOMNAME DB818   27    C18
+ATOMNAME DB818   28    C19
+ATOMNAME DB818   29    C20
+ATOMNAME DB818   30    C21
+ATOMNAME DB818   31    C22
+ATOMNAME DB818   32    C23
+ATOMNAME DB818   33    C24
+ATOMNAME DB818   34    C25
+ATOMNAME DB818   35    C26
+ATOMNAME DB818   36     H1
+ATOMNAME DB818   37     H2
+ATOMNAME DB818   38     H3
+ATOMNAME DB818   39     H4
+ATOMNAME DB818   40     H5
+ATOMNAME DB818   41     H6
+ATOMNAME DB818   42     H7
+ATOMNAME DB818   43     H8
+ATOMNAME DB818   44     H9
+ATOMNAME DB818   45    H10
+ATOMNAME DB818   46    H11
+ATOMNAME DB818   47    H12
+ATOMNAME DB818   48    H13
+ATOMNAME DB818   49    H14
+ATOMNAME DB818   50    H15
+ATOMNAME DB818   51    H16
+ATOMNAME DB818   52    H17
+ATOMNAME DB818   53    H18
+ATOMNAME DB818   54    H19
+ATOMNAME DB818   55    H20
+ATOMNAME DB818   56    H21
+ATOMNAME DB818   57    H22
+ATOMNAME DB818   58    H23
+ATOMNAME DB818   59    H24
+ATOMNAME DB818   60    H25
+ATOMNAME DB818   61    H26
+ATOMNAME DB818   62    H27
+ATOMNAME DB818   63    H28
+ATOMNAME DB818   64    H29
+ATOMNAME DB818   65    H30
+
+ATOMNAME DB817    0     C1
+ATOMNAME DB817    1     C2
+ATOMNAME DB817    2     C3
+ATOMNAME DB817    3     C4
+ATOMNAME DB817    4     C5
+ATOMNAME DB817    5     C6
+ATOMNAME DB817    6     C7
+ATOMNAME DB817    7     C8
+ATOMNAME DB817    8     C9
+ATOMNAME DB817    9     N1
+ATOMNAME DB817   10     N2
+ATOMNAME DB817   11     N3
+ATOMNAME DB817   12     N4
+ATOMNAME DB817   13     N5
+ATOMNAME DB817   14     O1
+ATOMNAME DB817   15     O2
+ATOMNAME DB817   16     O3
+ATOMNAME DB817   17    C10
+ATOMNAME DB817   18    C11
+ATOMNAME DB817   19    C12
+ATOMNAME DB817   20    C13
+ATOMNAME DB817   21    Cl1
+ATOMNAME DB817   22    C14
+ATOMNAME DB817   23    C15
+ATOMNAME DB817   24    Cl2
+ATOMNAME DB817   25    C16
+ATOMNAME DB817   26    C17
+ATOMNAME DB817   27    C18
+ATOMNAME DB817   28    C19
+ATOMNAME DB817   29    C20
+ATOMNAME DB817   30    C21
+ATOMNAME DB817   31    C22
+ATOMNAME DB817   32    C23
+ATOMNAME DB817   33    C24
+ATOMNAME DB817   34    C25
+ATOMNAME DB817   35    C26
+ATOMNAME DB817   36     H1
+ATOMNAME DB817   37     H2
+ATOMNAME DB817   38     H3
+ATOMNAME DB817   39     H4
+ATOMNAME DB817   40     H5
+ATOMNAME DB817   41     H6
+ATOMNAME DB817   42     H7
+ATOMNAME DB817   43     H8
+ATOMNAME DB817   44     H9
+ATOMNAME DB817   45    H10
+ATOMNAME DB817   46    H11
+ATOMNAME DB817   47    H12
+ATOMNAME DB817   48    H13
+ATOMNAME DB817   49    H14
+ATOMNAME DB817   50    H15
+ATOMNAME DB817   51    H16
+ATOMNAME DB817   52    H17
+ATOMNAME DB817   53    H18
+ATOMNAME DB817   54    H19
+ATOMNAME DB817   55    H20
+ATOMNAME DB817   56    H21
+ATOMNAME DB817   57    H22
+ATOMNAME DB817   58    H23
+ATOMNAME DB817   59    H24
+ATOMNAME DB817   60    H25
+ATOMNAME DB817   61    H26
+ATOMNAME DB817   62    H27
+ATOMNAME DB817   63    H28
+ATOMNAME DB817   64    H29
+ATOMNAME DB817   65    H30
+ATOMNAME DB817   66    H31
+
+ATOMNAME DB816    0     C1
+ATOMNAME DB816    1     C2
+ATOMNAME DB816    2     C3
+ATOMNAME DB816    3     C4
+ATOMNAME DB816    4     C5
+ATOMNAME DB816    5     C6
+ATOMNAME DB816    6     C7
+ATOMNAME DB816    7     C8
+ATOMNAME DB816    8     C9
+ATOMNAME DB816    9     N1
+ATOMNAME DB816   10     N2
+ATOMNAME DB816   11     N3
+ATOMNAME DB816   12     N4
+ATOMNAME DB816   13     N5
+ATOMNAME DB816   14     O1
+ATOMNAME DB816   15     O2
+ATOMNAME DB816   16     O3
+ATOMNAME DB816   17    C10
+ATOMNAME DB816   18    C11
+ATOMNAME DB816   19    C12
+ATOMNAME DB816   20    C13
+ATOMNAME DB816   21    Cl1
+ATOMNAME DB816   22    C14
+ATOMNAME DB816   23    C15
+ATOMNAME DB816   24    Cl2
+ATOMNAME DB816   25    C16
+ATOMNAME DB816   26    C17
+ATOMNAME DB816   27    C18
+ATOMNAME DB816   28    C19
+ATOMNAME DB816   29    C20
+ATOMNAME DB816   30    C21
+ATOMNAME DB816   31    C22
+ATOMNAME DB816   32    C23
+ATOMNAME DB816   33    C24
+ATOMNAME DB816   34    C25
+ATOMNAME DB816   35    C26
+ATOMNAME DB816   36     H1
+ATOMNAME DB816   37     H2
+ATOMNAME DB816   38     H3
+ATOMNAME DB816   39     H4
+ATOMNAME DB816   40     H5
+ATOMNAME DB816   41     H6
+ATOMNAME DB816   42     H7
+ATOMNAME DB816   43     H8
+ATOMNAME DB816   44     H9
+ATOMNAME DB816   45    H10
+ATOMNAME DB816   46    H11
+ATOMNAME DB816   47    H12
+ATOMNAME DB816   48    H13
+ATOMNAME DB816   49    H14
+ATOMNAME DB816   50    H15
+ATOMNAME DB816   51    H16
+ATOMNAME DB816   52    H17
+ATOMNAME DB816   53    H18
+ATOMNAME DB816   54    H19
+ATOMNAME DB816   55    H20
+ATOMNAME DB816   56    H21
+ATOMNAME DB816   57    H22
+ATOMNAME DB816   58    H23
+ATOMNAME DB816   59    H24
+ATOMNAME DB816   60    H25
+ATOMNAME DB816   61    H26
+ATOMNAME DB816   62    H27
+ATOMNAME DB816   63    H28
+ATOMNAME DB816   64    H29
 
 ATOMNAME DB815    0     C1
 ATOMNAME DB815    1     C2
@@ -1179,8 +1504,6 @@ ATOMNAME DB815   62    H27
 ATOMNAME DB815   63    H28
 ATOMNAME DB815   64    H29
 ATOMNAME DB815   65    H30
-ATOMNAME DB815   66    H31
-ATOMNAME DB815   67    H32
 
 ATOMNAME DB814    0     C1
 ATOMNAME DB814    1     C2
@@ -1249,7 +1572,6 @@ ATOMNAME DB814   63    H28
 ATOMNAME DB814   64    H29
 ATOMNAME DB814   65    H30
 ATOMNAME DB814   66    H31
-ATOMNAME DB814   67    H32
 
 ATOMNAME DB813    0     C1
 ATOMNAME DB813    1     C2
@@ -1317,8 +1639,6 @@ ATOMNAME DB813   62    H27
 ATOMNAME DB813   63    H28
 ATOMNAME DB813   64    H29
 ATOMNAME DB813   65    H30
-ATOMNAME DB813   66    H31
-ATOMNAME DB813   67    H32
 
 ATOMNAME DB812    0     C1
 ATOMNAME DB812    1     C2
@@ -1386,7 +1706,6 @@ ATOMNAME DB812   62    H27
 ATOMNAME DB812   63    H28
 ATOMNAME DB812   64    H29
 ATOMNAME DB812   65    H30
-ATOMNAME DB812   66    H31
 
 ATOMNAME DB811    0     C1
 ATOMNAME DB811    1     C2
@@ -1454,7 +1773,6 @@ ATOMNAME DB811   62    H27
 ATOMNAME DB811   63    H28
 ATOMNAME DB811   64    H29
 ATOMNAME DB811   65    H30
-ATOMNAME DB811   66    H31
 
 ATOMNAME DB810    0     C1
 ATOMNAME DB810    1     C2
@@ -1588,9 +1906,6 @@ ATOMNAME DB809   60    H25
 ATOMNAME DB809   61    H26
 ATOMNAME DB809   62    H27
 ATOMNAME DB809   63    H28
-ATOMNAME DB809   64    H29
-ATOMNAME DB809   65    H30
-ATOMNAME DB809   66    H31
 
 ATOMNAME DB808    0     C1
 ATOMNAME DB808    1     C2
@@ -1658,6 +1973,7 @@ ATOMNAME DB808   62    H27
 ATOMNAME DB808   63    H28
 ATOMNAME DB808   64    H29
 ATOMNAME DB808   65    H30
+ATOMNAME DB808   66    H31
 
 ATOMNAME DB807    0     C1
 ATOMNAME DB807    1     C2
@@ -1724,8 +2040,6 @@ ATOMNAME DB807   61    H26
 ATOMNAME DB807   62    H27
 ATOMNAME DB807   63    H28
 ATOMNAME DB807   64    H29
-ATOMNAME DB807   65    H30
-ATOMNAME DB807   66    H31
 
 ATOMNAME DB806    0     C1
 ATOMNAME DB806    1     C2
@@ -1928,7 +2242,6 @@ ATOMNAME DB804   61    H26
 ATOMNAME DB804   62    H27
 ATOMNAME DB804   63    H28
 ATOMNAME DB804   64    H29
-ATOMNAME DB804   65    H30
 
 ATOMNAME DB803    0     C1
 ATOMNAME DB803    1     C2
@@ -1995,7 +2308,6 @@ ATOMNAME DB803   61    H26
 ATOMNAME DB803   62    H27
 ATOMNAME DB803   63    H28
 ATOMNAME DB803   64    H29
-ATOMNAME DB803   65    H30
 
 ATOMNAME DB802    0     C1
 ATOMNAME DB802    1     C2
@@ -2131,94 +2443,33 @@ ATOMNAME DB801   63    H28
 ATOMNAME DB801   64    H29
 ATOMNAME DB801   65    H30
 
-ATOMNAME DB800    0     C1
-ATOMNAME DB800    1     C2
-ATOMNAME DB800    2     C3
-ATOMNAME DB800    3     C4
-ATOMNAME DB800    4     C5
-ATOMNAME DB800    5     C6
-ATOMNAME DB800    6     C7
-ATOMNAME DB800    7     C8
-ATOMNAME DB800    8     C9
-ATOMNAME DB800    9     N1
-ATOMNAME DB800   10     N2
-ATOMNAME DB800   11     N3
-ATOMNAME DB800   12     N4
-ATOMNAME DB800   13     N5
-ATOMNAME DB800   14     O1
-ATOMNAME DB800   15     O2
-ATOMNAME DB800   16     O3
-ATOMNAME DB800   17    C10
-ATOMNAME DB800   18    C11
-ATOMNAME DB800   19    C12
-ATOMNAME DB800   20    C13
-ATOMNAME DB800   21    Cl1
-ATOMNAME DB800   22    C14
-ATOMNAME DB800   23    C15
-ATOMNAME DB800   24    Cl2
-ATOMNAME DB800   25    C16
-ATOMNAME DB800   26    C17
-ATOMNAME DB800   27    C18
-ATOMNAME DB800   28    C19
-ATOMNAME DB800   29    C20
-ATOMNAME DB800   30    C21
-ATOMNAME DB800   31    C22
-ATOMNAME DB800   32    C23
-ATOMNAME DB800   33    C24
-ATOMNAME DB800   34    C25
-ATOMNAME DB800   35    C26
-ATOMNAME DB800   36     H1
-ATOMNAME DB800   37     H2
-ATOMNAME DB800   38     H3
-ATOMNAME DB800   39     H4
-ATOMNAME DB800   40     H5
-ATOMNAME DB800   41     H6
-ATOMNAME DB800   42     H7
-ATOMNAME DB800   43     H8
-ATOMNAME DB800   44     H9
-ATOMNAME DB800   45    H10
-ATOMNAME DB800   46    H11
-ATOMNAME DB800   47    H12
-ATOMNAME DB800   48    H13
-ATOMNAME DB800   49    H14
-ATOMNAME DB800   50    H15
-ATOMNAME DB800   51    H16
-ATOMNAME DB800   52    H17
-ATOMNAME DB800   53    H18
-ATOMNAME DB800   54    H19
-ATOMNAME DB800   55    H20
-ATOMNAME DB800   56    H21
-ATOMNAME DB800   57    H22
-ATOMNAME DB800   58    H23
-ATOMNAME DB800   59    H24
-ATOMNAME DB800   60    H25
-ATOMNAME DB800   61    H26
-ATOMNAME DB800   62    H27
-ATOMNAME DB800   63    H28
-ATOMNAME DB800   64    H29
-
 # 1. Basic Conformer Information:
 # Number of protons and electrons, pKa, Em, and Reaction Field Energy (RXN)
 # PROTON SECTION: PROTON means charge:
-PROTON   DB815      3.0  
-PROTON   DB814      3.0  
-PROTON   DB813      3.0  
-PROTON   DB812      2.0  
-PROTON   DB811      2.0  
-PROTON   DB810      2.0  
-PROTON   DB809      2.0  
-PROTON   DB808      1.0  
-PROTON   DB807      2.0  
-PROTON   DB806      2.0  
-PROTON   DB805      2.0  
-PROTON   DB804      1.0  
-PROTON   DB803      1.0  
-PROTON   DB802      1.0  
-PROTON   DB801      1.0  
-PROTON   DB800      0.0  
+PROTON   DB818      1    
+PROTON   DB817      2    
+PROTON   DB816      0    
+PROTON   DB815      1    
+PROTON   DB814      2    
+PROTON   DB813      1    
+PROTON   DB812      1    
+PROTON   DB811      1    
+PROTON   DB810      2    
+PROTON   DB809      -1   
+PROTON   DB808      2    
+PROTON   DB807      0    
+PROTON   DB806      2    
+PROTON   DB805      2    
+PROTON   DB804      0    
+PROTON   DB803      0    
+PROTON   DB802      1    
+PROTON   DB801      1    
 PROTON   DB8DM      0    
 
 # Solution pKa Section: pKa data from CRC Handbook of Chemistry and Physics
+PKA      DB818      0.0  
+PKA      DB817      0.0  
+PKA      DB816      0.0  
 PKA      DB815      0.0  
 PKA      DB814      0.0  
 PKA      DB813      0.0  
@@ -2234,10 +2485,12 @@ PKA      DB804      0.0
 PKA      DB803      0.0  
 PKA      DB802      0.0  
 PKA      DB801      0.0  
-PKA      DB800      0.0  
 PKA      DB8DM      0.0  
 
 #ELECTRON SECTION:
+ELECTRON DB818      0.0  
+ELECTRON DB817      0.0  
+ELECTRON DB816      0.0  
 ELECTRON DB815      0.0  
 ELECTRON DB814      0.0  
 ELECTRON DB813      0.0  
@@ -2253,10 +2506,12 @@ ELECTRON DB804      0.0
 ELECTRON DB803      0.0  
 ELECTRON DB802      0.0  
 ELECTRON DB801      0.0  
-ELECTRON DB800      0.0  
 ELECTRON DB8DM      0.0  
 
 # EM SECTION:
+EM       DB818      0.0  
+EM       DB817      0.0  
+EM       DB816      0.0  
 EM       DB815      0.0  
 EM       DB814      0.0  
 EM       DB813      0.0  
@@ -2272,10 +2527,219 @@ EM       DB804      0.0
 EM       DB803      0.0  
 EM       DB802      0.0  
 EM       DB801      0.0  
-EM       DB800      0.0  
 EM       DB8DM      0.0  
 
 # REACTION FIELD ENERGY SECTION:
+
+#  DB818
+#ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
+#ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
+CONNECT  DB818  C1     sp3     0    O2   0    H1   0    H2   0    H3  
+CONNECT  DB818  C2     sp3     0    C9   0    N4   0    H4   0    H5  
+CONNECT  DB818  C3      sp     0    N1   0   C26  
+CONNECT  DB818  C4     sp2     0    N2   0   C26   0    H6  
+CONNECT  DB818  C5     sp2     0   C24   0   C25   0    H7  
+CONNECT  DB818  C6     sp2     0   C22   0   C11   0    H8  
+CONNECT  DB818  C7     sp2     0   C15   0   C19   0    H9  
+CONNECT  DB818  C8     sp2     0   C13   0   C21   0   H10  
+CONNECT  DB818  C9     sp3     0    C2   0   C10   0   H13   0   H16  
+CONNECT  DB818  N1      sp     0    C3  
+CONNECT  DB818  N2     sp2     0    C4   0   C19  
+CONNECT  DB818  N3     sp3     0   C11   0   C17   0   H25   0   H30  
+CONNECT  DB818  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB818  N5     sp3     0   C12   0   C18   0   C20  
+CONNECT  DB818  O1     sp3     0   C22   0   C23  
+CONNECT  DB818  O2     sp3     0    C1   0   C13  
+CONNECT  DB818  O3     sp3     0   C10   0   C15  
+CONNECT  DB818 C10     sp3     0    C9   0    O3   0   H18   0   H20  
+CONNECT  DB818 C11     sp2     0    C6   0    N3   0   C25  
+CONNECT  DB818 C12     sp3     0    N5   0   H22   0   H24   0   H26  
+CONNECT  DB818 C13     sp2     0    C8   0    O2   0   C15  
+CONNECT  DB818 Cl1      s      0   C24  
+CONNECT  DB818 C14     sp3     0    N4   0   C18   0   H27   0   H28  
+CONNECT  DB818 C15     sp2     0    C7   0    O3   0   C13  
+CONNECT  DB818 Cl2      s      0   C25  
+CONNECT  DB818 C16     sp3     0    N4   0   C20   0   H11   0   H14  
+CONNECT  DB818 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB818 C18     sp3     0    N5   0   C14   0   H17   0   H19  
+CONNECT  DB818 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB818 C20     sp3     0    N5   0   C16   0   H21   0   H23  
+CONNECT  DB818 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB818 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB818 C23     sp3     0    O1   0   H29   0   H12   0   H15  
+CONNECT  DB818 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB818 C25     sp2     0    C5   0   C11   0   Cl2  
+CONNECT  DB818 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB818  H1      s      0    C1  
+CONNECT  DB818  H2      s      0    C1  
+CONNECT  DB818  H3      s      0    C1  
+CONNECT  DB818  H4      s      0    C2  
+CONNECT  DB818  H5      s      0    C2  
+CONNECT  DB818  H6      s      0    C4  
+CONNECT  DB818  H7      s      0    C5  
+CONNECT  DB818  H8      s      0    C6  
+CONNECT  DB818  H9      s      0    C7  
+CONNECT  DB818 H10      s      0    C8  
+CONNECT  DB818 H11      s      0   C16  
+CONNECT  DB818 H12      s      0   C23  
+CONNECT  DB818 H13      s      0    C9  
+CONNECT  DB818 H14      s      0   C16  
+CONNECT  DB818 H15      s      0   C23  
+CONNECT  DB818 H16      s      0    C9  
+CONNECT  DB818 H17      s      0   C18  
+CONNECT  DB818 H18      s      0   C10  
+CONNECT  DB818 H19      s      0   C18  
+CONNECT  DB818 H20      s      0   C10  
+CONNECT  DB818 H21      s      0   C20  
+CONNECT  DB818 H22      s      0   C12  
+CONNECT  DB818 H23      s      0   C20  
+CONNECT  DB818 H24      s      0   C12  
+CONNECT  DB818 H25      s      0    N3  
+CONNECT  DB818 H26      s      0   C12  
+CONNECT  DB818 H27      s      0   C14  
+CONNECT  DB818 H28      s      0   C14  
+CONNECT  DB818 H29      s      0   C23  
+CONNECT  DB818 H30      s      0    N3  
+
+#  DB817
+#ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
+#ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
+CONNECT  DB817  C1     sp3     0    O2   0    H1   0    H2   0    H3  
+CONNECT  DB817  C2     sp3     0    C9   0    N4   0    H4   0    H5  
+CONNECT  DB817  C3      sp     0    N1   0   C26  
+CONNECT  DB817  C4     sp2     0    N2   0   C26   0    H6  
+CONNECT  DB817  C5     sp2     0   C24   0   C25   0    H7  
+CONNECT  DB817  C6     sp2     0   C22   0   C11   0    H8  
+CONNECT  DB817  C7     sp2     0   C15   0   C19   0    H9  
+CONNECT  DB817  C8     sp2     0   C13   0   C21   0   H10  
+CONNECT  DB817  C9     sp3     0    C2   0   C10   0   H13   0   H16  
+CONNECT  DB817  N1      sp     0    C3  
+CONNECT  DB817  N2     sp2     0    C4   0   C19  
+CONNECT  DB817  N3     sp3     0   C11   0   C17   0   H25   0   H31  
+CONNECT  DB817  N4     sp3     0    C2   0   C14   0   C16   0   H27  
+CONNECT  DB817  N5     sp3     0   C12   0   C18   0   C20  
+CONNECT  DB817  O1     sp3     0   C22   0   C23  
+CONNECT  DB817  O2     sp3     0    C1   0   C13  
+CONNECT  DB817  O3     sp3     0   C10   0   C15  
+CONNECT  DB817 C10     sp3     0    C9   0    O3   0   H18   0   H20  
+CONNECT  DB817 C11     sp2     0    C6   0    N3   0   C25  
+CONNECT  DB817 C12     sp3     0    N5   0   H22   0   H24   0   H26  
+CONNECT  DB817 C13     sp2     0    C8   0    O2   0   C15  
+CONNECT  DB817 Cl1      s      0   C24  
+CONNECT  DB817 C14     sp3     0    N4   0   C18   0   H28   0   H29  
+CONNECT  DB817 C15     sp2     0    C7   0    O3   0   C13  
+CONNECT  DB817 Cl2      s      0   C25  
+CONNECT  DB817 C16     sp3     0    N4   0   C20   0   H11   0   H14  
+CONNECT  DB817 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB817 C18     sp3     0    N5   0   C14   0   H17   0   H19  
+CONNECT  DB817 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB817 C20     sp3     0    N5   0   C16   0   H21   0   H23  
+CONNECT  DB817 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB817 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB817 C23     sp3     0    O1   0   H30   0   H12   0   H15  
+CONNECT  DB817 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB817 C25     sp2     0    C5   0   C11   0   Cl2  
+CONNECT  DB817 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB817  H1      s      0    C1  
+CONNECT  DB817  H2      s      0    C1  
+CONNECT  DB817  H3      s      0    C1  
+CONNECT  DB817  H4      s      0    C2  
+CONNECT  DB817  H5      s      0    C2  
+CONNECT  DB817  H6      s      0    C4  
+CONNECT  DB817  H7      s      0    C5  
+CONNECT  DB817  H8      s      0    C6  
+CONNECT  DB817  H9      s      0    C7  
+CONNECT  DB817 H10      s      0    C8  
+CONNECT  DB817 H11      s      0   C16  
+CONNECT  DB817 H12      s      0   C23  
+CONNECT  DB817 H13      s      0    C9  
+CONNECT  DB817 H14      s      0   C16  
+CONNECT  DB817 H15      s      0   C23  
+CONNECT  DB817 H16      s      0    C9  
+CONNECT  DB817 H17      s      0   C18  
+CONNECT  DB817 H18      s      0   C10  
+CONNECT  DB817 H19      s      0   C18  
+CONNECT  DB817 H20      s      0   C10  
+CONNECT  DB817 H21      s      0   C20  
+CONNECT  DB817 H22      s      0   C12  
+CONNECT  DB817 H23      s      0   C20  
+CONNECT  DB817 H24      s      0   C12  
+CONNECT  DB817 H25      s      0    N3  
+CONNECT  DB817 H26      s      0   C12  
+CONNECT  DB817 H27      s      0    N4  
+CONNECT  DB817 H28      s      0   C14  
+CONNECT  DB817 H29      s      0   C14  
+CONNECT  DB817 H30      s      0   C23  
+CONNECT  DB817 H31      s      0    N3  
+
+#  DB816
+#ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
+#ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
+CONNECT  DB816  C1     sp3     0    O2   0    H1   0    H2   0    H3  
+CONNECT  DB816  C2     sp3     0    C9   0    N4   0    H4   0    H5  
+CONNECT  DB816  C3      sp     0    N1   0   C26  
+CONNECT  DB816  C4     sp2     0    N2   0   C26   0    H6  
+CONNECT  DB816  C5     sp2     0   C24   0   C25   0    H7  
+CONNECT  DB816  C6     sp2     0   C22   0   C11   0    H8  
+CONNECT  DB816  C7     sp2     0   C15   0   C19   0    H9  
+CONNECT  DB816  C8     sp2     0   C13   0   C21   0   H10  
+CONNECT  DB816  C9     sp3     0    C2   0   C10   0   H13   0   H16  
+CONNECT  DB816  N1      sp     0    C3  
+CONNECT  DB816  N2     sp2     0    C4   0   C19   0   H29  
+CONNECT  DB816  N3     sp2     0   C11   0   C17  
+CONNECT  DB816  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB816  N5     sp3     0   C12   0   C18   0   C20  
+CONNECT  DB816  O1     sp3     0   C22   0   C23  
+CONNECT  DB816  O2     sp3     0    C1   0   C13  
+CONNECT  DB816  O3     sp3     0   C10   0   C15  
+CONNECT  DB816 C10     sp3     0    C9   0    O3   0   H18   0   H20  
+CONNECT  DB816 C11     sp2     0    C6   0    N3   0   C25  
+CONNECT  DB816 C12     sp3     0    N5   0   H22   0   H24   0   H25  
+CONNECT  DB816 C13     sp2     0    C8   0    O2   0   C15  
+CONNECT  DB816 Cl1      s      0   C24  
+CONNECT  DB816 C14     sp3     0    N4   0   C18   0   H26   0   H27  
+CONNECT  DB816 C15     sp2     0    C7   0    O3   0   C13  
+CONNECT  DB816 Cl2      s      0   C25  
+CONNECT  DB816 C16     sp3     0    N4   0   C20   0   H11   0   H14  
+CONNECT  DB816 C17     sp2     0    N3   0   C26   0   C21  
+CONNECT  DB816 C18     sp3     0    N5   0   C14   0   H17   0   H19  
+CONNECT  DB816 C19     sp2     0    C7   0    N2   0   C21  
+CONNECT  DB816 C20     sp3     0    N5   0   C16   0   H21   0   H23  
+CONNECT  DB816 C21     sp2     0    C8   0   C17   0   C19  
+CONNECT  DB816 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB816 C23     sp3     0    O1   0   H28   0   H12   0   H15  
+CONNECT  DB816 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB816 C25     sp2     0    C5   0   C11   0   Cl2  
+CONNECT  DB816 C26     sp2     0    C3   0    C4   0   C17  
+CONNECT  DB816  H1      s      0    C1  
+CONNECT  DB816  H2      s      0    C1  
+CONNECT  DB816  H3      s      0    C1  
+CONNECT  DB816  H4      s      0    C2  
+CONNECT  DB816  H5      s      0    C2  
+CONNECT  DB816  H6      s      0    C4  
+CONNECT  DB816  H7      s      0    C5  
+CONNECT  DB816  H8      s      0    C6  
+CONNECT  DB816  H9      s      0    C7  
+CONNECT  DB816 H10      s      0    C8  
+CONNECT  DB816 H11      s      0   C16  
+CONNECT  DB816 H12      s      0   C23  
+CONNECT  DB816 H13      s      0    C9  
+CONNECT  DB816 H14      s      0   C16  
+CONNECT  DB816 H15      s      0   C23  
+CONNECT  DB816 H16      s      0    C9  
+CONNECT  DB816 H17      s      0   C18  
+CONNECT  DB816 H18      s      0   C10  
+CONNECT  DB816 H19      s      0   C18  
+CONNECT  DB816 H20      s      0   C10  
+CONNECT  DB816 H21      s      0   C20  
+CONNECT  DB816 H22      s      0   C12  
+CONNECT  DB816 H23      s      0   C20  
+CONNECT  DB816 H24      s      0   C12  
+CONNECT  DB816 H25      s      0   C12  
+CONNECT  DB816 H26      s      0   C14  
+CONNECT  DB816 H27      s      0   C14  
+CONNECT  DB816 H28      s      0   C23  
+CONNECT  DB816 H29      s      0    N2  
 
 #  DB815
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -2288,33 +2752,33 @@ CONNECT  DB815  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB815  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB815  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB815  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB815  C9     sp3     0    C2   0   C10   0   H11   0   H12  
-CONNECT  DB815  N1     sp2     0    C3  
-CONNECT  DB815  N2     sp2     0    C4   0   C19   0   H13  
-CONNECT  DB815  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB815  N4     sp3     0    C2   0   C14   0   C16   0   H15  
-CONNECT  DB815  N5     sp3     0   C12   0   C18   0   C20   0   H16  
+CONNECT  DB815  C9     sp3     0    C2   0   C10   0   H13   0   H16  
+CONNECT  DB815  N1      sp     0    C3  
+CONNECT  DB815  N2     sp2     0    C4   0   C19   0   H30  
+CONNECT  DB815  N3     sp2     0   C11   0   C17  
+CONNECT  DB815  N4     sp3     0    C2   0   C14   0   C16   0   H26  
+CONNECT  DB815  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB815  O1     sp3     0   C22   0   C23  
 CONNECT  DB815  O2     sp3     0    C1   0   C13  
 CONNECT  DB815  O3     sp3     0   C10   0   C15  
-CONNECT  DB815 C10     sp3     0    C9   0    O3   0   H17   0   H18  
+CONNECT  DB815 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB815 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB815 C12     sp3     0    N5   0   H19   0   H20   0   H21  
+CONNECT  DB815 C12     sp3     0    N5   0   H22   0   H24   0   H25  
 CONNECT  DB815 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB815 Cl1      s      0   C24  
-CONNECT  DB815 C14     sp3     0   C18   0    N4   0   H22   0   H23  
+CONNECT  DB815 C14     sp3     0    N4   0   C18   0   H27   0   H28  
 CONNECT  DB815 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB815 Cl2      s      0   C25  
-CONNECT  DB815 C16     sp3     0   C20   0    N4   0   H24   0   H25  
+CONNECT  DB815 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB815 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB815 C18     sp3     0   C14   0    N5   0   H26   0   H27  
+CONNECT  DB815 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB815 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB815 C20     sp3     0   C16   0    N5   0   H28   0   H29  
+CONNECT  DB815 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB815 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB815 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB815 C23     sp3     0    O1   0   H30   0   H31   0   H32  
-CONNECT  DB815 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB815 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB815 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB815 C23     sp3     0    O1   0   H29   0   H12   0   H15  
+CONNECT  DB815 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB815 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB815 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB815  H1      s      0    C1  
 CONNECT  DB815  H2      s      0    C1  
@@ -2326,28 +2790,26 @@ CONNECT  DB815  H7      s      0    C5
 CONNECT  DB815  H8      s      0    C6  
 CONNECT  DB815  H9      s      0    C7  
 CONNECT  DB815 H10      s      0    C8  
-CONNECT  DB815 H11      s      0    C9  
-CONNECT  DB815 H12      s      0    C9  
-CONNECT  DB815 H13      s      0    N2  
-CONNECT  DB815 H14      s      0    N3  
-CONNECT  DB815 H15      s      0    N4  
-CONNECT  DB815 H16      s      0    N5  
-CONNECT  DB815 H17      s      0   C10  
+CONNECT  DB815 H11      s      0   C16  
+CONNECT  DB815 H12      s      0   C23  
+CONNECT  DB815 H13      s      0    C9  
+CONNECT  DB815 H14      s      0   C16  
+CONNECT  DB815 H15      s      0   C23  
+CONNECT  DB815 H16      s      0    C9  
+CONNECT  DB815 H17      s      0   C18  
 CONNECT  DB815 H18      s      0   C10  
-CONNECT  DB815 H19      s      0   C12  
-CONNECT  DB815 H20      s      0   C12  
-CONNECT  DB815 H21      s      0   C12  
-CONNECT  DB815 H22      s      0   C14  
-CONNECT  DB815 H23      s      0   C14  
-CONNECT  DB815 H24      s      0   C16  
-CONNECT  DB815 H25      s      0   C16  
-CONNECT  DB815 H26      s      0   C18  
-CONNECT  DB815 H27      s      0   C18  
-CONNECT  DB815 H28      s      0   C20  
-CONNECT  DB815 H29      s      0   C20  
-CONNECT  DB815 H30      s      0   C23  
-CONNECT  DB815 H31      s      0   C23  
-CONNECT  DB815 H32      s      0   C23  
+CONNECT  DB815 H19      s      0   C18  
+CONNECT  DB815 H20      s      0   C10  
+CONNECT  DB815 H21      s      0   C20  
+CONNECT  DB815 H22      s      0   C12  
+CONNECT  DB815 H23      s      0   C20  
+CONNECT  DB815 H24      s      0   C12  
+CONNECT  DB815 H25      s      0   C12  
+CONNECT  DB815 H26      s      0    N4  
+CONNECT  DB815 H27      s      0   C14  
+CONNECT  DB815 H28      s      0   C14  
+CONNECT  DB815 H29      s      0   C23  
+CONNECT  DB815 H30      s      0    N2  
 
 #  DB814
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -2360,33 +2822,33 @@ CONNECT  DB814  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB814  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB814  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB814  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB814  C9     sp3     0    C2   0   C10   0   H11   0   H12  
+CONNECT  DB814  C9     sp3     0    C2   0   C10   0   H13   0   H16  
 CONNECT  DB814  N1      sp     0    C3  
-CONNECT  DB814  N2     sp2     0    C4   0   C19   0   H13  
-CONNECT  DB814  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB814  N4     sp3     0    C2   0   C14   0   C16   0   H15  
-CONNECT  DB814  N5     sp3     0   C12   0   C18   0   C20   0   H16  
+CONNECT  DB814  N2     sp2     0    C4   0   C19  
+CONNECT  DB814  N3     sp3     0   C11   0   C17   0   H25   0   H31  
+CONNECT  DB814  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB814  N5     sp3     0   C12   0   C18   0   C20   0   H28  
 CONNECT  DB814  O1     sp3     0   C22   0   C23  
 CONNECT  DB814  O2     sp3     0    C1   0   C13  
 CONNECT  DB814  O3     sp3     0   C10   0   C15  
-CONNECT  DB814 C10     sp3     0    C9   0    O3   0   H17   0   H18  
+CONNECT  DB814 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB814 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB814 C12     sp3     0    N5   0   H19   0   H20   0   H21  
+CONNECT  DB814 C12     sp3     0    N5   0   H22   0   H24   0   H26  
 CONNECT  DB814 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB814 Cl1      s      0   C24  
-CONNECT  DB814 C14     sp3     0   C18   0    N4   0   H22   0   H23  
+CONNECT  DB814 C14     sp3     0    N4   0   C18   0   H27   0   H29  
 CONNECT  DB814 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB814 Cl2      s      0   C25  
-CONNECT  DB814 C16     sp3     0   C20   0    N4   0   H24   0   H25  
+CONNECT  DB814 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB814 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB814 C18     sp3     0   C14   0    N5   0   H26   0   H27  
+CONNECT  DB814 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB814 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB814 C20     sp3     0   C16   0    N5   0   H28   0   H29  
+CONNECT  DB814 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB814 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB814 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB814 C23     sp3     0    O1   0   H30   0   H31   0   H32  
-CONNECT  DB814 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB814 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB814 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB814 C23     sp3     0    O1   0   H30   0   H12   0   H15  
+CONNECT  DB814 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB814 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB814 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB814  H1      s      0    C1  
 CONNECT  DB814  H2      s      0    C1  
@@ -2398,28 +2860,27 @@ CONNECT  DB814  H7      s      0    C5
 CONNECT  DB814  H8      s      0    C6  
 CONNECT  DB814  H9      s      0    C7  
 CONNECT  DB814 H10      s      0    C8  
-CONNECT  DB814 H11      s      0    C9  
-CONNECT  DB814 H12      s      0    C9  
-CONNECT  DB814 H13      s      0    N2  
-CONNECT  DB814 H14      s      0    N3  
-CONNECT  DB814 H15      s      0    N4  
-CONNECT  DB814 H16      s      0    N5  
-CONNECT  DB814 H17      s      0   C10  
+CONNECT  DB814 H11      s      0   C16  
+CONNECT  DB814 H12      s      0   C23  
+CONNECT  DB814 H13      s      0    C9  
+CONNECT  DB814 H14      s      0   C16  
+CONNECT  DB814 H15      s      0   C23  
+CONNECT  DB814 H16      s      0    C9  
+CONNECT  DB814 H17      s      0   C18  
 CONNECT  DB814 H18      s      0   C10  
-CONNECT  DB814 H19      s      0   C12  
-CONNECT  DB814 H20      s      0   C12  
-CONNECT  DB814 H21      s      0   C12  
-CONNECT  DB814 H22      s      0   C14  
-CONNECT  DB814 H23      s      0   C14  
-CONNECT  DB814 H24      s      0   C16  
-CONNECT  DB814 H25      s      0   C16  
-CONNECT  DB814 H26      s      0   C18  
-CONNECT  DB814 H27      s      0   C18  
-CONNECT  DB814 H28      s      0   C20  
-CONNECT  DB814 H29      s      0   C20  
+CONNECT  DB814 H19      s      0   C18  
+CONNECT  DB814 H20      s      0   C10  
+CONNECT  DB814 H21      s      0   C20  
+CONNECT  DB814 H22      s      0   C12  
+CONNECT  DB814 H23      s      0   C20  
+CONNECT  DB814 H24      s      0   C12  
+CONNECT  DB814 H25      s      0    N3  
+CONNECT  DB814 H26      s      0   C12  
+CONNECT  DB814 H27      s      0   C14  
+CONNECT  DB814 H28      s      0    N5  
+CONNECT  DB814 H29      s      0   C14  
 CONNECT  DB814 H30      s      0   C23  
-CONNECT  DB814 H31      s      0   C23  
-CONNECT  DB814 H32      s      0   C23  
+CONNECT  DB814 H31      s      0    N3  
 
 #  DB813
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -2432,33 +2893,33 @@ CONNECT  DB813  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB813  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB813  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB813  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB813  C9     sp3     0    C2   0   C10   0   H11   0   H12  
+CONNECT  DB813  C9     sp3     0    C2   0   C10   0   H13   0   H16  
 CONNECT  DB813  N1      sp     0    C3  
-CONNECT  DB813  N2     sp2     0    C4   0   C19   0   H13  
-CONNECT  DB813  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB813  N4     sp3     0    C2   0   C14   0   C16   0   H15  
-CONNECT  DB813  N5     sp3     0   C12   0   C18   0   C20   0   H16  
+CONNECT  DB813  N2     sp2     0    C4   0   C19   0   H30  
+CONNECT  DB813  N3     sp2     0   C11   0   C17  
+CONNECT  DB813  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB813  N5     sp3     0   C12   0   C18   0   C20   0   H27  
 CONNECT  DB813  O1     sp3     0   C22   0   C23  
 CONNECT  DB813  O2     sp3     0    C1   0   C13  
 CONNECT  DB813  O3     sp3     0   C10   0   C15  
-CONNECT  DB813 C10     sp3     0    C9   0    O3   0   H17   0   H18  
+CONNECT  DB813 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB813 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB813 C12     sp3     0    N5   0   H19   0   H20   0   H21  
+CONNECT  DB813 C12     sp3     0    N5   0   H22   0   H24   0   H25  
 CONNECT  DB813 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB813 Cl1      s      0   C24  
-CONNECT  DB813 C14     sp3     0   C18   0    N4   0   H22   0   H23  
+CONNECT  DB813 C14     sp3     0    N4   0   C18   0   H26   0   H28  
 CONNECT  DB813 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB813 Cl2      s      0   C25  
-CONNECT  DB813 C16     sp3     0   C20   0    N4   0   H24   0   H25  
+CONNECT  DB813 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB813 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB813 C18     sp3     0   C14   0    N5   0   H26   0   H27  
+CONNECT  DB813 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB813 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB813 C20     sp3     0   C16   0    N5   0   H28   0   H29  
+CONNECT  DB813 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB813 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB813 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB813 C23     sp3     0    O1   0   H30   0   H31   0   H32  
-CONNECT  DB813 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB813 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB813 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB813 C23     sp3     0    O1   0   H29   0   H12   0   H15  
+CONNECT  DB813 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB813 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB813 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB813  H1      s      0    C1  
 CONNECT  DB813  H2      s      0    C1  
@@ -2470,28 +2931,26 @@ CONNECT  DB813  H7      s      0    C5
 CONNECT  DB813  H8      s      0    C6  
 CONNECT  DB813  H9      s      0    C7  
 CONNECT  DB813 H10      s      0    C8  
-CONNECT  DB813 H11      s      0    C9  
-CONNECT  DB813 H12      s      0    C9  
-CONNECT  DB813 H13      s      0    N2  
-CONNECT  DB813 H14      s      0    N3  
-CONNECT  DB813 H15      s      0    N4  
-CONNECT  DB813 H16      s      0    N5  
-CONNECT  DB813 H17      s      0   C10  
+CONNECT  DB813 H11      s      0   C16  
+CONNECT  DB813 H12      s      0   C23  
+CONNECT  DB813 H13      s      0    C9  
+CONNECT  DB813 H14      s      0   C16  
+CONNECT  DB813 H15      s      0   C23  
+CONNECT  DB813 H16      s      0    C9  
+CONNECT  DB813 H17      s      0   C18  
 CONNECT  DB813 H18      s      0   C10  
-CONNECT  DB813 H19      s      0   C12  
-CONNECT  DB813 H20      s      0   C12  
-CONNECT  DB813 H21      s      0   C12  
-CONNECT  DB813 H22      s      0   C14  
-CONNECT  DB813 H23      s      0   C14  
-CONNECT  DB813 H24      s      0   C16  
-CONNECT  DB813 H25      s      0   C16  
-CONNECT  DB813 H26      s      0   C18  
-CONNECT  DB813 H27      s      0   C18  
-CONNECT  DB813 H28      s      0   C20  
-CONNECT  DB813 H29      s      0   C20  
-CONNECT  DB813 H30      s      0   C23  
-CONNECT  DB813 H31      s      0   C23  
-CONNECT  DB813 H32      s      0   C23  
+CONNECT  DB813 H19      s      0   C18  
+CONNECT  DB813 H20      s      0   C10  
+CONNECT  DB813 H21      s      0   C20  
+CONNECT  DB813 H22      s      0   C12  
+CONNECT  DB813 H23      s      0   C20  
+CONNECT  DB813 H24      s      0   C12  
+CONNECT  DB813 H25      s      0   C12  
+CONNECT  DB813 H26      s      0   C14  
+CONNECT  DB813 H27      s      0    N5  
+CONNECT  DB813 H28      s      0   C14  
+CONNECT  DB813 H29      s      0   C23  
+CONNECT  DB813 H30      s      0    N2  
 
 #  DB812
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -2504,33 +2963,33 @@ CONNECT  DB812  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB812  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB812  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB812  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB812  C9     sp3     0    C2   0   C10   0   H11   0   H12  
+CONNECT  DB812  C9     sp3     0    C2   0   C10   0   H13   0   H16  
 CONNECT  DB812  N1      sp     0    C3  
-CONNECT  DB812  N2     sp2     0    C4   0   C19  
-CONNECT  DB812  N3     sp2     0   C11   0   C17   0   H13  
-CONNECT  DB812  N4     sp3     0    C2   0   C14   0   C16   0   H14  
-CONNECT  DB812  N5     sp3     0   C12   0   C18   0   C20   0   H15  
+CONNECT  DB812  N2     sp2     0    C4   0   C19   0   H30  
+CONNECT  DB812  N3     sp2     0   C11   0   C17   0   H25  
+CONNECT  DB812  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB812  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB812  O1     sp3     0   C22   0   C23  
 CONNECT  DB812  O2     sp3     0    C1   0   C13  
 CONNECT  DB812  O3     sp3     0   C10   0   C15  
-CONNECT  DB812 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB812 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB812 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB812 C12     sp3     0    N5   0   H18   0   H19   0   H20  
+CONNECT  DB812 C12     sp3     0    N5   0   H22   0   H24   0   H26  
 CONNECT  DB812 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB812 Cl1      s      0   C24  
-CONNECT  DB812 C14     sp3     0   C18   0    N4   0   H21   0   H22  
+CONNECT  DB812 C14     sp3     0    N4   0   C18   0   H27   0   H28  
 CONNECT  DB812 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB812 Cl2      s      0   C25  
-CONNECT  DB812 C16     sp3     0   C20   0    N4   0   H23   0   H24  
+CONNECT  DB812 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB812 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB812 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB812 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB812 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB812 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB812 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB812 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB812 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB812 C23     sp3     0    O1   0   H29   0   H30   0   H31  
-CONNECT  DB812 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB812 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB812 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB812 C23     sp3     0    O1   0   H29   0   H12   0   H15  
+CONNECT  DB812 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB812 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB812 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB812  H1      s      0    C1  
 CONNECT  DB812  H2      s      0    C1  
@@ -2542,27 +3001,26 @@ CONNECT  DB812  H7      s      0    C5
 CONNECT  DB812  H8      s      0    C6  
 CONNECT  DB812  H9      s      0    C7  
 CONNECT  DB812 H10      s      0    C8  
-CONNECT  DB812 H11      s      0    C9  
-CONNECT  DB812 H12      s      0    C9  
-CONNECT  DB812 H13      s      0    N3  
-CONNECT  DB812 H14      s      0    N4  
-CONNECT  DB812 H15      s      0    N5  
-CONNECT  DB812 H16      s      0   C10  
-CONNECT  DB812 H17      s      0   C10  
-CONNECT  DB812 H18      s      0   C12  
-CONNECT  DB812 H19      s      0   C12  
-CONNECT  DB812 H20      s      0   C12  
-CONNECT  DB812 H21      s      0   C14  
-CONNECT  DB812 H22      s      0   C14  
-CONNECT  DB812 H23      s      0   C16  
-CONNECT  DB812 H24      s      0   C16  
-CONNECT  DB812 H25      s      0   C18  
-CONNECT  DB812 H26      s      0   C18  
-CONNECT  DB812 H27      s      0   C20  
-CONNECT  DB812 H28      s      0   C20  
+CONNECT  DB812 H11      s      0   C16  
+CONNECT  DB812 H12      s      0   C23  
+CONNECT  DB812 H13      s      0    C9  
+CONNECT  DB812 H14      s      0   C16  
+CONNECT  DB812 H15      s      0   C23  
+CONNECT  DB812 H16      s      0    C9  
+CONNECT  DB812 H17      s      0   C18  
+CONNECT  DB812 H18      s      0   C10  
+CONNECT  DB812 H19      s      0   C18  
+CONNECT  DB812 H20      s      0   C10  
+CONNECT  DB812 H21      s      0   C20  
+CONNECT  DB812 H22      s      0   C12  
+CONNECT  DB812 H23      s      0   C20  
+CONNECT  DB812 H24      s      0   C12  
+CONNECT  DB812 H25      s      0    N3  
+CONNECT  DB812 H26      s      0   C12  
+CONNECT  DB812 H27      s      0   C14  
+CONNECT  DB812 H28      s      0   C14  
 CONNECT  DB812 H29      s      0   C23  
-CONNECT  DB812 H30      s      0   C23  
-CONNECT  DB812 H31      s      0   C23  
+CONNECT  DB812 H30      s      0    N2  
 
 #  DB811
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -2575,33 +3033,33 @@ CONNECT  DB811  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB811  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB811  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB811  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB811  C9     sp3     0    C2   0   C10   0   H11   0   H12  
-CONNECT  DB811  N1     sp2     0    C3  
-CONNECT  DB811  N2     sp2     0    C4   0   C19   0   H13  
-CONNECT  DB811  N3     sp2     0   C11   0   C17   0   H14  
+CONNECT  DB811  C9     sp3     0    C2   0   C10   0   H13   0   H16  
+CONNECT  DB811  N1      sp     0    C3  
+CONNECT  DB811  N2     sp2     0    C4   0   C19   0   H29  
+CONNECT  DB811  N3     sp2     0   C11   0   C17   0   H30  
 CONNECT  DB811  N4     sp3     0    C2   0   C14   0   C16  
-CONNECT  DB811  N5     sp3     0   C12   0   C18   0   C20   0   H15  
+CONNECT  DB811  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB811  O1     sp3     0   C22   0   C23  
 CONNECT  DB811  O2     sp3     0    C1   0   C13  
 CONNECT  DB811  O3     sp3     0   C10   0   C15  
-CONNECT  DB811 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB811 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB811 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB811 C12     sp3     0    N5   0   H18   0   H19   0   H20  
+CONNECT  DB811 C12     sp3     0    N5   0   H22   0   H24   0   H25  
 CONNECT  DB811 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB811 Cl1      s      0   C24  
-CONNECT  DB811 C14     sp3     0   C18   0    N4   0   H21   0   H22  
+CONNECT  DB811 C14     sp3     0    N4   0   C18   0   H26   0   H27  
 CONNECT  DB811 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB811 Cl2      s      0   C25  
-CONNECT  DB811 C16     sp3     0   C20   0    N4   0   H23   0   H24  
+CONNECT  DB811 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB811 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB811 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB811 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB811 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB811 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB811 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB811 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB811 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB811 C23     sp3     0    O1   0   H29   0   H30   0   H31  
-CONNECT  DB811 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB811 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB811 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB811 C23     sp3     0    O1   0   H28   0   H12   0   H15  
+CONNECT  DB811 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB811 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB811 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB811  H1      s      0    C1  
 CONNECT  DB811  H2      s      0    C1  
@@ -2613,27 +3071,26 @@ CONNECT  DB811  H7      s      0    C5
 CONNECT  DB811  H8      s      0    C6  
 CONNECT  DB811  H9      s      0    C7  
 CONNECT  DB811 H10      s      0    C8  
-CONNECT  DB811 H11      s      0    C9  
-CONNECT  DB811 H12      s      0    C9  
-CONNECT  DB811 H13      s      0    N2  
-CONNECT  DB811 H14      s      0    N3  
-CONNECT  DB811 H15      s      0    N5  
-CONNECT  DB811 H16      s      0   C10  
-CONNECT  DB811 H17      s      0   C10  
-CONNECT  DB811 H18      s      0   C12  
-CONNECT  DB811 H19      s      0   C12  
-CONNECT  DB811 H20      s      0   C12  
-CONNECT  DB811 H21      s      0   C14  
-CONNECT  DB811 H22      s      0   C14  
-CONNECT  DB811 H23      s      0   C16  
-CONNECT  DB811 H24      s      0   C16  
-CONNECT  DB811 H25      s      0   C18  
-CONNECT  DB811 H26      s      0   C18  
-CONNECT  DB811 H27      s      0   C20  
-CONNECT  DB811 H28      s      0   C20  
-CONNECT  DB811 H29      s      0   C23  
-CONNECT  DB811 H30      s      0   C23  
-CONNECT  DB811 H31      s      0   C23  
+CONNECT  DB811 H11      s      0   C16  
+CONNECT  DB811 H12      s      0   C23  
+CONNECT  DB811 H13      s      0    C9  
+CONNECT  DB811 H14      s      0   C16  
+CONNECT  DB811 H15      s      0   C23  
+CONNECT  DB811 H16      s      0    C9  
+CONNECT  DB811 H17      s      0   C18  
+CONNECT  DB811 H18      s      0   C10  
+CONNECT  DB811 H19      s      0   C18  
+CONNECT  DB811 H20      s      0   C10  
+CONNECT  DB811 H21      s      0   C20  
+CONNECT  DB811 H22      s      0   C12  
+CONNECT  DB811 H23      s      0   C20  
+CONNECT  DB811 H24      s      0   C12  
+CONNECT  DB811 H25      s      0   C12  
+CONNECT  DB811 H26      s      0   C14  
+CONNECT  DB811 H27      s      0   C14  
+CONNECT  DB811 H28      s      0   C23  
+CONNECT  DB811 H29      s      0    N2  
+CONNECT  DB811 H30      s      0    N3  
 
 #  DB810
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -2646,33 +3103,33 @@ CONNECT  DB810  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB810  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB810  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB810  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB810  C9     sp3     0    C2   0   C10   0   H11   0   H12  
+CONNECT  DB810  C9     sp3     0    C2   0   C10   0   H13   0   H16  
 CONNECT  DB810  N1      sp     0    C3  
-CONNECT  DB810  N2     sp2     0    C4   0   C19   0   H13  
-CONNECT  DB810  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB810  N4     sp3     0    C2   0   C14   0   C16  
-CONNECT  DB810  N5     sp3     0   C12   0   C18   0   C20   0   H15  
+CONNECT  DB810  N2     sp2     0    C4   0   C19   0   H31  
+CONNECT  DB810  N3     sp2     0   C11   0   C17   0   H25  
+CONNECT  DB810  N4     sp3     0    C2   0   C14   0   C16   0   H27  
+CONNECT  DB810  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB810  O1     sp3     0   C22   0   C23  
 CONNECT  DB810  O2     sp3     0    C1   0   C13  
 CONNECT  DB810  O3     sp3     0   C10   0   C15  
-CONNECT  DB810 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB810 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB810 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB810 C12     sp3     0    N5   0   H18   0   H19   0   H20  
+CONNECT  DB810 C12     sp3     0    N5   0   H22   0   H24   0   H26  
 CONNECT  DB810 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB810 Cl1      s      0   C24  
-CONNECT  DB810 C14     sp3     0   C18   0    N4   0   H21   0   H22  
+CONNECT  DB810 C14     sp3     0    N4   0   C18   0   H28   0   H29  
 CONNECT  DB810 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB810 Cl2      s      0   C25  
-CONNECT  DB810 C16     sp3     0   C20   0    N4   0   H23   0   H24  
+CONNECT  DB810 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB810 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB810 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB810 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB810 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB810 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB810 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB810 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB810 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB810 C23     sp3     0    O1   0   H29   0   H30   0   H31  
-CONNECT  DB810 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB810 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB810 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB810 C23     sp3     0    O1   0   H30   0   H12   0   H15  
+CONNECT  DB810 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB810 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB810 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB810  H1      s      0    C1  
 CONNECT  DB810  H2      s      0    C1  
@@ -2684,27 +3141,27 @@ CONNECT  DB810  H7      s      0    C5
 CONNECT  DB810  H8      s      0    C6  
 CONNECT  DB810  H9      s      0    C7  
 CONNECT  DB810 H10      s      0    C8  
-CONNECT  DB810 H11      s      0    C9  
-CONNECT  DB810 H12      s      0    C9  
-CONNECT  DB810 H13      s      0    N2  
-CONNECT  DB810 H14      s      0    N3  
-CONNECT  DB810 H15      s      0    N5  
-CONNECT  DB810 H16      s      0   C10  
-CONNECT  DB810 H17      s      0   C10  
-CONNECT  DB810 H18      s      0   C12  
-CONNECT  DB810 H19      s      0   C12  
-CONNECT  DB810 H20      s      0   C12  
-CONNECT  DB810 H21      s      0   C14  
-CONNECT  DB810 H22      s      0   C14  
-CONNECT  DB810 H23      s      0   C16  
-CONNECT  DB810 H24      s      0   C16  
-CONNECT  DB810 H25      s      0   C18  
-CONNECT  DB810 H26      s      0   C18  
-CONNECT  DB810 H27      s      0   C20  
-CONNECT  DB810 H28      s      0   C20  
-CONNECT  DB810 H29      s      0   C23  
+CONNECT  DB810 H11      s      0   C16  
+CONNECT  DB810 H12      s      0   C23  
+CONNECT  DB810 H13      s      0    C9  
+CONNECT  DB810 H14      s      0   C16  
+CONNECT  DB810 H15      s      0   C23  
+CONNECT  DB810 H16      s      0    C9  
+CONNECT  DB810 H17      s      0   C18  
+CONNECT  DB810 H18      s      0   C10  
+CONNECT  DB810 H19      s      0   C18  
+CONNECT  DB810 H20      s      0   C10  
+CONNECT  DB810 H21      s      0   C20  
+CONNECT  DB810 H22      s      0   C12  
+CONNECT  DB810 H23      s      0   C20  
+CONNECT  DB810 H24      s      0   C12  
+CONNECT  DB810 H25      s      0    N3  
+CONNECT  DB810 H26      s      0   C12  
+CONNECT  DB810 H27      s      0    N4  
+CONNECT  DB810 H28      s      0   C14  
+CONNECT  DB810 H29      s      0   C14  
 CONNECT  DB810 H30      s      0   C23  
-CONNECT  DB810 H31      s      0   C23  
+CONNECT  DB810 H31      s      0    N2  
 
 #  DB809
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -2717,33 +3174,33 @@ CONNECT  DB809  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB809  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB809  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB809  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB809  C9     sp3     0    C2   0   C10   0   H11   0   H12  
+CONNECT  DB809  C9     sp3     0    C2   0   C10   0   H13   0   H16  
 CONNECT  DB809  N1      sp     0    C3  
-CONNECT  DB809  N2     sp2     0    C4   0   C19   0   H13  
-CONNECT  DB809  N3     sp2     0   C11   0   C17   0   H14  
+CONNECT  DB809  N2     sp2     0    C4   0   C19  
+CONNECT  DB809  N3     sp2     0   C11   0   C17  
 CONNECT  DB809  N4     sp3     0    C2   0   C14   0   C16  
-CONNECT  DB809  N5     sp3     0   C12   0   C18   0   C20   0   H15  
+CONNECT  DB809  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB809  O1     sp3     0   C22   0   C23  
 CONNECT  DB809  O2     sp3     0    C1   0   C13  
 CONNECT  DB809  O3     sp3     0   C10   0   C15  
-CONNECT  DB809 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB809 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB809 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB809 C12     sp3     0    N5   0   H18   0   H19   0   H20  
+CONNECT  DB809 C12     sp3     0    N5   0   H22   0   H24   0   H25  
 CONNECT  DB809 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB809 Cl1      s      0   C24  
-CONNECT  DB809 C14     sp3     0   C18   0    N4   0   H21   0   H22  
+CONNECT  DB809 C14     sp3     0    N4   0   C18   0   H26   0   H27  
 CONNECT  DB809 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB809 Cl2      s      0   C25  
-CONNECT  DB809 C16     sp3     0   C20   0    N4   0   H23   0   H24  
+CONNECT  DB809 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB809 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB809 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB809 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB809 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB809 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB809 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB809 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB809 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB809 C23     sp3     0    O1   0   H29   0   H30   0   H31  
-CONNECT  DB809 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB809 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB809 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB809 C23     sp3     0    O1   0   H28   0   H12   0   H15  
+CONNECT  DB809 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB809 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB809 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB809  H1      s      0    C1  
 CONNECT  DB809  H2      s      0    C1  
@@ -2755,27 +3212,24 @@ CONNECT  DB809  H7      s      0    C5
 CONNECT  DB809  H8      s      0    C6  
 CONNECT  DB809  H9      s      0    C7  
 CONNECT  DB809 H10      s      0    C8  
-CONNECT  DB809 H11      s      0    C9  
-CONNECT  DB809 H12      s      0    C9  
-CONNECT  DB809 H13      s      0    N2  
-CONNECT  DB809 H14      s      0    N3  
-CONNECT  DB809 H15      s      0    N5  
-CONNECT  DB809 H16      s      0   C10  
-CONNECT  DB809 H17      s      0   C10  
-CONNECT  DB809 H18      s      0   C12  
-CONNECT  DB809 H19      s      0   C12  
-CONNECT  DB809 H20      s      0   C12  
-CONNECT  DB809 H21      s      0   C14  
-CONNECT  DB809 H22      s      0   C14  
-CONNECT  DB809 H23      s      0   C16  
-CONNECT  DB809 H24      s      0   C16  
-CONNECT  DB809 H25      s      0   C18  
-CONNECT  DB809 H26      s      0   C18  
-CONNECT  DB809 H27      s      0   C20  
-CONNECT  DB809 H28      s      0   C20  
-CONNECT  DB809 H29      s      0   C23  
-CONNECT  DB809 H30      s      0   C23  
-CONNECT  DB809 H31      s      0   C23  
+CONNECT  DB809 H11      s      0   C16  
+CONNECT  DB809 H12      s      0   C23  
+CONNECT  DB809 H13      s      0    C9  
+CONNECT  DB809 H14      s      0   C16  
+CONNECT  DB809 H15      s      0   C23  
+CONNECT  DB809 H16      s      0    C9  
+CONNECT  DB809 H17      s      0   C18  
+CONNECT  DB809 H18      s      0   C10  
+CONNECT  DB809 H19      s      0   C18  
+CONNECT  DB809 H20      s      0   C10  
+CONNECT  DB809 H21      s      0   C20  
+CONNECT  DB809 H22      s      0   C12  
+CONNECT  DB809 H23      s      0   C20  
+CONNECT  DB809 H24      s      0   C12  
+CONNECT  DB809 H25      s      0   C12  
+CONNECT  DB809 H26      s      0   C14  
+CONNECT  DB809 H27      s      0   C14  
+CONNECT  DB809 H28      s      0   C23  
 
 #  DB808
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -2788,33 +3242,33 @@ CONNECT  DB808  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB808  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB808  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB808  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB808  C9     sp3     0    C2   0   C10   0   H11   0   H12  
+CONNECT  DB808  C9     sp3     0    C2   0   C10   0   H13   0   H16  
 CONNECT  DB808  N1      sp     0    C3  
-CONNECT  DB808  N2     sp2     0    C4   0   C19  
-CONNECT  DB808  N3     sp2     0   C11   0   C17   0   H13  
-CONNECT  DB808  N4     sp3     0    C2   0   C14   0   C16  
-CONNECT  DB808  N5     sp3     0   C12   0   C18   0   C20   0   H14  
+CONNECT  DB808  N2     sp2     0    C4   0   C19   0   H30  
+CONNECT  DB808  N3     sp2     0   C11   0   C17   0   H31  
+CONNECT  DB808  N4     sp3     0    C2   0   C14   0   C16   0   H26  
+CONNECT  DB808  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB808  O1     sp3     0   C22   0   C23  
 CONNECT  DB808  O2     sp3     0    C1   0   C13  
 CONNECT  DB808  O3     sp3     0   C10   0   C15  
-CONNECT  DB808 C10     sp3     0    C9   0    O3   0   H15   0   H16  
+CONNECT  DB808 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB808 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB808 C12     sp3     0    N5   0   H17   0   H18   0   H19  
+CONNECT  DB808 C12     sp3     0    N5   0   H22   0   H24   0   H25  
 CONNECT  DB808 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB808 Cl1      s      0   C24  
-CONNECT  DB808 C14     sp3     0   C18   0    N4   0   H20   0   H21  
+CONNECT  DB808 C14     sp3     0    N4   0   C18   0   H27   0   H28  
 CONNECT  DB808 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB808 Cl2      s      0   C25  
-CONNECT  DB808 C16     sp3     0   C20   0    N4   0   H22   0   H23  
+CONNECT  DB808 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB808 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB808 C18     sp3     0   C14   0    N5   0   H24   0   H25  
+CONNECT  DB808 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB808 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB808 C20     sp3     0   C16   0    N5   0   H26   0   H27  
+CONNECT  DB808 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB808 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB808 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB808 C23     sp3     0    O1   0   H28   0   H29   0   H30  
-CONNECT  DB808 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB808 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB808 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB808 C23     sp3     0    O1   0   H29   0   H12   0   H15  
+CONNECT  DB808 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB808 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB808 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB808  H1      s      0    C1  
 CONNECT  DB808  H2      s      0    C1  
@@ -2826,26 +3280,27 @@ CONNECT  DB808  H7      s      0    C5
 CONNECT  DB808  H8      s      0    C6  
 CONNECT  DB808  H9      s      0    C7  
 CONNECT  DB808 H10      s      0    C8  
-CONNECT  DB808 H11      s      0    C9  
-CONNECT  DB808 H12      s      0    C9  
-CONNECT  DB808 H13      s      0    N3  
-CONNECT  DB808 H14      s      0    N5  
-CONNECT  DB808 H15      s      0   C10  
-CONNECT  DB808 H16      s      0   C10  
-CONNECT  DB808 H17      s      0   C12  
-CONNECT  DB808 H18      s      0   C12  
-CONNECT  DB808 H19      s      0   C12  
-CONNECT  DB808 H20      s      0   C14  
-CONNECT  DB808 H21      s      0   C14  
-CONNECT  DB808 H22      s      0   C16  
-CONNECT  DB808 H23      s      0   C16  
-CONNECT  DB808 H24      s      0   C18  
-CONNECT  DB808 H25      s      0   C18  
-CONNECT  DB808 H26      s      0   C20  
-CONNECT  DB808 H27      s      0   C20  
-CONNECT  DB808 H28      s      0   C23  
+CONNECT  DB808 H11      s      0   C16  
+CONNECT  DB808 H12      s      0   C23  
+CONNECT  DB808 H13      s      0    C9  
+CONNECT  DB808 H14      s      0   C16  
+CONNECT  DB808 H15      s      0   C23  
+CONNECT  DB808 H16      s      0    C9  
+CONNECT  DB808 H17      s      0   C18  
+CONNECT  DB808 H18      s      0   C10  
+CONNECT  DB808 H19      s      0   C18  
+CONNECT  DB808 H20      s      0   C10  
+CONNECT  DB808 H21      s      0   C20  
+CONNECT  DB808 H22      s      0   C12  
+CONNECT  DB808 H23      s      0   C20  
+CONNECT  DB808 H24      s      0   C12  
+CONNECT  DB808 H25      s      0   C12  
+CONNECT  DB808 H26      s      0    N4  
+CONNECT  DB808 H27      s      0   C14  
+CONNECT  DB808 H28      s      0   C14  
 CONNECT  DB808 H29      s      0   C23  
-CONNECT  DB808 H30      s      0   C23  
+CONNECT  DB808 H30      s      0    N2  
+CONNECT  DB808 H31      s      0    N3  
 
 #  DB807
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -2858,33 +3313,33 @@ CONNECT  DB807  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB807  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB807  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB807  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB807  C9     sp3     0    C2   0   C10   0   H11   0   H12  
-CONNECT  DB807  N1     sp2     0    C3  
-CONNECT  DB807  N2     sp2     0    C4   0   C19   0   H13  
-CONNECT  DB807  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB807  N4     sp3     0    C2   0   C14   0   C16   0   H15  
+CONNECT  DB807  C9     sp3     0    C2   0   C10   0   H13   0   H16  
+CONNECT  DB807  N1      sp     0    C3  
+CONNECT  DB807  N2     sp2     0    C4   0   C19  
+CONNECT  DB807  N3     sp2     0   C11   0   C17  
+CONNECT  DB807  N4     sp3     0    C2   0   C14   0   C16   0   H26  
 CONNECT  DB807  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB807  O1     sp3     0   C22   0   C23  
 CONNECT  DB807  O2     sp3     0    C1   0   C13  
 CONNECT  DB807  O3     sp3     0   C10   0   C15  
-CONNECT  DB807 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB807 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB807 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB807 C12     sp3     0    N5   0   H18   0   H19   0   H20  
+CONNECT  DB807 C12     sp3     0    N5   0   H22   0   H24   0   H25  
 CONNECT  DB807 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB807 Cl1      s      0   C24  
-CONNECT  DB807 C14     sp3     0   C18   0    N4   0   H21   0   H22  
+CONNECT  DB807 C14     sp3     0    N4   0   C18   0   H27   0   H28  
 CONNECT  DB807 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB807 Cl2      s      0   C25  
-CONNECT  DB807 C16     sp3     0   C20   0    N4   0   H23   0   H24  
+CONNECT  DB807 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB807 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB807 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB807 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB807 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB807 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB807 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB807 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB807 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB807 C23     sp3     0    O1   0   H29   0   H30   0   H31  
-CONNECT  DB807 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB807 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB807 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB807 C23     sp3     0    O1   0   H29   0   H12   0   H15  
+CONNECT  DB807 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB807 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB807 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB807  H1      s      0    C1  
 CONNECT  DB807  H2      s      0    C1  
@@ -2896,27 +3351,25 @@ CONNECT  DB807  H7      s      0    C5
 CONNECT  DB807  H8      s      0    C6  
 CONNECT  DB807  H9      s      0    C7  
 CONNECT  DB807 H10      s      0    C8  
-CONNECT  DB807 H11      s      0    C9  
-CONNECT  DB807 H12      s      0    C9  
-CONNECT  DB807 H13      s      0    N2  
-CONNECT  DB807 H14      s      0    N3  
-CONNECT  DB807 H15      s      0    N4  
-CONNECT  DB807 H16      s      0   C10  
-CONNECT  DB807 H17      s      0   C10  
-CONNECT  DB807 H18      s      0   C12  
-CONNECT  DB807 H19      s      0   C12  
-CONNECT  DB807 H20      s      0   C12  
-CONNECT  DB807 H21      s      0   C14  
-CONNECT  DB807 H22      s      0   C14  
-CONNECT  DB807 H23      s      0   C16  
-CONNECT  DB807 H24      s      0   C16  
-CONNECT  DB807 H25      s      0   C18  
-CONNECT  DB807 H26      s      0   C18  
-CONNECT  DB807 H27      s      0   C20  
-CONNECT  DB807 H28      s      0   C20  
+CONNECT  DB807 H11      s      0   C16  
+CONNECT  DB807 H12      s      0   C23  
+CONNECT  DB807 H13      s      0    C9  
+CONNECT  DB807 H14      s      0   C16  
+CONNECT  DB807 H15      s      0   C23  
+CONNECT  DB807 H16      s      0    C9  
+CONNECT  DB807 H17      s      0   C18  
+CONNECT  DB807 H18      s      0   C10  
+CONNECT  DB807 H19      s      0   C18  
+CONNECT  DB807 H20      s      0   C10  
+CONNECT  DB807 H21      s      0   C20  
+CONNECT  DB807 H22      s      0   C12  
+CONNECT  DB807 H23      s      0   C20  
+CONNECT  DB807 H24      s      0   C12  
+CONNECT  DB807 H25      s      0   C12  
+CONNECT  DB807 H26      s      0    N4  
+CONNECT  DB807 H27      s      0   C14  
+CONNECT  DB807 H28      s      0   C14  
 CONNECT  DB807 H29      s      0   C23  
-CONNECT  DB807 H30      s      0   C23  
-CONNECT  DB807 H31      s      0   C23  
 
 #  DB806
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -2929,33 +3382,33 @@ CONNECT  DB806  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB806  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB806  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB806  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB806  C9     sp3     0    C2   0   C10   0   H11   0   H12  
+CONNECT  DB806  C9     sp3     0    C2   0   C10   0   H13   0   H16  
 CONNECT  DB806  N1      sp     0    C3  
-CONNECT  DB806  N2     sp2     0    C4   0   C19   0   H13  
-CONNECT  DB806  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB806  N4     sp3     0    C2   0   C14   0   C16   0   H15  
-CONNECT  DB806  N5     sp3     0   C12   0   C18   0   C20  
+CONNECT  DB806  N2     sp2     0    C4   0   C19   0   H31  
+CONNECT  DB806  N3     sp2     0   C11   0   C17   0   H25  
+CONNECT  DB806  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB806  N5     sp3     0   C12   0   C18   0   C20   0   H28  
 CONNECT  DB806  O1     sp3     0   C22   0   C23  
 CONNECT  DB806  O2     sp3     0    C1   0   C13  
 CONNECT  DB806  O3     sp3     0   C10   0   C15  
-CONNECT  DB806 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB806 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB806 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB806 C12     sp3     0    N5   0   H18   0   H19   0   H20  
+CONNECT  DB806 C12     sp3     0    N5   0   H22   0   H24   0   H26  
 CONNECT  DB806 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB806 Cl1      s      0   C24  
-CONNECT  DB806 C14     sp3     0   C18   0    N4   0   H21   0   H22  
+CONNECT  DB806 C14     sp3     0    N4   0   C18   0   H27   0   H29  
 CONNECT  DB806 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB806 Cl2      s      0   C25  
-CONNECT  DB806 C16     sp3     0   C20   0    N4   0   H23   0   H24  
+CONNECT  DB806 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB806 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB806 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB806 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB806 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB806 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB806 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB806 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB806 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB806 C23     sp3     0    O1   0   H29   0   H30   0   H31  
-CONNECT  DB806 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB806 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB806 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB806 C23     sp3     0    O1   0   H30   0   H12   0   H15  
+CONNECT  DB806 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB806 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB806 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB806  H1      s      0    C1  
 CONNECT  DB806  H2      s      0    C1  
@@ -2967,27 +3420,27 @@ CONNECT  DB806  H7      s      0    C5
 CONNECT  DB806  H8      s      0    C6  
 CONNECT  DB806  H9      s      0    C7  
 CONNECT  DB806 H10      s      0    C8  
-CONNECT  DB806 H11      s      0    C9  
-CONNECT  DB806 H12      s      0    C9  
-CONNECT  DB806 H13      s      0    N2  
-CONNECT  DB806 H14      s      0    N3  
-CONNECT  DB806 H15      s      0    N4  
-CONNECT  DB806 H16      s      0   C10  
-CONNECT  DB806 H17      s      0   C10  
-CONNECT  DB806 H18      s      0   C12  
-CONNECT  DB806 H19      s      0   C12  
-CONNECT  DB806 H20      s      0   C12  
-CONNECT  DB806 H21      s      0   C14  
-CONNECT  DB806 H22      s      0   C14  
-CONNECT  DB806 H23      s      0   C16  
-CONNECT  DB806 H24      s      0   C16  
-CONNECT  DB806 H25      s      0   C18  
-CONNECT  DB806 H26      s      0   C18  
-CONNECT  DB806 H27      s      0   C20  
-CONNECT  DB806 H28      s      0   C20  
-CONNECT  DB806 H29      s      0   C23  
+CONNECT  DB806 H11      s      0   C16  
+CONNECT  DB806 H12      s      0   C23  
+CONNECT  DB806 H13      s      0    C9  
+CONNECT  DB806 H14      s      0   C16  
+CONNECT  DB806 H15      s      0   C23  
+CONNECT  DB806 H16      s      0    C9  
+CONNECT  DB806 H17      s      0   C18  
+CONNECT  DB806 H18      s      0   C10  
+CONNECT  DB806 H19      s      0   C18  
+CONNECT  DB806 H20      s      0   C10  
+CONNECT  DB806 H21      s      0   C20  
+CONNECT  DB806 H22      s      0   C12  
+CONNECT  DB806 H23      s      0   C20  
+CONNECT  DB806 H24      s      0   C12  
+CONNECT  DB806 H25      s      0    N3  
+CONNECT  DB806 H26      s      0   C12  
+CONNECT  DB806 H27      s      0   C14  
+CONNECT  DB806 H28      s      0    N5  
+CONNECT  DB806 H29      s      0   C14  
 CONNECT  DB806 H30      s      0   C23  
-CONNECT  DB806 H31      s      0   C23  
+CONNECT  DB806 H31      s      0    N2  
 
 #  DB805
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -3000,33 +3453,33 @@ CONNECT  DB805  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB805  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB805  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB805  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB805  C9     sp3     0    C2   0   C10   0   H11   0   H12  
+CONNECT  DB805  C9     sp3     0    C2   0   C10   0   H13   0   H16  
 CONNECT  DB805  N1      sp     0    C3  
-CONNECT  DB805  N2     sp2     0    C4   0   C19   0   H13  
-CONNECT  DB805  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB805  N4     sp3     0    C2   0   C14   0   C16   0   H15  
-CONNECT  DB805  N5     sp3     0   C12   0   C18   0   C20  
+CONNECT  DB805  N2     sp2     0    C4   0   C19   0   H30  
+CONNECT  DB805  N3     sp2     0   C11   0   C17   0   H31  
+CONNECT  DB805  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB805  N5     sp3     0   C12   0   C18   0   C20   0   H27  
 CONNECT  DB805  O1     sp3     0   C22   0   C23  
 CONNECT  DB805  O2     sp3     0    C1   0   C13  
 CONNECT  DB805  O3     sp3     0   C10   0   C15  
-CONNECT  DB805 C10     sp3     0    C9   0    O3   0   H16   0   H17  
+CONNECT  DB805 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB805 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB805 C12     sp3     0    N5   0   H18   0   H19   0   H20  
+CONNECT  DB805 C12     sp3     0    N5   0   H22   0   H24   0   H25  
 CONNECT  DB805 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB805 Cl1      s      0   C24  
-CONNECT  DB805 C14     sp3     0   C18   0    N4   0   H21   0   H22  
+CONNECT  DB805 C14     sp3     0    N4   0   C18   0   H26   0   H28  
 CONNECT  DB805 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB805 Cl2      s      0   C25  
-CONNECT  DB805 C16     sp3     0   C20   0    N4   0   H23   0   H24  
+CONNECT  DB805 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB805 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB805 C18     sp3     0   C14   0    N5   0   H25   0   H26  
+CONNECT  DB805 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB805 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB805 C20     sp3     0   C16   0    N5   0   H27   0   H28  
+CONNECT  DB805 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB805 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB805 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB805 C23     sp3     0    O1   0   H29   0   H30   0   H31  
-CONNECT  DB805 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB805 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB805 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB805 C23     sp3     0    O1   0   H29   0   H12   0   H15  
+CONNECT  DB805 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB805 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB805 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB805  H1      s      0    C1  
 CONNECT  DB805  H2      s      0    C1  
@@ -3038,27 +3491,27 @@ CONNECT  DB805  H7      s      0    C5
 CONNECT  DB805  H8      s      0    C6  
 CONNECT  DB805  H9      s      0    C7  
 CONNECT  DB805 H10      s      0    C8  
-CONNECT  DB805 H11      s      0    C9  
-CONNECT  DB805 H12      s      0    C9  
-CONNECT  DB805 H13      s      0    N2  
-CONNECT  DB805 H14      s      0    N3  
-CONNECT  DB805 H15      s      0    N4  
-CONNECT  DB805 H16      s      0   C10  
-CONNECT  DB805 H17      s      0   C10  
-CONNECT  DB805 H18      s      0   C12  
-CONNECT  DB805 H19      s      0   C12  
-CONNECT  DB805 H20      s      0   C12  
-CONNECT  DB805 H21      s      0   C14  
-CONNECT  DB805 H22      s      0   C14  
-CONNECT  DB805 H23      s      0   C16  
-CONNECT  DB805 H24      s      0   C16  
-CONNECT  DB805 H25      s      0   C18  
-CONNECT  DB805 H26      s      0   C18  
-CONNECT  DB805 H27      s      0   C20  
-CONNECT  DB805 H28      s      0   C20  
+CONNECT  DB805 H11      s      0   C16  
+CONNECT  DB805 H12      s      0   C23  
+CONNECT  DB805 H13      s      0    C9  
+CONNECT  DB805 H14      s      0   C16  
+CONNECT  DB805 H15      s      0   C23  
+CONNECT  DB805 H16      s      0    C9  
+CONNECT  DB805 H17      s      0   C18  
+CONNECT  DB805 H18      s      0   C10  
+CONNECT  DB805 H19      s      0   C18  
+CONNECT  DB805 H20      s      0   C10  
+CONNECT  DB805 H21      s      0   C20  
+CONNECT  DB805 H22      s      0   C12  
+CONNECT  DB805 H23      s      0   C20  
+CONNECT  DB805 H24      s      0   C12  
+CONNECT  DB805 H25      s      0   C12  
+CONNECT  DB805 H26      s      0   C14  
+CONNECT  DB805 H27      s      0    N5  
+CONNECT  DB805 H28      s      0   C14  
 CONNECT  DB805 H29      s      0   C23  
-CONNECT  DB805 H30      s      0   C23  
-CONNECT  DB805 H31      s      0   C23  
+CONNECT  DB805 H30      s      0    N2  
+CONNECT  DB805 H31      s      0    N3  
 
 #  DB804
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -3071,33 +3524,33 @@ CONNECT  DB804  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB804  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB804  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB804  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB804  C9     sp3     0    C2   0   C10   0   H11   0   H12  
+CONNECT  DB804  C9     sp3     0    C2   0   C10   0   H13   0   H16  
 CONNECT  DB804  N1      sp     0    C3  
 CONNECT  DB804  N2     sp2     0    C4   0   C19  
-CONNECT  DB804  N3     sp2     0   C11   0   C17   0   H13  
-CONNECT  DB804  N4     sp3     0    C2   0   C14   0   C16   0   H14  
-CONNECT  DB804  N5     sp3     0   C12   0   C18   0   C20  
+CONNECT  DB804  N3     sp2     0   C11   0   C17  
+CONNECT  DB804  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB804  N5     sp3     0   C12   0   C18   0   C20   0   H27  
 CONNECT  DB804  O1     sp3     0   C22   0   C23  
 CONNECT  DB804  O2     sp3     0    C1   0   C13  
 CONNECT  DB804  O3     sp3     0   C10   0   C15  
-CONNECT  DB804 C10     sp3     0    C9   0    O3   0   H15   0   H16  
+CONNECT  DB804 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB804 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB804 C12     sp3     0    N5   0   H17   0   H18   0   H19  
+CONNECT  DB804 C12     sp3     0    N5   0   H22   0   H24   0   H25  
 CONNECT  DB804 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB804 Cl1      s      0   C24  
-CONNECT  DB804 C14     sp3     0   C18   0    N4   0   H20   0   H21  
+CONNECT  DB804 C14     sp3     0    N4   0   C18   0   H26   0   H28  
 CONNECT  DB804 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB804 Cl2      s      0   C25  
-CONNECT  DB804 C16     sp3     0   C20   0    N4   0   H22   0   H23  
+CONNECT  DB804 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB804 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB804 C18     sp3     0   C14   0    N5   0   H24   0   H25  
+CONNECT  DB804 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB804 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB804 C20     sp3     0   C16   0    N5   0   H26   0   H27  
+CONNECT  DB804 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB804 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB804 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB804 C23     sp3     0    O1   0   H28   0   H29   0   H30  
-CONNECT  DB804 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB804 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB804 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB804 C23     sp3     0    O1   0   H29   0   H12   0   H15  
+CONNECT  DB804 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB804 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB804 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB804  H1      s      0    C1  
 CONNECT  DB804  H2      s      0    C1  
@@ -3109,26 +3562,25 @@ CONNECT  DB804  H7      s      0    C5
 CONNECT  DB804  H8      s      0    C6  
 CONNECT  DB804  H9      s      0    C7  
 CONNECT  DB804 H10      s      0    C8  
-CONNECT  DB804 H11      s      0    C9  
-CONNECT  DB804 H12      s      0    C9  
-CONNECT  DB804 H13      s      0    N3  
-CONNECT  DB804 H14      s      0    N4  
-CONNECT  DB804 H15      s      0   C10  
-CONNECT  DB804 H16      s      0   C10  
-CONNECT  DB804 H17      s      0   C12  
-CONNECT  DB804 H18      s      0   C12  
-CONNECT  DB804 H19      s      0   C12  
-CONNECT  DB804 H20      s      0   C14  
-CONNECT  DB804 H21      s      0   C14  
-CONNECT  DB804 H22      s      0   C16  
-CONNECT  DB804 H23      s      0   C16  
-CONNECT  DB804 H24      s      0   C18  
-CONNECT  DB804 H25      s      0   C18  
-CONNECT  DB804 H26      s      0   C20  
-CONNECT  DB804 H27      s      0   C20  
-CONNECT  DB804 H28      s      0   C23  
+CONNECT  DB804 H11      s      0   C16  
+CONNECT  DB804 H12      s      0   C23  
+CONNECT  DB804 H13      s      0    C9  
+CONNECT  DB804 H14      s      0   C16  
+CONNECT  DB804 H15      s      0   C23  
+CONNECT  DB804 H16      s      0    C9  
+CONNECT  DB804 H17      s      0   C18  
+CONNECT  DB804 H18      s      0   C10  
+CONNECT  DB804 H19      s      0   C18  
+CONNECT  DB804 H20      s      0   C10  
+CONNECT  DB804 H21      s      0   C20  
+CONNECT  DB804 H22      s      0   C12  
+CONNECT  DB804 H23      s      0   C20  
+CONNECT  DB804 H24      s      0   C12  
+CONNECT  DB804 H25      s      0   C12  
+CONNECT  DB804 H26      s      0   C14  
+CONNECT  DB804 H27      s      0    N5  
+CONNECT  DB804 H28      s      0   C14  
 CONNECT  DB804 H29      s      0   C23  
-CONNECT  DB804 H30      s      0   C23  
 
 #  DB803
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -3141,33 +3593,33 @@ CONNECT  DB803  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB803  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB803  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB803  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB803  C9     sp3     0    C2   0   C10   0   H11   0   H12  
-CONNECT  DB803  N1     sp2     0    C3  
-CONNECT  DB803  N2     sp2     0    C4   0   C19   0   H13  
-CONNECT  DB803  N3     sp2     0   C11   0   C17   0   H14  
+CONNECT  DB803  C9     sp3     0    C2   0   C10   0   H13   0   H16  
+CONNECT  DB803  N1      sp     0    C3  
+CONNECT  DB803  N2     sp2     0    C4   0   C19  
+CONNECT  DB803  N3     sp2     0   C11   0   C17   0   H25  
 CONNECT  DB803  N4     sp3     0    C2   0   C14   0   C16  
 CONNECT  DB803  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB803  O1     sp3     0   C22   0   C23  
 CONNECT  DB803  O2     sp3     0    C1   0   C13  
 CONNECT  DB803  O3     sp3     0   C10   0   C15  
-CONNECT  DB803 C10     sp3     0    C9   0    O3   0   H15   0   H16  
+CONNECT  DB803 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB803 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB803 C12     sp3     0    N5   0   H17   0   H18   0   H19  
+CONNECT  DB803 C12     sp3     0    N5   0   H22   0   H24   0   H26  
 CONNECT  DB803 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB803 Cl1      s      0   C24  
-CONNECT  DB803 C14     sp3     0   C18   0    N4   0   H20   0   H21  
+CONNECT  DB803 C14     sp3     0    N4   0   C18   0   H27   0   H28  
 CONNECT  DB803 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB803 Cl2      s      0   C25  
-CONNECT  DB803 C16     sp3     0   C20   0    N4   0   H22   0   H23  
+CONNECT  DB803 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB803 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB803 C18     sp3     0   C14   0    N5   0   H24   0   H25  
+CONNECT  DB803 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB803 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB803 C20     sp3     0   C16   0    N5   0   H26   0   H27  
+CONNECT  DB803 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB803 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB803 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB803 C23     sp3     0    O1   0   H28   0   H29   0   H30  
-CONNECT  DB803 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB803 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB803 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB803 C23     sp3     0    O1   0   H29   0   H12   0   H15  
+CONNECT  DB803 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB803 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB803 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB803  H1      s      0    C1  
 CONNECT  DB803  H2      s      0    C1  
@@ -3179,26 +3631,25 @@ CONNECT  DB803  H7      s      0    C5
 CONNECT  DB803  H8      s      0    C6  
 CONNECT  DB803  H9      s      0    C7  
 CONNECT  DB803 H10      s      0    C8  
-CONNECT  DB803 H11      s      0    C9  
-CONNECT  DB803 H12      s      0    C9  
-CONNECT  DB803 H13      s      0    N2  
-CONNECT  DB803 H14      s      0    N3  
-CONNECT  DB803 H15      s      0   C10  
-CONNECT  DB803 H16      s      0   C10  
-CONNECT  DB803 H17      s      0   C12  
-CONNECT  DB803 H18      s      0   C12  
-CONNECT  DB803 H19      s      0   C12  
-CONNECT  DB803 H20      s      0   C14  
-CONNECT  DB803 H21      s      0   C14  
-CONNECT  DB803 H22      s      0   C16  
-CONNECT  DB803 H23      s      0   C16  
-CONNECT  DB803 H24      s      0   C18  
-CONNECT  DB803 H25      s      0   C18  
-CONNECT  DB803 H26      s      0   C20  
-CONNECT  DB803 H27      s      0   C20  
-CONNECT  DB803 H28      s      0   C23  
+CONNECT  DB803 H11      s      0   C16  
+CONNECT  DB803 H12      s      0   C23  
+CONNECT  DB803 H13      s      0    C9  
+CONNECT  DB803 H14      s      0   C16  
+CONNECT  DB803 H15      s      0   C23  
+CONNECT  DB803 H16      s      0    C9  
+CONNECT  DB803 H17      s      0   C18  
+CONNECT  DB803 H18      s      0   C10  
+CONNECT  DB803 H19      s      0   C18  
+CONNECT  DB803 H20      s      0   C10  
+CONNECT  DB803 H21      s      0   C20  
+CONNECT  DB803 H22      s      0   C12  
+CONNECT  DB803 H23      s      0   C20  
+CONNECT  DB803 H24      s      0   C12  
+CONNECT  DB803 H25      s      0    N3  
+CONNECT  DB803 H26      s      0   C12  
+CONNECT  DB803 H27      s      0   C14  
+CONNECT  DB803 H28      s      0   C14  
 CONNECT  DB803 H29      s      0   C23  
-CONNECT  DB803 H30      s      0   C23  
 
 #  DB802
 #ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
@@ -3211,33 +3662,33 @@ CONNECT  DB802  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB802  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB802  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB802  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB802  C9     sp3     0    C2   0   C10   0   H11   0   H12  
+CONNECT  DB802  C9     sp3     0    C2   0   C10   0   H13   0   H16  
 CONNECT  DB802  N1      sp     0    C3  
-CONNECT  DB802  N2     sp2     0    C4   0   C19   0   H13  
-CONNECT  DB802  N3     sp2     0   C11   0   C17   0   H14  
-CONNECT  DB802  N4     sp3     0    C2   0   C14   0   C16  
+CONNECT  DB802  N2     sp2     0    C4   0   C19  
+CONNECT  DB802  N3     sp2     0   C11   0   C17   0   H25  
+CONNECT  DB802  N4     sp3     0    C2   0   C14   0   C16   0   H27  
 CONNECT  DB802  N5     sp3     0   C12   0   C18   0   C20  
 CONNECT  DB802  O1     sp3     0   C22   0   C23  
 CONNECT  DB802  O2     sp3     0    C1   0   C13  
 CONNECT  DB802  O3     sp3     0   C10   0   C15  
-CONNECT  DB802 C10     sp3     0    C9   0    O3   0   H15   0   H16  
+CONNECT  DB802 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB802 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB802 C12     sp3     0    N5   0   H17   0   H18   0   H19  
+CONNECT  DB802 C12     sp3     0    N5   0   H22   0   H24   0   H26  
 CONNECT  DB802 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB802 Cl1      s      0   C24  
-CONNECT  DB802 C14     sp3     0   C18   0    N4   0   H20   0   H21  
+CONNECT  DB802 C14     sp3     0    N4   0   C18   0   H28   0   H29  
 CONNECT  DB802 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB802 Cl2      s      0   C25  
-CONNECT  DB802 C16     sp3     0   C20   0    N4   0   H22   0   H23  
+CONNECT  DB802 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB802 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB802 C18     sp3     0   C14   0    N5   0   H24   0   H25  
+CONNECT  DB802 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB802 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB802 C20     sp3     0   C16   0    N5   0   H26   0   H27  
+CONNECT  DB802 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB802 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB802 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB802 C23     sp3     0    O1   0   H28   0   H29   0   H30  
-CONNECT  DB802 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB802 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB802 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB802 C23     sp3     0    O1   0   H30   0   H12   0   H15  
+CONNECT  DB802 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB802 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB802 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB802  H1      s      0    C1  
 CONNECT  DB802  H2      s      0    C1  
@@ -3249,25 +3700,25 @@ CONNECT  DB802  H7      s      0    C5
 CONNECT  DB802  H8      s      0    C6  
 CONNECT  DB802  H9      s      0    C7  
 CONNECT  DB802 H10      s      0    C8  
-CONNECT  DB802 H11      s      0    C9  
-CONNECT  DB802 H12      s      0    C9  
-CONNECT  DB802 H13      s      0    N2  
-CONNECT  DB802 H14      s      0    N3  
-CONNECT  DB802 H15      s      0   C10  
-CONNECT  DB802 H16      s      0   C10  
-CONNECT  DB802 H17      s      0   C12  
-CONNECT  DB802 H18      s      0   C12  
-CONNECT  DB802 H19      s      0   C12  
-CONNECT  DB802 H20      s      0   C14  
-CONNECT  DB802 H21      s      0   C14  
-CONNECT  DB802 H22      s      0   C16  
-CONNECT  DB802 H23      s      0   C16  
-CONNECT  DB802 H24      s      0   C18  
-CONNECT  DB802 H25      s      0   C18  
-CONNECT  DB802 H26      s      0   C20  
-CONNECT  DB802 H27      s      0   C20  
-CONNECT  DB802 H28      s      0   C23  
-CONNECT  DB802 H29      s      0   C23  
+CONNECT  DB802 H11      s      0   C16  
+CONNECT  DB802 H12      s      0   C23  
+CONNECT  DB802 H13      s      0    C9  
+CONNECT  DB802 H14      s      0   C16  
+CONNECT  DB802 H15      s      0   C23  
+CONNECT  DB802 H16      s      0    C9  
+CONNECT  DB802 H17      s      0   C18  
+CONNECT  DB802 H18      s      0   C10  
+CONNECT  DB802 H19      s      0   C18  
+CONNECT  DB802 H20      s      0   C10  
+CONNECT  DB802 H21      s      0   C20  
+CONNECT  DB802 H22      s      0   C12  
+CONNECT  DB802 H23      s      0   C20  
+CONNECT  DB802 H24      s      0   C12  
+CONNECT  DB802 H25      s      0    N3  
+CONNECT  DB802 H26      s      0   C12  
+CONNECT  DB802 H27      s      0    N4  
+CONNECT  DB802 H28      s      0   C14  
+CONNECT  DB802 H29      s      0   C14  
 CONNECT  DB802 H30      s      0   C23  
 
 #  DB801
@@ -3281,33 +3732,33 @@ CONNECT  DB801  C5     sp2     0   C24   0   C25   0    H7
 CONNECT  DB801  C6     sp2     0   C22   0   C11   0    H8  
 CONNECT  DB801  C7     sp2     0   C15   0   C19   0    H9  
 CONNECT  DB801  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB801  C9     sp3     0    C2   0   C10   0   H11   0   H12  
+CONNECT  DB801  C9     sp3     0    C2   0   C10   0   H13   0   H16  
 CONNECT  DB801  N1      sp     0    C3  
-CONNECT  DB801  N2     sp2     0    C4   0   C19   0   H13  
-CONNECT  DB801  N3     sp2     0   C11   0   C17   0   H14  
+CONNECT  DB801  N2     sp2     0    C4   0   C19  
+CONNECT  DB801  N3     sp2     0   C11   0   C17   0   H25  
 CONNECT  DB801  N4     sp3     0    C2   0   C14   0   C16  
-CONNECT  DB801  N5     sp3     0   C12   0   C18   0   C20  
+CONNECT  DB801  N5     sp3     0   C12   0   C18   0   C20   0   H28  
 CONNECT  DB801  O1     sp3     0   C22   0   C23  
 CONNECT  DB801  O2     sp3     0    C1   0   C13  
 CONNECT  DB801  O3     sp3     0   C10   0   C15  
-CONNECT  DB801 C10     sp3     0    C9   0    O3   0   H15   0   H16  
+CONNECT  DB801 C10     sp3     0    C9   0    O3   0   H18   0   H20  
 CONNECT  DB801 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB801 C12     sp3     0    N5   0   H17   0   H18   0   H19  
+CONNECT  DB801 C12     sp3     0    N5   0   H22   0   H24   0   H26  
 CONNECT  DB801 C13     sp2     0    C8   0    O2   0   C15  
 CONNECT  DB801 Cl1      s      0   C24  
-CONNECT  DB801 C14     sp3     0   C18   0    N4   0   H20   0   H21  
+CONNECT  DB801 C14     sp3     0    N4   0   C18   0   H27   0   H29  
 CONNECT  DB801 C15     sp2     0    C7   0    O3   0   C13  
 CONNECT  DB801 Cl2      s      0   C25  
-CONNECT  DB801 C16     sp3     0   C20   0    N4   0   H22   0   H23  
+CONNECT  DB801 C16     sp3     0    N4   0   C20   0   H11   0   H14  
 CONNECT  DB801 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB801 C18     sp3     0   C14   0    N5   0   H24   0   H25  
+CONNECT  DB801 C18     sp3     0    N5   0   C14   0   H17   0   H19  
 CONNECT  DB801 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB801 C20     sp3     0   C16   0    N5   0   H26   0   H27  
+CONNECT  DB801 C20     sp3     0    N5   0   C16   0   H21   0   H23  
 CONNECT  DB801 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB801 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB801 C23     sp3     0    O1   0   H28   0   H29   0   H30  
-CONNECT  DB801 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB801 C25     sp2     0   Cl2   0    C5   0   C11  
+CONNECT  DB801 C22     sp2     0    C6   0    O1   0   C24  
+CONNECT  DB801 C23     sp3     0    O1   0   H30   0   H12   0   H15  
+CONNECT  DB801 C24     sp2     0    C5   0   Cl1   0   C22  
+CONNECT  DB801 C25     sp2     0    C5   0   C11   0   Cl2  
 CONNECT  DB801 C26     sp2     0    C3   0    C4   0   C17  
 CONNECT  DB801  H1      s      0    C1  
 CONNECT  DB801  H2      s      0    C1  
@@ -3319,99 +3770,231 @@ CONNECT  DB801  H7      s      0    C5
 CONNECT  DB801  H8      s      0    C6  
 CONNECT  DB801  H9      s      0    C7  
 CONNECT  DB801 H10      s      0    C8  
-CONNECT  DB801 H11      s      0    C9  
-CONNECT  DB801 H12      s      0    C9  
-CONNECT  DB801 H13      s      0    N2  
-CONNECT  DB801 H14      s      0    N3  
-CONNECT  DB801 H15      s      0   C10  
-CONNECT  DB801 H16      s      0   C10  
-CONNECT  DB801 H17      s      0   C12  
-CONNECT  DB801 H18      s      0   C12  
-CONNECT  DB801 H19      s      0   C12  
-CONNECT  DB801 H20      s      0   C14  
-CONNECT  DB801 H21      s      0   C14  
-CONNECT  DB801 H22      s      0   C16  
-CONNECT  DB801 H23      s      0   C16  
-CONNECT  DB801 H24      s      0   C18  
-CONNECT  DB801 H25      s      0   C18  
-CONNECT  DB801 H26      s      0   C20  
-CONNECT  DB801 H27      s      0   C20  
-CONNECT  DB801 H28      s      0   C23  
-CONNECT  DB801 H29      s      0   C23  
+CONNECT  DB801 H11      s      0   C16  
+CONNECT  DB801 H12      s      0   C23  
+CONNECT  DB801 H13      s      0    C9  
+CONNECT  DB801 H14      s      0   C16  
+CONNECT  DB801 H15      s      0   C23  
+CONNECT  DB801 H16      s      0    C9  
+CONNECT  DB801 H17      s      0   C18  
+CONNECT  DB801 H18      s      0   C10  
+CONNECT  DB801 H19      s      0   C18  
+CONNECT  DB801 H20      s      0   C10  
+CONNECT  DB801 H21      s      0   C20  
+CONNECT  DB801 H22      s      0   C12  
+CONNECT  DB801 H23      s      0   C20  
+CONNECT  DB801 H24      s      0   C12  
+CONNECT  DB801 H25      s      0    N3  
+CONNECT  DB801 H26      s      0   C12  
+CONNECT  DB801 H27      s      0   C14  
+CONNECT  DB801 H28      s      0    N5  
+CONNECT  DB801 H29      s      0   C14  
 CONNECT  DB801 H30      s      0   C23  
-
-#  DB800
-#ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn 
-#ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|
-CONNECT  DB800  C1     sp3     0    O2   0    H1   0    H2   0    H3  
-CONNECT  DB800  C2     sp3     0    C9   0    N4   0    H4   0    H5  
-CONNECT  DB800  C3      sp     0    N1   0   C26  
-CONNECT  DB800  C4     sp2     0    N2   0   C26   0    H6  
-CONNECT  DB800  C5     sp2     0   C24   0   C25   0    H7  
-CONNECT  DB800  C6     sp2     0   C22   0   C11   0    H8  
-CONNECT  DB800  C7     sp2     0   C15   0   C19   0    H9  
-CONNECT  DB800  C8     sp2     0   C13   0   C21   0   H10  
-CONNECT  DB800  C9     sp3     0    C2   0   C10   0   H11   0   H12  
-CONNECT  DB800  N1      sp     0    C3  
-CONNECT  DB800  N2     sp2     0    C4   0   C19  
-CONNECT  DB800  N3     sp2     0   C11   0   C17   0   H13  
-CONNECT  DB800  N4     sp3     0    C2   0   C14   0   C16  
-CONNECT  DB800  N5     sp3     0   C12   0   C18   0   C20  
-CONNECT  DB800  O1     sp3     0   C22   0   C23  
-CONNECT  DB800  O2     sp3     0    C1   0   C13  
-CONNECT  DB800  O3     sp3     0   C10   0   C15  
-CONNECT  DB800 C10     sp3     0    C9   0    O3   0   H14   0   H15  
-CONNECT  DB800 C11     sp2     0    C6   0    N3   0   C25  
-CONNECT  DB800 C12     sp3     0    N5   0   H16   0   H17   0   H18  
-CONNECT  DB800 C13     sp2     0    C8   0    O2   0   C15  
-CONNECT  DB800 Cl1      s      0   C24  
-CONNECT  DB800 C14     sp3     0   C18   0    N4   0   H19   0   H20  
-CONNECT  DB800 C15     sp2     0    C7   0    O3   0   C13  
-CONNECT  DB800 Cl2      s      0   C25  
-CONNECT  DB800 C16     sp3     0   C20   0    N4   0   H21   0   H22  
-CONNECT  DB800 C17     sp2     0    N3   0   C26   0   C21  
-CONNECT  DB800 C18     sp3     0   C14   0    N5   0   H23   0   H24  
-CONNECT  DB800 C19     sp2     0    C7   0    N2   0   C21  
-CONNECT  DB800 C20     sp3     0   C16   0    N5   0   H25   0   H26  
-CONNECT  DB800 C21     sp2     0    C8   0   C17   0   C19  
-CONNECT  DB800 C22     sp2     0    O1   0    C6   0   C24  
-CONNECT  DB800 C23     sp3     0    O1   0   H27   0   H28   0   H29  
-CONNECT  DB800 C24     sp2     0   Cl1   0    C5   0   C22  
-CONNECT  DB800 C25     sp2     0   Cl2   0    C5   0   C11  
-CONNECT  DB800 C26     sp2     0    C3   0    C4   0   C17  
-CONNECT  DB800  H1      s      0    C1  
-CONNECT  DB800  H2      s      0    C1  
-CONNECT  DB800  H3      s      0    C1  
-CONNECT  DB800  H4      s      0    C2  
-CONNECT  DB800  H5      s      0    C2  
-CONNECT  DB800  H6      s      0    C4  
-CONNECT  DB800  H7      s      0    C5  
-CONNECT  DB800  H8      s      0    C6  
-CONNECT  DB800  H9      s      0    C7  
-CONNECT  DB800 H10      s      0    C8  
-CONNECT  DB800 H11      s      0    C9  
-CONNECT  DB800 H12      s      0    C9  
-CONNECT  DB800 H13      s      0    N3  
-CONNECT  DB800 H14      s      0   C10  
-CONNECT  DB800 H15      s      0   C10  
-CONNECT  DB800 H16      s      0   C12  
-CONNECT  DB800 H17      s      0   C12  
-CONNECT  DB800 H18      s      0   C12  
-CONNECT  DB800 H19      s      0   C14  
-CONNECT  DB800 H20      s      0   C14  
-CONNECT  DB800 H21      s      0   C16  
-CONNECT  DB800 H22      s      0   C16  
-CONNECT  DB800 H23      s      0   C18  
-CONNECT  DB800 H24      s      0   C18  
-CONNECT  DB800 H25      s      0   C20  
-CONNECT  DB800 H26      s      0   C20  
-CONNECT  DB800 H27      s      0   C23  
-CONNECT  DB800 H28      s      0   C23  
-CONNECT  DB800 H29      s      0   C23  
 
 
 # Atom Parameters:
 # Van Der Waals Radii. See source for reference
+RADIUS   DB818  C1    1.7    
+RADIUS   DB818  C2    1.7    
+RADIUS   DB818  C3    1.7    
+RADIUS   DB818  C4    1.7    
+RADIUS   DB818  C5    1.7    
+RADIUS   DB818  C6    1.7    
+RADIUS   DB818  C7    1.7    
+RADIUS   DB818  C8    1.7    
+RADIUS   DB818  C9    1.7    
+RADIUS   DB818  N1    1.55   
+RADIUS   DB818  N2    1.55   
+RADIUS   DB818  N3    1.55   
+RADIUS   DB818  N4    1.55   
+RADIUS   DB818  N5    1.55   
+RADIUS   DB818  O1    1.52   
+RADIUS   DB818  O2    1.52   
+RADIUS   DB818  O3    1.52   
+RADIUS   DB818  C10   1.7    
+RADIUS   DB818  C11   1.7    
+RADIUS   DB818  C12   1.7    
+RADIUS   DB818  C13   1.7    
+RADIUS   DB818  Cl1   1.75   
+RADIUS   DB818  C14   1.7    
+RADIUS   DB818  C15   1.7    
+RADIUS   DB818  Cl2   1.75   
+RADIUS   DB818  C16   1.7    
+RADIUS   DB818  C17   1.7    
+RADIUS   DB818  C18   1.7    
+RADIUS   DB818  C19   1.7    
+RADIUS   DB818  C20   1.7    
+RADIUS   DB818  C21   1.7    
+RADIUS   DB818  C22   1.7    
+RADIUS   DB818  C23   1.7    
+RADIUS   DB818  C24   1.7    
+RADIUS   DB818  C25   1.7    
+RADIUS   DB818  C26   1.7    
+RADIUS   DB818  H1    1.2    
+RADIUS   DB818  H2    1.2    
+RADIUS   DB818  H3    1.2    
+RADIUS   DB818  H4    1.2    
+RADIUS   DB818  H5    1.2    
+RADIUS   DB818  H6    1.2    
+RADIUS   DB818  H7    1.2    
+RADIUS   DB818  H8    1.2    
+RADIUS   DB818  H9    1.2    
+RADIUS   DB818  H10   1.2    
+RADIUS   DB818  H11   1.2    
+RADIUS   DB818  H12   1.2    
+RADIUS   DB818  H13   1.2    
+RADIUS   DB818  H14   1.2    
+RADIUS   DB818  H15   1.2    
+RADIUS   DB818  H16   1.2    
+RADIUS   DB818  H17   1.2    
+RADIUS   DB818  H18   1.2    
+RADIUS   DB818  H19   1.2    
+RADIUS   DB818  H20   1.2    
+RADIUS   DB818  H21   1.2    
+RADIUS   DB818  H22   1.2    
+RADIUS   DB818  H23   1.2    
+RADIUS   DB818  H24   1.2    
+RADIUS   DB818  H25   1.2    
+RADIUS   DB818  H26   1.2    
+RADIUS   DB818  H27   1.2    
+RADIUS   DB818  H28   1.2    
+RADIUS   DB818  H29   1.2    
+RADIUS   DB818  H30   1.2    
+
+RADIUS   DB817  C1    1.7    
+RADIUS   DB817  C2    1.7    
+RADIUS   DB817  C3    1.7    
+RADIUS   DB817  C4    1.7    
+RADIUS   DB817  C5    1.7    
+RADIUS   DB817  C6    1.7    
+RADIUS   DB817  C7    1.7    
+RADIUS   DB817  C8    1.7    
+RADIUS   DB817  C9    1.7    
+RADIUS   DB817  N1    1.55   
+RADIUS   DB817  N2    1.55   
+RADIUS   DB817  N3    1.55   
+RADIUS   DB817  N4    1.55   
+RADIUS   DB817  N5    1.55   
+RADIUS   DB817  O1    1.52   
+RADIUS   DB817  O2    1.52   
+RADIUS   DB817  O3    1.52   
+RADIUS   DB817  C10   1.7    
+RADIUS   DB817  C11   1.7    
+RADIUS   DB817  C12   1.7    
+RADIUS   DB817  C13   1.7    
+RADIUS   DB817  Cl1   1.75   
+RADIUS   DB817  C14   1.7    
+RADIUS   DB817  C15   1.7    
+RADIUS   DB817  Cl2   1.75   
+RADIUS   DB817  C16   1.7    
+RADIUS   DB817  C17   1.7    
+RADIUS   DB817  C18   1.7    
+RADIUS   DB817  C19   1.7    
+RADIUS   DB817  C20   1.7    
+RADIUS   DB817  C21   1.7    
+RADIUS   DB817  C22   1.7    
+RADIUS   DB817  C23   1.7    
+RADIUS   DB817  C24   1.7    
+RADIUS   DB817  C25   1.7    
+RADIUS   DB817  C26   1.7    
+RADIUS   DB817  H1    1.2    
+RADIUS   DB817  H2    1.2    
+RADIUS   DB817  H3    1.2    
+RADIUS   DB817  H4    1.2    
+RADIUS   DB817  H5    1.2    
+RADIUS   DB817  H6    1.2    
+RADIUS   DB817  H7    1.2    
+RADIUS   DB817  H8    1.2    
+RADIUS   DB817  H9    1.2    
+RADIUS   DB817  H10   1.2    
+RADIUS   DB817  H11   1.2    
+RADIUS   DB817  H12   1.2    
+RADIUS   DB817  H13   1.2    
+RADIUS   DB817  H14   1.2    
+RADIUS   DB817  H15   1.2    
+RADIUS   DB817  H16   1.2    
+RADIUS   DB817  H17   1.2    
+RADIUS   DB817  H18   1.2    
+RADIUS   DB817  H19   1.2    
+RADIUS   DB817  H20   1.2    
+RADIUS   DB817  H21   1.2    
+RADIUS   DB817  H22   1.2    
+RADIUS   DB817  H23   1.2    
+RADIUS   DB817  H24   1.2    
+RADIUS   DB817  H25   1.2    
+RADIUS   DB817  H26   1.2    
+RADIUS   DB817  H27   1.2    
+RADIUS   DB817  H28   1.2    
+RADIUS   DB817  H29   1.2    
+RADIUS   DB817  H30   1.2    
+RADIUS   DB817  H31   1.2    
+
+RADIUS   DB816  C1    1.7    
+RADIUS   DB816  C2    1.7    
+RADIUS   DB816  C3    1.7    
+RADIUS   DB816  C4    1.7    
+RADIUS   DB816  C5    1.7    
+RADIUS   DB816  C6    1.7    
+RADIUS   DB816  C7    1.7    
+RADIUS   DB816  C8    1.7    
+RADIUS   DB816  C9    1.7    
+RADIUS   DB816  N1    1.55   
+RADIUS   DB816  N2    1.55   
+RADIUS   DB816  N3    1.55   
+RADIUS   DB816  N4    1.55   
+RADIUS   DB816  N5    1.55   
+RADIUS   DB816  O1    1.52   
+RADIUS   DB816  O2    1.52   
+RADIUS   DB816  O3    1.52   
+RADIUS   DB816  C10   1.7    
+RADIUS   DB816  C11   1.7    
+RADIUS   DB816  C12   1.7    
+RADIUS   DB816  C13   1.7    
+RADIUS   DB816  Cl1   1.75   
+RADIUS   DB816  C14   1.7    
+RADIUS   DB816  C15   1.7    
+RADIUS   DB816  Cl2   1.75   
+RADIUS   DB816  C16   1.7    
+RADIUS   DB816  C17   1.7    
+RADIUS   DB816  C18   1.7    
+RADIUS   DB816  C19   1.7    
+RADIUS   DB816  C20   1.7    
+RADIUS   DB816  C21   1.7    
+RADIUS   DB816  C22   1.7    
+RADIUS   DB816  C23   1.7    
+RADIUS   DB816  C24   1.7    
+RADIUS   DB816  C25   1.7    
+RADIUS   DB816  C26   1.7    
+RADIUS   DB816  H1    1.2    
+RADIUS   DB816  H2    1.2    
+RADIUS   DB816  H3    1.2    
+RADIUS   DB816  H4    1.2    
+RADIUS   DB816  H5    1.2    
+RADIUS   DB816  H6    1.2    
+RADIUS   DB816  H7    1.2    
+RADIUS   DB816  H8    1.2    
+RADIUS   DB816  H9    1.2    
+RADIUS   DB816  H10   1.2    
+RADIUS   DB816  H11   1.2    
+RADIUS   DB816  H12   1.2    
+RADIUS   DB816  H13   1.2    
+RADIUS   DB816  H14   1.2    
+RADIUS   DB816  H15   1.2    
+RADIUS   DB816  H16   1.2    
+RADIUS   DB816  H17   1.2    
+RADIUS   DB816  H18   1.2    
+RADIUS   DB816  H19   1.2    
+RADIUS   DB816  H20   1.2    
+RADIUS   DB816  H21   1.2    
+RADIUS   DB816  H22   1.2    
+RADIUS   DB816  H23   1.2    
+RADIUS   DB816  H24   1.2    
+RADIUS   DB816  H25   1.2    
+RADIUS   DB816  H26   1.2    
+RADIUS   DB816  H27   1.2    
+RADIUS   DB816  H28   1.2    
+RADIUS   DB816  H29   1.2    
+
 RADIUS   DB815  C1    1.7    
 RADIUS   DB815  C2    1.7    
 RADIUS   DB815  C3    1.7    
@@ -3478,8 +4061,6 @@ RADIUS   DB815  H27   1.2
 RADIUS   DB815  H28   1.2    
 RADIUS   DB815  H29   1.2    
 RADIUS   DB815  H30   1.2    
-RADIUS   DB815  H31   1.2    
-RADIUS   DB815  H32   1.2    
 
 RADIUS   DB814  C1    1.7    
 RADIUS   DB814  C2    1.7    
@@ -3548,7 +4129,6 @@ RADIUS   DB814  H28   1.2
 RADIUS   DB814  H29   1.2    
 RADIUS   DB814  H30   1.2    
 RADIUS   DB814  H31   1.2    
-RADIUS   DB814  H32   1.2    
 
 RADIUS   DB813  C1    1.7    
 RADIUS   DB813  C2    1.7    
@@ -3616,8 +4196,6 @@ RADIUS   DB813  H27   1.2
 RADIUS   DB813  H28   1.2    
 RADIUS   DB813  H29   1.2    
 RADIUS   DB813  H30   1.2    
-RADIUS   DB813  H31   1.2    
-RADIUS   DB813  H32   1.2    
 
 RADIUS   DB812  C1    1.7    
 RADIUS   DB812  C2    1.7    
@@ -3685,7 +4263,6 @@ RADIUS   DB812  H27   1.2
 RADIUS   DB812  H28   1.2    
 RADIUS   DB812  H29   1.2    
 RADIUS   DB812  H30   1.2    
-RADIUS   DB812  H31   1.2    
 
 RADIUS   DB811  C1    1.7    
 RADIUS   DB811  C2    1.7    
@@ -3753,7 +4330,6 @@ RADIUS   DB811  H27   1.2
 RADIUS   DB811  H28   1.2    
 RADIUS   DB811  H29   1.2    
 RADIUS   DB811  H30   1.2    
-RADIUS   DB811  H31   1.2    
 
 RADIUS   DB810  C1    1.7    
 RADIUS   DB810  C2    1.7    
@@ -3887,9 +4463,6 @@ RADIUS   DB809  H25   1.2
 RADIUS   DB809  H26   1.2    
 RADIUS   DB809  H27   1.2    
 RADIUS   DB809  H28   1.2    
-RADIUS   DB809  H29   1.2    
-RADIUS   DB809  H30   1.2    
-RADIUS   DB809  H31   1.2    
 
 RADIUS   DB808  C1    1.7    
 RADIUS   DB808  C2    1.7    
@@ -3957,6 +4530,7 @@ RADIUS   DB808  H27   1.2
 RADIUS   DB808  H28   1.2    
 RADIUS   DB808  H29   1.2    
 RADIUS   DB808  H30   1.2    
+RADIUS   DB808  H31   1.2    
 
 RADIUS   DB807  C1    1.7    
 RADIUS   DB807  C2    1.7    
@@ -4023,8 +4597,6 @@ RADIUS   DB807  H26   1.2
 RADIUS   DB807  H27   1.2    
 RADIUS   DB807  H28   1.2    
 RADIUS   DB807  H29   1.2    
-RADIUS   DB807  H30   1.2    
-RADIUS   DB807  H31   1.2    
 
 RADIUS   DB806  C1    1.7    
 RADIUS   DB806  C2    1.7    
@@ -4227,7 +4799,6 @@ RADIUS   DB804  H26   1.2
 RADIUS   DB804  H27   1.2    
 RADIUS   DB804  H28   1.2    
 RADIUS   DB804  H29   1.2    
-RADIUS   DB804  H30   1.2    
 
 RADIUS   DB803  C1    1.7    
 RADIUS   DB803  C2    1.7    
@@ -4294,7 +4865,6 @@ RADIUS   DB803  H26   1.2
 RADIUS   DB803  H27   1.2    
 RADIUS   DB803  H28   1.2    
 RADIUS   DB803  H29   1.2    
-RADIUS   DB803  H30   1.2    
 
 RADIUS   DB802  C1    1.7    
 RADIUS   DB802  C2    1.7    
@@ -4430,1153 +5000,1209 @@ RADIUS   DB801  H28   1.2
 RADIUS   DB801  H29   1.2    
 RADIUS   DB801  H30   1.2    
 
-RADIUS   DB800  C1    1.7    
-RADIUS   DB800  C2    1.7    
-RADIUS   DB800  C3    1.7    
-RADIUS   DB800  C4    1.7    
-RADIUS   DB800  C5    1.7    
-RADIUS   DB800  C6    1.7    
-RADIUS   DB800  C7    1.7    
-RADIUS   DB800  C8    1.7    
-RADIUS   DB800  C9    1.7    
-RADIUS   DB800  N1    1.55   
-RADIUS   DB800  N2    1.55   
-RADIUS   DB800  N3    1.55   
-RADIUS   DB800  N4    1.55   
-RADIUS   DB800  N5    1.55   
-RADIUS   DB800  O1    1.52   
-RADIUS   DB800  O2    1.52   
-RADIUS   DB800  O3    1.52   
-RADIUS   DB800  C10   1.7    
-RADIUS   DB800  C11   1.7    
-RADIUS   DB800  C12   1.7    
-RADIUS   DB800  C13   1.7    
-RADIUS   DB800  Cl1   1.75   
-RADIUS   DB800  C14   1.7    
-RADIUS   DB800  C15   1.7    
-RADIUS   DB800  Cl2   1.75   
-RADIUS   DB800  C16   1.7    
-RADIUS   DB800  C17   1.7    
-RADIUS   DB800  C18   1.7    
-RADIUS   DB800  C19   1.7    
-RADIUS   DB800  C20   1.7    
-RADIUS   DB800  C21   1.7    
-RADIUS   DB800  C22   1.7    
-RADIUS   DB800  C23   1.7    
-RADIUS   DB800  C24   1.7    
-RADIUS   DB800  C25   1.7    
-RADIUS   DB800  C26   1.7    
-RADIUS   DB800  H1    1.2    
-RADIUS   DB800  H2    1.2    
-RADIUS   DB800  H3    1.2    
-RADIUS   DB800  H4    1.2    
-RADIUS   DB800  H5    1.2    
-RADIUS   DB800  H6    1.2    
-RADIUS   DB800  H7    1.2    
-RADIUS   DB800  H8    1.2    
-RADIUS   DB800  H9    1.2    
-RADIUS   DB800  H10   1.2    
-RADIUS   DB800  H11   1.2    
-RADIUS   DB800  H12   1.2    
-RADIUS   DB800  H13   1.2    
-RADIUS   DB800  H14   1.2    
-RADIUS   DB800  H15   1.2    
-RADIUS   DB800  H16   1.2    
-RADIUS   DB800  H17   1.2    
-RADIUS   DB800  H18   1.2    
-RADIUS   DB800  H19   1.2    
-RADIUS   DB800  H20   1.2    
-RADIUS   DB800  H21   1.2    
-RADIUS   DB800  H22   1.2    
-RADIUS   DB800  H23   1.2    
-RADIUS   DB800  H24   1.2    
-RADIUS   DB800  H25   1.2    
-RADIUS   DB800  H26   1.2    
-RADIUS   DB800  H27   1.2    
-RADIUS   DB800  H28   1.2    
-RADIUS   DB800  H29   1.2    
+CHARGE   DB818  C1    0.10946149
+CHARGE   DB818  C2    0.20381537
+CHARGE   DB818  C3    0.19454829
+CHARGE   DB818  C4    0.43959922
+CHARGE   DB818  C5   -0.07946347
+CHARGE   DB818  C6   -0.15931983
+CHARGE   DB818  C7   -0.24439263
+CHARGE   DB818  C8   -0.26935410
+CHARGE   DB818  C9   -0.09470420
+CHARGE   DB818  N1   -0.28322867
+CHARGE   DB818  N2   -0.59813249
+CHARGE   DB818  N3   -0.50330222
+CHARGE   DB818  N4   -0.76151896
+CHARGE   DB818  N5   -0.73979151
+CHARGE   DB818  O1   -0.29369593
+CHARGE   DB818  O2   -0.28726700
+CHARGE   DB818  O3   -0.29009762
+CHARGE   DB818  C10   0.12717442
+CHARGE   DB818  C11  -0.03626619
+CHARGE   DB818  C12   0.15841837
+CHARGE   DB818  C13   0.20039408
+CHARGE   DB818  Cl1   0.01973439
+CHARGE   DB818  C14   0.15365115
+CHARGE   DB818  C15   0.17187661
+CHARGE   DB818  Cl2  -0.03503765
+CHARGE   DB818  C16   0.14542839
+CHARGE   DB818  C17   0.02527198
+CHARGE   DB818  C18   0.17834322
+CHARGE   DB818  C19   0.43724915
+CHARGE   DB818  C20   0.17428151
+CHARGE   DB818  C21  -0.12538967
+CHARGE   DB818  C22   0.16251528
+CHARGE   DB818  C23   0.10600927
+CHARGE   DB818  C24   0.04741762
+CHARGE   DB818  C25   0.00664920
+CHARGE   DB818  C26  -0.07025141
+CHARGE   DB818  H1    0.10290151
+CHARGE   DB818  H2    0.04017069
+CHARGE   DB818  H3    0.04100081
+CHARGE   DB818  H4    0.01629473
+CHARGE   DB818  H5    0.05817737
+CHARGE   DB818  H6    0.06715642
+CHARGE   DB818  H7    0.19565578
+CHARGE   DB818  H8    0.17064592
+CHARGE   DB818  H9    0.18874735
+CHARGE   DB818  H10   0.12501249
+CHARGE   DB818  H11   0.04691823
+CHARGE   DB818  H12   0.10070685
+CHARGE   DB818  H13   0.05292743
+CHARGE   DB818  H14   0.01394702
+CHARGE   DB818  H15   0.05338757
+CHARGE   DB818  H16   0.07373213
+CHARGE   DB818  H17   0.06243558
+CHARGE   DB818  H18   0.04558163
+CHARGE   DB818  H19   0.05216939
+CHARGE   DB818  H20   0.05721911
+CHARGE   DB818  H21   0.05200387
+CHARGE   DB818  H22   0.04499448
+CHARGE   DB818  H23   0.06338092
+CHARGE   DB818  H24   0.04614320
+CHARGE   DB818  H25   0.47314247
+CHARGE   DB818  H26   0.00370060
+CHARGE   DB818  H27   0.01205285
+CHARGE   DB818  H28   0.05205338
+CHARGE   DB818  H29   0.03348096
+CHARGE   DB818  H30   0.46363372
 
-CHARGE   DB815  C1  0.280000001192
-CHARGE   DB815  C2  0.503000020981
-CHARGE   DB815  C3  0.152999997139
-CHARGE   DB815  C4  0.325599998236
-CHARGE   DB815  C5  0.15000000596
-CHARGE   DB815  C6  0.15000000596
-CHARGE   DB815  C7  0.15000000596
-CHARGE   DB815  C8  0.15000000596
-CHARGE   DB815  C9  0.256999999285
-CHARGE   DB815  N1  0.217999994755
-CHARGE   DB815  N2  0.097000002861
-CHARGE   DB815  N3  0.097000002861
-CHARGE   DB815  N4  0.958999991417
-CHARGE   DB815  N5  0.958999991417
-CHARGE   DB815  O1  0.362500011921
-CHARGE   DB815  O2  0.362500011921
-CHARGE   DB815  O3  0.362500011921
-CHARGE   DB815  C10 0.280000001192
-CHARGE   DB815  C11 0.29699999094
-CHARGE   DB815  C12 0.503000020981
-CHARGE   DB815  C13 0.0825000032783
-CHARGE   DB815  Cl1 0.177000001073
-CHARGE   DB815  C14 0.503000020981
-CHARGE   DB815  C15 0.0825000032783
-CHARGE   DB815  Cl2 0.177000001073
-CHARGE   DB815  C16 0.503000020981
-CHARGE   DB815  C17 0.299400001764
-CHARGE   DB815  C18 0.503000020981
-CHARGE   DB815  C19 0.29699999094
-CHARGE   DB815  C20 0.503000020981
-CHARGE   DB815  C21 0.0861999988556
-CHARGE   DB815  C22 0.0825000032783
-CHARGE   DB815  C23 0.280000001192
-CHARGE   DB815  C24 0.177000001073
-CHARGE   DB815  C25 0.177000001073
-CHARGE   DB815  C26 0.0938000008464
-CHARGE   DB815  H1      0.0
-CHARGE   DB815  H2      0.0
-CHARGE   DB815  H3      0.0
-CHARGE   DB815  H4      0.0
-CHARGE   DB815  H5      0.0
-CHARGE   DB815  H6  0.0599999986589
-CHARGE   DB815  H7  0.15000000596
-CHARGE   DB815  H8  0.15000000596
-CHARGE   DB815  H9  0.15000000596
-CHARGE   DB815  H10 0.15000000596
-CHARGE   DB815  H11     0.0
-CHARGE   DB815  H12     0.0
-CHARGE   DB815  H13 0.40000000596
-CHARGE   DB815  H14 0.40000000596
-CHARGE   DB815  H15 0.449999988079
-CHARGE   DB815  H16 0.449999988079
-CHARGE   DB815  H17     0.0
-CHARGE   DB815  H18     0.0
-CHARGE   DB815  H19     0.0
-CHARGE   DB815  H20     0.0
-CHARGE   DB815  H21     0.0
-CHARGE   DB815  H22     0.0
-CHARGE   DB815  H23     0.0
-CHARGE   DB815  H24     0.0
-CHARGE   DB815  H25     0.0
-CHARGE   DB815  H26     0.0
-CHARGE   DB815  H27     0.0
-CHARGE   DB815  H28     0.0
-CHARGE   DB815  H29     0.0
-CHARGE   DB815  H30     0.0
-CHARGE   DB815  H31     0.0
-CHARGE   DB815  H32     0.0
+CHARGE   DB817  C1    0.10790016
+CHARGE   DB817  C2    0.11486220
+CHARGE   DB817  C3    0.18071707
+CHARGE   DB817  C4    0.44441482
+CHARGE   DB817  C5   -0.07805400
+CHARGE   DB817  C6   -0.16589671
+CHARGE   DB817  C7   -0.20495822
+CHARGE   DB817  C8   -0.24925935
+CHARGE   DB817  C9   -0.10745241
+CHARGE   DB817  N1   -0.25169361
+CHARGE   DB817  N2   -0.59433973
+CHARGE   DB817  N3   -0.50446177
+CHARGE   DB817  N4   -0.68180662
+CHARGE   DB817  N5   -0.75420856
+CHARGE   DB817  O1   -0.29161370
+CHARGE   DB817  O2   -0.30456108
+CHARGE   DB817  O3   -0.32574734
+CHARGE   DB817  C10   0.12523594
+CHARGE   DB817  C11  -0.04914274
+CHARGE   DB817  C12   0.15718852
+CHARGE   DB817  C13   0.19418354
+CHARGE   DB817  Cl1   0.03448224
+CHARGE   DB817  C14   0.07338143
+CHARGE   DB817  C15   0.13187037
+CHARGE   DB817  Cl2  -0.03256582
+CHARGE   DB817  C16   0.05908427
+CHARGE   DB817  C17   0.02423545
+CHARGE   DB817  C18   0.16525726
+CHARGE   DB817  C19   0.41918102
+CHARGE   DB817  C20   0.16774906
+CHARGE   DB817  C21  -0.11784092
+CHARGE   DB817  C22   0.16367283
+CHARGE   DB817  C23   0.10726706
+CHARGE   DB817  C24   0.05261249
+CHARGE   DB817  C25   0.01242259
+CHARGE   DB817  C26  -0.03706700
+CHARGE   DB817  H1    0.09957236
+CHARGE   DB817  H2    0.04897323
+CHARGE   DB817  H3    0.04724028
+CHARGE   DB817  H4    0.11104412
+CHARGE   DB817  H5    0.11450271
+CHARGE   DB817  H6    0.07829968
+CHARGE   DB817  H7    0.20085162
+CHARGE   DB817  H8    0.16676223
+CHARGE   DB817  H9    0.18301958
+CHARGE   DB817  H10   0.13363563
+CHARGE   DB817  H11   0.10464559
+CHARGE   DB817  H12   0.10655618
+CHARGE   DB817  H13   0.07386225
+CHARGE   DB817  H14   0.10572600
+CHARGE   DB817  H15   0.05137653
+CHARGE   DB817  H16   0.07594052
+CHARGE   DB817  H17   0.08010816
+CHARGE   DB817  H18   0.06699898
+CHARGE   DB817  H19   0.10970697
+CHARGE   DB817  H20   0.07563363
+CHARGE   DB817  H21   0.11155480
+CHARGE   DB817  H22   0.07267866
+CHARGE   DB817  H23   0.07558509
+CHARGE   DB817  H24   0.08006832
+CHARGE   DB817  H25   0.47405711
+CHARGE   DB817  H26   0.01616729
+CHARGE   DB817  H27   0.44560340
+CHARGE   DB817  H28   0.10353676
+CHARGE   DB817  H29   0.10667162
+CHARGE   DB817  H30   0.03095004
+CHARGE   DB817  H31   0.46362197
 
-CHARGE   DB814  C1  0.112259998918
-CHARGE   DB814  C2  0.121770001948
-CHARGE   DB814  C3  0.180869996548
-CHARGE   DB814  C4  0.0946699976921
-CHARGE   DB814  C5  -0.0921100005507
-CHARGE   DB814  C6  -0.110359996557
-CHARGE   DB814  C7  -0.197659999132
-CHARGE   DB814  C8  -0.0767100006342
-CHARGE   DB814  C9  -0.132609993219
-CHARGE   DB814  N1  -0.226530000567
-CHARGE   DB814  N2  -0.16846999526
-CHARGE   DB814  N3  -0.562049984932
-CHARGE   DB814  N4  -0.698249995708
-CHARGE   DB814  N5  -0.687910020351
-CHARGE   DB814  O1  -0.319110006094
-CHARGE   DB814  O2  -0.330639988184
-CHARGE   DB814  O3  -0.31913998723
-CHARGE   DB814  C10 0.136570006609
-CHARGE   DB814  C11 0.0650900006294
-CHARGE   DB814  C12 0.0835400000215
-CHARGE   DB814  C13 0.106020003557
-CHARGE   DB814  Cl1 0.0128300003707
-CHARGE   DB814  C14 0.077469997108
-CHARGE   DB814  C15 0.145970001817
-CHARGE   DB814  Cl2 -0.0843899995089
-CHARGE   DB814  C16 0.077469997108
-CHARGE   DB814  C17 0.352030009031
-CHARGE   DB814  C18 0.0754000023007
-CHARGE   DB814  C19 0.0678099989891
-CHARGE   DB814  C20 0.0754000023007
-CHARGE   DB814  C21 -0.119520001113
-CHARGE   DB814  C22 0.13220000267
-CHARGE   DB814  C23 0.111749999225
-CHARGE   DB814  C24 0.0325499996543
-CHARGE   DB814  C25 0.00130000000354
-CHARGE   DB814  C26 -0.0945200026035
-CHARGE   DB814  H1  0.0617799982429
-CHARGE   DB814  H2  0.0617799982429
-CHARGE   DB814  H3  0.0617799982429
-CHARGE   DB814  H4  0.122210003436
-CHARGE   DB814  H5  0.122210003436
-CHARGE   DB814  H6  0.22188000381
-CHARGE   DB814  H7  0.188580006361
-CHARGE   DB814  H8  0.177689999342
-CHARGE   DB814  H9  0.160310000181
-CHARGE   DB814  H10 0.178910002112
-CHARGE   DB814  H11 0.0917399972677
-CHARGE   DB814  H12 0.0917399972677
-CHARGE   DB814  H13 0.33439001441
-CHARGE   DB814  H14 0.460900008678
-CHARGE   DB814  H15 0.463220000267
-CHARGE   DB814  H16 0.467880010605
-CHARGE   DB814  H17 0.063440002501
-CHARGE   DB814  H18 0.063440002501
-CHARGE   DB814  H19 0.13110999763
-CHARGE   DB814  H20 0.13110999763
-CHARGE   DB814  H21 0.13110999763
-CHARGE   DB814  H22 0.147190004587
-CHARGE   DB814  H23 0.147190004587
-CHARGE   DB814  H24 0.147190004587
-CHARGE   DB814  H25 0.147190004587
-CHARGE   DB814  H26 0.152030006051
-CHARGE   DB814  H27 0.152030006051
-CHARGE   DB814  H28 0.152030006051
-CHARGE   DB814  H29 0.152030006051
-CHARGE   DB814  H30 0.0576400011778
-CHARGE   DB814  H31 0.0576400011778
-CHARGE   DB814  H32 0.0576400011778
+CHARGE   DB816  C1    0.11154965
+CHARGE   DB816  C2    0.19054741
+CHARGE   DB816  C3    0.20332164
+CHARGE   DB816  C4    0.15751749
+CHARGE   DB816  C5   -0.08500550
+CHARGE   DB816  C6   -0.21063867
+CHARGE   DB816  C7   -0.23627867
+CHARGE   DB816  C8   -0.11726720
+CHARGE   DB816  C9   -0.08819606
+CHARGE   DB816  N1   -0.36341482
+CHARGE   DB816  N2   -0.60638332
+CHARGE   DB816  N3   -0.61166090
+CHARGE   DB816  N4   -0.75206751
+CHARGE   DB816  N5   -0.74208581
+CHARGE   DB816  O1   -0.31789419
+CHARGE   DB816  O2   -0.31236160
+CHARGE   DB816  O3   -0.30296645
+CHARGE   DB816  C10   0.12984787
+CHARGE   DB816  C11   0.18762597
+CHARGE   DB816  C12   0.16063865
+CHARGE   DB816  C13   0.08942587
+CHARGE   DB816  Cl1  -0.06900542
+CHARGE   DB816  C14   0.14994127
+CHARGE   DB816  C15   0.15757497
+CHARGE   DB816  Cl2  -0.08015739
+CHARGE   DB816  C16   0.14134508
+CHARGE   DB816  C17   0.60222578
+CHARGE   DB816  C18   0.17524743
+CHARGE   DB816  C19   0.14867851
+CHARGE   DB816  C20   0.17668347
+CHARGE   DB816  C21  -0.15421779
+CHARGE   DB816  C22   0.14383847
+CHARGE   DB816  C23   0.11456563
+CHARGE   DB816  C24  -0.00525190
+CHARGE   DB816  C25  -0.00145711
+CHARGE   DB816  C26  -0.22921209
+CHARGE   DB816  H1    0.07270007
+CHARGE   DB816  H2    0.04017395
+CHARGE   DB816  H3    0.04070603
+CHARGE   DB816  H4    0.02633356
+CHARGE   DB816  H5    0.06740966
+CHARGE   DB816  H6    0.16501449
+CHARGE   DB816  H7    0.16142000
+CHARGE   DB816  H8    0.14883626
+CHARGE   DB816  H9    0.14236651
+CHARGE   DB816  H10   0.17647004
+CHARGE   DB816  H11   0.04877040
+CHARGE   DB816  H12   0.06773939
+CHARGE   DB816  H13   0.04146096
+CHARGE   DB816  H14   0.01074539
+CHARGE   DB816  H15   0.04004046
+CHARGE   DB816  H16   0.06210525
+CHARGE   DB816  H17   0.06084086
+CHARGE   DB816  H18   0.03002894
+CHARGE   DB816  H19   0.04696825
+CHARGE   DB816  H20   0.04741992
+CHARGE   DB816  H21   0.04590039
+CHARGE   DB816  H22   0.04072395
+CHARGE   DB816  H23   0.06207284
+CHARGE   DB816  H24   0.04198431
+CHARGE   DB816  H25   0.00350099
+CHARGE   DB816  H26   0.01055465
+CHARGE   DB816  H27   0.05729502
+CHARGE   DB816  H28   0.02765067
+CHARGE   DB816  H29   0.45771408
 
-CHARGE   DB813  C1  0.114050000906
-CHARGE   DB813  C2  0.121239997447
-CHARGE   DB813  C3  0.161750003695
-CHARGE   DB813  C4  0.204429998994
-CHARGE   DB813  C5  -0.0974500030279
-CHARGE   DB813  C6  -0.109169997275
-CHARGE   DB813  C7  -0.201560005546
-CHARGE   DB813  C8  -0.0722400024533
-CHARGE   DB813  C9  -0.130549997091
-CHARGE   DB813  N1  -0.262259989977
-CHARGE   DB813  N2  -0.551310002804
-CHARGE   DB813  N3  -0.206939995289
-CHARGE   DB813  N4  -0.699209988117
-CHARGE   DB813  N5  -0.687099993229
-CHARGE   DB813  O1  -0.322270005941
-CHARGE   DB813  O2  -0.331719994545
-CHARGE   DB813  O3  -0.320630013943
-CHARGE   DB813  C10 0.138139992952
-CHARGE   DB813  C11 -0.114440001547
-CHARGE   DB813  C12 0.0821399986744
-CHARGE   DB813  C13 0.105970002711
-CHARGE   DB813  Cl1 0.0140000004321
-CHARGE   DB813  C14 0.0790700018406
-CHARGE   DB813  C15 0.14794999361
-CHARGE   DB813  Cl2 -0.0546200014651
-CHARGE   DB813  C16 0.0790700018406
-CHARGE   DB813  C17 0.49715000391
-CHARGE   DB813  C18 0.0745700001717
-CHARGE   DB813  C19 0.182229995728
-CHARGE   DB813  C20 0.0745700001717
-CHARGE   DB813  C21 -0.208240002394
-CHARGE   DB813  C22 0.12349999696
-CHARGE   DB813  C23 0.113949999213
-CHARGE   DB813  C24 0.0528800003231
-CHARGE   DB813  C25 0.0300799999386
-CHARGE   DB813  C26 -0.181559994817
-CHARGE   DB813  H1  0.0616899989545
-CHARGE   DB813  H2  0.0616899989545
-CHARGE   DB813  H3  0.0616899989545
-CHARGE   DB813  H4  0.121550001204
-CHARGE   DB813  H5  0.121550001204
-CHARGE   DB813  H6  0.218869999051
-CHARGE   DB813  H7  0.193320006132
-CHARGE   DB813  H8  0.167620003223
-CHARGE   DB813  H9  0.158340007067
-CHARGE   DB813  H10 0.176499992609
-CHARGE   DB813  H11 0.0911300033331
-CHARGE   DB813  H12 0.0911300033331
-CHARGE   DB813  H13 0.487239986658
-CHARGE   DB813  H14 0.323439985514
-CHARGE   DB813  H15 0.463569998741
-CHARGE   DB813  H16 0.46805998683
-CHARGE   DB813  H17 0.0635700002313
-CHARGE   DB813  H18 0.0635700002313
-CHARGE   DB813  H19 0.131500005722
-CHARGE   DB813  H20 0.131500005722
-CHARGE   DB813  H21 0.131500005722
-CHARGE   DB813  H22 0.147080004215
-CHARGE   DB813  H23 0.147080004215
-CHARGE   DB813  H24 0.147080004215
-CHARGE   DB813  H25 0.147080004215
-CHARGE   DB813  H26 0.151710003614
-CHARGE   DB813  H27 0.151710003614
-CHARGE   DB813  H28 0.151710003614
-CHARGE   DB813  H29 0.151710003614
-CHARGE   DB813  H30 0.0567799992859
-CHARGE   DB813  H31 0.0567799992859
-CHARGE   DB813  H32 0.0567799992859
+CHARGE   DB815  C1    0.11313099
+CHARGE   DB815  C2    0.11667720
+CHARGE   DB815  C3    0.19202395
+CHARGE   DB815  C4    0.15041134
+CHARGE   DB815  C5   -0.08540495
+CHARGE   DB815  C6   -0.20743252
+CHARGE   DB815  C7   -0.22473076
+CHARGE   DB815  C8   -0.10454830
+CHARGE   DB815  C9   -0.10573953
+CHARGE   DB815  N1   -0.34043339
+CHARGE   DB815  N2   -0.61371231
+CHARGE   DB815  N3   -0.58921152
+CHARGE   DB815  N4   -0.68245578
+CHARGE   DB815  N5   -0.74885750
+CHARGE   DB815  O1   -0.31167763
+CHARGE   DB815  O2   -0.33503744
+CHARGE   DB815  O3   -0.33934352
+CHARGE   DB815  C10   0.13133506
+CHARGE   DB815  C11   0.16842295
+CHARGE   DB815  C12   0.15512265
+CHARGE   DB815  C13   0.09292582
+CHARGE   DB815  Cl1  -0.05351143
+CHARGE   DB815  C14   0.07384784
+CHARGE   DB815  C15   0.11945479
+CHARGE   DB815  Cl2  -0.07740446
+CHARGE   DB815  C16   0.06437609
+CHARGE   DB815  C17   0.58052403
+CHARGE   DB815  C18   0.15874213
+CHARGE   DB815  C19   0.15707050
+CHARGE   DB815  C20   0.16067970
+CHARGE   DB815  C21  -0.13425554
+CHARGE   DB815  C22   0.14450800
+CHARGE   DB815  C23   0.11354738
+CHARGE   DB815  C24   0.00305131
+CHARGE   DB815  C25   0.00536310
+CHARGE   DB815  C26  -0.20571007
+CHARGE   DB815  H1    0.06948145
+CHARGE   DB815  H2    0.04986295
+CHARGE   DB815  H3    0.04911150
+CHARGE   DB815  H4    0.11651298
+CHARGE   DB815  H5    0.12393143
+CHARGE   DB815  H6    0.17368430
+CHARGE   DB815  H7    0.16819516
+CHARGE   DB815  H8    0.14687704
+CHARGE   DB815  H9    0.13698848
+CHARGE   DB815  H10   0.18437175
+CHARGE   DB815  H11   0.10568187
+CHARGE   DB815  H12   0.07383064
+CHARGE   DB815  H13   0.06270486
+CHARGE   DB815  H14   0.10404630
+CHARGE   DB815  H15   0.04010385
+CHARGE   DB815  H16   0.06463277
+CHARGE   DB815  H17   0.07651635
+CHARGE   DB815  H18   0.05722070
+CHARGE   DB815  H19   0.10631341
+CHARGE   DB815  H20   0.06613308
+CHARGE   DB815  H21   0.10564701
+CHARGE   DB815  H22   0.06910437
+CHARGE   DB815  H23   0.07342440
+CHARGE   DB815  H24   0.07523153
+CHARGE   DB815  H25   0.01719104
+CHARGE   DB815  H26   0.44217622
+CHARGE   DB815  H27   0.10438728
+CHARGE   DB815  H28   0.11197621
+CHARGE   DB815  H29   0.02482809
+CHARGE   DB815  H30   0.45808485
 
-CHARGE   DB812  C1  0.115850001574
-CHARGE   DB812  C2  0.123559996486
-CHARGE   DB812  C3  0.218520000577
-CHARGE   DB812  C4  0.482190012932
-CHARGE   DB812  C5  -0.08613999933
-CHARGE   DB812  C6  -0.166749998927
-CHARGE   DB812  C7  -0.193440005183
-CHARGE   DB812  C8  -0.0902099981904
-CHARGE   DB812  C9  -0.133349999785
-CHARGE   DB812  N1  -0.307740002871
-CHARGE   DB812  N2  -0.681379973888
-CHARGE   DB812  N3  -0.685169994831
-CHARGE   DB812  N4  -0.698249995708
-CHARGE   DB812  N5  -0.688700020313
-CHARGE   DB812  O1  -0.325679987669
-CHARGE   DB812  O2  -0.344069987535
-CHARGE   DB812  O3  -0.330370008945
-CHARGE   DB812  C10 0.13763000071
-CHARGE   DB812  C11 0.168569996953
-CHARGE   DB812  C12 0.0832300037146
-CHARGE   DB812  C13 0.0815299972892
-CHARGE   DB812  Cl1 -0.0400200001895
-CHARGE   DB812  C14 0.0766199976206
-CHARGE   DB812  C15 0.0693299993873
-CHARGE   DB812  Cl2 -0.0858400017023
-CHARGE   DB812  C16 0.0766199976206
-CHARGE   DB812  C17 0.26482000947
-CHARGE   DB812  C18 0.0761900022626
-CHARGE   DB812  C19 0.42677000165
-CHARGE   DB812  C20 0.0761900022626
-CHARGE   DB812  C21 -0.16455000639
-CHARGE   DB812  C22 0.134320005774
-CHARGE   DB812  C23 0.114179998636
-CHARGE   DB812  C24 -0.00511999987066
-CHARGE   DB812  C25 -0.0240100007504
-CHARGE   DB812  C26 -0.147119998932
-CHARGE   DB812  H1  0.0489300005138
-CHARGE   DB812  H2  0.0489300005138
-CHARGE   DB812  H3  0.0489300005138
-CHARGE   DB812  H4  0.120810002089
-CHARGE   DB812  H5  0.120810002089
-CHARGE   DB812  H6  0.0509999990463
-CHARGE   DB812  H7  0.171169996262
-CHARGE   DB812  H8  0.161400005221
-CHARGE   DB812  H9  0.15272000432
-CHARGE   DB812  H10 0.163330003619
-CHARGE   DB812  H11 0.0854599997401
-CHARGE   DB812  H12 0.0854599997401
-CHARGE   DB812  H13 0.452630013227
-CHARGE   DB812  H14 0.46180999279
-CHARGE   DB812  H15 0.464210003614
-CHARGE   DB812  H16 0.0605099983513
-CHARGE   DB812  H17 0.0605099983513
-CHARGE   DB812  H18 0.12758000195
-CHARGE   DB812  H19 0.12758000195
-CHARGE   DB812  H20 0.12758000195
-CHARGE   DB812  H21 0.148640006781
-CHARGE   DB812  H22 0.148640006781
-CHARGE   DB812  H23 0.148640006781
-CHARGE   DB812  H24 0.148640006781
-CHARGE   DB812  H25 0.148080006242
-CHARGE   DB812  H26 0.148080006242
-CHARGE   DB812  H27 0.148080006242
-CHARGE   DB812  H28 0.148080006242
-CHARGE   DB812  H29 0.0478500016034
-CHARGE   DB812  H30 0.0478500016034
-CHARGE   DB812  H31 0.0478500016034
+CHARGE   DB814  C1    0.10764790
+CHARGE   DB814  C2    0.20124681
+CHARGE   DB814  C3    0.18493296
+CHARGE   DB814  C4    0.44420469
+CHARGE   DB814  C5   -0.07945823
+CHARGE   DB814  C6   -0.16369446
+CHARGE   DB814  C7   -0.22042182
+CHARGE   DB814  C8   -0.25610608
+CHARGE   DB814  C9   -0.09408788
+CHARGE   DB814  N1   -0.26149145
+CHARGE   DB814  N2   -0.59715593
+CHARGE   DB814  N3   -0.50515026
+CHARGE   DB814  N4   -0.78609496
+CHARGE   DB814  N5   -0.67626059
+CHARGE   DB814  O1   -0.29284146
+CHARGE   DB814  O2   -0.29673201
+CHARGE   DB814  O3   -0.30844587
+CHARGE   DB814  C10   0.12601225
+CHARGE   DB814  C11  -0.04649308
+CHARGE   DB814  C12   0.07820964
+CHARGE   DB814  C13   0.19443265
+CHARGE   DB814  Cl1   0.02980491
+CHARGE   DB814  C14   0.17325598
+CHARGE   DB814  C15   0.14657848
+CHARGE   DB814  Cl2  -0.03486562
+CHARGE   DB814  C16   0.16737145
+CHARGE   DB814  C17   0.02614440
+CHARGE   DB814  C18   0.10460276
+CHARGE   DB814  C19   0.42645496
+CHARGE   DB814  C20   0.10353064
+CHARGE   DB814  C21  -0.12266584
+CHARGE   DB814  C22   0.16294356
+CHARGE   DB814  C23   0.10677386
+CHARGE   DB814  C24   0.05256853
+CHARGE   DB814  C25   0.01284018
+CHARGE   DB814  C26  -0.04877337
+CHARGE   DB814  H1    0.09938611
+CHARGE   DB814  H2    0.04632560
+CHARGE   DB814  H3    0.04401441
+CHARGE   DB814  H4    0.04708976
+CHARGE   DB814  H5    0.07901765
+CHARGE   DB814  H6    0.07391752
+CHARGE   DB814  H7    0.19990589
+CHARGE   DB814  H8    0.16814075
+CHARGE   DB814  H9    0.18313438
+CHARGE   DB814  H10   0.13027191
+CHARGE   DB814  H11   0.10094780
+CHARGE   DB814  H12   0.10529773
+CHARGE   DB814  H13   0.05089896
+CHARGE   DB814  H14   0.04525872
+CHARGE   DB814  H15   0.05168764
+CHARGE   DB814  H16   0.06909822
+CHARGE   DB814  H17   0.11152899
+CHARGE   DB814  H18   0.05571667
+CHARGE   DB814  H19   0.10676669
+CHARGE   DB814  H20   0.06632428
+CHARGE   DB814  H21   0.10649374
+CHARGE   DB814  H22   0.10674483
+CHARGE   DB814  H23   0.11217348
+CHARGE   DB814  H24   0.10534589
+CHARGE   DB814  H25   0.47352326
+CHARGE   DB814  H26   0.10457204
+CHARGE   DB814  H27   0.04529129
+CHARGE   DB814  H28   0.45184773
+CHARGE   DB814  H29   0.10439993
+CHARGE   DB814  H30   0.03172020
+CHARGE   DB814  H31   0.46434027
 
-CHARGE   DB811  C1  0.280000001192
-CHARGE   DB811  C2  0.270000010729
-CHARGE   DB811  C3  0.152999997139
-CHARGE   DB811  C4  0.325599998236
-CHARGE   DB811  C5  0.15000000596
-CHARGE   DB811  C6  0.15000000596
-CHARGE   DB811  C7  0.15000000596
-CHARGE   DB811  C8  0.15000000596
-CHARGE   DB811  C9  -0.444999992847
-CHARGE   DB811  N1  0.217999994755
-CHARGE   DB811  N2  0.097000002861
-CHARGE   DB811  N3  0.097000002861
-CHARGE   DB811  N4  0.810000002384
-CHARGE   DB811  N5  0.958999991417
-CHARGE   DB811  O1  0.362500011921
-CHARGE   DB811  O2  0.362500011921
-CHARGE   DB811  O3  0.362500011921
-CHARGE   DB811  C10 0.280000001192
-CHARGE   DB811  C11 0.29699999094
-CHARGE   DB811  C12 0.503000020981
-CHARGE   DB811  C13 0.0825000032783
-CHARGE   DB811  Cl1 0.177000001073
-CHARGE   DB811  C14 0.270000010729
-CHARGE   DB811  C15 0.0825000032783
-CHARGE   DB811  Cl2 0.177000001073
-CHARGE   DB811  C16 0.270000010729
-CHARGE   DB811  C17 0.299400001764
-CHARGE   DB811  C18 0.503000020981
-CHARGE   DB811  C19 0.29699999094
-CHARGE   DB811  C20 0.503000020981
-CHARGE   DB811  C21 0.0861999988556
-CHARGE   DB811  C22 0.0825000032783
-CHARGE   DB811  C23 0.280000001192
-CHARGE   DB811  C24 0.177000001073
-CHARGE   DB811  C25 0.177000001073
-CHARGE   DB811  C26 0.0938000008464
-CHARGE   DB811  H1      0.0
-CHARGE   DB811  H2      0.0
-CHARGE   DB811  H3      0.0
-CHARGE   DB811  H4      0.0
-CHARGE   DB811  H5      0.0
-CHARGE   DB811  H6  0.0599999986589
-CHARGE   DB811  H7  0.15000000596
-CHARGE   DB811  H8  0.15000000596
-CHARGE   DB811  H9  0.15000000596
-CHARGE   DB811  H10 0.15000000596
-CHARGE   DB811  H11     0.0
-CHARGE   DB811  H12     0.0
-CHARGE   DB811  H13 0.40000000596
-CHARGE   DB811  H14 0.40000000596
-CHARGE   DB811  H15 0.449999988079
-CHARGE   DB811  H16     0.0
-CHARGE   DB811  H17     0.0
-CHARGE   DB811  H18     0.0
-CHARGE   DB811  H19     0.0
-CHARGE   DB811  H20     0.0
-CHARGE   DB811  H21     0.0
-CHARGE   DB811  H22     0.0
-CHARGE   DB811  H23     0.0
-CHARGE   DB811  H24     0.0
-CHARGE   DB811  H25     0.0
-CHARGE   DB811  H26     0.0
-CHARGE   DB811  H27     0.0
-CHARGE   DB811  H28     0.0
-CHARGE   DB811  H29     0.0
-CHARGE   DB811  H30     0.0
-CHARGE   DB811  H31     0.0
+CHARGE   DB813  C1    0.11345431
+CHARGE   DB813  C2    0.19365786
+CHARGE   DB813  C3    0.19586775
+CHARGE   DB813  C4    0.15152518
+CHARGE   DB813  C5   -0.08548274
+CHARGE   DB813  C6   -0.20851374
+CHARGE   DB813  C7   -0.23189849
+CHARGE   DB813  C8   -0.10859657
+CHARGE   DB813  C9   -0.08822139
+CHARGE   DB813  N1   -0.34761313
+CHARGE   DB813  N2   -0.61278510
+CHARGE   DB813  N3   -0.59629691
+CHARGE   DB813  N4   -0.77969855
+CHARGE   DB813  N5   -0.67665160
+CHARGE   DB813  O1   -0.31371060
+CHARGE   DB813  O2   -0.32683966
+CHARGE   DB813  O3   -0.32217652
+CHARGE   DB813  C10   0.13040413
+CHARGE   DB813  C11   0.17389318
+CHARGE   DB813  C12   0.07700870
+CHARGE   DB813  C13   0.08849838
+CHARGE   DB813  Cl1  -0.05794529
+CHARGE   DB813  C14   0.17287375
+CHARGE   DB813  C15   0.13730712
+CHARGE   DB813  Cl2  -0.07946874
+CHARGE   DB813  C16   0.16561726
+CHARGE   DB813  C17   0.58764005
+CHARGE   DB813  C18   0.10654674
+CHARGE   DB813  C19   0.15550692
+CHARGE   DB813  C20   0.10483842
+CHARGE   DB813  C21  -0.14454587
+CHARGE   DB813  C22   0.14507392
+CHARGE   DB813  C23   0.11372511
+CHARGE   DB813  C24  -0.00040444
+CHARGE   DB813  C25   0.00324026
+CHARGE   DB813  C26  -0.21171495
+CHARGE   DB813  H1    0.06893518
+CHARGE   DB813  H2    0.04706407
+CHARGE   DB813  H3    0.04426245
+CHARGE   DB813  H4    0.05647260
+CHARGE   DB813  H5    0.08710912
+CHARGE   DB813  H6    0.16984603
+CHARGE   DB813  H7    0.16614284
+CHARGE   DB813  H8    0.14740334
+CHARGE   DB813  H9    0.13869914
+CHARGE   DB813  H10   0.18092360
+CHARGE   DB813  H11   0.10264348
+CHARGE   DB813  H12   0.07212244
+CHARGE   DB813  H13   0.03916725
+CHARGE   DB813  H14   0.04195626
+CHARGE   DB813  H15   0.04062414
+CHARGE   DB813  H16   0.05825743
+CHARGE   DB813  H17   0.10851458
+CHARGE   DB813  H18   0.04111909
+CHARGE   DB813  H19   0.10200288
+CHARGE   DB813  H20   0.05886775
+CHARGE   DB813  H21   0.10019294
+CHARGE   DB813  H22   0.10278037
+CHARGE   DB813  H23   0.11052779
+CHARGE   DB813  H24   0.10089633
+CHARGE   DB813  H25   0.10756817
+CHARGE   DB813  H26   0.04348731
+CHARGE   DB813  H27   0.44593978
+CHARGE   DB813  H28   0.10918120
+CHARGE   DB813  H29   0.02629617
+CHARGE   DB813  H30   0.45688152
 
-CHARGE   DB810  C1  0.111979998648
-CHARGE   DB810  C2  0.174789994955
-CHARGE   DB810  C3  0.199499994516
-CHARGE   DB810  C4  0.0905999988317
-CHARGE   DB810  C5  -0.0932800024748
-CHARGE   DB810  C6  -0.115400001407
-CHARGE   DB810  C7  -0.214929997921
-CHARGE   DB810  C8  -0.0873299986124
-CHARGE   DB810  C9  -0.089500002563
-CHARGE   DB810  N1  -0.259600013494
-CHARGE   DB810  N2  -0.156210005283
-CHARGE   DB810  N3  -0.583109974861
-CHARGE   DB810  N4  -0.739880025387
-CHARGE   DB810  N5  -0.683449983597
-CHARGE   DB810  O1  -0.323769986629
-CHARGE   DB810  O2  -0.323570013046
-CHARGE   DB810  O3  -0.317169994116
-CHARGE   DB810  C10 0.132860004902
-CHARGE   DB810  C11 0.0810799971223
-CHARGE   DB810  C12 0.0852100029588
-CHARGE   DB810  C13 0.104450002313
-CHARGE   DB810  Cl1 -0.00129000004381
-CHARGE   DB810  C14 0.143189996481
-CHARGE   DB810  C15 0.185369998217
-CHARGE   DB810  Cl2 -0.0786499977112
-CHARGE   DB810  C16 0.143189996481
-CHARGE   DB810  C17 0.358869999647
-CHARGE   DB810  C18 0.105729997158
-CHARGE   DB810  C19 0.0690200030804
-CHARGE   DB810  C20 0.105729997158
-CHARGE   DB810  C21 -0.129989996552
-CHARGE   DB810  C22 0.127939999104
-CHARGE   DB810  C23 0.10719999671
-CHARGE   DB810  C24 0.0274500008672
-CHARGE   DB810  C25 -0.00425000023097
-CHARGE   DB810  C26 -0.110380001366
-CHARGE   DB810  H1  0.0598100014031
-CHARGE   DB810  H2  0.0598100014031
-CHARGE   DB810  H3  0.0598100014031
-CHARGE   DB810  H4  0.0510299988091
-CHARGE   DB810  H5  0.0510299988091
-CHARGE   DB810  H6  0.2149399966
-CHARGE   DB810  H7  0.184019997716
-CHARGE   DB810  H8  0.174630001187
-CHARGE   DB810  H9  0.166470006108
-CHARGE   DB810  H10 0.174009993672
-CHARGE   DB810  H11 0.0760599970818
-CHARGE   DB810  H12 0.0760599970818
-CHARGE   DB810  H13 0.334199994802
-CHARGE   DB810  H14 0.460619986057
-CHARGE   DB810  H15 0.447869986296
-CHARGE   DB810  H16 0.0501199997962
-CHARGE   DB810  H17 0.0501199997962
-CHARGE   DB810  H18 0.10937999934
-CHARGE   DB810  H19 0.10937999934
-CHARGE   DB810  H20 0.10937999934
-CHARGE   DB810  H21 0.0762699991465
-CHARGE   DB810  H22 0.0762699991465
-CHARGE   DB810  H23 0.0762699991465
-CHARGE   DB810  H24 0.0762699991465
-CHARGE   DB810  H25 0.114799998701
-CHARGE   DB810  H26 0.114799998701
-CHARGE   DB810  H27 0.114799998701
-CHARGE   DB810  H28 0.114799998701
-CHARGE   DB810  H29 0.0581899993122
-CHARGE   DB810  H30 0.0581899993122
-CHARGE   DB810  H31 0.0581899993122
+CHARGE   DB812  C1    0.10512681
+CHARGE   DB812  C2    0.19307436
+CHARGE   DB812  C3    0.17042278
+CHARGE   DB812  C4    0.18911424
+CHARGE   DB812  C5   -0.08244038
+CHARGE   DB812  C6   -0.18630795
+CHARGE   DB812  C7   -0.25492576
+CHARGE   DB812  C8   -0.17109165
+CHARGE   DB812  C9   -0.09402910
+CHARGE   DB812  N1   -0.28628057
+CHARGE   DB812  N2   -0.52915496
+CHARGE   DB812  N3   -0.56428027
+CHARGE   DB812  N4   -0.74682820
+CHARGE   DB812  N5   -0.73941731
+CHARGE   DB812  O1   -0.30059028
+CHARGE   DB812  O2   -0.28597218
+CHARGE   DB812  O3   -0.27657941
+CHARGE   DB812  C10   0.12732370
+CHARGE   DB812  C11   0.08288261
+CHARGE   DB812  C12   0.15817399
+CHARGE   DB812  C13   0.14147307
+CHARGE   DB812  Cl1  -0.00830593
+CHARGE   DB812  C14   0.14678492
+CHARGE   DB812  C15   0.22551990
+CHARGE   DB812  Cl2  -0.05081037
+CHARGE   DB812  C16   0.13680701
+CHARGE   DB812  C17   0.36400989
+CHARGE   DB812  C18   0.17717068
+CHARGE   DB812  C19   0.17894696
+CHARGE   DB812  C20   0.17868681
+CHARGE   DB812  C21  -0.13522103
+CHARGE   DB812  C22   0.15294811
+CHARGE   DB812  C23   0.11054520
+CHARGE   DB812  C24   0.02914669
+CHARGE   DB812  C25   0.00590027
+CHARGE   DB812  C26  -0.11128604
+CHARGE   DB812  H1    0.10198591
+CHARGE   DB812  H2    0.04454546
+CHARGE   DB812  H3    0.04463814
+CHARGE   DB812  H4    0.01618870
+CHARGE   DB812  H5    0.06288397
+CHARGE   DB812  H6    0.20749590
+CHARGE   DB812  H7    0.18511523
+CHARGE   DB812  H8    0.15473482
+CHARGE   DB812  H9    0.16760074
+CHARGE   DB812  H10   0.15345690
+CHARGE   DB812  H11   0.04586280
+CHARGE   DB812  H12   0.09216561
+CHARGE   DB812  H13   0.05315342
+CHARGE   DB812  H14   0.01331057
+CHARGE   DB812  H15   0.04263915
+CHARGE   DB812  H16   0.07816491
+CHARGE   DB812  H17   0.06409258
+CHARGE   DB812  H18   0.03497713
+CHARGE   DB812  H19   0.05316554
+CHARGE   DB812  H20   0.06211965
+CHARGE   DB812  H21   0.05194418
+CHARGE   DB812  H22   0.04596679
+CHARGE   DB812  H23   0.06458443
+CHARGE   DB812  H24   0.04832181
+CHARGE   DB812  H25   0.47390935
+CHARGE   DB812  H26   0.00297297
+CHARGE   DB812  H27   0.01202113
+CHARGE   DB812  H28   0.05460432
+CHARGE   DB812  H29   0.02821850
+CHARGE   DB812  H30   0.48862281
 
-CHARGE   DB809  C1  0.115170001984
-CHARGE   DB809  C2  0.176070004702
-CHARGE   DB809  C3  0.17324000597
-CHARGE   DB809  C4  0.202460005879
-CHARGE   DB809  C5  -0.0995400026441
-CHARGE   DB809  C6  -0.111019998789
-CHARGE   DB809  C7  -0.214619994164
-CHARGE   DB809  C8  -0.0844499990344
-CHARGE   DB809  C9  -0.0902400016785
-CHARGE   DB809  N1  -0.284859985113
-CHARGE   DB809  N2  -0.543429970741
-CHARGE   DB809  N3  -0.229430004954
-CHARGE   DB809  N4  -0.739889979362
-CHARGE   DB809  N5  -0.683679997921
-CHARGE   DB809  O1  -0.325049996376
-CHARGE   DB809  O2  -0.326860010624
-CHARGE   DB809  O3  -0.320309996605
-CHARGE   DB809  C10 0.134450003505
-CHARGE   DB809  C11 -0.0968799963593
-CHARGE   DB809  C12 0.0849300026894
-CHARGE   DB809  C13 0.103339999914
-CHARGE   DB809  Cl1 0.00112000002991
-CHARGE   DB809  C14 0.144140005112
-CHARGE   DB809  C15 0.185800001025
-CHARGE   DB809  Cl2 -0.0521700009704
-CHARGE   DB809  C16 0.144140005112
-CHARGE   DB809  C17 0.504310011864
-CHARGE   DB809  C18 0.105509996414
-CHARGE   DB809  C19 0.181759998202
-CHARGE   DB809  C20 0.105509996414
-CHARGE   DB809  C21 -0.220300003886
-CHARGE   DB809  C22 0.119989998639
-CHARGE   DB809  C23 0.113940000534
-CHARGE   DB809  C24 0.0479400008917
-CHARGE   DB809  C25 0.0286599993706
-CHARGE   DB809  C26 -0.195979997516
-CHARGE   DB809  H1  0.0591900013387
-CHARGE   DB809  H2  0.0591900013387
-CHARGE   DB809  H3  0.0591900013387
-CHARGE   DB809  H4  0.0506700016558
-CHARGE   DB809  H5  0.0506700016558
-CHARGE   DB809  H6  0.211229994893
-CHARGE   DB809  H7  0.188289999962
-CHARGE   DB809  H8  0.167850002646
-CHARGE   DB809  H9  0.165059998631
-CHARGE   DB809  H10 0.168369993567
-CHARGE   DB809  H11 0.0756900012493
-CHARGE   DB809  H12 0.0756900012493
-CHARGE   DB809  H13 0.487540006638
-CHARGE   DB809  H14 0.324189990759
-CHARGE   DB809  H15 0.447219997644
-CHARGE   DB809  H16 0.0494100004435
-CHARGE   DB809  H17 0.0494100004435
-CHARGE   DB809  H18 0.109710000455
-CHARGE   DB809  H19 0.109710000455
-CHARGE   DB809  H20 0.109710000455
-CHARGE   DB809  H21 0.0760499984026
-CHARGE   DB809  H22 0.0760499984026
-CHARGE   DB809  H23 0.0760499984026
-CHARGE   DB809  H24 0.0760499984026
-CHARGE   DB809  H25 0.11482000351
-CHARGE   DB809  H26 0.11482000351
-CHARGE   DB809  H27 0.11482000351
-CHARGE   DB809  H28 0.11482000351
-CHARGE   DB809  H29 0.0549199990928
-CHARGE   DB809  H30 0.0549199990928
-CHARGE   DB809  H31 0.0549199990928
+CHARGE   DB811  C1    0.10692688
+CHARGE   DB811  C2    0.19751157
+CHARGE   DB811  C3    0.17105238
+CHARGE   DB811  C4    0.18853891
+CHARGE   DB811  C5   -0.08361652
+CHARGE   DB811  C6   -0.18582170
+CHARGE   DB811  C7   -0.25570774
+CHARGE   DB811  C8   -0.17277545
+CHARGE   DB811  C9   -0.09424103
+CHARGE   DB811  N1   -0.28644267
+CHARGE   DB811  N2   -0.52952778
+CHARGE   DB811  N3   -0.25505087
+CHARGE   DB811  N4   -0.75405639
+CHARGE   DB811  N5   -0.73909342
+CHARGE   DB811  O1   -0.30229333
+CHARGE   DB811  O2   -0.28995943
+CHARGE   DB811  O3   -0.27714863
+CHARGE   DB811  C10   0.12800945
+CHARGE   DB811  C11  -0.04303050
+CHARGE   DB811  C12   0.15828960
+CHARGE   DB811  C13   0.14261159
+CHARGE   DB811  Cl1  -0.00828823
+CHARGE   DB811  C14   0.15039594
+CHARGE   DB811  C15   0.22688533
+CHARGE   DB811  Cl2  -0.05190395
+CHARGE   DB811  C16   0.14120330
+CHARGE   DB811  C17   0.49486405
+CHARGE   DB811  C18   0.17707378
+CHARGE   DB811  C19   0.17900479
+CHARGE   DB811  C20   0.17749546
+CHARGE   DB811  C21  -0.20653138
+CHARGE   DB811  C22   0.15232109
+CHARGE   DB811  C23   0.11108468
+CHARGE   DB811  C24   0.02987386
+CHARGE   DB811  C25   0.00651880
+CHARGE   DB811  C26  -0.19700162
+CHARGE   DB811  H1    0.10206167
+CHARGE   DB811  H2    0.04508780
+CHARGE   DB811  H3    0.04477010
+CHARGE   DB811  H4    0.01678678
+CHARGE   DB811  H5    0.06147747
+CHARGE   DB811  H6    0.20741242
+CHARGE   DB811  H7    0.18521531
+CHARGE   DB811  H8    0.15469921
+CHARGE   DB811  H9    0.16730462
+CHARGE   DB811  H10   0.15370755
+CHARGE   DB811  H11   0.04494175
+CHARGE   DB811  H12   0.09197278
+CHARGE   DB811  H13   0.05341229
+CHARGE   DB811  H14   0.01287035
+CHARGE   DB811  H15   0.04267856
+CHARGE   DB811  H16   0.07775716
+CHARGE   DB811  H17   0.06358595
+CHARGE   DB811  H18   0.03536653
+CHARGE   DB811  H19   0.05341211
+CHARGE   DB811  H20   0.06183190
+CHARGE   DB811  H21   0.05225995
+CHARGE   DB811  H22   0.04623256
+CHARGE   DB811  H23   0.06372396
+CHARGE   DB811  H24   0.04813519
+CHARGE   DB811  H25   0.00262372
+CHARGE   DB811  H26   0.01245342
+CHARGE   DB811  H27   0.05434854
+CHARGE   DB811  H28   0.02868079
+CHARGE   DB811  H29   0.48836768
+CHARGE   DB811  H30   0.31965113
 
-CHARGE   DB808  C1  0.117490001023
-CHARGE   DB808  C2  0.168119996786
-CHARGE   DB808  C3  0.234990000725
-CHARGE   DB808  C4  0.46941998601
-CHARGE   DB808  C5  -0.0842799991369
-CHARGE   DB808  C6  -0.176159992814
-CHARGE   DB808  C7  -0.208599999547
-CHARGE   DB808  C8  -0.102200001478
-CHARGE   DB808  C9  -0.0896200016141
-CHARGE   DB808  N1  -0.341329991817
-CHARGE   DB808  N2  -0.671809971333
-CHARGE   DB808  N3  -0.693379998207
-CHARGE   DB808  N4  -0.728219985962
-CHARGE   DB808  N5  -0.683929979801
-CHARGE   DB808  O1  -0.336349993944
-CHARGE   DB808  O2  -0.337119996548
-CHARGE   DB808  O3  -0.331950008869
-CHARGE   DB808  C10 0.131630003452
-CHARGE   DB808  C11 0.185279995203
-CHARGE   DB808  C12 0.0835499987006
-CHARGE   DB808  C13 0.0857900008559
-CHARGE   DB808  Cl1 -0.0552200004458
-CHARGE   DB808  C14 0.138170003891
-CHARGE   DB808  C15 0.103849999607
-CHARGE   DB808  Cl2 -0.0804800018668
-CHARGE   DB808  C16 0.138170003891
-CHARGE   DB808  C17 0.265410006046
-CHARGE   DB808  C18 0.107280001044
-CHARGE   DB808  C19 0.427989989519
-CHARGE   DB808  C20 0.107280001044
-CHARGE   DB808  C21 -0.168659999967
-CHARGE   DB808  C22 0.135040000081
-CHARGE   DB808  C23 0.114919997752
-CHARGE   DB808  C24 -0.0132900001481
-CHARGE   DB808  C25 -0.026289999485
-CHARGE   DB808  C26 -0.162719994783
-CHARGE   DB808  H1  0.046360000968
-CHARGE   DB808  H2  0.046360000968
-CHARGE   DB808  H3  0.046360000968
-CHARGE   DB808  H4  0.0519400015473
-CHARGE   DB808  H5  0.0519400015473
-CHARGE   DB808  H6  0.043140001595
-CHARGE   DB808  H7  0.167820006609
-CHARGE   DB808  H8  0.158270001411
-CHARGE   DB808  H9  0.158340007067
-CHARGE   DB808  H10 0.158989995718
-CHARGE   DB808  H11 0.0691599994898
-CHARGE   DB808  H12 0.0691599994898
-CHARGE   DB808  H13 0.455119997263
-CHARGE   DB808  H14 0.445470005274
-CHARGE   DB808  H15 0.0453500002623
-CHARGE   DB808  H16 0.0453500002623
-CHARGE   DB808  H17 0.106069996953
-CHARGE   DB808  H18 0.106069996953
-CHARGE   DB808  H19 0.106069996953
-CHARGE   DB808  H20 0.0774099975824
-CHARGE   DB808  H21 0.0774099975824
-CHARGE   DB808  H22 0.0774099975824
-CHARGE   DB808  H23 0.0774099975824
-CHARGE   DB808  H24 0.111000001431
-CHARGE   DB808  H25 0.111000001431
-CHARGE   DB808  H26 0.111000001431
-CHARGE   DB808  H27 0.111000001431
-CHARGE   DB808  H28 0.0487499982119
-CHARGE   DB808  H29 0.0487499982119
-CHARGE   DB808  H30 0.0487499982119
+CHARGE   DB810  C1    0.10812876
+CHARGE   DB810  C2    0.12115333
+CHARGE   DB810  C3    0.16058595
+CHARGE   DB810  C4    0.19659525
+CHARGE   DB810  C5   -0.08347523
+CHARGE   DB810  C6   -0.18809590
+CHARGE   DB810  C7   -0.22608414
+CHARGE   DB810  C8   -0.15796238
+CHARGE   DB810  C9   -0.11035217
+CHARGE   DB810  N1   -0.26332909
+CHARGE   DB810  N2   -0.53668481
+CHARGE   DB810  N3   -0.54022640
+CHARGE   DB810  N4   -0.68622619
+CHARGE   DB810  N5   -0.73882830
+CHARGE   DB810  O1   -0.29392624
+CHARGE   DB810  O2   -0.31057012
+CHARGE   DB810  O3   -0.32012212
+CHARGE   DB810  C10   0.13104230
+CHARGE   DB810  C11   0.06279154
+CHARGE   DB810  C12   0.15044963
+CHARGE   DB810  C13   0.14563504
+CHARGE   DB810  Cl1   0.01025032
+CHARGE   DB810  C14   0.07432970
+CHARGE   DB810  C15   0.18857658
+CHARGE   DB810  Cl2  -0.04890630
+CHARGE   DB810  C16   0.05993360
+CHARGE   DB810  C17   0.35649231
+CHARGE   DB810  C18   0.16061866
+CHARGE   DB810  C19   0.16899787
+CHARGE   DB810  C20   0.15915875
+CHARGE   DB810  C21  -0.11891565
+CHARGE   DB810  C22   0.15170395
+CHARGE   DB810  C23   0.10897761
+CHARGE   DB810  C24   0.03612910
+CHARGE   DB810  C25   0.01354658
+CHARGE   DB810  C26  -0.09891158
+CHARGE   DB810  H1    0.09882504
+CHARGE   DB810  H2    0.05553106
+CHARGE   DB810  H3    0.05219238
+CHARGE   DB810  H4    0.10983494
+CHARGE   DB810  H5    0.11803614
+CHARGE   DB810  H6    0.21635829
+CHARGE   DB810  H7    0.19093606
+CHARGE   DB810  H8    0.15426178
+CHARGE   DB810  H9    0.16229437
+CHARGE   DB810  H10   0.16113377
+CHARGE   DB810  H11   0.10225605
+CHARGE   DB810  H12   0.09830793
+CHARGE   DB810  H13   0.07172882
+CHARGE   DB810  H14   0.10503500
+CHARGE   DB810  H15   0.04345965
+CHARGE   DB810  H16   0.07810846
+CHARGE   DB810  H17   0.08070061
+CHARGE   DB810  H18   0.06008523
+CHARGE   DB810  H19   0.11290567
+CHARGE   DB810  H20   0.07851299
+CHARGE   DB810  H21   0.11115760
+CHARGE   DB810  H22   0.07180280
+CHARGE   DB810  H23   0.07733670
+CHARGE   DB810  H24   0.08386236
+CHARGE   DB810  H25   0.47490761
+CHARGE   DB810  H26   0.01634814
+CHARGE   DB810  H27   0.44618043
+CHARGE   DB810  H28   0.10292140
+CHARGE   DB810  H29   0.10852570
+CHARGE   DB810  H30   0.02411348
+CHARGE   DB810  H31   0.48985934
 
-CHARGE   DB807  C1  0.280000001192
-CHARGE   DB807  C2  0.503000020981
-CHARGE   DB807  C3  0.152999997139
-CHARGE   DB807  C4  0.325599998236
-CHARGE   DB807  C5  0.15000000596
-CHARGE   DB807  C6  0.15000000596
-CHARGE   DB807  C7  0.15000000596
-CHARGE   DB807  C8  0.15000000596
-CHARGE   DB807  C9  -0.444999992847
-CHARGE   DB807  N1  0.217999994755
-CHARGE   DB807  N2  0.097000002861
-CHARGE   DB807  N3  0.097000002861
-CHARGE   DB807  N4  0.958999991417
-CHARGE   DB807  N5  0.810000002384
-CHARGE   DB807  O1  0.362500011921
-CHARGE   DB807  O2  0.362500011921
-CHARGE   DB807  O3  0.362500011921
-CHARGE   DB807  C10 0.280000001192
-CHARGE   DB807  C11 0.29699999094
-CHARGE   DB807  C12 0.270000010729
-CHARGE   DB807  C13 0.0825000032783
-CHARGE   DB807  Cl1 0.177000001073
-CHARGE   DB807  C14 0.503000020981
-CHARGE   DB807  C15 0.0825000032783
-CHARGE   DB807  Cl2 0.177000001073
-CHARGE   DB807  C16 0.503000020981
-CHARGE   DB807  C17 0.299400001764
-CHARGE   DB807  C18 0.270000010729
-CHARGE   DB807  C19 0.29699999094
-CHARGE   DB807  C20 0.270000010729
-CHARGE   DB807  C21 0.0861999988556
-CHARGE   DB807  C22 0.0825000032783
-CHARGE   DB807  C23 0.280000001192
-CHARGE   DB807  C24 0.177000001073
-CHARGE   DB807  C25 0.177000001073
-CHARGE   DB807  C26 0.0938000008464
-CHARGE   DB807  H1      0.0
-CHARGE   DB807  H2      0.0
-CHARGE   DB807  H3      0.0
-CHARGE   DB807  H4      0.0
-CHARGE   DB807  H5      0.0
-CHARGE   DB807  H6  0.0599999986589
-CHARGE   DB807  H7  0.15000000596
-CHARGE   DB807  H8  0.15000000596
-CHARGE   DB807  H9  0.15000000596
-CHARGE   DB807  H10 0.15000000596
-CHARGE   DB807  H11     0.0
-CHARGE   DB807  H12     0.0
-CHARGE   DB807  H13 0.40000000596
-CHARGE   DB807  H14 0.40000000596
-CHARGE   DB807  H15 0.449999988079
-CHARGE   DB807  H16     0.0
-CHARGE   DB807  H17     0.0
-CHARGE   DB807  H18     0.0
-CHARGE   DB807  H19     0.0
-CHARGE   DB807  H20     0.0
-CHARGE   DB807  H21     0.0
-CHARGE   DB807  H22     0.0
-CHARGE   DB807  H23     0.0
-CHARGE   DB807  H24     0.0
-CHARGE   DB807  H25     0.0
-CHARGE   DB807  H26     0.0
-CHARGE   DB807  H27     0.0
-CHARGE   DB807  H28     0.0
-CHARGE   DB807  H29     0.0
-CHARGE   DB807  H30     0.0
-CHARGE   DB807  H31     0.0
+CHARGE   DB809  C1    0.11964344
+CHARGE   DB809  C2    0.18800125
+CHARGE   DB809  C3    0.28886119
+CHARGE   DB809  C4    0.51243186
+CHARGE   DB809  C5   -0.08176985
+CHARGE   DB809  C6   -0.23645522
+CHARGE   DB809  C7   -0.26482576
+CHARGE   DB809  C8   -0.11257039
+CHARGE   DB809  C9   -0.08301570
+CHARGE   DB809  N1   -0.47557402
+CHARGE   DB809  N2   -0.79209864
+CHARGE   DB809  N3   -0.48700398
+CHARGE   DB809  N4   -0.75517440
+CHARGE   DB809  N5   -0.74365753
+CHARGE   DB809  O1   -0.33488384
+CHARGE   DB809  O2   -0.33315384
+CHARGE   DB809  O3   -0.32799315
+CHARGE   DB809  C10   0.13137409
+CHARGE   DB809  C11   0.21566217
+CHARGE   DB809  C12   0.16140173
+CHARGE   DB809  C13   0.04621480
+CHARGE   DB809  Cl1  -0.11906591
+CHARGE   DB809  C14   0.15137552
+CHARGE   DB809  C15   0.11488643
+CHARGE   DB809  Cl2  -0.11660009
+CHARGE   DB809  C16   0.14587350
+CHARGE   DB809  C17   0.28043678
+CHARGE   DB809  C18   0.17489843
+CHARGE   DB809  C19   0.45051470
+CHARGE   DB809  C20   0.17268355
+CHARGE   DB809  C21  -0.17503476
+CHARGE   DB809  C22   0.14938365
+CHARGE   DB809  C23   0.11777182
+CHARGE   DB809  C24  -0.04116182
+CHARGE   DB809  C25  -0.02994294
+CHARGE   DB809  C26  -0.39239237
+CHARGE   DB809  H1    0.04739605
+CHARGE   DB809  H2    0.03142238
+CHARGE   DB809  H3    0.03360559
+CHARGE   DB809  H4    0.03655519
+CHARGE   DB809  H5    0.06802748
+CHARGE   DB809  H6   -0.00537581
+CHARGE   DB809  H7    0.14044417
+CHARGE   DB809  H8    0.14808491
+CHARGE   DB809  H9    0.14088495
+CHARGE   DB809  H10   0.15827371
+CHARGE   DB809  H11   0.05344924
+CHARGE   DB809  H12   0.04452848
+CHARGE   DB809  H13   0.03319141
+CHARGE   DB809  H14   0.01018435
+CHARGE   DB809  H15   0.04551211
+CHARGE   DB809  H16   0.04658420
+CHARGE   DB809  H17   0.05725722
+CHARGE   DB809  H18   0.04023087
+CHARGE   DB809  H19   0.04059688
+CHARGE   DB809  H20   0.03564577
+CHARGE   DB809  H21   0.04017042
+CHARGE   DB809  H22   0.03640807
+CHARGE   DB809  H23   0.05960434
+CHARGE   DB809  H24   0.03564096
+CHARGE   DB809  H25   0.00403445
+CHARGE   DB809  H26   0.01082268
+CHARGE   DB809  H27   0.05841085
+CHARGE   DB809  H28   0.02936839
 
-CHARGE   DB806  C1  0.111100003123
-CHARGE   DB806  C2  0.11072999984
-CHARGE   DB806  C3  0.201780006289
-CHARGE   DB806  C4  0.098480001092
-CHARGE   DB806  C5  -0.0975100025535
-CHARGE   DB806  C6  -0.103849999607
-CHARGE   DB806  C7  -0.204349994659
-CHARGE   DB806  C8  -0.0837500020862
-CHARGE   DB806  C9  -0.122060000896
-CHARGE   DB806  N1  -0.266530007124
-CHARGE   DB806  N2  -0.172250002623
-CHARGE   DB806  N3  -0.546769976616
-CHARGE   DB806  N4  -0.688009977341
-CHARGE   DB806  N5  -0.740750014782
-CHARGE   DB806  O1  -0.324270009995
-CHARGE   DB806  O2  -0.325370013714
-CHARGE   DB806  O3  -0.316199988127
-CHARGE   DB806  C10 0.134289994836
-CHARGE   DB806  C11 0.0421900004148
-CHARGE   DB806  C12 0.151060000062
-CHARGE   DB806  C13 0.104610003531
-CHARGE   DB806  Cl1 0.0039800000377
-CHARGE   DB806  C14 0.10814999789
-CHARGE   DB806  C15 0.166339993477
-CHARGE   DB806  Cl2 -0.0685700029135
-CHARGE   DB806  C16 0.10814999789
-CHARGE   DB806  C17 0.358300000429
-CHARGE   DB806  C18 0.144280001521
-CHARGE   DB806  C19 0.0744400024414
-CHARGE   DB806  C20 0.144280001521
-CHARGE   DB806  C21 -0.129930004478
-CHARGE   DB806  C22 0.124439999461
-CHARGE   DB806  C23 0.11183000356
-CHARGE   DB806  C24 0.04117000103
-CHARGE   DB806  C25 0.0172199998051
-CHARGE   DB806  C26 -0.130600005388
-CHARGE   DB806  H1  0.0607899986207
-CHARGE   DB806  H2  0.0607899986207
-CHARGE   DB806  H3  0.0607899986207
-CHARGE   DB806  H4  0.106669999659
-CHARGE   DB806  H5  0.106669999659
-CHARGE   DB806  H6  0.216049998999
-CHARGE   DB806  H7  0.188119992614
-CHARGE   DB806  H8  0.172749996185
-CHARGE   DB806  H9  0.166380003095
-CHARGE   DB806  H10 0.172360002995
-CHARGE   DB806  H11 0.0879999995232
-CHARGE   DB806  H12 0.0879999995232
-CHARGE   DB806  H13 0.334289997816
-CHARGE   DB806  H14 0.470340013504
-CHARGE   DB806  H15 0.444130003452
-CHARGE   DB806  H16 0.0579999983311
-CHARGE   DB806  H17 0.0579999983311
-CHARGE   DB806  H18 0.0624199993908
-CHARGE   DB806  H19 0.0624199993908
-CHARGE   DB806  H20 0.0624199993908
-CHARGE   DB806  H21 0.108869999647
-CHARGE   DB806  H22 0.108869999647
-CHARGE   DB806  H23 0.108869999647
-CHARGE   DB806  H24 0.108869999647
-CHARGE   DB806  H25 0.0792500004172
-CHARGE   DB806  H26 0.0792500004172
-CHARGE   DB806  H27 0.0792500004172
-CHARGE   DB806  H28 0.0792500004172
-CHARGE   DB806  H29 0.0573600009084
-CHARGE   DB806  H30 0.0573600009084
-CHARGE   DB806  H31 0.0573600009084
+CHARGE   DB808  C1    0.10855605
+CHARGE   DB808  C2    0.12131568
+CHARGE   DB808  C3    0.16059273
+CHARGE   DB808  C4    0.19485360
+CHARGE   DB808  C5   -0.08317948
+CHARGE   DB808  C6   -0.18781623
+CHARGE   DB808  C7   -0.22626688
+CHARGE   DB808  C8   -0.15687454
+CHARGE   DB808  C9   -0.10995081
+CHARGE   DB808  N1   -0.26324913
+CHARGE   DB808  N2   -0.53500396
+CHARGE   DB808  N3   -0.22985181
+CHARGE   DB808  N4   -0.68555987
+CHARGE   DB808  N5   -0.74156129
+CHARGE   DB808  O1   -0.29411197
+CHARGE   DB808  O2   -0.31179780
+CHARGE   DB808  O3   -0.32186183
+CHARGE   DB808  C10   0.13106517
+CHARGE   DB808  C11  -0.06448500
+CHARGE   DB808  C12   0.15208605
+CHARGE   DB808  C13   0.14517906
+CHARGE   DB808  Cl1   0.01001905
+CHARGE   DB808  C14   0.07302839
+CHARGE   DB808  C15   0.18937375
+CHARGE   DB808  Cl2  -0.04812329
+CHARGE   DB808  C16   0.06018296
+CHARGE   DB808  C17   0.48702437
+CHARGE   DB808  C18   0.16089973
+CHARGE   DB808  C19   0.16828343
+CHARGE   DB808  C20   0.15990835
+CHARGE   DB808  C21  -0.19054466
+CHARGE   DB808  C22   0.15155755
+CHARGE   DB808  C23   0.10932971
+CHARGE   DB808  C24   0.03635561
+CHARGE   DB808  C25   0.01379820
+CHARGE   DB808  C26  -0.18528663
+CHARGE   DB808  H1    0.09934118
+CHARGE   DB808  H2    0.05462069
+CHARGE   DB808  H3    0.05174219
+CHARGE   DB808  H4    0.10977301
+CHARGE   DB808  H5    0.11827945
+CHARGE   DB808  H6    0.21583366
+CHARGE   DB808  H7    0.19053833
+CHARGE   DB808  H8    0.15401514
+CHARGE   DB808  H9    0.16233510
+CHARGE   DB808  H10   0.16170067
+CHARGE   DB808  H11   0.10243075
+CHARGE   DB808  H12   0.09810352
+CHARGE   DB808  H13   0.07249250
+CHARGE   DB808  H14   0.10513971
+CHARGE   DB808  H15   0.04360484
+CHARGE   DB808  H16   0.07761394
+CHARGE   DB808  H17   0.08053945
+CHARGE   DB808  H18   0.06043408
+CHARGE   DB808  H19   0.11281554
+CHARGE   DB808  H20   0.07890327
+CHARGE   DB808  H21   0.11146039
+CHARGE   DB808  H22   0.07188371
+CHARGE   DB808  H23   0.07770527
+CHARGE   DB808  H24   0.08325087
+CHARGE   DB808  H25   0.01589037
+CHARGE   DB808  H26   0.44600976
+CHARGE   DB808  H27   0.10414188
+CHARGE   DB808  H28   0.10855537
+CHARGE   DB808  H29   0.02387602
+CHARGE   DB808  H30   0.49013031
+CHARGE   DB808  H31   0.31895474
 
-CHARGE   DB805  C1  0.112389996648
-CHARGE   DB805  C2  0.110770002007
-CHARGE   DB805  C3  0.159730002284
-CHARGE   DB805  C4  0.2046200037
-CHARGE   DB805  C5  -0.0985400006175
-CHARGE   DB805  C6  -0.109439998865
-CHARGE   DB805  C7  -0.176589995623
-CHARGE   DB805  C8  -0.0752400010824
-CHARGE   DB805  C9  -0.127130001783
-CHARGE   DB805  N1  -0.260989993811
-CHARGE   DB805  N2  -0.542330026627
-CHARGE   DB805  N3  -0.227850005031
-CHARGE   DB805  N4  -0.687430024147
-CHARGE   DB805  N5  -0.736949980259
-CHARGE   DB805  O1  -0.32174000144
-CHARGE   DB805  O2  -0.349949985743
-CHARGE   DB805  O3  -0.33245998621
-CHARGE   DB805  C10 0.140949994326
-CHARGE   DB805  C11 -0.0987700000405
-CHARGE   DB805  C12 0.151620000601
-CHARGE   DB805  C13 0.0734699964523
-CHARGE   DB805  Cl1 0.00608000019565
-CHARGE   DB805  C14 0.107369996607
-CHARGE   DB805  C15 0.168080002069
-CHARGE   DB805  Cl2 -0.05564000085
-CHARGE   DB805  C16 0.107369996607
-CHARGE   DB805  C17 0.500859975815
-CHARGE   DB805  C18 0.149110004306
-CHARGE   DB805  C19 0.180120006204
-CHARGE   DB805  C20 0.149110004306
-CHARGE   DB805  C21 -0.217449992895
-CHARGE   DB805  C22 0.117880001664
-CHARGE   DB805  C23 0.109820000827
-CHARGE   DB805  C24 0.0494900010526
-CHARGE   DB805  C25 0.0264199990779
-CHARGE   DB805  C26 -0.185350000858
-CHARGE   DB805  H1  0.0617799982429
-CHARGE   DB805  H2  0.0617799982429
-CHARGE   DB805  H3  0.0617799982429
-CHARGE   DB805  H4  0.107689999044
-CHARGE   DB805  H5  0.107689999044
-CHARGE   DB805  H6  0.216470003128
-CHARGE   DB805  H7  0.189449995756
-CHARGE   DB805  H8  0.167740002275
-CHARGE   DB805  H9  0.176909998059
-CHARGE   DB805  H10 0.169180005789
-CHARGE   DB805  H11 0.0798999965191
-CHARGE   DB805  H12 0.0798999965191
-CHARGE   DB805  H13 0.492830008268
-CHARGE   DB805  H14 0.319059997797
-CHARGE   DB805  H15 0.447140008211
-CHARGE   DB805  H16 0.0726199969649
-CHARGE   DB805  H17 0.0726199969649
-CHARGE   DB805  H18 0.0614599995315
-CHARGE   DB805  H19 0.0614599995315
-CHARGE   DB805  H20 0.0614599995315
-CHARGE   DB805  H21 0.11005999893
-CHARGE   DB805  H22 0.11005999893
-CHARGE   DB805  H23 0.11005999893
-CHARGE   DB805  H24 0.11005999893
-CHARGE   DB805  H25 0.0752300024033
-CHARGE   DB805  H26 0.0752300024033
-CHARGE   DB805  H27 0.0752300024033
-CHARGE   DB805  H28 0.0752300024033
-CHARGE   DB805  H29 0.056170001626
-CHARGE   DB805  H30 0.056170001626
-CHARGE   DB805  H31 0.056170001626
+CHARGE   DB807  C1    0.11704838
+CHARGE   DB807  C2    0.11617768
+CHARGE   DB807  C3    0.27973413
+CHARGE   DB807  C4    0.52184415
+CHARGE   DB807  C5   -0.08303861
+CHARGE   DB807  C6   -0.22716528
+CHARGE   DB807  C7   -0.26936322
+CHARGE   DB807  C8   -0.09638407
+CHARGE   DB807  C9   -0.10484634
+CHARGE   DB807  N1   -0.45282879
+CHARGE   DB807  N2   -0.80902755
+CHARGE   DB807  N3   -0.46676120
+CHARGE   DB807  N4   -0.68159956
+CHARGE   DB807  N5   -0.75091970
+CHARGE   DB807  O1   -0.33001655
+CHARGE   DB807  O2   -0.34935236
+CHARGE   DB807  O3   -0.35870782
+CHARGE   DB807  C10   0.13505732
+CHARGE   DB807  C11   0.19548117
+CHARGE   DB807  C12   0.15518337
+CHARGE   DB807  C13   0.03059784
+CHARGE   DB807  Cl1  -0.10189092
+CHARGE   DB807  C14   0.07269654
+CHARGE   DB807  C15   0.09593260
+CHARGE   DB807  Cl2  -0.10951711
+CHARGE   DB807  C16   0.06477108
+CHARGE   DB807  C17   0.26882419
+CHARGE   DB807  C18   0.15781277
+CHARGE   DB807  C19   0.46276960
+CHARGE   DB807  C20   0.15855137
+CHARGE   DB807  C21  -0.17229091
+CHARGE   DB807  C22   0.14831342
+CHARGE   DB807  C23   0.11735708
+CHARGE   DB807  C24  -0.02939069
+CHARGE   DB807  C25  -0.02299394
+CHARGE   DB807  C26  -0.37626389
+CHARGE   DB807  H1    0.04226507
+CHARGE   DB807  H2    0.04160465
+CHARGE   DB807  H3    0.03941295
+CHARGE   DB807  H4    0.12101157
+CHARGE   DB807  H5    0.12832245
+CHARGE   DB807  H6    0.00088645
+CHARGE   DB807  H7    0.14681971
+CHARGE   DB807  H8    0.14669998
+CHARGE   DB807  H9    0.13583042
+CHARGE   DB807  H10   0.16732426
+CHARGE   DB807  H11   0.11015974
+CHARGE   DB807  H12   0.05172052
+CHARGE   DB807  H13   0.05511625
+CHARGE   DB807  H14   0.10527690
+CHARGE   DB807  H15   0.04626886
+CHARGE   DB807  H16   0.05076941
+CHARGE   DB807  H17   0.07507811
+CHARGE   DB807  H18   0.06649604
+CHARGE   DB807  H19   0.09978376
+CHARGE   DB807  H20   0.05795690
+CHARGE   DB807  H21   0.10068061
+CHARGE   DB807  H22   0.06351107
+CHARGE   DB807  H23   0.07115894
+CHARGE   DB807  H24   0.06935571
+CHARGE   DB807  H25   0.01922996
+CHARGE   DB807  H26   0.43864501
+CHARGE   DB807  H27   0.10409731
+CHARGE   DB807  H28   0.11293642
+CHARGE   DB807  H29   0.02578685
 
-CHARGE   DB804  C1  0.115620002151
-CHARGE   DB804  C2  0.111249998212
-CHARGE   DB804  C3  0.243230000138
-CHARGE   DB804  C4  0.476570010185
-CHARGE   DB804  C5  -0.107029996812
-CHARGE   DB804  C6  -0.119599997997
-CHARGE   DB804  C7  -0.201330006123
-CHARGE   DB804  C8  -0.10068000108
-CHARGE   DB804  C9  -0.121710002422
-CHARGE   DB804  N1  -0.350520014763
-CHARGE   DB804  N2  -0.676530003548
-CHARGE   DB804  N3  -0.684560000896
-CHARGE   DB804  N4  -0.686200022697
-CHARGE   DB804  N5  -0.73857998848
-CHARGE   DB804  O1  -0.333880007267
-CHARGE   DB804  O2  -0.33928000927
-CHARGE   DB804  O3  -0.329279989004
-CHARGE   DB804  C10 0.135020002723
-CHARGE   DB804  C11 0.133159995079
-CHARGE   DB804  C12 0.150169998407
-CHARGE   DB804  C13 0.0840200036764
-CHARGE   DB804  Cl1 -0.0450400002301
-CHARGE   DB804  C14 0.106969997287
-CHARGE   DB804  C15 0.089160002768
-CHARGE   DB804  Cl2 -0.0867799967527
-CHARGE   DB804  C16 0.106969997287
-CHARGE   DB804  C17 0.269549995661
-CHARGE   DB804  C18 0.141959995031
-CHARGE   DB804  C19 0.430759996176
-CHARGE   DB804  C20 0.141959995031
-CHARGE   DB804  C21 -0.176390007138
-CHARGE   DB804  C22 0.114759996533
-CHARGE   DB804  C23 0.111969999969
-CHARGE   DB804  C24 0.0128199998289
-CHARGE   DB804  C25 -0.00161000003573
-CHARGE   DB804  C26 -0.167830005288
-CHARGE   DB804  H1  0.0477599985898
-CHARGE   DB804  H2  0.0477599985898
-CHARGE   DB804  H3  0.0477599985898
-CHARGE   DB804  H4  0.105690002441
-CHARGE   DB804  H5  0.105690002441
-CHARGE   DB804  H6  0.0446700006723
-CHARGE   DB804  H7  0.168830007315
-CHARGE   DB804  H8  0.170080006123
-CHARGE   DB804  H9  0.159180000424
-CHARGE   DB804  H10 0.157859995961
-CHARGE   DB804  H11 0.0807399973273
-CHARGE   DB804  H12 0.0807399973273
-CHARGE   DB804  H13 0.446720004082
-CHARGE   DB804  H14 0.444200009108
-CHARGE   DB804  H15 0.0546800009906
-CHARGE   DB804  H16 0.0546800009906
-CHARGE   DB804  H17 0.0584199987352
-CHARGE   DB804  H18 0.0584199987352
-CHARGE   DB804  H19 0.0584199987352
-CHARGE   DB804  H20 0.11005000025
-CHARGE   DB804  H21 0.11005000025
-CHARGE   DB804  H22 0.11005000025
-CHARGE   DB804  H23 0.11005000025
-CHARGE   DB804  H24 0.0756999999285
-CHARGE   DB804  H25 0.0756999999285
-CHARGE   DB804  H26 0.0756999999285
-CHARGE   DB804  H27 0.0756999999285
-CHARGE   DB804  H28 0.0518699996173
-CHARGE   DB804  H29 0.0518699996173
-CHARGE   DB804  H30 0.0518699996173
+CHARGE   DB806  C1    0.10617080
+CHARGE   DB806  C2    0.20378025
+CHARGE   DB806  C3    0.16263022
+CHARGE   DB806  C4    0.19347228
+CHARGE   DB806  C5   -0.08180569
+CHARGE   DB806  C6   -0.18523291
+CHARGE   DB806  C7   -0.23862922
+CHARGE   DB806  C8   -0.16191202
+CHARGE   DB806  C9   -0.09449787
+CHARGE   DB806  N1   -0.26975912
+CHARGE   DB806  N2   -0.53552693
+CHARGE   DB806  N3   -0.54807055
+CHARGE   DB806  N4   -0.78902453
+CHARGE   DB806  N5   -0.67667282
+CHARGE   DB806  O1   -0.29641828
+CHARGE   DB806  O2   -0.30117950
+CHARGE   DB806  O3   -0.29915622
+CHARGE   DB806  C10   0.12774818
+CHARGE   DB806  C11   0.07028388
+CHARGE   DB806  C12   0.07747991
+CHARGE   DB806  C13   0.14095962
+CHARGE   DB806  Cl1   0.00260169
+CHARGE   DB806  C14   0.17574395
+CHARGE   DB806  C15   0.20384687
+CHARGE   DB806  Cl2  -0.05125760
+CHARGE   DB806  C16   0.16926964
+CHARGE   DB806  C17   0.35982132
+CHARGE   DB806  C18   0.10643934
+CHARGE   DB806  C19   0.17373967
+CHARGE   DB806  C20   0.10117763
+CHARGE   DB806  C21  -0.12710392
+CHARGE   DB806  C22   0.15238832
+CHARGE   DB806  C23   0.10884922
+CHARGE   DB806  C24   0.03482705
+CHARGE   DB806  C25   0.01071558
+CHARGE   DB806  C26  -0.10228412
+CHARGE   DB806  H1    0.09836518
+CHARGE   DB806  H2    0.05124675
+CHARGE   DB806  H3    0.04849350
+CHARGE   DB806  H4    0.04566590
+CHARGE   DB806  H5    0.08161174
+CHARGE   DB806  H6    0.21293420
+CHARGE   DB806  H7    0.18932576
+CHARGE   DB806  H8    0.15353954
+CHARGE   DB806  H9    0.16310795
+CHARGE   DB806  H10   0.15853155
+CHARGE   DB806  H11   0.09862066
+CHARGE   DB806  H12   0.09624791
+CHARGE   DB806  H13   0.05056055
+CHARGE   DB806  H14   0.04477062
+CHARGE   DB806  H15   0.04337231
+CHARGE   DB806  H16   0.07325549
+CHARGE   DB806  H17   0.11196689
+CHARGE   DB806  H18   0.04510007
+CHARGE   DB806  H19   0.10842469
+CHARGE   DB806  H20   0.07121126
+CHARGE   DB806  H21   0.10652299
+CHARGE   DB806  H22   0.10747272
+CHARGE   DB806  H23   0.11289699
+CHARGE   DB806  H24   0.10673953
+CHARGE   DB806  H25   0.47390622
+CHARGE   DB806  H26   0.10400219
+CHARGE   DB806  H27   0.04433996
+CHARGE   DB806  H28   0.45319808
+CHARGE   DB806  H29   0.10620458
+CHARGE   DB806  H30   0.02634414
+CHARGE   DB806  H31   0.48860604
 
-CHARGE   DB803  C1  0.280000001192
-CHARGE   DB803  C2  0.270000010729
-CHARGE   DB803  C3  0.152999997139
-CHARGE   DB803  C4  0.325599998236
-CHARGE   DB803  C5  0.15000000596
-CHARGE   DB803  C6  0.15000000596
-CHARGE   DB803  C7  0.15000000596
-CHARGE   DB803  C8  0.15000000596
-CHARGE   DB803  C9  -0.146999999881
-CHARGE   DB803  N1  0.217999994755
-CHARGE   DB803  N2  0.097000002861
-CHARGE   DB803  N3  0.097000002861
-CHARGE   DB803  N4  0.810000002384
-CHARGE   DB803  N5  0.810000002384
-CHARGE   DB803  O1  0.362500011921
-CHARGE   DB803  O2  0.362500011921
-CHARGE   DB803  O3  0.362500011921
-CHARGE   DB803  C10 0.280000001192
-CHARGE   DB803  C11 0.29699999094
-CHARGE   DB803  C12 0.270000010729
-CHARGE   DB803  C13 0.0825000032783
-CHARGE   DB803  Cl1 0.177000001073
-CHARGE   DB803  C14 0.270000010729
-CHARGE   DB803  C15 0.0825000032783
-CHARGE   DB803  Cl2 0.177000001073
-CHARGE   DB803  C16 0.270000010729
-CHARGE   DB803  C17 0.299400001764
-CHARGE   DB803  C18 0.270000010729
-CHARGE   DB803  C19 0.29699999094
-CHARGE   DB803  C20 0.270000010729
-CHARGE   DB803  C21 0.0861999988556
-CHARGE   DB803  C22 0.0825000032783
-CHARGE   DB803  C23 0.280000001192
-CHARGE   DB803  C24 0.177000001073
-CHARGE   DB803  C25 0.177000001073
-CHARGE   DB803  C26 0.0938000008464
-CHARGE   DB803  H1      0.0
-CHARGE   DB803  H2      0.0
-CHARGE   DB803  H3      0.0
-CHARGE   DB803  H4      0.0
-CHARGE   DB803  H5      0.0
-CHARGE   DB803  H6  0.0599999986589
-CHARGE   DB803  H7  0.15000000596
-CHARGE   DB803  H8  0.15000000596
-CHARGE   DB803  H9  0.15000000596
-CHARGE   DB803  H10 0.15000000596
-CHARGE   DB803  H11     0.0
-CHARGE   DB803  H12     0.0
-CHARGE   DB803  H13 0.40000000596
-CHARGE   DB803  H14 0.40000000596
-CHARGE   DB803  H15     0.0
-CHARGE   DB803  H16     0.0
-CHARGE   DB803  H17     0.0
-CHARGE   DB803  H18     0.0
-CHARGE   DB803  H19     0.0
-CHARGE   DB803  H20     0.0
-CHARGE   DB803  H21     0.0
-CHARGE   DB803  H22     0.0
-CHARGE   DB803  H23     0.0
-CHARGE   DB803  H24     0.0
-CHARGE   DB803  H25     0.0
-CHARGE   DB803  H26     0.0
-CHARGE   DB803  H27     0.0
-CHARGE   DB803  H28     0.0
-CHARGE   DB803  H29     0.0
-CHARGE   DB803  H30     0.0
+CHARGE   DB805  C1    0.10575084
+CHARGE   DB805  C2    0.19986139
+CHARGE   DB805  C3    0.16320790
+CHARGE   DB805  C4    0.19343938
+CHARGE   DB805  C5   -0.08243579
+CHARGE   DB805  C6   -0.18441838
+CHARGE   DB805  C7   -0.23622449
+CHARGE   DB805  C8   -0.16165709
+CHARGE   DB805  C9   -0.09508091
+CHARGE   DB805  N1   -0.26930439
+CHARGE   DB805  N2   -0.53513914
+CHARGE   DB805  N3   -0.23942319
+CHARGE   DB805  N4   -0.78268415
+CHARGE   DB805  N5   -0.67784631
+CHARGE   DB805  O1   -0.29561096
+CHARGE   DB805  O2   -0.30006865
+CHARGE   DB805  O3   -0.29810131
+CHARGE   DB805  C10   0.12652704
+CHARGE   DB805  C11  -0.05794465
+CHARGE   DB805  C12   0.07846929
+CHARGE   DB805  C13   0.14134184
+CHARGE   DB805  Cl1   0.00368009
+CHARGE   DB805  C14   0.17077874
+CHARGE   DB805  C15   0.20186301
+CHARGE   DB805  Cl2  -0.05068494
+CHARGE   DB805  C16   0.16671720
+CHARGE   DB805  C17   0.49093309
+CHARGE   DB805  C18   0.10717598
+CHARGE   DB805  C19   0.17235555
+CHARGE   DB805  C20   0.10425128
+CHARGE   DB805  C21  -0.19902928
+CHARGE   DB805  C22   0.15209505
+CHARGE   DB805  C23   0.10987913
+CHARGE   DB805  C24   0.03505283
+CHARGE   DB805  C25   0.01072063
+CHARGE   DB805  C26  -0.18755288
+CHARGE   DB805  H1    0.09843714
+CHARGE   DB805  H2    0.05144562
+CHARGE   DB805  H3    0.04783996
+CHARGE   DB805  H4    0.04669543
+CHARGE   DB805  H5    0.08228023
+CHARGE   DB805  H6    0.21227258
+CHARGE   DB805  H7    0.18926919
+CHARGE   DB805  H8    0.15309332
+CHARGE   DB805  H9    0.16412352
+CHARGE   DB805  H10   0.15869245
+CHARGE   DB805  H11   0.09868499
+CHARGE   DB805  H12   0.09673330
+CHARGE   DB805  H13   0.05057565
+CHARGE   DB805  H14   0.04446727
+CHARGE   DB805  H15   0.04099669
+CHARGE   DB805  H16   0.07336517
+CHARGE   DB805  H17   0.11188493
+CHARGE   DB805  H18   0.04582589
+CHARGE   DB805  H19   0.10853732
+CHARGE   DB805  H20   0.07032557
+CHARGE   DB805  H21   0.10591216
+CHARGE   DB805  H22   0.10663020
+CHARGE   DB805  H23   0.11348072
+CHARGE   DB805  H24   0.10741221
+CHARGE   DB805  H25   0.10390985
+CHARGE   DB805  H26   0.04525105
+CHARGE   DB805  H27   0.45241195
+CHARGE   DB805  H28   0.10582523
+CHARGE   DB805  H29   0.02554291
+CHARGE   DB805  H30   0.48807460
+CHARGE   DB805  H31   0.31910914
 
-CHARGE   DB802  C1  0.11291000247
-CHARGE   DB802  C2  0.181820005178
-CHARGE   DB802  C3  0.201560005546
-CHARGE   DB802  C4  0.0840699970722
-CHARGE   DB802  C5  -0.0932099968195
-CHARGE   DB802  C6  -0.120580002666
-CHARGE   DB802  C7  -0.223489999771
-CHARGE   DB802  C8  -0.0942400023341
-CHARGE   DB802  C9  -0.0912000015378
-CHARGE   DB802  N1  -0.265460014343
-CHARGE   DB802  N2  -0.149379998446
-CHARGE   DB802  N3  -0.600000023842
-CHARGE   DB802  N4  -0.736639976501
-CHARGE   DB802  N5  -0.733720004559
-CHARGE   DB802  O1  -0.325129985809
-CHARGE   DB802  O2  -0.320890009403
-CHARGE   DB802  O3  -0.315710008144
-CHARGE   DB802  C10 0.133739992976
-CHARGE   DB802  C11 0.0967099964619
-CHARGE   DB802  C12 0.155379995704
-CHARGE   DB802  C13 0.103500001132
-CHARGE   DB802  Cl1 -0.0143400002271
-CHARGE   DB802  C14 0.170680001378
-CHARGE   DB802  C15 0.208189994097
-CHARGE   DB802  Cl2 -0.0762899965048
-CHARGE   DB802  C16 0.170680001378
-CHARGE   DB802  C17 0.357710003853
-CHARGE   DB802  C18 0.168349996209
-CHARGE   DB802  C19 0.071939997375
-CHARGE   DB802  C20 0.168349996209
-CHARGE   DB802  C21 -0.137329995632
-CHARGE   DB802  C22 0.127749994397
-CHARGE   DB802  C23 0.113090001047
-CHARGE   DB802  C24 0.0216300003231
-CHARGE   DB802  C25 -0.00319000007585
-CHARGE   DB802  C26 -0.112020000815
-CHARGE   DB802  H1  0.0585299991071
-CHARGE   DB802  H2  0.0585299991071
-CHARGE   DB802  H3  0.0585299991071
-CHARGE   DB802  H4  0.0310500003397
-CHARGE   DB802  H5  0.0310500003397
-CHARGE   DB802  H6  0.211319997907
-CHARGE   DB802  H7  0.181769996881
-CHARGE   DB802  H8  0.174789994955
-CHARGE   DB802  H9  0.173099994659
-CHARGE   DB802  H10 0.167160004377
-CHARGE   DB802  H11 0.0740500018001
-CHARGE   DB802  H12 0.0740500018001
-CHARGE   DB802  H13 0.335619986057
-CHARGE   DB802  H14 0.459320008755
-CHARGE   DB802  H15 0.0461999997497
-CHARGE   DB802  H16 0.0461999997497
-CHARGE   DB802  H17 0.0368600003421
-CHARGE   DB802  H18 0.0368600003421
-CHARGE   DB802  H19 0.0368600003421
-CHARGE   DB802  H20 0.0363700017333
-CHARGE   DB802  H21 0.0363700017333
-CHARGE   DB802  H22 0.0363700017333
-CHARGE   DB802  H23 0.0363700017333
-CHARGE   DB802  H24 0.041740000248
-CHARGE   DB802  H25 0.041740000248
-CHARGE   DB802  H26 0.041740000248
-CHARGE   DB802  H27 0.041740000248
-CHARGE   DB802  H28 0.0534900017083
-CHARGE   DB802  H29 0.0534900017083
-CHARGE   DB802  H30 0.0534900017083
+CHARGE   DB804  C1    0.12022848
+CHARGE   DB804  C2    0.18449292
+CHARGE   DB804  C3    0.28275546
+CHARGE   DB804  C4    0.51896143
+CHARGE   DB804  C5   -0.08228966
+CHARGE   DB804  C6   -0.23310857
+CHARGE   DB804  C7   -0.26300341
+CHARGE   DB804  C8   -0.10288779
+CHARGE   DB804  C9   -0.08534452
+CHARGE   DB804  N1   -0.45799968
+CHARGE   DB804  N2   -0.80582476
+CHARGE   DB804  N3   -0.47648746
+CHARGE   DB804  N4   -0.77156281
+CHARGE   DB804  N5   -0.67691523
+CHARGE   DB804  O1   -0.32982370
+CHARGE   DB804  O2   -0.34552467
+CHARGE   DB804  O3   -0.34164432
+CHARGE   DB804  C10   0.13289148
+CHARGE   DB804  C11   0.20451695
+CHARGE   DB804  C12   0.08024111
+CHARGE   DB804  C13   0.03779950
+CHARGE   DB804  Cl1  -0.10944337
+CHARGE   DB804  C14   0.17076100
+CHARGE   DB804  C15   0.09936222
+CHARGE   DB804  Cl2  -0.11314830
+CHARGE   DB804  C16   0.16320126
+CHARGE   DB804  C17   0.27371019
+CHARGE   DB804  C18   0.10798042
+CHARGE   DB804  C19   0.45752862
+CHARGE   DB804  C20   0.10351454
+CHARGE   DB804  C21  -0.17282505
+CHARGE   DB804  C22   0.15011247
+CHARGE   DB804  C23   0.11765467
+CHARGE   DB804  C24  -0.03219541
+CHARGE   DB804  C25  -0.02640861
+CHARGE   DB804  C26  -0.38009617
+CHARGE   DB804  H1    0.04274137
+CHARGE   DB804  H2    0.03697388
+CHARGE   DB804  H3    0.03638635
+CHARGE   DB804  H4    0.06491503
+CHARGE   DB804  H5    0.08899252
+CHARGE   DB804  H6   -0.00147054
+CHARGE   DB804  H7    0.14469610
+CHARGE   DB804  H8    0.14510442
+CHARGE   DB804  H9    0.13564461
+CHARGE   DB804  H10   0.16133511
+CHARGE   DB804  H11   0.10764454
+CHARGE   DB804  H12   0.05001471
+CHARGE   DB804  H13   0.03350750
+CHARGE   DB804  H14   0.04126493
+CHARGE   DB804  H15   0.04542223
+CHARGE   DB804  H16   0.04284627
+CHARGE   DB804  H17   0.10559028
+CHARGE   DB804  H18   0.05437854
+CHARGE   DB804  H19   0.09592611
+CHARGE   DB804  H20   0.04552944
+CHARGE   DB804  H21   0.09391876
+CHARGE   DB804  H22   0.09931097
+CHARGE   DB804  H23   0.10780923
+CHARGE   DB804  H24   0.09452787
+CHARGE   DB804  H25   0.10937042
+CHARGE   DB804  H26   0.04042011
+CHARGE   DB804  H27   0.43925190
+CHARGE   DB804  H28   0.11145724
+CHARGE   DB804  H29   0.02731089
 
-CHARGE   DB801  C1  0.115769997239
-CHARGE   DB801  C2  0.182180002332
-CHARGE   DB801  C3  0.18042999506
-CHARGE   DB801  C4  0.200800001621
-CHARGE   DB801  C5  -0.100380003452
-CHARGE   DB801  C6  -0.110639996827
-CHARGE   DB801  C7  -0.222780004144
-CHARGE   DB801  C8  -0.0912799984217
-CHARGE   DB801  C9  -0.0907600000501
-CHARGE   DB801  N1  -0.300850003958
-CHARGE   DB801  N2  -0.536769986153
-CHARGE   DB801  N3  -0.244929999113
-CHARGE   DB801  N4  -0.735549986362
-CHARGE   DB801  N5  -0.733940005302
-CHARGE   DB801  O1  -0.32675999403
-CHARGE   DB801  O2  -0.324559986591
-CHARGE   DB801  O3  -0.318239986897
-CHARGE   DB801  C10 0.134929999709
-CHARGE   DB801  C11 -0.0850799977779
-CHARGE   DB801  C12 0.156210005283
-CHARGE   DB801  C13 0.101659998298
-CHARGE   DB801  Cl1 -0.00980000011623
-CHARGE   DB801  C14 0.170080006123
-CHARGE   DB801  C15 0.207279995084
-CHARGE   DB801  Cl2 -0.0499100014567
-CHARGE   DB801  C16 0.170080006123
-CHARGE   DB801  C17 0.508010029793
-CHARGE   DB801  C18 0.168579995632
-CHARGE   DB801  C19 0.183479994535
-CHARGE   DB801  C20 0.168579995632
-CHARGE   DB801  C21 -0.228169992566
-CHARGE   DB801  C22 0.117490001023
-CHARGE   DB801  C23 0.11412999779
-CHARGE   DB801  C24 0.0449500009418
-CHARGE   DB801  C25 0.0272100009024
-CHARGE   DB801  C26 -0.206550002098
-CHARGE   DB801  H1  0.0582400001585
-CHARGE   DB801  H2  0.0582400001585
-CHARGE   DB801  H3  0.0582400001585
-CHARGE   DB801  H4  0.0302399992943
-CHARGE   DB801  H5  0.0302399992943
-CHARGE   DB801  H6  0.20705999434
-CHARGE   DB801  H7  0.184560000896
-CHARGE   DB801  H8  0.16765999794
-CHARGE   DB801  H9  0.171509996057
-CHARGE   DB801  H10 0.163249999285
-CHARGE   DB801  H11 0.0734300017357
-CHARGE   DB801  H12 0.0734300017357
-CHARGE   DB801  H13 0.489439994097
-CHARGE   DB801  H14 0.32378000021
-CHARGE   DB801  H15 0.0463499985635
-CHARGE   DB801  H16 0.0463499985635
-CHARGE   DB801  H17 0.0366999991238
-CHARGE   DB801  H18 0.0366999991238
-CHARGE   DB801  H19 0.0366999991238
-CHARGE   DB801  H20 0.0364999994636
-CHARGE   DB801  H21 0.0364999994636
-CHARGE   DB801  H22 0.0364999994636
-CHARGE   DB801  H23 0.0364999994636
-CHARGE   DB801  H24 0.0415900014341
-CHARGE   DB801  H25 0.0415900014341
-CHARGE   DB801  H26 0.0415900014341
-CHARGE   DB801  H27 0.0415900014341
-CHARGE   DB801  H28 0.0535399988294
-CHARGE   DB801  H29 0.0535399988294
-CHARGE   DB801  H30 0.0535399988294
+CHARGE   DB803  C1    0.11135228
+CHARGE   DB803  C2    0.19311056
+CHARGE   DB803  C3    0.24318106
+CHARGE   DB803  C4    0.47076643
+CHARGE   DB803  C5   -0.07539459
+CHARGE   DB803  C6   -0.19306867
+CHARGE   DB803  C7   -0.24454963
+CHARGE   DB803  C8   -0.17964318
+CHARGE   DB803  C9   -0.08785143
+CHARGE   DB803  N1   -0.36981633
+CHARGE   DB803  N2   -0.68095249
+CHARGE   DB803  N3   -0.65209019
+CHARGE   DB803  N4   -0.75657618
+CHARGE   DB803  N5   -0.74263519
+CHARGE   DB803  O1   -0.31631520
+CHARGE   DB803  O2   -0.30684108
+CHARGE   DB803  O3   -0.30788869
+CHARGE   DB803  C10   0.12688507
+CHARGE   DB803  C11   0.16637571
+CHARGE   DB803  C12   0.15982388
+CHARGE   DB803  C13   0.12219828
+CHARGE   DB803  Cl1  -0.05663649
+CHARGE   DB803  C14   0.15256481
+CHARGE   DB803  C15   0.14445463
+CHARGE   DB803  Cl2  -0.08566345
+CHARGE   DB803  C16   0.14418572
+CHARGE   DB803  C17   0.27077976
+CHARGE   DB803  C18   0.17549244
+CHARGE   DB803  C19   0.43476900
+CHARGE   DB803  C20   0.17517550
+CHARGE   DB803  C21  -0.17062579
+CHARGE   DB803  C22   0.15416996
+CHARGE   DB803  C23   0.11291625
+CHARGE   DB803  C24  -0.00087374
+CHARGE   DB803  C25  -0.03295086
+CHARGE   DB803  C26  -0.22766325
+CHARGE   DB803  H1    0.07608997
+CHARGE   DB803  H2    0.03656486
+CHARGE   DB803  H3    0.03465769
+CHARGE   DB803  H4    0.02710036
+CHARGE   DB803  H5    0.06316893
+CHARGE   DB803  H6    0.03503363
+CHARGE   DB803  H7    0.16664338
+CHARGE   DB803  H8    0.15925820
+CHARGE   DB803  H9    0.16517155
+CHARGE   DB803  H10   0.13921082
+CHARGE   DB803  H11   0.05055888
+CHARGE   DB803  H12   0.07235994
+CHARGE   DB803  H13   0.04383144
+CHARGE   DB803  H14   0.01176341
+CHARGE   DB803  H15   0.04666412
+CHARGE   DB803  H16   0.06150406
+CHARGE   DB803  H17   0.05987972
+CHARGE   DB803  H18   0.04217170
+CHARGE   DB803  H19   0.04674705
+CHARGE   DB803  H20   0.04714456
+CHARGE   DB803  H21   0.04617988
+CHARGE   DB803  H22   0.04111602
+CHARGE   DB803  H23   0.06123630
+CHARGE   DB803  H24   0.04169585
+CHARGE   DB803  H25   0.45405969
+CHARGE   DB803  H26   0.00418004
+CHARGE   DB803  H27   0.00992098
+CHARGE   DB803  H28   0.05536270
+CHARGE   DB803  H29   0.03055935
 
-CHARGE   DB800  C1  0.117579996586
-CHARGE   DB800  C2  0.174309998751
-CHARGE   DB800  C3  0.243220001459
-CHARGE   DB800  C4  0.462689995766
-CHARGE   DB800  C5  -0.0841299965978
-CHARGE   DB800  C6  -0.179600000381
-CHARGE   DB800  C7  -0.216059997678
-CHARGE   DB800  C8  -0.111850000918
-CHARGE   DB800  C9  -0.0877299979329
-CHARGE   DB800  N1  -0.358880013227
-CHARGE   DB800  N2  -0.664950013161
-CHARGE   DB800  N3  -0.692539989948
-CHARGE   DB800  N4  -0.729770004749
-CHARGE   DB800  N5  -0.725279986858
-CHARGE   DB800  O1  -0.33656001091
-CHARGE   DB800  O2  -0.333799988031
-CHARGE   DB800  O3  -0.331849992275
-CHARGE   DB800  C10 0.131999999285
-CHARGE   DB800  C11 0.193509995937
-CHARGE   DB800  C12 0.153390005231
-CHARGE   DB800  C13 0.0884300023317
-CHARGE   DB800  Cl1 -0.065180003643
-CHARGE   DB800  C14 0.16765999794
-CHARGE   DB800  C15 0.123020000756
-CHARGE   DB800  Cl2 -0.0740500018001
-CHARGE   DB800  C16 0.16765999794
-CHARGE   DB800  C17 0.263520002365
-CHARGE   DB800  C18 0.163489997387
-CHARGE   DB800  C19 0.430889993906
-CHARGE   DB800  C20 0.163489997387
-CHARGE   DB800  C21 -0.1741899997
-CHARGE   DB800  C22 0.13275000453
-CHARGE   DB800  C23 0.114919997752
-CHARGE   DB800  C24 -0.0173599999398
-CHARGE   DB800  C25 -0.0284199994057
-CHARGE   DB800  C26 -0.172330006957
-CHARGE   DB800  H1  0.0457100011408
-CHARGE   DB800  H2  0.0457100011408
-CHARGE   DB800  H3  0.0457100011408
-CHARGE   DB800  H4  0.0315200015903
-CHARGE   DB800  H5  0.0315200015903
-CHARGE   DB800  H6  0.0383000001311
-CHARGE   DB800  H7  0.165749996901
-CHARGE   DB800  H8  0.157179996371
-CHARGE   DB800  H9  0.164480000734
-CHARGE   DB800  H10 0.152600005269
-CHARGE   DB800  H11 0.065609999001
-CHARGE   DB800  H12 0.065609999001
-CHARGE   DB800  H13 0.456050008535
-CHARGE   DB800  H14 0.040759999305
-CHARGE   DB800  H15 0.040759999305
-CHARGE   DB800  H16 0.0324900001287
-CHARGE   DB800  H17 0.0324900001287
-CHARGE   DB800  H18 0.0324900001287
-CHARGE   DB800  H19 0.0381500013173
-CHARGE   DB800  H20 0.0381500013173
-CHARGE   DB800  H21 0.0381500013173
-CHARGE   DB800  H22 0.0381500013173
-CHARGE   DB800  H23 0.0383399985731
-CHARGE   DB800  H24 0.0383399985731
-CHARGE   DB800  H25 0.0383399985731
-CHARGE   DB800  H26 0.0383399985731
-CHARGE   DB800  H27 0.0471000000834
-CHARGE   DB800  H28 0.0471000000834
-CHARGE   DB800  H29 0.0471000000834
+CHARGE   DB802  C1    0.11380879
+CHARGE   DB802  C2    0.11549299
+CHARGE   DB802  C3    0.23566790
+CHARGE   DB802  C4    0.48625726
+CHARGE   DB802  C5   -0.07646807
+CHARGE   DB802  C6   -0.19367483
+CHARGE   DB802  C7   -0.22121848
+CHARGE   DB802  C8   -0.16192515
+CHARGE   DB802  C9   -0.10474336
+CHARGE   DB802  N1   -0.34712589
+CHARGE   DB802  N2   -0.69176400
+CHARGE   DB802  N3   -0.65372461
+CHARGE   DB802  N4   -0.68157673
+CHARGE   DB802  N5   -0.74837291
+CHARGE   DB802  O1   -0.30982241
+CHARGE   DB802  O2   -0.33240023
+CHARGE   DB802  O3   -0.34403625
+CHARGE   DB802  C10   0.12851180
+CHARGE   DB802  C11   0.15284020
+CHARGE   DB802  C12   0.15316103
+CHARGE   DB802  C13   0.11759975
+CHARGE   DB802  Cl1  -0.04173186
+CHARGE   DB802  C14   0.06876357
+CHARGE   DB802  C15   0.11431921
+CHARGE   DB802  Cl2  -0.08010188
+CHARGE   DB802  C16   0.06528435
+CHARGE   DB802  C17   0.27806649
+CHARGE   DB802  C18   0.16267306
+CHARGE   DB802  C19   0.43302941
+CHARGE   DB802  C20   0.16000436
+CHARGE   DB802  C21  -0.16607165
+CHARGE   DB802  C22   0.15494585
+CHARGE   DB802  C23   0.11101063
+CHARGE   DB802  C24   0.00767533
+CHARGE   DB802  C25  -0.02488451
+CHARGE   DB802  C26  -0.21794112
+CHARGE   DB802  H1    0.07384571
+CHARGE   DB802  H2    0.04597213
+CHARGE   DB802  H3    0.04210680
+CHARGE   DB802  H4    0.11530619
+CHARGE   DB802  H5    0.12320228
+CHARGE   DB802  H6    0.04421388
+CHARGE   DB802  H7    0.17199406
+CHARGE   DB802  H8    0.15569109
+CHARGE   DB802  H9    0.16018830
+CHARGE   DB802  H10   0.14421117
+CHARGE   DB802  H11   0.10618516
+CHARGE   DB802  H12   0.07806230
+CHARGE   DB802  H13   0.06629197
+CHARGE   DB802  H14   0.10543666
+CHARGE   DB802  H15   0.04694261
+CHARGE   DB802  H16   0.06347109
+CHARGE   DB802  H17   0.07532068
+CHARGE   DB802  H18   0.06588909
+CHARGE   DB802  H19   0.10668441
+CHARGE   DB802  H20   0.06577091
+CHARGE   DB802  H21   0.10588281
+CHARGE   DB802  H22   0.06923357
+CHARGE   DB802  H23   0.07445659
+CHARGE   DB802  H24   0.07481553
+CHARGE   DB802  H25   0.45438096
+CHARGE   DB802  H26   0.01736877
+CHARGE   DB802  H27   0.44309345
+CHARGE   DB802  H28   0.10373270
+CHARGE   DB802  H29   0.10996496
+CHARGE   DB802  H30   0.02875622
+
+CHARGE   DB801  C1    0.11078559
+CHARGE   DB801  C2    0.19341457
+CHARGE   DB801  C3    0.23648734
+CHARGE   DB801  C4    0.47781053
+CHARGE   DB801  C5   -0.07459214
+CHARGE   DB801  C6   -0.19433984
+CHARGE   DB801  C7   -0.23140350
+CHARGE   DB801  C8   -0.16780302
+CHARGE   DB801  C9   -0.08929093
+CHARGE   DB801  N1   -0.35129982
+CHARGE   DB801  N2   -0.68680149
+CHARGE   DB801  N3   -0.64667803
+CHARGE   DB801  N4   -0.77878070
+CHARGE   DB801  N5   -0.67635453
+CHARGE   DB801  O1   -0.31129181
+CHARGE   DB801  O2   -0.31979030
+CHARGE   DB801  O3   -0.32452101
+CHARGE   DB801  C10   0.12683463
+CHARGE   DB801  C11   0.15510404
+CHARGE   DB801  C12   0.07750467
+CHARGE   DB801  C13   0.11723648
+CHARGE   DB801  Cl1  -0.04401384
+CHARGE   DB801  C14   0.16944113
+CHARGE   DB801  C15   0.12489361
+CHARGE   DB801  Cl2  -0.08540624
+CHARGE   DB801  C16   0.16643119
+CHARGE   DB801  C17   0.26926944
+CHARGE   DB801  C18   0.10736609
+CHARGE   DB801  C19   0.43126497
+CHARGE   DB801  C20   0.10363530
+CHARGE   DB801  C21  -0.16602172
+CHARGE   DB801  C22   0.15536870
+CHARGE   DB801  C23   0.11268367
+CHARGE   DB801  C24   0.00095176
+CHARGE   DB801  C25  -0.03173320
+CHARGE   DB801  C26  -0.21591698
+CHARGE   DB801  H1    0.07205289
+CHARGE   DB801  H2    0.04359693
+CHARGE   DB801  H3    0.03839027
+CHARGE   DB801  H4    0.05509253
+CHARGE   DB801  H5    0.08487263
+CHARGE   DB801  H6    0.04014730
+CHARGE   DB801  H7    0.17010365
+CHARGE   DB801  H8    0.15709850
+CHARGE   DB801  H9    0.16112441
+CHARGE   DB801  H10   0.14491846
+CHARGE   DB801  H11   0.10430256
+CHARGE   DB801  H12   0.07685613
+CHARGE   DB801  H13   0.04202750
+CHARGE   DB801  H14   0.04295665
+CHARGE   DB801  H15   0.04601194
+CHARGE   DB801  H16   0.05840991
+CHARGE   DB801  H17   0.10880833
+CHARGE   DB801  H18   0.05277575
+CHARGE   DB801  H19   0.10129590
+CHARGE   DB801  H20   0.05802970
+CHARGE   DB801  H21   0.10008766
+CHARGE   DB801  H22   0.10270825
+CHARGE   DB801  H23   0.11024521
+CHARGE   DB801  H24   0.10021058
+CHARGE   DB801  H25   0.45294744
+CHARGE   DB801  H26   0.10796263
+CHARGE   DB801  H27   0.04388554
+CHARGE   DB801  H28   0.44628167
+CHARGE   DB801  H29   0.10783219
+CHARGE   DB801  H30   0.02852231
 

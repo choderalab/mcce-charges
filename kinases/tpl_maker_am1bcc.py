@@ -192,6 +192,10 @@ def assign_canonical_am1bcc_charges(molecule):
     molecule : openeye.oechem.OEMol
         Molecule is modified in place.
 
+    Raises
+    ------
+    An Exception is raised if no charges were set due to a failure.
+
     """
 
     # Create temporary copy of molecule to parameterize.
@@ -209,6 +213,55 @@ def assign_canonical_am1bcc_charges(molecule):
     omega(expanded_molecule)
 
     oequacpac.OEAssignPartialCharges(expanded_molecule, oequacpac.OECharges_AM1BCCSym)
+
+    # Check whether charges were set.
+    total_charge = 0.0
+    nonzero_charges_detected = False
+    for (src_atom, dest_atom) in zip(expanded_molecule.GetAtoms(), molecule.GetAtoms()):
+        if src_atom.GetPartialCharge() != dest_atom.GetPartialCharge():
+            nonzero_charges_detected = True
+        total_charge += src_atom.GetPartialCharge()
+    if not nonzero_charges_detected:
+        raise Exception("Charge assignment failure.")
+    if verbose: print " Total charge: %12.8f" % total_charge
+
+    # Copy charges back to original molecule.
+    for (src_atom, dest_atom) in zip(expanded_molecule.GetAtoms(), molecule.GetAtoms()):
+        dest_atom.SetFormalCharge(src_atom.GetFormalCharge())
+        dest_atom.SetPartialCharge(src_atom.GetPartialCharge())
+
+    return
+
+def assign_simple_am1bcc_charges(molecule, verbose=True):
+    """
+    Assign AM1-BCC charges to molecule using a single conformer, rather than the canonical scheme.
+
+    Parameters
+    ----------
+    molecule : openeye.oechem.OEMol
+        Molecule is modified in place.
+
+    Raises
+    ------
+    An Exception is raised if no charges were set due to a failure.
+
+    """
+
+    # Create temporary copy of molecule to parameterize.
+    expanded_molecule = oechem.OEMol(molecule)
+
+    oequacpac.OEAssignPartialCharges(expanded_molecule, oequacpac.OECharges_AM1BCC)
+
+    # Check whether charges were set.
+    nonzero_charges_detected = False
+    total_charge = 0.0
+    for (src_atom, dest_atom) in zip(expanded_molecule.GetAtoms(), molecule.GetAtoms()):
+        if src_atom.GetPartialCharge() != dest_atom.GetPartialCharge():
+            nonzero_charges_detected = True
+        total_charge += src_atom.GetPartialCharge()
+    if not nonzero_charges_detected:
+        raise Exception("Charge assignment failure.")
+    if verbose: print " Total charge: %12.8f" % total_charge
 
     # Copy charges back to original molecule.
     for (src_atom, dest_atom) in zip(expanded_molecule.GetAtoms(), molecule.GetAtoms()):
@@ -237,7 +290,6 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
         The list of protomers/tautomers generated.
 
     """
-    conformers = list()
 
     from schrodinger import structure # Requires Schrodinger Suite
 
@@ -281,7 +333,7 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
     reader.close()
     writer.close()
 
-    # Read conformers from SDF.
+    # Read conformers from SDF and mol2 (converted from Epik).
     if verbose: print "Reading conformers from SDF..."
     ifs_sdf = oechem.oemolistream()
     ifs_sdf.SetFormat(oechem.OEFormat_SDF)
@@ -293,18 +345,29 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
     mol2_molecule = oechem.OEGraphMol()
 
     index = 1
+    conformers = list()
     while oechem.OEReadMolecule(ifs_sdf, sdf_molecule):
         if verbose: print "Conformer %d" % index
 
-        # Read from mol2
+        # Read corresponding mol2 molecule.
         oechem.OEReadMolecule(ifs_mol2, mol2_molecule)
         oechem.OEAssignAromaticFlags(mol2_molecule) # check aromaticity
+
+        # Make a copy of the mol2 molecule.
+        molecule = oechem.OEMol(mol2_molecule)
 
         # Set name
         name = options.ligand+'%02d' % index
         molecule.SetTitle(name)
 
-        # DEBUG: Write mol2 file.
+        # Assign formal charge
+        oechem.OEAssignFormalCharges(molecule)
+        formal_charge = 0.0
+        for atom in molecule.GetAtoms():
+            formal_charge += atom.GetFormalCharge()
+        if verbose: print "formal charge: %d" % formal_charge
+
+        # DEBUG: Write mol2 file before assigning charges.
         if verbose: print "Writing %s to mol2..." % name
         ofs = oechem.oemolostream()
         ofs.open(name + '.mol2')
@@ -313,8 +376,9 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
 
         # Assign canonical AM1BCC charges.
         try:
-            if verbose: print "Assigning canonical AM1-BCC charges..."
-            assign_canonical_am1bcc_charges(molecule)
+            if verbose: print "Assigning AM1-BCC charges..."
+            #assign_canonical_am1bcc_charges(molecule)
+            assign_simple_am1bcc_charges(molecule)
         except Exception as e:
             print str(e)
             continue
@@ -326,12 +390,10 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
         epik_State_Penalty = float(oechem.OEGetSDData(sdf_molecule, "r_epik_State_Penalty"))
         epik_Tot_Q = int(oechem.OEGetSDData(sdf_molecule, "i_epik_Tot_Q"))
 
-        # Make a copy of the mol2 molecule.
-        molecule = oechem.OEMol(mol2_molecule)
-
         # Create a conformer and append it to the list.
         conformer = Conformer(name, epik_Tot_Q, molecule)
         conformers.append(conformer)
+        print epik_Tot_Q # DEBUG
         # Increment counter.
         index += 1
 
@@ -384,6 +446,7 @@ def mk_conformers(options, molecule, maxconf=99, verbose=True):
             formal_charge = 0.0
             for atom in tautomer.GetAtoms():
                 formal_charge += atom.GetFormalCharge()
+            if verbose: print "formal charge: %d" % formal_charge
             # Assign canonical AM1BCC charges.
             assign_canonical_am1bcc_charges(tautomer)
             # DEBUG: Write molecule after charging.
@@ -704,7 +767,7 @@ def write_atom_param_section(options,tpl,pdb,conformers,vdw_dict):
 
 def write_charges(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
-        template = '{0:9}{1:7}{2:3} {3:7}\n'
+        template = '{0:9s}{1:7s}{2:3s} {3:12.8f}\n'
         charge = atom.GetPartialCharge()
         tpl.write(template.format("CHARGE",conformer.name, \
                                   atom.GetName(), charge))
@@ -928,8 +991,8 @@ def write_tpl(options,tpl,pdb):
         add_hydrogens(pdb)
 
     # Generate list of conformers with different protonation and tautomer states.
-    conformers = mk_conformers(options, molecule) # use OEProton protomers/tautomers
-    #conformers = mk_conformers_epik(options, molecule) # use Epik protomers/tautomers
+    #conformers = mk_conformers(options, molecule) # use OEProton protomers/tautomers
+    conformers = mk_conformers_epik(options, molecule) # use Epik protomers/tautomers
 
     # Write the conformer definitions to the MCCE2 .tpl file.
     write_conformers(options,tpl,conformers)
