@@ -1,5 +1,5 @@
 Input and Output:
-DB8.pdb                                                     (INPDB)
+DB8-extract.pdb                                                     (INPDB)
 
 Steps:
 t        step 1: pre-run, pdb-> mcce pdb                    (DO_PREMCCE)
@@ -17,8 +17,8 @@ surface  self/surface, APBS always use rxn self energy      (RXN_METHOD)
 Less modified entries
 ------------------------------------------------------------------------------
 4.0      Protein dielectric constant for DelPhi             (EPSILON_PROT)
-/cbio/jclab/home/chodera/mcce/mcce-2.7/extra.tpl                              (EXTRA)
-/cbio/jclab/home/chodera/mcce/mcce-2.7/name.txt MCCE renaming rule.           (RENAME_RULES)
+/Users/choderaj/projects/mcce/mcce-2.7/extra.tpl                              (EXTRA)
+/Users/choderaj/projects/mcce/mcce-2.7/name.txt MCCE renaming rule.           (RENAME_RULES)
 
 ph       "ph" for pH titration, "eh" for eh titration       (TITR_TYPE)
 0.0      Initial pH                                         (TITR_PH0)
@@ -33,8 +33,7 @@ ph       "ph" for pH titration, "eh" for eh titration       (TITR_TYPE)
 #############################################################################
 MODIFYING FOLLOWING ENTRIES REQUIRE ADVANCED KNOWLEDGE:
 -----------------------------------------------------------------------------
-#/home/mcce/mcce2.5.1                                        (MCCE_HOME)
-/cbio/jclab/home/chodera/mcce/mcce-2.7                       (MCCE_HOME)
+/Users/choderaj/projects/mcce/mcce-2.7/                      (MCCE_HOME)
 t       Minimize output files                               (MINIMIZE_SIZE)
 t       Print trace file                                    (DO_TRACE)
 

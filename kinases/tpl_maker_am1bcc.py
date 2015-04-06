@@ -295,9 +295,33 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
 
     # Write mol2 file.
     if verbose: print "Writing input file as mol2..."
+    outmol = oechem.OEMol(molecule)
     ofs = oechem.oemolostream()
     ofs.open('epik-input.mol2')
-    oechem.OEWriteMolecule(ofs, molecule)
+    oechem.OEWriteMolecule(ofs, outmol)
+    ofs.close()
+    # Use low level writer to get atom names correct.
+    ofs = oechem.oemolostream()
+    ofs.open('epik-input.mol2')
+    for (dest_atom, src_atom) in zip(outmol.GetAtoms(), molecule.GetAtoms()):
+        dest_atom.SetName(src_atom.GetName())
+    oechem.OEWriteMol2File(ofs, outmol, True)
+    ofs.close()
+
+    # Write mol2 file.
+    if verbose: print "Writing input file as sdf..."
+    outmol = oechem.OEMol(molecule)
+    ofs = oechem.oemolostream()
+    ofs.open('epik-input.sdf')
+    oechem.OEWriteMolecule(ofs, outmol)
+    ofs.close()
+
+    # Write pdb file.
+    if verbose: print "Writing input file as pdb..."
+    outmol = oechem.OEMol(molecule)
+    ofs = oechem.oemolostream()
+    ofs.open('epik-input.pdb')
+    oechem.OEWriteMolecule(ofs, outmol)
     ofs.close()
 
     # Write input for epik.
@@ -369,9 +393,10 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
 
         # DEBUG: Write mol2 file before assigning charges.
         if verbose: print "Writing %s to mol2..." % name
+        outmol = oechem.OEMol(molecule)
         ofs = oechem.oemolostream()
         ofs.open(name + '.mol2')
-        oechem.OEWriteMolecule(ofs, molecule)
+        oechem.OEWriteMolecule(ofs, outmol)
         ofs.close()
 
         # Assign canonical AM1BCC charges.
@@ -439,7 +464,8 @@ def mk_conformers(options, molecule, maxconf=99, verbose=True):
             # DEBUG: Write molecule before charging.
             ofs = oechem.oemolostream()
             ofs.open(name + '-before.mol2')
-            oechem.OEWriteMolecule(ofs, tautomer)
+            outmol = oechem.OEMol(tautomer)
+            oechem.OEWriteMolecule(ofs, outmol)
             ofs.close()
             # Compute formal charge.
             oechem.OEAssignFormalCharges(tautomer)
@@ -451,8 +477,9 @@ def mk_conformers(options, molecule, maxconf=99, verbose=True):
             assign_canonical_am1bcc_charges(tautomer)
             # DEBUG: Write molecule after charging.
             ofs = oechem.oemolostream()
+            outmol = oechem.OEMol(tautomer)
             ofs.open(name + '-after.mol2')
-            oechem.OEWriteMolecule(ofs, tautomer)
+            oechem.OEWriteMolecule(ofs, outmol)
             ofs.close()
             # Create conformer.
             conformer = Conformer(name, formal_charge, tautomer)
@@ -737,7 +764,7 @@ def write_atoms(options,tpl,pdb,conformers,printer):
 
 def write_iatom(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
-        template = '{0:9}{1:7}{2:>4} {3:4}\n'
+        template = '{0:9s}{1:6s}{2:>4s} {3:4s}\n'
         tpl.write(template.format('IATOM', conformer.name,
                                   atom.GetName(), str(count)))
         return
@@ -746,7 +773,8 @@ def write_iatom(options,tpl,pdb,conformers):
 
 def write_atomname(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
-        template = '{0:9}{1:8}{2:>2}  {3:>5}\n'
+        #template = '{0:9}{1:8}{2:>2}  {3:>5}\n'
+        template = '{0:9}{1:6}{2:>4} {3:>4}\n'
         tpl.write(template.format('ATOMNAME', conformer.name, \
                                   str(count),atom.GetName()))
         return
@@ -757,7 +785,8 @@ def write_atom_param_section(options,tpl,pdb,conformers,vdw_dict):
     tpl.write("# Atom Parameters:\n")
     tpl.write("# Van Der Waals Radii. See source for reference\n")
     def printer(tpl,conformer,atom,count):
-        template = '{0:9}{1:7}{2:5} {3:7}\n'
+        #template = '{0:9}{1:7}{2:5} {3:7}\n'
+        template = '{0:9s}{1:6s}{2:4s} {3:7s}\n'
         element = oechem.OEGetAtomicSymbol(atom.GetAtomicNum()).upper()
         tpl.write(template.format("RADIUS",conformer.name, \
                                   atom.GetName(),str(vdw_dict[element])))
@@ -767,7 +796,7 @@ def write_atom_param_section(options,tpl,pdb,conformers,vdw_dict):
 
 def write_charges(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
-        template = '{0:9s}{1:7s}{2:3s} {3:12.8f}\n'
+        template = '{0:9s}{1:6s}{2:5s}{3:+012.8f}\n'
         charge = atom.GetPartialCharge()
         tpl.write(template.format("CHARGE",conformer.name, \
                                   atom.GetName(), charge))
@@ -928,16 +957,14 @@ def create_openeye_molecule(pdb, options, verbose=True):
     """
 
     # Create a molecule container.
-    molecule = oechem.OEMol()
+    molecule = oechem.OEGraphMol()
 
     # Open a PDB file reader from the stored PDB string representation of HETATM and CONECT records.
     print pdb.pdb_extract
     ifs = oechem.oemolistream()
     ifs.openstring(pdb.pdb_extract)
-    flavor = oechem.OEIFlavor_Generic_Default | oechem.OEIFlavor_PDB_Default
+    flavor = oechem.OEIFlavor_Generic_Default | oechem.OEIFlavor_PDB_Default | oechem.OEIFlavor_PDB_ALL
     ifs.SetFlavor(oechem.OEFormat_PDB, flavor)
-
-    # Read and normalize the molecule.
     oechem.OEReadPDBFile(ifs, molecule)
 
     # Add explicit hydrogens.
@@ -955,6 +982,8 @@ def create_openeye_molecule(pdb, options, verbose=True):
     set3D = True
     oechem.OEAddExplicitHydrogens(molecule, polarOnly, set3D)
 
+    # TODO: Sequentially number hydrogen atoms.
+
     # Perceive stereochemostry.
     oechem.OEPerceiveChiral(molecule)
 
@@ -962,18 +991,39 @@ def create_openeye_molecule(pdb, options, verbose=True):
     molecule.SetTitle(options.ligand)
 
     # Write out PDB form of this molecule.
-    if verbose: print "Writing input molecule as mol2..."
-    ofs = oechem.oemolostream()
-    ofs.open(options.ligand + '.mol2')
-    oechem.OEWriteMolecule(ofs, molecule)
-    ofs.close()
+    # TODO: Fix atom numbering.
+    #if verbose: print "Writing input molecule as PDB..."
+    #outmol = oechem.OEMol(molecule)
+    #ofs = oechem.oemolostream()
+    #flavor = oechem.OEOFlavor_Generic_Default | oechem.OEOFlavor_PDB_Default
+    #ofs.SetFlavor(oechem.OEFormat_PDB, flavor)
+    #ofs.open(options.ligand + '.pdb')
+    #oechem.OEWriteMolecule(ofs, outmol)
+    #ofs.close()
 
-    # Write out PDB form of this molecule.
-    if verbose: print "Writing input molecule as PDB..."
+    # Write mol2 file for this molecule.
+    if verbose: print "Writing input molecule as mol2..."
+    outmol = oechem.OEMol(molecule)
     ofs = oechem.oemolostream()
-    ofs.open(options.ligand + '.pdb')
-    oechem.OEWriteMolecule(ofs, molecule)
+    filename = options.ligand + '.mol2'
+    ofs.open(filename)
+    oechem.OEWriteMolecule(ofs, outmol)
     ofs.close()
+    # Use low level writer to get atom names correct.
+    ofs = oechem.oemolostream()
+    ofs.open(filename)
+    for (dest_atom, src_atom) in zip(outmol.GetAtoms(), molecule.GetAtoms()):
+        dest_atom.SetName(src_atom.GetName())
+    oechem.OEWriteMol2File(ofs, outmol, True)
+    ofs.close()
+    # Read and write in PDB format.
+    if verbose: print "Converting mol2 to PDB..."
+    ifs = oechem.oemolistream()
+    ofs = oechem.oemolostream()
+    if ifs.open(options.ligand + '.mol2'):
+        if ofs.open(options.ligand + '.pdb'):
+            for mol in ifs.GetOEGraphMols():
+                oechem.OEWriteMolecule(ofs, mol)
 
     return molecule
 
