@@ -2329,23 +2329,23 @@ PROTON   DB817      1
 PROTON   DB8DM      0    
 
 # Solution pKa Section: pKa data from CRC Handbook of Chemistry and Physics
-PKA      DB801         0.000
-PKA      DB802         0.000
-PKA      DB803         0.000
-PKA      DB804         0.000
-PKA      DB805         0.000
-PKA      DB806         0.000
-PKA      DB807         0.000
-PKA      DB808         0.000
-PKA      DB809         0.000
-PKA      DB810         0.000
-PKA      DB811         0.000
-PKA      DB812         0.000
-PKA      DB813         0.000
-PKA      DB814         0.000
-PKA      DB815         0.000
-PKA      DB816         0.000
-PKA      DB817         0.000
+PKA      DB801         8.000
+PKA      DB802         8.000
+PKA      DB803         8.000
+PKA      DB804         8.000
+PKA      DB805         8.000
+PKA      DB806         8.000
+PKA      DB807         8.000
+PKA      DB808         8.000
+PKA      DB809         8.000
+PKA      DB810         8.000
+PKA      DB811         8.000
+PKA      DB812         8.000
+PKA      DB813         8.000
+PKA      DB814         8.000
+PKA      DB815         8.000
+PKA      DB816         8.000
+PKA      DB817         8.000
 PKA      DB8DM         0.000
 
 #ELECTRON SECTION:

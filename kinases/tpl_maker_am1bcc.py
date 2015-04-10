@@ -862,7 +862,7 @@ def write_pka(options,tpl,conformers):
         conformers = reversed(conformers)
     for conformer in conformers:
         if conformer.pKa == None:
-            tpl.write(template.format("PKA", conformer.name, 0.0))
+            tpl.write(template.format("PKA", conformer.name, options.pH))
         else:
             tpl.write(template.format("PKA", conformer.name, conformer.pKa))
     tpl.write(template.format("PKA", options.ligand+"DM", 0.0))
