@@ -62,7 +62,7 @@ class Conformer(object):
 
     """
 
-    def __init__(self, name, charge, molecule, pKa=None):
+    def __init__(self, name, charge, molecule, pKa=None, state_penalty=None):
         """
         Create a Conformer object.
 
@@ -82,6 +82,7 @@ class Conformer(object):
         self.charge = charge
         self.molecule = molecule
         self.pKa = pKa
+        self.state_penalty = state_penalty
 
         # Determine number of atoms
         atoms = [ atom for atom in molecule.GetAtoms() ]
@@ -448,7 +449,7 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
         print "%24s : pKa penalty %8.3f kcal/mol | tautomer penalty %8.3f kcal/mol | total state penalty %8.3f\n" % (name, epik_Ionization_Penalty, epik_State_Penalty - epik_Ionization_Penalty, epik_State_Penalty)
 
         # Create a conformer and append it to the list.
-        conformer = Conformer(name, epik_Tot_Q, molecule, pKa)
+        conformer = Conformer(name, epik_Tot_Q, molecule, state_penalty=epik_State_Penalty)
         conformers.append(conformer)
         print epik_Tot_Q # DEBUG
         # Increment counter.
@@ -860,7 +861,10 @@ def write_pka(options,tpl,conformers):
     if options.reverse_order:
         conformers = reversed(conformers)
     for conformer in conformers:
-        tpl.write(template.format("PKA", conformer.name, conformer.pKa))
+        if conformer.pKa == None:
+            tpl.write(template.format("PKA", conformer.name, 0.0))
+        else:
+            tpl.write(template.format("PKA", conformer.name, conformer.pKa))
     tpl.write(template.format("PKA", options.ligand+"DM", 0.0))
     tpl.write('\n')
     return
@@ -1059,6 +1063,22 @@ def create_openeye_molecule(pdb, options, verbose=True):
 
     return molecule
 
+def write_extra(options,tpl,conformers):
+    """
+    """
+#0123456789012345678901234567890123456789
+#EXTRA    TYR-1      -0.80
+
+    template = '{0:9s}{1:6s}{2:5s}{3:8.3f}\n'
+    tpl.write("# EXTRA energy for tautomers:\n")
+    if options.reverse_order:
+        conformers = reversed(conformers)
+    for conformer in conformers:
+        tpl.write(template.format("EXTRA", conformer.name, "", conformer.state_penalty))
+    tpl.write('\n')
+
+    return
+
 def write_tpl(options,tpl,pdb):
     # Create an OpenEye molecule from the PDB representation.
     molecule = create_openeye_molecule(pdb, options)
@@ -1103,6 +1123,8 @@ def write_tpl(options,tpl,pdb):
     write_atom_param_section(options,tpl,pdb,conformers,vdw_dict)
     
     write_charges(options,tpl,pdb,conformers)
+
+    write_extra(options,tpl,conformers)
 
     return
 

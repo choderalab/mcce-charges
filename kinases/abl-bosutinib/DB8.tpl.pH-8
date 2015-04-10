@@ -2329,23 +2329,23 @@ PROTON   DB817      1
 PROTON   DB8DM      0    
 
 # Solution pKa Section: pKa data from CRC Handbook of Chemistry and Physics
-PKA      DB801         7.952
-PKA      DB802         7.651
-PKA      DB803         7.634
-PKA      DB804         6.420
-PKA      DB805         4.238
-PKA      DB806         5.948
-PKA      DB807         6.565
-PKA      DB808         6.449
-PKA      DB809         5.868
-PKA      DB810         5.768
-PKA      DB811         6.315
-PKA      DB812         6.196
-PKA      DB813         5.516
-PKA      DB814         3.987
-PKA      DB815         5.181
-PKA      DB816         5.660
-PKA      DB817         4.693
+PKA      DB801         0.000
+PKA      DB802         0.000
+PKA      DB803         0.000
+PKA      DB804         0.000
+PKA      DB805         0.000
+PKA      DB806         0.000
+PKA      DB807         0.000
+PKA      DB808         0.000
+PKA      DB809         0.000
+PKA      DB810         0.000
+PKA      DB811         0.000
+PKA      DB812         0.000
+PKA      DB813         0.000
+PKA      DB814         0.000
+PKA      DB815         0.000
+PKA      DB816         0.000
+PKA      DB817         0.000
 PKA      DB8DM         0.000
 
 #ELECTRON SECTION:
@@ -5857,4 +5857,23 @@ CHARGE   DB817 H011 +00.10166844
 CHARGE   DB817 H012 +00.03403217
 CHARGE   DB817 H013 +00.05071811
 CHARGE   DB817 H66  +00.46462208
+
+# EXTRA energy for tautomers:
+EXTRA    DB801         0.196
+EXTRA    DB802         0.953
+EXTRA    DB803         1.496
+EXTRA    DB804         4.310
+EXTRA    DB805         5.131
+EXTRA    DB806         5.597
+EXTRA    DB807         7.827
+EXTRA    DB808         8.460
+EXTRA    DB809         8.723
+EXTRA    DB810         9.133
+EXTRA    DB811         9.190
+EXTRA    DB812         9.841
+EXTRA    DB813        10.164
+EXTRA    DB814        10.946
+EXTRA    DB815        11.533
+EXTRA    DB816        12.766
+EXTRA    DB817        13.532
 
