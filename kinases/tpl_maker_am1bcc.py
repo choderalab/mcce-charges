@@ -788,7 +788,6 @@ def write_atoms(options,tpl,pdb,conformers,printer):
         conformers = reversed(conformers)
     for conformer in conformers:
         count = 0
-        j = conformer.charge
         for atom in conformer.molecule.GetAtoms():
             printer(tpl,conformer,atom,count)
             count += 1
@@ -797,9 +796,9 @@ def write_atoms(options,tpl,pdb,conformers,printer):
 
 def write_iatom(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
-        template = '{0:9s}{1:6s}{2:>4s} {3:4s}\n'
+        template = '{0:9s}{1:6s}{2:>5s}{3:5d}\n'
         tpl.write(template.format('IATOM', conformer.name,
-                                  atom.GetName(), str(count)))
+                                  atom.GetName(), count))
         return
     write_atoms(options,tpl,pdb,conformers,printer)
     return
@@ -807,9 +806,9 @@ def write_iatom(options,tpl,pdb,conformers):
 def write_atomname(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
         #template = '{0:9}{1:8}{2:>2}  {3:>5}\n'
-        template = '{0:9}{1:6}{2:>4} {3:>4}\n'
+        template = '{0:9s}{1:6s}{2:5d}{3:>4s}\n'
         tpl.write(template.format('ATOMNAME', conformer.name, \
-                                  str(count),atom.GetName()))
+                                  count,atom.GetName()))
         return
     write_atoms(options,tpl,pdb,conformers,printer)
     return
@@ -819,17 +818,17 @@ def write_atom_param_section(options,tpl,pdb,conformers,vdw_dict):
     tpl.write("# Van Der Waals Radii. See source for reference\n")
     def printer(tpl,conformer,atom,count):
         #template = '{0:9}{1:7}{2:5} {3:7}\n'
-        template = '{0:9s}{1:6s}{2:4s} {3:7s}\n'
+        template = '{0:9s}{1:6s}{2:>5s}{3:+012.8f}\n'
         element = oechem.OEGetAtomicSymbol(atom.GetAtomicNum()).upper()
         tpl.write(template.format("RADIUS",conformer.name, \
-                                  atom.GetName(),str(vdw_dict[element])))
+                                  atom.GetName(),vdw_dict[element]))
         return
     write_atoms(options,tpl,pdb,conformers,printer)
     return
 
 def write_charges(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
-        template = '{0:9s}{1:6s}{2:5s}{3:+012.8f}\n'
+        template = '{0:9s}{1:6s}{2:>5s}{3:+012.8f}\n'
         charge = atom.GetPartialCharge()
         tpl.write(template.format("CHARGE",conformer.name, \
                                   atom.GetName(), charge))
