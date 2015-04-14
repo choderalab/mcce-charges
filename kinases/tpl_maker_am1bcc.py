@@ -31,11 +31,11 @@ Examples
 
 Extract bosutinib (resname DB8 from chain A) from Abl (PDB code 3UE4) and parameterize it.
 
-> python tpl_maker_am1bcc.py -p rcsb-pdbs/3UE4.pdb DB8 A 0
+> $SCHRODINGER/run tpl_maker_am1bcc.py -p rcsb-pdbs/3UE4.pdb DB8 A 7
 
 Extract imatinib (resname STI from chain A) from Abl (PDB code 2HYY) and parameterize it.
 
-> python tpl_maker_am1bcc.py -p rcsb-pdbs/2HYY.pdb STI A 0
+> python tpl_maker_am1bcc.py -p rcsb-pdbs/2HYY.pdb STI A 7
 
 """
 
@@ -62,7 +62,7 @@ class Conformer(object):
 
     """
 
-    def __init__(self, name, charge, molecule, pKa=None):
+    def __init__(self, name, charge, molecule, pKa=None, state_penalty=None):
         """
         Create a Conformer object.
 
@@ -82,6 +82,7 @@ class Conformer(object):
         self.charge = charge
         self.molecule = molecule
         self.pKa = pKa
+        self.state_penalty = state_penalty
 
         # Determine number of atoms
         atoms = [ atom for atom in molecule.GetAtoms() ]
@@ -357,6 +358,26 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
     reader.close()
     writer.close()
 
+    # Find minimum charge.
+    ifs = oechem.oemolistream()
+    ifs.open('epik-output.mol2')
+    molecule = oechem.OEGraphMol()
+    min_formal_charge = 1000
+    while oechem.OEReadMolecule(ifs, molecule):
+        # Check aromaticity.
+        oechem.OEAssignAromaticFlags(molecule)
+
+        # Assign formal charge
+        oechem.OEAssignFormalCharges(molecule)
+        formal_charge = 0
+        for atom in molecule.GetAtoms():
+            formal_charge += atom.GetFormalCharge()
+        # Keep most negative formal charge
+        min_formal_charge = min(min_formal_charge, formal_charge)
+
+    ifs.close()
+    if verbose: print "Minimum formal charge = %d" % min_formal_charge
+
     # Read conformers from SDF and mol2 (converted from Epik).
     if verbose: print "Reading conformers from SDF..."
     ifs_sdf = oechem.oemolistream()
@@ -368,10 +389,10 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
     ifs_mol2.open('epik-output.mol2')
     mol2_molecule = oechem.OEGraphMol()
 
-    index = 1
+    conformer_index = 1
     conformers = list()
     while oechem.OEReadMolecule(ifs_sdf, sdf_molecule):
-        if verbose: print "Conformer %d" % index
+        if verbose: print "Conformer %d" % conformer_index
 
         # Read corresponding mol2 molecule.
         oechem.OEReadMolecule(ifs_mol2, mol2_molecule)
@@ -381,7 +402,7 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
         molecule = oechem.OEMol(mol2_molecule)
 
         # Set name
-        name = options.ligand+'%02d' % index
+        name = options.ligand+'%02d' % conformer_index
         molecule.SetTitle(name)
 
         # Assign formal charge
@@ -415,12 +436,24 @@ def mk_conformers_epik(options, molecule, maxconf=99, verbose=True, pH=7):
         epik_State_Penalty = float(oechem.OEGetSDData(sdf_molecule, "r_epik_State_Penalty"))
         epik_Tot_Q = int(oechem.OEGetSDData(sdf_molecule, "i_epik_Tot_Q"))
 
+        # Compute number of protons.
+        nprotons = epik_Tot_Q - min_formal_charge + 1
+
+        # Compute effective pKa.
+        import numpy as np
+        kT = 298 * 6.022e23 * 1.381e-23 / 4184 # kcal/mol for 298 K
+        pKa = options.pH - epik_State_Penalty / (nprotons * kT * np.log(10))
+        print "effective pKa = %8.3f" % pKa
+
+        # DEBUG
+        print "%24s : pKa penalty %8.3f kcal/mol | tautomer penalty %8.3f kcal/mol | total state penalty %8.3f\n" % (name, epik_Ionization_Penalty, epik_State_Penalty - epik_Ionization_Penalty, epik_State_Penalty)
+
         # Create a conformer and append it to the list.
-        conformer = Conformer(name, epik_Tot_Q, molecule)
+        conformer = Conformer(name, epik_Tot_Q, molecule, state_penalty=epik_State_Penalty)
         conformers.append(conformer)
         print epik_Tot_Q # DEBUG
         # Increment counter.
-        index += 1
+        conformer_index += 1
 
     ifs_sdf.close()
     ifs_mol2.close()
@@ -755,7 +788,6 @@ def write_atoms(options,tpl,pdb,conformers,printer):
         conformers = reversed(conformers)
     for conformer in conformers:
         count = 0
-        j = conformer.charge
         for atom in conformer.molecule.GetAtoms():
             printer(tpl,conformer,atom,count)
             count += 1
@@ -764,9 +796,9 @@ def write_atoms(options,tpl,pdb,conformers,printer):
 
 def write_iatom(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
-        template = '{0:9s}{1:6s}{2:>4s} {3:4s}\n'
+        template = '{0:9s}{1:6s}{2:>5s}{3:5d}\n'
         tpl.write(template.format('IATOM', conformer.name,
-                                  atom.GetName(), str(count)))
+                                  atom.GetName(), count))
         return
     write_atoms(options,tpl,pdb,conformers,printer)
     return
@@ -774,9 +806,9 @@ def write_iatom(options,tpl,pdb,conformers):
 def write_atomname(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
         #template = '{0:9}{1:8}{2:>2}  {3:>5}\n'
-        template = '{0:9}{1:6}{2:>4} {3:>4}\n'
+        template = '{0:9s}{1:6s}{2:5d}{3:>4s}\n'
         tpl.write(template.format('ATOMNAME', conformer.name, \
-                                  str(count),atom.GetName()))
+                                  count,atom.GetName()))
         return
     write_atoms(options,tpl,pdb,conformers,printer)
     return
@@ -786,17 +818,17 @@ def write_atom_param_section(options,tpl,pdb,conformers,vdw_dict):
     tpl.write("# Van Der Waals Radii. See source for reference\n")
     def printer(tpl,conformer,atom,count):
         #template = '{0:9}{1:7}{2:5} {3:7}\n'
-        template = '{0:9s}{1:6s}{2:4s} {3:7s}\n'
+        template = '{0:9s}{1:6s}{2:>5s}{3:+012.8f}\n'
         element = oechem.OEGetAtomicSymbol(atom.GetAtomicNum()).upper()
         tpl.write(template.format("RADIUS",conformer.name, \
-                                  atom.GetName(),str(vdw_dict[element])))
+                                  atom.GetName(),vdw_dict[element]))
         return
     write_atoms(options,tpl,pdb,conformers,printer)
     return
 
 def write_charges(options,tpl,pdb,conformers):
     def printer(tpl,conformer,atom,count):
-        template = '{0:9s}{1:6s}{2:5s}{3:+012.8f}\n'
+        template = '{0:9s}{1:6s}{2:>5s}{3:+012.8f}\n'
         charge = atom.GetPartialCharge()
         tpl.write(template.format("CHARGE",conformer.name, \
                                   atom.GetName(), charge))
@@ -824,12 +856,15 @@ def write_proton(options,tpl,conformers):
 
 def write_pka(options,tpl,conformers):
     tpl.write('# Solution pKa Section: pKa data from CRC Handbook of Chemistry and Physics\n')
-    template = '{0:9}{1:11}{2:5}\n'
+    template = '{0:9s}{1:6s}     {2:8.3f}\n'
     if options.reverse_order:
         conformers = reversed(conformers)
     for conformer in conformers:
-        tpl.write(template.format("PKA", conformer.name, "0.0"))
-    tpl.write(template.format("PKA", options.ligand+"DM", "0.0"))
+        if conformer.pKa == None:
+            tpl.write(template.format("PKA", conformer.name, options.pH))
+        else:
+            tpl.write(template.format("PKA", conformer.name, conformer.pKa))
+    tpl.write(template.format("PKA", options.ligand+"DM", 0.0))
     tpl.write('\n')
     return
 
@@ -1027,6 +1062,22 @@ def create_openeye_molecule(pdb, options, verbose=True):
 
     return molecule
 
+def write_extra(options,tpl,conformers):
+    """
+    """
+#0123456789012345678901234567890123456789
+#EXTRA    TYR-1      -0.80
+
+    template = '{0:9s}{1:6s}{2:5s}{3:8.3f}\n'
+    tpl.write("# EXTRA energy for tautomers:\n")
+    if options.reverse_order:
+        conformers = reversed(conformers)
+    for conformer in conformers:
+        tpl.write(template.format("EXTRA", conformer.name, "", conformer.state_penalty))
+    tpl.write('\n')
+
+    return
+
 def write_tpl(options,tpl,pdb):
     # Create an OpenEye molecule from the PDB representation.
     molecule = create_openeye_molecule(pdb, options)
@@ -1042,7 +1093,7 @@ def write_tpl(options,tpl,pdb):
 
     # Generate list of conformers with different protonation and tautomer states.
     #conformers = mk_conformers(options, molecule) # use OEProton protomers/tautomers
-    conformers = mk_conformers_epik(options, molecule) # use Epik protomers/tautomers
+    conformers = mk_conformers_epik(options, molecule, pH=options.pH) # use Epik protomers/tautomers
 
     # Write the conformer definitions to the MCCE2 .tpl file.
     write_conformers(options,tpl,conformers)
@@ -1072,6 +1123,8 @@ def write_tpl(options,tpl,pdb):
     
     write_charges(options,tpl,pdb,conformers)
 
+    write_extra(options,tpl,conformers)
+
     return
 
 # Main
@@ -1085,11 +1138,11 @@ def main():
                         help = '3 letter code of ligand to extract from file')
     parser.add_argument('chain_identifier', action='store',
                         help = 'chain id for ligand')
-    parser.add_argument('charge', action='store',type=int,
-                        help = 'value of most negative charge on ligand.')
+    parser.add_argument('pH', action='store',type=float,
+                        help = 'pH for which parameters are to be created.')
     parser.add_argument('-p', action='store_false',dest='ideal',default =True,
                         help = 'Extract ligand from PDB HETATM entries.')
-    parser.add_argument('-r', action='store_false',dest='reverse_order', default=True,
+    parser.add_argument('-r', action='store_false',dest='reverse_order', default=False,
                         help = 'print conformers starting from negative ions')
     options = parser.parse_args()
 
