@@ -35,7 +35,7 @@ Extract bosutinib (resname DB8 from chain A) from Abl (PDB code 3UE4) and parame
 
 Extract imatinib (resname STI from chain A) from Abl (PDB code 2HYY) and parameterize it.
 
-> python tpl_maker_am1bcc.py -p rcsb-pdbs/2HYY.pdb STI A 7
+> $SCHRODINGER/run tpl_maker_am1bcc.py -p rcsb-pdbs/2HYY.pdb STI A 7
 
 """
 
