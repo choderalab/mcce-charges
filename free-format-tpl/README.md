@@ -1,25 +1,20 @@
 # Free Format TPL files
 
-The strict format of parameter files are prone to errors and conflicts. This project adds an option for users to develop parameters in free format, then compile the parameters to current machine readable files.
+The strict format of parameter files are prone to errors and conflicts. This project adds an option for users
+to develop parameters in free format, then compile the parameters to current machine readable files.
 
 
 ## How does it work?
-Free format parameters are put in folder marked as "free", such as param04-free and param08-free. Running "make" converts these files to corresponding folders param04 and param08. The old contents on param04 and param08 will be deleted.
+Free format parameters are put in one folder and the converted parameter files will be put in another folder.
 
 Procedure:
-1 prepare tpl file in param??-free folder (?? is the dielectric constant)
-2 run "make" under param??-free folder to compile.
-
-File structure:
-* `param??-free/` - folders containing free format tpl files
-  * `Makefile` - rules to compile toplogy files
-  * `compiletpl.py` - program to convert free format tpl to mcce readable tpl
-* `param??/` - folders containing mcce readble tpl files, updated by "make" utility
+1 prepare a free format tpl file in a folder
+2 run "tplconvert.py source_folder output_folder" to convert
 
 ## Implementation
-Each parameter line consists of 3 keys and one value which may have sub fields. This is the same in free format tpl files.
-Each key and value sub field is wrapped in quotation marks in free format tpl files, while they were solely determined
-by position in strict format files.
+Each parameter line consists of up to 3 key fields and one value. In free format, Keys and values are separated
+by ":", and key fields are in quotation marks separated by space. In strict format, keys and value are solely
+determined by position.
 
 In addition, free format tpl files remove redundant entries like IATOM.
 
