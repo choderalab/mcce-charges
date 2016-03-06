@@ -1,0 +1,54 @@
+COMMAND:
+ /cbio/jclab/share/schrodinger/schrodinger2015-3/epik-v33015/bin/Linux-x86_64/epik_app -imae /state/partition1/scratch/7029570.mskcc-fe1.local/tmpohWOrO/Pazopanib-input.mae -omae /cbio/jclab/home/andrrizzi/epik_inhibitors/output/Pazopanib/Pazopanib-epik.mae -ms 32 -ph 7.4 -pKa_atom
+SCHRODINGER: /cbio/jclab/share/schrodinger/schrodinger2015-3
+
+Running Epik version     3.3015
+Epik. Copyright Schrodinger, LLC. All rights reserved.
+
+Input file name:                        /state/partition1/scratch/7029570.mskcc-fe1.local/tmpohWOrO/Pazopanib-input.mae
+Output file name:                       /cbio/jclab/home/andrrizzi/epik_inhibitors/output/Pazopanib/Pazopanib-epik.mae
+Maximum number of states set to: 32
+Structure adjustment calculation requested.
+  Target pH set to 7.400
+reporting for specific atoms turned on (pKa_atom)
+
+Adjusting structures for pH 7.400000e+00 and minimum probability 1.000000e-02
+Solvent model name:                     water
+Jobcontrol is not being used for this specific Epik calculation.
+---------------------------
+Processing Input Structure #1
+        Title: 5-[[4-[(2,3-dimethylindazol-6-yl)-methyl-amino]pyrimidin-2-yl]amino]-2-methyl-benzenesulfonamide
+                                              Calculated pKas
+                                                 Conjugate
+                                          Atom   Acid/Base  pKa
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 1
+                                            53   Conj_Acid 10.29
+                                            54   Conj_Acid 10.29
+                                             8   Conj_Base -2.93
+                                            15   Conj_Base -2.50
+                                            31   Conj_Base -2.90
+                                            20   Conj_Base  4.85
+                                            10   Conj_Base  5.08
+                                            14   Conj_Base  5.61
+                                            38   Conj_Acid 13.14
+ pKa penalty:                                 0.01 kcal/mol
+     Charging penalty:                        0.00 kcal/mol
+     Neutralization penalty:                  0.01 kcal/mol
+ Overall Penalty (tautomerization included):  0.01 kcal/mol
+ Total Charge: 0
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 2
+                                            53   Conj_Acid 10.29
+                                            54   Conj_Acid 10.29
+                                             8   Conj_Base -0.04
+                                            31   Conj_Base -2.90
+                                            20   Conj_Base  4.85
+                                            55   Conj_Acid  5.61
+                                            38   Conj_Acid 10.05
+ pKa penalty:                                 2.46 kcal/mol
+     Charging penalty:                        2.45 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  2.62 kcal/mol
+ Total Charge: 1
+---------------------------

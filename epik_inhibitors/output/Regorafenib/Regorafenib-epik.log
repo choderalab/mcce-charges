@@ -1,0 +1,37 @@
+COMMAND:
+ /cbio/jclab/share/schrodinger/schrodinger2015-3/epik-v33015/bin/Linux-x86_64/epik_app -imae /state/partition1/scratch/7029570.mskcc-fe1.local/tmpqCoJRr/Regorafenib-input.mae -omae /cbio/jclab/home/andrrizzi/epik_inhibitors/output/Regorafenib/Regorafenib-epik.mae -ms 32 -ph 7.4 -pKa_atom
+SCHRODINGER: /cbio/jclab/share/schrodinger/schrodinger2015-3
+
+Running Epik version     3.3015
+Epik. Copyright Schrodinger, LLC. All rights reserved.
+
+Input file name:                        /state/partition1/scratch/7029570.mskcc-fe1.local/tmpqCoJRr/Regorafenib-input.mae
+Output file name:                       /cbio/jclab/home/andrrizzi/epik_inhibitors/output/Regorafenib/Regorafenib-epik.mae
+Maximum number of states set to: 32
+Structure adjustment calculation requested.
+  Target pH set to 7.400
+reporting for specific atoms turned on (pKa_atom)
+
+Adjusting structures for pH 7.400000e+00 and minimum probability 1.000000e-02
+Solvent model name:                     water
+Jobcontrol is not being used for this specific Epik calculation.
+---------------------------
+Processing Input Structure #1
+        Title: 4-[4-[[4-chloro-3-(trifluoromethyl)phenyl]carbamoylamino]-3-fluoro-phenoxy]-~{N}-methyl-pyridine-2-carboxamide
+                                              Calculated pKas
+                                                 Conjugate
+                                          Atom   Acid/Base  pKa
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 1
+                                            37   Conj_Acid 11.40
+                                             6   Conj_Base  1.84
+                                            44   Conj_Acid 11.89
+                                            45   Conj_Acid 11.88
+                                             4   Conj_Base -1.71
+                                            20   Conj_Base  2.60
+ pKa penalty:                                 0.00 kcal/mol
+     Charging penalty:                        0.00 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included): -0.00 kcal/mol
+ Total Charge: 0
+---------------------------

@@ -1,0 +1,56 @@
+COMMAND:
+ /cbio/jclab/share/schrodinger/schrodinger2015-3/epik-v33015/bin/Linux-x86_64/epik_app -imae /state/partition1/scratch/7029570.mskcc-fe1.local/tmpY36EcE/Osimertinib-input.mae -omae /cbio/jclab/home/andrrizzi/epik_inhibitors/output/Osimertinib/Osimertinib-epik.mae -ms 32 -ph 7.4 -pKa_atom
+SCHRODINGER: /cbio/jclab/share/schrodinger/schrodinger2015-3
+
+Running Epik version     3.3015
+Epik. Copyright Schrodinger, LLC. All rights reserved.
+
+Input file name:                        /state/partition1/scratch/7029570.mskcc-fe1.local/tmpY36EcE/Osimertinib-input.mae
+Output file name:                       /cbio/jclab/home/andrrizzi/epik_inhibitors/output/Osimertinib/Osimertinib-epik.mae
+Maximum number of states set to: 32
+Structure adjustment calculation requested.
+  Target pH set to 7.400
+reporting for specific atoms turned on (pKa_atom)
+
+Adjusting structures for pH 7.400000e+00 and minimum probability 1.000000e-02
+Solvent model name:                     water
+Jobcontrol is not being used for this specific Epik calculation.
+---------------------------
+Processing Input Structure #1
+        Title: ~{N}-[2-[2-(dimethylamino)ethyl-methyl-amino]-4-methoxy-5-[[4-(1-methylindol-3-yl)pyrimidin-2-yl]amino]phenyl]prop-2-enamide
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+                                              Calculated pKas
+                                                 Conjugate
+                                          Atom   Acid/Base  pKa
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 1
+                                            51   Conj_Acid 12.14
+                                            71   Conj_Acid  9.19
+                                            17   Conj_Base -0.97
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            29   Conj_Base  3.70
+                                            48   Conj_Acid 14.97
+                                            26   Conj_Base  4.18
+ pKa penalty:                                 0.01 kcal/mol
+     Charging penalty:                        0.01 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  0.03 kcal/mol
+ Total Charge: 1
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 2
+                                            51   Conj_Acid 12.23
+                                            17   Conj_Base -0.67
+                                            29   Conj_Base  6.30
+                                            33   Conj_Base  9.19
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            48   Conj_Acid 15.08
+                                            26   Conj_Base  4.18
+ pKa penalty:                                 2.50 kcal/mol
+     Charging penalty:                        0.00 kcal/mol
+     Neutralization penalty:                  2.50 kcal/mol
+ Overall Penalty (tautomerization included):  1.95 kcal/mol
+ Total Charge: 0
+---------------------------
