@@ -21,7 +21,7 @@ Ruxolitinib,c1c[nH]c2c1c(ncn2)c3cnn(c3)[C@H](CC#N)C4CCCC4
 Tofacitinib,C[C@@H]1CCN(C[C@@H]1N(C)C2=NC=NC3=C2C=CN3)C(=O)CC#N
 Cabozantinib,COc1cc2c(ccnc2cc1OC)Oc3ccc(cc3)NC(=O)C4(CC4)C(=O)Nc5ccc(cc5)F
 Ibrutinib,C=CC(=O)N1CCC[C@H](C1)n2c3c(c(n2)c4ccc(cc4)Oc5ccccc5)c(ncn3)N
-Nintedanib,CN1CCN(CC1)CC(=O)N(C)C2=CC=C(C=C2)NC(=C3C4=C(C=C(C=C4)C(=O)OC)NC3=O)C5=CC=CC=C5
+Nintedanib,CN1CCN(CC1)CC(=O)N(C)C2=CC=C(C=C2)N/C(=C\3/C4=C(C=C(C=C4)C(=O)OC)NC3=O)/C5=CC=CC=C5
 Trametinib,CC1=C2C(=C(N(C1=O)C)NC3=C(C=C(C=C3)I)F)C(=O)N(C(=O)N2C4=CC=CC(=C4)NC(=O)C)C5CC5
 Idelalisib,CC[C@@H](C1=NC2=C(C(=CC=C2)F)C(=O)N1C3=CC=CC=C3)NC4=C5C(=NC=N5)N=CN4
 Lenvatinib,COC1=CC2=NC=CC(=C2C=C1C(=O)N)OC3=CC(=C(C=C3)NC(=O)NC4CC4)Cl
