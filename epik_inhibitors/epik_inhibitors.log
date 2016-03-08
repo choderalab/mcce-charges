@@ -6,83 +6,77 @@ Generating molecule Nilotinib
 Running epik on molecule Nilotinib
 Generating molecule Bosutinib
 Running epik on molecule Bosutinib
-Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Generating molecule Ponatinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Running epik on molecule Ponatinib
 Generating molecule Gefitinib
 Running epik on molecule Gefitinib
-Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Generating molecule Erlotinib
-Running epik on molecule Erlotinib
 Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Erlotinib
 Generating molecule Afatinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Running epik on molecule Afatinib
 Generating molecule Lapatinib
 Running epik on molecule Lapatinib
-Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Generating molecule Sorafenib
-Running epik on molecule Sorafenib
 Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Sorafenib
 Generating molecule Sunitinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Running epik on molecule Sunitinib
 Generating molecule Pazopanib
 Running epik on molecule Pazopanib
-Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Generating molecule Vandetanib
-Running epik on molecule Vandetanib
 Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Vandetanib
 Generating molecule Axitinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Running epik on molecule Axitinib
 Generating molecule Regorafenib
 Running epik on molecule Regorafenib
-Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Generating molecule Crizotinib
-Running epik on molecule Crizotinib
 Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Crizotinib
 Generating molecule Ceritinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Running epik on molecule Ceritinib
 Generating molecule Vemurafenib
 Running epik on molecule Vemurafenib
 Generating molecule Dabrafenib
 Running epik on molecule Dabrafenib
-Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Generating molecule Ruxolitinib
-Running epik on molecule Ruxolitinib
 Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Ruxolitinib
 Generating molecule Tofacitinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Running epik on molecule Tofacitinib
 Generating molecule Cabozantinib
 Running epik on molecule Cabozantinib
-Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Generating molecule Ibrutinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Running epik on molecule Ibrutinib
-Warning: methyl 3-[[4-[methyl-[2-(4-methylpiperazin-1-yl)acetyl]amino]anilino]-phenyl-methylene]-2-oxo-indoline-6-carboxylate failed due to unspecified stereochemistry with strict stereo enabled
-Traceback (most recent call last):
-  File "epik_inhibitors.py", line 30, in <module>
-    oe_molecule = openeye.get_charges(oe_molecule, keep_confs=1)
-  File "/cbio/jclab/home/andrrizzi/miniconda/lib/python2.7/site-packages/openmoltools-0.7.0.dev0-py2.7.egg/openmoltools/openeye.py", line 63, in get_charges
-    charged_copy = generate_conformers(molecule, max_confs=max_confs, strictStereo=strictStereo)  # Generate up to max_confs conformers
-  File "/cbio/jclab/home/andrrizzi/miniconda/lib/python2.7/site-packages/openmoltools-0.7.0.dev0-py2.7.egg/openmoltools/openeye.py", line 238, in generate_conformers
-    raise(RuntimeError("omega returned error code %d" % status))
-RuntimeError: omega returned error code 0
-Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Generating molecule Nintedanib
-Skipping molecule Nintedanib
+Running epik on molecule Nintedanib
 Generating molecule Trametinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Running epik on molecule Trametinib
-Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Generating molecule Idelalisib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Running epik on molecule Idelalisib
-Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Generating molecule Lenvatinib
-Running epik on molecule Lenvatinib
 Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Lenvatinib
 Generating molecule Palbociclib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Running epik on molecule Palbociclib
 Generating molecule Cobimetinib
 Running epik on molecule Cobimetinib
 Generating molecule Osimertinib
 Running epik on molecule Osimertinib
-Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Generating molecule Alectinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
 Running epik on molecule Alectinib
+Generating molecule Histidine
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Histidine
