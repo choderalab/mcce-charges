@@ -1,0 +1,82 @@
+Generating molecule Imatinib
+Running epik on molecule Imatinib
+Generating molecule Dasatinib
+Running epik on molecule Dasatinib
+Generating molecule Nilotinib
+Running epik on molecule Nilotinib
+Generating molecule Bosutinib
+Running epik on molecule Bosutinib
+Generating molecule Ponatinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Ponatinib
+Generating molecule Gefitinib
+Running epik on molecule Gefitinib
+Generating molecule Erlotinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Erlotinib
+Generating molecule Afatinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Afatinib
+Generating molecule Lapatinib
+Running epik on molecule Lapatinib
+Generating molecule Sorafenib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Sorafenib
+Generating molecule Sunitinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Sunitinib
+Generating molecule Pazopanib
+Running epik on molecule Pazopanib
+Generating molecule Vandetanib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Vandetanib
+Generating molecule Axitinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Axitinib
+Generating molecule Regorafenib
+Running epik on molecule Regorafenib
+Generating molecule Crizotinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Crizotinib
+Generating molecule Ceritinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Ceritinib
+Generating molecule Vemurafenib
+Running epik on molecule Vemurafenib
+Generating molecule Dabrafenib
+Running epik on molecule Dabrafenib
+Generating molecule Ruxolitinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Ruxolitinib
+Generating molecule Tofacitinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Tofacitinib
+Generating molecule Cabozantinib
+Running epik on molecule Cabozantinib
+Generating molecule Ibrutinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Ibrutinib
+Generating molecule Nintedanib
+Running epik on molecule Nintedanib
+Generating molecule Trametinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Trametinib
+Generating molecule Idelalisib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Idelalisib
+Generating molecule Lenvatinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Lenvatinib
+Generating molecule Palbociclib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Palbociclib
+Generating molecule Cobimetinib
+Running epik on molecule Cobimetinib
+Generating molecule Osimertinib
+Running epik on molecule Osimertinib
+Generating molecule Alectinib
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Alectinib
+Generating molecule Histidine
+Warning: SelectElfDiverseConfs: elfPop.NumConfs 1 <= elfLimit 1
+Running epik on molecule Histidine
