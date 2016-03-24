@@ -38,7 +38,7 @@ def read_molecules(filename):
     elif len(molecules) == 1:
         return molecules[0]
     else:
-        return molecules    
+        return molecules
 
 def DumpSDData(mol):
     print ("SD data of", mol.GetTitle())
@@ -94,12 +94,12 @@ def run_epik(name, filename, residue_name, perceive_bonds=False):
     output_mol2_filename = output_basepath + '-epik.mol2'
     schrodinger.run_structconvert(mae_file_path, output_sdf_filename)
     schrodinger.run_structconvert(mae_file_path, output_mol2_filename)
-    
+
     # Read SDF file.
     ifs_sdf = oechem.oemolistream()
     ifs_sdf.SetFormat(oechem.OEFormat_SDF)
     ifs_sdf.open(output_sdf_filename)
-    sdf_molecule = oechem.OEGraphMol()
+    sdf_molecule = oechem.OEMol()
     uncharged_molecules = read_molecules(output_sdf_filename)
 
     # Read MOL2 file.
@@ -117,16 +117,16 @@ def run_epik(name, filename, residue_name, perceive_bonds=False):
         print "Charging molecule %d / %d" % (index, len(uncharged_molecules))
         try:
             # Charge molecule.
-            charged_molecule = openeye.get_charges(mol2_molecule, max_confs=800, strictStereo=True, normalize=True, keep_confs=None)
+            charged_molecule = openeye.get_charges(sdf_molecule, max_confs=800, strictStereo=True, normalize=True, keep_confs=None)
 
             # Store tags.
             oechem.OECopySDData(charged_molecule, sdf_molecule)
-            
+
             charged_molecules.append(charged_molecule)
         except Exception as e:
             print(e)
             print("Skipping protomer/tautomer because of failed charging.")
-        
+
     # Clean up
     ifs_sdf.close()
     ifs_mol2.close()
@@ -134,13 +134,13 @@ def run_epik(name, filename, residue_name, perceive_bonds=False):
     # Write molecules.
     charged_mol2_filename = output_basepath + '-epik-charged.mol2'
     ofs = oechem.oemolostream(charged_mol2_filename)
-    for (index, molecule) in enumerate(charged_molecules):
-        oechem.OEWriteMolecule(ofs, molecule)
+    for (index, charged_molecule) in enumerate(charged_molecules):
+        oechem.OEWriteMolecule(ofs, charged_molecule)
     ofs.close()
 
     # Write state penalites.
     outfile = open(output_basepath + '-state-penalties.out', 'w')
-    for (index, molecule) in enumerate(charged_molecules):
+    for (index, charged_molecule) in enumerate(charged_molecules):
 
         # Get Epik data.
         epik_Ionization_Penalty = float(oechem.OEGetSDData(charged_molecule, "r_epik_Ionization_Penalty"))
@@ -163,4 +163,3 @@ if __name__ == '__main__':
     # Generate Histidine
     run_epik('HIS', 'ACE-HIS-NME.pdb', 'HS1', perceive_bonds=False)
     run_epik('HIS-HIS', 'ACE-HIS-HIS-NME.pdb', 'HS2', perceive_bonds=False)
-
