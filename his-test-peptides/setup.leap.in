@@ -3,29 +3,13 @@
 # Load AMBER '96 forcefield for protein.
 source oldff/leaprc.ff96
 
-peptide = sequence { ACE HIS ALA ALA NME }
-savepdb peptide ACE-HIS-ALA-ALA-NME.pdb
-savemol2 peptide ACE-HIS-ALA-ALA-NME.mol2 0
+peptide = sequence { ACE HIS NME }
+savepdb peptide ACE-HIS-NME.pdb
+savemol2 peptide ACE-HIS-NME.mol2 0
 
-peptide = sequence { ACE ALA HIS ALA NME }
-savepdb peptide ACE-ALA-HIS-ALA-NME.pdb
-savemol2 peptide ACE-ALA-HIS-ALA-NME.mol2 0
-
-peptide = sequence { ACE ALA ALA HIS NME }
-savepdb peptide ACE-ALA-ALA-HIS-NME.pdb
-savemol2 peptide ACE-ALA-ALA-HIS-NME.mol2 0
-
-peptide = sequence { ACE HIS HIS ALA NME }
-savepdb peptide ACE-HIS-HIS-ALA-NME.pdb
-savemol2 peptide ACE-HIS-HIS-ALA-NME.mol2 0
-
-peptide = sequence { ACE HIS ALA HIS NME }
-savepdb peptide ACE-HIS-ALA-HIS-NME.pdb
-savemol2 peptide ACE-HIS-ALA-HIS-NME.mol2 0
-
-peptide = sequence { ACE HIS HIS ALA NME }
-savepdb peptide ACE-HIS-HIS-ALA-NME.pdb
-savemol2 peptide ACE-HIS-HIS-ALA-NME.mol2 0
+peptide = sequence { ACE HIS HIS NME }
+savepdb peptide ACE-HIS-HIS-NME.pdb
+savemol2 peptide ACE-HIS-HIS-NME.mol2 0
 
 peptide = sequence { ACE HIS HIS HIS NME }
 savepdb peptide ACE-HIS-HIS-HIS-NME.pdb
