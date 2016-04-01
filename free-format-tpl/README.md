@@ -13,7 +13,7 @@ Procedure:
 
 ## Implementation
 Each parameter line consists of up to 3 key fields and one value. In free format, Keys and values are separated
-by ":", and key fields are in quotation marks separated by space. In strict format, keys and value are solely
+by ":", and key fields are in quotation marks, separated by ",". In strict format, keys and value are solely
 determined by position.
 
 In addition, free format tpl files remove redundant entries like IATOM.
