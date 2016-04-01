@@ -1,0 +1,460 @@
+COMMAND:
+ /opt/schrodinger/suites2015-2/epik-v32011/bin/Darwin-x86_64/epik_app -imae /private/var/folders/bk/rcx4j47j1_n91nzd630930380000gn/T/tmpgSWQuz/Osimertinib-input.mae -omae /Users/andrea/Development/mcce-charges/epik_inhibitors/output/Osimertinib/Osimertinib-epik.mae -ms 32 -ph 7.4 -pht 10.0 -pKa_atom
+SCHRODINGER: /opt/schrodinger/suites2015-2
+
+Running Epik version     3.2011
+Epik. Copyright Schrodinger, LLC. All rights reserved.
+
+Input file name:                        /private/var/folders/bk/rcx4j47j1_n91nzd630930380000gn/T/tmpgSWQuz/Osimertinib-input.mae
+Output file name:                       /Users/andrea/Development/mcce-charges/epik_inhibitors/output/Osimertinib/Osimertinib-epik.mae
+Maximum number of states set to: 32
+Structure adjustment calculation requested.
+  Target pH set to 7.400
+pHt tolerance set to 1.000000e+01
+reporting for specific atoms turned on (pKa_atom)
+
+Adjusting structures for pH 7.400000e+00 and minimum probability 1.000000e-10
+Solvent model name:                     water
+Jobcontrol is not being used for this specific Epik calculation.
+---------------------------
+Processing Input Structure #1
+        Title: ~{N}-[2-[2-(dimethylamino)ethyl-methyl-amino]-4-methoxy-5-[[4-(1-methylindol-3-yl)pyrimidin-2-yl]amino]phenyl]prop-2-enamide
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+WARNING Missing twin_sigma ortho value for Ethanamine(N+). Using a value of 0.0.
+                                              Calculated pKas
+                                                 Conjugate
+                                          Atom   Acid/Base  pKa
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 1
+                                            51   Conj_Acid 12.14
+                                            71   Conj_Acid  9.19
+                                            17   Conj_Base -0.97
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            29   Conj_Base  3.70
+                                            48   Conj_Acid 14.97
+                                            26   Conj_Base  4.18
+ pKa penalty:                                 0.01 kcal/mol
+     Charging penalty:                        0.01 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  0.02 kcal/mol
+ Total Charge: 1
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 2
+                                            51   Conj_Acid 12.23
+                                            17   Conj_Base -0.67
+                                            29   Conj_Base  6.30
+                                            33   Conj_Base  9.19
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            48   Conj_Acid 15.08
+                                            26   Conj_Base  4.18
+ pKa penalty:                                 2.50 kcal/mol
+     Charging penalty:                        0.00 kcal/mol
+     Neutralization penalty:                  2.50 kcal/mol
+ Overall Penalty (tautomerization included):  2.27 kcal/mol
+ Total Charge: 0
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 3
+                                            51   Conj_Acid 10.64
+                                            71   Conj_Acid  6.30
+                                            33   Conj_Base  5.71
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            48   Conj_Acid 13.30
+                                            26   Conj_Base  4.18
+ pKa penalty:                                 1.56 kcal/mol
+     Charging penalty:                        1.55 kcal/mol
+     Neutralization penalty:                  0.01 kcal/mol
+ Overall Penalty (tautomerization included):  3.52 kcal/mol
+ Total Charge: 1
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 4
+                                            69   Conj_Acid  9.19
+                                            17   Conj_Base -0.99
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            29   Conj_Base  3.51
+                                            71   Conj_Acid 14.96
+                                            24   Conj_Base  4.81
+                                            70   Conj_Acid  3.68
+ pKa penalty:                                 5.09 kcal/mol
+     Charging penalty:                        0.01 kcal/mol
+     Neutralization penalty:                  5.08 kcal/mol
+ Overall Penalty (tautomerization included):  3.94 kcal/mol
+ Total Charge: 1
+ Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 5
+                                            70   Conj_Acid  9.19
+                                            17   Conj_Base  0.72
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            29   Conj_Base  6.54
+                                            48   Conj_Acid 16.05
+                                            24   Conj_Base  5.90
+ pKa penalty:                                 0.11 kcal/mol
+     Charging penalty:                        0.03 kcal/mol
+     Neutralization penalty:                  0.08 kcal/mol
+ Overall Penalty (tautomerization included):  4.03 kcal/mol
+ Total Charge: 1
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 6
+                                            24   Conj_Base 12.14
+                                            70   Conj_Acid  9.19
+                                            17   Conj_Base  0.29
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            29   Conj_Base  5.06
+                                            48   Conj_Acid 15.78
+ pKa penalty:                                 6.47 kcal/mol
+     Charging penalty:                        6.47 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  4.12 kcal/mol
+ Total Charge: 0
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 7
+                                            71   Conj_Acid  9.14
+                                            33   Conj_Base  5.71
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            48   Conj_Acid 14.39
+                                            24   Conj_Base  5.90
+ pKa penalty:                                 0.04 kcal/mol
+     Charging penalty:                        0.03 kcal/mol
+     Neutralization penalty:                  0.01 kcal/mol
+ Overall Penalty (tautomerization included):  5.36 kcal/mol
+ Total Charge: 1
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 8
+                                            51   Conj_Acid 10.52
+                                            71   Conj_Acid  5.71
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            72   Conj_Acid  3.70
+                                            48   Conj_Acid 13.18
+                                            26   Conj_Base  4.18
+ pKa penalty:                                 7.36 kcal/mol
+     Charging penalty:                        7.36 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  5.82 kcal/mol
+ Total Charge: 2
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 9
+                                            71   Conj_Acid  9.19
+                                            17   Conj_Base -1.00
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            29   Conj_Base  3.68
+                                            48   Conj_Acid 14.95
+                                            51   Conj_Acid  5.90
+                                            72   Conj_Acid  4.18
+ pKa penalty:                                 6.47 kcal/mol
+     Charging penalty:                        4.40 kcal/mol
+     Neutralization penalty:                  2.07 kcal/mol
+ Overall Penalty (tautomerization included):  5.94 kcal/mol
+ Total Charge: 2
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 10
+                                            69   Conj_Acid  9.19
+                                            17   Conj_Base -2.00
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            29   Conj_Base  1.51
+                                            71   Conj_Acid 14.31
+                                            72   Conj_Acid  4.81
+                                            27   Conj_Base -2.88
+                                            70   Conj_Acid  4.18
+ pKa penalty:                                 7.94 kcal/mol
+     Charging penalty:                        7.94 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  6.19 kcal/mol
+ Total Charge: 2
+ Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 11
+                                            17   Conj_Base -0.70
+                                            29   Conj_Base  6.10
+                                            33   Conj_Base  9.19
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            70   Conj_Acid 15.07
+                                            24   Conj_Base  4.92
+                                            69   Conj_Acid  3.68
+ pKa penalty:                                 7.56 kcal/mol
+     Charging penalty:                        0.00 kcal/mol
+     Neutralization penalty:                  7.56 kcal/mol
+ Overall Penalty (tautomerization included):  6.57 kcal/mol
+ Total Charge: 0
+ Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 12
+                                            17   Conj_Base  1.02
+                                            29   Conj_Base  9.14
+                                            33   Conj_Base  9.19
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            48   Conj_Acid 16.16
+                                            24   Conj_Base  5.90
+ pKa penalty:                                 4.85 kcal/mol
+     Charging penalty:                        0.02 kcal/mol
+     Neutralization penalty:                  4.84 kcal/mol
+ Overall Penalty (tautomerization included):  6.77 kcal/mol
+ Total Charge: 0
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 13
+                                            70   Conj_Acid  5.71
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            72   Conj_Acid  6.54
+                                            48   Conj_Acid 14.26
+                                            24   Conj_Base  5.90
+ pKa penalty:                                 3.58 kcal/mol
+     Charging penalty:                        3.58 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  7.60 kcal/mol
+ Total Charge: 2
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 14
+                                            69   Conj_Acid  5.71
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            72   Conj_Acid  3.51
+                                            71   Conj_Acid 13.16
+                                            24   Conj_Base  3.14
+                                            70   Conj_Acid  3.68
+ pKa penalty:                                12.70 kcal/mol
+     Charging penalty:                        7.63 kcal/mol
+     Neutralization penalty:                  5.08 kcal/mol
+ Overall Penalty (tautomerization included):  7.90 kcal/mol
+ Total Charge: 2
+ Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 15
+                                            71   Conj_Acid  6.28
+                                            33   Conj_Base  5.71
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            48   Conj_Acid 13.29
+                                            72   Conj_Acid  5.90
+                                            70   Conj_Acid  4.18
+ pKa penalty:                                 8.05 kcal/mol
+     Charging penalty:                        5.97 kcal/mol
+     Neutralization penalty:                  2.08 kcal/mol
+ Overall Penalty (tautomerization included):  8.03 kcal/mol
+ Total Charge: 2
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 16
+                                            50   Conj_Acid 12.28
+                                            70   Conj_Acid  9.19
+                                            71   Conj_Acid  6.63
+                                            14   Conj_Base  7.77
+                                            29   Conj_Base  3.49
+                                            26   Conj_Base  4.18
+                                            17   Conj_Base  8.54
+ pKa penalty:                                 3.48 kcal/mol
+     Charging penalty:                        1.87 kcal/mol
+     Neutralization penalty:                  1.60 kcal/mol
+ Overall Penalty (tautomerization included):  9.53 kcal/mol
+ Total Charge: 1
+ Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 17
+                                            50   Conj_Acid 12.28
+                                            70   Conj_Acid  9.19
+                                            71   Conj_Acid  6.63
+                                            14   Conj_Base  7.77
+                                            29   Conj_Base  3.49
+                                            26   Conj_Base  4.18
+                                            17   Conj_Base  8.54
+ pKa penalty:                                 3.48 kcal/mol
+     Charging penalty:                        1.87 kcal/mol
+     Neutralization penalty:                  1.60 kcal/mol
+ Overall Penalty (tautomerization included):  9.53 kcal/mol
+ Total Charge: 1
+ Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 18
+                                            50   Conj_Acid 12.29
+                                            70   Conj_Acid  9.19
+                                            71   Conj_Acid  3.35
+                                            29   Conj_Base  3.49
+                                            17   Conj_Base  9.47
+                                            26   Conj_Base  4.18
+ pKa penalty:                                 8.37 kcal/mol
+     Charging penalty:                        8.36 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included): 10.63 kcal/mol
+ Total Charge: 1
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 19
+                                            50   Conj_Acid 12.29
+                                            70   Conj_Acid  9.19
+                                            71   Conj_Acid  3.35
+                                            29   Conj_Base  3.49
+                                            17   Conj_Base  9.47
+                                            26   Conj_Base  4.18
+ pKa penalty:                                 8.37 kcal/mol
+     Charging penalty:                        8.36 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included): 10.63 kcal/mol
+ Total Charge: 1
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 20
+                                            70   Conj_Acid  5.71
+                                            12   Conj_Base  2.76
+                                            14   Conj_Base  3.09
+                                            72   Conj_Acid  3.68
+                                            48   Conj_Acid 13.16
+                                            73   Conj_Acid  5.90
+                                            71   Conj_Acid  4.18
+ pKa penalty:                                13.85 kcal/mol
+     Charging penalty:                       11.79 kcal/mol
+     Neutralization penalty:                  2.07 kcal/mol
+ Overall Penalty (tautomerization included): 10.78 kcal/mol
+ Total Charge: 3
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 21
+                                            51   Conj_Acid 12.16
+                                            71   Conj_Acid  9.19
+                                            17   Conj_Base  1.75
+                                            72   Conj_Acid  2.76
+                                            29   Conj_Base  3.70
+                                            48   Conj_Acid  9.47
+                                            26   Conj_Base  4.18
+ pKa penalty:                                 6.35 kcal/mol
+     Charging penalty:                        6.35 kcal/mol
+     Neutralization penalty:                  0.01 kcal/mol
+ Overall Penalty (tautomerization included): 11.55 kcal/mol
+ Total Charge: 2
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 22
+                                            51   Conj_Acid 12.16
+                                            71   Conj_Acid  9.19
+                                            17   Conj_Base  1.75
+                                            72   Conj_Acid  3.09
+                                            29   Conj_Base  3.70
+                                            48   Conj_Acid  9.47
+                                            26   Conj_Base  4.18
+ pKa penalty:                                 5.90 kcal/mol
+     Charging penalty:                        5.89 kcal/mol
+     Neutralization penalty:                  0.01 kcal/mol
+ Overall Penalty (tautomerization included): 11.68 kcal/mol
+ Total Charge: 2
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 23
+                                            50   Conj_Acid 12.39
+                                            29   Conj_Base  6.09
+                                            33   Conj_Base  9.19
+                                            70   Conj_Acid  3.35
+                                            17   Conj_Base  9.47
+                                            26   Conj_Base  4.18
+ pKa penalty:                                10.83 kcal/mol
+     Charging penalty:                        8.36 kcal/mol
+     Neutralization penalty:                  2.48 kcal/mol
+ Overall Penalty (tautomerization included): 13.23 kcal/mol
+ Total Charge: 0
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 24
+                                            50   Conj_Acid 12.39
+                                            29   Conj_Base  6.09
+                                            33   Conj_Base  9.19
+                                            70   Conj_Acid  3.35
+                                            17   Conj_Base  9.47
+                                            26   Conj_Base  4.18
+ pKa penalty:                                10.83 kcal/mol
+     Charging penalty:                        8.36 kcal/mol
+     Neutralization penalty:                  2.48 kcal/mol
+ Overall Penalty (tautomerization included): 13.23 kcal/mol
+ Total Charge: 0
+---------------------------
