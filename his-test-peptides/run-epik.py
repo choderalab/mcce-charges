@@ -70,7 +70,7 @@ def run_epik(name, filename, residue_name, perceive_bonds=False):
         oechem.OEDetermineConnectivity(oe_molecule)
 
     # Assign geometry and charges with Omega
-    oe_molecule = openeye.get_charges(oe_molecule, max_confs=800, strictStereo=True, normalize=True, keep_confs=1)
+    oe_molecule = openeye.get_charges(oe_molecule, max_confs=1, strictStereo=True, normalize=True, keep_confs=1)
 
     # Create output subfolder
     output_basepath = os.path.join(output_dir, name)
@@ -82,11 +82,15 @@ def run_epik(name, filename, residue_name, perceive_bonds=False):
     print "Running epik on molecule {}".format(name)
     mol2_file_path = output_basepath + '-input.mol2'
     residue_name = re.sub('[^A-Za-z]+', '', name.upper())[:3]
-    openeye.molecule_to_mol2(oe_molecule, mol2_file_path, residue_name=residue_name)
+    #openeye.molecule_to_mol2(oe_molecule, mol2_file_path, residue_name=residue_name)
+    from openeye import oechem
+    ofs = oechem.oemolostream(mol2_file_path)
+    oechem.OEWriteMol2File(ofs, oe_molecule, True, False)
+    ofs.close()
 
     # Run epik on mol2 file
     mae_file_path = output_basepath + '-epik.mae'
-    schrodinger.run_epik(mol2_file_path, mae_file_path, tautomerize=True,
+    schrodinger.run_epik(mol2_file_path, mae_file_path, tautomerize=False,
                          max_structures=32, ph_tolerance=10.0)
 
     # Convert maestro file to sdf and mol2
@@ -153,7 +157,6 @@ def run_epik(name, filename, residue_name, perceive_bonds=False):
     outfile.close()
 
 if __name__ == '__main__':
-    input_csv_file = 'clinical-kinase-inhibitors.csv'
     output_dir = 'output'
 
     # Create output directory
