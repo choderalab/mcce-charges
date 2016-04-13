@@ -6,6 +6,7 @@ import os
 import re
 import csv
 import traceback
+import numpy as np
 
 from openmoltools import openeye, schrodinger
 from openeye import oechem
@@ -70,7 +71,7 @@ def run_epik(name, filename, residue_name, perceive_bonds=False):
         oechem.OEDetermineConnectivity(oe_molecule)
 
     # Assign geometry and charges with Omega
-    oe_molecule = openeye.get_charges(oe_molecule, max_confs=1, strictStereo=True, normalize=True, keep_confs=1)
+    oe_molecule = openeye.get_charges(oe_molecule, max_confs=1, strictStereo=False, normalize=True, keep_confs=1)
 
     # Create output subfolder
     output_basepath = os.path.join(output_dir, name)
@@ -91,7 +92,7 @@ def run_epik(name, filename, residue_name, perceive_bonds=False):
     # Run epik on mol2 file
     mae_file_path = output_basepath + '-epik.mae'
     schrodinger.run_epik(mol2_file_path, mae_file_path, tautomerize=False,
-                         max_structures=32, ph_tolerance=10.0)
+                         max_structures=100, min_probability=np.exp(-6), ph=7.4)
 
     # Convert maestro file to sdf and mol2
     output_sdf_filename = output_basepath + '-epik.sdf'
@@ -121,7 +122,7 @@ def run_epik(name, filename, residue_name, perceive_bonds=False):
         print "Charging molecule %d / %d" % (index, len(uncharged_molecules))
         try:
             # Charge molecule.
-            charged_molecule = openeye.get_charges(sdf_molecule, max_confs=800, strictStereo=True, normalize=True, keep_confs=None)
+            charged_molecule = openeye.get_charges(sdf_molecule, max_confs=800, strictStereo=False, normalize=True, keep_confs=None)
 
             # Store tags.
             oechem.OECopySDData(charged_molecule, sdf_molecule)
