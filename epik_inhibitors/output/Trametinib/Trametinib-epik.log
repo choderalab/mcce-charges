@@ -1,19 +1,19 @@
 COMMAND:
- /opt/schrodinger/suites2015-2/epik-v32011/bin/Darwin-x86_64/epik_app -imae /private/var/folders/bk/rcx4j47j1_n91nzd630930380000gn/T/tmpGbHIhH/Trametinib-input.mae -omae /Users/andrea/Development/mcce-charges/epik_inhibitors/output/Trametinib/Trametinib-epik.mae -ms 32 -ph 7.4 -pht 10.0 -pKa_atom
-SCHRODINGER: /opt/schrodinger/suites2015-2
+ /opt/schrodinger/suites2015-3/epik-v33015/bin/Darwin-x86_64/epik_app -imae /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpRxVVwb/Trametinib-input.mae -omae /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Trametinib/Trametinib-epik.mae -ms 100 -ph 7.4 -nt -p 4.53999297625e-05 -pKa_atom
+SCHRODINGER: /opt/schrodinger/suites2015-3
 
-Running Epik version     3.2011
+Running Epik version     3.3015
 Epik. Copyright Schrodinger, LLC. All rights reserved.
 
-Input file name:                        /private/var/folders/bk/rcx4j47j1_n91nzd630930380000gn/T/tmpGbHIhH/Trametinib-input.mae
-Output file name:                       /Users/andrea/Development/mcce-charges/epik_inhibitors/output/Trametinib/Trametinib-epik.mae
-Maximum number of states set to: 32
+Input file name:                        /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpRxVVwb/Trametinib-input.mae
+Output file name:                       /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Trametinib/Trametinib-epik.mae
+Maximum number of states set to: 100
 Structure adjustment calculation requested.
   Target pH set to 7.400
-pHt tolerance set to 1.000000e+01
+Minimum probability set to 4.539993e-05
 reporting for specific atoms turned on (pKa_atom)
 
-Adjusting structures for pH 7.400000e+00 and minimum probability 1.000000e-10
+Adjusting structures for pH 7.400000e+00 and minimum probability 4.539993e-05
 Solvent model name:                     water
 Jobcontrol is not being used for this specific Epik calculation.
 ---------------------------
@@ -47,93 +47,7 @@ Variation: 2
  pKa penalty:                                 0.02 kcal/mol
      Charging penalty:                        0.00 kcal/mol
      Neutralization penalty:                  0.02 kcal/mol
- Overall Penalty (tautomerization included):  6.78 kcal/mol
+ Overall Penalty (tautomerization included):  4.63 kcal/mol
  Total Charge: 0
- Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 3
-                                            51   Conj_Acid 14.17
-                                            10   Conj_Base 12.79
-                                             8   Conj_Base  0.96
-                                            20   Conj_Base -1.71
-                                            23   Conj_Base -0.65
-                                            33   Conj_Base -1.30
- pKa penalty:                                 7.35 kcal/mol
-     Charging penalty:                        7.35 kcal/mol
-     Neutralization penalty:                  0.00 kcal/mol
- Overall Penalty (tautomerization included):  7.24 kcal/mol
- Total Charge: -1
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 4
-                                            44   Conj_Acid 10.89
-                                            31   Conj_Base  5.90
-                                             8   Conj_Base  0.62
-                                            20   Conj_Base -0.02
-                                            23   Conj_Base -0.67
-                                            60   Conj_Acid  8.99
- pKa penalty:                                 0.03 kcal/mol
-     Charging penalty:                        0.03 kcal/mol
-     Neutralization penalty:                  0.00 kcal/mol
- Overall Penalty (tautomerization included):  7.38 kcal/mol
- Total Charge: 0
- Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 5
-                                            31   Conj_Base 12.17
-                                            44   Conj_Acid 10.89
-                                             8   Conj_Base  0.62
-                                            20   Conj_Base -0.02
-                                            23   Conj_Base -0.67
-                                            33   Conj_Base  8.99
- pKa penalty:                                 8.69 kcal/mol
-     Charging penalty:                        6.51 kcal/mol
-     Neutralization penalty:                  2.18 kcal/mol
- Overall Penalty (tautomerization included):  8.53 kcal/mol
- Total Charge: -1
- Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 6
-                                            44   Conj_Acid 10.89
-                                            61   Conj_Acid  4.33
-                                             8   Conj_Base  0.62
-                                            20   Conj_Base -0.02
-                                            23   Conj_Base -0.67
-                                            52   Conj_Acid 11.77
-                                            53   Conj_Acid 11.77
-                                            54   Conj_Acid 11.77
-                                            60   Conj_Acid  1.50
- pKa penalty:                                12.24 kcal/mol
-     Charging penalty:                       12.24 kcal/mol
-     Neutralization penalty:                  0.00 kcal/mol
- Overall Penalty (tautomerization included): 11.02 kcal/mol
- Total Charge: 1
- Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 7
-                                            52   Conj_Acid 14.17
-                                            44   Conj_Acid  5.68
-                                            61   Conj_Acid -2.16
-                                            20   Conj_Base  0.10
-                                            23   Conj_Base  0.10
-                                            33   Conj_Base -1.30
- pKa penalty:                                15.40 kcal/mol
-     Charging penalty:                        2.35 kcal/mol
-     Neutralization penalty:                 13.05 kcal/mol
- Overall Penalty (tautomerization included): 11.89 kcal/mol
- Total Charge: 1
- Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 8
-                                            10   Conj_Base 12.79
-                                            31   Conj_Base  4.33
-                                             8   Conj_Base  0.96
-                                            20   Conj_Base -1.71
-                                            23   Conj_Base -0.65
-                                            59   Conj_Acid  8.80
- pKa penalty:                                 7.37 kcal/mol
-     Charging penalty:                        7.35 kcal/mol
-     Neutralization penalty:                  0.02 kcal/mol
- Overall Penalty (tautomerization included): 13.38 kcal/mol
- Total Charge: -1
  Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
 ---------------------------
