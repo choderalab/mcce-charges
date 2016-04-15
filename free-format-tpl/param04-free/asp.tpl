@@ -6,9 +6,7 @@
 # 4) quotation marks are optional
 # 5) leading and ending spaces in a field must be quoted.
 
-# Section 1. Define a molecule and conformer.
-# Backbone atoms are the atoms that don't change charge state and positions.
-# Record name, conformer, atom : geometry, sequence offset, atom, sequence offset, atom,...
+# Section 1. Atom charge and radius, connectivity
 CONNECT, ASPBK, " N  " : sp2, " C  ", " CA ", " H  "
 CONNECT, ASPBK, " H  " : s, " N  "
 CONNECT, ASPBK, " CA " : sp3, " N  ", " C  ", " CB ", " HA "
@@ -37,15 +35,9 @@ CONNECT  ASP-1  OD1 sp2       0     CG
 CONNECT  ASP-1  OD2 sp2       0     CG
 
 # Section 2, Basic Conformer Information: name, pka, em, rxn.
-PROTON, ASP01: 0
-PROTON, ASP02: 0
-PROTON, ASP-1: -1
 PKA, ASP01: 0.0
 PKA, ASP02: 0.0
 PKA, ASP-1: 4.75
-ELECTRON, ASP01: 0
-ELECTRON, ASP02: 0
-ELECTRON, ASP-1: 0
 EM       ASP01      0.0
 EM       ASP02      0.0
 EM       ASP-1      0.0
@@ -53,4 +45,4 @@ RXN      ASP01      -2.93
 RXN      ASP02      -3.13
 RXN      ASP-1      -20.2
 
-# Section 3,
+# Section 3, Rotamers if possible
