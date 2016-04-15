@@ -1,6 +1,6 @@
 @<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-25   25    2
+2-acetamido-3-(1~{H}-imidazol-4-yl)-~{N}-[1-(1~{H}-imidazol-4-ylmethyl)-2-(methylamino)-2-oxo-ethyl]propanamide
+46   47    4
 PROTEIN
 USER_CHARGES
 
@@ -8,31 +8,52 @@ USER_CHARGES
 @<TRIPOS>DICT
 PROTEIN PROTEIN
 @<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7135   -1.7210   -3.0196 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.3       2 HIS2       -0.0048 DICT
-     10 H5         -0.6477    0.1055   -2.3308 H         2 HIS2        0.1215 DICT
-     11 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     12 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     13 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     14 C5         -0.5433   -1.8853   -0.4849 C.cat     2 HIS2        0.2737 DICT
-     15 N2         -0.1420   -3.1811   -0.6939 N.pl3     2 HIS2       -0.6545 DICT
-     16 C6         -1.2038   -3.9079   -0.4250 C.cat     2 HIS2        0.3827 DICT
-     17 H8         -1.2681   -4.9855   -0.4786 H         2 HIS2        0.0607 DICT
-     18 N3         -2.2680   -3.1340   -0.0538 N.pl3     2 HIS2       -0.3181 DICT
-     19 H9         -3.2286   -3.6055    0.2011 H         2 HIS2        0.3025 DICT
-     20 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     21 H10        -2.5197   -1.0148    0.1665 H         2 HIS2        0.1888 DICT
-     22 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     23 O2          1.3205    1.9845   -1.6697 O.2       2 HIS2       -0.5296 DICT
-     24 H11         2.1582    0.7916   -3.0647 H         2 HIS2       -0.0022 DICT
-     25 H25         0.8879   -3.3925   -1.0174 H         2 HIS2        0.0000 DICT
+      1 HH31        2.2108   -0.3185    0.7166 H         1 ACE         0.0640 
+      2 CH3         1.1512   -0.0260    0.7573 C.3       1 ACE        -0.1731 
+      3 HH32        0.6861   -0.4570    1.6561 H         1 ACE         0.0640 
+      4 HH33        0.6331   -0.3991   -0.1385 H         1 ACE         0.0640 
+      5 C           1.0475    1.4623    0.8084 C.2       1 ACE         0.6562 
+      6 O          -0.0576    1.9895    0.8580 O.2       1 ACE        -0.5801 
+      7 N           2.2668    2.1122    0.7917 N.am      2 HIS2       -0.5529 BACKBONE|DICT|DIRECT
+      8 H           3.1660    1.4804    0.7451 H         2 HIS2        0.3087 DICT
+      9 CA          2.3956    3.5471    0.8321 C.3       2 HIS2        0.0354 BACKBONE|DICT|DIRECT
+     10 HA          1.5707    3.9122    1.4616 H         2 HIS2        0.0955 DICT
+     11 CB          3.7169    3.9924    1.4694 C.3       2 HIS2       -0.1009 DICT
+     12 HB2         3.9486    3.3418    2.3256 H         2 HIS2        0.0696 DICT
+     13 HB3         4.5247    3.9218    0.7261 H         2 HIS2        0.0696 DICT
+     14 CG          3.6731    5.4156    1.9697 C.2       2 HIS2        0.2849 DICT
+     15 ND1         4.0317    6.4557    1.1492 N.pl3     2 HIS2       -0.6560 DICT
+     16 CE1         3.8805    7.5324    1.8880 C.2       2 HIS2        0.3944 DICT
+     17 HE1         4.0690    8.5501    1.5765 H         2 HIS2        0.0633 DICT
+     18 NE2         3.4415    7.2272    3.1463 N.2       2 HIS2       -0.3174 DICT
+     19 CD2         3.3031    5.8694    3.2137 C.2       2 HIS2       -0.2495 DICT
+     20 HD2         2.9660    5.3709    4.1112 H         2 HIS2        0.1793 DICT
+     21 C           2.3031    4.0498   -0.6042 C.2       2 HIS2        0.6607 BACKBONE|DICT|DIRECT
+     22 O           2.7541    3.4252   -1.5621 O.2       2 HIS2       -0.6307 BACKBONE|DICT|DIRECT
+     23 N           1.6143    5.2516   -0.6908 N.am      3 HIS3       -0.5367 BACKBONE|DICT|DIRECT
+     24 H           1.2704    5.6933    0.2561 H         3 HIS3        0.3338 DICT
+     25 CA          1.3417    5.9218   -1.9420 C.3       3 HIS3        0.0557 BACKBONE|DICT|DIRECT
+     26 HA          2.1264    5.6074   -2.6459 H         3 HIS3        0.0932 DICT
+     27 CB         -0.0133    5.5156   -2.5289 C.3       3 HIS3       -0.1135 DICT
+     28 HB2        -0.7579    5.4510   -1.7218 H         3 HIS3        0.0678 DICT
+     29 HB3        -0.3345    6.2675   -3.2647 H         3 HIS3        0.0678 DICT
+     30 CG          0.0286    4.1774   -3.2256 C.2       3 HIS3        0.3012 DICT
+     31 ND1        -0.2306    3.0211   -2.5332 N.pl3     3 HIS3       -0.6396 DICT
+     32 CE1        -0.1104    2.0629   -3.4250 C.2       3 HIS3        0.3886 DICT
+     33 HE1        -0.2445    1.0055   -3.2456 H         3 HIS3        0.0556 DICT
+     34 NE2         0.2155    2.5550   -4.6583 N.2       3 HIS3       -0.3184 DICT
+     35 CD2         0.3079    3.9137   -4.5458 C.2       3 HIS3       -0.2566 DICT
+     36 HD2         0.5560    4.5435   -5.3880 H         3 HIS3        0.1735 DICT
+     37 C           1.3735    7.4192   -1.6639 C.2       3 HIS3        0.6459 BACKBONE|DICT|DIRECT
+     38 O           0.9781    7.9151   -0.6110 O.2       3 HIS3       -0.6173 BACKBONE|DICT|DIRECT
+     39 N           1.9437    8.1274   -2.7126 N.am      4 NME4       -0.5707 
+     40 H           2.2500    7.5446   -3.5938 H         4 NME4        0.3121 
+     41 CH3         2.1428    9.5587   -2.6880 C.3       4 NME4        0.0787 
+     42 HH31        2.6092    9.8803   -3.6309 H         4 NME4        0.0430 
+     43 HH32        2.7988    9.8232   -1.8455 H         4 NME4        0.0430 
+     44 HH33        1.1719   10.0619   -2.5688 H         4 NME4        0.0430 
+     45 H45         4.3543    6.2558    0.1167 H         2 HIS2        0.0000 DICT
+     46 H46        -0.4719    3.0645   -1.4609 H         3 HIS3        0.0000 DICT
 @<TRIPOS>BOND
      1    1    2 1    
      2    2    4 1    
@@ -41,1518 +62,163 @@ PROTEIN PROTEIN
      5    5    6 2    
      6    5    7 am   BACKBONE|DICT|INTERRES
      7    7    8 1    DICT
-     8    7    9 1    DICT
+     8    7    9 1    BACKBONE|DICT
      9    9   11 1    DICT
-    10    9   22 1    DICT
+    10    9   21 1    BACKBONE|DICT
     11    9   10 1    DICT
-    12   11   13 1    DICT
-    13   11   14 1    DICT
-    14   11   12 1    DICT
-    15   14   15 ar   DICT
-    16   14   20 2    DICT
-    17   15   16 ar   DICT
-    18   15   25 1    DICT
-    19   16   17 1    DICT
-    20   16   18 ar   DICT
-    21   18   19 1    DICT
-    22   18   20 1    DICT
-    23   20   21 1    DICT
-    24   22   23 2    DICT
-    25   22   24 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7135   -1.7210   -3.0196 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.3       2 HIS2       -0.0048 DICT
-     10 H5         -0.6477    0.1055   -2.3308 H         2 HIS2        0.1215 DICT
-     11 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     12 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     13 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     14 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     15 N2         -0.1417   -3.1812   -0.6929 N.pl3     2 HIS2       -0.6545 DICT
-     16 C6         -1.2033   -3.9080   -0.4234 C.2       2 HIS2        0.3827 DICT
-     17 H8         -1.2975   -4.9029   -0.4609 H         2 HIS2        0.0607 DICT
-     18 N3         -2.2680   -3.1340   -0.0538 N.2       2 HIS2       -0.3181 DICT
-     19 H9          0.8882   -3.3926   -1.0162 H         2 HIS2        0.3025 DICT
-     20 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     21 H10        -2.2873   -0.9476    0.1021 H         2 HIS2        0.1888 DICT
-     22 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     23 O2          1.3205    1.9845   -1.6697 O.2       2 HIS2       -0.5296 DICT
-     24 H11         2.1582    0.7916   -3.0647 H         2 HIS2       -0.0022 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   11 1    DICT
-    10    9   22 1    DICT
-    11    9   10 1    DICT
-    12   11   13 1    DICT
-    13   11   12 1    DICT
-    14   11   14 1    DICT
-    15   14   20 2    DICT
-    16   14   15 1    DICT
-    17   15   19 1    DICT
-    18   15   16 1    DICT
-    19   16   17 1    DICT
-    20   16   18 2    DICT
-    21   18   20 1    DICT
-    22   20   21 1    DICT
-    23   22   23 2    DICT
-    24   22   24 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7135   -1.7210   -3.0196 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.3       2 HIS2       -0.0048 DICT
-     10 H5         -0.6477    0.1055   -2.3308 H         2 HIS2        0.1215 DICT
-     11 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     12 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     13 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     14 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     15 N2         -0.1420   -3.1811   -0.6939 N.2       2 HIS2       -0.6545 DICT
-     16 C6         -1.2038   -3.9079   -0.4250 C.2       2 HIS2        0.3827 DICT
-     17 H8         -1.2681   -4.9855   -0.4786 H         2 HIS2        0.0607 DICT
-     18 N3         -2.2680   -3.1340   -0.0538 N.pl3     2 HIS2       -0.3181 DICT
-     19 H9         -3.2286   -3.6055    0.2011 H         2 HIS2        0.3025 DICT
-     20 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     21 H10        -2.5197   -1.0148    0.1665 H         2 HIS2        0.1888 DICT
-     22 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     23 O2          1.3205    1.9845   -1.6697 O.2       2 HIS2       -0.5296 DICT
-     24 H11         2.1582    0.7916   -3.0647 H         2 HIS2       -0.0022 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   11 1    DICT
-    10    9   22 1    DICT
-    11    9   10 1    DICT
-    12   11   13 1    DICT
-    13   11   14 1    DICT
-    14   11   12 1    DICT
-    15   14   15 1    DICT
-    16   14   20 2    DICT
-    17   15   16 2    DICT
-    18   16   17 1    DICT
-    19   16   18 1    DICT
-    20   18   19 1    DICT
-    21   18   20 1    DICT
-    22   20   21 1    DICT
-    23   22   23 2    DICT
-    24   22   24 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    3
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.3       2 HIS2       -0.0048 DICT
-      9 H5         -0.6477    0.1055   -2.3308 H         2 HIS2        0.1215 DICT
-     10 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     11 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     12 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     13 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     14 N2         -0.1417   -3.1812   -0.6929 N.pl3     2 HIS2       -0.6545 DICT
-     15 C6         -1.2033   -3.9080   -0.4234 C.2       2 HIS2        0.3827 DICT
-     16 H8         -1.2975   -4.9029   -0.4609 H         2 HIS2        0.0607 DICT
-     17 N3         -2.2680   -3.1340   -0.0538 N.2       2 HIS2       -0.3181 DICT
-     18 H9          0.8882   -3.3926   -1.0162 H         2 HIS2        0.3025 DICT
-     19 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -2.2873   -0.9476    0.1021 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3205    1.9845   -1.6697 O.2       2 HIS2       -0.5296 DICT
-     23 H11         2.1582    0.7916   -3.0647 H         2 HIS2       -0.0022 DICT
-     24 H24        -1.6008   -0.3040   -3.7655 H         3 ACE1        0.0000 
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 1    DICT
-     7    6   24 1    
-     8    7    8 1    DICT
-     9    8   10 1    DICT
-    10    8   21 1    DICT
-    11    8    9 1    DICT
-    12   10   12 1    DICT
-    13   10   11 1    DICT
-    14   10   13 1    DICT
-    15   13   19 2    DICT
-    16   13   14 1    DICT
-    17   14   18 1    DICT
-    18   14   15 1    DICT
-    19   15   16 1    DICT
-    20   15   17 2    DICT
-    21   17   19 1    DICT
-    22   19   20 1    DICT
-    23   21   22 2    DICT
-    24   21   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-     3 ACE1       24 GROUP             0       ****    0 ROOT    
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    3
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.3       2 HIS2       -0.0048 DICT
-      9 H5         -0.6477    0.1055   -2.3308 H         2 HIS2        0.1215 DICT
-     10 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     11 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     12 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     13 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     14 N2         -0.1420   -3.1811   -0.6939 N.2       2 HIS2       -0.6545 DICT
-     15 C6         -1.2038   -3.9079   -0.4250 C.2       2 HIS2        0.3827 DICT
-     16 H8         -1.2681   -4.9855   -0.4786 H         2 HIS2        0.0607 DICT
-     17 N3         -2.2680   -3.1340   -0.0538 N.pl3     2 HIS2       -0.3181 DICT
-     18 H9         -3.2286   -3.6055    0.2011 H         2 HIS2        0.3025 DICT
-     19 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -2.5197   -1.0148    0.1665 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3205    1.9845   -1.6697 O.2       2 HIS2       -0.5296 DICT
-     23 H11         2.1582    0.7916   -3.0647 H         2 HIS2       -0.0022 DICT
-     24 H24        -1.6008   -0.3040   -3.7655 H         3 ACE1        0.0000 
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 1    DICT
-     7    6   24 1    
-     8    7    8 1    DICT
-     9    8   10 1    DICT
-    10    8   21 1    DICT
-    11    8    9 1    DICT
-    12   10   12 1    DICT
-    13   10   13 1    DICT
-    14   10   11 1    DICT
-    15   13   14 1    DICT
-    16   13   19 2    DICT
-    17   14   15 2    DICT
-    18   15   16 1    DICT
-    19   15   17 1    DICT
-    20   17   18 1    DICT
-    21   17   19 1    DICT
-    22   19   20 1    DICT
-    23   21   22 2    DICT
-    24   21   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-     3 ACE1       24 GROUP             0       ****    0 ROOT    
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-25   25    3
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.3       2 HIS2       -0.0048 DICT
-      9 H5         -0.6477    0.1055   -2.3308 H         2 HIS2        0.1215 DICT
-     10 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     11 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     12 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     13 C5         -0.5433   -1.8853   -0.4849 C.cat     2 HIS2        0.2737 DICT
-     14 N2         -0.1420   -3.1811   -0.6939 N.pl3     2 HIS2       -0.6545 DICT
-     15 C6         -1.2038   -3.9079   -0.4250 C.cat     2 HIS2        0.3827 DICT
-     16 H8         -1.2681   -4.9855   -0.4786 H         2 HIS2        0.0607 DICT
-     17 N3         -2.2680   -3.1340   -0.0538 N.pl3     2 HIS2       -0.3181 DICT
-     18 H9         -3.2286   -3.6055    0.2011 H         2 HIS2        0.3025 DICT
-     19 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -2.5197   -1.0148    0.1665 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3205    1.9845   -1.6697 O.2       2 HIS2       -0.5296 DICT
-     23 H11         2.1582    0.7916   -3.0647 H         2 HIS2       -0.0022 DICT
-     24 H24        -1.6008   -0.3040   -3.7655 H         3 ACE1        0.0000 
-     25 H25         0.8879   -3.3925   -1.0174 H         2 HIS2        0.0000 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 1    DICT
-     7    6   24 1    
-     8    7    8 1    DICT
-     9    8   10 1    DICT
-    10    8   21 1    DICT
-    11    8    9 1    DICT
-    12   10   12 1    DICT
-    13   10   13 1    DICT
-    14   10   11 1    DICT
-    15   13   14 ar   DICT
-    16   13   19 2    DICT
-    17   14   15 ar   DICT
-    18   14   25 1    DICT
-    19   15   16 1    DICT
-    20   15   17 ar   DICT
-    21   17   18 1    DICT
-    22   17   19 1    DICT
-    23   19   20 1    DICT
-    24   21   22 2    DICT
-    25   21   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-     3 ACE1       24 GROUP             0       ****    0 ROOT    
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    3
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.3       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.3       2 HIS2       -0.0048 DICT
-      9 H5         -0.6477    0.1055   -2.3308 H         2 HIS2        0.1215 DICT
-     10 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     11 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     12 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     13 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     14 N2         -0.1417   -3.1812   -0.6929 N.pl3     2 HIS2       -0.6545 DICT
-     15 C6         -1.2033   -3.9080   -0.4234 C.2       2 HIS2        0.3827 DICT
-     16 H8         -1.2975   -4.9029   -0.4609 H         2 HIS2        0.0607 DICT
-     17 N3         -2.2680   -3.1340   -0.0538 N.2       2 HIS2       -0.3181 DICT
-     18 H9          0.8882   -3.3926   -1.0162 H         2 HIS2        0.3025 DICT
-     19 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -2.2873   -0.9476    0.1021 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3205    1.9845   -1.6697 O.2       2 HIS2       -0.5296 DICT
-     23 H11         2.1582    0.7916   -3.0647 H         2 HIS2       -0.0022 DICT
-     24 H24        -1.6008   -0.3040   -3.7655 H         3 ACE1        0.0000 
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 1    
-     6    5    7 2    DICT
-     7    6   24 1    
-     8    7    8 1    DICT
-     9    8   10 1    DICT
-    10    8   21 1    DICT
-    11    8    9 1    DICT
-    12   10   12 1    DICT
-    13   10   11 1    DICT
-    14   10   13 1    DICT
-    15   13   19 2    DICT
-    16   13   14 1    DICT
-    17   14   18 1    DICT
-    18   14   15 1    DICT
-    19   15   16 1    DICT
-    20   15   17 2    DICT
-    21   17   19 1    DICT
-    22   19   20 1    DICT
-    23   21   22 2    DICT
-    24   21   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-     3 ACE1       24 GROUP             0       ****    0 ROOT    
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-25   25    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7252   -1.6885   -2.9701 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-     10 H5          2.0916    2.7564   -1.8177 H         2 HIS2        0.1215 DICT
-     11 C4         -0.6107    0.0963   -1.0067 C.3       2 HIS2       -0.0910 DICT
-     12 H6         -1.1550    1.0135   -1.2759 H         2 HIS2        0.0580 DICT
-     13 H7         -0.0398    0.2669   -0.0820 H         2 HIS2        0.0580 DICT
-     14 C5         -1.5946   -1.0276   -0.7904 C.cat     2 HIS2        0.2737 DICT
-     15 N2         -1.3164   -2.0388    0.0949 N.pl3     2 HIS2       -0.6545 DICT
-     16 C6         -2.3633   -2.8316    0.0373 C.cat     2 HIS2        0.3827 DICT
-     17 H8         -2.3987   -3.6551    0.6037 H         2 HIS2        0.0607 DICT
-     18 N3         -3.2995   -2.3728   -0.8471 N.pl3     2 HIS2       -0.3181 DICT
-     19 H9         -4.2320   -2.9354   -1.0020 H         2 HIS2        0.3025 DICT
-     20 C7         -2.8195   -1.2130   -1.3869 C.2       2 HIS2       -0.2159 DICT
-     21 H10        -3.1542   -0.5513   -2.0578 H         2 HIS2        0.1888 DICT
-     22 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     23 O2          1.3507    1.9640   -1.6358 O.3       2 HIS2       -0.5296 DICT
-     24 H11         2.1524    0.8693   -3.0816 H         2 HIS2       -0.0022 DICT
-     25 H25        -0.3695   -2.0346    0.6547 H         2 HIS2        0.0000 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   11 1    DICT
-    10    9   22 2    DICT
-    11   10   23 1    DICT
-    12   11   13 1    DICT
-    13   11   14 1    DICT
-    14   11   12 1    DICT
-    15   14   15 ar   DICT
-    16   14   20 2    DICT
-    17   15   16 ar   DICT
-    18   15   25 1    DICT
-    19   16   17 1    DICT
-    20   16   18 ar   DICT
-    21   18   19 1    DICT
-    22   18   20 1    DICT
-    23   20   21 1    DICT
-    24   22   24 1    DICT
-    25   22   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7252   -1.6885   -2.9701 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-     10 H5          2.0916    2.7564   -1.8177 H         2 HIS2        0.1215 DICT
-     11 C4         -0.6107    0.0963   -1.0067 C.3       2 HIS2       -0.0910 DICT
-     12 H6         -1.1550    1.0135   -1.2759 H         2 HIS2        0.0580 DICT
-     13 H7         -0.0398    0.2669   -0.0820 H         2 HIS2        0.0580 DICT
-     14 C5         -1.5946   -1.0276   -0.7904 C.2       2 HIS2        0.2737 DICT
-     15 N2         -1.3169   -2.0382    0.0957 N.pl3     2 HIS2       -0.6545 DICT
-     16 C6         -2.3641   -2.8307    0.0386 C.2       2 HIS2        0.3827 DICT
-     17 H8         -2.5280   -3.6765    0.5463 H         2 HIS2        0.0607 DICT
-     18 N3         -3.2995   -2.3728   -0.8471 N.2       2 HIS2       -0.3181 DICT
-     19 H9         -0.3700   -2.0340    0.6556 H         2 HIS2        0.3025 DICT
-     20 C7         -2.8195   -1.2130   -1.3869 C.2       2 HIS2       -0.2159 DICT
-     21 H10        -3.1545   -0.5510   -2.0573 H         2 HIS2        0.1888 DICT
-     22 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     23 O2          1.3507    1.9640   -1.6358 O.3       2 HIS2       -0.5296 DICT
-     24 H11         2.1524    0.8693   -3.0816 H         2 HIS2       -0.0022 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   11 1    DICT
-    10    9   22 2    DICT
-    11   10   23 1    DICT
-    12   11   13 1    DICT
-    13   11   12 1    DICT
-    14   11   14 1    DICT
-    15   14   20 2    DICT
-    16   14   15 1    DICT
-    17   15   19 1    DICT
-    18   15   16 1    DICT
-    19   16   17 1    DICT
-    20   16   18 2    DICT
-    21   18   20 1    DICT
-    22   20   21 1    DICT
-    23   22   24 1    DICT
-    24   22   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7252   -1.6885   -2.9701 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-     10 H5          2.9501    1.7839   -3.2382 H         2 HIS2        0.1215 DICT
-     11 C4         -0.6107    0.0963   -1.0067 C.3       2 HIS2       -0.0910 DICT
-     12 H6         -1.1550    1.0135   -1.2759 H         2 HIS2        0.0580 DICT
-     13 H7         -0.0398    0.2669   -0.0820 H         2 HIS2        0.0580 DICT
-     14 C5         -1.5946   -1.0276   -0.7904 C.2       2 HIS2        0.2737 DICT
-     15 N2         -1.3169   -2.0382    0.0957 N.pl3     2 HIS2       -0.6545 DICT
-     16 C6         -2.3641   -2.8307    0.0386 C.2       2 HIS2        0.3827 DICT
-     17 H8         -2.5280   -3.6765    0.5463 H         2 HIS2        0.0607 DICT
-     18 N3         -3.2995   -2.3728   -0.8471 N.2       2 HIS2       -0.3181 DICT
-     19 H9         -0.3700   -2.0340    0.6556 H         2 HIS2        0.3025 DICT
-     20 C7         -2.8195   -1.2130   -1.3869 C.2       2 HIS2       -0.2159 DICT
-     21 H10        -3.1545   -0.5510   -2.0573 H         2 HIS2        0.1888 DICT
-     22 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     23 O2          2.2666    0.9263   -3.1513 O.3       2 HIS2       -0.5296 DICT
-     24 H11         1.3022    1.8325   -1.6747 H         2 HIS2       -0.0022 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   11 1    DICT
-    10    9   22 2    DICT
-    11   10   23 1    DICT
-    12   11   13 1    DICT
-    13   11   12 1    DICT
-    14   11   14 1    DICT
-    15   14   20 2    DICT
-    16   14   15 1    DICT
-    17   15   19 1    DICT
-    18   15   16 1    DICT
-    19   16   17 1    DICT
-    20   16   18 2    DICT
-    21   18   20 1    DICT
-    22   20   21 1    DICT
-    23   22   24 1    DICT
-    24   22   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-25   25    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7252   -1.6885   -2.9701 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-     10 H5          2.9501    1.7839   -3.2382 H         2 HIS2        0.1215 DICT
-     11 C4         -0.6107    0.0963   -1.0067 C.3       2 HIS2       -0.0910 DICT
-     12 H6         -1.1550    1.0135   -1.2759 H         2 HIS2        0.0580 DICT
-     13 H7         -0.0398    0.2669   -0.0820 H         2 HIS2        0.0580 DICT
-     14 C5         -1.5946   -1.0276   -0.7904 C.cat     2 HIS2        0.2737 DICT
-     15 N2         -1.3164   -2.0388    0.0949 N.pl3     2 HIS2       -0.6545 DICT
-     16 C6         -2.3633   -2.8316    0.0373 C.cat     2 HIS2        0.3827 DICT
-     17 H8         -2.3987   -3.6551    0.6037 H         2 HIS2        0.0607 DICT
-     18 N3         -3.2995   -2.3728   -0.8471 N.pl3     2 HIS2       -0.3181 DICT
-     19 H9         -4.2320   -2.9354   -1.0020 H         2 HIS2        0.3025 DICT
-     20 C7         -2.8195   -1.2130   -1.3869 C.2       2 HIS2       -0.2159 DICT
-     21 H10        -3.1542   -0.5513   -2.0578 H         2 HIS2        0.1888 DICT
-     22 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     23 O2          2.2666    0.9263   -3.1513 O.3       2 HIS2       -0.5296 DICT
-     24 H11         1.3022    1.8325   -1.6747 H         2 HIS2       -0.0022 DICT
-     25 H25        -0.3695   -2.0346    0.6547 H         2 HIS2        0.0000 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   11 1    DICT
-    10    9   22 2    DICT
-    11   10   23 1    DICT
-    12   11   13 1    DICT
-    13   11   14 1    DICT
-    14   11   12 1    DICT
-    15   14   15 ar   DICT
-    16   14   20 2    DICT
-    17   15   16 ar   DICT
-    18   15   25 1    DICT
-    19   16   17 1    DICT
-    20   16   18 ar   DICT
-    21   18   19 1    DICT
-    22   18   20 1    DICT
-    23   20   21 1    DICT
-    24   22   24 1    DICT
-    25   22   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    3
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.3       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.3       2 HIS2       -0.0048 DICT
-      9 H5         -0.6477    0.1055   -2.3308 H         2 HIS2        0.1215 DICT
-     10 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     11 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     12 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     13 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     14 N2         -0.1420   -3.1811   -0.6939 N.2       2 HIS2       -0.6545 DICT
-     15 C6         -1.2038   -3.9079   -0.4250 C.2       2 HIS2        0.3827 DICT
-     16 H8         -1.1614   -4.9038   -0.5050 H         2 HIS2        0.0607 DICT
-     17 N3         -2.2680   -3.1340   -0.0538 N.pl3     2 HIS2       -0.3181 DICT
-     18 H9         -3.2286   -3.6055    0.2011 H         2 HIS2        0.3025 DICT
-     19 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -2.2875   -0.9476    0.1015 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3205    1.9845   -1.6697 O.2       2 HIS2       -0.5296 DICT
-     23 H11         2.1582    0.7916   -3.0647 H         2 HIS2       -0.0022 DICT
-     24 H24        -1.6008   -0.3040   -3.7655 H         3 ACE1        0.0000 
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 1    
-     6    5    7 2    DICT
-     7    6   24 1    
-     8    7    8 1    DICT
-     9    8   10 1    DICT
-    10    8   21 1    DICT
-    11    8    9 1    DICT
-    12   10   12 1    DICT
-    13   10   13 1    DICT
-    14   10   11 1    DICT
-    15   13   14 1    DICT
-    16   13   19 2    DICT
-    17   14   15 2    DICT
-    18   15   16 1    DICT
-    19   15   17 1    DICT
-    20   17   18 1    DICT
-    21   17   19 1    DICT
-    22   19   20 1    DICT
-    23   21   22 2    DICT
-    24   21   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-     3 ACE1       24 GROUP             0       ****    0 ROOT    
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-25   25    3
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.3       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.3       2 HIS2       -0.0048 DICT
-      9 H5         -0.6477    0.1055   -2.3308 H         2 HIS2        0.1215 DICT
-     10 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     11 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     12 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     13 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     14 N2         -0.1417   -3.1812   -0.6929 N.pl3     2 HIS2       -0.6545 DICT
-     15 C6         -1.2033   -3.9080   -0.4234 C.cat     2 HIS2        0.3827 DICT
-     16 H8         -1.2975   -4.9029   -0.4609 H         2 HIS2        0.0607 DICT
-     17 N3         -2.2680   -3.1340   -0.0538 N.pl3     2 HIS2       -0.3181 DICT
-     18 H9          0.8882   -3.3926   -1.0162 H         2 HIS2        0.3025 DICT
-     19 C7         -1.8583   -1.8309   -0.0871 C.cat     2 HIS2       -0.2159 DICT
-     20 H10        -2.2873   -0.9476    0.1021 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3205    1.9845   -1.6697 O.2       2 HIS2       -0.5296 DICT
-     23 H11         2.1582    0.7916   -3.0647 H         2 HIS2       -0.0022 DICT
-     24 H24        -1.6008   -0.3040   -3.7655 H         3 ACE1        0.0000 
-     25 H25        -3.2289   -3.6054    0.2001 H         2 HIS2        0.0000 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 1    
-     6    5    7 2    DICT
-     7    6   24 1    
-     8    7    8 1    DICT
-     9    8   10 1    DICT
-    10    8   21 1    DICT
-    11    8    9 1    DICT
-    12   10   12 1    DICT
-    13   10   11 1    DICT
-    14   10   13 1    DICT
-    15   13   19 2    DICT
-    16   13   14 1    DICT
-    17   14   18 1    DICT
-    18   14   15 ar   DICT
-    19   15   16 1    DICT
-    20   15   17 ar   DICT
-    21   17   19 ar   DICT
-    22   17   25 1    DICT
-    23   19   20 1    DICT
-    24   21   22 2    DICT
-    25   21   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-     3 ACE1       24 GROUP             0       ****    0 ROOT    
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.co2     1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.3       2 HIS2       -0.0048 DICT
-      9 H5         -0.6477    0.1055   -2.3308 H         2 HIS2        0.1215 DICT
-     10 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     11 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     12 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     13 C5         -0.5433   -1.8853   -0.4849 C.cat     2 HIS2        0.2737 DICT
-     14 N2         -0.1420   -3.1811   -0.6939 N.pl3     2 HIS2       -0.6545 DICT
-     15 C6         -1.2038   -3.9079   -0.4250 C.cat     2 HIS2        0.3827 DICT
-     16 H8         -1.1614   -4.9038   -0.5050 H         2 HIS2        0.0607 DICT
-     17 N3         -2.2680   -3.1340   -0.0538 N.pl3     2 HIS2       -0.3181 DICT
-     18 H9         -3.2286   -3.6055    0.2011 H         2 HIS2        0.3025 DICT
-     19 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -2.2875   -0.9476    0.1015 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3205    1.9845   -1.6697 O.2       2 HIS2       -0.5296 DICT
-     23 H11         2.1582    0.7916   -3.0647 H         2 HIS2       -0.0022 DICT
-     24 H24         0.8879   -3.3925   -1.0174 H         2 HIS2        0.0000 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 1    
-     6    5    7 2    DICT
-     7    7    8 1    DICT
-     8    8   10 1    DICT
-     9    8   21 1    DICT
-    10    8    9 1    DICT
-    11   10   12 1    DICT
-    12   10   13 1    DICT
-    13   10   11 1    DICT
-    14   13   14 ar   DICT
-    15   13   19 2    DICT
-    16   14   15 ar   DICT
-    17   14   24 1    DICT
-    18   15   16 1    DICT
-    19   15   17 ar   DICT
-    20   17   18 1    DICT
-    21   17   19 1    DICT
-    22   19   20 1    DICT
-    23   21   22 2    DICT
-    24   21   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-23   23    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.co2     1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.3       2 HIS2       -0.0048 DICT
-      9 H5         -0.6477    0.1055   -2.3308 H         2 HIS2        0.1215 DICT
-     10 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     11 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     12 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     13 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     14 N2         -0.1420   -3.1811   -0.6939 N.2       2 HIS2       -0.6545 DICT
-     15 C6         -1.2038   -3.9079   -0.4250 C.2       2 HIS2        0.3827 DICT
-     16 H8         -1.1614   -4.9038   -0.5050 H         2 HIS2        0.0607 DICT
-     17 N3         -2.2680   -3.1340   -0.0538 N.pl3     2 HIS2       -0.3181 DICT
-     18 H9         -3.2286   -3.6055    0.2011 H         2 HIS2        0.3025 DICT
-     19 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -2.2875   -0.9476    0.1015 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3205    1.9845   -1.6697 O.2       2 HIS2       -0.5296 DICT
-     23 H11         2.1582    0.7916   -3.0647 H         2 HIS2       -0.0022 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 1    
-     6    5    7 2    DICT
-     7    7    8 1    DICT
-     8    8   10 1    DICT
-     9    8   21 1    DICT
-    10    8    9 1    DICT
-    11   10   12 1    DICT
-    12   10   13 1    DICT
-    13   10   11 1    DICT
-    14   13   14 1    DICT
-    15   13   19 2    DICT
-    16   14   15 2    DICT
-    17   15   16 1    DICT
-    18   15   17 1    DICT
-    19   17   18 1    DICT
-    20   17   19 1    DICT
-    21   19   20 1    DICT
-    22   21   22 2    DICT
-    23   21   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-23   23    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.co2     1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.3       2 HIS2       -0.0048 DICT
-      9 H5         -0.6477    0.1055   -2.3308 H         2 HIS2        0.1215 DICT
-     10 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     11 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     12 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     13 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     14 N2         -0.1417   -3.1812   -0.6929 N.pl3     2 HIS2       -0.6545 DICT
-     15 C6         -1.2033   -3.9080   -0.4234 C.2       2 HIS2        0.3827 DICT
-     16 H8         -1.2975   -4.9029   -0.4609 H         2 HIS2        0.0607 DICT
-     17 N3         -2.2680   -3.1340   -0.0538 N.2       2 HIS2       -0.3181 DICT
-     18 H9          0.8882   -3.3926   -1.0162 H         2 HIS2        0.3025 DICT
-     19 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -2.2873   -0.9476    0.1021 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3205    1.9845   -1.6697 O.2       2 HIS2       -0.5296 DICT
-     23 H11         2.1582    0.7916   -3.0647 H         2 HIS2       -0.0022 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 1    
-     6    5    7 2    DICT
-     7    7    8 1    DICT
-     8    8   10 1    DICT
-     9    8   21 1    DICT
-    10    8    9 1    DICT
-    11   10   12 1    DICT
-    12   10   11 1    DICT
-    13   10   13 1    DICT
-    14   13   19 2    DICT
-    15   13   14 1    DICT
-    16   14   18 1    DICT
-    17   14   15 1    DICT
-    18   15   16 1    DICT
-    19   15   17 2    DICT
-    20   17   19 1    DICT
-    21   19   20 1    DICT
-    22   21   22 2    DICT
-    23   21   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7252   -1.6885   -2.9701 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-     10 H5          2.9501    1.7839   -3.2382 H         2 HIS2        0.1215 DICT
-     11 C4         -0.6107    0.0963   -1.0067 C.3       2 HIS2       -0.0910 DICT
-     12 H6         -1.1550    1.0135   -1.2759 H         2 HIS2        0.0580 DICT
-     13 H7         -0.0398    0.2669   -0.0820 H         2 HIS2        0.0580 DICT
-     14 C5         -1.5946   -1.0276   -0.7904 C.2       2 HIS2        0.2737 DICT
-     15 N2         -1.3164   -2.0388    0.0949 N.2       2 HIS2       -0.6545 DICT
-     16 C6         -2.3633   -2.8316    0.0373 C.2       2 HIS2        0.3827 DICT
-     17 H8         -2.3987   -3.6551    0.6037 H         2 HIS2        0.0607 DICT
-     18 N3         -3.2995   -2.3728   -0.8471 N.pl3     2 HIS2       -0.3181 DICT
-     19 H9         -4.2320   -2.9354   -1.0020 H         2 HIS2        0.3025 DICT
-     20 C7         -2.8195   -1.2130   -1.3869 C.2       2 HIS2       -0.2159 DICT
-     21 H10        -3.1542   -0.5513   -2.0578 H         2 HIS2        0.1888 DICT
-     22 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     23 O2          2.2666    0.9263   -3.1513 O.3       2 HIS2       -0.5296 DICT
-     24 H11         1.3022    1.8325   -1.6747 H         2 HIS2       -0.0022 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   11 1    DICT
-    10    9   22 2    DICT
-    11   10   23 1    DICT
-    12   11   13 1    DICT
-    13   11   14 1    DICT
-    14   11   12 1    DICT
-    15   14   15 1    DICT
-    16   14   20 2    DICT
-    17   15   16 2    DICT
-    18   16   17 1    DICT
-    19   16   18 1    DICT
-    20   18   19 1    DICT
-    21   18   20 1    DICT
-    22   20   21 1    DICT
-    23   22   24 1    DICT
-    24   22   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7252   -1.6885   -2.9701 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-     10 H5          2.0916    2.7564   -1.8177 H         2 HIS2        0.1215 DICT
-     11 C4         -0.6107    0.0963   -1.0067 C.3       2 HIS2       -0.0910 DICT
-     12 H6         -1.1550    1.0135   -1.2759 H         2 HIS2        0.0580 DICT
-     13 H7         -0.0398    0.2669   -0.0820 H         2 HIS2        0.0580 DICT
-     14 C5         -1.5946   -1.0276   -0.7904 C.2       2 HIS2        0.2737 DICT
-     15 N2         -1.3164   -2.0388    0.0949 N.2       2 HIS2       -0.6545 DICT
-     16 C6         -2.3633   -2.8316    0.0373 C.2       2 HIS2        0.3827 DICT
-     17 H8         -2.3987   -3.6551    0.6037 H         2 HIS2        0.0607 DICT
-     18 N3         -3.2995   -2.3728   -0.8471 N.pl3     2 HIS2       -0.3181 DICT
-     19 H9         -4.2320   -2.9354   -1.0020 H         2 HIS2        0.3025 DICT
-     20 C7         -2.8195   -1.2130   -1.3869 C.2       2 HIS2       -0.2159 DICT
-     21 H10        -3.1542   -0.5513   -2.0578 H         2 HIS2        0.1888 DICT
-     22 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     23 O2          1.3507    1.9640   -1.6358 O.3       2 HIS2       -0.5296 DICT
-     24 H11         2.1524    0.8693   -3.0816 H         2 HIS2       -0.0022 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   11 1    DICT
-    10    9   22 2    DICT
-    11   10   23 1    DICT
-    12   11   13 1    DICT
-    13   11   14 1    DICT
-    14   11   12 1    DICT
-    15   14   15 1    DICT
-    16   14   20 2    DICT
-    17   15   16 2    DICT
-    18   16   17 1    DICT
-    19   16   18 1    DICT
-    20   18   19 1    DICT
-    21   18   20 1    DICT
-    22   20   21 1    DICT
-    23   22   24 1    DICT
-    24   22   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7252   -1.6885   -2.9701 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-     10 C4         -0.6107    0.0963   -1.0067 C.3       2 HIS2       -0.0910 DICT
-     11 H6         -1.1550    1.0135   -1.2759 H         2 HIS2        0.0580 DICT
-     12 H7         -0.0398    0.2669   -0.0820 H         2 HIS2        0.0580 DICT
-     13 C5         -1.5946   -1.0276   -0.7904 C.cat     2 HIS2        0.2737 DICT
-     14 N2         -1.3164   -2.0388    0.0949 N.pl3     2 HIS2       -0.6545 DICT
-     15 C6         -2.3633   -2.8316    0.0373 C.cat     2 HIS2        0.3827 DICT
-     16 H8         -2.3987   -3.6551    0.6037 H         2 HIS2        0.0607 DICT
-     17 N3         -3.2995   -2.3728   -0.8471 N.pl3     2 HIS2       -0.3181 DICT
-     18 H9         -4.2320   -2.9354   -1.0020 H         2 HIS2        0.3025 DICT
-     19 C7         -2.8195   -1.2130   -1.3869 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -3.1542   -0.5513   -2.0578 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          2.2666    0.9263   -3.1513 O.co2     2 HIS2       -0.5296 DICT
-     23 H11         1.3022    1.8325   -1.6747 H         2 HIS2       -0.0022 DICT
-     24 H24        -0.3695   -2.0346    0.6547 H         2 HIS2        0.0000 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   10 1    DICT
-    10    9   21 2    DICT
-    11   10   12 1    DICT
-    12   10   13 1    DICT
-    13   10   11 1    DICT
-    14   13   14 ar   DICT
-    15   13   19 2    DICT
-    16   14   15 ar   DICT
-    17   14   24 1    DICT
-    18   15   16 1    DICT
-    19   15   17 ar   DICT
-    20   17   18 1    DICT
-    21   17   19 1    DICT
-    22   19   20 1    DICT
-    23   21   23 1    DICT
-    24   21   22 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7252   -1.6885   -2.9701 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-     10 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     11 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     12 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     13 C5         -0.5433   -1.8853   -0.4849 C.cat     2 HIS2        0.2737 DICT
-     14 N2         -0.1420   -3.1811   -0.6939 N.pl3     2 HIS2       -0.6545 DICT
-     15 C6         -1.2038   -3.9079   -0.4250 C.cat     2 HIS2        0.3827 DICT
-     16 H8         -1.2681   -4.9855   -0.4786 H         2 HIS2        0.0607 DICT
-     17 N3         -2.2680   -3.1340   -0.0538 N.pl3     2 HIS2       -0.3181 DICT
-     18 H9         -3.2286   -3.6055    0.2011 H         2 HIS2        0.3025 DICT
-     19 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -2.5197   -1.0148    0.1665 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3205    1.9845   -1.6697 O.co2     2 HIS2       -0.5296 DICT
-     23 H11         2.1804    0.8502   -3.0501 H         2 HIS2       -0.0022 DICT
-     24 H24         0.8879   -3.3925   -1.0174 H         2 HIS2        0.0000 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   10 1    DICT
-    10    9   21 2    DICT
-    11   10   12 1    DICT
-    12   10   13 1    DICT
-    13   10   11 1    DICT
-    14   13   14 ar   DICT
-    15   13   19 2    DICT
-    16   14   15 ar   DICT
-    17   14   24 1    DICT
-    18   15   16 1    DICT
-    19   15   17 ar   DICT
-    20   17   18 1    DICT
-    21   17   19 1    DICT
-    22   19   20 1    DICT
-    23   21   22 1    DICT
-    24   21   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-23   23    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7252   -1.6885   -2.9701 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-     10 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     11 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     12 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     13 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     14 N2         -0.1417   -3.1812   -0.6929 N.pl3     2 HIS2       -0.6545 DICT
-     15 C6         -1.2033   -3.9080   -0.4234 C.2       2 HIS2        0.3827 DICT
-     16 H8         -1.2975   -4.9029   -0.4609 H         2 HIS2        0.0607 DICT
-     17 N3         -2.2680   -3.1340   -0.0538 N.2       2 HIS2       -0.3181 DICT
-     18 H9          0.8882   -3.3926   -1.0162 H         2 HIS2        0.3025 DICT
-     19 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -2.2873   -0.9476    0.1021 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3205    1.9845   -1.6697 O.co2     2 HIS2       -0.5296 DICT
-     23 H11         2.1804    0.8502   -3.0501 H         2 HIS2       -0.0022 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   10 1    DICT
-    10    9   21 2    DICT
-    11   10   12 1    DICT
-    12   10   11 1    DICT
-    13   10   13 1    DICT
-    14   13   19 2    DICT
-    15   13   14 1    DICT
-    16   14   18 1    DICT
-    17   14   15 1    DICT
-    18   15   16 1    DICT
-    19   15   17 2    DICT
-    20   17   19 1    DICT
-    21   19   20 1    DICT
-    22   21   22 1    DICT
-    23   21   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-23   23    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7252   -1.6885   -2.9701 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-     10 C4         -0.6107    0.0963   -1.0067 C.3       2 HIS2       -0.0910 DICT
-     11 H6         -0.0684    0.2548   -0.0628 H         2 HIS2        0.0580 DICT
-     12 H7         -1.1837    1.0014   -1.2567 H         2 HIS2        0.0580 DICT
-     13 C5         -1.5946   -1.0276   -0.7904 C.2       2 HIS2        0.2737 DICT
-     14 N2         -1.3169   -2.0382    0.0957 N.pl3     2 HIS2       -0.6545 DICT
-     15 C6         -2.3641   -2.8307    0.0386 C.2       2 HIS2        0.3827 DICT
-     16 H8         -2.5280   -3.6765    0.5463 H         2 HIS2        0.0607 DICT
-     17 N3         -3.2995   -2.3728   -0.8471 N.2       2 HIS2       -0.3181 DICT
-     18 H9         -0.3700   -2.0340    0.6556 H         2 HIS2        0.3025 DICT
-     19 C7         -2.8195   -1.2130   -1.3869 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -3.1545   -0.5510   -2.0573 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          2.2666    0.9263   -3.1513 O.co2     2 HIS2       -0.5296 DICT
-     23 H11         1.3022    1.8325   -1.6747 H         2 HIS2       -0.0022 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   10 1    DICT
-    10    9   21 2    DICT
-    11   10   12 1    DICT
-    12   10   11 1    DICT
-    13   10   13 1    DICT
-    14   13   19 2    DICT
-    15   13   14 1    DICT
-    16   14   18 1    DICT
-    17   14   15 1    DICT
-    18   15   16 1    DICT
-    19   15   17 2    DICT
-    20   17   19 1    DICT
-    21   19   20 1    DICT
-    22   21   23 1    DICT
-    23   21   22 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-23   23    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7252   -1.6885   -2.9701 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-     10 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     11 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     12 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     13 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     14 N2         -0.1420   -3.1811   -0.6939 N.2       2 HIS2       -0.6545 DICT
-     15 C6         -1.2038   -3.9079   -0.4250 C.2       2 HIS2        0.3827 DICT
-     16 H8         -1.2681   -4.9855   -0.4786 H         2 HIS2        0.0607 DICT
-     17 N3         -2.2680   -3.1340   -0.0538 N.pl3     2 HIS2       -0.3181 DICT
-     18 H9         -3.2286   -3.6055    0.2011 H         2 HIS2        0.3025 DICT
-     19 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -2.5197   -1.0148    0.1665 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3205    1.9845   -1.6697 O.co2     2 HIS2       -0.5296 DICT
-     23 H11         2.1804    0.8502   -3.0501 H         2 HIS2       -0.0022 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   10 1    DICT
-    10    9   21 2    DICT
-    11   10   12 1    DICT
-    12   10   13 1    DICT
-    13   10   11 1    DICT
-    14   13   14 1    DICT
-    15   13   19 2    DICT
-    16   14   15 2    DICT
-    17   15   16 1    DICT
-    18   15   17 1    DICT
-    19   17   18 1    DICT
-    20   17   19 1    DICT
-    21   19   20 1    DICT
-    22   21   22 1    DICT
-    23   21   23 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-23   23    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7252   -1.6885   -2.9701 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-     10 C4         -0.6107    0.0963   -1.0067 C.3       2 HIS2       -0.0910 DICT
-     11 H6         -1.1550    1.0135   -1.2759 H         2 HIS2        0.0580 DICT
-     12 H7         -0.0398    0.2669   -0.0820 H         2 HIS2        0.0580 DICT
-     13 C5         -1.5946   -1.0276   -0.7904 C.2       2 HIS2        0.2737 DICT
-     14 N2         -1.3164   -2.0388    0.0949 N.2       2 HIS2       -0.6545 DICT
-     15 C6         -2.3633   -2.8316    0.0373 C.2       2 HIS2        0.3827 DICT
-     16 H8         -2.3987   -3.6551    0.6037 H         2 HIS2        0.0607 DICT
-     17 N3         -3.2995   -2.3728   -0.8471 N.pl3     2 HIS2       -0.3181 DICT
-     18 H9         -4.2320   -2.9354   -1.0020 H         2 HIS2        0.3025 DICT
-     19 C7         -2.8195   -1.2130   -1.3869 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -3.1542   -0.5513   -2.0578 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          2.2666    0.9263   -3.1513 O.co2     2 HIS2       -0.5296 DICT
-     23 H11         1.3022    1.8325   -1.6747 H         2 HIS2       -0.0022 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   10 1    DICT
-    10    9   21 2    DICT
-    11   10   12 1    DICT
-    12   10   13 1    DICT
-    13   10   11 1    DICT
-    14   13   14 1    DICT
-    15   13   19 2    DICT
-    16   14   15 2    DICT
-    17   15   16 1    DICT
-    18   15   17 1    DICT
-    19   17   18 1    DICT
-    20   17   19 1    DICT
-    21   19   20 1    DICT
-    22   21   23 1    DICT
-    23   21   22 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-23   23    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.2       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.am      2 HIS2       -0.5853 DICT
-      8 H4          1.7135   -1.7210   -3.0196 H         2 HIS2        0.3079 DICT
-      9 C3          0.3891   -0.1993   -2.1255 C.3       2 HIS2       -0.0048 DICT
-     10 H5         -0.6477    0.1055   -2.3308 H         2 HIS2        0.1215 DICT
-     11 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     12 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     13 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     14 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     15 N2         -0.1420   -3.1811   -0.6939 N.2       2 HIS2       -0.6545 DICT
-     16 C6         -1.2038   -3.9079   -0.4250 C.2       2 HIS2        0.3827 DICT
-     17 H8         -1.2681   -4.9855   -0.4786 H         2 HIS2        0.0607 DICT
-     18 N3         -2.2680   -3.1340   -0.0538 N.2       2 HIS2       -0.3181 DICT
-     19 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -2.5197   -1.0148    0.1665 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3205    1.9845   -1.6697 O.2       2 HIS2       -0.5296 DICT
-     23 H11         2.1582    0.7916   -3.0647 H         2 HIS2       -0.0022 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 2    
-     6    5    7 am   BACKBONE|DICT|INTERRES
-     7    7    8 1    DICT
-     8    7    9 1    DICT
-     9    9   11 1    DICT
-    10    9   21 1    DICT
-    11    9   10 1    DICT
-    12   11   13 1    DICT
-    13   11   14 1    DICT
+    12   11   14 1    DICT
+    13   11   13 1    DICT
     14   11   12 1    DICT
     15   14   15 1    DICT
     16   14   19 2    DICT
+    17   15   16 1    DICT
+    18   15   45 1    DICT
+    19   16   17 1    DICT
+    20   16   18 2    DICT
+    21   18   19 1    DICT
+    22   19   20 1    DICT
+    23   21   22 2    BACKBONE|DICT
+    24   21   23 am   BACKBONE|DICT|INTERRES
+    25   23   24 1    DICT
+    26   23   25 1    BACKBONE|DICT
+    27   25   26 1    DICT
+    28   25   37 1    BACKBONE|DICT
+    29   25   27 1    DICT
+    30   27   28 1    DICT
+    31   27   29 1    DICT
+    32   27   30 1    DICT
+    33   30   35 2    DICT
+    34   30   31 1    DICT
+    35   31   32 1    DICT
+    36   31   46 1    DICT
+    37   32   34 2    DICT
+    38   32   33 1    DICT
+    39   34   35 1    DICT
+    40   35   36 1    DICT
+    41   37   38 2    BACKBONE|DICT
+    42   37   39 am   BACKBONE|DICT|INTERRES
+    43   39   40 1    
+    44   39   41 1    
+    45   41   43 1    
+    46   41   42 1    
+    47   41   44 1    
+@<TRIPOS>SUBSTRUCTURE
+     1 ACE         1 GROUP             0       ****    0 ROOT    
+     2 HIS2        8 RESIDUE           1 A     HIS     1 ROOT    
+     3 HIS3       24 RESIDUE           1 A     HIS     1         
+     4 NME4       39 GROUP             0       ****    0 ROOT    
+@<TRIPOS>MOLECULE
+2-acetamido-3-(1~{H}-imidazol-4-yl)-~{N}-[1-(1~{H}-imidazol-4-ylmethyl)-2-(methylamino)-2-oxo-ethyl]propanamide
+46   47    4
+PROTEIN
+USER_CHARGES
+
+
+@<TRIPOS>DICT
+PROTEIN PROTEIN
+@<TRIPOS>ATOM
+      1 HH31        2.2108   -0.3185    0.7166 H         1 ACE         0.0640 
+      2 CH3         1.1512   -0.0260    0.7573 C.3       1 ACE        -0.1731 
+      3 HH32        0.6861   -0.4570    1.6561 H         1 ACE         0.0640 
+      4 HH33        0.6331   -0.3991   -0.1385 H         1 ACE         0.0640 
+      5 C           1.0475    1.4623    0.8084 C.2       1 ACE         0.6562 
+      6 O          -0.0576    1.9895    0.8580 O.2       1 ACE        -0.5801 
+      7 N           2.2668    2.1122    0.7917 N.am      2 HIS2       -0.5529 BACKBONE|DICT|DIRECT
+      8 H           3.1660    1.4804    0.7451 H         2 HIS2        0.3087 DICT
+      9 CA          2.3956    3.5471    0.8321 C.3       2 HIS2        0.0354 BACKBONE|DICT|DIRECT
+     10 HA          1.5707    3.9122    1.4616 H         2 HIS2        0.0955 DICT
+     11 CB          3.7169    3.9924    1.4694 C.3       2 HIS2       -0.1009 DICT
+     12 HB2         3.9486    3.3418    2.3256 H         2 HIS2        0.0696 DICT
+     13 HB3         4.5247    3.9218    0.7261 H         2 HIS2        0.0696 DICT
+     14 CG          3.6731    5.4156    1.9697 C.2       2 HIS2        0.2849 DICT
+     15 ND1         4.0317    6.4557    1.1492 N.pl3     2 HIS2       -0.6560 DICT
+     16 CE1         3.8805    7.5324    1.8880 C.2       2 HIS2        0.3944 DICT
+     17 HE1         4.0690    8.5501    1.5765 H         2 HIS2        0.0633 DICT
+     18 NE2         3.4415    7.2272    3.1463 N.2       2 HIS2       -0.3174 DICT
+     19 HE2         3.2699    8.0298    3.8787 H         2 HIS2        0.3029 DICT
+     20 CD2         3.3031    5.8694    3.2137 C.2       2 HIS2       -0.2495 DICT
+     21 HD2         2.9660    5.3709    4.1112 H         2 HIS2        0.1793 DICT
+     22 C           2.3031    4.0498   -0.6042 C.2       2 HIS2        0.6607 BACKBONE|DICT|DIRECT
+     23 O           2.7541    3.4252   -1.5621 O.2       2 HIS2       -0.6307 BACKBONE|DICT|DIRECT
+     24 N           1.6143    5.2516   -0.6908 N.am      3 HIS3       -0.5367 BACKBONE|DICT|DIRECT
+     25 H           1.2704    5.6933    0.2561 H         3 HIS3        0.3338 DICT
+     26 CA          1.3417    5.9218   -1.9420 C.3       3 HIS3        0.0557 BACKBONE|DICT|DIRECT
+     27 HA          2.1264    5.6074   -2.6459 H         3 HIS3        0.0932 DICT
+     28 CB         -0.0133    5.5156   -2.5289 C.3       3 HIS3       -0.1135 DICT
+     29 HB2        -0.7579    5.4510   -1.7218 H         3 HIS3        0.0678 DICT
+     30 HB3        -0.3345    6.2675   -3.2647 H         3 HIS3        0.0678 DICT
+     31 CG          0.0286    4.1774   -3.2256 C.2       3 HIS3        0.3012 DICT
+     32 ND1        -0.2306    3.0211   -2.5332 N.pl3     3 HIS3       -0.6396 DICT
+     33 CE1        -0.1104    2.0629   -3.4250 C.2       3 HIS3        0.3886 DICT
+     34 HE1        -0.2445    1.0055   -3.2456 H         3 HIS3        0.0556 DICT
+     35 NE2         0.2155    2.5550   -4.6583 N.2       3 HIS3       -0.3184 DICT
+     36 CD2         0.3079    3.9137   -4.5458 C.2       3 HIS3       -0.2566 DICT
+     37 HD2         0.5560    4.5435   -5.3880 H         3 HIS3        0.1735 DICT
+     38 C           1.3735    7.4192   -1.6639 C.2       3 HIS3        0.6459 BACKBONE|DICT|DIRECT
+     39 O           0.9781    7.9151   -0.6110 O.2       3 HIS3       -0.6173 BACKBONE|DICT|DIRECT
+     40 N           1.9437    8.1274   -2.7126 N.am      4 NME4       -0.5707 
+     41 H           2.2500    7.5446   -3.5938 H         4 NME4        0.3121 
+     42 CH3         2.1428    9.5587   -2.6880 C.3       4 NME4        0.0787 
+     43 HH31        2.6092    9.8803   -3.6309 H         4 NME4        0.0430 
+     44 HH32        2.7988    9.8232   -1.8455 H         4 NME4        0.0430 
+     45 HH33        1.1719   10.0619   -2.5688 H         4 NME4        0.0430 
+     46 H46        -0.4719    3.0645   -1.4609 H         3 HIS3        0.0000 DICT
+@<TRIPOS>BOND
+     1    1    2 1    
+     2    2    4 1    
+     3    2    5 1    
+     4    2    3 1    
+     5    5    6 2    
+     6    5    7 am   BACKBONE|DICT|INTERRES
+     7    7    8 1    DICT
+     8    7    9 1    BACKBONE|DICT
+     9    9   11 1    DICT
+    10    9   22 1    BACKBONE|DICT
+    11    9   10 1    DICT
+    12   11   14 1    DICT
+    13   11   13 1    DICT
+    14   11   12 1    DICT
+    15   14   15 1    DICT
+    16   14   20 2    DICT
     17   15   16 2    DICT
     18   16   17 1    DICT
     19   16   18 1    DICT
     20   18   19 1    DICT
-    21   19   20 1    DICT
-    22   21   22 2    DICT
-    23   21   23 1    DICT
+    21   18   20 1    DICT
+    22   20   21 1    DICT
+    23   22   23 2    BACKBONE|DICT
+    24   22   24 am   BACKBONE|DICT|INTERRES
+    25   24   25 1    DICT
+    26   24   26 1    BACKBONE|DICT
+    27   26   27 1    DICT
+    28   26   38 1    BACKBONE|DICT
+    29   26   28 1    DICT
+    30   28   29 1    DICT
+    31   28   30 1    DICT
+    32   28   31 1    DICT
+    33   31   36 2    DICT
+    34   31   32 1    DICT
+    35   32   33 1    DICT
+    36   32   46 1    DICT
+    37   33   35 2    DICT
+    38   33   34 1    DICT
+    39   35   36 1    DICT
+    40   36   37 1    DICT
+    41   38   39 2    BACKBONE|DICT
+    42   38   40 am   BACKBONE|DICT|INTERRES
+    43   40   41 1    
+    44   40   42 1    
+    45   42   44 1    
+    46   42   43 1    
+    47   42   45 1    
 @<TRIPOS>SUBSTRUCTURE
      1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
+     2 HIS2        8 RESIDUE           1 A     HIS     1 ROOT    
+     3 HIS3       25 RESIDUE           1 A     HIS     1         
+     4 NME4       40 GROUP             0       ****    0 ROOT    
 @<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-23   23    3
+2-acetamido-3-(1~{H}-imidazol-4-yl)-~{N}-[1-(1~{H}-imidazol-4-ylmethyl)-2-(methylamino)-2-oxo-ethyl]propanamide
+46   47    4
 PROTEIN
 USER_CHARGES
 
@@ -1560,247 +226,328 @@ USER_CHARGES
 @<TRIPOS>DICT
 PROTEIN PROTEIN
 @<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.3       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-      9 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     10 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     11 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     12 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     13 N2         -0.1417   -3.1812   -0.6929 N.pl3     2 HIS2       -0.6545 DICT
-     14 C6         -1.2033   -3.9080   -0.4234 C.2       2 HIS2        0.3827 DICT
-     15 H8         -1.2975   -4.9029   -0.4609 H         2 HIS2        0.0607 DICT
-     16 N3         -2.2680   -3.1340   -0.0538 N.2       2 HIS2       -0.3181 DICT
-     17 H9          0.8882   -3.3926   -1.0162 H         2 HIS2        0.3025 DICT
-     18 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     19 H10        -2.2873   -0.9476    0.1021 H         2 HIS2        0.1888 DICT
-     20 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     21 O2          1.3205    1.9845   -1.6697 O.co2     2 HIS2       -0.5296 DICT
-     22 H11         2.1804    0.8502   -3.0501 H         2 HIS2       -0.0022 DICT
-     23 H23        -1.6008   -0.3040   -3.7655 H         3 ACE1        0.0000 
+      1 HH31        2.2108   -0.3185    0.7166 H         1 ACE         0.0640 
+      2 CH3         1.1512   -0.0260    0.7573 C.3       1 ACE        -0.1731 
+      3 HH32        0.6861   -0.4570    1.6561 H         1 ACE         0.0640 
+      4 HH33        0.6331   -0.3991   -0.1385 H         1 ACE         0.0640 
+      5 C           1.0475    1.4623    0.8084 C.2       1 ACE         0.6562 
+      6 O          -0.0576    1.9895    0.8580 O.2       1 ACE        -0.5801 
+      7 N           2.2668    2.1122    0.7917 N.am      2 HIS2       -0.5529 BACKBONE|DICT|DIRECT
+      8 H           3.1660    1.4804    0.7451 H         2 HIS2        0.3087 DICT
+      9 CA          2.3956    3.5471    0.8321 C.3       2 HIS2        0.0354 BACKBONE|DICT|DIRECT
+     10 HA          1.5707    3.9122    1.4616 H         2 HIS2        0.0955 DICT
+     11 CB          3.7169    3.9924    1.4694 C.3       2 HIS2       -0.1009 DICT
+     12 HB2         3.9486    3.3418    2.3256 H         2 HIS2        0.0696 DICT
+     13 HB3         4.5247    3.9218    0.7261 H         2 HIS2        0.0696 DICT
+     14 CG          3.6731    5.4156    1.9697 C.2       2 HIS2        0.2849 DICT
+     15 ND1         4.0317    6.4557    1.1492 N.pl3     2 HIS2       -0.6560 DICT
+     16 CE1         3.8805    7.5324    1.8880 C.2       2 HIS2        0.3944 DICT
+     17 HE1         4.0690    8.5501    1.5765 H         2 HIS2        0.0633 DICT
+     18 NE2         3.4415    7.2272    3.1463 N.2       2 HIS2       -0.3174 DICT
+     19 CD2         3.3031    5.8694    3.2137 C.2       2 HIS2       -0.2495 DICT
+     20 HD2         2.9660    5.3709    4.1112 H         2 HIS2        0.1793 DICT
+     21 C           2.3031    4.0498   -0.6042 C.2       2 HIS2        0.6607 BACKBONE|DICT|DIRECT
+     22 O           2.7541    3.4252   -1.5621 O.2       2 HIS2       -0.6307 BACKBONE|DICT|DIRECT
+     23 N           1.6143    5.2516   -0.6908 N.am      3 HIS3       -0.5367 BACKBONE|DICT|DIRECT
+     24 H           1.2704    5.6933    0.2561 H         3 HIS3        0.3338 DICT
+     25 CA          1.3417    5.9218   -1.9420 C.3       3 HIS3        0.0557 BACKBONE|DICT|DIRECT
+     26 HA          2.1264    5.6074   -2.6459 H         3 HIS3        0.0932 DICT
+     27 CB         -0.0133    5.5156   -2.5289 C.3       3 HIS3       -0.1135 DICT
+     28 HB2        -0.7579    5.4510   -1.7218 H         3 HIS3        0.0678 DICT
+     29 HB3        -0.3345    6.2675   -3.2647 H         3 HIS3        0.0678 DICT
+     30 CG          0.0286    4.1774   -3.2256 C.2       3 HIS3        0.3012 DICT
+     31 ND1        -0.2306    3.0211   -2.5332 N.pl3     3 HIS3       -0.6396 DICT
+     32 CE1        -0.1104    2.0629   -3.4250 C.2       3 HIS3        0.3886 DICT
+     33 HE1        -0.2445    1.0055   -3.2456 H         3 HIS3        0.0556 DICT
+     34 NE2         0.2155    2.5550   -4.6583 N.2       3 HIS3       -0.3184 DICT
+     35 HE2         0.3504    1.8678   -5.5066 H         3 HIS3        0.2982 DICT
+     36 CD2         0.3079    3.9137   -4.5458 C.2       3 HIS3       -0.2566 DICT
+     37 HD2         0.5560    4.5435   -5.3880 H         3 HIS3        0.1735 DICT
+     38 C           1.3735    7.4192   -1.6639 C.2       3 HIS3        0.6459 BACKBONE|DICT|DIRECT
+     39 O           0.9781    7.9151   -0.6110 O.2       3 HIS3       -0.6173 BACKBONE|DICT|DIRECT
+     40 N           1.9437    8.1274   -2.7126 N.am      4 NME4       -0.5707 
+     41 H           2.2500    7.5446   -3.5938 H         4 NME4        0.3121 
+     42 CH3         2.1428    9.5587   -2.6880 C.3       4 NME4        0.0787 
+     43 HH31        2.6092    9.8803   -3.6309 H         4 NME4        0.0430 
+     44 HH32        2.7988    9.8232   -1.8455 H         4 NME4        0.0430 
+     45 HH33        1.1719   10.0619   -2.5688 H         4 NME4        0.0430 
+     46 H46         4.3543    6.2558    0.1167 H         2 HIS2        0.0000 DICT
 @<TRIPOS>BOND
      1    1    2 1    
      2    2    4 1    
      3    2    5 1    
      4    2    3 1    
-     5    5    6 1    
-     6    5    7 2    DICT
-     7    6   23 1    
-     8    7    8 1    DICT
-     9    8    9 1    DICT
-    10    8   20 2    DICT
-    11    9   11 1    DICT
-    12    9   10 1    DICT
-    13    9   12 1    DICT
-    14   12   18 2    DICT
-    15   12   13 1    DICT
-    16   13   17 1    DICT
-    17   13   14 1    DICT
-    18   14   15 1    DICT
-    19   14   16 2    DICT
+     5    5    6 2    
+     6    5    7 am   BACKBONE|DICT|INTERRES
+     7    7    8 1    DICT
+     8    7    9 1    BACKBONE|DICT
+     9    9   11 1    DICT
+    10    9   21 1    BACKBONE|DICT
+    11    9   10 1    DICT
+    12   11   14 1    DICT
+    13   11   13 1    DICT
+    14   11   12 1    DICT
+    15   14   15 1    DICT
+    16   14   19 2    DICT
+    17   15   16 1    DICT
+    18   15   46 1    DICT
+    19   16   17 1    DICT
+    20   16   18 2    DICT
+    21   18   19 1    DICT
+    22   19   20 1    DICT
+    23   21   22 2    BACKBONE|DICT
+    24   21   23 am   BACKBONE|DICT|INTERRES
+    25   23   24 1    DICT
+    26   23   25 1    BACKBONE|DICT
+    27   25   26 1    DICT
+    28   25   38 1    BACKBONE|DICT
+    29   25   27 1    DICT
+    30   27   28 1    DICT
+    31   27   29 1    DICT
+    32   27   30 1    DICT
+    33   30   36 2    DICT
+    34   30   31 1    DICT
+    35   31   32 2    DICT
+    36   32   34 1    DICT
+    37   32   33 1    DICT
+    38   34   36 1    DICT
+    39   34   35 1    DICT
+    40   36   37 1    DICT
+    41   38   39 2    BACKBONE|DICT
+    42   38   40 am   BACKBONE|DICT|INTERRES
+    43   40   41 1    
+    44   40   42 1    
+    45   42   44 1    
+    46   42   43 1    
+    47   42   45 1    
+@<TRIPOS>SUBSTRUCTURE
+     1 ACE         1 GROUP             0       ****    0 ROOT    
+     2 HIS2        8 RESIDUE           1 A     HIS     1 ROOT    
+     3 HIS3       24 RESIDUE           1 A     HIS     1         
+     4 NME4       40 GROUP             0       ****    0 ROOT    
+@<TRIPOS>MOLECULE
+2-acetamido-3-(1~{H}-imidazol-4-yl)-~{N}-[1-(1~{H}-imidazol-4-ylmethyl)-2-(methylamino)-2-oxo-ethyl]propanamide
+46   47    4
+PROTEIN
+USER_CHARGES
+
+
+@<TRIPOS>DICT
+PROTEIN PROTEIN
+@<TRIPOS>ATOM
+      1 HH31        2.2108   -0.3185    0.7166 H         1 ACE         0.0640 
+      2 CH3         1.1512   -0.0260    0.7573 C.3       1 ACE        -0.1731 
+      3 HH32        0.6861   -0.4570    1.6561 H         1 ACE         0.0640 
+      4 HH33        0.6331   -0.3991   -0.1385 H         1 ACE         0.0640 
+      5 C           1.0475    1.4623    0.8084 C.2       1 ACE         0.6562 
+      6 O          -0.0576    1.9895    0.8580 O.2       1 ACE        -0.5801 
+      7 N           2.2668    2.1122    0.7917 N.am      2 HIS2       -0.5529 BACKBONE|DICT|DIRECT
+      8 H           3.1660    1.4804    0.7451 H         2 HIS2        0.3087 DICT
+      9 CA          2.3956    3.5471    0.8321 C.3       2 HIS2        0.0354 BACKBONE|DICT|DIRECT
+     10 HA          1.5707    3.9122    1.4616 H         2 HIS2        0.0955 DICT
+     11 CB          3.7169    3.9924    1.4694 C.3       2 HIS2       -0.1009 DICT
+     12 HB2         3.9486    3.3418    2.3256 H         2 HIS2        0.0696 DICT
+     13 HB3         4.5247    3.9218    0.7261 H         2 HIS2        0.0696 DICT
+     14 CG          3.6731    5.4156    1.9697 C.2       2 HIS2        0.2849 DICT
+     15 ND1         4.0317    6.4557    1.1492 N.pl3     2 HIS2       -0.6560 DICT
+     16 CE1         3.8805    7.5324    1.8880 C.2       2 HIS2        0.3944 DICT
+     17 HE1         4.0690    8.5501    1.5765 H         2 HIS2        0.0633 DICT
+     18 NE2         3.4415    7.2272    3.1463 N.2       2 HIS2       -0.3174 DICT
+     19 HE2         3.2699    8.0298    3.8787 H         2 HIS2        0.3029 DICT
+     20 CD2         3.3031    5.8694    3.2137 C.2       2 HIS2       -0.2495 DICT
+     21 HD2         2.9660    5.3709    4.1112 H         2 HIS2        0.1793 DICT
+     22 C           2.3031    4.0498   -0.6042 C.2       2 HIS2        0.6607 BACKBONE|DICT|DIRECT
+     23 O           2.7541    3.4252   -1.5621 O.2       2 HIS2       -0.6307 BACKBONE|DICT|DIRECT
+     24 N           1.6143    5.2516   -0.6908 N.am      3 HIS3       -0.5367 BACKBONE|DICT|DIRECT
+     25 H           1.2704    5.6933    0.2561 H         3 HIS3        0.3338 DICT
+     26 CA          1.3417    5.9218   -1.9420 C.3       3 HIS3        0.0557 BACKBONE|DICT|DIRECT
+     27 HA          2.1264    5.6074   -2.6459 H         3 HIS3        0.0932 DICT
+     28 CB         -0.0133    5.5156   -2.5289 C.3       3 HIS3       -0.1135 DICT
+     29 HB2        -0.7579    5.4510   -1.7218 H         3 HIS3        0.0678 DICT
+     30 HB3        -0.3345    6.2675   -3.2647 H         3 HIS3        0.0678 DICT
+     31 CG          0.0286    4.1774   -3.2256 C.2       3 HIS3        0.3012 DICT
+     32 ND1        -0.2306    3.0211   -2.5332 N.pl3     3 HIS3       -0.6396 DICT
+     33 CE1        -0.1104    2.0629   -3.4250 C.2       3 HIS3        0.3886 DICT
+     34 HE1        -0.2445    1.0055   -3.2456 H         3 HIS3        0.0556 DICT
+     35 NE2         0.2155    2.5550   -4.6583 N.2       3 HIS3       -0.3184 DICT
+     36 HE2         0.3504    1.8678   -5.5066 H         3 HIS3        0.2982 DICT
+     37 CD2         0.3079    3.9137   -4.5458 C.2       3 HIS3       -0.2566 DICT
+     38 HD2         0.5560    4.5435   -5.3880 H         3 HIS3        0.1735 DICT
+     39 C           1.3735    7.4192   -1.6639 C.2       3 HIS3        0.6459 BACKBONE|DICT|DIRECT
+     40 O           0.9781    7.9151   -0.6110 O.2       3 HIS3       -0.6173 BACKBONE|DICT|DIRECT
+     41 N           1.9437    8.1274   -2.7126 N.am      4 NME4       -0.5707 
+     42 H           2.2500    7.5446   -3.5938 H         4 NME4        0.3121 
+     43 CH3         2.1428    9.5587   -2.6880 C.3       4 NME4        0.0787 
+     44 HH31        2.6092    9.8803   -3.6309 H         4 NME4        0.0430 
+     45 HH32        2.7988    9.8232   -1.8455 H         4 NME4        0.0430 
+     46 HH33        1.1719   10.0619   -2.5688 H         4 NME4        0.0430 
+@<TRIPOS>BOND
+     1    1    2 1    
+     2    2    4 1    
+     3    2    5 1    
+     4    2    3 1    
+     5    5    6 2    
+     6    5    7 am   BACKBONE|DICT|INTERRES
+     7    7    8 1    DICT
+     8    7    9 1    BACKBONE|DICT
+     9    9   11 1    DICT
+    10    9   22 1    BACKBONE|DICT
+    11    9   10 1    DICT
+    12   11   14 1    DICT
+    13   11   13 1    DICT
+    14   11   12 1    DICT
+    15   14   15 1    DICT
+    16   14   20 2    DICT
+    17   15   16 2    DICT
+    18   16   17 1    DICT
+    19   16   18 1    DICT
+    20   18   19 1    DICT
+    21   18   20 1    DICT
+    22   20   21 1    DICT
+    23   22   23 2    BACKBONE|DICT
+    24   22   24 am   BACKBONE|DICT|INTERRES
+    25   24   25 1    DICT
+    26   24   26 1    BACKBONE|DICT
+    27   26   27 1    DICT
+    28   26   39 1    BACKBONE|DICT
+    29   26   28 1    DICT
+    30   28   29 1    DICT
+    31   28   30 1    DICT
+    32   28   31 1    DICT
+    33   31   37 2    DICT
+    34   31   32 1    DICT
+    35   32   33 2    DICT
+    36   33   35 1    DICT
+    37   33   34 1    DICT
+    38   35   37 1    DICT
+    39   35   36 1    DICT
+    40   37   38 1    DICT
+    41   39   40 2    BACKBONE|DICT
+    42   39   41 am   BACKBONE|DICT|INTERRES
+    43   41   42 1    
+    44   41   43 1    
+    45   43   45 1    
+    46   43   44 1    
+    47   43   46 1    
+@<TRIPOS>SUBSTRUCTURE
+     1 ACE         1 GROUP             0       ****    0 ROOT    
+     2 HIS2        8 RESIDUE           1 A     HIS     1 ROOT    
+     3 HIS3       25 RESIDUE           1 A     HIS     1         
+     4 NME4       41 GROUP             0       ****    0 ROOT    
+@<TRIPOS>MOLECULE
+2-acetamido-3-(1~{H}-imidazol-4-yl)-~{N}-[1-(1~{H}-imidazol-4-ylmethyl)-2-(methylamino)-2-oxo-ethyl]propanamide
+47   48    4
+PROTEIN
+USER_CHARGES
+
+
+@<TRIPOS>DICT
+PROTEIN PROTEIN
+@<TRIPOS>ATOM
+      1 HH31        2.2108   -0.3185    0.7166 H         1 ACE         0.0640 
+      2 CH3         1.1512   -0.0260    0.7573 C.3       1 ACE        -0.1731 
+      3 HH32        0.6861   -0.4570    1.6561 H         1 ACE         0.0640 
+      4 HH33        0.6331   -0.3991   -0.1385 H         1 ACE         0.0640 
+      5 C           1.0475    1.4623    0.8084 C.2       1 ACE         0.6562 
+      6 O          -0.0576    1.9895    0.8580 O.2       1 ACE        -0.5801 
+      7 N           2.2668    2.1122    0.7917 N.am      2 HIS2       -0.5529 BACKBONE|DICT|DIRECT
+      8 H           3.1660    1.4804    0.7451 H         2 HIS2        0.3087 DICT
+      9 CA          2.3956    3.5471    0.8321 C.3       2 HIS2        0.0354 BACKBONE|DICT|DIRECT
+     10 HA          1.5707    3.9122    1.4616 H         2 HIS2        0.0955 DICT
+     11 CB          3.7169    3.9924    1.4694 C.3       2 HIS2       -0.1009 DICT
+     12 HB2         3.9486    3.3418    2.3256 H         2 HIS2        0.0696 DICT
+     13 HB3         4.5247    3.9218    0.7261 H         2 HIS2        0.0696 DICT
+     14 CG          3.6731    5.4156    1.9697 C.2       2 HIS2        0.2849 DICT
+     15 ND1         4.0317    6.4557    1.1492 N.pl3     2 HIS2       -0.6560 DICT
+     16 CE1         3.8805    7.5324    1.8880 C.2       2 HIS2        0.3944 DICT
+     17 HE1         4.0690    8.5501    1.5765 H         2 HIS2        0.0633 DICT
+     18 NE2         3.4415    7.2272    3.1463 N.2       2 HIS2       -0.3174 DICT
+     19 HE2         3.2699    8.0298    3.8787 H         2 HIS2        0.3029 DICT
+     20 CD2         3.3031    5.8694    3.2137 C.2       2 HIS2       -0.2495 DICT
+     21 HD2         2.9660    5.3709    4.1112 H         2 HIS2        0.1793 DICT
+     22 C           2.3031    4.0498   -0.6042 C.2       2 HIS2        0.6607 BACKBONE|DICT|DIRECT
+     23 O           2.7541    3.4252   -1.5621 O.2       2 HIS2       -0.6307 BACKBONE|DICT|DIRECT
+     24 N           1.6143    5.2516   -0.6908 N.am      3 HIS3       -0.5367 BACKBONE|DICT|DIRECT
+     25 H           1.2704    5.6933    0.2561 H         3 HIS3        0.3338 DICT
+     26 CA          1.3417    5.9218   -1.9420 C.3       3 HIS3        0.0557 BACKBONE|DICT|DIRECT
+     27 HA          2.1264    5.6074   -2.6459 H         3 HIS3        0.0932 DICT
+     28 CB         -0.0133    5.5156   -2.5289 C.3       3 HIS3       -0.1135 DICT
+     29 HB2        -0.7579    5.4510   -1.7218 H         3 HIS3        0.0678 DICT
+     30 HB3        -0.3345    6.2675   -3.2647 H         3 HIS3        0.0678 DICT
+     31 CG          0.0286    4.1774   -3.2256 C.2       3 HIS3        0.3012 DICT
+     32 ND1        -0.2306    3.0211   -2.5332 N.pl3     3 HIS3       -0.6396 DICT
+     33 CE1        -0.1104    2.0629   -3.4250 C.2       3 HIS3        0.3886 DICT
+     34 HE1        -0.2445    1.0055   -3.2456 H         3 HIS3        0.0556 DICT
+     35 NE2         0.2155    2.5550   -4.6583 N.2       3 HIS3       -0.3184 DICT
+     36 CD2         0.3079    3.9137   -4.5458 C.2       3 HIS3       -0.2566 DICT
+     37 HD2         0.5560    4.5435   -5.3880 H         3 HIS3        0.1735 DICT
+     38 C           1.3735    7.4192   -1.6639 C.2       3 HIS3        0.6459 BACKBONE|DICT|DIRECT
+     39 O           0.9781    7.9151   -0.6110 O.2       3 HIS3       -0.6173 BACKBONE|DICT|DIRECT
+     40 N           1.9437    8.1274   -2.7126 N.am      4 NME4       -0.5707 
+     41 H           2.2500    7.5446   -3.5938 H         4 NME4        0.3121 
+     42 CH3         2.1428    9.5587   -2.6880 C.3       4 NME4        0.0787 
+     43 HH31        2.6092    9.8803   -3.6309 H         4 NME4        0.0430 
+     44 HH32        2.7988    9.8232   -1.8455 H         4 NME4        0.0430 
+     45 HH33        1.1719   10.0619   -2.5688 H         4 NME4        0.0430 
+     46 H46        -0.4719    3.0645   -1.4609 H         3 HIS3        0.0000 DICT
+     47 H47         4.3543    6.2558    0.1167 H         2 HIS2        0.0000 DICT
+@<TRIPOS>BOND
+     1    1    2 1    
+     2    2    4 1    
+     3    2    5 1    
+     4    2    3 1    
+     5    5    6 2    
+     6    5    7 am   BACKBONE|DICT|INTERRES
+     7    7    8 1    DICT
+     8    7    9 1    BACKBONE|DICT
+     9    9   11 1    DICT
+    10    9   22 1    BACKBONE|DICT
+    11    9   10 1    DICT
+    12   11   14 1    DICT
+    13   11   13 1    DICT
+    14   11   12 1    DICT
+    15   14   15 1    DICT
+    16   14   20 2    DICT
+    17   15   16 2    DICT
+    18   15   47 1    DICT
+    19   16   17 1    DICT
     20   16   18 1    DICT
     21   18   19 1    DICT
-    22   20   21 1    DICT
-    23   20   22 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-     3 ACE1       23 GROUP             0       ****    0 ROOT    
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.co2     1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-      9 H5          2.0916    2.7564   -1.8177 H         2 HIS2        0.1215 DICT
-     10 C4         -0.6107    0.0963   -1.0067 C.3       2 HIS2       -0.0910 DICT
-     11 H6         -1.1550    1.0135   -1.2759 H         2 HIS2        0.0580 DICT
-     12 H7         -0.0398    0.2669   -0.0820 H         2 HIS2        0.0580 DICT
-     13 C5         -1.5946   -1.0276   -0.7904 C.cat     2 HIS2        0.2737 DICT
-     14 N2         -1.3164   -2.0388    0.0949 N.pl3     2 HIS2       -0.6545 DICT
-     15 C6         -2.3633   -2.8316    0.0373 C.cat     2 HIS2        0.3827 DICT
-     16 H8         -2.3987   -3.6551    0.6037 H         2 HIS2        0.0607 DICT
-     17 N3         -3.2995   -2.3728   -0.8471 N.pl3     2 HIS2       -0.3181 DICT
-     18 H9         -4.2320   -2.9354   -1.0020 H         2 HIS2        0.3025 DICT
-     19 C7         -2.8195   -1.2130   -1.3869 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -3.1542   -0.5513   -2.0578 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          1.3507    1.9640   -1.6358 O.3       2 HIS2       -0.5296 DICT
-     23 H11         2.1524    0.8693   -3.0816 H         2 HIS2       -0.0022 DICT
-     24 H24        -0.3695   -2.0346    0.6547 H         2 HIS2        0.0000 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 1    
-     6    5    7 2    DICT
-     7    7    8 1    DICT
-     8    8   10 1    DICT
-     9    8   21 2    DICT
-    10    9   22 1    DICT
-    11   10   12 1    DICT
-    12   10   13 1    DICT
-    13   10   11 1    DICT
-    14   13   14 ar   DICT
-    15   13   19 2    DICT
-    16   14   15 ar   DICT
-    17   14   24 1    DICT
-    18   15   16 1    DICT
-    19   15   17 ar   DICT
-    20   17   18 1    DICT
-    21   17   19 1    DICT
-    22   19   20 1    DICT
-    23   21   23 1    DICT
-    24   21   22 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.co2     1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-      9 H5          2.9501    1.7839   -3.2382 H         2 HIS2        0.1215 DICT
-     10 C4         -0.6107    0.0963   -1.0067 C.3       2 HIS2       -0.0910 DICT
-     11 H6         -1.1550    1.0135   -1.2759 H         2 HIS2        0.0580 DICT
-     12 H7         -0.0398    0.2669   -0.0820 H         2 HIS2        0.0580 DICT
-     13 C5         -1.5946   -1.0276   -0.7904 C.cat     2 HIS2        0.2737 DICT
-     14 N2         -1.3164   -2.0388    0.0949 N.pl3     2 HIS2       -0.6545 DICT
-     15 C6         -2.3633   -2.8316    0.0373 C.cat     2 HIS2        0.3827 DICT
-     16 H8         -2.3987   -3.6551    0.6037 H         2 HIS2        0.0607 DICT
-     17 N3         -3.2995   -2.3728   -0.8471 N.pl3     2 HIS2       -0.3181 DICT
-     18 H9         -4.2320   -2.9354   -1.0020 H         2 HIS2        0.3025 DICT
-     19 C7         -2.8195   -1.2130   -1.3869 C.2       2 HIS2       -0.2159 DICT
-     20 H10        -3.1542   -0.5513   -2.0578 H         2 HIS2        0.1888 DICT
-     21 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     22 O2          2.2666    0.9263   -3.1513 O.3       2 HIS2       -0.5296 DICT
-     23 H11         1.3022    1.8325   -1.6747 H         2 HIS2       -0.0022 DICT
-     24 H24        -0.3695   -2.0346    0.6547 H         2 HIS2        0.0000 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 1    
-     6    5    7 2    DICT
-     7    7    8 1    DICT
-     8    8   10 1    DICT
-     9    8   21 2    DICT
-    10    9   22 1    DICT
-    11   10   12 1    DICT
-    12   10   13 1    DICT
-    13   10   11 1    DICT
-    14   13   14 ar   DICT
-    15   13   19 2    DICT
-    16   14   15 ar   DICT
-    17   14   24 1    DICT
-    18   15   16 1    DICT
-    19   15   17 ar   DICT
-    20   17   18 1    DICT
-    21   17   19 1    DICT
-    22   19   20 1    DICT
-    23   21   23 1    DICT
-    24   21   22 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-24   24    3
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.3       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-      9 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     10 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     11 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     12 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     13 N2         -0.1417   -3.1812   -0.6929 N.pl3     2 HIS2       -0.6545 DICT
-     14 C6         -1.2033   -3.9080   -0.4234 C.cat     2 HIS2        0.3827 DICT
-     15 H8         -1.2975   -4.9029   -0.4609 H         2 HIS2        0.0607 DICT
-     16 N3         -2.2680   -3.1340   -0.0538 N.pl3     2 HIS2       -0.3181 DICT
-     17 H9          0.8882   -3.3926   -1.0162 H         2 HIS2        0.3025 DICT
-     18 C7         -1.8583   -1.8309   -0.0871 C.cat     2 HIS2       -0.2159 DICT
-     19 H10        -2.2873   -0.9476    0.1021 H         2 HIS2        0.1888 DICT
-     20 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     21 O2          1.3205    1.9845   -1.6697 O.co2     2 HIS2       -0.5296 DICT
-     22 H11         2.1804    0.8502   -3.0501 H         2 HIS2       -0.0022 DICT
-     23 H23        -1.6008   -0.3040   -3.7655 H         3 ACE1        0.0000 
-     24 H24        -3.2289   -3.6054    0.2001 H         2 HIS2        0.0000 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 1    
-     6    5    7 2    DICT
-     7    6   23 1    
-     8    7    8 1    DICT
-     9    8    9 1    DICT
-    10    8   20 2    DICT
-    11    9   11 1    DICT
-    12    9   10 1    DICT
-    13    9   12 1    DICT
-    14   12   18 2    DICT
-    15   12   13 1    DICT
-    16   13   17 1    DICT
-    17   13   14 ar   DICT
-    18   14   15 1    DICT
-    19   14   16 ar   DICT
-    20   16   18 ar   DICT
-    21   16   24 1    DICT
-    22   18   19 1    DICT
+    22   18   20 1    DICT
     23   20   21 1    DICT
-    24   20   22 1    DICT
+    24   22   23 2    BACKBONE|DICT
+    25   22   24 am   BACKBONE|DICT|INTERRES
+    26   24   25 1    DICT
+    27   24   26 1    BACKBONE|DICT
+    28   26   27 1    DICT
+    29   26   38 1    BACKBONE|DICT
+    30   26   28 1    DICT
+    31   28   29 1    DICT
+    32   28   30 1    DICT
+    33   28   31 1    DICT
+    34   31   36 2    DICT
+    35   31   32 1    DICT
+    36   32   33 1    DICT
+    37   32   46 1    DICT
+    38   33   35 2    DICT
+    39   33   34 1    DICT
+    40   35   36 1    DICT
+    41   36   37 1    DICT
+    42   38   39 2    BACKBONE|DICT
+    43   38   40 am   BACKBONE|DICT|INTERRES
+    44   40   41 1    
+    45   40   42 1    
+    46   42   44 1    
+    47   42   43 1    
+    48   42   45 1    
 @<TRIPOS>SUBSTRUCTURE
      1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-     3 ACE1       23 GROUP             0       ****    0 ROOT    
+     2 HIS2        8 RESIDUE           1 A     HIS     1 ROOT    
+     3 HIS3       25 RESIDUE           1 A     HIS     1         
+     4 NME4       40 GROUP             0       ****    0 ROOT    
 @<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-23   23    3
+2-acetamido-3-(1~{H}-imidazol-4-yl)-~{N}-[1-(1~{H}-imidazol-4-ylmethyl)-2-(methylamino)-2-oxo-ethyl]propanamide
+47   48    4
 PROTEIN
 USER_CHARGES
 
@@ -1808,114 +555,439 @@ USER_CHARGES
 @<TRIPOS>DICT
 PROTEIN PROTEIN
 @<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.3       1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-      9 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     10 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     11 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     12 C5         -0.5433   -1.8853   -0.4849 C.2       2 HIS2        0.2737 DICT
-     13 N2         -0.1420   -3.1811   -0.6939 N.2       2 HIS2       -0.6545 DICT
-     14 C6         -1.2038   -3.9079   -0.4250 C.2       2 HIS2        0.3827 DICT
-     15 H8         -1.1614   -4.9038   -0.5050 H         2 HIS2        0.0607 DICT
-     16 N3         -2.2680   -3.1340   -0.0538 N.pl3     2 HIS2       -0.3181 DICT
-     17 H9         -3.2286   -3.6055    0.2011 H         2 HIS2        0.3025 DICT
-     18 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     19 H10        -2.2875   -0.9476    0.1015 H         2 HIS2        0.1888 DICT
-     20 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     21 O2          1.3205    1.9845   -1.6697 O.co2     2 HIS2       -0.5296 DICT
-     22 H11         2.1804    0.8502   -3.0501 H         2 HIS2       -0.0022 DICT
-     23 H23        -1.6008   -0.3040   -3.7655 H         3 ACE1        0.0000 
+      1 HH31        2.2108   -0.3185    0.7166 H         1 ACE         0.0640 
+      2 CH3         1.1512   -0.0260    0.7573 C.3       1 ACE        -0.1731 
+      3 HH32        0.6861   -0.4570    1.6561 H         1 ACE         0.0640 
+      4 HH33        0.6331   -0.3991   -0.1385 H         1 ACE         0.0640 
+      5 C           1.0475    1.4623    0.8084 C.2       1 ACE         0.6562 
+      6 O          -0.0576    1.9895    0.8580 O.2       1 ACE        -0.5801 
+      7 N           2.2668    2.1122    0.7917 N.am      2 HIS2       -0.5529 BACKBONE|DICT|DIRECT
+      8 H           3.1660    1.4804    0.7451 H         2 HIS2        0.3087 DICT
+      9 CA          2.3956    3.5471    0.8321 C.3       2 HIS2        0.0354 BACKBONE|DICT|DIRECT
+     10 HA          1.5707    3.9122    1.4616 H         2 HIS2        0.0955 DICT
+     11 CB          3.7169    3.9924    1.4694 C.3       2 HIS2       -0.1009 DICT
+     12 HB2         3.9486    3.3418    2.3256 H         2 HIS2        0.0696 DICT
+     13 HB3         4.5247    3.9218    0.7261 H         2 HIS2        0.0696 DICT
+     14 CG          3.6731    5.4156    1.9697 C.2       2 HIS2        0.2849 DICT
+     15 ND1         4.0317    6.4557    1.1492 N.pl3     2 HIS2       -0.6560 DICT
+     16 CE1         3.8805    7.5324    1.8880 C.2       2 HIS2        0.3944 DICT
+     17 HE1         4.0690    8.5501    1.5765 H         2 HIS2        0.0633 DICT
+     18 NE2         3.4415    7.2272    3.1463 N.2       2 HIS2       -0.3174 DICT
+     19 CD2         3.3031    5.8694    3.2137 C.2       2 HIS2       -0.2495 DICT
+     20 HD2         2.9660    5.3709    4.1112 H         2 HIS2        0.1793 DICT
+     21 C           2.3031    4.0498   -0.6042 C.2       2 HIS2        0.6607 BACKBONE|DICT|DIRECT
+     22 O           2.7541    3.4252   -1.5621 O.2       2 HIS2       -0.6307 BACKBONE|DICT|DIRECT
+     23 N           1.6143    5.2516   -0.6908 N.am      3 HIS3       -0.5367 BACKBONE|DICT|DIRECT
+     24 H           1.2704    5.6933    0.2561 H         3 HIS3        0.3338 DICT
+     25 CA          1.3417    5.9218   -1.9420 C.3       3 HIS3        0.0557 BACKBONE|DICT|DIRECT
+     26 HA          2.1264    5.6074   -2.6459 H         3 HIS3        0.0932 DICT
+     27 CB         -0.0133    5.5156   -2.5289 C.3       3 HIS3       -0.1135 DICT
+     28 HB2        -0.7579    5.4510   -1.7218 H         3 HIS3        0.0678 DICT
+     29 HB3        -0.3345    6.2675   -3.2647 H         3 HIS3        0.0678 DICT
+     30 CG          0.0286    4.1774   -3.2256 C.2       3 HIS3        0.3012 DICT
+     31 ND1        -0.2306    3.0211   -2.5332 N.pl3     3 HIS3       -0.6396 DICT
+     32 CE1        -0.1104    2.0629   -3.4250 C.2       3 HIS3        0.3886 DICT
+     33 HE1        -0.2445    1.0055   -3.2456 H         3 HIS3        0.0556 DICT
+     34 NE2         0.2155    2.5550   -4.6583 N.2       3 HIS3       -0.3184 DICT
+     35 HE2         0.3504    1.8678   -5.5066 H         3 HIS3        0.2982 DICT
+     36 CD2         0.3079    3.9137   -4.5458 C.2       3 HIS3       -0.2566 DICT
+     37 HD2         0.5560    4.5435   -5.3880 H         3 HIS3        0.1735 DICT
+     38 C           1.3735    7.4192   -1.6639 C.2       3 HIS3        0.6459 BACKBONE|DICT|DIRECT
+     39 O           0.9781    7.9151   -0.6110 O.2       3 HIS3       -0.6173 BACKBONE|DICT|DIRECT
+     40 N           1.9437    8.1274   -2.7126 N.am      4 NME4       -0.5707 
+     41 H           2.2500    7.5446   -3.5938 H         4 NME4        0.3121 
+     42 CH3         2.1428    9.5587   -2.6880 C.3       4 NME4        0.0787 
+     43 HH31        2.6092    9.8803   -3.6309 H         4 NME4        0.0430 
+     44 HH32        2.7988    9.8232   -1.8455 H         4 NME4        0.0430 
+     45 HH33        1.1719   10.0619   -2.5688 H         4 NME4        0.0430 
+     46 H46         4.3543    6.2558    0.1167 H         2 HIS2        0.0000 DICT
+     47 H47        -0.4719    3.0645   -1.4609 H         3 HIS3        0.0000 DICT
 @<TRIPOS>BOND
      1    1    2 1    
      2    2    4 1    
      3    2    5 1    
      4    2    3 1    
-     5    5    6 1    
-     6    5    7 2    DICT
-     7    6   23 1    
-     8    7    8 1    DICT
-     9    8    9 1    DICT
-    10    8   20 2    DICT
-    11    9   11 1    DICT
-    12    9   12 1    DICT
-    13    9   10 1    DICT
-    14   12   13 1    DICT
-    15   12   18 2    DICT
-    16   13   14 2    DICT
-    17   14   15 1    DICT
-    18   14   16 1    DICT
-    19   16   17 1    DICT
-    20   16   18 1    DICT
-    21   18   19 1    DICT
-    22   20   21 1    DICT
-    23   20   22 1    DICT
-@<TRIPOS>SUBSTRUCTURE
-     1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
-     3 ACE1       23 GROUP             0       ****    0 ROOT    
-@<TRIPOS>MOLECULE
-~{N}-[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]acetamide;[1-formyl-2-(1~{H}-imidazol-4-yl)ethyl]azanide;methylazanide
-23   23    2
-PROTEIN
-USER_CHARGES
-
-
-@<TRIPOS>DICT
-PROTEIN PROTEIN
-@<TRIPOS>ATOM
-      1 H1          1.4970   -2.9033   -4.6640 H         1 ACE         0.0650 
-      2 C1          0.5084   -2.6051   -5.0431 C.3       1 ACE        -0.1741 
-      3 H2         -0.1595   -3.4790   -5.0529 H         1 ACE         0.0650 
-      4 H3          0.6112   -2.2107   -6.0648 H         1 ACE         0.0650 
-      5 C2         -0.0663   -1.5495   -4.1578 C.2       1 ACE         0.6646 
-      6 O1         -1.1701   -1.0822   -4.4128 O.co2     1 ACE        -0.5959 
-      7 N1          0.7491   -1.1979   -3.0991 N.2       2 HIS2       -0.5853 DICT
-      8 C3          0.3891   -0.1993   -2.1255 C.2       2 HIS2       -0.0048 DICT
-      9 C4          0.4173   -0.7403   -0.6954 C.3       2 HIS2       -0.0910 DICT
-     10 H6          1.4290   -1.1026   -0.4603 H         2 HIS2        0.0580 DICT
-     11 H7          0.1431    0.0618    0.0056 H         2 HIS2        0.0580 DICT
-     12 C5         -0.5433   -1.8853   -0.4849 C.cat     2 HIS2        0.2737 DICT
-     13 N2         -0.1420   -3.1811   -0.6939 N.pl3     2 HIS2       -0.6545 DICT
-     14 C6         -1.2038   -3.9079   -0.4250 C.cat     2 HIS2        0.3827 DICT
-     15 H8         -1.2681   -4.9855   -0.4786 H         2 HIS2        0.0607 DICT
-     16 N3         -2.2680   -3.1340   -0.0538 N.pl3     2 HIS2       -0.3181 DICT
-     17 H9         -3.2286   -3.6055    0.2011 H         2 HIS2        0.3025 DICT
-     18 C7         -1.8583   -1.8309   -0.0871 C.2       2 HIS2       -0.2159 DICT
-     19 H10        -2.5197   -1.0148    0.1665 H         2 HIS2        0.1888 DICT
-     20 C8          1.3706    0.9377   -2.3108 C.2       2 HIS2        0.5578 DICT
-     21 O2          1.3205    1.9845   -1.6697 O.co2     2 HIS2       -0.5296 DICT
-     22 H11         2.1804    0.8502   -3.0501 H         2 HIS2       -0.0022 DICT
-     23 H23         0.8879   -3.3925   -1.0174 H         2 HIS2        0.0000 DICT
-@<TRIPOS>BOND
-     1    1    2 1    
-     2    2    4 1    
-     3    2    5 1    
-     4    2    3 1    
-     5    5    6 1    
-     6    5    7 2    DICT
+     5    5    6 2    
+     6    5    7 am   BACKBONE|DICT|INTERRES
      7    7    8 1    DICT
-     8    8    9 1    DICT
-     9    8   20 2    DICT
-    10    9   11 1    DICT
-    11    9   12 1    DICT
-    12    9   10 1    DICT
-    13   12   13 ar   DICT
-    14   12   18 2    DICT
-    15   13   14 ar   DICT
-    16   13   23 1    DICT
-    17   14   15 1    DICT
-    18   14   16 ar   DICT
+     8    7    9 1    BACKBONE|DICT
+     9    9   11 1    DICT
+    10    9   21 1    BACKBONE|DICT
+    11    9   10 1    DICT
+    12   11   14 1    DICT
+    13   11   13 1    DICT
+    14   11   12 1    DICT
+    15   14   15 1    DICT
+    16   14   19 2    DICT
+    17   15   16 1    DICT
+    18   15   46 1    DICT
+    19   16   17 1    DICT
+    20   16   18 2    DICT
+    21   18   19 1    DICT
+    22   19   20 1    DICT
+    23   21   22 2    BACKBONE|DICT
+    24   21   23 am   BACKBONE|DICT|INTERRES
+    25   23   24 1    DICT
+    26   23   25 1    BACKBONE|DICT
+    27   25   26 1    DICT
+    28   25   38 1    BACKBONE|DICT
+    29   25   27 1    DICT
+    30   27   28 1    DICT
+    31   27   29 1    DICT
+    32   27   30 1    DICT
+    33   30   36 2    DICT
+    34   30   31 1    DICT
+    35   31   32 2    DICT
+    36   31   47 1    DICT
+    37   32   34 1    DICT
+    38   32   33 1    DICT
+    39   34   36 1    DICT
+    40   34   35 1    DICT
+    41   36   37 1    DICT
+    42   38   39 2    BACKBONE|DICT
+    43   38   40 am   BACKBONE|DICT|INTERRES
+    44   40   41 1    
+    45   40   42 1    
+    46   42   44 1    
+    47   42   43 1    
+    48   42   45 1    
+@<TRIPOS>SUBSTRUCTURE
+     1 ACE         1 GROUP             0       ****    0 ROOT    
+     2 HIS2        8 RESIDUE           1 A     HIS     1 ROOT    
+     3 HIS3       24 RESIDUE           1 A     HIS     1         
+     4 NME4       40 GROUP             0       ****    0 ROOT    
+@<TRIPOS>MOLECULE
+2-acetamido-3-(1~{H}-imidazol-4-yl)-~{N}-[1-(1~{H}-imidazol-4-ylmethyl)-2-(methylamino)-2-oxo-ethyl]propanamide
+47   48    4
+PROTEIN
+USER_CHARGES
+
+
+@<TRIPOS>DICT
+PROTEIN PROTEIN
+@<TRIPOS>ATOM
+      1 HH31        2.2108   -0.3185    0.7166 H         1 ACE         0.0640 
+      2 CH3         1.1512   -0.0260    0.7573 C.3       1 ACE        -0.1731 
+      3 HH32        0.6861   -0.4570    1.6561 H         1 ACE         0.0640 
+      4 HH33        0.6331   -0.3991   -0.1385 H         1 ACE         0.0640 
+      5 C           1.0475    1.4623    0.8084 C.2       1 ACE         0.6562 
+      6 O          -0.0576    1.9895    0.8580 O.2       1 ACE        -0.5801 
+      7 N           2.2668    2.1122    0.7917 N.am      2 HIS2       -0.5529 BACKBONE|DICT|DIRECT
+      8 H           3.1660    1.4804    0.7451 H         2 HIS2        0.3087 DICT
+      9 CA          2.3956    3.5471    0.8321 C.3       2 HIS2        0.0354 BACKBONE|DICT|DIRECT
+     10 HA          1.5707    3.9122    1.4616 H         2 HIS2        0.0955 DICT
+     11 CB          3.7169    3.9924    1.4694 C.3       2 HIS2       -0.1009 DICT
+     12 HB2         3.9486    3.3418    2.3256 H         2 HIS2        0.0696 DICT
+     13 HB3         4.5247    3.9218    0.7261 H         2 HIS2        0.0696 DICT
+     14 CG          3.6731    5.4156    1.9697 C.2       2 HIS2        0.2849 DICT
+     15 ND1         4.0317    6.4557    1.1492 N.pl3     2 HIS2       -0.6560 DICT
+     16 CE1         3.8805    7.5324    1.8880 C.2       2 HIS2        0.3944 DICT
+     17 HE1         4.0690    8.5501    1.5765 H         2 HIS2        0.0633 DICT
+     18 NE2         3.4415    7.2272    3.1463 N.2       2 HIS2       -0.3174 DICT
+     19 HE2         3.2699    8.0298    3.8787 H         2 HIS2        0.3029 DICT
+     20 CD2         3.3031    5.8694    3.2137 C.2       2 HIS2       -0.2495 DICT
+     21 HD2         2.9660    5.3709    4.1112 H         2 HIS2        0.1793 DICT
+     22 C           2.3031    4.0498   -0.6042 C.2       2 HIS2        0.6607 BACKBONE|DICT|DIRECT
+     23 O           2.7541    3.4252   -1.5621 O.2       2 HIS2       -0.6307 BACKBONE|DICT|DIRECT
+     24 N           1.6143    5.2516   -0.6908 N.am      3 HIS3       -0.5367 BACKBONE|DICT|DIRECT
+     25 H           1.2704    5.6933    0.2561 H         3 HIS3        0.3338 DICT
+     26 CA          1.3417    5.9218   -1.9420 C.3       3 HIS3        0.0557 BACKBONE|DICT|DIRECT
+     27 HA          2.1264    5.6074   -2.6459 H         3 HIS3        0.0932 DICT
+     28 CB         -0.0133    5.5156   -2.5289 C.3       3 HIS3       -0.1135 DICT
+     29 HB2        -0.7579    5.4510   -1.7218 H         3 HIS3        0.0678 DICT
+     30 HB3        -0.3345    6.2675   -3.2647 H         3 HIS3        0.0678 DICT
+     31 CG          0.0286    4.1774   -3.2256 C.2       3 HIS3        0.3012 DICT
+     32 ND1        -0.2306    3.0211   -2.5332 N.pl3     3 HIS3       -0.6396 DICT
+     33 CE1        -0.1104    2.0629   -3.4250 C.2       3 HIS3        0.3886 DICT
+     34 HE1        -0.2445    1.0055   -3.2456 H         3 HIS3        0.0556 DICT
+     35 NE2         0.2155    2.5550   -4.6583 N.2       3 HIS3       -0.3184 DICT
+     36 HE2         0.3504    1.8678   -5.5066 H         3 HIS3        0.2982 DICT
+     37 CD2         0.3079    3.9137   -4.5458 C.2       3 HIS3       -0.2566 DICT
+     38 HD2         0.5560    4.5435   -5.3880 H         3 HIS3        0.1735 DICT
+     39 C           1.3735    7.4192   -1.6639 C.2       3 HIS3        0.6459 BACKBONE|DICT|DIRECT
+     40 O           0.9781    7.9151   -0.6110 O.2       3 HIS3       -0.6173 BACKBONE|DICT|DIRECT
+     41 N           1.9437    8.1274   -2.7126 N.am      4 NME4       -0.5707 
+     42 H           2.2500    7.5446   -3.5938 H         4 NME4        0.3121 
+     43 CH3         2.1428    9.5587   -2.6880 C.3       4 NME4        0.0787 
+     44 HH31        2.6092    9.8803   -3.6309 H         4 NME4        0.0430 
+     45 HH32        2.7988    9.8232   -1.8455 H         4 NME4        0.0430 
+     46 HH33        1.1719   10.0619   -2.5688 H         4 NME4        0.0430 
+     47 H47        -0.4719    3.0645   -1.4609 H         3 HIS3        0.0000 DICT
+@<TRIPOS>BOND
+     1    1    2 1    
+     2    2    4 1    
+     3    2    5 1    
+     4    2    3 1    
+     5    5    6 2    
+     6    5    7 am   BACKBONE|DICT|INTERRES
+     7    7    8 1    DICT
+     8    7    9 1    BACKBONE|DICT
+     9    9   11 1    DICT
+    10    9   22 1    BACKBONE|DICT
+    11    9   10 1    DICT
+    12   11   14 1    DICT
+    13   11   13 1    DICT
+    14   11   12 1    DICT
+    15   14   15 1    DICT
+    16   14   20 2    DICT
+    17   15   16 2    DICT
+    18   16   17 1    DICT
+    19   16   18 1    DICT
+    20   18   19 1    DICT
+    21   18   20 1    DICT
+    22   20   21 1    DICT
+    23   22   23 2    BACKBONE|DICT
+    24   22   24 am   BACKBONE|DICT|INTERRES
+    25   24   25 1    DICT
+    26   24   26 1    BACKBONE|DICT
+    27   26   27 1    DICT
+    28   26   39 1    BACKBONE|DICT
+    29   26   28 1    DICT
+    30   28   29 1    DICT
+    31   28   30 1    DICT
+    32   28   31 1    DICT
+    33   31   37 2    DICT
+    34   31   32 1    DICT
+    35   32   33 2    DICT
+    36   32   47 1    DICT
+    37   33   35 1    DICT
+    38   33   34 1    DICT
+    39   35   37 1    DICT
+    40   35   36 1    DICT
+    41   37   38 1    DICT
+    42   39   40 2    BACKBONE|DICT
+    43   39   41 am   BACKBONE|DICT|INTERRES
+    44   41   42 1    
+    45   41   43 1    
+    46   43   45 1    
+    47   43   44 1    
+    48   43   46 1    
+@<TRIPOS>SUBSTRUCTURE
+     1 ACE         1 GROUP             0       ****    0 ROOT    
+     2 HIS2        8 RESIDUE           1 A     HIS     1 ROOT    
+     3 HIS3       25 RESIDUE           1 A     HIS     1         
+     4 NME4       41 GROUP             0       ****    0 ROOT    
+@<TRIPOS>MOLECULE
+2-acetamido-3-(1~{H}-imidazol-4-yl)-~{N}-[1-(1~{H}-imidazol-4-ylmethyl)-2-(methylamino)-2-oxo-ethyl]propanamide
+47   48    4
+PROTEIN
+USER_CHARGES
+
+
+@<TRIPOS>DICT
+PROTEIN PROTEIN
+@<TRIPOS>ATOM
+      1 HH31        2.2108   -0.3185    0.7166 H         1 ACE         0.0640 
+      2 CH3         1.1512   -0.0260    0.7573 C.3       1 ACE        -0.1731 
+      3 HH32        0.6861   -0.4570    1.6561 H         1 ACE         0.0640 
+      4 HH33        0.6331   -0.3991   -0.1385 H         1 ACE         0.0640 
+      5 C           1.0475    1.4623    0.8084 C.2       1 ACE         0.6562 
+      6 O          -0.0576    1.9895    0.8580 O.2       1 ACE        -0.5801 
+      7 N           2.2668    2.1122    0.7917 N.am      2 HIS2       -0.5529 BACKBONE|DICT|DIRECT
+      8 H           3.1660    1.4804    0.7451 H         2 HIS2        0.3087 DICT
+      9 CA          2.3956    3.5471    0.8321 C.3       2 HIS2        0.0354 BACKBONE|DICT|DIRECT
+     10 HA          1.5707    3.9122    1.4616 H         2 HIS2        0.0955 DICT
+     11 CB          3.7169    3.9924    1.4694 C.3       2 HIS2       -0.1009 DICT
+     12 HB2         3.9486    3.3418    2.3256 H         2 HIS2        0.0696 DICT
+     13 HB3         4.5247    3.9218    0.7261 H         2 HIS2        0.0696 DICT
+     14 CG          3.6731    5.4156    1.9697 C.2       2 HIS2        0.2849 DICT
+     15 ND1         4.0317    6.4557    1.1492 N.pl3     2 HIS2       -0.6560 DICT
+     16 CE1         3.8805    7.5324    1.8880 C.2       2 HIS2        0.3944 DICT
+     17 HE1         4.0690    8.5501    1.5765 H         2 HIS2        0.0633 DICT
+     18 NE2         3.4415    7.2272    3.1463 N.2       2 HIS2       -0.3174 DICT
+     19 HE2         3.2699    8.0298    3.8787 H         2 HIS2        0.3029 DICT
+     20 CD2         3.3031    5.8694    3.2137 C.2       2 HIS2       -0.2495 DICT
+     21 HD2         2.9660    5.3709    4.1112 H         2 HIS2        0.1793 DICT
+     22 C           2.3031    4.0498   -0.6042 C.2       2 HIS2        0.6607 BACKBONE|DICT|DIRECT
+     23 O           2.7541    3.4252   -1.5621 O.2       2 HIS2       -0.6307 BACKBONE|DICT|DIRECT
+     24 N           1.6143    5.2516   -0.6908 N.am      3 HIS3       -0.5367 BACKBONE|DICT|DIRECT
+     25 H           1.2704    5.6933    0.2561 H         3 HIS3        0.3338 DICT
+     26 CA          1.3417    5.9218   -1.9420 C.3       3 HIS3        0.0557 BACKBONE|DICT|DIRECT
+     27 HA          2.1264    5.6074   -2.6459 H         3 HIS3        0.0932 DICT
+     28 CB         -0.0133    5.5156   -2.5289 C.3       3 HIS3       -0.1135 DICT
+     29 HB2        -0.7579    5.4510   -1.7218 H         3 HIS3        0.0678 DICT
+     30 HB3        -0.3345    6.2675   -3.2647 H         3 HIS3        0.0678 DICT
+     31 CG          0.0286    4.1774   -3.2256 C.2       3 HIS3        0.3012 DICT
+     32 ND1        -0.2306    3.0211   -2.5332 N.pl3     3 HIS3       -0.6396 DICT
+     33 CE1        -0.1104    2.0629   -3.4250 C.2       3 HIS3        0.3886 DICT
+     34 HE1        -0.2445    1.0055   -3.2456 H         3 HIS3        0.0556 DICT
+     35 NE2         0.2155    2.5550   -4.6583 N.2       3 HIS3       -0.3184 DICT
+     36 HE2         0.3504    1.8678   -5.5066 H         3 HIS3        0.2982 DICT
+     37 CD2         0.3079    3.9137   -4.5458 C.2       3 HIS3       -0.2566 DICT
+     38 HD2         0.5560    4.5435   -5.3880 H         3 HIS3        0.1735 DICT
+     39 C           1.3735    7.4192   -1.6639 C.2       3 HIS3        0.6459 BACKBONE|DICT|DIRECT
+     40 O           0.9781    7.9151   -0.6110 O.2       3 HIS3       -0.6173 BACKBONE|DICT|DIRECT
+     41 N           1.9437    8.1274   -2.7126 N.am      4 NME4       -0.5707 
+     42 H           2.2500    7.5446   -3.5938 H         4 NME4        0.3121 
+     43 CH3         2.1428    9.5587   -2.6880 C.3       4 NME4        0.0787 
+     44 HH31        2.6092    9.8803   -3.6309 H         4 NME4        0.0430 
+     45 HH32        2.7988    9.8232   -1.8455 H         4 NME4        0.0430 
+     46 HH33        1.1719   10.0619   -2.5688 H         4 NME4        0.0430 
+     47 H47         4.3543    6.2558    0.1167 H         2 HIS2        0.0000 DICT
+@<TRIPOS>BOND
+     1    1    2 1    
+     2    2    4 1    
+     3    2    5 1    
+     4    2    3 1    
+     5    5    6 2    
+     6    5    7 am   BACKBONE|DICT|INTERRES
+     7    7    8 1    DICT
+     8    7    9 1    BACKBONE|DICT
+     9    9   11 1    DICT
+    10    9   22 1    BACKBONE|DICT
+    11    9   10 1    DICT
+    12   11   14 1    DICT
+    13   11   13 1    DICT
+    14   11   12 1    DICT
+    15   14   15 1    DICT
+    16   14   20 2    DICT
+    17   15   16 2    DICT
+    18   15   47 1    DICT
     19   16   17 1    DICT
     20   16   18 1    DICT
     21   18   19 1    DICT
-    22   20   21 1    DICT
-    23   20   22 1    DICT
+    22   18   20 1    DICT
+    23   20   21 1    DICT
+    24   22   23 2    BACKBONE|DICT
+    25   22   24 am   BACKBONE|DICT|INTERRES
+    26   24   25 1    DICT
+    27   24   26 1    BACKBONE|DICT
+    28   26   27 1    DICT
+    29   26   39 1    BACKBONE|DICT
+    30   26   28 1    DICT
+    31   28   29 1    DICT
+    32   28   30 1    DICT
+    33   28   31 1    DICT
+    34   31   37 2    DICT
+    35   31   32 1    DICT
+    36   32   33 2    DICT
+    37   33   35 1    DICT
+    38   33   34 1    DICT
+    39   35   37 1    DICT
+    40   35   36 1    DICT
+    41   37   38 1    DICT
+    42   39   40 2    BACKBONE|DICT
+    43   39   41 am   BACKBONE|DICT|INTERRES
+    44   41   42 1    
+    45   41   43 1    
+    46   43   45 1    
+    47   43   44 1    
+    48   43   46 1    
 @<TRIPOS>SUBSTRUCTURE
      1 ACE         1 GROUP             0       ****    0 ROOT    
-     2 HIS2        8 RESIDUE           1 A     HIS     1         
+     2 HIS2        8 RESIDUE           1 A     HIS     1 ROOT    
+     3 HIS3       25 RESIDUE           1 A     HIS     1         
+     4 NME4       41 GROUP             0       ****    0 ROOT    
+@<TRIPOS>MOLECULE
+2-acetamido-3-(1~{H}-imidazol-4-yl)-~{N}-[1-(1~{H}-imidazol-4-ylmethyl)-2-(methylamino)-2-oxo-ethyl]propanamide
+48   49    4
+PROTEIN
+USER_CHARGES
+
+
+@<TRIPOS>DICT
+PROTEIN PROTEIN
+@<TRIPOS>ATOM
+      1 HH31        2.2108   -0.3185    0.7166 H         1 ACE         0.0640 
+      2 CH3         1.1512   -0.0260    0.7573 C.3       1 ACE        -0.1731 
+      3 HH32        0.6861   -0.4570    1.6561 H         1 ACE         0.0640 
+      4 HH33        0.6331   -0.3991   -0.1385 H         1 ACE         0.0640 
+      5 C           1.0475    1.4623    0.8084 C.2       1 ACE         0.6562 
+      6 O          -0.0576    1.9895    0.8580 O.2       1 ACE        -0.5801 
+      7 N           2.2668    2.1122    0.7917 N.am      2 HIS2       -0.5529 BACKBONE|DICT|DIRECT
+      8 H           3.1660    1.4804    0.7451 H         2 HIS2        0.3087 DICT
+      9 CA          2.3956    3.5471    0.8321 C.3       2 HIS2        0.0354 BACKBONE|DICT|DIRECT
+     10 HA          1.5707    3.9122    1.4616 H         2 HIS2        0.0955 DICT
+     11 CB          3.7169    3.9924    1.4694 C.3       2 HIS2       -0.1009 DICT
+     12 HB2         3.9486    3.3418    2.3256 H         2 HIS2        0.0696 DICT
+     13 HB3         4.5247    3.9218    0.7261 H         2 HIS2        0.0696 DICT
+     14 CG          3.6731    5.4156    1.9697 C.2       2 HIS2        0.2849 DICT
+     15 ND1         4.0317    6.4557    1.1492 N.pl3     2 HIS2       -0.6560 DICT
+     16 CE1         3.8805    7.5324    1.8880 C.2       2 HIS2        0.3944 DICT
+     17 HE1         4.0690    8.5501    1.5765 H         2 HIS2        0.0633 DICT
+     18 NE2         3.4415    7.2272    3.1463 N.2       2 HIS2       -0.3174 DICT
+     19 HE2         3.2699    8.0298    3.8787 H         2 HIS2        0.3029 DICT
+     20 CD2         3.3031    5.8694    3.2137 C.2       2 HIS2       -0.2495 DICT
+     21 HD2         2.9660    5.3709    4.1112 H         2 HIS2        0.1793 DICT
+     22 C           2.3031    4.0498   -0.6042 C.2       2 HIS2        0.6607 BACKBONE|DICT|DIRECT
+     23 O           2.7541    3.4252   -1.5621 O.2       2 HIS2       -0.6307 BACKBONE|DICT|DIRECT
+     24 N           1.6143    5.2516   -0.6908 N.am      3 HIS3       -0.5367 BACKBONE|DICT|DIRECT
+     25 H           1.2704    5.6933    0.2561 H         3 HIS3        0.3338 DICT
+     26 CA          1.3417    5.9218   -1.9420 C.3       3 HIS3        0.0557 BACKBONE|DICT|DIRECT
+     27 HA          2.1264    5.6074   -2.6459 H         3 HIS3        0.0932 DICT
+     28 CB         -0.0133    5.5156   -2.5289 C.3       3 HIS3       -0.1135 DICT
+     29 HB2        -0.7579    5.4510   -1.7218 H         3 HIS3        0.0678 DICT
+     30 HB3        -0.3345    6.2675   -3.2647 H         3 HIS3        0.0678 DICT
+     31 CG          0.0286    4.1774   -3.2256 C.2       3 HIS3        0.3012 DICT
+     32 ND1        -0.2306    3.0211   -2.5332 N.pl3     3 HIS3       -0.6396 DICT
+     33 CE1        -0.1104    2.0629   -3.4250 C.2       3 HIS3        0.3886 DICT
+     34 HE1        -0.2445    1.0055   -3.2456 H         3 HIS3        0.0556 DICT
+     35 NE2         0.2155    2.5550   -4.6583 N.2       3 HIS3       -0.3184 DICT
+     36 HE2         0.3504    1.8678   -5.5066 H         3 HIS3        0.2982 DICT
+     37 CD2         0.3079    3.9137   -4.5458 C.2       3 HIS3       -0.2566 DICT
+     38 HD2         0.5560    4.5435   -5.3880 H         3 HIS3        0.1735 DICT
+     39 C           1.3735    7.4192   -1.6639 C.2       3 HIS3        0.6459 BACKBONE|DICT|DIRECT
+     40 O           0.9781    7.9151   -0.6110 O.2       3 HIS3       -0.6173 BACKBONE|DICT|DIRECT
+     41 N           1.9437    8.1274   -2.7126 N.am      4 NME4       -0.5707 
+     42 H           2.2500    7.5446   -3.5938 H         4 NME4        0.3121 
+     43 CH3         2.1428    9.5587   -2.6880 C.3       4 NME4        0.0787 
+     44 HH31        2.6092    9.8803   -3.6309 H         4 NME4        0.0430 
+     45 HH32        2.7988    9.8232   -1.8455 H         4 NME4        0.0430 
+     46 HH33        1.1719   10.0619   -2.5688 H         4 NME4        0.0430 
+     47 H47        -0.4719    3.0645   -1.4609 H         3 HIS3        0.0000 DICT
+     48 H48         4.3543    6.2558    0.1167 H         2 HIS2        0.0000 DICT
+@<TRIPOS>BOND
+     1    1    2 1    
+     2    2    4 1    
+     3    2    5 1    
+     4    2    3 1    
+     5    5    6 2    
+     6    5    7 am   BACKBONE|DICT|INTERRES
+     7    7    8 1    DICT
+     8    7    9 1    BACKBONE|DICT
+     9    9   11 1    DICT
+    10    9   22 1    BACKBONE|DICT
+    11    9   10 1    DICT
+    12   11   14 1    DICT
+    13   11   13 1    DICT
+    14   11   12 1    DICT
+    15   14   15 1    DICT
+    16   14   20 2    DICT
+    17   15   16 2    DICT
+    18   15   48 1    DICT
+    19   16   17 1    DICT
+    20   16   18 1    DICT
+    21   18   19 1    DICT
+    22   18   20 1    DICT
+    23   20   21 1    DICT
+    24   22   23 2    BACKBONE|DICT
+    25   22   24 am   BACKBONE|DICT|INTERRES
+    26   24   25 1    DICT
+    27   24   26 1    BACKBONE|DICT
+    28   26   27 1    DICT
+    29   26   39 1    BACKBONE|DICT
+    30   26   28 1    DICT
+    31   28   29 1    DICT
+    32   28   30 1    DICT
+    33   28   31 1    DICT
+    34   31   37 2    DICT
+    35   31   32 1    DICT
+    36   32   33 2    DICT
+    37   32   47 1    DICT
+    38   33   35 1    DICT
+    39   33   34 1    DICT
+    40   35   37 1    DICT
+    41   35   36 1    DICT
+    42   37   38 1    DICT
+    43   39   40 2    BACKBONE|DICT
+    44   39   41 am   BACKBONE|DICT|INTERRES
+    45   41   42 1    
+    46   41   43 1    
+    47   43   45 1    
+    48   43   44 1    
+    49   43   46 1    
+@<TRIPOS>SUBSTRUCTURE
+     1 ACE         1 GROUP             0       ****    0 ROOT    
+     2 HIS2        8 RESIDUE           1 A     HIS     1 ROOT    
+     3 HIS3       25 RESIDUE           1 A     HIS     1         
+     4 NME4       41 GROUP             0       ****    0 ROOT    

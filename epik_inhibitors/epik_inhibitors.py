@@ -6,9 +6,11 @@ import os
 import re
 import csv
 import traceback
+import numpy as np
 
 from openmoltools import openeye, schrodinger
 
+MAX_ENERGY_PENALTY = 10.0 # kT
 
 def enumerate_conformations(name, smiles):
     """Generate geometry and run epik."""
@@ -36,8 +38,8 @@ def enumerate_conformations(name, smiles):
 
     # Run epik on mol2 file
     mae_file_path = output_basepath + '-epik.mae'
-    schrodinger.run_epik(mol2_file_path, mae_file_path, tautomerize=True,
-                         max_structures=32, ph_tolerance=10.0)
+    schrodinger.run_epik(mol2_file_path, mae_file_path, tautomerize=False,
+                         max_structures=100, min_probability=np.exp(-MAX_ENERGY_PENALTY), ph=7.4)
 
     # Convert maestro file to sdf and mol2
     schrodinger.run_structconvert(mae_file_path, output_basepath + '-epik.sdf')

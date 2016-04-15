@@ -4,14 +4,32 @@
 source oldff/leaprc.ff96
 
 peptide = sequence { ACE HIS NME }
+impose peptide { 2 } { { "N" "CA" "C" "+N" 120.0 } } 
+impose peptide { 2 } { { "CA" "C" "+N" "+CA" 120.0 } } 
+impose peptide { 2 } { { "N" "CA" "CB" "CG" 60.0 } } 
 savepdb peptide ACE-HIS-NME.pdb
 savemol2 peptide ACE-HIS-NME.mol2 0
 
 peptide = sequence { ACE HIS HIS NME }
+impose peptide { 2 } { { "N" "CA" "C" "+N" 120.0 } } 
+impose peptide { 2 } { { "CA" "C" "+N" "+CA" 120.0 } } 
+impose peptide { 2 } { { "N" "CA" "CB" "CG" 60.0 } } 
+impose peptide { 3 } { { "N" "CA" "C" "+N" 120.0 } } 
+impose peptide { 3 } { { "CA" "C" "+N" "+CA" 120.0 } } 
+impose peptide { 3 } { { "N" "CA" "CB" "CG" 60.0 } } 
 savepdb peptide ACE-HIS-HIS-NME.pdb
 savemol2 peptide ACE-HIS-HIS-NME.mol2 0
 
 peptide = sequence { ACE HIS HIS HIS NME }
+impose peptide { 2 } { { "N" "CA" "C" "+N" 120.0 } } 
+impose peptide { 2 } { { "CA" "C" "+N" "+CA" 120.0 } } 
+impose peptide { 2 } { { "N" "CA" "CB" "CG" 60.0 } } 
+impose peptide { 3 } { { "N" "CA" "C" "+N" 120.0 } } 
+impose peptide { 3 } { { "CA" "C" "+N" "+CA" 120.0 } } 
+impose peptide { 3 } { { "N" "CA" "CB" "CG" 60.0 } } 
+impose peptide { 4  } { { "N" "CA" "C" "+N" 120.0 } } 
+impose peptide { 4 } { { "CA" "C" "+N" "+CA" 120.0 } } 
+impose peptide { 4 } { { "N" "CA" "CB" "CG" 60.0 } } 
 savepdb peptide ACE-HIS-HIS-HIS-NME.pdb
 savemol2 peptide ACE-HIS-HIS-HIS-NME.mol2 0
 

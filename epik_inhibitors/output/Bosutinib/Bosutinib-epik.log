@@ -1,19 +1,19 @@
 COMMAND:
- /opt/schrodinger/suites2015-2/epik-v32011/bin/Darwin-x86_64/epik_app -imae /private/var/folders/bk/rcx4j47j1_n91nzd630930380000gn/T/tmpwAIfog/Bosutinib-input.mae -omae /Users/andrea/Development/mcce-charges/epik_inhibitors/output/Bosutinib/Bosutinib-epik.mae -ms 32 -ph 7.4 -pht 10.0 -pKa_atom
-SCHRODINGER: /opt/schrodinger/suites2015-2
+ /opt/schrodinger/suites2015-3/epik-v33015/bin/Darwin-x86_64/epik_app -imae /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpPUXfhS/Bosutinib-input.mae -omae /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Bosutinib/Bosutinib-epik.mae -ms 100 -ph 7.4 -nt -p 4.53999297625e-05 -pKa_atom
+SCHRODINGER: /opt/schrodinger/suites2015-3
 
-Running Epik version     3.2011
+Running Epik version     3.3015
 Epik. Copyright Schrodinger, LLC. All rights reserved.
 
-Input file name:                        /private/var/folders/bk/rcx4j47j1_n91nzd630930380000gn/T/tmpwAIfog/Bosutinib-input.mae
-Output file name:                       /Users/andrea/Development/mcce-charges/epik_inhibitors/output/Bosutinib/Bosutinib-epik.mae
-Maximum number of states set to: 32
+Input file name:                        /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpPUXfhS/Bosutinib-input.mae
+Output file name:                       /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Bosutinib/Bosutinib-epik.mae
+Maximum number of states set to: 100
 Structure adjustment calculation requested.
   Target pH set to 7.400
-pHt tolerance set to 1.000000e+01
+Minimum probability set to 4.539993e-05
 reporting for specific atoms turned on (pKa_atom)
 
-Adjusting structures for pH 7.400000e+00 and minimum probability 1.000000e-10
+Adjusting structures for pH 7.400000e+00 and minimum probability 4.539993e-05
 Solvent model name:                     water
 Jobcontrol is not being used for this specific Epik calculation.
 ---------------------------
@@ -31,7 +31,7 @@ Variation: 1
  pKa penalty:                                 0.04 kcal/mol
      Charging penalty:                        0.04 kcal/mol
      Neutralization penalty:                  0.00 kcal/mol
- Overall Penalty (tautomerization included):  0.09 kcal/mol
+ Overall Penalty (tautomerization included):  0.07 kcal/mol
  Total Charge: 1
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 2
@@ -42,7 +42,7 @@ Variation: 2
  pKa penalty:                                 0.40 kcal/mol
      Charging penalty:                        0.40 kcal/mol
      Neutralization penalty:                  0.00 kcal/mol
- Overall Penalty (tautomerization included):  1.49 kcal/mol
+ Overall Penalty (tautomerization included):  1.69 kcal/mol
  Total Charge: 1
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 3
@@ -53,7 +53,7 @@ Variation: 3
  pKa penalty:                                 2.00 kcal/mol
      Charging penalty:                        0.00 kcal/mol
      Neutralization penalty:                  2.00 kcal/mol
- Overall Penalty (tautomerization included):  1.62 kcal/mol
+ Overall Penalty (tautomerization included):  1.71 kcal/mol
  Total Charge: 0
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 4
@@ -64,166 +64,6 @@ Variation: 4
  pKa penalty:                                 4.72 kcal/mol
      Charging penalty:                        4.72 kcal/mol
      Neutralization penalty:                  0.00 kcal/mol
- Overall Penalty (tautomerization included):  4.60 kcal/mol
- Total Charge: 0
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 5
-                                            65   Conj_Acid  8.53
-                                            28   Conj_Base  3.98
-                                            10   Conj_Base  5.71
-                                            13   Conj_Base 11.13
- pKa penalty:                                 5.15 kcal/mol
-     Charging penalty:                        0.05 kcal/mol
-     Neutralization penalty:                  5.09 kcal/mol
- Overall Penalty (tautomerization included):  5.02 kcal/mol
- Total Charge: 0
- Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 6
-                                            65   Conj_Acid  7.41
-                                            31   Conj_Base  4.48
-                                            10   Conj_Base  3.28
-                                            13   Conj_Base 10.81
- pKa penalty:                                 5.05 kcal/mol
-     Charging penalty:                        5.05 kcal/mol
-     Neutralization penalty:                  0.00 kcal/mol
- Overall Penalty (tautomerization included):  6.12 kcal/mol
- Total Charge: 0
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 7
-                                            28   Conj_Base  7.41
-                                            31   Conj_Base  8.53
-                                            10   Conj_Base  3.39
-                                            13   Conj_Base 10.83
- pKa penalty:                                 6.68 kcal/mol
-     Charging penalty:                        4.68 kcal/mol
-     Neutralization penalty:                  2.00 kcal/mol
- Overall Penalty (tautomerization included):  6.27 kcal/mol
- Total Charge: -1
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 8
-                                            28   Conj_Base  7.41
-                                            31   Conj_Base  8.53
-                                            10   Conj_Base  5.71
-                                            13   Conj_Base 11.13
- pKa penalty:                                 7.11 kcal/mol
-     Charging penalty:                        0.01 kcal/mol
-     Neutralization penalty:                  7.09 kcal/mol
- Overall Penalty (tautomerization included):  6.55 kcal/mol
- Total Charge: -1
- Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 9
-                                            65   Conj_Acid  7.41
-                                            31   Conj_Base  4.48
-                                            10   Conj_Base  5.67
-                                            13   Conj_Base 11.11
- pKa penalty:                                 5.47 kcal/mol
-     Charging penalty:                        0.41 kcal/mol
-     Neutralization penalty:                  5.06 kcal/mol
- Overall Penalty (tautomerization included):  6.56 kcal/mol
- Total Charge: 0
- Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 10
-                                            67   Conj_Acid  8.53
-                                            28   Conj_Base  3.98
-                                            65   Conj_Acid  6.26
-                                            66   Conj_Acid  9.71
- pKa penalty:                                 1.64 kcal/mol
-     Charging penalty:                        0.05 kcal/mol
-     Neutralization penalty:                  1.59 kcal/mol
- Overall Penalty (tautomerization included):  6.67 kcal/mol
- Total Charge: 2
- Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 11
-                                            66   Conj_Acid  8.53
-                                            28   Conj_Base  3.98
-                                            67   Conj_Acid  2.09
-                                            40   Conj_Acid  8.63
- pKa penalty:                                 7.32 kcal/mol
-     Charging penalty:                        7.29 kcal/mol
-     Neutralization penalty:                  0.03 kcal/mol
- Overall Penalty (tautomerization included):  7.44 kcal/mol
- Total Charge: 2
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 12
-                                            67   Conj_Acid  7.41
-                                            31   Conj_Base  4.48
-                                            65   Conj_Acid  6.22
-                                            66   Conj_Acid  9.69
- pKa penalty:                                 2.05 kcal/mol
-     Charging penalty:                        0.40 kcal/mol
-     Neutralization penalty:                  1.65 kcal/mol
- Overall Penalty (tautomerization included):  8.28 kcal/mol
- Total Charge: 2
- Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 13
-                                            28   Conj_Base  7.41
-                                            31   Conj_Base  8.53
-                                            65   Conj_Acid  6.26
-                                            66   Conj_Acid  9.71
- pKa penalty:                                 3.60 kcal/mol
-     Charging penalty:                        0.00 kcal/mol
-     Neutralization penalty:                  3.59 kcal/mol
- Overall Penalty (tautomerization included):  8.45 kcal/mol
- Total Charge: 1
- Chemistry Notes:   This compound has an imine and may undergo hydrolysis.
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 14
-                                            28   Conj_Base  7.41
-                                            31   Conj_Base  8.53
-                                            66   Conj_Acid  2.09
-                                            40   Conj_Acid  8.63
- pKa penalty:                                 9.29 kcal/mol
-     Charging penalty:                        7.25 kcal/mol
-     Neutralization penalty:                  2.04 kcal/mol
- Overall Penalty (tautomerization included):  8.93 kcal/mol
- Total Charge: 1
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 15
-                                            66   Conj_Acid  7.41
-                                            31   Conj_Base  4.48
-                                            67   Conj_Acid  1.98
-                                            40   Conj_Acid  8.61
- pKa penalty:                                 7.83 kcal/mol
-     Charging penalty:                        7.80 kcal/mol
-     Neutralization penalty:                  0.04 kcal/mol
- Overall Penalty (tautomerization included):  9.05 kcal/mol
- Total Charge: 2
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 16
-                                            65   Conj_Acid  8.53
-                                            28   Conj_Base  3.98
-                                            66   Conj_Acid  3.39
-                                            13   Conj_Base  8.63
- pKa penalty:                                 7.23 kcal/mol
-     Charging penalty:                        7.23 kcal/mol
-     Neutralization penalty:                  0.00 kcal/mol
- Overall Penalty (tautomerization included):  9.62 kcal/mol
- Total Charge: 1
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 17
-                                            65   Conj_Acid  7.41
-                                            31   Conj_Base  4.48
-                                            66   Conj_Acid  3.28
-                                            13   Conj_Base  8.61
- pKa penalty:                                 7.71 kcal/mol
-     Charging penalty:                        7.71 kcal/mol
-     Neutralization penalty:                  0.00 kcal/mol
- Overall Penalty (tautomerization included): 11.24 kcal/mol
- Total Charge: 1
-. . . . . . . . . . . . . . . . . . . . . . .
-Variation: 18
-                                            28   Conj_Base  7.41
-                                            31   Conj_Base  8.53
-                                            65   Conj_Acid  3.39
-                                            13   Conj_Base  8.63
- pKa penalty:                                 9.19 kcal/mol
-     Charging penalty:                        7.19 kcal/mol
-     Neutralization penalty:                  2.00 kcal/mol
- Overall Penalty (tautomerization included): 11.24 kcal/mol
+ Overall Penalty (tautomerization included):  5.07 kcal/mol
  Total Charge: 0
 ---------------------------
