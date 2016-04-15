@@ -167,11 +167,11 @@ class PROTEIN:
 
     def writetpl(self):
         for res in self.residues:
-            fname = "%s%c%04d.ftpl" % (res.resName, res.chainID, res.resSeq)
-            lines = []
+            print "Residue: %s %c %04d" % (res.resName, res.chainID, res.resSeq)
             for atom in res.atoms:
                 connected = ", ".join(["\"%s\"" % x.name for x in atom.connected])
-                line = "CONNECT, %s, \"%s\": %5s, %s" % (atom.resName, atom.name, atom.hybrid, connected)
+                line = "CONNECT, %s, \"%s\": charge, radius, %5s, %s" % (atom.resName, atom.name, atom.hybrid,
+                                                                         connected)
                 print line
 
 

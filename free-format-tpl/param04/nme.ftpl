@@ -1,0 +1,7 @@
+CONNECT, NMEBK, " N  ": charge, radius,   sp2, " C  ", " H  ", " CH3"
+CONNECT, NMEBK, " H  ": charge, radius,     s, " N  "
+CONNECT, NMEBK, " CH3": charge, radius,   sp3, " N  ", "HH31", "HH32", "HH33"
+CONNECT, NMEBK, "HH31": charge, radius,     s, " CH3"
+CONNECT, NMEBK, "HH32": charge, radius,     s, " CH3"
+CONNECT, NMEBK, "HH33": charge, radius,     s, " CH3"
+
