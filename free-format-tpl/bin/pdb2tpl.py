@@ -186,10 +186,12 @@ class PROTEIN:
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print "Specify a PDB file"
+        print "Specify a PDB file and optional mol2 files with atom charges"
         sys.exit()
 
+    fnames = sys.argv[1:]
+
     prot = PROTEIN()
-    prot.loadpdb(sys.argv[1])
+    prot.loadpdb(fnames[0])
     prot.writetpl()
 
