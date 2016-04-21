@@ -2,6 +2,7 @@
 ORBITAL = {"C.3": "sp3",
            "C.2": "sp2",
            "C.1": "sp",
+           "C.cat": "sp2",
            "H": "s",
            "C.ar": "sp2",
            "N.3": "sp3",

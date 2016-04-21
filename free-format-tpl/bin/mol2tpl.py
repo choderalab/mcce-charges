@@ -20,6 +20,57 @@ def split_molecules(lines):
     return molecules
 
 
+def same_xyz(v1, v2):
+    if abs(v1[0] - v2[0]) < 0.001 and abs(v1[1] - v2[1]) < 0.001 and abs(v1[2] - v2[2]) < 0.001:
+        return True
+    else:
+        return False
+
+
+def identical_res(ref_residue, residue):
+    identical_flag = True
+    ref_atoms = ref_residue.atoms[:]
+    atoms = residue.atoms[:]
+    while atoms and ref_atoms:
+        # pick the first one and try to get a match
+        identical_found = False
+        if atoms:
+            for ref_atom in ref_atoms:
+                if atoms[0].name == ref_atom.name and \
+                        same_xyz(atoms[0].xyz, ref_atom.xyz) and \
+                        abs(atoms[0].charge - ref_atom.charge) < 0.001:
+                    # same atom and same xyz and charge
+                    identical_found = True
+                    atoms.pop(0)
+                    ref_atoms.remove(ref_atom)
+                    break
+
+        if not identical_found:  # no reference atom is identical, a new conformer
+            identical_flag = False
+            break
+
+    if (not atoms and not ref_atoms) and identical_flag: # one to one match all found and identical
+        return True
+    else:
+        return False
+
+
+def remove_identical_residue(residues):
+    if residues:
+        new_residues = [residues[0]]
+        for residue in residues[1:]:
+            is_new_residue = True
+            for ref_residue in new_residues:
+                if identical_res(ref_residue, residue):
+                    is_new_residue = False
+                    break
+
+            if is_new_residue:
+                new_residues.append(residue)
+
+        return new_residues
+
+
 class ATOM:
     def __init__(self, line):
         fields = line.split()
@@ -128,9 +179,29 @@ if __name__ == "__main__":
     lines = [line .strip() for line in open(fname).readlines()]
     molecules = split_molecules(lines)
 
+    proteins = []
     for molecule in molecules:
         prot = PROTEIN()
         prot.loadmol2(molecule)
-        prot.writetpl()
-        print "===================="
+        proteins.append(prot)
+        #prot.writetpl()
+
+    # Do tpl residue by residues
+    tpl_residues = {}
+    for prot in proteins:
+        for residue in prot.residues:
+            residue_id = "%s_%04d" % (residue.resName, residue.resSeq)
+            if residue_id in tpl_residues:
+                tpl_residues[residue_id].append(residue)
+            else:
+                tpl_residues[residue_id] = [residue]
+
+    # process atoms based on residue
+    for x in tpl_residues.keys():
+        residues = tpl_residues[x]
+        print len(residues),
+        residues = remove_identical_residue(residues)
+        print "-> %d" % len(residues)
+
+
 
