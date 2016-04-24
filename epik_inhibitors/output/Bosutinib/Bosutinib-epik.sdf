@@ -146,16 +146,16 @@ M  END
 1
 
 > <r_epik_Ionization_Penalty>
-  0.0429
+  0.0430
 
 > <r_epik_Ionization_Penalty_Charging>
   0.0424
 
 > <r_epik_Ionization_Penalty_Neutral>
-  0.0004
+  0.0005
 
 > <r_epik_State_Penalty>
-  0.0709
+  0.0921
 
 > <i_epik_Tot_Q>
 1
@@ -309,16 +309,16 @@ M  END
 1
 
 > <r_epik_Ionization_Penalty>
-  0.4023
+  0.2835
 
 > <r_epik_Ionization_Penalty_Charging>
-  0.4013
+  0.2826
 
 > <r_epik_Ionization_Penalty_Neutral>
   0.0009
 
 > <r_epik_State_Penalty>
-  1.6946
+  1.4246
 
 > <i_epik_Tot_Q>
 1
@@ -469,16 +469,16 @@ M  END
 1
 
 > <r_epik_Ionization_Penalty>
-  2.0033
+  2.1575
 
 > <r_epik_Ionization_Penalty_Charging>
   0.0000
 
 > <r_epik_Ionization_Penalty_Neutral>
-  2.0033
+  2.1575
 
 > <r_epik_State_Penalty>
-  1.7147
+  1.7359
 
 > <i_epik_Tot_Q>
 0
@@ -630,7 +630,7 @@ M  END
 1
 
 > <r_epik_Ionization_Penalty>
-  4.7232
+  4.7233
 
 > <r_epik_Ionization_Penalty_Charging>
   4.7229
@@ -639,7 +639,7 @@ M  END
   0.0003
 
 > <r_epik_State_Penalty>
-  5.0651
+  5.0862
 
 > <i_epik_Tot_Q>
 0
