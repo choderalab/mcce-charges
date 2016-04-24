@@ -1,0 +1,11 @@
+Running epik on molecule Osimertinib
+Charging molecule 1 / 7
+Charging molecule 2 / 7
+Charging molecule 3 / 7
+Warning: OE3DToAtomStereo is unable to perceive atom stereo from a flat geometry on atom 28 of molecule '(~{S})-2-(dimethylamino)ethyl-[5-methoxy-4-[[4-(1-methylindol-3-yl)pyrimidin-2-yl]amino]-2-(prop-2-enoylamino)phenyl]-methyl-ammonium'
+Charging molecule 4 / 7
+Charging molecule 5 / 7
+Warning: OE3DToAtomStereo is unable to perceive atom stereo from a flat geometry on atom 28 of molecule '[2-[(~{S})-2-(dimethylamino)ethyl-methyl-ammonio]-4-methoxy-5-[[4-(1-methylindol-3-yl)pyrimidin-2-yl]amino]phenyl]-(1-oxoniumylideneallyl)azanide'
+Charging molecule 6 / 7
+Charging molecule 7 / 7
+Warning: OE3DToAtomStereo is unable to perceive atom stereo from a flat geometry on atom 28 of molecule '(~{S})-2-(dimethylammonio)ethyl-[5-methoxy-4-[[4-(1-methylindol-3-yl)pyrimidin-2-yl]amino]-2-(prop-2-enoylamino)phenyl]-methyl-ammonium'
