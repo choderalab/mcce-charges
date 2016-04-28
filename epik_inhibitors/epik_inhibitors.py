@@ -129,6 +129,14 @@ def enumerate_conformations(name, smiles):
         oechem.OEWriteMolecule(ofs, charged_molecule)
     ofs.close()
 
+    # Write first molecule as PDB
+    charged_pdb_filename = output_basepath + '-epik-charged.pdb'
+    ofs = oechem.oemolostream(charged_pdb_filename)
+    for (index, charged_molecule) in enumerate(charged_molecules):
+        if index > 0: break
+        oechem.OEWriteMolecule(ofs, charged_molecule)
+    ofs.close()
+
     # Write state penalites.
     outfile = open(output_basepath + '-state-penalties.out', 'w')
     for (index, charged_molecule) in enumerate(charged_molecules):
