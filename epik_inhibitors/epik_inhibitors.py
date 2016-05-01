@@ -12,8 +12,6 @@ from openeye import oechem
 from openmoltools import openeye, schrodinger
 
 MAX_ENERGY_PENALTY = 10.0 # kT
-MAX_ENERGY_PENALTY = 1.0 # kT
-
 
 def read_molecules(filename):
     """Read a file into an OpenEye molecule (or list of molecules).
@@ -143,6 +141,9 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
         # Generate molecule geometry with OpenEye
         print "Generating molecule {}".format(name)
         oe_molecule = openeye.smiles_to_oemol(smiles)
+        # Assign Tripos atom types
+        oechem.OETriposAtomTypeNames(oe_molecule)
+        oechem.OETriposBondTypeNames(oe_molecule)
         try:
             oe_molecule = openeye.get_charges(oe_molecule, keep_confs=1)
         except RuntimeError as e:

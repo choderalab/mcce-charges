@@ -1,32 +1,32 @@
 COMMAND:
- /opt/schrodinger/suites2015-3/epik-v33015/bin/Darwin-x86_64/epik_app -imae /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpXBRqAT/Alectinib-input.mae -omae /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Alectinib/Alectinib-epik.mae -ms 100 -ph 7.4 -nt -p 4.53999297625e-05 -pKa_atom
-SCHRODINGER: /opt/schrodinger/suites2015-3
+ /opt/schrodinger/suites2015-1/epik-v31012/bin/Darwin-x86_64/epik_app -imae /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpqPuXkr/Alectinib-input.mae -omae /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Alectinib/Alectinib-epik.mae -ms 100 -ph 7.4 -nt -p 0.367879441171 -pKa_atom
+SCHRODINGER: /opt/schrodinger/suites2015-1
 
-Running Epik version     3.3015
+Running Epik version     3.1012
 Epik. Copyright Schrodinger, LLC. All rights reserved.
 
-Input file name:                        /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpXBRqAT/Alectinib-input.mae
+Input file name:                        /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpqPuXkr/Alectinib-input.mae
 Output file name:                       /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Alectinib/Alectinib-epik.mae
 Maximum number of states set to: 100
 Structure adjustment calculation requested.
   Target pH set to 7.400
-Minimum probability set to 4.539993e-05
+Minimum probability set to 3.678794e-01
 reporting for specific atoms turned on (pKa_atom)
 
-Adjusting structures for pH 7.400000e+00 and minimum probability 4.539993e-05
+Adjusting structures for pH 7.400000e+00 and minimum probability 3.678794e-01
 Solvent model name:                     water
 Jobcontrol is not being used for this specific Epik calculation.
 ---------------------------
 Processing Input Structure #1
-        Title: 9-ethyl-6,6-dimethyl-8-(4-morpholino-1-piperidyl)-11-oxo-5~{H}-benzo[b]carbazole-3-carbonitrile
+        Title: EMH
                                               Calculated pKas
                                                  Conjugate
                                           Atom   Acid/Base  pKa
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 1
-                                            50   Conj_Acid 12.92
+                                            70   Conj_Acid 12.92
                                             71   Conj_Acid  7.50
-                                            25   Conj_Base  0.10
+                                            27   Conj_Base  2.03
  pKa penalty:                                 0.35 kcal/mol
      Charging penalty:                        0.35 kcal/mol
      Neutralization penalty:                  0.00 kcal/mol
@@ -34,8 +34,8 @@ Variation: 1
  Total Charge: 1
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 2
-                                            50   Conj_Acid 12.92
-                                            25   Conj_Base  1.86
+                                            70   Conj_Acid 12.92
+                                            27   Conj_Base  1.90
                                             31   Conj_Base  7.50
  pKa penalty:                                 0.48 kcal/mol
      Charging penalty:                        0.00 kcal/mol
