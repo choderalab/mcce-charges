@@ -1,11 +1,11 @@
 COMMAND:
- /opt/schrodinger/suites2015-3/epik-v33015/bin/Darwin-x86_64/epik_app -imae /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpeG68Zg/Cobimetinib-input.mae -omae /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Cobimetinib/Cobimetinib-epik.mae -ms 100 -ph 7.4 -nt -p 4.53999297625e-05 -pKa_atom
+ /opt/schrodinger/suites2015-3/epik-v33015/bin/Darwin-x86_64/epik_app -imae /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpvSYCJL/Cobimetinib-input.mae -omae /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Cobimetinib/Cobimetinib-epik.mae -ms 100 -ph 7.4 -nt -p 4.53999297625e-05 -pKa_atom
 SCHRODINGER: /opt/schrodinger/suites2015-3
 
 Running Epik version     3.3015
 Epik. Copyright Schrodinger, LLC. All rights reserved.
 
-Input file name:                        /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpeG68Zg/Cobimetinib-input.mae
+Input file name:                        /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpvSYCJL/Cobimetinib-input.mae
 Output file name:                       /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Cobimetinib/Cobimetinib-epik.mae
 Maximum number of states set to: 100
 Structure adjustment calculation requested.
@@ -18,17 +18,17 @@ Solvent model name:                     water
 Jobcontrol is not being used for this specific Epik calculation.
 ---------------------------
 Processing Input Structure #1
-        Title: [3,4-difluoro-2-(2-fluoro-4-iodo-anilino)phenyl]-[3-hydroxy-3-[(2~{S})-2-piperidyl]azetidin-1-yl]methanone
+        Title: EUI
                                               Calculated pKas
                                                  Conjugate
                                           Atom   Acid/Base  pKa
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 1
-                                            51   Conj_Acid 11.27
-                                            38   Conj_Acid  9.14
+                                            41   Conj_Acid 11.27
+                                            45   Conj_Acid  9.14
                                             52   Conj_Acid  9.14
-                                            47   Conj_Acid 11.69
-                                            13   Conj_Base -1.65
+                                            33   Conj_Acid 11.69
+                                             1   Conj_Base -1.65
  pKa penalty:                                 0.01 kcal/mol
      Charging penalty:                        0.01 kcal/mol
      Neutralization penalty:                  0.00 kcal/mol
@@ -36,11 +36,11 @@ Variation: 1
  Total Charge: 1
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 2
-                                            51   Conj_Acid 13.78
-                                             4   Conj_Base  9.14
-                                            47   Conj_Acid 11.81
-                                            31   Conj_Base -1.49
-                                            13   Conj_Base -0.29
+                                            41   Conj_Acid 13.78
+                                            30   Conj_Base  9.14
+                                            33   Conj_Acid 11.81
+                                            24   Conj_Base -1.49
+                                             1   Conj_Base -0.29
  pKa penalty:                                 2.38 kcal/mol
      Charging penalty:                        0.00 kcal/mol
      Neutralization penalty:                  2.38 kcal/mol
@@ -48,11 +48,11 @@ Variation: 2
  Total Charge: 0
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 3
-                                            31   Conj_Base 11.27
-                                            38   Conj_Acid 11.81
+                                            24   Conj_Base 11.27
+                                            44   Conj_Acid 11.81
                                             51   Conj_Acid 11.81
-                                            47   Conj_Acid 11.83
-                                            13   Conj_Base -0.02
+                                            33   Conj_Acid 11.83
+                                             1   Conj_Base -0.02
  pKa penalty:                                 5.27 kcal/mol
      Charging penalty:                        5.27 kcal/mol
      Neutralization penalty:                  0.00 kcal/mol

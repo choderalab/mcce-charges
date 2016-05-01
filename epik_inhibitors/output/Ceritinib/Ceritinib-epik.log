@@ -1,11 +1,11 @@
 COMMAND:
- /opt/schrodinger/suites2015-3/epik-v33015/bin/Darwin-x86_64/epik_app -imae /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpqVUSeR/Ceritinib-input.mae -omae /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Ceritinib/Ceritinib-epik.mae -ms 100 -ph 7.4 -nt -p 4.53999297625e-05 -pKa_atom
+ /opt/schrodinger/suites2015-3/epik-v33015/bin/Darwin-x86_64/epik_app -imae /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpIM9kIw/Ceritinib-input.mae -omae /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Ceritinib/Ceritinib-epik.mae -ms 100 -ph 7.4 -nt -p 4.53999297625e-05 -pKa_atom
 SCHRODINGER: /opt/schrodinger/suites2015-3
 
 Running Epik version     3.3015
 Epik. Copyright Schrodinger, LLC. All rights reserved.
 
-Input file name:                        /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpqVUSeR/Ceritinib-input.mae
+Input file name:                        /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpIM9kIw/Ceritinib-input.mae
 Output file name:                       /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Ceritinib/Ceritinib-epik.mae
 Maximum number of states set to: 100
 Structure adjustment calculation requested.
@@ -18,17 +18,17 @@ Solvent model name:                     water
 Jobcontrol is not being used for this specific Epik calculation.
 ---------------------------
 Processing Input Structure #1
-        Title: 5-chloro-~{N}2-[2-isopropoxy-5-methyl-4-(4-piperidyl)phenyl]-~{N}4-(2-isopropylsulfonylphenyl)pyrimidine-2,4-diamine
+        Title: 4MK
                                               Calculated pKas
                                                  Conjugate
                                           Atom   Acid/Base  pKa
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 1
-                                            49   Conj_Acid 10.12
+                                            52   Conj_Acid 10.12
                                             75   Conj_Acid 10.12
                                             18   Conj_Base -0.39
                                             20   Conj_Base  3.66
-                                            24   Conj_Base  1.98
+                                            38   Conj_Base  1.98
                                             61   Conj_Acid 14.76
                                             63   Conj_Acid 12.33
  pKa penalty:                                 0.00 kcal/mol
@@ -41,7 +41,7 @@ Variation: 2
                                             11   Conj_Base 10.12
                                             18   Conj_Base  0.34
                                             20   Conj_Base  3.66
-                                            24   Conj_Base  1.98
+                                            38   Conj_Base  1.98
                                             61   Conj_Acid 15.14
                                             63   Conj_Acid 12.33
  pKa penalty:                                 3.72 kcal/mol
@@ -51,7 +51,7 @@ Variation: 2
  Total Charge: 0
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 3
-                                            49   Conj_Acid 10.12
+                                            52   Conj_Acid 10.12
                                             75   Conj_Acid 10.12
                                             18   Conj_Base  2.50
                                             76   Conj_Acid  3.66
