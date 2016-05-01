@@ -173,29 +173,27 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
     ifs_sdf = oechem.oemolistream()
     ifs_sdf.SetFormat(oechem.OEFormat_SDF)
     ifs_sdf.open(output_sdf_filename)
-    sdf_molecule = oechem.OEMol()
-    # Assign Tripos atom types
-    oechem.OETriposAtomTypeNames(sdf_molecule)
-    oechem.OETriposBondTypeNames(sdf_molecule)
+    sdf_molecule = oechem.OEGraphMol()
 
     # Read MOL2 file.
     ifs_mol2 = oechem.oemolistream()
     ifs_mol2.open(output_mol2_filename)
     mol2_molecule = oechem.OEMol()
-    # Assign Tripos typenames
-    oechem.OETriposAtomTypeNames(mol2_molecule)
-    oechem.OETriposBondTypeNames(mol2_molecule)
 
     # Assign charges.
     charged_molecules = list()
     index = 0
     while oechem.OEReadMolecule(ifs_sdf, sdf_molecule):
-        molecule = oechem.OEReadMolecule(ifs_mol2, mol2_molecule)
+        oechem.OEReadMolecule(ifs_mol2, mol2_molecule)
+
         index += 1
         print "Charging molecule %d" % (index)
         try:
             # Charge molecule.
-            charged_molecule = openeye.get_charges(sdf_molecule, max_confs=800, strictStereo=False, normalize=True, keep_confs=None)
+            charged_molecule = openeye.get_charges(mol2_molecule, max_confs=800, strictStereo=False, normalize=True, keep_confs=None)
+            # Assign Tripos types
+            oechem.OETriposAtomTypeNames(charged_molecule)
+            oechem.OETriposBondTypeNames(charged_molecule)
             # Store tags.
             oechem.OECopySDData(charged_molecule, sdf_molecule)
             # Store molecule
@@ -208,22 +206,9 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
     ifs_sdf.close()
     ifs_mol2.close()
 
-    # Write molecules.
-    charged_mol2_filename = output_basepath + '-epik-charged.mol2'
-    write_mol2_preserving_atomnames(charged_mol2_filename, charged_molecules, residue_name)
-
-    # Write first molecule as PDB
-    charged_pdb_filename = output_basepath + '-epik-charged.pdb'
-    ofs = oechem.oemolostream(charged_pdb_filename)
-    for (index, charged_molecule) in enumerate(charged_molecules):
-        if index > 0: break
-        oechem.OEWritePDBFile(ofs, charged_molecule, flavor=oechem.OEOFlavor_PDB_ELEMENT)
-    ofs.close()
-
     # Write state penalites.
     outfile = open(output_basepath + '-state-penalties.out', 'w')
     for (index, charged_molecule) in enumerate(charged_molecules):
-
         # Get Epik data.
         epik_Ionization_Penalty = float(oechem.OEGetSDData(charged_molecule, "r_epik_Ionization_Penalty"))
         epik_Ionization_Penalty_Charging = float(oechem.OEGetSDData(charged_molecule, "r_epik_Ionization_Penalty_Charging"))
@@ -233,6 +218,25 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
 
         outfile.write('%16.8f\n' % epik_State_Penalty)
     outfile.close()
+
+    # Write first molecule as PDB
+    charged_pdb_filename = output_basepath + '-epik-charged.pdb'
+    ofs = oechem.oemolostream(charged_pdb_filename)
+    for (index, charged_molecule) in enumerate(charged_molecules):
+        # Fix residue names
+        for atom in charged_molecule.GetAtoms():
+            residue = oechem.OEAtomGetResidue(atom)
+            residue.SetName(residue_name)
+            oechem.OEAtomSetResidue(atom, residue)
+
+        if index > 0: break
+        oechem.OEWritePDBFile(ofs, charged_molecule, oechem.OEOFlavor_PDB_ELEMENT)
+    ofs.close()
+
+    # Write molecules as mol2.
+    charged_mol2_filename = output_basepath + '-epik-charged.mol2'
+    write_mol2_preserving_atomnames(charged_mol2_filename, charged_molecules, residue_name)
+
 
 if __name__ == '__main__':
     input_csv_file = 'clinical-kinase-inhibitors.csv'
