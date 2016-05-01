@@ -1,11 +1,11 @@
 COMMAND:
- /opt/schrodinger/suites2015-3/epik-v33015/bin/Darwin-x86_64/epik_app -imae /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpLEwM17/Imatinib-input.mae -omae /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Imatinib/Imatinib-epik.mae -ms 100 -ph 7.4 -nt -p 4.53999297625e-05 -pKa_atom
-SCHRODINGER: /opt/schrodinger/suites2015-3
+ /opt/schrodinger/suites2015-1/epik-v31012/bin/Darwin-x86_64/epik_app -imae /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpjCnC3v/Imatinib-input.mae -omae /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Imatinib/Imatinib-epik.mae -ms 100 -ph 7.4 -nt -p 4.53999297625e-05 -pKa_atom
+SCHRODINGER: /opt/schrodinger/suites2015-1
 
-Running Epik version     3.3015
+Running Epik version     3.1012
 Epik. Copyright Schrodinger, LLC. All rights reserved.
 
-Input file name:                        /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpLEwM17/Imatinib-input.mae
+Input file name:                        /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpjCnC3v/Imatinib-input.mae
 Output file name:                       /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Imatinib/Imatinib-epik.mae
 Maximum number of states set to: 100
 Structure adjustment calculation requested.
@@ -18,88 +18,198 @@ Solvent model name:                     water
 Jobcontrol is not being used for this specific Epik calculation.
 ---------------------------
 Processing Input Structure #1
-        Title: 4-[(4-methylpiperazin-1-yl)methyl]-~{N}-[4-methyl-3-[[4-(3-pyridyl)pyrimidin-2-yl]amino]phenyl]benzamide
+        Title: STI
+FATAL mmlewis error: Problems remain with the following atoms:
+mmlewis error:  9 11
+WARNING mmtaut:fix_using_mmlewis: Problem in mmlewis_apply
+WARNING mmtaut_fix_lewis_structures: Problem in fix_using_mmlewis
+FATAL mmlewis error: Problems remain with the following atoms:
+mmlewis error:  9 11
+WARNING mmtaut:fix_using_mmlewis: Problem in mmlewis_apply
+WARNING mmtaut_fix_lewis_structures: Problem in fix_using_mmlewis
+FATAL mmlewis error: Problems remain with the following atoms:
+mmlewis error:  4
+WARNING mmtaut:fix_using_mmlewis: Problem in mmlewis_apply
+WARNING mmtaut_fix_lewis_structures: Problem in fix_using_mmlewis
                                               Calculated pKas
                                                  Conjugate
                                           Atom   Acid/Base  pKa
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 1
-                                            47   Conj_Acid 12.84
-                                            69   Conj_Acid  8.58
-                                            11   Conj_Base -2.93
-                                            30   Conj_Base  4.35
-                                             5   Conj_Base  3.89
-                                             9   Conj_Base  2.76
-                                            36   Conj_Base  3.09
-                                            43   Conj_Acid 14.79
-                                            34   Conj_Base -0.32
- pKa penalty:                                 0.04 kcal/mol
-     Charging penalty:                        0.04 kcal/mol
-     Neutralization penalty:                  0.00 kcal/mol
- Overall Penalty (tautomerization included):  0.32 kcal/mol
- Total Charge: 1
+                                            71   Conj_Acid  8.29
+                                            13   Conj_Base  5.59
+                                            20   Conj_Base  1.35
+                                            29   Conj_Base  4.52
+                                            44   Conj_Acid 11.40
+                                            69   Conj_Acid 13.00
+                                            70   Conj_Acid 12.34
+                                            36   Conj_Base -1.96
+ pKa penalty:                                 0.08 kcal/mol
+     Charging penalty:                        0.07 kcal/mol
+     Neutralization penalty:                  0.01 kcal/mol
+ Overall Penalty (tautomerization included):  0.25 kcal/mol
+ Total Charge: 3
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 2
-                                            47   Conj_Acid 13.52
-                                            69   Conj_Acid  8.40
-                                            11   Conj_Base -2.93
-                                            27   Conj_Base  6.00
-                                             5   Conj_Base  3.89
-                                             9   Conj_Base  2.76
-                                            36   Conj_Base  3.09
-                                            43   Conj_Acid 14.79
-                                            34   Conj_Base  1.14
- pKa penalty:                                 0.08 kcal/mol
-     Charging penalty:                        0.06 kcal/mol
-     Neutralization penalty:                  0.02 kcal/mol
- Overall Penalty (tautomerization included):  0.57 kcal/mol
- Total Charge: 1
+                                            71   Conj_Acid  7.84
+                                            13   Conj_Base  5.20
+                                            20   Conj_Base -0.48
+                                            32   Conj_Base  4.24
+                                            44   Conj_Acid 11.09
+                                            69   Conj_Acid 12.85
+                                            70   Conj_Acid 12.19
+ pKa penalty:                                 0.19 kcal/mol
+     Charging penalty:                        0.19 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  0.85 kcal/mol
+ Total Charge: 3
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 3
-                                            47   Conj_Acid 13.61
-                                            11   Conj_Base -2.93
-                                            27   Conj_Base  8.58
-                                            30   Conj_Base  8.40
-                                             5   Conj_Base  3.89
-                                             9   Conj_Base  2.76
-                                            36   Conj_Base  3.09
-                                            43   Conj_Acid 14.79
-                                            34   Conj_Base  1.14
- pKa penalty:                                 3.07 kcal/mol
+                                            13   Conj_Base  5.59
+                                            20   Conj_Base  1.59
+                                            29   Conj_Base  7.84
+                                            32   Conj_Base  8.29
+                                            44   Conj_Acid 11.40
+                                            69   Conj_Acid 13.00
+                                            70   Conj_Acid 12.34
+                                            36   Conj_Base -1.74
+ pKa penalty:                                 2.07 kcal/mol
      Charging penalty:                        0.00 kcal/mol
-     Neutralization penalty:                  3.07 kcal/mol
- Overall Penalty (tautomerization included):  2.03 kcal/mol
- Total Charge: 0
+     Neutralization penalty:                  2.07 kcal/mol
+ Overall Penalty (tautomerization included):  1.52 kcal/mol
+ Total Charge: 2
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 4
-                                            47   Conj_Acid 12.84
-                                            69   Conj_Acid  8.58
-                                            11   Conj_Base -2.93
-                                            30   Conj_Base  4.35
-                                            70   Conj_Acid  3.89
-                                             9   Conj_Base  1.09
-                                            36   Conj_Base  2.46
-                                            43   Conj_Acid 14.79
-                                            34   Conj_Base -0.32
- pKa penalty:                                 4.83 kcal/mol
-     Charging penalty:                        4.83 kcal/mol
+                                            44   Conj_Acid  5.59
+                                            71   Conj_Acid  8.29
+                                            72   Conj_Acid  5.59
+                                            29   Conj_Base  4.52
+ pKa penalty:                                 2.55 kcal/mol
+     Charging penalty:                        2.55 kcal/mol
      Neutralization penalty:                  0.00 kcal/mol
- Overall Penalty (tautomerization included):  5.43 kcal/mol
- Total Charge: 2
+ Overall Penalty (tautomerization included):  2.94 kcal/mol
+ Total Charge: 4
 . . . . . . . . . . . . . . . . . . . . . . .
 Variation: 5
-                                            47   Conj_Acid 13.52
-                                            69   Conj_Acid  8.40
-                                            11   Conj_Base -2.93
-                                            27   Conj_Base  6.00
-                                            70   Conj_Acid  3.89
-                                             9   Conj_Base  1.09
-                                            36   Conj_Base  2.46
-                                            43   Conj_Acid 14.79
-                                            34   Conj_Base  1.14
- pKa penalty:                                 4.87 kcal/mol
-     Charging penalty:                        4.85 kcal/mol
-     Neutralization penalty:                  0.02 kcal/mol
- Overall Penalty (tautomerization included):  5.69 kcal/mol
+                                            44   Conj_Acid 15.23
+                                            69   Conj_Acid 15.23
+                                            70   Conj_Acid  8.29
+                                            20   Conj_Base -2.72
+                                            29   Conj_Base  4.52
+                                            10   Conj_Base  6.79
+                                            12   Conj_Base  7.23
+ pKa penalty:                                 0.51 kcal/mol
+     Charging penalty:                        0.07 kcal/mol
+     Neutralization penalty:                  0.44 kcal/mol
+ Overall Penalty (tautomerization included):  3.01 kcal/mol
  Total Charge: 2
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 6
+                                            44   Conj_Acid 10.41
+                                            69   Conj_Acid 10.41
+                                            70   Conj_Acid  8.29
+                                            29   Conj_Base  4.52
+                                            71   Conj_Acid  7.23
+ pKa penalty:                                 0.61 kcal/mol
+     Charging penalty:                        0.61 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  3.21 kcal/mol
+ Total Charge: 3
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 7
+                                            44   Conj_Acid 14.84
+                                            69   Conj_Acid 14.84
+                                            70   Conj_Acid  7.84
+                                            32   Conj_Base  4.24
+                                            10   Conj_Base  6.79
+                                            12   Conj_Base  7.23
+ pKa penalty:                                 0.62 kcal/mol
+     Charging penalty:                        0.19 kcal/mol
+     Neutralization penalty:                  0.44 kcal/mol
+ Overall Penalty (tautomerization included):  3.68 kcal/mol
+ Total Charge: 2
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 8
+                                            44   Conj_Acid  5.20
+                                            71   Conj_Acid  7.84
+                                            72   Conj_Acid  5.20
+                                            32   Conj_Base  4.24
+ pKa penalty:                                 3.19 kcal/mol
+     Charging penalty:                        3.19 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  3.85 kcal/mol
+ Total Charge: 4
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 9
+                                            44   Conj_Acid 10.02
+                                            69   Conj_Acid 10.02
+                                            70   Conj_Acid  7.84
+                                            32   Conj_Base  4.24
+                                            71   Conj_Acid  7.23
+ pKa penalty:                                 0.72 kcal/mol
+     Charging penalty:                        0.72 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  3.93 kcal/mol
+ Total Charge: 3
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 10
+                                            44   Conj_Acid 10.41
+                                            69   Conj_Acid 10.41
+                                            70   Conj_Acid  8.29
+                                            29   Conj_Base  4.52
+                                            71   Conj_Acid  6.79
+ pKa penalty:                                 1.04 kcal/mol
+     Charging penalty:                        1.04 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  3.94 kcal/mol
+ Total Charge: 3
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 11
+                                            44   Conj_Acid  5.59
+                                            71   Conj_Acid  5.59
+                                            29   Conj_Base  7.84
+                                            32   Conj_Base  8.29
+ pKa penalty:                                 4.54 kcal/mol
+     Charging penalty:                        2.47 kcal/mol
+     Neutralization penalty:                  2.06 kcal/mol
+ Overall Penalty (tautomerization included):  4.29 kcal/mol
+ Total Charge: 3
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 12
+                                            44   Conj_Acid 15.23
+                                            69   Conj_Acid 15.23
+                                            20   Conj_Base -2.48
+                                            29   Conj_Base  7.84
+                                            32   Conj_Base  8.29
+                                            10   Conj_Base  6.79
+                                            12   Conj_Base  7.23
+ pKa penalty:                                 2.50 kcal/mol
+     Charging penalty:                        0.00 kcal/mol
+     Neutralization penalty:                  2.50 kcal/mol
+ Overall Penalty (tautomerization included):  4.30 kcal/mol
+ Total Charge: 1
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 13
+                                            44   Conj_Acid 10.41
+                                            69   Conj_Acid 10.41
+                                            29   Conj_Base  7.84
+                                            32   Conj_Base  8.29
+                                            70   Conj_Acid  7.23
+ pKa penalty:                                 2.60 kcal/mol
+     Charging penalty:                        0.53 kcal/mol
+     Neutralization penalty:                  2.06 kcal/mol
+ Overall Penalty (tautomerization included):  4.53 kcal/mol
+ Total Charge: 2
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 14
+                                            44   Conj_Acid 10.02
+                                            69   Conj_Acid 10.02
+                                            70   Conj_Acid  7.84
+                                            32   Conj_Base  4.24
+                                            71   Conj_Acid  6.79
+ pKa penalty:                                 1.15 kcal/mol
+     Charging penalty:                        1.15 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  4.57 kcal/mol
+ Total Charge: 3
 ---------------------------

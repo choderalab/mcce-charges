@@ -51,29 +51,107 @@ def DumpSDData(mol):
         print (dp.GetTag(), ':', dp.GetValue())
     print ()
 
-def enumerate_conformations(name, smiles):
-    """Generate geometry and run epik."""
-    # Generate molecule geometry with OpenEye
-    print "Generating molecule {}".format(name)
-    oe_molecule = openeye.smiles_to_oemol(smiles)
-    try:
-        oe_molecule = openeye.get_charges(oe_molecule, keep_confs=1)
-    except RuntimeError as e:
-        traceback.print_exc()
-        print "Skipping molecule " + name
-        return
+def retrieve_url(url, filename):
+    import urllib2
+    print(url)
+    response = urllib2.urlopen(url)
+    html = response.read()
+    outfile = open(filename, 'w')
+    outfile.write(html)
+    outfile.close()
 
+def read_molecule(filename):
+    ifs = oechem.oemolistream()
+    ifs.open(filename)
+    molecule = oechem.OEMol()
+    oechem.OEReadMolecule(ifs, molecule)
+    ifs.close()
+    return molecule
+
+def fix_mol2_resname(filename, residue_name):
+    # Replace <0> substructure names with residue name.
+    infile = open(filename, 'r')
+    lines = infile.readlines()
+    infile.close()
+    newlines = [line.replace('<0>', residue_name) for line in lines]
+    outfile = open(filename, 'w')
+    outfile.writelines(newlines)
+    outfile.close()
+
+def enumerate_conformations(name, smiles=None, pdbname=None):
+    """Run Epik to get protonation states using PDB residue templates for naming.
+
+    Parameters
+    ----------
+    name : str
+       Common name of molecule (used to create subdirectory)
+    smiles : str
+       Isomeric SMILES string
+    pdbname : str
+       Three-letter PDB code (e.g. 'DB8')
+    """
     # Create output subfolder
     output_basepath = os.path.join(output_dir, name)
     if not os.path.isdir(output_basepath):
         os.mkdir(output_basepath)
     output_basepath = os.path.join(output_basepath, name)
 
-    # Save mol2 file with residue name = first three uppercase letters
+    if pdbname:
+        # Make sure to only use one entry if there are mutliple
+        if ' ' in pdbname:
+            pdbnames = pdbname.split(' ')
+            print("Splitting '%s' into first entry only: '%s'" % (pdbname, pdbnames[0]))
+            pdbname = pdbnames[0]
+
+        # Retrieve PDB (for atom names)
+        url = 'http://ligand-expo.rcsb.org/reports/%s/%s/%s_model.pdb' % (pdbname[0], pdbname, pdbname)
+        pdb_filename = output_basepath + '-input.pdb'
+        retrieve_url(url, pdb_filename)
+        pdb_molecule = read_molecule(pdb_filename)
+
+        # Retrieve SDF (for everything else)
+        url = 'http://ligand-expo.rcsb.org/reports/%s/%s/%s_model.sdf' % (pdbname[0], pdbname, pdbname)
+        sdf_filename = output_basepath + '-input.sdf'
+        retrieve_url(url, sdf_filename)
+        sdf_molecule = read_molecule(sdf_filename)
+
+        # Replace atom names in SDF
+        for (sdf_atom, pdb_atom) in zip(sdf_molecule.GetAtoms(), pdb_molecule.GetAtoms()):
+            sdf_atom.SetName(pdb_atom.GetName())
+        # Assign Tripos atom types
+        oechem.OETriposAtomTypeNames(sdf_molecule)
+        oechem.OEPerceiveChiral(sdf_molecule)
+
+        oe_molecule = sdf_molecule
+
+        # We already know the residue name
+        residue_name = pdbname
+    elif smiles:
+        # Generate molecule geometry with OpenEye
+        print "Generating molecule {}".format(name)
+        oe_molecule = openeye.smiles_to_oemol(smiles)
+        try:
+            oe_molecule = openeye.get_charges(oe_molecule, keep_confs=1)
+        except RuntimeError as e:
+            traceback.print_exc()
+            print "Skipping molecule " + name
+            return
+        residue_name = re.sub('[^A-Za-z]+', '', name.upper())[:3]
+    else:
+        raise Exception('Must provide SMILES string or pdbname')
+
+    # Save mol2 file, preserving atom names
     print "Running epik on molecule {}".format(name)
     mol2_file_path = output_basepath + '-input.mol2'
-    residue_name = re.sub('[^A-Za-z]+', '', name.upper())[:3]
-    openeye.molecule_to_mol2(oe_molecule, mol2_file_path, residue_name=residue_name)
+    #openeye.molecule_to_mol2(oe_molecule, mol2_file_path, residue_name=residue_name)
+    # Preserve atom names
+    ofs = oechem.oemolostream()
+    ofs.open(mol2_file_path)
+    ofs.SetFlavor(oechem.OEFormat_MOL2, oechem.OEOFlavor_MOL2_GeneralFFFormat)
+    #oechem.OEWriteMol2File(ofs, oe_molecule, True, False)
+    oechem.OEWriteMolecule(ofs, oe_molecule)
+    ofs.close()
+    fix_mol2_resname(mol2_file_path, residue_name)
 
     # Run epik on mol2 file
     mae_file_path = output_basepath + '-epik.mae'
@@ -159,10 +237,11 @@ if __name__ == '__main__':
     if not os.path.isdir(output_dir):
         os.mkdir(output_dir)
 
-    # Parse csv file
-    with open(input_csv_file, 'r') as csv_file:
-        for name, smiles in csv.reader(csv_file):
-            enumerate_conformations(name, smiles)
+    # Parse csv file in universal newline mode
+    with open(input_csv_file, 'rU') as csv_file:
+        next(csv_file, None) # skip header
+        for (name,smiles,approved_target,all_targets,Chem_ID,Accession_ID) in csv.reader(csv_file):
+            enumerate_conformations(name, smiles, Chem_ID)
 
     # Generate Histidine
     #enumerate_conformations('Histidine', 'O=C([C@H](CC1=CNC=N1)N)O')
