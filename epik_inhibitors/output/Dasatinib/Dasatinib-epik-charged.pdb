@@ -1,4 +1,4 @@
-COMPND    ~{N}-(2-chloro-6-methyl-phenyl)-2-[[4-[4-(2-hydroxyethyl)piperazin-1-yl]-2-methyl-1~{H}-pyrimidin-6-ylium-6-yl]amino]thiazole-5-carboxamide
+COMPND    ~{N}-(2-chloro-6-methyl-phenyl)-2-[[6-[4-(2-hydroxyethyl)piperazin-1-yl]-2-methyl-1~{H}-pyrimidin-2-ylium-4-yl]amino]thiazole-5-carboxamide
 ATOM      0 C1   1N1     1      46.611  82.620  38.841  1.00 20.00           C
 ATOM      0 C2   1N1     1      46.775  82.067  40.044  1.00 20.00           C
 ATOM      0 C3   1N1     1      47.687  82.494  41.148  1.00 20.00           C
@@ -58,6 +58,6 @@ ATOM      0 H172 1N1     1      40.590  73.898  37.699  1.00 20.00           H
 ATOM      0 H181 1N1     1      40.949  75.667  35.706  1.00 20.00           H
 ATOM      0 H182 1N1     1      39.445  76.296  34.952  1.00 20.00           H
 ATOM      0 HO1  1N1     1      36.832  75.226  33.410  1.00 20.00           H
-ATOM      0 H60  1N1     1      44.623  79.018  40.523  1.00 20.00           H
+ATOM      0 H60  1N1     1      41.612  76.041  40.454  1.00 20.00           H
 TER       1      1N1     1 
 END

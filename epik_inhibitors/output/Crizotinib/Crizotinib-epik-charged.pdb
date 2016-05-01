@@ -1,4 +1,4 @@
-COMPND    3-[1-(2,6-dichloro-3-fluoro-phenyl)ethoxy]-5-(1-piperidin-1-ium-4-ylpyrazol-4-yl)pyridin-2-amine
+COMPND    5-[1-(2,6-dichloro-3-fluoro-phenyl)ethoxy]-3-(1-piperidin-1-ium-4-ylpyrazol-4-yl)-1,2-dihydropyridin-2-ylium-6-amine
 ATOM      0 CL   VGH     1      18.319  84.569   3.546  1.00 20.00          CL
 ATOM      0 C13  VGH     1      18.188  83.586   4.968  1.00 20.00           C
 ATOM      0 C3   VGH     1      17.719  82.288   4.714  1.00 20.00           C
@@ -52,5 +52,6 @@ ATOM      0 H25  VGH     1      26.532  82.375  -2.472  1.00 20.00           H
 ATOM      0 H111 VGH     1      24.938  84.096  -2.830  1.00 20.00           H
 ATOM      0 H112 VGH     1      23.774  83.318  -1.705  1.00 20.00           H
 ATOM      0 H53  VGH     1      24.960  81.679  -2.992  1.00 20.00           H
+ATOM      0 H54  VGH     1      24.777  85.064   7.565  1.00 20.00           H
 TER       1      VGH     1 
 END

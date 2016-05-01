@@ -1,19 +1,19 @@
 COMMAND:
- /opt/schrodinger/suites2015-1/epik-v31012/bin/Darwin-x86_64/epik_app -imae /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmp35VRxe/Afatinib-input.mae -omae /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Afatinib/Afatinib-epik.mae -ms 100 -ph 7.4 -nt -p 0.367879441171 -pKa_atom
-SCHRODINGER: /opt/schrodinger/suites2015-1
+ /opt/schrodinger/suites2015-3/epik-v33015/bin/Darwin-x86_64/epik_app -imae /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpyfFkFm/Afatinib-input.mae -omae /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Afatinib/Afatinib-epik.mae -ms 100 -ph 7.4 -nt -p 4.53999297625e-05 -pKa_atom
+SCHRODINGER: /opt/schrodinger/suites2015-3
 
-Running Epik version     3.1012
+Running Epik version     3.3015
 Epik. Copyright Schrodinger, LLC. All rights reserved.
 
-Input file name:                        /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmp35VRxe/Afatinib-input.mae
+Input file name:                        /private/var/folders/m1/wl3ptzqx2csf2r_q2bfy78n0h7kcfv/T/tmpyfFkFm/Afatinib-input.mae
 Output file name:                       /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/epik_inhibitors/output/Afatinib/Afatinib-epik.mae
 Maximum number of states set to: 100
 Structure adjustment calculation requested.
   Target pH set to 7.400
-Minimum probability set to 3.678794e-01
+Minimum probability set to 4.539993e-05
 reporting for specific atoms turned on (pKa_atom)
 
-Adjusting structures for pH 7.400000e+00 and minimum probability 3.678794e-01
+Adjusting structures for pH 7.400000e+00 and minimum probability 4.539993e-05
 Solvent model name:                     water
 Jobcontrol is not being used for this specific Epik calculation.
 ---------------------------
@@ -34,6 +34,33 @@ Variation: 1
  pKa penalty:                                 0.01 kcal/mol
      Charging penalty:                        0.01 kcal/mol
      Neutralization penalty:                  0.00 kcal/mol
- Overall Penalty (tautomerization included): -0.00 kcal/mol
+ Overall Penalty (tautomerization included):  0.01 kcal/mol
  Total Charge: 1
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 2
+                                            49   Conj_Acid 11.70
+                                            11   Conj_Base -2.92
+                                            32   Conj_Base  9.29
+                                             2   Conj_Base  3.19
+                                             3   Conj_Base  4.35
+                                            38   Conj_Acid 12.93
+                                            29   Conj_Base  1.70
+ pKa penalty:                                 2.59 kcal/mol
+     Charging penalty:                        0.00 kcal/mol
+     Neutralization penalty:                  2.59 kcal/mol
+ Overall Penalty (tautomerization included):  2.86 kcal/mol
+ Total Charge: 0
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 3
+                                            49   Conj_Acid 10.59
+                                            62   Conj_Acid  9.29
+                                            11   Conj_Base -2.92
+                                            63   Conj_Acid  4.28
+                                            38   Conj_Acid 10.69
+                                            29   Conj_Base  1.14
+ pKa penalty:                                 4.26 kcal/mol
+     Charging penalty:                        4.26 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  4.15 kcal/mol
+ Total Charge: 2
 ---------------------------

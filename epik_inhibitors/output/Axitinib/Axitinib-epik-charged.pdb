@@ -1,4 +1,4 @@
-COMPND    ~{N}-methyl-2-[[3-[2-(2-pyridyl)vinyl]-2~{H}-indazol-6-yl]sulfanyl]benzamide
+COMPND    ~{N}-methyl-2-[[3-[2-(2-pyridyl)vinyl]-1~{H}-indazol-6-yl]sulfanyl]benzamide
 ATOM      0 O81  AXI     1      24.831  23.470  35.794  1.00 20.00           O
 ATOM      0 C80  AXI     1      25.499  22.806  36.610  1.00 20.00           C
 ATOM      0 N82  AXI     1      26.415  21.916  36.184  1.00 20.00           N
@@ -38,12 +38,12 @@ ATOM      0 H19  AXI     1      23.031  23.666  40.575  1.00 20.00           H
 ATOM      0 H08  AXI     1      19.729  23.284  38.548  1.00 20.00           H
 ATOM      0 H12  AXI     1      23.056  26.066  38.671  1.00 20.00           H
 ATOM      0 H09  AXI     1      18.216  25.031  39.589  1.00 20.00           H
-ATOM      0 H14  AXI     1      20.331  29.640  40.654  1.00 20.00           H
 ATOM      0 H16  AXI     1      17.958  29.198  40.986  1.00 20.00           H
 ATOM      0 H17  AXI     1      16.944  26.261  40.535  1.00 20.00           H
 ATOM      0 H01  AXI     1      16.099  29.917  41.556  1.00 20.00           H
 ATOM      0 H04  AXI     1      12.556  26.461  41.794  1.00 20.00           H
 ATOM      0 H05  AXI     1      12.002  28.801  42.421  1.00 20.00           H
 ATOM      0 H06  AXI     1      13.779  30.550  42.316  1.00 20.00           H
+ATOM      0 H46  AXI     1      22.442  28.495  39.760  1.00 20.00           H
 TER       1      AXI     1 
 END

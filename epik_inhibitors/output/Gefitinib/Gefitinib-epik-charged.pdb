@@ -1,4 +1,4 @@
-COMPND    (3-chloro-4-fluoro-phenyl)-[7-methoxy-6-(3-morpholinopropoxy)-1~{H}-quinazolin-4-ylidene]ammonium
+COMPND    ~{N}-(3-chloro-4-fluoro-phenyl)-7-methoxy-6-(3-morpholinopropoxy)quinazolin-4-amine
 ATOM      0 CAO  IRE     1     -45.480  -2.716 -15.745  1.00 20.00           C
 ATOM      0 CAL  IRE     1     -44.406  -3.592 -15.075  1.00 20.00           C
 ATOM      0 OAU  IRE     1     -43.457  -4.022 -16.108  1.00 20.00           O
@@ -49,11 +49,10 @@ ATOM      0 HAA1 IRE     1     -50.987   2.373 -15.115  1.00 20.00           H
 ATOM      0 HAA2 IRE     1     -52.202   2.814 -16.364  1.00 20.00           H
 ATOM      0 HAA3 IRE     1     -50.472   3.237 -16.604  1.00 20.00           H
 ATOM      0 HAI  IRE     1     -49.696  -0.116 -20.999  1.00 20.00           H
-ATOM      0 H3   IRE     1     -54.085   3.025 -20.216  1.00 20.00           H
 ATOM      0 H2   IRE     1     -54.398   2.933 -22.566  1.00 20.00           H
 ATOM      0 HAG  IRE     1     -50.819   2.610 -24.539  1.00 20.00           H
 ATOM      0 HAD  IRE     1     -51.293  -1.479 -27.272  1.00 20.00           H
 ATOM      0 HAE  IRE     1     -51.134  -1.650 -24.803  1.00 20.00           H
-ATOM      0 H56  IRE     1     -50.091  -0.239 -22.760  1.00 20.00           H
+ATOM      0 H55  IRE     1     -50.091  -0.239 -22.760  1.00 20.00           H
 TER       1      IRE     1 
 END
