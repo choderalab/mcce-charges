@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-This script takes the charge column from charged.mol2, put into mol2, and save to merged.mol2 file.
+This script takes the charge column from charged.mol2, put into mol2, print out the result.
 """
 import sys
 

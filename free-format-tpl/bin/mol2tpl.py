@@ -2,6 +2,7 @@
 import sys
 from mapping import ORBITAL
 
+
 def atom_in_residue(atom, residue):
     if residue.resName == atom.resName and \
             residue.resSeq == atom.resSeq:
@@ -90,8 +91,11 @@ class ATOM:
         self.connected = []
 
     def writeout(self):
-        print "%4s %3s %4d %8.3f%8.3f%8.3f %8.3f" % \
-              (self.name, self.resName, self.resSeq, self.xyz[0], self.xyz[1], self.xyz[2], self.charge)
+        connected = ", ".join(["\"%s\"" % x.name for x in atom.connected])
+        line = "CONNECT, %s, \"%-4s\": %8.3f, radius, %5s, %s" % (atom.resName, atom.name, atom.charge,
+                                                                        atom.hybrid,
+                                                                         connected)
+        print line
 
 
 class RESIDUE:
@@ -156,19 +160,11 @@ class PROTEIN:
                 atoms[i1].connected.append(atoms[i2])
                 atoms[i2].connected.append(atoms[i1])
 
-
-    def writetpl(self):
         for res in self.residues:
-            print "Residue: %s %04d" % (res.resName, res.resSeq)
+            charge = 0.0
             for atom in res.atoms:
-                connected = ", ".join(["\"%s\"" % x.name for x in atom.connected])
-                line = "CONNECT, %s, \"%-4s\": %8.3f, radius, %5s, %s" % (atom.resName, atom.name, atom.charge,
-                                                                        atom.hybrid,
-                                                                         connected)
-                print line
-
-
-
+                charge += atom.charge
+            res.charge = charge
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
@@ -199,9 +195,15 @@ if __name__ == "__main__":
     # process atoms based on residue
     for x in tpl_residues.keys():
         residues = tpl_residues[x]
-        print len(residues),
+        print "%s: %d ->" % (x, len(residues)),
         residues = remove_identical_residue(residues)
-        print "-> %d" % len(residues)
+        print " %d" % len(residues)
+        
+        # group residues, find common atoms
 
+        for residue in residues:
+            print "Net charge = %.3f" % residue.charge
+            for atom in residue.atoms:
+                atom.writeout()
 
 
