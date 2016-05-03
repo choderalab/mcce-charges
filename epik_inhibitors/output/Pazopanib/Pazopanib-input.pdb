@@ -1,0 +1,111 @@
+ATOM      1  N1  KIM A   1       6.020  41.728   5.070  1.00 10.00           N
+ATOM      2  N3  KIM A   1       7.192  40.777   6.940  1.00 10.00           N
+ATOM      3  C4  KIM A   1       7.016  42.606   4.591  1.00 10.00           C
+ATOM      4  C5  KIM A   1       6.066  40.922   6.223  1.00 10.00           C
+ATOM      5  C6  KIM A   1       4.909  39.554   7.585  1.00 10.00           C
+ATOM      6  C7  KIM A   1       6.005  39.354   8.373  1.00 10.00           C
+ATOM      7  C8  KIM A   1       7.171  39.999   8.023  1.00 10.00           C
+ATOM      8  C10 KIM A   1       8.542  38.835   9.794  1.00 10.00           C
+ATOM      9  C13 KIM A   1       8.939  36.897  11.710  1.00 10.00           C
+ATOM     10  C15 KIM A   1       9.126  34.806  13.269  1.00 10.00           C
+ATOM     11  C17 KIM A   1       9.168  39.202  10.972  1.00 10.00           C
+ATOM     12  C20 KIM A   1       6.656  43.904   0.789  1.00 10.00           C
+ATOM     13  C21 KIM A   1       8.905  44.341   3.549  1.00 10.00           C
+ATOM     14  C22 KIM A   1      10.906  44.390   2.514  1.00 10.00           C
+ATOM     15  C1  KIM A   1       9.619  44.717   6.869  1.00 10.00           C
+ATOM     16  O1  KIM A   1      10.110  44.285   5.600  1.00 10.00           O
+ATOM     17  C2  KIM A   1       9.028  43.881   4.839  1.00 10.00           C
+ATOM     18  C3  KIM A   1       8.090  43.015   5.357  1.00 10.00           C
+ATOM     19  N2  KIM A   1       4.906  40.328   6.507  1.00 10.00           N
+ATOM     20  N4  KIM A   1       8.327  39.816   8.815  1.00 10.00           N
+ATOM     21  C9  KIM A   1       9.472  40.674   8.550  1.00 10.00           C
+ATOM     22  C11 KIM A   1       8.130  37.531   9.589  1.00 10.00           C
+ATOM     23  C12 KIM A   1       8.316  36.539  10.529  1.00 10.00           C
+ATOM     24  C14 KIM A   1       9.318  36.223  12.905  1.00 10.00           C
+ATOM     25  N5  KIM A   1       9.920  37.051  13.763  1.00 10.00           N
+ATOM     26  N6  KIM A   1       9.928  38.237  13.134  1.00 10.00           N
+ATOM     27  C16 KIM A   1       9.349  38.203  11.896  1.00 10.00           C
+ATOM     28  C18 KIM A   1       6.895  43.073   3.298  1.00 10.00           C
+ATOM     29  C19 KIM A   1       7.837  43.936   2.782  1.00 10.00           C
+ATOM     30  O2  KIM A   1       7.771  44.433   1.491  1.00 10.00           O
+ATOM     31  O3  KIM A   1       9.858  45.211   3.032  1.00 10.00           O
+ATOM     32  HN1 KIM A   1       5.183  41.672   4.526  1.00 10.00           H
+ATOM     33  H6  KIM A   1       3.991  39.053   7.854  1.00 10.00           H
+ATOM     34  H7  KIM A   1       5.960  38.713   9.241  1.00 10.00           H
+ATOM     35  H15 KIM A   1       9.078  34.195  12.355  1.00 10.00           H
+ATOM     36 H15A KIM A   1       9.969  34.470  13.891  1.00 10.00           H
+ATOM     37 H15B KIM A   1       8.188  34.696  13.832  1.00 10.00           H
+ATOM     38  H17 KIM A   1       9.495  40.215  11.154  1.00 10.00           H
+ATOM     39  H20 KIM A   1       5.815  43.767   1.485  1.00 10.00           H
+ATOM     40 H20A KIM A   1       6.361  44.601  -0.009  1.00 10.00           H
+ATOM     41 H20B KIM A   1       6.928  42.934   0.347  1.00 10.00           H
+ATOM     42  H22 KIM A   1      10.716  44.179   1.451  1.00 10.00           H
+ATOM     43 H22A KIM A   1      11.867  44.914   2.617  1.00 10.00           H
+ATOM     44 H22B KIM A   1      10.942  43.444   3.075  1.00 10.00           H
+ATOM     45  H1  KIM A   1      10.460  44.828   7.570  1.00 10.00           H
+ATOM     46  H1A KIM A   1       9.107  45.684   6.754  1.00 10.00           H
+ATOM     47  H1B KIM A   1       8.911  43.972   7.261  1.00 10.00           H
+ATOM     48  H3  KIM A   1       8.195  42.653   6.369  1.00 10.00           H
+ATOM     49  H9  KIM A   1       9.527  40.891   7.473  1.00 10.00           H
+ATOM     50  H9A KIM A   1       9.361  41.616   9.108  1.00 10.00           H
+ATOM     51  H9B KIM A   1      10.393  40.164   8.869  1.00 10.00           H
+ATOM     52  H11 KIM A   1       7.644  37.280   8.658  1.00 10.00           H
+ATOM     53  H12 KIM A   1       7.989  35.525  10.350  1.00 10.00           H
+ATOM     54  HN6 KIM A   1      10.320  39.066  13.533  1.00 10.00           H
+ATOM     55  H18 KIM A   1       6.060  42.761   2.689  1.00 10.00           H
+CONECT    1    3    4   32
+CONECT    2    4    7
+CONECT    3    1   18   28
+CONECT    4    1    2   19
+CONECT    5    6   19   33
+CONECT    6    5    7   34
+CONECT    7    2    6   20
+CONECT    8   11   20   22
+CONECT    9   23   24   27
+CONECT   10   24   35   36   37
+CONECT   11    8   27   38
+CONECT   12   30   39   40   41
+CONECT   13   17   29   31
+CONECT   14   31   42   43   44
+CONECT   15   16   45   46   47
+CONECT   16   15   17
+CONECT   17   13   16   18
+CONECT   18    3   17   48
+CONECT   19    4    5
+CONECT   20    7    8   21
+CONECT   21   20   49   50   51
+CONECT   22    8   23   52
+CONECT   23    9   22   53
+CONECT   24    9   10   25
+CONECT   25   24   26
+CONECT   26   25   27   54
+CONECT   27    9   11   26
+CONECT   28    3   29   55
+CONECT   29   13   28   30
+CONECT   30   12   29
+CONECT   31   13   14
+CONECT   32    1
+CONECT   33    5
+CONECT   34    6
+CONECT   35   10
+CONECT   36   10
+CONECT   37   10
+CONECT   38   11
+CONECT   39   12
+CONECT   40   12
+CONECT   41   12
+CONECT   42   14
+CONECT   43   14
+CONECT   44   14
+CONECT   45   15
+CONECT   46   15
+CONECT   47   15
+CONECT   48   18
+CONECT   49   21
+CONECT   50   21
+CONECT   51   21
+CONECT   52   22
+CONECT   53   23
+CONECT   54   26
+CONECT   55   28
+END   
