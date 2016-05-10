@@ -333,7 +333,7 @@ USER_CHARGES
     52   30   31 ar
     53   30   47 1
 @<TRIPOS>SUBSTRUCTURE
-     1 40L         1 GROUP 0 A     ****
+     1 40L         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 5-fluoro-3-phenyl-2-[1-(1~{H}-purin-6-ylamino)propyl]quinazolin-4-one
    49    53     1     0     0
@@ -445,7 +445,7 @@ USER_CHARGES
     52   30   31 ar
     53   30   47 1
 @<TRIPOS>SUBSTRUCTURE
-     1 40L         1 GROUP 0 A     ****
+     1 40L         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 2-[1-(2,9-dihydro-1~{H}-purin-2-ylium-6-ylamino)propyl]-5-fluoro-3-phenyl-quinazolin-4-one
    50    54     1     0     0
@@ -559,4 +559,4 @@ USER_CHARGES
     53   30   47 1
     54   31   49 1
 @<TRIPOS>SUBSTRUCTURE
-     1 40L         1 GROUP 0 A     ****
+     1 40L         1 GROUP   0 A     ****

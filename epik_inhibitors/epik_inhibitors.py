@@ -220,7 +220,7 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
         outfile.write('%16.8f\n' % epik_State_Penalty)
     outfile.close()
 
-    # Write first molecule as PDB
+    # Write as PDB
     charged_pdb_filename = output_basepath + '-epik-charged.pdb'
     ofs = oechem.oemolostream(charged_pdb_filename)
     for (index, charged_molecule) in enumerate(charged_molecules):
@@ -230,7 +230,6 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
             residue.SetName(residue_name)
             oechem.OEAtomSetResidue(atom, residue)
 
-        if index > 0: break
         oechem.OEWritePDBFile(ofs, charged_molecule, oechem.OEOFlavor_PDB_ELEMENT)
     ofs.close()
 

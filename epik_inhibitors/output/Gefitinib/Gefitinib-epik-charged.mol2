@@ -370,7 +370,7 @@ USER_CHARGES
     58   30   54 1
     59   31   55 1
 @<TRIPOS>SUBSTRUCTURE
-     1 IRE         1 GROUP 0 A     ****
+     1 IRE         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 ~{N}-(3-chloro-4-fluoro-phenyl)-7-methoxy-6-(3-morpholinopropoxy)-1,2-dihydroquinazolin-2-ylium-4-amine
    56    59     1     0     0
@@ -495,7 +495,7 @@ USER_CHARGES
     58   30   53 1
     59   31   54 1
 @<TRIPOS>SUBSTRUCTURE
-     1 IRE         1 GROUP 0 A     ****
+     1 IRE         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 (3-chloro-4-fluoro-phenyl)-[7-methoxy-6-(3-morpholin-4-ium-4-ylpropoxy)-1~{H}-quinazolin-4-ylidene]ammonium
    57    60     1     0     0
@@ -622,4 +622,4 @@ USER_CHARGES
     59   30   54 1
     60   31   55 1
 @<TRIPOS>SUBSTRUCTURE
-     1 IRE         1 GROUP 0 A     ****
+     1 IRE         1 GROUP   0 A     ****

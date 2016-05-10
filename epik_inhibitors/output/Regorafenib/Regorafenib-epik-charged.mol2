@@ -320,7 +320,7 @@ USER_CHARGES
     50   28   32 1
     51   28   31 1
 @<TRIPOS>SUBSTRUCTURE
-     1 276         1 GROUP 0 A     ****
+     1 276         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 4-[[2-[4-chloro-3-(trifluoromethyl)anilino]-3~{H}-benzimidazol-5-yl]oxy]-~{N}-methyl-1~{H}-pyridin-2-ylium-2-carboxamide
    48    51     1     0     0
@@ -429,7 +429,7 @@ USER_CHARGES
     50   28   32 1
     51   28   31 1
 @<TRIPOS>SUBSTRUCTURE
-     1 276         1 GROUP 0 A     ****
+     1 276         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 4-[[2-[4-chloro-3-(trifluoromethyl)anilino]-3~{H}-benzimidazol-5-yl]oxy]-~{N}-methyl-1~{H}-pyridin-2-ylium-2-carboximidate
    47    50     1     0     0
@@ -536,7 +536,7 @@ USER_CHARGES
     49   28   32 1
     50   28   31 1
 @<TRIPOS>SUBSTRUCTURE
-     1 276         1 GROUP 0 A     ****
+     1 276         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 4-[[2-[4-chloro-3-(trifluoromethyl)anilino]-1~{H}-benzimidazol-5-yl]oxy]-~{N}-methyl-1~{H}-pyridin-2-ylium-2-carboxamide
    48    51     1     0     0
@@ -645,7 +645,7 @@ USER_CHARGES
     50   28   32 1
     51   28   31 1
 @<TRIPOS>SUBSTRUCTURE
-     1 276         1 GROUP 0 A     ****
+     1 276         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 4-[[2-[4-chloro-3-(trifluoromethyl)anilino]-1~{H}-benzimidazol-5-yl]oxy]-~{N}-methyl-1~{H}-pyridin-2-ylium-2-carboximidate
    47    50     1     0     0
@@ -752,7 +752,7 @@ USER_CHARGES
     49   28   32 1
     50   28   31 1
 @<TRIPOS>SUBSTRUCTURE
-     1 276         1 GROUP 0 A     ****
+     1 276         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 4-[[2-[4-chloro-3-(trifluoromethyl)anilino]-1,3-dihydrobenzimidazol-2-ylium-5-yl]oxy]-~{N}-methyl-1~{H}-pyridin-2-ylium-2-carboxamide
    49    52     1     0     0
@@ -863,7 +863,7 @@ USER_CHARGES
     51   28   32 1
     52   28   31 1
 @<TRIPOS>SUBSTRUCTURE
-     1 276         1 GROUP 0 A     ****
+     1 276         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 4-[[2-[4-chloro-3-(trifluoromethyl)anilino]-1,3-dihydrobenzimidazol-2-ylium-5-yl]oxy]-~{N}-methyl-1~{H}-pyridin-2-ylium-2-carboximidate
    48    51     1     0     0
@@ -972,4 +972,4 @@ USER_CHARGES
     50   28   32 1
     51   28   31 1
 @<TRIPOS>SUBSTRUCTURE
-     1 276         1 GROUP 0 A     ****
+     1 276         1 GROUP   0 A     ****

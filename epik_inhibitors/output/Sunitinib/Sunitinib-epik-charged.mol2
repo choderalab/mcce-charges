@@ -371,7 +371,7 @@ USER_CHARGES
     57   41   54 1
     58   41   55 1
 @<TRIPOS>SUBSTRUCTURE
-     1 B49         1 GROUP 0 A     ****
+     1 B49         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 3-[[4-[2-(diethylammonio)ethylcarbamoyl]-3,5-dimethyl-1~{H}-pyrrol-2-yl]methylene]-5-fluoro-indol-2-olate
    56    58     1     0     0
@@ -495,4 +495,4 @@ USER_CHARGES
     57   41   54 1
     58   41   55 1
 @<TRIPOS>SUBSTRUCTURE
-     1 B49         1 GROUP 0 A     ****
+     1 B49         1 GROUP   0 A     ****
