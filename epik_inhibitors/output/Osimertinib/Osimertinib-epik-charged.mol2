@@ -460,7 +460,7 @@ USER_CHARGES
     73   36   69 1
     74   37   70 1
 @<TRIPOS>SUBSTRUCTURE
-     1 YY3         1 GROUP 0 A     ****
+     1 YY3         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 [2-[2-(dimethylammonio)ethyl-methyl-amino]-4-methoxy-5-[[4-(1-methylindol-3-yl)pyrimidin-2-yl]amino]phenyl]-(1-oxoniumylideneallyl)azanide
    71    74     1     0     0
@@ -615,7 +615,7 @@ USER_CHARGES
     73   36   68 1
     74   37   69 1
 @<TRIPOS>SUBSTRUCTURE
-     1 YY3         1 GROUP 0 A     ****
+     1 YY3         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 [2-[2-(dimethylamino)ethyl-methyl-ammonio]-4-methoxy-5-[[4-(1-methylindol-3-yl)pyrimidin-2-yl]amino]phenyl]-(1-oxoniumylideneallyl)azanide
    71    74     1     0     0
@@ -770,7 +770,7 @@ USER_CHARGES
     73   36   68 1
     74   37   69 1
 @<TRIPOS>SUBSTRUCTURE
-     1 YY3         1 GROUP 0 A     ****
+     1 YY3         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 2-[5-methoxy-~{N}-methyl-4-[[4-(1-methylindol-3-yl)pyrimidin-2-yl]amino]-2-(1-oxoniumylideneallylamino)anilino]ethyl-dimethyl-ammonium
    72    75     1     0     0
@@ -927,7 +927,7 @@ USER_CHARGES
     74   36   69 1
     75   37   70 1
 @<TRIPOS>SUBSTRUCTURE
-     1 YY3         1 GROUP 0 A     ****
+     1 YY3         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 2-(dimethylammonio)ethyl-[5-methoxy-4-[[4-(1-methylindol-3-yl)pyrimidin-2-yl]amino]-2-(prop-2-enoylamino)phenyl]-methyl-ammonium
    72    75     1     0     0
@@ -1084,4 +1084,4 @@ USER_CHARGES
     74   36   69 1
     75   37   70 1
 @<TRIPOS>SUBSTRUCTURE
-     1 YY3         1 GROUP 0 A     ****
+     1 YY3         1 GROUP   0 A     ****

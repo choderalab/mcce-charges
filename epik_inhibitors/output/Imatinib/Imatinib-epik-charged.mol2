@@ -451,7 +451,7 @@ USER_CHARGES
     71   37   67 1
     72   37   68 1
 @<TRIPOS>SUBSTRUCTURE
-     1 STI         1 GROUP 0 A     ****
+     1 STI         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 ~{N}-[3-[[4-(1,2-dihydropyridin-2-ylium-3-yl)pyrimidin-2-yl]amino]-4-methyl-phenyl]-4-[(4-methylpiperazin-1-ium-1-yl)methyl]benzamide
    70    74     1     0     0
@@ -605,7 +605,7 @@ USER_CHARGES
     73   37   67 1
     74   37   68 1
 @<TRIPOS>SUBSTRUCTURE
-     1 STI         1 GROUP 0 A     ****
+     1 STI         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 ~{N}-[3-[[4-(1,2-dihydropyridin-2-ylium-3-yl)pyrimidin-2-yl]amino]-4-methyl-phenyl]-4-[(4-methylpiperazin-4-ium-1-yl)methyl]benzamide
    70    74     1     0     0
@@ -759,4 +759,4 @@ USER_CHARGES
     73   37   67 1
     74   37   68 1
 @<TRIPOS>SUBSTRUCTURE
-     1 STI         1 GROUP 0 A     ****
+     1 STI         1 GROUP   0 A     ****

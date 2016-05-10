@@ -366,7 +366,7 @@ USER_CHARGES
     56   28   53 1
     57   29   30 1
 @<TRIPOS>SUBSTRUCTURE
-     1 ZD6         1 GROUP 0 A     ****
+     1 ZD6         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 ~{N}-(4-bromo-2-fluoro-phenyl)-6-methoxy-7-[(1-methylpiperidin-1-ium-4-yl)methoxy]-1,2-dihydroquinazolin-2-ylium-4-amine
    56    59     1     0     0
@@ -491,4 +491,4 @@ USER_CHARGES
     58   28   53 1
     59   29   30 1
 @<TRIPOS>SUBSTRUCTURE
-     1 ZD6         1 GROUP 0 A     ****
+     1 ZD6         1 GROUP   0 A     ****

@@ -430,7 +430,7 @@ USER_CHARGES
     67   36   64 1
     68   36   65 1
 @<TRIPOS>SUBSTRUCTURE
-     1 DB8         1 GROUP 0 A     ****
+     1 DB8         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 [3-cyano-6-methoxy-7-[3-(4-methylpiperazin-4-ium-1-yl)propoxy]-4-quinolyl]-(2,4-dichloro-5-methoxy-phenyl)azanide
    65    68     1     0     0
@@ -573,4 +573,4 @@ USER_CHARGES
     67   36   63 1
     68   36   64 1
 @<TRIPOS>SUBSTRUCTURE
-     1 DB8         1 GROUP 0 A     ****
+     1 DB8         1 GROUP   0 A     ****

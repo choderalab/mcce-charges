@@ -354,7 +354,7 @@ USER_CHARGES
     54   30   46 1
     55   30   47 1
 @<TRIPOS>SUBSTRUCTURE
-     1 VGH         1 GROUP 0 A     ****
+     1 VGH         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 5-[1-(2,6-dichloro-3-fluoro-phenyl)ethoxy]-3-[1-(4-piperidyl)pyrazol-4-yl]-1,2-dihydropyridin-2-ylium-6-amine
    53    56     1     0     0
@@ -473,4 +473,4 @@ USER_CHARGES
     55   30   46 1
     56   30   47 1
 @<TRIPOS>SUBSTRUCTURE
-     1 VGH         1 GROUP 0 A     ****
+     1 VGH         1 GROUP   0 A     ****

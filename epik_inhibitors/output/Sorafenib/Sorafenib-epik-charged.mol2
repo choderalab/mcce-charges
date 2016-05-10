@@ -323,7 +323,7 @@ USER_CHARGES
     49   30   48 1
     50   31   32 1
 @<TRIPOS>SUBSTRUCTURE
-     1 BAX         1 GROUP 0 A     ****
+     1 BAX         1 GROUP   0 A     ****
 @<TRIPOS>MOLECULE
 4-[4-[[4-chloro-3-(trifluoromethyl)phenyl]carbamoylamino]phenoxy]-~{N}-methyl-pyridine-2-carboximidate
    47    49     1     0     0
@@ -429,4 +429,4 @@ USER_CHARGES
     48   27   47 1
     49   31   32 1
 @<TRIPOS>SUBSTRUCTURE
-     1 BAX         1 GROUP 0 A     ****
+     1 BAX         1 GROUP   0 A     ****
