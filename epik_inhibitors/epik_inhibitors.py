@@ -223,6 +223,8 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
     # Write as PDB
     charged_pdb_filename = output_basepath + '-epik-charged.pdb'
     ofs = oechem.oemolostream(charged_pdb_filename)
+    flavor = oechem.OEOFlavor_PDB_CurrentResidues | oechem.OEOFlavor_PDB_ELEMENT | oechem.OEOFlavor_PDB_BONDS | oechem.OEOFlavor_PDB_HETBONDS | oechem.OEOFlavor_PDB_BOTH
+    ofs.SetFlavor(oechem.OEFormat_PDB, flavor)
     for (index, charged_molecule) in enumerate(charged_molecules):
         # Fix residue names
         for atom in charged_molecule.GetAtoms():
@@ -230,7 +232,8 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
             residue.SetName(residue_name)
             oechem.OEAtomSetResidue(atom, residue)
 
-        oechem.OEWritePDBFile(ofs, charged_molecule, oechem.OEOFlavor_PDB_ELEMENT)
+        #oechem.OEWritePDBFile(ofs, charged_molecule, flavor)
+        oechem.OEWriteMolecule(ofs, charged_molecule)
     ofs.close()
 
     # Write molecules as mol2.
