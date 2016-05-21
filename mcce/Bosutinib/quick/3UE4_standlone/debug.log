@@ -1,0 +1,592 @@
+VDW_RAD  DB8+1  CAA   1.91
+VDW_EPS  DB8+1  CAA   0.11
+VDW_RAD  DB8+1  O02   1.66
+VDW_EPS  DB8+1  O02   0.21
+VDW_RAD  DB8+1  CAC   1.91
+VDW_EPS  DB8+1  CAC   0.11
+VDW_RAD  DB8+1  NAD   1.82
+VDW_EPS  DB8+1  NAD   0.17
+VDW_RAD  DB8+1  CL1   1.91
+VDW_EPS  DB8+1  CL1   0.11
+VDW_RAD  DB8+1  CL2   1.91
+VDW_EPS  DB8+1  CL2   0.11
+VDW_RAD  DB8+1  CAG   1.91
+VDW_EPS  DB8+1  CAG   0.11
+VDW_RAD  DB8+1  CAH   1.91
+VDW_EPS  DB8+1  CAH   0.11
+VDW_RAD  DB8+1  CAI   1.91
+VDW_EPS  DB8+1  CAI   0.11
+VDW_RAD  DB8+1  CAJ   1.91
+VDW_EPS  DB8+1  CAJ   0.11
+VDW_RAD  DB8+1  CAK   1.91
+VDW_EPS  DB8+1  CAK   0.11
+VDW_RAD  DB8+1  CAL   1.91
+VDW_EPS  DB8+1  CAL   0.11
+VDW_RAD  DB8+1  CAM   1.91
+VDW_EPS  DB8+1  CAM   0.11
+VDW_RAD  DB8+1  CAN   1.91
+VDW_EPS  DB8+1  CAN   0.11
+VDW_RAD  DB8+1  CAO   1.91
+VDW_EPS  DB8+1  CAO   0.11
+VDW_RAD  DB8+1  CAP   1.91
+VDW_EPS  DB8+1  CAP   0.11
+VDW_RAD  DB8+1  CAQ   1.91
+VDW_EPS  DB8+1  CAQ   0.11
+VDW_RAD  DB8+1  CAR   1.91
+VDW_EPS  DB8+1  CAR   0.11
+VDW_RAD  DB8+1  CAS   1.91
+VDW_EPS  DB8+1  CAS   0.11
+VDW_RAD  DB8+1  NAT   1.82
+VDW_EPS  DB8+1  NAT   0.17
+VDW_RAD  DB8+1  NAU   1.82
+VDW_EPS  DB8+1  NAU   0.17
+VDW_RAD  DB8+1  OAV   1.66
+VDW_EPS  DB8+1  OAV   0.21
+VDW_RAD  DB8+1  OAW   1.66
+VDW_EPS  DB8+1  OAW   0.21
+VDW_RAD  DB8+1  CAX   1.91
+VDW_EPS  DB8+1  CAX   0.11
+VDW_RAD  DB8+1  CAY   1.91
+VDW_EPS  DB8+1  CAY   0.11
+VDW_RAD  DB8+1  CAZ   1.91
+VDW_EPS  DB8+1  CAZ   0.11
+VDW_RAD  DB8+1  CBA   1.91
+VDW_EPS  DB8+1  CBA   0.11
+VDW_RAD  DB8+1  CBB   1.91
+VDW_EPS  DB8+1  CBB   0.11
+VDW_RAD  DB8+1  CBC   1.91
+VDW_EPS  DB8+1  CBC   0.11
+VDW_RAD  DB8+1  CBD   1.91
+VDW_EPS  DB8+1  CBD   0.11
+VDW_RAD  DB8+1  CBE   1.91
+VDW_EPS  DB8+1  CBE   0.11
+VDW_RAD  DB8+1  CBF   1.91
+VDW_EPS  DB8+1  CBF   0.11
+VDW_RAD  DB8+1  CBG   1.91
+VDW_EPS  DB8+1  CBG   0.11
+VDW_RAD  DB8+1  NBH   1.82
+VDW_EPS  DB8+1  NBH   0.17
+VDW_RAD  DB8+1  NBI   1.82
+VDW_EPS  DB8+1  NBI   0.17
+VDW_RAD  DB8+1  C01   1.91
+VDW_EPS  DB8+1  C01   0.11
+VDW_RAD  DB8+1  HAA   1.49
+VDW_EPS  DB8+1  HAA   0.02
+VDW_RAD  DB8+1 HAAA   1.91
+VDW_EPS  DB8+1 HAAA   0.11
+VDW_RAD  DB8+1 HAAB   1.91
+VDW_EPS  DB8+1 HAAB   0.11
+VDW_RAD  DB8+1  HAC   1.49
+VDW_EPS  DB8+1  HAC   0.02
+VDW_RAD  DB8+1 HACA   1.91
+VDW_EPS  DB8+1 HACA   0.11
+VDW_RAD  DB8+1  HAH   1.49
+VDW_EPS  DB8+1  HAH   0.02
+VDW_RAD  DB8+1  HAI   1.49
+VDW_EPS  DB8+1  HAI   0.02
+VDW_RAD  DB8+1  HAJ   1.49
+VDW_EPS  DB8+1  HAJ   0.02
+VDW_RAD  DB8+1  HAK   1.49
+VDW_EPS  DB8+1  HAK   0.02
+VDW_RAD  DB8+1  HAL   1.49
+VDW_EPS  DB8+1  HAL   0.02
+VDW_RAD  DB8+1  HAM   1.49
+VDW_EPS  DB8+1  HAM   0.02
+VDW_RAD  DB8+1 HAMA   1.91
+VDW_EPS  DB8+1 HAMA   0.11
+VDW_RAD  DB8+1  HAN   1.49
+VDW_EPS  DB8+1  HAN   0.02
+VDW_RAD  DB8+1 HANA   1.91
+VDW_EPS  DB8+1 HANA   0.11
+VDW_RAD  DB8+1  HAO   1.49
+VDW_EPS  DB8+1  HAO   0.02
+VDW_RAD  DB8+1 HAOA   1.91
+VDW_EPS  DB8+1 HAOA   0.11
+VDW_RAD  DB8+1 HAOB   1.91
+VDW_EPS  DB8+1 HAOB   0.11
+VDW_RAD  DB8+1  HAP   1.49
+VDW_EPS  DB8+1  HAP   0.02
+VDW_RAD  DB8+1 HAPA   1.91
+VDW_EPS  DB8+1 HAPA   0.11
+VDW_RAD  DB8+1  HAQ   1.49
+VDW_EPS  DB8+1  HAQ   0.02
+VDW_RAD  DB8+1 HAQA   1.91
+VDW_EPS  DB8+1 HAQA   0.11
+VDW_RAD  DB8+1  HAR   1.49
+VDW_EPS  DB8+1  HAR   0.02
+VDW_RAD  DB8+1 HARA   1.91
+VDW_EPS  DB8+1 HARA   0.11
+VDW_RAD  DB8+1  HAS   1.49
+VDW_EPS  DB8+1  HAS   0.02
+VDW_RAD  DB8+1 HASA   1.91
+VDW_EPS  DB8+1 HASA   0.11
+VDW_RAD  DB8+1 HNAU   1.82
+VDW_EPS  DB8+1 HNAU   0.17
+VDW_RAD  DB8+1  H01   1.49
+VDW_EPS  DB8+1  H01   0.02
+VDW_RAD  DB8+1 H01A   1.91
+VDW_EPS  DB8+1 H01A   0.11
+VDW_RAD  DB8+1 H01B   1.91
+VDW_EPS  DB8+1 H01B   0.11
+VDW_RAD  DB8+1  H66   1.49
+VDW_EPS  DB8+1  H66   0.02
+VDW_RAD  DB8+2  CAA   1.91
+VDW_EPS  DB8+2  CAA   0.11
+VDW_RAD  DB8+2  O02   1.66
+VDW_EPS  DB8+2  O02   0.21
+VDW_RAD  DB8+2  CAC   1.91
+VDW_EPS  DB8+2  CAC   0.11
+VDW_RAD  DB8+2  NAD   1.82
+VDW_EPS  DB8+2  NAD   0.17
+VDW_RAD  DB8+2  CL1   1.91
+VDW_EPS  DB8+2  CL1   0.11
+VDW_RAD  DB8+2  CL2   1.91
+VDW_EPS  DB8+2  CL2   0.11
+VDW_RAD  DB8+2  CAG   1.91
+VDW_EPS  DB8+2  CAG   0.11
+VDW_RAD  DB8+2  CAH   1.91
+VDW_EPS  DB8+2  CAH   0.11
+VDW_RAD  DB8+2  CAI   1.91
+VDW_EPS  DB8+2  CAI   0.11
+VDW_RAD  DB8+2  CAJ   1.91
+VDW_EPS  DB8+2  CAJ   0.11
+VDW_RAD  DB8+2  CAK   1.91
+VDW_EPS  DB8+2  CAK   0.11
+VDW_RAD  DB8+2  CAL   1.91
+VDW_EPS  DB8+2  CAL   0.11
+VDW_RAD  DB8+2  CAM   1.91
+VDW_EPS  DB8+2  CAM   0.11
+VDW_RAD  DB8+2  CAN   1.91
+VDW_EPS  DB8+2  CAN   0.11
+VDW_RAD  DB8+2  CAO   1.91
+VDW_EPS  DB8+2  CAO   0.11
+VDW_RAD  DB8+2  CAP   1.91
+VDW_EPS  DB8+2  CAP   0.11
+VDW_RAD  DB8+2  CAQ   1.91
+VDW_EPS  DB8+2  CAQ   0.11
+VDW_RAD  DB8+2  CAR   1.91
+VDW_EPS  DB8+2  CAR   0.11
+VDW_RAD  DB8+2  CAS   1.91
+VDW_EPS  DB8+2  CAS   0.11
+VDW_RAD  DB8+2  NAT   1.82
+VDW_EPS  DB8+2  NAT   0.17
+VDW_RAD  DB8+2  NAU   1.82
+VDW_EPS  DB8+2  NAU   0.17
+VDW_RAD  DB8+2  OAV   1.66
+VDW_EPS  DB8+2  OAV   0.21
+VDW_RAD  DB8+2  OAW   1.66
+VDW_EPS  DB8+2  OAW   0.21
+VDW_RAD  DB8+2  CAX   1.91
+VDW_EPS  DB8+2  CAX   0.11
+VDW_RAD  DB8+2  CAY   1.91
+VDW_EPS  DB8+2  CAY   0.11
+VDW_RAD  DB8+2  CAZ   1.91
+VDW_EPS  DB8+2  CAZ   0.11
+VDW_RAD  DB8+2  CBA   1.91
+VDW_EPS  DB8+2  CBA   0.11
+VDW_RAD  DB8+2  CBB   1.91
+VDW_EPS  DB8+2  CBB   0.11
+VDW_RAD  DB8+2  CBC   1.91
+VDW_EPS  DB8+2  CBC   0.11
+VDW_RAD  DB8+2  CBD   1.91
+VDW_EPS  DB8+2  CBD   0.11
+VDW_RAD  DB8+2  CBE   1.91
+VDW_EPS  DB8+2  CBE   0.11
+VDW_RAD  DB8+2  CBF   1.91
+VDW_EPS  DB8+2  CBF   0.11
+VDW_RAD  DB8+2  CBG   1.91
+VDW_EPS  DB8+2  CBG   0.11
+VDW_RAD  DB8+2  NBH   1.82
+VDW_EPS  DB8+2  NBH   0.17
+VDW_RAD  DB8+2  NBI   1.82
+VDW_EPS  DB8+2  NBI   0.17
+VDW_RAD  DB8+2  C01   1.91
+VDW_EPS  DB8+2  C01   0.11
+VDW_RAD  DB8+2  HAA   1.49
+VDW_EPS  DB8+2  HAA   0.02
+VDW_RAD  DB8+2 HAAA   1.91
+VDW_EPS  DB8+2 HAAA   0.11
+VDW_RAD  DB8+2 HAAB   1.91
+VDW_EPS  DB8+2 HAAB   0.11
+VDW_RAD  DB8+2  HAC   1.49
+VDW_EPS  DB8+2  HAC   0.02
+VDW_RAD  DB8+2 HACA   1.91
+VDW_EPS  DB8+2 HACA   0.11
+VDW_RAD  DB8+2  HAH   1.49
+VDW_EPS  DB8+2  HAH   0.02
+VDW_RAD  DB8+2  HAI   1.49
+VDW_EPS  DB8+2  HAI   0.02
+VDW_RAD  DB8+2  HAJ   1.49
+VDW_EPS  DB8+2  HAJ   0.02
+VDW_RAD  DB8+2  HAK   1.49
+VDW_EPS  DB8+2  HAK   0.02
+VDW_RAD  DB8+2  HAL   1.49
+VDW_EPS  DB8+2  HAL   0.02
+VDW_RAD  DB8+2  HAM   1.49
+VDW_EPS  DB8+2  HAM   0.02
+VDW_RAD  DB8+2 HAMA   1.91
+VDW_EPS  DB8+2 HAMA   0.11
+VDW_RAD  DB8+2  HAN   1.49
+VDW_EPS  DB8+2  HAN   0.02
+VDW_RAD  DB8+2 HANA   1.91
+VDW_EPS  DB8+2 HANA   0.11
+VDW_RAD  DB8+2  HAO   1.49
+VDW_EPS  DB8+2  HAO   0.02
+VDW_RAD  DB8+2 HAOA   1.91
+VDW_EPS  DB8+2 HAOA   0.11
+VDW_RAD  DB8+2 HAOB   1.91
+VDW_EPS  DB8+2 HAOB   0.11
+VDW_RAD  DB8+2  HAP   1.49
+VDW_EPS  DB8+2  HAP   0.02
+VDW_RAD  DB8+2 HAPA   1.91
+VDW_EPS  DB8+2 HAPA   0.11
+VDW_RAD  DB8+2  HAQ   1.49
+VDW_EPS  DB8+2  HAQ   0.02
+VDW_RAD  DB8+2 HAQA   1.91
+VDW_EPS  DB8+2 HAQA   0.11
+VDW_RAD  DB8+2  HAR   1.49
+VDW_EPS  DB8+2  HAR   0.02
+VDW_RAD  DB8+2 HARA   1.91
+VDW_EPS  DB8+2 HARA   0.11
+VDW_RAD  DB8+2  HAS   1.49
+VDW_EPS  DB8+2  HAS   0.02
+VDW_RAD  DB8+2 HASA   1.91
+VDW_EPS  DB8+2 HASA   0.11
+VDW_RAD  DB8+2 HNAU   1.82
+VDW_EPS  DB8+2 HNAU   0.17
+VDW_RAD  DB8+2  H01   1.49
+VDW_EPS  DB8+2  H01   0.02
+VDW_RAD  DB8+2 H01A   1.91
+VDW_EPS  DB8+2 H01A   0.11
+VDW_RAD  DB8+2 H01B   1.91
+VDW_EPS  DB8+2 H01B   0.11
+VDW_RAD  DB8+2  H66   1.49
+VDW_EPS  DB8+2  H66   0.02
+VDW_RAD  DB801  CAA   1.91
+VDW_EPS  DB801  CAA   0.11
+VDW_RAD  DB801  O02   1.66
+VDW_EPS  DB801  O02   0.21
+VDW_RAD  DB801  CAC   1.91
+VDW_EPS  DB801  CAC   0.11
+VDW_RAD  DB801  NAD   1.82
+VDW_EPS  DB801  NAD   0.17
+VDW_RAD  DB801  CL1   1.91
+VDW_EPS  DB801  CL1   0.11
+VDW_RAD  DB801  CL2   1.91
+VDW_EPS  DB801  CL2   0.11
+VDW_RAD  DB801  CAG   1.91
+VDW_EPS  DB801  CAG   0.11
+VDW_RAD  DB801  CAH   1.91
+VDW_EPS  DB801  CAH   0.11
+VDW_RAD  DB801  CAI   1.91
+VDW_EPS  DB801  CAI   0.11
+VDW_RAD  DB801  CAJ   1.91
+VDW_EPS  DB801  CAJ   0.11
+VDW_RAD  DB801  CAK   1.91
+VDW_EPS  DB801  CAK   0.11
+VDW_RAD  DB801  CAL   1.91
+VDW_EPS  DB801  CAL   0.11
+VDW_RAD  DB801  CAM   1.91
+VDW_EPS  DB801  CAM   0.11
+VDW_RAD  DB801  CAN   1.91
+VDW_EPS  DB801  CAN   0.11
+VDW_RAD  DB801  CAO   1.91
+VDW_EPS  DB801  CAO   0.11
+VDW_RAD  DB801  CAP   1.91
+VDW_EPS  DB801  CAP   0.11
+VDW_RAD  DB801  CAQ   1.91
+VDW_EPS  DB801  CAQ   0.11
+VDW_RAD  DB801  CAR   1.91
+VDW_EPS  DB801  CAR   0.11
+VDW_RAD  DB801  CAS   1.91
+VDW_EPS  DB801  CAS   0.11
+VDW_RAD  DB801  NAT   1.82
+VDW_EPS  DB801  NAT   0.17
+VDW_RAD  DB801  NAU   1.82
+VDW_EPS  DB801  NAU   0.17
+VDW_RAD  DB801  OAV   1.66
+VDW_EPS  DB801  OAV   0.21
+VDW_RAD  DB801  OAW   1.66
+VDW_EPS  DB801  OAW   0.21
+VDW_RAD  DB801  CAX   1.91
+VDW_EPS  DB801  CAX   0.11
+VDW_RAD  DB801  CAY   1.91
+VDW_EPS  DB801  CAY   0.11
+VDW_RAD  DB801  CAZ   1.91
+VDW_EPS  DB801  CAZ   0.11
+VDW_RAD  DB801  CBA   1.91
+VDW_EPS  DB801  CBA   0.11
+VDW_RAD  DB801  CBB   1.91
+VDW_EPS  DB801  CBB   0.11
+VDW_RAD  DB801  CBC   1.91
+VDW_EPS  DB801  CBC   0.11
+VDW_RAD  DB801  CBD   1.91
+VDW_EPS  DB801  CBD   0.11
+VDW_RAD  DB801  CBE   1.91
+VDW_EPS  DB801  CBE   0.11
+VDW_RAD  DB801  CBF   1.91
+VDW_EPS  DB801  CBF   0.11
+VDW_RAD  DB801  CBG   1.91
+VDW_EPS  DB801  CBG   0.11
+VDW_RAD  DB801  NBH   1.82
+VDW_EPS  DB801  NBH   0.17
+VDW_RAD  DB801  NBI   1.82
+VDW_EPS  DB801  NBI   0.17
+VDW_RAD  DB801  C01   1.91
+VDW_EPS  DB801  C01   0.11
+VDW_RAD  DB801  HAA   1.49
+VDW_EPS  DB801  HAA   0.02
+VDW_RAD  DB801 HAAA   1.91
+VDW_EPS  DB801 HAAA   0.11
+VDW_RAD  DB801 HAAB   1.91
+VDW_EPS  DB801 HAAB   0.11
+VDW_RAD  DB801  HAC   1.49
+VDW_EPS  DB801  HAC   0.02
+VDW_RAD  DB801 HACA   1.91
+VDW_EPS  DB801 HACA   0.11
+VDW_RAD  DB801  HAH   1.49
+VDW_EPS  DB801  HAH   0.02
+VDW_RAD  DB801  HAI   1.49
+VDW_EPS  DB801  HAI   0.02
+VDW_RAD  DB801  HAJ   1.49
+VDW_EPS  DB801  HAJ   0.02
+VDW_RAD  DB801  HAK   1.49
+VDW_EPS  DB801  HAK   0.02
+VDW_RAD  DB801  HAL   1.49
+VDW_EPS  DB801  HAL   0.02
+VDW_RAD  DB801  HAM   1.49
+VDW_EPS  DB801  HAM   0.02
+VDW_RAD  DB801 HAMA   1.91
+VDW_EPS  DB801 HAMA   0.11
+VDW_RAD  DB801  HAN   1.49
+VDW_EPS  DB801  HAN   0.02
+VDW_RAD  DB801 HANA   1.91
+VDW_EPS  DB801 HANA   0.11
+VDW_RAD  DB801  HAO   1.49
+VDW_EPS  DB801  HAO   0.02
+VDW_RAD  DB801 HAOA   1.91
+VDW_EPS  DB801 HAOA   0.11
+VDW_RAD  DB801 HAOB   1.91
+VDW_EPS  DB801 HAOB   0.11
+VDW_RAD  DB801  HAP   1.49
+VDW_EPS  DB801  HAP   0.02
+VDW_RAD  DB801 HAPA   1.91
+VDW_EPS  DB801 HAPA   0.11
+VDW_RAD  DB801  HAQ   1.49
+VDW_EPS  DB801  HAQ   0.02
+VDW_RAD  DB801 HAQA   1.91
+VDW_EPS  DB801 HAQA   0.11
+VDW_RAD  DB801  HAR   1.49
+VDW_EPS  DB801  HAR   0.02
+VDW_RAD  DB801 HARA   1.91
+VDW_EPS  DB801 HARA   0.11
+VDW_RAD  DB801  HAS   1.49
+VDW_EPS  DB801  HAS   0.02
+VDW_RAD  DB801 HASA   1.91
+VDW_EPS  DB801 HASA   0.11
+VDW_RAD  DB801 HNAU   1.82
+VDW_EPS  DB801 HNAU   0.17
+VDW_RAD  DB801  H01   1.49
+VDW_EPS  DB801  H01   0.02
+VDW_RAD  DB801 H01A   1.91
+VDW_EPS  DB801 H01A   0.11
+VDW_RAD  DB801 H01B   1.91
+VDW_EPS  DB801 H01B   0.11
+VDW_RAD  DB802  CAA   1.91
+VDW_EPS  DB802  CAA   0.11
+VDW_RAD  DB802  O02   1.66
+VDW_EPS  DB802  O02   0.21
+VDW_RAD  DB802  CAC   1.91
+VDW_EPS  DB802  CAC   0.11
+VDW_RAD  DB802  NAD   1.82
+VDW_EPS  DB802  NAD   0.17
+VDW_RAD  DB802  CL1   1.91
+VDW_EPS  DB802  CL1   0.11
+VDW_RAD  DB802  CL2   1.91
+VDW_EPS  DB802  CL2   0.11
+VDW_RAD  DB802  CAG   1.91
+VDW_EPS  DB802  CAG   0.11
+VDW_RAD  DB802  CAH   1.91
+VDW_EPS  DB802  CAH   0.11
+VDW_RAD  DB802  CAI   1.91
+VDW_EPS  DB802  CAI   0.11
+VDW_RAD  DB802  CAJ   1.91
+VDW_EPS  DB802  CAJ   0.11
+VDW_RAD  DB802  CAK   1.91
+VDW_EPS  DB802  CAK   0.11
+VDW_RAD  DB802  CAL   1.91
+VDW_EPS  DB802  CAL   0.11
+VDW_RAD  DB802  CAM   1.91
+VDW_EPS  DB802  CAM   0.11
+VDW_RAD  DB802  CAN   1.91
+VDW_EPS  DB802  CAN   0.11
+VDW_RAD  DB802  CAO   1.91
+VDW_EPS  DB802  CAO   0.11
+VDW_RAD  DB802  CAP   1.91
+VDW_EPS  DB802  CAP   0.11
+VDW_RAD  DB802  CAQ   1.91
+VDW_EPS  DB802  CAQ   0.11
+VDW_RAD  DB802  CAR   1.91
+VDW_EPS  DB802  CAR   0.11
+VDW_RAD  DB802  CAS   1.91
+VDW_EPS  DB802  CAS   0.11
+VDW_RAD  DB802  NAT   1.82
+VDW_EPS  DB802  NAT   0.17
+VDW_RAD  DB802  NAU   1.82
+VDW_EPS  DB802  NAU   0.17
+VDW_RAD  DB802  OAV   1.66
+VDW_EPS  DB802  OAV   0.21
+VDW_RAD  DB802  OAW   1.66
+VDW_EPS  DB802  OAW   0.21
+VDW_RAD  DB802  CAX   1.91
+VDW_EPS  DB802  CAX   0.11
+VDW_RAD  DB802  CAY   1.91
+VDW_EPS  DB802  CAY   0.11
+VDW_RAD  DB802  CAZ   1.91
+VDW_EPS  DB802  CAZ   0.11
+VDW_RAD  DB802  CBA   1.91
+VDW_EPS  DB802  CBA   0.11
+VDW_RAD  DB802  CBB   1.91
+VDW_EPS  DB802  CBB   0.11
+VDW_RAD  DB802  CBC   1.91
+VDW_EPS  DB802  CBC   0.11
+VDW_RAD  DB802  CBD   1.91
+VDW_EPS  DB802  CBD   0.11
+VDW_RAD  DB802  CBE   1.91
+VDW_EPS  DB802  CBE   0.11
+VDW_RAD  DB802  CBF   1.91
+VDW_EPS  DB802  CBF   0.11
+VDW_RAD  DB802  CBG   1.91
+VDW_EPS  DB802  CBG   0.11
+VDW_RAD  DB802  NBH   1.82
+VDW_EPS  DB802  NBH   0.17
+VDW_RAD  DB802  NBI   1.82
+VDW_EPS  DB802  NBI   0.17
+VDW_RAD  DB802  C01   1.91
+VDW_EPS  DB802  C01   0.11
+VDW_RAD  DB802  HAA   1.49
+VDW_EPS  DB802  HAA   0.02
+VDW_RAD  DB802 HAAA   1.91
+VDW_EPS  DB802 HAAA   0.11
+VDW_RAD  DB802 HAAB   1.91
+VDW_EPS  DB802 HAAB   0.11
+VDW_RAD  DB802  HAC   1.49
+VDW_EPS  DB802  HAC   0.02
+VDW_RAD  DB802 HACA   1.91
+VDW_EPS  DB802 HACA   0.11
+VDW_RAD  DB802  HAH   1.49
+VDW_EPS  DB802  HAH   0.02
+VDW_RAD  DB802  HAI   1.49
+VDW_EPS  DB802  HAI   0.02
+VDW_RAD  DB802  HAJ   1.49
+VDW_EPS  DB802  HAJ   0.02
+VDW_RAD  DB802  HAK   1.49
+VDW_EPS  DB802  HAK   0.02
+VDW_RAD  DB802  HAL   1.49
+VDW_EPS  DB802  HAL   0.02
+VDW_RAD  DB802  HAM   1.49
+VDW_EPS  DB802  HAM   0.02
+VDW_RAD  DB802 HAMA   1.91
+VDW_EPS  DB802 HAMA   0.11
+VDW_RAD  DB802  HAN   1.49
+VDW_EPS  DB802  HAN   0.02
+VDW_RAD  DB802 HANA   1.91
+VDW_EPS  DB802 HANA   0.11
+VDW_RAD  DB802  HAO   1.49
+VDW_EPS  DB802  HAO   0.02
+VDW_RAD  DB802 HAOA   1.91
+VDW_EPS  DB802 HAOA   0.11
+VDW_RAD  DB802 HAOB   1.91
+VDW_EPS  DB802 HAOB   0.11
+VDW_RAD  DB802  HAP   1.49
+VDW_EPS  DB802  HAP   0.02
+VDW_RAD  DB802 HAPA   1.91
+VDW_EPS  DB802 HAPA   0.11
+VDW_RAD  DB802  HAQ   1.49
+VDW_EPS  DB802  HAQ   0.02
+VDW_RAD  DB802 HAQA   1.91
+VDW_EPS  DB802 HAQA   0.11
+VDW_RAD  DB802  HAR   1.49
+VDW_EPS  DB802  HAR   0.02
+VDW_RAD  DB802 HARA   1.91
+VDW_EPS  DB802 HARA   0.11
+VDW_RAD  DB802  HAS   1.49
+VDW_EPS  DB802  HAS   0.02
+VDW_RAD  DB802 HASA   1.91
+VDW_EPS  DB802 HASA   0.11
+VDW_RAD  DB802 H01A   1.91
+VDW_EPS  DB802 H01A   0.11
+VDW_RAD  DB802 H01B   1.91
+VDW_EPS  DB802 H01B   0.11
+VDW_RAD  DB802  H65   1.49
+VDW_EPS  DB802  H65   0.02
+   Error! get_connect12(): connectivity of atom " N   ASP A0001" is not complete:
+
+          get_connect12(): atom  C   of residue i-1 is not found 
+
+   Error! get_connect12(): connectivity of atom " C   ILE A0270" is not complete:
+
+          get_connect12(): atom  N   of residue i+1 is not found 
+
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " CBF"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " CBG"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " NBH"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " C01"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAAA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAAB"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAC"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HACA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAH"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAI"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAJ"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAK"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAL"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAM"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAMA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAN"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HANA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAO"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAOA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAOB"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAP"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAPA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAQ"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAQA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAR"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HARA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAS"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HASA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "H01A"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "H01B"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " CBF"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " CBG"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " NBH"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " C01"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAAA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAAB"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAC"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HACA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAH"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAI"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAJ"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAK"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAL"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAM"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAMA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAN"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HANA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAO"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAOA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAOB"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAP"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAPA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAQ"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HAQA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAR"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HARA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom " HAS"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "HASA"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "H01A"
+   Error! get_connect12(): Can't find CONNECT parameter of conformer "DB802" atom "H01B"

@@ -1,0 +1,13 @@
+random number seed = 1463615699
+Monte Carlo set up time: 0 seconds.
+Starting number of residue = 1, number of conformer = 4
+
+pH =   7.40  Eh =   0.00
+
+Reduce =   1, number of active residue:    1, active conformer     3
+Equilibrating:       1 cycle(s) at temperature =     298.15K
+Annealling:          1 cycle(s) at temperature =     298.15K
+Collecting data:                at temperature =     298.15K
+   Minimum/maximum number of cycles:     1/   -1
+   Actual  number of cycles to converge:     2
+Monte Carlo running time: 0 seconds.
