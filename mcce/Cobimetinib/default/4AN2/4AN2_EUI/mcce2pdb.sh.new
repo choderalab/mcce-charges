@@ -1,0 +1,29 @@
+#!/bin/bash
+# Cat Chenal 2011-08-02
+# Rev 2013-01-15: print format
+# To convert mcce file (eg step2) to pdb format 
+# for proper display/selection in pymol
+
+if [ $# -lt 1 ]; then
+  echo "Usage:  file_name [new_chain_letter] (e.g. to replace "_" from a gromacs structure)"
+  exit 0
+fi
+shortname=$(basename $1 .pdb)
+
+## Print format-standard-PDB (without altCode or insertion char), 15 fields:
+## %6s%5d %4s %3s  %c%4d %3d%8.3f%8.3f%8.3f%6.2f%6.2f      %-4s%2s%2s\n
+
+## Print format in MCCE write_pdb.c:
+## ATOM  %5d %4s%c%3s %c%04d%c%03d%8.3f%8.3f%8.3f %7.3f      %6.3f      %-11s\n
+## ....  nnnnn XXXXARRR Cnnnn_000xxxxxxxxyyyyyyyyzzzzzzzz ooooooo      bbbbbb      sssseeqq...
+#                "%-6s%5d  %-3s %3s %1s%4s    %8.3f%8.3f%8.3f%6.2f%6.2f%12s\n"
+nawk 'BEGIN{prt12="%-6s%5d %4s %3s %1s%4s    %8.3f%8.3f%8.3f%6.2f%6.2f%12s\n"} \
+      { if (length($3)<4){atm=sprintf(" %-3s",$3)} else {atm=$3} } \
+      { if($4=="_CL") {$4=" CL"} else { if ($4=="CYD") {$4="CYS"} } } \
+      { printf(prt12,$1,$2,atm,$4,substr($5,1,1),substr($5,2,4),$6,$7,$8,$9,$10,$11) } ' $1 > tmp
+
+#{if (length($3)<4){atm=sprintf(" %-3s",$3)}else{atm=$3}}
+cp tmp $shortname.PDB
+/bin/rm tmp
+
+  echo "Converted pdb was saved as $shortname.PDB"
