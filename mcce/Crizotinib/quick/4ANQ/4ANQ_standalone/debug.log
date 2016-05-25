@@ -1,8 +1,0 @@
-   Error! get_connect12(): connectivity of atom " N   ASN A0001" is not complete:
-
-          get_connect12(): atom  C   of residue i-1 is not found 
-
-   Error! get_connect12(): connectivity of atom " C   GLY A0310" is not complete:
-
-          get_connect12(): atom  N   of residue i+1 is not found 
-
