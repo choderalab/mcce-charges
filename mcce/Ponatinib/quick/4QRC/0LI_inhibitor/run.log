@@ -1,0 +1,370 @@
+ _________________________MCCE 3.0____________________________
+|	   						      |
+|    MCCE (Multi-Conformation Continuum Electrostatics)       |
+|	is a program developed at Marilyn Gunner's lab.	      |
+|	MCCE is a biophysics simulation program combining     |
+|	continuum electrostatics and molecular mechanics.     |
+|	In this program, the protein side chain motions are   |
+|	simulated explicitly while the dielectric effect of   |
+|	solvent and bulk protein material is modeled by	      |
+|	continuum electrostatics.			      |
+|	MCCE can calculate residue pka, cofactor Em and       |
+|	protein PI in protein-solvent systems, and more:      |
+|							      |
+|	 - Protein structural responses to changes in charge  |
+|	 - Changes in charge state of ionizable residues due  |
+|	   to structural changes in the protein		      |
+|	 - The structural and ionization changes caused by    |
+|	   changes in solution pH or Eh			      |
+|	 - Find the location and stoichiometry of proton      |
+|	   transfers coupled to electron transfer	      |
+|	 - Make side chain rotomer packing predictions as     |
+|	   a function of pH				      |
+|							      |
+|	For questions and help, visit                         |
+|		https://sites.google.com/site/mccewiki/home   |
+|		  October 2015, by MCCE Development Team      |
+|							      |
+|_________________________        ____________________________|
+                          MCCE 3.0                          
+
+Last Updates:                                              
+10/27/2015, New Delphi Version v68                
+12/1/2015,  In Yifan's monte carlo, now it takes energies.opp file as an input.
+12/24/2015, Added flag for Gaussian smoothing, 1 means run Gaussian, 
+            zero means run step function.  For more information visit
+            http://compbio.clemson.edu/downloadDir/delphi/delphi95_manual.pdf 
+12/29/2015, Added two flags for the use of Gaussian smoothing, sigma and srfcut.
+02/01/2016, Added an extra column to the opp energy files.
+===========================================================
+
+Sun May 29 15:02:46 2016
+Step 0. Initialize enviroment
+   Load run control file "run.prm"...
+   Done
+
+   Tentatively load local param file "new.tpl"...   No such file, ignore.
+   Done
+
+   Load parameters from directory "/home/salah/mcce-charges/mcce/param04" ... 
+
+   In file /home/salah/mcce-charges/mcce/param04/hec.tpl, parameter "CONNECT  HMC01  CAB sp2       0     C3B 0     CBB LIG   SG" is already loaded somewhere else.
+   Try delete this entry and run MCCE again
+   Done
+
+   Load linear free energy correction parameters from "/home/mcce/mcce3.0/extra.tpl".../home/mcce/mcce3.0/extra.tpl
+   File loaded.
+   Done
+
+Step 0 Done.
+
+Step 1. Test and format structral file
+   Read pdb file "0LI.pdb"...
+   Done
+
+   Read name rule file "/home/mcce/mcce3.0/name.txt"...
+   Done
+
+   Rename residue and atom names...
+   Done
+
+   Label backbone, sidechain and altLoc conformers...
+   Done
+
+   Load pdb lines into data structure...
+   Done
+
+   Strip free cofactors with SAS >   5%...
+   Warning! assign_vdw_param(): missing parameter(s), default value is used and saved in debug.log.
+        1 free cofactors were stripped off in this round
+        0 free cofactors were stripped off in this round
+   Total deleted cofactors = 1.
+   Done
+
+   Check missing heavy atoms and complete altLoc conformers...
+   Missing heavy atom   H7 of conf 0LI11 in "0LI B   2".
+   Missing heavy atom   H8 of conf 0LI11 in "0LI B   2".
+   Missing heavy atom H20A of conf 0LI11 in "0LI B   2".
+   Missing heavy atom H21A of conf 0LI11 in "0LI B   2".
+   Missing heavy atom H22A of conf 0LI11 in "0LI B   2".
+   Missing heavy atom H24A of conf 0LI11 in "0LI B   2".
+   Missing heavy atom   H1 of conf 0LI11 in "0LI B   2".
+   Missing heavy atom H11A of conf 0LI11 in "0LI B   2".
+   Missing heavy atom H11B of conf 0LI11 in "0LI B   2".
+   Missing heavy atom H23A of conf 0LI11 in "0LI B   2".
+   Missing heavy atom H25A of conf 0LI11 in "0LI B   2".
+   Missing heavy atom H25B of conf 0LI11 in "0LI B   2".
+   Missing heavy atoms detected.
+   Ignore warning messages if they are in the terminal residues
+   Done
+
+   Find distance clash (<2.000)...
+   No clash found.
+   Done
+
+   Make connectivity network ...
+   Done.
+
+   Warning! get_bond_length(): Can't find covalent radius for   H7, use default radius 0.750000 instead
+   2 TORSION parameters were guessed and recorded in file debug.log.
+   Modify and put them into a param file to have the full control.
+   Warning! get_bond_length(): Can't find covalent radius for H11A, use default radius 0.750000 instead
+   Warning! get_bond_length(): Can't find covalent radius for H25A, use default radius 0.750000 instead
+   Total time for step1 (premcce) is 0 seconds.
+
+   Output files:
+      step1_out.pdb         will be the input of step 2.
+      head1.lst             rotamer making control file for step 2
+      acc.atm               atom solvent accessible surface
+      acc.res               residue solvent accessible surface
+      head1.lst             rotamer making instruction, used in step2
+
+Step 1 Done.
+
+Step 2. Make multi side chain conformers
+   Load step 1 output file step1_out.pdb...
+   Done
+
+   Rotamer statistics is dynamically updated in file "rot_stat"
+
+   Remove redundant heavy atom conformers in step1_out.pdb
+   0 conformers were deleted.
+   Done
+
+
+   Relax crystal water..
+   Done
+
+   Prepare for rotamer making ...
+   Deleting H atoms...16 H atoms were deleted.
+   Warning! assign_vdw_param(): missing parameter(s), default value is used and saved in debug.log.
+   Assigning radii.
+   Estimating Solvent Accessible Surface (SAS).
+   Done.
+
+   Swap atoms...
+   Done
+
+
+   Extra rotamers...
+   Done
+
+
+   Delete duplicate conformers ... 0 conformers deleted.
+   Done. Time spent = 0
+
+   Prune rotamers by self VDW potential...
+   Creating connectivity table...
+   Computing self VDW potential. It may take a while...
+   Pruning rotamers...0 rotamers deleted.
+   Done. Time spent = 0
+
+
+   Tuning exposed rotamers...
+   Done. Time spent = 0
+
+
+   Repack side chains 5000 times, remove inaccessible conformers...
+   Computing pairwise LJ potential. This may take a while.
+      Estimated time on AMD 1.6GHz is 0 seconds.
+      Actual time is 0
+   Repacking in progress, see progress.log for details...
+   Done. Time spent = 0
+
+
+   Skip writing heavy atome rotamer pdb file hvrot.pdb
+   Randomly prune conformers...
+   Done
+
+   Making ionization conformers...
+   Done
+
+
+   Add H atoms...
+   Warning! assign_rad():      missing parameter(s), default value is used and saved in debug.log.
+   Warning! assign_vdw_param(): missing parameter(s), default value is used and saved in debug.log.
+   Done
+
+
+   NOT optimizing hydroxyl and water.
+
+   Sorting conformers...
+   Done
+
+   Skip writing full rotamer file step2_out.full.
+   Delete duplicate conformers ...
+   Done. Time spent = 0
+
+
+   Write output...
+   Done
+
+   Total time for step2 (rotamer making) is 1 seconds.
+
+   Output files:
+      step2_out.pdb   : mcce pdb file, the input of step 3
+      head2.lst       : conformer summary
+      step2_out.full  : rotamers without pairwise pruning.
+      hvrot.pdb       : heavy atom rotamers, can be used recursively by step 2
+
+Step 2 Done.
+
+Step 3. Compute energy lookup table
+   Load step 2 output file step2_out.pdb...
+   Done
+
+   Reporting non integer conformer charge ...
+   WARNING: Conformer 0LI11B0002_001 has non integer charge  1.004
+   WARNING: Conformer 0LI11B0002_002 has non integer charge  1.004
+   WARNING: Conformer 0LI12B0002_003 has non integer charge  1.002
+   WARNING: Conformer 0LI12B0002_004 has non integer charge  1.002
+   WARNING: Conformer 0LI01B0002_005 has non integer charge -0.002
+   WARNING: Conformer 0LI01B0002_006 has non integer charge -0.002
+   Make sure you intended to have these non integer charges.
+   Done
+
+   Creating connectivity table...
+   Done
+
+   Preparing PBE runs at epsilon 4.00 ...
+      2 focusing runs required for this protein.
+   Done
+
+Running delphi surface calculations ...
+
+   Computing pairwise from conformer 1 to 6 of 6 total conformers
+      see progress.log for progress...
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Done
+
+   Computing RXN from conformer 1 to 6 of 6 total conformers
+      see progress.log for progress...
+   Done
+
+   Add dummy conformers ... 1 dummy conformers were added.
+   Done
+
+   Making pairwise energy matrices and conformer summary ... 
+energies.opp not found
+   WARNING: No RXN entry for 0LIDM, set to 0.
+   Done
+
+   Skiping writing step 3 rotamer file step3_out.pdb.
+   Total time for step3 (energy calculation) is 13 seconds.
+
+   Output files (epsilon = 4.00):
+      energies.opp    : energy lookup table, use opp to decode the file
+      head3.lst       : conformer summary
+
+Step 3 Done.
+
+Not doing "Step 4. Monte Carlo Sampling"
+
+ _________________________MCCE 3.0____________________________
+|	   						      |
+|    MCCE (Multi-Conformation Continuum Electrostatics)       |
+|	is a program developed at Marilyn Gunner's lab.	      |
+|	MCCE is a biophysics simulation program combining     |
+|	continuum electrostatics and molecular mechanics.     |
+|	In this program, the protein side chain motions are   |
+|	simulated explicitly while the dielectric effect of   |
+|	solvent and bulk protein material is modeled by	      |
+|	continuum electrostatics.			      |
+|	MCCE can calculate residue pka, cofactor Em and       |
+|	protein PI in protein-solvent systems, and more:      |
+|							      |
+|	 - Protein structural responses to changes in charge  |
+|	 - Changes in charge state of ionizable residues due  |
+|	   to structural changes in the protein		      |
+|	 - The structural and ionization changes caused by    |
+|	   changes in solution pH or Eh			      |
+|	 - Find the location and stoichiometry of proton      |
+|	   transfers coupled to electron transfer	      |
+|	 - Make side chain rotomer packing predictions as     |
+|	   a function of pH				      |
+|							      |
+|	For questions and help, visit                         |
+|		https://sites.google.com/site/mccewiki/home   |
+|		  October 2015, by MCCE Development Team      |
+|							      |
+|_________________________        ____________________________|
+                          MCCE 3.0                          
+
+Last Updates:                                              
+10/27/2015, New Delphi Version v68                
+12/1/2015,  In Yifan's monte carlo, now it takes energies.opp file as an input.
+12/24/2015, Added flag for Gaussian smoothing, 1 means run Gaussian, 
+            zero means run step function.  For more information visit
+            http://compbio.clemson.edu/downloadDir/delphi/delphi95_manual.pdf 
+12/29/2015, Added two flags for the use of Gaussian smoothing, sigma and srfcut.
+02/01/2016, Added an extra column to the opp energy files.
+===========================================================
+
+Sun May 29 15:05:31 2016
+Step 0. Initialize enviroment
+   Load run control file "run.prm"...
+   Done
+
+   Tentatively load local param file "new.tpl"...   No such file, ignore.
+   Done
+
+   Load parameters from directory "/home/salah/mcce-charges/mcce/param04" ... 
+
+   In file /home/salah/mcce-charges/mcce/param04/hec.tpl, parameter "CONNECT  HMC01  CAB sp2       0     C3B 0     CBB LIG   SG" is already loaded somewhere else.
+   Try delete this entry and run MCCE again
+   Done
+
+   Load linear free energy correction parameters from "/home/mcce/mcce3.0/extra.tpl".../home/mcce/mcce3.0/extra.tpl
+   File loaded.
+   Done
+
+Step 0 Done.
+
+Not doing "Step 1. Test and format structral file"
+
+Not doing "Step 2. Make multi side chain conformers"
+
+Not doing "Step 3. Compute energy lookup table"
+
+Step 4. Monte Carlo Sampling
+   Load conformer list from file "head3.lst" ...
+   Scaling factors:
+   VDW0  = 1.000:
+   VDW1  = 1.000:
+   VDW   = 1.000:
+   TORS  = 1.000:
+   ELE   = 1.000:
+   DSOLV = 1.000:
+   Done
+
+   Load pairwise interactions ...
+   Done
+
+   Verify self consistancy of conformer flag ...
+   Done
+
+   Do titration at 1 points...
+   Detailed progress is in file "mc_out"
+   Monte Carlo set up time: 0 seconds.
+   Titration  1:     0 seconds, biggest stdev of conformer occ = -0.000
+   Done
+
+   Fit titration curves to get pKa/Em ...
+       Doing mfe at pH 7.400 for all the residues
+   Done
+
+   Total time on MC: 0 seconds
+
+   Output files:
+      mc_out          : MC progress and convergence.
+      fort.38         : Occupancy table.
+      entropy.out     : Entropy correction table
+      pK.out          : pKa or Em from titration curve fitting.
+      sum_crg.out     : Summary of residue charges.
+Step 4 Done.
+
