@@ -15,8 +15,7 @@ EDITED TO BE REALLY QUICK 5/16/2014 by MRG
 Most modified entries
 ------------------------------------------------------------------------------
 Input and Output:
-EUI.pdb                                                    (INPDB)
-
+new4TYJ_fixed_ph7.4.pdb                                    (INPDB)
 
 Steps:
 f        step 1: pre-run, pdb-> mcce pdb                    (DO_PREMCCE)
@@ -35,7 +34,6 @@ Less modified entries
 ------------------------------------------------------------------------------
 4.0      Protein dielectric constant for DelPhi             (EPSILON_PROT)
 /home/mcce/mcce3.0/extra.tpl                              (EXTRA)
-
 /home/mcce/mcce3.0/name.txt MCCE renaming rule.           (RENAME_RULES)
 
 ph       "ph" for pH titration, "eh" for eh titration       (TITR_TYPE)
@@ -43,7 +41,7 @@ ph       "ph" for pH titration, "eh" for eh titration       (TITR_TYPE)
 0.0      pH interval                                        (TITR_PHD)
 0.0      Initial Eh                                         (TITR_EH0)
 30.0     Eh interval (in mV)                                (TITR_EHD)
-1       Number of titration points                         (TITR_STEPS)
+5       Number of titration points                         (TITR_STEPS)
 =============================================================================
 
 
@@ -51,7 +49,7 @@ ph       "ph" for pH titration, "eh" for eh titration       (TITR_TYPE)
 #############################################################################
 MODIFYING FOLLOWING ENTRIES REQUIRE ADVANCED KNOWLEDGE:
 -----------------------------------------------------------------------------
-/home/salah/mcce-charges/mcce/                              (MCCE_HOME)
+/home/salah/mcce-charges/mcce                               (MCCE_HOME)
 t       Minimize output files                               (MINIMIZE_SIZE)
 t       Print trace file                                    (DO_TRACE)
 
@@ -68,7 +66,7 @@ t		ignore hydrogens in input structure					(IGNORE_INPUT_H)
 step 2:
 f        Use specific control (head1.lst) on rotamer making (ROT_SPECIF)
 
-f        Do swap (stereo isotope)                           (ROT_SWAP)
+t        Do swap (stereo isotope)                           (ROT_SWAP)
 f        Do rotate?                                         (PACK)
 0        number of rotamers in a bond rotation              (ROTATIONS)
 1.00     SAS Threshold not making rotamers                  (SAS_CUTOFF)
@@ -113,11 +111,12 @@ f       Gaussian smooth dielectric method                   (GAUSSIAN_SMOOTH)
 0.95    The value of the variance of Gaussian distribution  (GAUSSIAN_SIGMA)
 20.0    Gaussian, the cutoff for the molecule−water interface (GAUSSIAN_SRFCUT)
 # delphi2 uses the new delphi1, 2 uses the old delphi
-/home/mcce/mcce3.0/bin/delphi1                              (DELPHI_EXE)
+/home/mcce/mcce3.0/bin/delphi2                              (DELPHI_EXE)
 /home/mcce/mcce3.0/bin/apbs APBS executable                 (APBS_EXE)
 
 
 step 4:
+t        Using Yifan's monte carlo                          (MONTE_ADV_OPT)
 5.0      Big pairwise threshold to make big list            (BIG_PAIRWISE)
 -1       Random seed, -1 uses time as random seed           (MONTE_SEED)
 298.15   Temperature                                        (MONTE_T)
@@ -130,7 +129,7 @@ step 4:
 50000    Trace energy each MONTE_TRACE steps, 0 no trace    (MONTE_TRACE)
 1000000  Maximum microstates for analytical solution        (NSTATE_MAX)
 t        Do entropy correction                              (MONTE_TSX)
-f        Specify mfe point, f=pKa/Em                        (MFE_POINT)
+7.4        Specify mfe point, f=pKa/Em                        (MFE_POINT)
 -1.0      MFE cutoff(Kcal), default 0.5                     (MFE_CUTOFF)
 
 # Advanced options:

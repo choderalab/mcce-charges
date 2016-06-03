@@ -43060,3 +43060,135 @@ Step 3 Done.
 
 Not doing "Step 4. Monte Carlo Sampling"
 
+ _________________________MCCE 3.0____________________________
+|	   						      |
+|    MCCE (Multi-Conformation Continuum Electrostatics)       |
+|	is a program developed at Marilyn Gunner's lab.	      |
+|	MCCE is a biophysics simulation program combining     |
+|	continuum electrostatics and molecular mechanics.     |
+|	In this program, the protein side chain motions are   |
+|	simulated explicitly while the dielectric effect of   |
+|	solvent and bulk protein material is modeled by	      |
+|	continuum electrostatics.			      |
+|	MCCE can calculate residue pka, cofactor Em and       |
+|	protein PI in protein-solvent systems, and more:      |
+|							      |
+|	 - Protein structural responses to changes in charge  |
+|	 - Changes in charge state of ionizable residues due  |
+|	   to structural changes in the protein		      |
+|	 - The structural and ionization changes caused by    |
+|	   changes in solution pH or Eh			      |
+|	 - Find the location and stoichiometry of proton      |
+|	   transfers coupled to electron transfer	      |
+|	 - Make side chain rotomer packing predictions as     |
+|	   a function of pH				      |
+|							      |
+|	For questions and help, visit                         |
+|		https://sites.google.com/site/mccewiki/home   |
+|		  October 2015, by MCCE Development Team      |
+|							      |
+|_________________________        ____________________________|
+                          MCCE 3.0                          
+
+Last Updates:                                              
+10/27/2015, New Delphi Version v68                
+12/1/2015,  In Yifan's monte carlo, now it takes energies.opp file as an input.
+12/24/2015, Added flag for Gaussian smoothing, 1 means run Gaussian, 
+            zero means run step function.  For more information visit
+            http://compbio.clemson.edu/downloadDir/delphi/delphi95_manual.pdf 
+12/29/2015, Added two flags for the use of Gaussian smoothing, sigma and srfcut.
+02/01/2016, Added an extra column to the opp energy files.
+===========================================================
+
+Fri Jun  3 19:33:41 2016
+Step 0. Initialize enviroment
+   Load run control file "run.prm"...
+   Done
+
+   Tentatively load local param file "new.tpl"...   File loaded.
+   Done
+
+   Load parameters from directory "/home/salah/mcce-charges/mcce/param04" ... 
+
+   In file /home/salah/mcce-charges/mcce/param04/hec.tpl, parameter "CONNECT  HMC01  CAB sp2       0     C3B 0     CBB LIG   SG" is already loaded somewhere else.
+   Try delete this entry and run MCCE again
+   Done
+
+   Load linear free energy correction parameters from "/home/mcce/mcce3.0/extra.tpl".../home/mcce/mcce3.0/extra.tpl
+   File loaded.
+   Done
+
+Step 0 Done.
+
+Not doing "Step 1. Test and format structral file"
+
+Not doing "Step 2. Make multi side chain conformers"
+
+Not doing "Step 3. Compute energy lookup table"
+
+Step 4. Monte Carlo Sampling
+   Load conformer list from file "head3.lst" ...
+   Scaling factors:
+   VDW0  = 1.000:
+   VDW1  = 1.000:
+   VDW   = 1.000:
+   TORS  = 1.000:
+   ELE   = 1.000:
+   DSOLV = 1.000:
+   Done
+
+   Load pairwise interactions ...
+   Done
+
+   Verify self consistancy of conformer flag ...
+   ALA01A0016_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0029_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0035_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0045_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0046_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0055_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0064_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0072_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0098_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0102_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0109_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0112_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0133_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0138_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0160_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0172_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0197_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0202_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0204_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0205_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0206_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0208_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0223_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0224_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0227_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0228_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0230_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0233_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0236_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0246_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0247_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0249_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0261_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0262_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0263_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0266_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0282_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0286_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0287_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0290_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0295_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0299_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0306_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0311_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0312_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0315_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   Conformer flags updated due to self consistancy.
+
+   Do titration at 5 points...
+   Detailed progress is in file "mc_out"
+   Monte Carlo set up time: 15 seconds.

@@ -15,7 +15,7 @@ EDITED TO BE REALLY QUICK 5/16/2014 by MRG
 Most modified entries
 ------------------------------------------------------------------------------
 Input and Output:
-new4ANS_fixed_ph7.4.pdb                                     (INPDB)
+new4TYJ_fixed_ph7.4.pdb                                    (INPDB)
 
 Steps:
 f        step 1: pre-run, pdb-> mcce pdb                    (DO_PREMCCE)
@@ -41,7 +41,7 @@ ph       "ph" for pH titration, "eh" for eh titration       (TITR_TYPE)
 0.0      pH interval                                        (TITR_PHD)
 0.0      Initial Eh                                         (TITR_EH0)
 30.0     Eh interval (in mV)                                (TITR_EHD)
-1       Number of titration points                         (TITR_STEPS)
+5       Number of titration points                         (TITR_STEPS)
 =============================================================================
 
 
