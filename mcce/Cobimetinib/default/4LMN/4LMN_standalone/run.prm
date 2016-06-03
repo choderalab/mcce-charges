@@ -15,8 +15,7 @@ EDITED TO BE REALLY QUICK 5/16/2014 by MRG
 Most modified entries
 ------------------------------------------------------------------------------
 Input and Output:
-new4LMN_fixed_ph7.4.pdb                                                    (INPDB)
-
+new4TYJ_fixed_ph7.4.pdb                                    (INPDB)
 
 Steps:
 f        step 1: pre-run, pdb-> mcce pdb                    (DO_PREMCCE)
@@ -35,15 +34,14 @@ Less modified entries
 ------------------------------------------------------------------------------
 4.0      Protein dielectric constant for DelPhi             (EPSILON_PROT)
 /home/mcce/mcce3.0/extra.tpl                              (EXTRA)
-
-./name.txt     MCCE renaming rule.           (RENAME_RULES)
+/home/mcce/mcce3.0/name.txt MCCE renaming rule.           (RENAME_RULES)
 
 ph       "ph" for pH titration, "eh" for eh titration       (TITR_TYPE)
 7.4      Initial pH                                         (TITR_PH0)
-1.0      pH interval                                        (TITR_PHD)
+0.0      pH interval                                        (TITR_PHD)
 0.0      Initial Eh                                         (TITR_EH0)
 30.0     Eh interval (in mV)                                (TITR_EHD)
-1       Number of titration points                         (TITR_STEPS)
+5       Number of titration points                         (TITR_STEPS)
 =============================================================================
 
 
@@ -58,17 +56,17 @@ t       Print trace file                                    (DO_TRACE)
 Options specific to each step:
 
 step 1:
-t        Label terminal residues?                           (TERMINALS)
+f        Label terminal residues?                           (TERMINALS)
 2.0      distance limit of reporting clashes                (CLASH_DISTANCE)
 0.05     cut off water if % SAS exceeds this number         (H2O_SASCUTOFF)
 
-t ignore hydrogens in input structure					(IGNORE_INPUT_H)
+t		ignore hydrogens in input structure					(IGNORE_INPUT_H)
 #turning ignore input h to f may cause error in rotatmer making
 
 step 2:
 f        Use specific control (head1.lst) on rotamer making (ROT_SPECIF)
 
-f        Do swap (stereo isotope)                           (ROT_SWAP)
+t        Do swap (stereo isotope)                           (ROT_SWAP)
 f        Do rotate?                                         (PACK)
 0        number of rotamers in a bond rotation              (ROTATIONS)
 1.00     SAS Threshold not making rotamers                  (SAS_CUTOFF)
@@ -118,6 +116,7 @@ f       Gaussian smooth dielectric method                   (GAUSSIAN_SMOOTH)
 
 
 step 4:
+t        Using Yifan's monte carlo                          (MONTE_ADV_OPT)
 5.0      Big pairwise threshold to make big list            (BIG_PAIRWISE)
 -1       Random seed, -1 uses time as random seed           (MONTE_SEED)
 298.15   Temperature                                        (MONTE_T)
@@ -130,7 +129,7 @@ step 4:
 50000    Trace energy each MONTE_TRACE steps, 0 no trace    (MONTE_TRACE)
 1000000  Maximum microstates for analytical solution        (NSTATE_MAX)
 t        Do entropy correction                              (MONTE_TSX)
-f        Specify mfe point, f=pKa/Em                        (MFE_POINT)
+7.4        Specify mfe point, f=pKa/Em                        (MFE_POINT)
 -1.0      MFE cutoff(Kcal), default 0.5                     (MFE_CUTOFF)
 
 # Advanced options:

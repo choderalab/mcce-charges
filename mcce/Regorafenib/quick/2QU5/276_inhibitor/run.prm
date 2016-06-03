@@ -15,7 +15,7 @@ EDITED TO BE REALLY QUICK 5/16/2014 by MRG
 Most modified entries
 ------------------------------------------------------------------------------
 Input and Output:
-276.pdb                                    (INPDB)
+new4TYJ_fixed_ph7.4.pdb                                    (INPDB)
 
 Steps:
 f        step 1: pre-run, pdb-> mcce pdb                    (DO_PREMCCE)
@@ -41,7 +41,7 @@ ph       "ph" for pH titration, "eh" for eh titration       (TITR_TYPE)
 0.0      pH interval                                        (TITR_PHD)
 0.0      Initial Eh                                         (TITR_EH0)
 30.0     Eh interval (in mV)                                (TITR_EHD)
-1       Number of titration points                         (TITR_STEPS)
+5       Number of titration points                         (TITR_STEPS)
 =============================================================================
 
 
@@ -111,7 +111,7 @@ f       Gaussian smooth dielectric method                   (GAUSSIAN_SMOOTH)
 0.95    The value of the variance of Gaussian distribution  (GAUSSIAN_SIGMA)
 20.0    Gaussian, the cutoff for the molecule−water interface (GAUSSIAN_SRFCUT)
 # delphi2 uses the new delphi1, 2 uses the old delphi
-/home/mcce/mcce3.0/bin/delphi1                              (DELPHI_EXE)
+/home/mcce/mcce3.0/bin/delphi2                              (DELPHI_EXE)
 /home/mcce/mcce3.0/bin/apbs APBS executable                 (APBS_EXE)
 
 
