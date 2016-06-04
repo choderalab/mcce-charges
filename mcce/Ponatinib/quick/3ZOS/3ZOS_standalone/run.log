@@ -1,0 +1,3993 @@
+ _________________________MCCE 3.0____________________________
+|	   						      |
+|    MCCE (Multi-Conformation Continuum Electrostatics)       |
+|	is a program developed at Marilyn Gunner's lab.	      |
+|	MCCE is a biophysics simulation program combining     |
+|	continuum electrostatics and molecular mechanics.     |
+|	In this program, the protein side chain motions are   |
+|	simulated explicitly while the dielectric effect of   |
+|	solvent and bulk protein material is modeled by	      |
+|	continuum electrostatics.			      |
+|	MCCE can calculate residue pka, cofactor Em and       |
+|	protein PI in protein-solvent systems, and more:      |
+|							      |
+|	 - Protein structural responses to changes in charge  |
+|	 - Changes in charge state of ionizable residues due  |
+|	   to structural changes in the protein		      |
+|	 - The structural and ionization changes caused by    |
+|	   changes in solution pH or Eh			      |
+|	 - Find the location and stoichiometry of proton      |
+|	   transfers coupled to electron transfer	      |
+|	 - Make side chain rotomer packing predictions as     |
+|	   a function of pH				      |
+|							      |
+|	For questions and help, visit                         |
+|		https://sites.google.com/site/mccewiki/home   |
+|		  October 2015, by MCCE Development Team      |
+|							      |
+|_________________________        ____________________________|
+                          MCCE 3.0                          
+
+Last Updates:                                              
+10/27/2015, New Delphi Version v68                
+12/1/2015,  In Yifan's monte carlo, now it takes energies.opp file as an input.
+12/24/2015, Added flag for Gaussian smoothing, 1 means run Gaussian, 
+            zero means run step function.  For more information visit
+            http://compbio.clemson.edu/downloadDir/delphi/delphi95_manual.pdf 
+12/29/2015, Added two flags for the use of Gaussian smoothing, sigma and srfcut.
+02/01/2016, Added an extra column to the opp energy files.
+===========================================================
+
+Wed May 25 18:08:11 2016
+Step 0. Initialize enviroment
+   Load run control file "run.prm"...
+   Done
+
+   Tentatively load local param file "new.tpl"...   No such file, ignore.
+   Done
+
+   Load parameters from directory "/home/salah/mcce-charges/mcce/param04" ... 
+
+   In file /home/salah/mcce-charges/mcce/param04/hec.tpl, parameter "CONNECT  HMC01  CAB sp2       0     C3B 0     CBB LIG   SG" is already loaded somewhere else.
+   Try delete this entry and run MCCE again
+   Done
+
+   Load linear free energy correction parameters from "/home/mcce/mcce3.0/extra.tpl".../home/mcce/mcce3.0/extra.tpl
+   File loaded.
+   Done
+
+Step 0 Done.
+
+Not doing "Step 1. Test and format structral file"
+
+Not doing "Step 2. Make multi side chain conformers"
+
+Step 3. Compute energy lookup table
+   Load step 2 output file step2_out.pdb...
+   Done
+
+   Reporting non integer conformer charge ...
+   Passed, no non-integer charges
+   Done
+
+   Creating connectivity table...
+   Done
+
+   Preparing PBE runs at epsilon 4.00 ...
+      4 focusing runs required for this protein.
+   Done
+
+Running delphi surface calculations ...
+
+   Computing pairwise from conformer 1 to 1305 of 1305 total conformers
+      see progress.log for progress...
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Trying changing scale on trial 0
+   Done
+
+   Computing RXN from conformer 1 to 1305 of 1305 total conformers
+      see progress.log for progress...
+   Done
+
+   Add dummy conformers ... 0 dummy conformers were added.
+   Done
+
+   Making pairwise energy matrices and conformer summary ... 
+energies.opp not found
+   Done
+
+   Skiping writing step 3 rotamer file step3_out.pdb.
+   Total time for step3 (energy calculation) is 12788 seconds.
+
+   Output files (epsilon = 4.00):
+      energies.opp    : energy lookup table, use opp to decode the file
+      head3.lst       : conformer summary
+
+Step 3 Done.
+
+Step 4. Monte Carlo Sampling
+   Load conformer list from file "head3.lst" ...
+   Scaling factors:
+   VDW0  = 1.000:
+   VDW1  = 1.000:
+   VDW   = 1.000:
+   TORS  = 1.000:
+   ELE   = 1.000:
+   DSOLV = 1.000:
+   Done
+
+   Load pairwise interactions ...
+   Done
+
+   Verify self consistancy of conformer flag ...
+   VAL01A0002_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0004_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0005_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01A0007_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0009_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0011_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0015_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0020_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0023_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0025_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0028_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0031_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01A0032_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0034_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0035_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0037_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0039_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0040_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0041_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0043_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0048_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0049_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0050_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0051_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0052_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0053_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0055_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0056_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0058_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0060_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01A0063_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0064_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0068_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0069_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0072_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0074_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0075_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0078_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0081_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0083_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0084_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0086_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0087_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0089_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0091_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0095_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0096_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0098_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0099_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0103_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0108_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0111_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0112_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0114_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0117_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0121_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0122_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0125_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0126_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0131_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0132_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0135_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0137_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0140_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0141_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0142_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0143_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0145_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0146_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0147_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0149_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0150_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0153_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0156_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0157_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01A0158_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0159_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0161_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0162_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0166_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0167_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0172_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0173_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0177_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0179_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0181_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0182_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0184_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0186_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01A0189_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0190_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0192_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0198_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0202_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0203_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0204_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0205_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0206_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01A0208_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0209_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0210_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01A0211_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0214_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0215_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0216_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0219_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01A0220_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01A0221_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0222_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0225_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01A0226_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0227_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0228_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0230_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0232_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01A0233_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0235_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0236_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0237_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0238_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0241_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0243_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0244_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01A0246_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0247_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0252_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0253_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01A0255_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0256_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0259_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0260_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01A0263_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0267_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0269_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0272_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0273_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0274_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0276_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0279_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0282_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0283_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0284_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01A0287_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01A0291_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0295_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0296_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0297_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0300_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0303_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0304_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0305_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0308_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0309_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0312_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0002_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0003_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0005_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0007_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0008_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B0010_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0012_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0014_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0018_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0023_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0026_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0028_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0031_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0034_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B0035_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0037_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0038_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B0039_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0040_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0042_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0043_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0044_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0046_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0051_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0052_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0053_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0054_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0055_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0056_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0058_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0059_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0061_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0063_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B0066_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0067_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0071_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0072_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0075_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0077_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0078_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0081_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0084_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0086_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0087_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0089_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0090_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0092_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0094_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0098_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0099_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0101_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0102_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0106_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0111_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0114_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0115_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0117_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B0119_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0120_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0126_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B0127_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0128_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0131_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0132_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0133_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0134_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0136_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0137_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0138_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0140_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0141_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0144_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0147_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0148_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0150_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0152_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0153_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0157_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0158_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0163_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0164_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0168_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B0169_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0170_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0172_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0173_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0175_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0177_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B0180_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0181_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0183_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0189_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0193_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0194_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0195_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0196_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0197_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B0199_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0200_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0201_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B0202_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0205_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0206_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0207_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0210_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B0212_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0213_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0216_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B0217_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0218_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0219_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0221_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0223_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B0224_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0226_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0227_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0228_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0229_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0232_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0234_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0235_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0238_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0243_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0244_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B0246_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0247_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0250_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0251_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B0257_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0258_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0260_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B0261_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0263_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0264_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0265_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0267_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0270_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0273_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0274_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0275_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B0278_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B0282_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0286_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0287_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0288_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0291_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0294_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0295_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0296_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0299_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0300_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0303_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   Conformer flags updated due to self consistancy.
+
+   Do titration at 1 points...
+   Detailed progress is in file "mc_out"
+   Monte Carlo set up time: 1 seconds.
+   Titration  1:    13 seconds, biggest stdev of conformer occ = 0.019
+   Done
+
+   Fit titration curves to get pKa/Em ...
+       Doing mfe at pH 7.400 for all the residues
+   Done
+
+   Total time on MC: 18 seconds
+
+   Output files:
+      mc_out          : MC progress and convergence.
+      fort.38         : Occupancy table.
+      entropy.out     : Entropy correction table
+      pK.out          : pKa or Em from titration curve fitting.
+      sum_crg.out     : Summary of residue charges.
+Step 4 Done.
+
+ _________________________MCCE 3.0____________________________
+|	   						      |
+|    MCCE (Multi-Conformation Continuum Electrostatics)       |
+|	is a program developed at Marilyn Gunner's lab.	      |
+|	MCCE is a biophysics simulation program combining     |
+|	continuum electrostatics and molecular mechanics.     |
+|	In this program, the protein side chain motions are   |
+|	simulated explicitly while the dielectric effect of   |
+|	solvent and bulk protein material is modeled by	      |
+|	continuum electrostatics.			      |
+|	MCCE can calculate residue pka, cofactor Em and       |
+|	protein PI in protein-solvent systems, and more:      |
+|							      |
+|	 - Protein structural responses to changes in charge  |
+|	 - Changes in charge state of ionizable residues due  |
+|	   to structural changes in the protein		      |
+|	 - The structural and ionization changes caused by    |
+|	   changes in solution pH or Eh			      |
+|	 - Find the location and stoichiometry of proton      |
+|	   transfers coupled to electron transfer	      |
+|	 - Make side chain rotomer packing predictions as     |
+|	   a function of pH				      |
+|							      |
+|	For questions and help, visit                         |
+|		https://sites.google.com/site/mccewiki/home   |
+|		  October 2015, by MCCE Development Team      |
+|							      |
+|_________________________        ____________________________|
+                          MCCE 3.0                          
+
+Last Updates:                                              
+10/27/2015, New Delphi Version v68                
+12/1/2015,  In Yifan's monte carlo, now it takes energies.opp file as an input.
+12/24/2015, Added flag for Gaussian smoothing, 1 means run Gaussian, 
+            zero means run step function.  For more information visit
+            http://compbio.clemson.edu/downloadDir/delphi/delphi95_manual.pdf 
+12/29/2015, Added two flags for the use of Gaussian smoothing, sigma and srfcut.
+02/01/2016, Added an extra column to the opp energy files.
+===========================================================
+
+Fri Jun  3 19:34:44 2016
+Step 0. Initialize enviroment
+   Load run control file "run.prm"...
+   Done
+
+   Tentatively load local param file "new.tpl"...   No such file, ignore.
+   Done
+
+   Load parameters from directory "/home/salah/mcce-charges/mcce/param04" ... 
+
+   In file /home/salah/mcce-charges/mcce/param04/hec.tpl, parameter "CONNECT  HMC01  CAB sp2       0     C3B 0     CBB LIG   SG" is already loaded somewhere else.
+   Try delete this entry and run MCCE again
+   Done
+
+   Load linear free energy correction parameters from "/home/mcce/mcce3.0/extra.tpl".../home/mcce/mcce3.0/extra.tpl
+   File loaded.
+   Done
+
+Step 0 Done.
+
+Not doing "Step 1. Test and format structral file"
+
+Not doing "Step 2. Make multi side chain conformers"
+
+Not doing "Step 3. Compute energy lookup table"
+
+Step 4. Monte Carlo Sampling
+   Load conformer list from file "head3.lst" ...
+   Scaling factors:
+   VDW0  = 1.000:
+   VDW1  = 1.000:
+   VDW   = 1.000:
+   TORS  = 1.000:
+   ELE   = 1.000:
+   DSOLV = 1.000:
+   Done
+
+   Load pairwise interactions ...
+   Done
+
+   Verify self consistancy of conformer flag ...
+   VAL01A0002_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0004_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0005_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01A0007_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0009_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0011_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0015_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0020_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0023_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0025_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0028_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0031_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01A0032_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0034_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0035_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0037_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0039_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0040_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0041_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0043_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0048_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0049_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0050_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0051_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0052_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0053_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0055_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0056_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0058_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0060_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01A0063_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0064_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0068_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0069_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0072_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0074_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0075_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0078_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0081_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0083_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0084_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0086_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0087_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0089_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0091_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0095_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0096_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0098_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0099_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0103_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0108_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0111_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0112_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0114_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0117_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0121_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0122_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0125_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0126_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0131_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0132_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0135_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0137_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0140_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0141_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0142_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0143_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0145_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0146_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0147_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0149_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0150_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0153_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0156_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0157_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01A0158_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0159_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0161_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0162_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0166_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0167_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0172_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0173_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0177_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0179_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0181_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0182_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0184_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0186_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01A0189_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0190_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0192_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0198_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0202_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0203_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0204_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0205_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0206_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01A0208_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0209_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0210_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01A0211_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0214_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0215_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0216_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0219_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01A0220_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01A0221_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0222_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0225_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01A0226_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0227_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0228_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0230_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0232_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01A0233_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0235_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0236_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0237_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0238_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0241_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0243_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0244_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01A0246_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0247_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0252_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01A0253_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01A0255_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0256_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0259_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0260_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01A0263_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0267_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0269_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0272_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0273_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0274_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0276_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0279_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0282_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01A0283_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0284_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01A0287_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01A0291_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0295_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01A0296_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0297_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0300_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01A0303_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0304_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0305_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01A0308_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01A0309_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01A0312_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0002_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0003_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0005_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0007_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0008_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B0010_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0012_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0014_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0018_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0023_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0026_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0028_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0031_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0034_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B0035_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0037_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0038_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B0039_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0040_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0042_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0043_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0044_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0046_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0051_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0052_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0053_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0054_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0055_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0056_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0058_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0059_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0061_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0063_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B0066_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0067_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0071_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0072_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0075_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0077_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0078_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0081_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0084_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0086_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0087_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0089_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0090_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0092_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0094_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0098_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0099_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0101_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0102_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0106_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0111_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0114_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0115_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0117_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B0119_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0120_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0126_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B0127_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0128_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0131_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0132_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0133_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0134_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0136_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0137_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0138_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0140_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0141_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0144_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0147_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0148_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0150_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0152_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0153_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0157_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0158_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0163_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0164_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0168_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B0169_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0170_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0172_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0173_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0175_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0177_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B0180_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0181_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0183_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0189_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0193_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0194_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0195_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0196_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0197_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B0199_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0200_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0201_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B0202_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0205_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0206_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0207_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0210_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   THR01B0212_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0213_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0216_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B0217_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0218_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0219_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0221_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0223_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B0224_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0226_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0227_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0228_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0229_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0232_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0234_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0235_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0238_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0243_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ILE01B0244_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ASN01B0246_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0247_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0250_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0251_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   GLN01B0257_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0258_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0260_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B0261_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0263_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0264_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0265_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0267_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0270_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0273_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   MET01B0274_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0275_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   TRP01B0278_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   SER01B0282_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0286_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PRO01B0287_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0288_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0291_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   PHE01B0294_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0295_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0296_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   ALA01B0299_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   LEU01B0300_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   VAL01B0303_001 f 0.00 -> t 1.00 (single conformer treated as fixed)
+   Conformer flags updated due to self consistancy.
+
+   Do titration at 5 points...
+   Detailed progress is in file "mc_out"
+   Monte Carlo set up time: 2 seconds.
+   Titration  1:    39 seconds, biggest stdev of conformer occ = 0.019
+   Titration  2:    67 seconds, biggest stdev of conformer occ = 0.017
+   Titration  3:    53 seconds, biggest stdev of conformer occ = 0.021
+   Titration  4:    61 seconds, biggest stdev of conformer occ = 0.018
+   Titration  5:    60 seconds, biggest stdev of conformer occ = 0.019
+   Done
+
+   Fit titration curves to get pKa/Em ...
+       Doing mfe at pH 7.400 for all the residues
+   Done
+
+   Total time on MC: 291 seconds
+
+   Output files:
+      mc_out          : MC progress and convergence.
+      fort.38         : Occupancy table.
+      entropy.out     : Entropy correction table
+      pK.out          : pKa or Em from titration curve fitting.
+      sum_crg.out     : Summary of residue charges.
+Step 4 Done.
+
