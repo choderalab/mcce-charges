@@ -1,0 +1,10 @@
+inhibitor   crg in soln
+----------  -----------
+Afatinib    1
+Alectinib   1
+Axitinib    0
+Bosutinib   1
+Cobimetinib 1
+Crizotinib  1.6
+Ponatinib   1
+Regorafenib 0
