@@ -48,7 +48,7 @@ def DumpSDData(mol):
         print (dp.GetTag(), ':', dp.GetValue())
     print ()
 
-def run_epik(name, filename, residue_name, perceive_bonds=False):
+def run_epik(name, filename, residue_name, perceive_bonds=False, pH=7.4, MAX_ENERGY_PENALTY=10.0):
     """Generate conformer with OpenEye omega, protonation states with Schrodinger Epik, and charges with OpenEye AM1-BCC.
 
     Parameters
@@ -62,7 +62,10 @@ def run_epik(name, filename, residue_name, perceive_bonds=False):
     perceive_bonds : bool, optional, default=False
        If True, will use geometry to perceive connectivity.
        This is necessary for PDB files.
-
+    pH : float, optional, default=7.4
+       The pH to run Epik for.
+    MAX_ENERGY_PENALTY : float, optional, default=10.0
+       Maximum energy penalty (in kT) for protonation states to include.
     """
     # Generate molecule geometry with OpenEye
     print("Generating molecule %s from %s" % (name, filename))
@@ -92,7 +95,7 @@ def run_epik(name, filename, residue_name, perceive_bonds=False):
     # Run epik on mol2 file
     mae_file_path = output_basepath + '-epik.mae'
     schrodinger.run_epik(mol2_file_path, mae_file_path, tautomerize=False,
-                         max_structures=100, min_probability=np.exp(-6), ph=7.4)
+                         max_structures=100, min_probability=np.exp(-MAX_ENERGY_PENALTY), ph=pH)
 
     # Convert maestro file to sdf and mol2
     output_sdf_filename = output_basepath + '-epik.sdf'
@@ -106,12 +109,18 @@ def run_epik(name, filename, residue_name, perceive_bonds=False):
     ifs_sdf.open(output_sdf_filename)
     sdf_molecule = oechem.OEMol()
     uncharged_molecules = read_molecules(output_sdf_filename)
+    if type(uncharged_molecules) == oechem.OEMol:
+        # Promote to list if only one molecule loaded
+        uncharged_molecules = [uncharged_molecules]
 
     # Read MOL2 file.
     ifs_mol2 = oechem.oemolistream()
     ifs_mol2.open(output_mol2_filename)
     mol2_molecule = oechem.OEMol()
     uncharged_molecules = read_molecules(output_sdf_filename)
+    if type(uncharged_molecules) == oechem.OEMol:
+        # Promote to list if only one molecule loaded
+        uncharged_molecules = [uncharged_molecules]
 
     # Assign charges.
     charged_molecules = list()
@@ -165,5 +174,6 @@ if __name__ == '__main__':
         os.mkdir(output_dir)
 
     # Generate Histidine
-    run_epik('HIS', 'ACE-HIS-NME.pdb', 'HS1', perceive_bonds=False)
-    run_epik('HIS-HIS', 'ACE-HIS-HIS-NME.pdb', 'HS2', perceive_bonds=False)
+    for pH in [2, 3, 4, 5, 6, 7, 8, 9, 10]:
+        run_epik('HIS-pH%.1f' % pH, 'ACE-HIS-NME.pdb', 'HS1', perceive_bonds=False, pH=pH)
+        run_epik('HIS-HIS-pH%.1f' % pH, 'ACE-HIS-HIS-NME.pdb', 'HS2', perceive_bonds=False, pH=pH)

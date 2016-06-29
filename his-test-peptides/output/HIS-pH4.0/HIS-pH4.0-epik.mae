@@ -1,0 +1,372 @@
+{ 
+ s_m_m2io_version
+ :::
+ 2.0.0 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_source_file
+ i_m_source_file_index
+ r_lp_tautomer_probability
+ r_epik_Ionization_Penalty
+ r_epik_Ionization_Penalty_Charging
+ r_epik_Ionization_Penalty_Neutral
+ r_epik_State_Penalty
+ i_epik_Tot_Q
+ i_m_ct_format
+ :::
+ "2-acetamido-3-(1~{H}-imidazol-4-yl)-~{N}-methyl-propanamide" 
+  /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/his-test-peptides/output/HIS-pH4.0/HIS-pH4.0-input.mol2 
+  1
+  1
+    0.0009 
+    0.0000 
+    0.0009 
+    0.0005 
+  1
+  2
+ m_depend[5] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 10 r_epik_Ionization_Penalty 
+  2 10 r_epik_Ionization_Penalty_Charging 
+  3 10 r_epik_Ionization_Penalty_Neutral 
+  4 10 r_epik_State_Penalty 
+  5 10 i_epik_Tot_Q 
+  :::
+ } 
+ m_atom[30] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  s_m_chain_name
+  i_m_color
+  r_m_charge1
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_atom_name
+  r_epik_H2O_pKa
+  r_epik_H2O_pKa_uncertainty
+  :::
+  1 41 5.903077 4.628538 2.064007 1 " " 21 0.06420 "ACE " "HH31" 1 0 "HH31"  <> <>
+  2 3 5.742200 3.678100 2.593900 1 " " 2 -0.17230 "ACE " " CH3" 6 0 "CH3"  <> <>
+  3 41 5.777051 3.852976 3.679351 1 " " 21 0.06420 "ACE " "HH32" 1 0 "HH32"  <> <>
+  4 41 6.529472 2.963377 2.312167 1 " " 21 0.06420 "ACE " "HH33" 1 0 "HH33"  <> <>
+  5 2 4.408200 3.120900 2.222300 1 " " 2 0.66300 "ACE " " C  " 6 0 "C"  <> <>
+  6 15 4.039600 2.059000 2.710400 1 " " 70 -0.61970 "ACE " " O  " 8 0 "O"   -1.197    1.474 
+  7 25 3.703200 3.900100 1.324900 2 "A" 43 -0.56470 "HIS " " N  " 7 0 "N"  <> <>
+  8 43 4.186153 4.828770 0.986775 2 "A" 21 0.33220 "HIS " " H  " 1 0 "H"   12.541    0.648 
+  9 3 2.395600 3.547100 0.832100 2 "A" 2 0.04620 "HIS " " CA " 6 0 "CA"  <> <>
+  10 41 2.326164 2.451501 0.901686 2 "A" 21 0.09430 "HIS " " HA " 1 0 "HA"  <> <>
+  11 3 1.273100 4.152500 1.682800 2 "A" 2 -0.10920 "HIS " " CB " 6 0 "CB"  <> <>
+  12 41 0.298335 3.847600 1.274304 2 "A" 21 0.06580 "HIS " " HB2" 1 0 "HB2"  <> <>
+  13 41 1.364561 3.794666 2.718942 2 "A" 21 0.06580 "HIS " " HB3" 1 0 "HB3"  <> <>
+  14 2 1.310600 5.661000 1.710400 2 "A" 2 0.28540 "HIS " " CG " 6 0 "CG"  <> <>
+  15 31 0.626600 6.393900 0.773000 2 "A" 43 -0.66160 "HIS " " ND1" 7 1 "ND1"  <> <>
+  16 2 0.871400 7.647400 1.084300 2 "A" 2 0.39080 "HIS " " CE1" 6 0 "CE1"  <> <>
+  17 41 0.496400 8.517600 0.564300 2 "A" 21 0.06340 "HIS " " HE1" 1 0 "HE1"  <> <>
+  18 25 1.683200 7.749200 2.179700 2 "A" 43 -0.32110 "HIS " " NE2" 7 0 "NE2"  <> <>
+  19 43 1.975315 8.740086 2.557606 2 "A" 21 0.30140 "HIS " " HE2" 1 0 "HE2"    6.957    0.730 
+  20 2 1.973600 6.479800 2.593800 2 "A" 2 -0.23940 "HIS " " CD2" 6 0 "CD2"  <> <>
+  21 41 2.604300 6.285700 3.449400 2 "A" 21 0.17990 "HIS " " HD2" 1 0 "HD2"  <> <>
+  22 2 2.303100 4.049800 -0.604200 2 "A" 2 0.65490 "HIS " " C  " 6 0 "C"  <> <>
+  23 15 3.186700 4.717200 -1.137800 2 "A" 70 -0.61730 "HIS " " O  " 8 0 "O"   -2.161    0.723 
+  24 25 1.141100 3.621400 -1.230800 3 " " 43 -0.55590 "NME " " N  " 7 0 "N"  <> <>
+  25 43 0.440991 3.029816 -0.622626 3 " " 21 0.31120 "NME " " H  " 1 0 "H"   12.072    0.791 
+  26 3 0.828700 3.916100 -2.610800 3 " " 2 0.08230 "NME " " CH3" 6 0 "CH3"  <> <>
+  27 41 -0.142164 3.468913 -2.870505 3 " " 21 0.04400 "NME " "HH31" 1 0 "HH31"  <> <>
+  28 41 0.779613 5.006034 -2.750921 3 " " 21 0.04400 "NME " "HH32" 1 0 "HH32"  <> <>
+  29 41 1.610899 3.497635 -3.261224 3 " " 21 0.04400 "NME " "HH33" 1 0 "HH33"  <> <>
+  30 44 0.044038 5.882212 -0.007255 2 "A" 21 0.00000 "HIS " "    " 1 0 ""    7.329    0.730 
+  :::
+ } 
+ m_bond[30] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 2 4 1
+  3 2 5 1
+  4 2 3 1
+  5 5 6 2
+  6 5 7 1
+  7 7 8 1
+  8 7 9 1
+  9 9 11 1
+  10 9 22 1
+  11 9 10 1
+  12 11 14 1
+  13 11 13 1
+  14 11 12 1
+  15 14 15 1
+  16 14 20 2
+  17 15 16 2
+  18 15 30 1
+  19 16 17 1
+  20 16 18 1
+  21 18 19 1
+  22 18 20 1
+  23 20 21 1
+  24 22 23 2
+  25 22 24 1
+  26 24 25 1
+  27 24 26 1
+  28 26 29 1
+  29 26 27 1
+  30 26 28 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_source_file
+ i_m_source_file_index
+ r_lp_tautomer_probability
+ r_epik_Ionization_Penalty
+ r_epik_Ionization_Penalty_Charging
+ r_epik_Ionization_Penalty_Neutral
+ r_epik_State_Penalty
+ i_epik_Tot_Q
+ i_m_ct_format
+ :::
+ "2-acetamido-3-(1~{H}-imidazol-4-yl)-~{N}-methyl-propanamide" 
+  /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/his-test-peptides/output/HIS-pH4.0/HIS-pH4.0-input.mol2 
+  1
+  0.499999999999999
+    4.0343 
+    4.0343 
+    0.0000 
+    4.4856 
+  0
+  2
+ m_depend[5] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 10 r_epik_Ionization_Penalty 
+  2 10 r_epik_Ionization_Penalty_Charging 
+  3 10 r_epik_Ionization_Penalty_Neutral 
+  4 10 r_epik_State_Penalty 
+  5 10 i_epik_Tot_Q 
+  :::
+ } 
+ m_atom[29] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  s_m_chain_name
+  i_m_color
+  r_m_charge1
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  s_m_atom_name
+  r_epik_H2O_pKa
+  r_epik_H2O_pKa_uncertainty
+  :::
+  1 41 5.903077 4.628538 2.064007 1 " " 21 0.06420 "ACE " "HH31" 1 "HH31"  <> <>
+  2 3 5.742200 3.678100 2.593900 1 " " 2 -0.17230 "ACE " " CH3" 6 "CH3"  <> <>
+  3 41 5.777051 3.852976 3.679351 1 " " 21 0.06420 "ACE " "HH32" 1 "HH32"  <> <>
+  4 41 6.529472 2.963377 2.312167 1 " " 21 0.06420 "ACE " "HH33" 1 "HH33"  <> <>
+  5 2 4.408200 3.120900 2.222300 1 " " 2 0.66300 "ACE " " C  " 6 "C"  <> <>
+  6 15 4.039600 2.059000 2.710400 1 " " 70 -0.61970 "ACE " " O  " 8 "O"   -0.958    1.474 
+  7 25 3.703200 3.900100 1.324900 2 "A" 43 -0.56470 "HIS " " N  " 7 "N"  <> <>
+  8 43 4.186153 4.828770 0.986775 2 "A" 21 0.33220 "HIS " " H  " 1 "H"   12.688    0.648 
+  9 3 2.395600 3.547100 0.832100 2 "A" 2 0.04620 "HIS " " CA " 6 "CA"  <> <>
+  10 41 2.326164 2.451501 0.901686 2 "A" 21 0.09430 "HIS " " HA " 1 "HA"  <> <>
+  11 3 1.273100 4.152500 1.682800 2 "A" 2 -0.10920 "HIS " " CB " 6 "CB"  <> <>
+  12 41 0.298335 3.847600 1.274304 2 "A" 21 0.06580 "HIS " " HB2" 1 "HB2"  <> <>
+  13 41 1.364561 3.794666 2.718942 2 "A" 21 0.06580 "HIS " " HB3" 1 "HB3"  <> <>
+  14 2 1.310600 5.661000 1.710400 2 "A" 2 0.28540 "HIS " " CG " 6 "CG"  <> <>
+  15 25 0.626600 6.393900 0.773000 2 "A" 43 -0.66160 "HIS " " ND1" 7 "ND1"  <> <>
+  16 2 0.871400 7.647400 1.084300 2 "A" 2 0.39080 "HIS " " CE1" 6 "CE1"  <> <>
+  17 41 0.496400 8.517600 0.564300 2 "A" 21 0.06340 "HIS " " HE1" 1 "HE1"  <> <>
+  18 25 1.683200 7.749200 2.179700 2 "A" 43 -0.32110 "HIS " " NE2" 7 "NE2"    6.957    0.746 
+  19 2 1.973600 6.479800 2.593800 2 "A" 2 -0.23940 "HIS " " CD2" 6 "CD2"  <> <>
+  20 41 2.604300 6.285700 3.449400 2 "A" 21 0.17990 "HIS " " HD2" 1 "HD2"  <> <>
+  21 2 2.303100 4.049800 -0.604200 2 "A" 2 0.65490 "HIS " " C  " 6 "C"  <> <>
+  22 15 3.186700 4.717200 -1.137800 2 "A" 70 -0.61730 "HIS " " O  " 8 "O"   -1.922    0.723 
+  23 25 1.141100 3.621400 -1.230800 3 " " 43 -0.55590 "NME " " N  " 7 "N"  <> <>
+  24 43 0.440991 3.029816 -0.622626 3 " " 21 0.31120 "NME " " H  " 1 "H"   12.262    0.791 
+  25 3 0.828700 3.916100 -2.610800 3 " " 2 0.08230 "NME " " CH3" 6 "CH3"  <> <>
+  26 41 -0.142164 3.468913 -2.870505 3 " " 21 0.04400 "NME " "HH31" 1 "HH31"  <> <>
+  27 41 0.779613 5.006034 -2.750921 3 " " 21 0.04400 "NME " "HH32" 1 "HH32"  <> <>
+  28 41 1.610899 3.497635 -3.261224 3 " " 21 0.04400 "NME " "HH33" 1 "HH33"  <> <>
+  29 43 0.044038 5.882212 -0.007255 2 "A" 21 0.00000 "HIS " "    " 1 ""   14.174    0.603 
+  :::
+ } 
+ m_bond[29] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 2 4 1
+  3 2 5 1
+  4 2 3 1
+  5 5 6 2
+  6 5 7 1
+  7 7 8 1
+  8 7 9 1
+  9 9 11 1
+  10 9 21 1
+  11 9 10 1
+  12 11 14 1
+  13 11 13 1
+  14 11 12 1
+  15 14 15 1
+  16 14 19 2
+  17 15 16 1
+  18 15 29 1
+  19 16 17 1
+  20 16 18 2
+  21 18 19 1
+  22 19 20 1
+  23 21 22 2
+  24 21 23 1
+  25 23 24 1
+  26 23 25 1
+  27 25 28 1
+  28 25 26 1
+  29 25 27 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_source_file
+ i_m_source_file_index
+ r_lp_tautomer_probability
+ r_epik_Ionization_Penalty
+ r_epik_Ionization_Penalty_Charging
+ r_epik_Ionization_Penalty_Neutral
+ r_epik_State_Penalty
+ i_epik_Tot_Q
+ i_m_ct_format
+ :::
+ "2-acetamido-3-(1~{H}-imidazol-4-yl)-~{N}-methyl-propanamide" 
+  /Users/choderaj/github/choderalab/mcce-charges/mcce-charges.jchodera/his-test-peptides/output/HIS-pH4.0/HIS-pH4.0-input.mol2 
+  1
+  0.499999999999999
+    4.5424 
+    4.5424 
+    0.0000 
+    4.6665 
+  0
+  2
+ m_depend[5] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 10 r_epik_Ionization_Penalty 
+  2 10 r_epik_Ionization_Penalty_Charging 
+  3 10 r_epik_Ionization_Penalty_Neutral 
+  4 10 r_epik_State_Penalty 
+  5 10 i_epik_Tot_Q 
+  :::
+ } 
+ m_atom[29] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  s_m_chain_name
+  i_m_color
+  r_m_charge1
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  s_m_atom_name
+  r_epik_H2O_pKa
+  r_epik_H2O_pKa_uncertainty
+  :::
+  1 41 5.903077 4.628538 2.064007 1 " " 21 0.06420 "ACE " "HH31" 1 HH31  <> <>
+  2 3 5.742200 3.678100 2.593900 1 " " 2 -0.17230 "ACE " " CH3" 6 CH3  <> <>
+  3 41 5.777051 3.852976 3.679351 1 " " 21 0.06420 "ACE " "HH32" 1 HH32  <> <>
+  4 41 6.529472 2.963377 2.312167 1 " " 21 0.06420 "ACE " "HH33" 1 HH33  <> <>
+  5 2 4.408200 3.120900 2.222300 1 " " 2 0.66300 "ACE " " C  " 6 C  <> <>
+  6 15 4.039600 2.059000 2.710400 1 " " 70 -0.61970 "ACE " " O  " 8 O   -1.096    1.474 
+  7 25 3.703200 3.900100 1.324900 2 "A" 43 -0.56470 "HIS " " N  " 7 N  <> <>
+  8 43 4.186153 4.828770 0.986775 2 "A" 21 0.33220 "HIS " " H  " 1 H   12.603    0.648 
+  9 3 2.395600 3.547100 0.832100 2 "A" 2 0.04620 "HIS " " CA " 6 CA  <> <>
+  10 41 2.326164 2.451501 0.901686 2 "A" 21 0.09430 "HIS " " HA " 1 HA  <> <>
+  11 3 1.273100 4.152500 1.682800 2 "A" 2 -0.10920 "HIS " " CB " 6 CB  <> <>
+  12 41 0.298335 3.847600 1.274304 2 "A" 21 0.06580 "HIS " " HB2" 1 HB2  <> <>
+  13 41 1.364561 3.794666 2.718942 2 "A" 21 0.06580 "HIS " " HB3" 1 HB3  <> <>
+  14 2 1.310600 5.661000 1.710400 2 "A" 2 0.28540 "HIS " " CG " 6 CG  <> <>
+  15 25 0.626600 6.393900 0.773000 2 "A" 43 -0.66160 "HIS " " ND1" 7 ND1    7.329    0.763 
+  16 2 0.871400 7.647400 1.084300 2 "A" 2 0.39080 "HIS " " CE1" 6 CE1  <> <>
+  17 41 0.496400 8.517600 0.564300 2 "A" 21 0.06340 "HIS " " HE1" 1 HE1  <> <>
+  18 25 1.683200 7.749200 2.179700 2 "A" 43 -0.32110 "HIS " " NE2" 7 NE2  <> <>
+  19 43 1.975315 8.740086 2.557606 2 "A" 21 0.30140 "HIS " " HE2" 1 HE2   13.786    0.763 
+  20 2 1.973600 6.479800 2.593800 2 "A" 2 -0.23940 "HIS " " CD2" 6 CD2  <> <>
+  21 41 2.604300 6.285700 3.449400 2 "A" 21 0.17990 "HIS " " HD2" 1 HD2  <> <>
+  22 2 2.303100 4.049800 -0.604200 2 "A" 2 0.65490 "HIS " " C  " 6 C  <> <>
+  23 15 3.186700 4.717200 -1.137800 2 "A" 70 -0.61730 "HIS " " O  " 8 O   -2.060    0.723 
+  24 25 1.141100 3.621400 -1.230800 3 " " 43 -0.55590 "NME " " N  " 7 N  <> <>
+  25 43 0.440991 3.029816 -0.622626 3 " " 21 0.31120 "NME " " H  " 1 H   12.152    0.791 
+  26 3 0.828700 3.916100 -2.610800 3 " " 2 0.08230 "NME " " CH3" 6 CH3  <> <>
+  27 41 -0.142164 3.468913 -2.870505 3 " " 21 0.04400 "NME " "HH31" 1 HH31  <> <>
+  28 41 0.779613 5.006034 -2.750921 3 " " 21 0.04400 "NME " "HH32" 1 HH32  <> <>
+  29 41 1.610899 3.497635 -3.261224 3 " " 21 0.04400 "NME " "HH33" 1 HH33  <> <>
+  :::
+ } 
+ m_bond[29] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 2 4 1
+  3 2 5 1
+  4 2 3 1
+  5 5 6 2
+  6 5 7 1
+  7 7 8 1
+  8 7 9 1
+  9 9 11 1
+  10 9 22 1
+  11 9 10 1
+  12 11 14 1
+  13 11 13 1
+  14 11 12 1
+  15 14 15 1
+  16 14 20 2
+  17 15 16 2
+  18 16 17 1
+  19 16 18 1
+  20 18 19 1
+  21 18 20 1
+  22 20 21 1
+  23 22 23 2
+  24 22 24 1
+  25 24 25 1
+  26 24 26 1
+  27 26 29 1
+  28 26 27 1
+  29 26 28 1
+  :::
+ } 
+} 
+
