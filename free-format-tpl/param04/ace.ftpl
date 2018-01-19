@@ -1,0 +1,7 @@
+CONNECT, ACEBK, "HH31": charge, radius,     s, " CH3"
+CONNECT, ACEBK, " CH3": charge, radius,   sp3, "HH31", "HH32", "HH33", " C  "
+CONNECT, ACEBK, "HH32": charge, radius,     s, " CH3"
+CONNECT, ACEBK, "HH33": charge, radius,     s, " CH3"
+CONNECT, ACEBK, " C  ": charge, radius,   sp2, " CH3", " O  ", " N  "
+CONNECT, ACEBK, " O  ": charge, radius,   sp2, " C  "
+
