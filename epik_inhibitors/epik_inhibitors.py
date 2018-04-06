@@ -9,7 +9,8 @@ import traceback
 import numpy as np
 
 from openeye import oechem
-from openmoltools import openeye, schrodinger
+from openmoltools import openeye
+import schrodinger
 
 MAX_ENERGY_PENALTY = 10.0 # kT
 
