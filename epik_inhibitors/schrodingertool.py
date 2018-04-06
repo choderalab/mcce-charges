@@ -295,7 +295,7 @@ def run_ligprep(input_file_path, output_file_path, max_stereo_isomers=1, ionizat
     prep_args = dict(s=max_stereo_isomers, i=ionization_treatment)    
 
     
-    prep_output = os.path.splitext(output_file_path)[0] + '-full.mae'
+    prep_output = os.path.splitext(output_file_path)[0] + '.mae'
 
     # ligprep command. We need list in case there's a space in the paths
     cmd = [exe_path, '-imae', input_file_path, '-omae', prep_output]
