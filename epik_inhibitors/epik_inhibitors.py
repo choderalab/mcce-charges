@@ -60,7 +60,7 @@ def retrieve_url(url, filename):
     print(url)
     response = urllib2.urlopen(url)
     html = response.read()
-    outfile = open(filename, 'w')
+    outfile = open(filename, 'wb')
     outfile.write(html)
     outfile.close()
 
