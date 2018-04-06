@@ -168,7 +168,7 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
     mol2_file_path = output_basepath + '-input.mol2'
     write_mol2_preserving_atomnames(mol2_file_path, oe_molecule, residue_name)
 
-    prepfile_path = output_basepath + 'ligprep.mae'
+    prepfile_path = output_basepath + '-ligprep.mae'
     schrodinger.run_ligprep(mol2_file_path, prepfile_path)
     # Run epik on mol2 file
     mae_file_path = output_basepath + '-epik.mae'
@@ -202,7 +202,7 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
         print("Charging molecule %d" % (index))
         try:
             # Charge molecule.
-            charged_molecule = openeye.get_charges(mol2_molecule, max_confs=800, strictStereo=False, normalize=True, keep_confs=None)
+            charged_molecule = openeye.get_charges(mol2_molecule, max_confs=800, strictStereo=False, normalize=True, keep_confs=None, legacy=False)
             # Assign Tripos types
             oechem.OETriposAtomTypeNames(charged_molecule)
             oechem.OETriposBondTypeNames(charged_molecule)
