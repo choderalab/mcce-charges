@@ -52,7 +52,11 @@ def DumpSDData(mol):
     print()
 
 def retrieve_url(url, filename):
-    import urllib2
+    try:
+        import urllib.request as urllib2
+    except ImportError:
+        import urllib2
+    
     print(url)
     response = urllib2.urlopen(url)
     html = response.read()
