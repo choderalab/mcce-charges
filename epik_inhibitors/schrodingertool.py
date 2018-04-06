@@ -37,7 +37,7 @@ def run_and_log_error(command):
     """
     try:
         output = subprocess.check_output(command)
-    except subprocess.CalledProcessError as e:
+    except subprocess.CalledProcessError as e:        
         logger.error(e.output)
         logger.error(str(e))
         raise e
@@ -264,6 +264,47 @@ def run_maesubset(input_file_path, output_file_path, range):
     with open(output_file_path, 'w') as f:
         f.write(output)
 
+
+@need_schrodinger
+@autoconvert_maestro
+def run_ligprep(input_file_path, output_file_path, max_stereo_isomers=1, ionization_treatment=1):
+    """
+    Run Schrodinger's ligprep command line utility to clean up a structure.
+
+    Parameters
+    ----------
+    input_file_path : str
+        Path to input file describing the molecule.
+    output_file_path : str
+        Path to the output file created by epik.
+    max_stereo_isomers : int, optional
+        Maximum number of generated structures (default is 32).
+    ionization_treatment : int, default 1
+        0 do not neutralize or ionize, 1 neutralize, 2 neutralize and ionize.    
+    """
+    
+    # Locate executable
+    exe_path = os.path.join(os.environ['SCHRODINGER'], 'ligprep')
+
+    # Normalize paths as we'll run in a different working directory
+    input_file_path = os.path.abspath(input_file_path)
+    output_file_path = os.path.abspath(output_file_path)
+    output_dir = os.path.dirname(output_file_path)
+
+    # Preparing epik command arguments for format()
+    prep_args = dict(s=max_stereo_isomers, i=ionization_treatment)    
+
+    
+    prep_output = os.path.splitext(output_file_path)[0] + '-full.mae'
+
+    # ligprep command. We need list in case there's a space in the paths
+    cmd = [exe_path, '-imae', input_file_path, '-omae', prep_output]
+    cmd += '-s {s} -i {i} -WAIT'.format(
+            **prep_args).split()
+
+    # We run with output_dir as working directory to save there the log file
+    with utils.temporary_cd(output_dir):
+        run_and_log_error(cmd)
 
 @need_schrodinger
 @autoconvert_maestro

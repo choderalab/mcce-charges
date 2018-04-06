@@ -10,7 +10,11 @@ import numpy as np
 
 from openeye import oechem
 from openmoltools import openeye
-import schrodinger
+import schrodingertool as schrodinger
+import logging
+
+schrodinger.logger.setLevel(logging.INFO)
+
 
 MAX_ENERGY_PENALTY = 10.0 # kT
 
@@ -164,9 +168,11 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
     mol2_file_path = output_basepath + '-input.mol2'
     write_mol2_preserving_atomnames(mol2_file_path, oe_molecule, residue_name)
 
+    prepfile_path = output_basepath + 'ligprep.mae'
+    schrodinger.run_ligprep(mol2_file_path, prepfile_path)
     # Run epik on mol2 file
     mae_file_path = output_basepath + '-epik.mae'
-    schrodinger.run_epik(mol2_file_path, mae_file_path, tautomerize=False,
+    schrodinger.run_epik(prepfile_path, mae_file_path, tautomerize=False,
                          max_structures=100, min_probability=np.exp(-MAX_ENERGY_PENALTY), ph=7.4)
 
     # Convert maestro file to sdf and mol2
