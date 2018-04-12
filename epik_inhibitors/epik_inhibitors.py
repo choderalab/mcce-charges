@@ -7,6 +7,7 @@ import re
 import csv
 import traceback
 import numpy as np
+from copy import deepcopy
 
 from openeye import oechem
 from openmoltools import openeye
@@ -163,6 +164,12 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
     else:
         raise Exception('Must provide SMILES string or pdbname')
 
+    # Handling of OpenEye output
+    oehandler = oechem.OEThrow
+    # String stream output
+    oss = oechem.oeosstream()
+    oehandler.SetOutputStream(oss)
+
     # Save mol2 file, preserving atom names
     print("Running epik on molecule {}".format(name))
     mol2_file_path = output_basepath + '-input.mol2'
@@ -193,7 +200,8 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
     mol2_molecule = oechem.OEMol()
 
     # Assign charges.
-    charged_molecules = list()
+    failed_molecules = dict()
+    charged_molecules = list()    
     index = 0
     while oechem.OEReadMolecule(ifs_sdf, sdf_molecule):
         oechem.OEReadMolecule(ifs_mol2, mol2_molecule)
@@ -202,7 +210,8 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
         print("Charging molecule %d" % (index))
         try:
             # Charge molecule.
-            charged_molecule = openeye.get_charges(mol2_molecule, max_confs=800, strictStereo=False, normalize=True, keep_confs=None, legacy=False)
+            oehandler.Clear()
+            charged_molecule = openeye.get_charges(mol2_molecule, max_confs=800, strictStereo=False, normalize=True, keep_confs=None, legacy=True)
             # Assign Tripos types
             oechem.OETriposAtomTypeNames(charged_molecule)
             oechem.OETriposBondTypeNames(charged_molecule)
@@ -211,9 +220,12 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
             # Store molecule
             charged_molecules.append(charged_molecule)
         except Exception as e:
-            print(e)
+            identifier = "{:s}_{:04d}".format(name, index)
+            OEOutput = str(oss)
+            failed_molecules[identifier] = tuple([deepcopy(mol2_molecule), str(oss) + "\n" + str(e)])
+            print(e)            
             print("Skipping protomer/tautomer because of failed charging.")
-
+    oehandler.Clear()
     # Clean up
     ifs_sdf.close()
     ifs_mol2.close()
@@ -251,6 +263,14 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
     charged_mol2_filename = output_basepath + '-epik-charged.mol2'
     write_mol2_preserving_atomnames(charged_mol2_filename, charged_molecules, residue_name)
 
+    
+    os.makedirs("Failed_molecules", exist_ok=True)
+    if len(failed_molecules) > 0:
+        for name_state, (state_oemol, error_message) in failed_molecules.items():
+            write_mol2_preserving_atomnames("Failed_molecules/{}.mol2".format(name_state), state_oemol, name_state)
+            with open("Failed_molecules/{}.err".format(name_state), 'w') as error_file:
+                error_file.write(error_message)
+   
 
 if __name__ == '__main__':
     input_csv_file = 'clinical-kinase-inhibitors.csv'
