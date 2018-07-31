@@ -179,14 +179,6 @@ def enumerate_conformations(name, smiles=None, pdbname=None, user_mol2=None):
     mol2_file_path = output_basepath + '-input.mol2'
     write_mol2_preserving_atomnames(mol2_file_path, oe_molecule, residue_name)
 
-    # Allow user to provide custom file instead, if located in the right location.    
-    if user_mol2 is not None:
-        if os.path.isfile(user_mol2):
-            mol2_file_path = user_mol2
-        else:
-            raise IOError("No such file: {}".format(user_mol2))
-
-
     # Run epik on mol2 file
     mae_file_path = output_basepath + '-epik.mae'
     schrodinger.run_epik(mol2_file_path, mae_file_path, tautomerize=False,
@@ -197,6 +189,13 @@ def enumerate_conformations(name, smiles=None, pdbname=None, user_mol2=None):
     output_mol2_filename = output_basepath + '-epik.mol2'
     schrodinger.run_structconvert(mae_file_path, output_sdf_filename)
     schrodinger.run_structconvert(mae_file_path, output_mol2_filename)
+
+    # Allow user to provide custom file instead, if located in the right location.    
+    if user_mol2 is not None:
+        if os.path.isfile(user_mol2):
+            output_mol2_filename = user_mol2
+        else:
+            raise IOError("No such file: {}".format(user_mol2))    
 
     # Read SDF file.
     ifs_sdf = oechem.oemolistream()
