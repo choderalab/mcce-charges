@@ -176,7 +176,8 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
     write_mol2_preserving_atomnames(mol2_file_path, oe_molecule, residue_name)
 
     prepfile_path = output_basepath + '-ligprep.mae'
-    schrodinger.run_ligprep(mol2_file_path, prepfile_path)
+    prepfile_path = mol2_file_path
+    # schrodinger.run_ligprep(mol2_file_path, prepfile_path)
     # Run epik on mol2 file
     mae_file_path = output_basepath + '-epik.mae'
     schrodinger.run_epik(prepfile_path, mae_file_path, tautomerize=False,
@@ -211,10 +212,14 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
         try:
             # Charge molecule.
             oehandler.Clear()
-            charged_molecule = openeye.get_charges(mol2_molecule, max_confs=800, strictStereo=False, normalize=True, keep_confs=None, legacy=True)
+            # fix bonds            
+            oechem.OEAssignAromaticFlags( mol2_molecule)            
             # Assign Tripos types
-            oechem.OETriposAtomTypeNames(charged_molecule)
-            oechem.OETriposBondTypeNames(charged_molecule)
+            oechem.OETriposAtomTypeNames( mol2_molecule)
+            oechem.OETriposBondTypeNames( mol2_molecule)
+
+            charged_molecule = openeye.get_charges(mol2_molecule, max_confs=800, strictStereo=False, normalize=True, keep_confs=None, legacy=True)
+            
             # Store tags.
             oechem.OECopySDData(charged_molecule, sdf_molecule)
             # Store molecule
@@ -274,7 +279,7 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
 
 if __name__ == '__main__':
     input_csv_file = 'clinical-kinase-inhibitors.csv'
-    output_dir = 'output'
+    output_dir = 'output-new'
 
     # Create output directory
     if not os.path.isdir(output_dir):
