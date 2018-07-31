@@ -292,8 +292,8 @@ if __name__ == '__main__':
     # If a molecule name is supplied as the first command line argument, the script will only run that molecule
     mol_to_run = None
 
-    # if a second argument is also supplied, use this user prepared mol2 file as input for epik and further steps,
-    # instead of the file retrieved from the rcsb
+    # if a second argument is also supplied, use this user prepared mol2 file as
+    # if it were the output file from Epik
     user_mol2 = None
     try:
         mol_to_run = sys.argv[1].strip()
