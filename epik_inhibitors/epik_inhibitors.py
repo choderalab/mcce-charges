@@ -100,7 +100,7 @@ def write_mol2_preserving_atomnames(filename, molecules, residue_name):
     ofs.close()
     fix_mol2_resname(filename, residue_name)
 
-def enumerate_conformations(name, smiles=None, pdbname=None):
+def enumerate_conformations(name, smiles=None, pdbname=None, user_mol2=None):
     """Run Epik to get protonation states using PDB residue templates for naming.
 
     Parameters
@@ -111,6 +111,9 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
        Isomeric SMILES string
     pdbname : str
        Three-letter PDB code (e.g. 'DB8')
+    user_mol2 : str
+        User prepared mol2 file to use as input instead of PDB retrieved files
+
     """
     # Create output subfolder
     output_basepath = os.path.join(output_dir, name)
@@ -176,12 +179,17 @@ def enumerate_conformations(name, smiles=None, pdbname=None):
     mol2_file_path = output_basepath + '-input.mol2'
     write_mol2_preserving_atomnames(mol2_file_path, oe_molecule, residue_name)
 
-    prepfile_path = output_basepath + '-ligprep.mae'
-    prepfile_path = mol2_file_path
-    # schrodinger.run_ligprep(mol2_file_path, prepfile_path)
+    # Allow user to provide custom file instead, if located in the right location.    
+    if user_mol2 is not None:
+        if os.path.isfile(user_mol2):
+            mol2_file_path = user_mol2
+        else:
+            raise IOError("No such file: {}".format(user_mol2))
+
+
     # Run epik on mol2 file
     mae_file_path = output_basepath + '-epik.mae'
-    schrodinger.run_epik(prepfile_path, mae_file_path, tautomerize=False,
+    schrodinger.run_epik(mol2_file_path, mae_file_path, tautomerize=False,
                          max_structures=100, min_probability=np.exp(-MAX_ENERGY_PENALTY), ph=7.4)
 
     # Convert maestro file to sdf and mol2
@@ -285,8 +293,16 @@ if __name__ == '__main__':
     # If a molecule name is supplied as the first command line argument, the script will only run that molecule
     mol_to_run = None
 
+    # if a second argument is also supplied, use this user prepared mol2 file as input for epik and further steps,
+    # instead of the file retrieved from the rcsb
+    user_mol2 = None
     try:
         mol_to_run = sys.argv[1].strip()
+    except IndexError:
+        pass
+    
+    try:
+        user_mol2 = sys.argv[2].strip()
     except IndexError:
         pass
 
@@ -300,7 +316,7 @@ if __name__ == '__main__':
         for (name,smiles,approved_target,all_targets,Chem_ID,Accession_ID) in csv.reader(csv_file):
             if mol_to_run is not None:
                 if name == mol_to_run:
-                    enumerate_conformations(name, smiles, Chem_ID)
+                    enumerate_conformations(name, smiles, Chem_ID, user_mol2=user_mol2)
                     break
             else:
                 enumerate_conformations(name, smiles, Chem_ID)
