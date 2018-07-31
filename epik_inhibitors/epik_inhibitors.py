@@ -5,6 +5,7 @@
 import os
 import re
 import csv
+import sys 
 import traceback
 import numpy as np
 from copy import deepcopy
@@ -281,6 +282,14 @@ if __name__ == '__main__':
     input_csv_file = 'clinical-kinase-inhibitors.csv'
     output_dir = 'output-new'
 
+    # If a molecule name is supplied as the first command line argument, the script will only run that molecule
+    mol_to_run = None
+
+    try:
+        mol_to_run = sys.argv[1].strip()
+    except IndexError:
+        pass
+
     # Create output directory
     if not os.path.isdir(output_dir):
         os.mkdir(output_dir)
@@ -289,7 +298,12 @@ if __name__ == '__main__':
     with open(input_csv_file, 'rU') as csv_file:
         next(csv_file, None) # skip header
         for (name,smiles,approved_target,all_targets,Chem_ID,Accession_ID) in csv.reader(csv_file):
-            enumerate_conformations(name, smiles, Chem_ID)
+            if mol_to_run is not None:
+                if name == mol_to_run:
+                    enumerate_conformations(name, smiles, Chem_ID)
+                    break
+            else:
+                enumerate_conformations(name, smiles, Chem_ID)
 
     # Generate Histidine
     #enumerate_conformations('Histidine', 'O=C([C@H](CC1=CNC=N1)N)O')
