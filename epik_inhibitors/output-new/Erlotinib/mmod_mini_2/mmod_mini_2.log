@@ -1,0 +1,370 @@
+bmin_driver. Copyright (c) Schrodinger, LLC.
+
+[running at reduced cpu priority]
+Job id: LMIS8010-0-5b607977
+Launch directory: C:\GitHub\mcce-charges\epik_inhibitors\output-new\Erlotinib\mmod_mini_2
+Job directory: C:\Users\rustenba\AppData\Local\Schrodinger\tmp\mmod_mini_2
+Running locally: False
+======================================
+Running bmin_driver
+Tue, 31 Jul 2018 17:00:15.147000
+Version: 116013
+Command: C:\Program Files\Schrodinger2017-2\macromodel-v11.6\bin\Windows-x64\bmin_driver.py -imae mmod_mini_2.mae -omae mmod_mini_2-out.maegz -NJOBS 4
+.....................................
+
+All output structures will be stored in one file called 'mmod_mini_2-out.maegz'
+Number of structures to process                     : 2
+More jobs requested (4) than number of structures to process (2).
+Number of jobs set to 2.
+Generated 2 jobs
+Preparing subjobs...
+ subjobinfo subjobname mmod_mini_2-out_subjob_1
+ subjobinfo input      mmod_mini_2_subjob_1.mae
+ subjobinfo output     mmod_mini_2-out_subjob_1.maegz
+ subjobinfo log        mmod_mini_2-out_subjob_1.log
+Copied data file mmod_mini_2-out_subjob_1.com
+ subjobinfo subjobname mmod_mini_2-out_subjob_2
+ subjobinfo input      mmod_mini_2_subjob_2.mae
+ subjobinfo output     mmod_mini_2-out_subjob_2.maegz
+ subjobinfo log        mmod_mini_2-out_subjob_2.log
+Copied data file mmod_mini_2-out_subjob_2.com
+Running subjobs...
+
+Running subjobs on hosts:
+  localhost (Max: 4)
+Number of jobs:       2
+Max retries per job:  2
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            verbose
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 1 | launched  LMIS8010-0-5b607986 mmod_mini_2-out_subjob_1 localhost [LMIS8010]
+0 2 0 | launched  LMIS8010-0-5b60798f mmod_mini_2-out_subjob_2 localhost [LMIS8010]
+1 1 0 | finished  LMIS8010-0-5b607986 mmod_mini_2-out_subjob_1 localhost [LMIS8010]
+2 0 0 | finished  LMIS8010-0-5b60798f mmod_mini_2-out_subjob_2 localhost [LMIS8010]
+
+All jobs have completed.
+
+2 of 2 job(s) succeeded; 0 job(s) failed.
+
+###########################################
+###########################################
+ Organizing Output Files:                  
+...........................................
+ Collecting Results from Job: mmod_mini_2-out_subjob_1           
+   -------------------------------------   
+
+ 
+[running at reduced cpu priority]
+ JobID: LMIS8010-0-5b607986
+ BatchMin V11.6    Build  116013  Starting Time 31-Jul-2018 17:00:30
+ MacroModel. Copyright Schrodinger, LLC.
+ All rights reserved.
+
+ Input filename:  mmod_mini_2_subjob_1.mae
+ Output filename: mmod_mini_2-out_subjob_1.maegz
+ Turning on debug switch          55
+ Atom-type file: C:\Program Files\Schrodinger2017-2\mmshare-v3.8\bin\Windows-x64\..\..\data\atom.typ
+ Force field: C:\Program Files\Schrodinger2017-2\macromodel-v11.6\bin\Windows-x64\..\..\data\f10.fld
+ BMFF process: "C:\Program Files\Schrodinger2017-2\macromodel-v11.6\bin\Windows-x64\mmff_setup.exe"
+ 
+ Read    52 atoms. Structure name, if any, appears on next line: 
+ AQ4
+ Quality of Force Field Parameters in Use:
+   Numbers of high, medium and low quality stretch parameters =   51    2    1
+   Numbers of high, medium and low quality bend parameters    =   83    0    6
+   Numbers of high, medium and low quality torsion parameters =   82    0   26
+   Interactions examined:        251 of        251 total, including unused params.
+ WARNING - Conformational Energies May Not Be Accurate
+ WARNING - Solvation Energies/Charges May Not Be Accurate
+      Stretch total=       54   constrained=        0
+         Bend total=       89   constrained=        0        linear=        0
+      Torsion total=      153   constrained=        0  out-of-plane=       45
+    Nonbonded total=     1183      H-bonded=        0      ordinary=     1183
+  Nonbonded cutoffs: CutVdw=   8.00    ;  CutEs=   20.0    
+ Solvent file: C:\Program Files\Schrodinger2017-2\macromodel-v11.6\bin\Windows-x64\..\..\data\water.slv
+    Block specifies desired NFIELD -- accepting block
+ Starting conjugate gradient minimization.
+                   Total Energy =      236.7712 kJ/mol
+                        Stretch =       44.1596 kJ/mol
+                           Bend =      115.6868 kJ/mol
+                        Torsion =       67.5969 kJ/mol
+               Improper Torsion =        0.1089 kJ/mol
+                            VDW =      273.2546 kJ/mol
+                  Electrostatic =     -184.0061 kJ/mol
+        Explicit Hydrogen Bonds =        0.0000 kJ/mol
+                    Cross Terms =        7.7020 kJ/mol
+                    Solvation =      -87.7315 kJ/mol
+  
+ T.E. for cross-checking:       236.7712 kJ/mol
+Iter=    10  Move(A)=  0.355588 E(kJ/mol)=   175.9444     Grad=   18.85534    
+Iter=    20  Move(A)=  0.274219 E(kJ/mol)=   169.2251     Grad=   8.749318    
+Iter=    30  Move(A)=  0.115224 E(kJ/mol)=   168.0569     Grad=   3.844521    
+Iter=    40  Move(A)=  0.110439 E(kJ/mol)=   167.4528     Grad=   3.762762    
+Iter=    50  Move(A)=  0.147771 E(kJ/mol)=   166.9626     Grad=   2.696671    
+Iter=    60  Move(A)=  0.071297 E(kJ/mol)=   166.7666     Grad=   2.395563    
+Iter=    70  Move(A)=  0.131750 E(kJ/mol)=   166.4801     Grad=   2.880883    
+Iter=    80  Move(A)=  0.175098 E(kJ/mol)=   166.2115     Grad=   2.127415    
+Iter=    90  Move(A)=  0.119849 E(kJ/mol)=   166.0450     Grad=   2.051282    
+Iter=   100  Move(A)=  0.095338 E(kJ/mol)=   165.9205     Grad=   1.567976    
+Iter=   110  Move(A)=  0.089320 E(kJ/mol)=   165.8328     Grad=   1.152542    
+Iter=   120  Move(A)=  0.082053 E(kJ/mol)=   165.7480     Grad=   1.371782    
+Iter=   130  Move(A)=  0.106016 E(kJ/mol)=   165.6553     Grad=   1.729622    
+Iter=   140  Move(A)=  0.123256 E(kJ/mol)=   165.5690     Grad=   1.020174    
+Iter=   150  Move(A)=  0.059667 E(kJ/mol)=   165.5315     Grad=  0.7929654    
+Iter=   160  Move(A)=  0.021222 E(kJ/mol)=   165.6805     Grad=  0.4066626    
+Iter=   170  Move(A)=  0.015107 E(kJ/mol)=   165.6673     Grad=  0.5942590    
+Iter=   180  Move(A)=  0.046006 E(kJ/mol)=   165.6358     Grad=   1.015582    
+Iter=   190  Move(A)=  0.084986 E(kJ/mol)=   165.5921     Grad=  0.9710661    
+Iter=   200  Move(A)=  0.115545 E(kJ/mol)=   165.5316     Grad=   1.227501    
+Iter=   210  Move(A)=  0.136199 E(kJ/mol)=   165.4593     Grad=   1.580672    
+Iter=   220  Move(A)=  0.177492 E(kJ/mol)=   165.3908     Grad=   1.188815    
+Iter=   230  Move(A)=  0.133256 E(kJ/mol)=   165.3302     Grad=   1.598799    
+Iter=   240  Move(A)=  0.231333 E(kJ/mol)=   165.2352     Grad=   1.556098    
+Iter=   250  Move(A)=  0.283015 E(kJ/mol)=   165.1278     Grad=   2.064522    
+Iter=   260  Move(A)=  0.274187 E(kJ/mol)=   165.0424     Grad=   1.032123    
+Iter=   270  Move(A)=  0.121796 E(kJ/mol)=   164.9979     Grad=  0.8362316    
+Iter=   280  Move(A)=  0.086809 E(kJ/mol)=   164.9643     Grad=   1.122979    
+Iter=   290  Move(A)=  0.077864 E(kJ/mol)=   164.9404     Grad=  0.8062969    
+Iter=   300  Move(A)=  0.074673 E(kJ/mol)=   164.9135     Grad=  0.7300253    
+Iter=   310  Move(A)=  0.049646 E(kJ/mol)=   164.8978     Grad=  0.4787723    
+Iter=   320  Move(A)=  0.014235 E(kJ/mol)=   164.8880     Grad=  0.4946229    
+Iter=   330  Move(A)=  0.023706 E(kJ/mol)=   164.8713     Grad=  0.6727799    
+Iter=   340  Move(A)=  0.041009 E(kJ/mol)=   164.8506     Grad=  0.7609148    
+Iter=   350  Move(A)=  0.065566 E(kJ/mol)=   164.8220     Grad=  0.8896374    
+Iter=   360  Move(A)=  0.053825 E(kJ/mol)=   164.7997     Grad=  0.8656840    
+Iter=   370  Move(A)=  0.078868 E(kJ/mol)=   164.7686     Grad=  0.7865959    
+Iter=   380  Move(A)=  0.110715 E(kJ/mol)=   164.7298     Grad=  0.9612138    
+Iter=   390  Move(A)=  0.061691 E(kJ/mol)=   164.7099     Grad=  0.5549973    
+Iter=   400  Move(A)=  0.031345 E(kJ/mol)=   164.7000     Grad=  0.3701169    
+Iter=   410  Move(A)=  0.020055 E(kJ/mol)=   164.6944     Grad=  0.3320181    
+Iter=   420  Move(A)=  0.043611 E(kJ/mol)=   164.6845     Grad=  0.4219902    
+Iter=   430  Move(A)=  0.022488 E(kJ/mol)=   164.6801     Grad=  0.3155242    
+Iter=   440  Move(A)=  0.019740 E(kJ/mol)=   164.6763     Grad=  0.3067451    
+Iter=   450  Move(A)=  0.034667 E(kJ/mol)=   164.6698     Grad=  0.4608256    
+Iter=   460  Move(A)=  0.033488 E(kJ/mol)=   164.6649     Grad=  0.3503985    
+Iter=   470  Move(A)=  0.019565 E(kJ/mol)=   164.6621     Grad=  0.2588602    
+Iter=   480  Move(A)=  0.004470 E(kJ/mol)=   164.6599     Grad=  0.2177060    
+Iter=   490  Move(A)=  0.011677 E(kJ/mol)=   164.6565     Grad=  0.3742616    
+Iter=   500  Move(A)=  0.012878 E(kJ/mol)=   164.6537     Grad=  0.2131425    
+Iter=   510  Move(A)=  0.009611 E(kJ/mol)=   164.6519     Grad=  0.2544376    
+Iter=   520  Move(A)=  0.014381 E(kJ/mol)=   164.6492     Grad=  0.3243730    
+Iter=   530  Move(A)=  0.031674 E(kJ/mol)=   164.6446     Grad=  0.3887199    
+Iter=   540  Move(A)=  0.025446 E(kJ/mol)=   164.6414     Grad=  0.2762158    
+Iter=   550  Move(A)=  0.036098 E(kJ/mol)=   164.6371     Grad=  0.3176205    
+Iter=   560  Move(A)=  0.069923 E(kJ/mol)=   164.6299     Grad=  0.4615972    
+Iter=   570  Move(A)=  0.045520 E(kJ/mol)=   164.6222     Grad=  0.3914030    
+Iter=   580  Move(A)=  0.043241 E(kJ/mol)=   164.6151     Grad=  0.4089031    
+Iter=   590  Move(A)=  0.037070 E(kJ/mol)=   164.6092     Grad=  0.3622323    
+Iter=   600  Move(A)=  0.043127 E(kJ/mol)=   164.6032     Grad=  0.3014060    
+Iter=   610  Move(A)=  0.027580 E(kJ/mol)=   164.5992     Grad=  0.2662859    
+Iter=   620  Move(A)=  0.034300 E(kJ/mol)=   164.5947     Grad=  0.2813088    
+Iter=   630  Move(A)=  0.017989 E(kJ/mol)=   164.5926     Grad=  0.1815514    
+Iter=   640  Move(A)=  0.006059 E(kJ/mol)=   164.5910     Grad=  0.1715521    
+Iter=   650  Move(A)=  0.007991 E(kJ/mol)=   164.5893     Grad=  0.2383683    
+Iter=   660  Move(A)=  0.009884 E(kJ/mol)=   164.5875     Grad=  0.2932533    
+Iter=   670  Move(A)=  0.013892 E(kJ/mol)=   164.5854     Grad=  0.2821194    
+Iter=   680  Move(A)=  0.013082 E(kJ/mol)=   164.5837     Grad=  0.2364156    
+Iter=   690  Move(A)=  0.013851 E(kJ/mol)=   164.5821     Grad=  0.2129491    
+Iter=   700  Move(A)=  0.016340 E(kJ/mol)=   164.5801     Grad=  0.2477213    
+Iter=   710  Move(A)=  0.020615 E(kJ/mol)=   164.5779     Grad=  0.2489716    
+Iter=   720  Move(A)=  0.014329 E(kJ/mol)=   164.5763     Grad=  0.2564485    
+Iter=   730  Move(A)=  0.014240 E(kJ/mol)=   164.5748     Grad=  0.2467053    
+Iter=   740  Move(A)=  0.018294 E(kJ/mol)=   164.5731     Grad=  0.2383622    
+Iter=   750  Move(A)=  0.016358 E(kJ/mol)=   164.5718     Grad=  0.1806839    
+Iter=   760  Move(A)=  0.012783 E(kJ/mol)=   164.5706     Grad=  0.1726650    
+Iter=   770  Move(A)=  0.010124 E(kJ/mol)=   164.5698     Grad=  0.1661860    
+Iter=   780  Move(A)=  0.014188 E(kJ/mol)=   164.5687     Grad=  0.1662543    
+Iter=   790  Move(A)=  0.001440 E(kJ/mol)=   164.5683     Grad=  0.1100591    
+Iter=   800  Move(A)=  0.003625 E(kJ/mol)=   164.5678     Grad=  0.1148053    
+Iter=   810  Move(A)=  0.006638 E(kJ/mol)=   164.5672     Grad=  0.1157463    
+Iter=   820  Move(A)=  0.008813 E(kJ/mol)=   164.5665     Grad=  0.1505916    
+Iter=   830  Move(A)=  0.010902 E(kJ/mol)=   164.5656     Grad=  0.1584112    
+Iter=   840  Move(A)=  0.012037 E(kJ/mol)=   164.5648     Grad=  0.1553092    
+Iter=   850  Move(A)=  0.011092 E(kJ/mol)=   164.5640     Grad=  0.1409892    
+Iter=   860  Move(A)=  0.016073 E(kJ/mol)=   164.5631     Grad=  0.1493844    
+Iter=   870  Move(A)=  0.022833 E(kJ/mol)=   164.5616     Grad=  0.2822514    
+Iter=   880  Move(A)=  0.028062 E(kJ/mol)=   164.5601     Grad=  0.1634997    
+Iter=   890  Move(A)=  0.016845 E(kJ/mol)=   164.5590     Grad=  0.1959992    
+Iter=   900  Move(A)=  0.019365 E(kJ/mol)=   164.5580     Grad=  0.1542222    
+Iter=   910  Move(A)=  0.015891 E(kJ/mol)=   164.5571     Grad=  0.1210334    
+Iter=   920  Move(A)=  0.011911 E(kJ/mol)=   164.5564     Grad=  0.9765236E-01
+Iter=   930  Move(A)=  0.021209 E(kJ/mol)=   164.5549     Grad=  0.2000977    
+Iter=   940  Move(A)=  0.026231 E(kJ/mol)=   164.5535     Grad=  0.1079177    
+Iter=   950  Move(A)=  0.002846 E(kJ/mol)=   164.5529     Grad=  0.9100110E-01
+Iter=   960  Move(A)=  0.002452 E(kJ/mol)=   164.5526     Grad=  0.7969380E-01
+Iter=   970  Move(A)=  0.005027 E(kJ/mol)=   164.5522     Grad=  0.1083880    
+Iter=   980  Move(A)=  0.005897 E(kJ/mol)=   164.5518     Grad=  0.8644435E-01
+Iter=   990  Move(A)=  0.004140 E(kJ/mol)=   164.5516     Grad=  0.7693343E-01
+Iter=  1000  Move(A)=  0.008074 E(kJ/mol)=   164.5511     Grad=  0.1286460    
+Iter=  1010  Move(A)=  0.012693 E(kJ/mol)=   164.5505     Grad=  0.1148303    
+Iter=  1020  Move(A)=  0.006906 E(kJ/mol)=   164.5501     Grad=  0.7426539E-01
+Iter=  1030  Move(A)=  0.005151 E(kJ/mol)=   164.5499     Grad=  0.7423031E-01
+Iter=  1040  Move(A)=  0.005905 E(kJ/mol)=   164.5496     Grad=  0.9443439E-01
+Iter=  1050  Move(A)=  0.005472 E(kJ/mol)=   164.5494     Grad=  0.5641332E-01
+Iter=  1060  Move(A)=  0.003380 E(kJ/mol)=   164.5493     Grad=  0.4507149E-01
+ Minimization converged; gradient = 0.451E-01 .LT.  0.500E-01
+                   Total Energy =      166.8232 kJ/mol
+                        Stretch =       22.1462 kJ/mol
+                           Bend =       74.4958 kJ/mol
+                        Torsion =       87.3140 kJ/mol
+               Improper Torsion =       -0.9490 kJ/mol
+                            VDW =      253.9118 kJ/mol
+                  Electrostatic =     -191.6410 kJ/mol
+        Explicit Hydrogen Bonds =        0.0000 kJ/mol
+                    Cross Terms =        1.5964 kJ/mol
+                    Solvation =      -80.0510 kJ/mol
+  
+ T.E. for cross-checking:       166.8232 kJ/mol
+ Iterations =        1060  out of         2500
+ Conf    1 E =     166.823 (  0.045) kJ/mol
+ Total number of structures processed =           1
+ 
+BatchMin: normal termination                           31-Jul-2018 17:00:58
+C:\Program Files\Schrodinger2017-2\run  < "mmod_mini_2-out_subjob_1.com"  0,00s user 0,00s system 0% cpu 34,254 total
+
+   -------------------------------------   
+...........................................
+
+...........................................
+ Collecting Results from Job: mmod_mini_2-out_subjob_2           
+   -------------------------------------   
+
+ 
+[running at reduced cpu priority]
+ JobID: LMIS8010-0-5b60798f
+ BatchMin V11.6    Build  116013  Starting Time 31-Jul-2018 17:00:38
+ MacroModel. Copyright Schrodinger, LLC.
+ All rights reserved.
+
+ Input filename:  mmod_mini_2_subjob_2.mae
+ Output filename: mmod_mini_2-out_subjob_2.maegz
+ Turning on debug switch          55
+ Atom-type file: C:\Program Files\Schrodinger2017-2\mmshare-v3.8\bin\Windows-x64\..\..\data\atom.typ
+ Force field: C:\Program Files\Schrodinger2017-2\macromodel-v11.6\bin\Windows-x64\..\..\data\f10.fld
+ BMFF process: "C:\Program Files\Schrodinger2017-2\macromodel-v11.6\bin\Windows-x64\mmff_setup.exe"
+ 
+ Read    54 atoms. Structure name, if any, appears on next line: 
+ AQ4
+ Quality of Force Field Parameters in Use:
+   Numbers of high, medium and low quality stretch parameters =   53    2    1
+   Numbers of high, medium and low quality bend parameters    =   86    0    8
+   Numbers of high, medium and low quality torsion parameters =   94    0   21
+   Interactions examined:        265 of        265 total, including unused params.
+ WARNING - Conformational Energies May Not Be Accurate
+ WARNING - Solvation Energies/Charges May Not Be Accurate
+      Stretch total=       56   constrained=        0
+         Bend total=       94   constrained=        0        linear=        0
+      Torsion total=      159   constrained=        0  out-of-plane=       45
+    Nonbonded total=     1281      H-bonded=        0      ordinary=     1281
+  Nonbonded cutoffs: CutVdw=   8.00    ;  CutEs=   20.0    
+ Solvent file: C:\Program Files\Schrodinger2017-2\macromodel-v11.6\bin\Windows-x64\..\..\data\water.slv
+    Block specifies desired NFIELD -- accepting block
+ Starting conjugate gradient minimization.
+                   Total Energy =      425.1700 kJ/mol
+                        Stretch =      139.3753 kJ/mol
+                           Bend =      231.7303 kJ/mol
+                        Torsion =       73.8161 kJ/mol
+               Improper Torsion =        0.1869 kJ/mol
+                            VDW =      276.7087 kJ/mol
+                  Electrostatic =     -197.8215 kJ/mol
+        Explicit Hydrogen Bonds =        0.0000 kJ/mol
+                    Cross Terms =        0.8323 kJ/mol
+                    Solvation =      -99.6582 kJ/mol
+  
+ T.E. for cross-checking:       425.1700 kJ/mol
+Iter=    10  Move(A)=  0.636135 E(kJ/mol)=   180.2062     Grad=   19.61118    
+Iter=    20  Move(A)=  0.255569 E(kJ/mol)=   171.6626     Grad=   10.66755    
+Iter=    30  Move(A)=  0.192272 E(kJ/mol)=   169.0854     Grad=   6.682124    
+Iter=    40  Move(A)=  0.251734 E(kJ/mol)=   167.1544     Grad=   4.880805    
+Iter=    50  Move(A)=  0.384757 E(kJ/mol)=   164.6443     Grad=   9.815711    
+Iter=    60  Move(A)=  0.443673 E(kJ/mol)=   162.6233     Grad=   5.003033    
+Iter=    70  Move(A)=  0.273567 E(kJ/mol)=   161.5662     Grad=   3.913189    
+Iter=    80  Move(A)=  0.183632 E(kJ/mol)=   160.8776     Grad=   4.269747    
+Iter=    90  Move(A)=  0.264596 E(kJ/mol)=   160.1432     Grad=   3.298475    
+Iter=   100  Move(A)=  0.182161 E(kJ/mol)=   159.6251     Grad=   4.057833    
+Iter=   110  Move(A)=  0.288630 E(kJ/mol)=   158.9533     Grad=   3.670154    
+Iter=   120  Move(A)=  0.218827 E(kJ/mol)=   158.4977     Grad=   3.191995    
+Iter=   130  Move(A)=  0.211252 E(kJ/mol)=   158.1243     Grad=   2.882912    
+Iter=   140  Move(A)=  0.169928 E(kJ/mol)=   157.8213     Grad=   2.904566    
+Iter=   150  Move(A)=  0.113816 E(kJ/mol)=   157.6503     Grad=   1.530579    
+Iter=   160  Move(A)=  0.087851 E(kJ/mol)=   157.5415     Grad=   1.356715    
+Iter=   170  Move(A)=  0.030177 E(kJ/mol)=   157.4862     Grad=   1.346224    
+Iter=   180  Move(A)=  0.050332 E(kJ/mol)=   157.4544     Grad=   1.753561    
+Iter=   190  Move(A)=  0.071479 E(kJ/mol)=   157.3594     Grad=   1.527858    
+Iter=   200  Move(A)=  0.094662 E(kJ/mol)=   157.2634     Grad=   1.749420    
+Iter=   210  Move(A)=  0.125250 E(kJ/mol)=   157.1465     Grad=   1.827409    
+Iter=   220  Move(A)=  0.183922 E(kJ/mol)=   156.9934     Grad=   1.985125    
+Iter=   230  Move(A)=  0.166186 E(kJ/mol)=   156.8701     Grad=   1.608029    
+Iter=   240  Move(A)=  0.082586 E(kJ/mol)=   156.8160     Grad=  0.8747783    
+Iter=   250  Move(A)=  0.054780 E(kJ/mol)=   156.7767     Grad=   1.140632    
+Iter=   260  Move(A)=  0.061287 E(kJ/mol)=   156.7370     Grad=   1.041745    
+Iter=   270  Move(A)=  0.064300 E(kJ/mol)=   156.6995     Grad=   1.177462    
+Iter=   280  Move(A)=  0.044375 E(kJ/mol)=   156.6748     Grad=  0.9186988    
+Iter=   290  Move(A)=  0.044361 E(kJ/mol)=   156.6544     Grad=  0.6196190    
+Iter=   300  Move(A)=  0.029745 E(kJ/mol)=   156.6409     Grad=  0.5222203    
+Iter=   310  Move(A)=  0.023991 E(kJ/mol)=   156.6320     Grad=  0.3613530    
+Iter=   320  Move(A)=  0.013416 E(kJ/mol)=   156.6271     Grad=  0.3565983    
+Iter=   330  Move(A)=  0.015104 E(kJ/mol)=   156.6223     Grad=  0.2301570    
+Iter=   340  Move(A)=  0.004520 E(kJ/mol)=   156.6205     Grad=  0.2281496    
+Iter=   350  Move(A)=  0.008238 E(kJ/mol)=   156.6185     Grad=  0.2743354    
+Iter=   360  Move(A)=  0.011295 E(kJ/mol)=   156.6163     Grad=  0.2245078    
+Iter=   370  Move(A)=  0.010495 E(kJ/mol)=   156.6146     Grad=  0.1948651    
+Iter=   380  Move(A)=  0.007959 E(kJ/mol)=   156.6135     Grad=  0.1508892    
+Iter=   390  Move(A)=  0.007278 E(kJ/mol)=   156.6126     Grad=  0.1710694    
+Iter=   400  Move(A)=  0.004391 E(kJ/mol)=   156.6122     Grad=  0.1086242    
+Iter=   410  Move(A)=  0.004711 E(kJ/mol)=   156.6118     Grad=  0.8247859E-01
+Iter=   420  Move(A)=  0.003326 E(kJ/mol)=   156.6115     Grad=  0.7407260E-01
+Iter=   430  Move(A)=  0.004519 E(kJ/mol)=   156.6113     Grad=  0.7388440E-01
+Iter=   440  Move(A)=  0.002875 E(kJ/mol)=   156.6111     Grad=  0.6431914E-01
+Iter=   450  Move(A)=  0.002865 E(kJ/mol)=   156.6110     Grad=  0.6496791E-01
+Iter=   460  Move(A)=  0.003776 E(kJ/mol)=   156.6108     Grad=  0.7310935E-01
+Iter=   470  Move(A)=  0.003873 E(kJ/mol)=   156.6107     Grad=  0.7818796E-01
+Iter=   480  Move(A)=  0.003686 E(kJ/mol)=   156.6105     Grad=  0.8038428E-01
+Iter=   490  Move(A)=  0.003019 E(kJ/mol)=   156.6105     Grad=  0.4057796E-01
+ Minimization converged; gradient = 0.406E-01 .LT.  0.500E-01
+                   Total Energy =      158.9591 kJ/mol
+                        Stretch =       21.2196 kJ/mol
+                           Bend =       85.6821 kJ/mol
+                        Torsion =      101.3460 kJ/mol
+               Improper Torsion =       -3.5660 kJ/mol
+                            VDW =      246.3095 kJ/mol
+                  Electrostatic =     -199.5192 kJ/mol
+        Explicit Hydrogen Bonds =        0.0000 kJ/mol
+                    Cross Terms =        4.2439 kJ/mol
+                    Solvation =      -96.7567 kJ/mol
+  
+ T.E. for cross-checking:       158.9591 kJ/mol
+ Iterations =         490  out of         2500
+ Conf    1 E =     158.959 (  0.041) kJ/mol
+ Total number of structures processed =           1
+ 
+BatchMin: normal termination                           31-Jul-2018 17:00:59
+C:\Program Files\Schrodinger2017-2\run  < "mmod_mini_2-out_subjob_2.com"  0,00s user 0,00s system 0% cpu 26,945 total
+
+   -------------------------------------   
+...........................................
+
+
+   -------------------------------------   
+...........................................
+End of Log files for subjobs.              
+
+-------------------------------------------
+
+All structure file output placed in one output structure file: mmod_mini_2-out.maegz.
+Number of structures placed in mmod_mini_2-out.maegz: 2.
+###########################################
+Tue, 31 Jul 2018 17:01:01.884000
+Job Complete
+C:\Program Files\Schrodinger2017-2\run python  -imae mmod_mini_2.mae -omae     0,00s user 0,00s system 0% cpu -6,266 total
