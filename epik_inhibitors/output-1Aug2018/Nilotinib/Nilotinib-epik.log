@@ -1,0 +1,68 @@
+COMMAND:
+ C:\Program Files\Schrodinger2017-2\epik-v4.0\bin\Windows-x64\epik_app -imae C:\Users\rustenba\AppData\Local\Temp\tmpqsb8u8j0\Nilotinib-input.mae -omae C:\GitHub\mcce-charges\epik_inhibitors\output-new\Nilotinib\Nilotinib-epik.mae -ms 100 -ph 7.4 -ma 150 -nt -p 4.5399929762484854e-05
+SCHRODINGER: C:\Program Files\Schrodinger2017-2
+
+Running Epik version     4.0013
+Epik. Copyright Schrodinger, LLC. All rights reserved.
+
+Input file name:                        C:\Users\rustenba\AppData\Local\Temp\tmpqsb8u8j0\Nilotinib-input.mae
+Output file name:                       C:\GitHub\mcce-charges\epik_inhibitors\output-new\Nilotinib\Nilotinib-epik.mae
+Maximum number of states set to: 100
+Structure adjustment calculation requested.
+  Target pH set to 7.400
+Maximum number of atoms set to: 150
+Minimum probability set to 4.539993e-005
+
+Adjusting structures for pH 7.400000e+000 and minimum probability 4.539993e-005
+Solvent model name:                     water
+WARNING number of days until EPIK license expires: 6
+Jobcontrol is not being used for this specific Epik calculation.
+---------------------------
+Processing Input Structure #1
+        Title: NIL
+                                              Calculated pKas
+                                                 Conjugate
+                                          Atom   Acid/Base  pKa
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 1
+                                            40   Conj_Acid 11.64
+                                            11   Conj_Base  6.46
+                                            29   Conj_Base  3.11
+                                            33   Conj_Base  2.75
+                                            38   Conj_Base  3.89
+                                            55   Conj_Acid 15.85
+                                             1   Conj_Base  1.54
+ pKa penalty:                                 0.06 kcal/mol
+     Charging penalty:                        0.06 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  0.06 kcal/mol
+ Total Charge: 0
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 2
+                                            40   Conj_Acid 11.53
+                                            62   Conj_Acid  6.46
+                                            29   Conj_Base  3.11
+                                            33   Conj_Base  2.75
+                                            38   Conj_Base  3.89
+                                            55   Conj_Acid 15.85
+                                             1   Conj_Base  1.54
+ pKa penalty:                                 1.35 kcal/mol
+     Charging penalty:                        0.00 kcal/mol
+     Neutralization penalty:                  1.35 kcal/mol
+ Overall Penalty (tautomerization included):  1.42 kcal/mol
+ Total Charge: 1
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 3
+                                            40   Conj_Acid 11.64
+                                            11   Conj_Base  6.46
+                                            62   Conj_Acid  3.89
+                                            29   Conj_Base  2.44
+                                            33   Conj_Base  0.95
+                                            55   Conj_Acid 15.38
+                                             1   Conj_Base  1.54
+ pKa penalty:                                 4.86 kcal/mol
+     Charging penalty:                        4.86 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  5.17 kcal/mol
+ Total Charge: 1
+---------------------------

@@ -1,0 +1,158 @@
+COMMAND:
+ C:\Program Files\Schrodinger2017-2\epik-v4.0\bin\Windows-x64\epik_app -imae C:\Users\rustenba\AppData\Local\Temp\tmpc9tzwufn\Nintedanib-input.mae -omae C:\GitHub\mcce-charges\epik_inhibitors\output-new\Nintedanib\Nintedanib-epik.mae -ms 100 -ph 7.4 -ma 150 -nt -p 4.5399929762484854e-05
+SCHRODINGER: C:\Program Files\Schrodinger2017-2
+
+Running Epik version     4.0013
+Epik. Copyright Schrodinger, LLC. All rights reserved.
+
+Input file name:                        C:\Users\rustenba\AppData\Local\Temp\tmpc9tzwufn\Nintedanib-input.mae
+Output file name:                       C:\GitHub\mcce-charges\epik_inhibitors\output-new\Nintedanib\Nintedanib-epik.mae
+Maximum number of states set to: 100
+Structure adjustment calculation requested.
+  Target pH set to 7.400
+Maximum number of atoms set to: 150
+Minimum probability set to 4.539993e-005
+
+Adjusting structures for pH 7.400000e+000 and minimum probability 4.539993e-005
+Solvent model name:                     water
+WARNING number of days until EPIK license expires: 6
+Jobcontrol is not being used for this specific Epik calculation.
+---------------------------
+Processing Input Structure #1
+        Title: XIN
+                                              Calculated pKas
+                                                 Conjugate
+                                          Atom   Acid/Base  pKa
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 1
+                                            40   Conj_Base  6.15
+                                            39   Conj_Base -2.19
+                                            73   Conj_Acid  8.16
+                                            31   Conj_Base  4.28
+                                            34   Conj_Base  1.03
+                                            29   Conj_Base -2.93
+ pKa penalty:                                 0.13 kcal/mol
+     Charging penalty:                        0.13 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  0.58 kcal/mol
+ Total Charge: 0
+ Chemistry Notes:   This compound has an ester and may undergo hydrolysis at high or low pH. This compound has an imine and may undergo hydrolysis.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 2
+                                            40   Conj_Base  6.15
+                                            39   Conj_Base -2.19
+                                            73   Conj_Acid  8.14
+                                            30   Conj_Base  4.80
+                                            34   Conj_Base  1.40
+                                            29   Conj_Base  0.49
+ pKa penalty:                                 0.13 kcal/mol
+     Charging penalty:                        0.13 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  0.66 kcal/mol
+ Total Charge: 0
+ Chemistry Notes:   This compound has an ester and may undergo hydrolysis at high or low pH. This compound has an imine and may undergo hydrolysis.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 3
+                                            73   Conj_Acid 13.91
+                                            74   Conj_Acid  8.14
+                                            34   Conj_Base -1.37
+                                            30   Conj_Base  4.80
+                                            66   Conj_Acid 12.64
+                                             1   Conj_Base  0.27
+                                            29   Conj_Base  0.49
+                                            40   Conj_Base  3.49
+ pKa penalty:                                 0.10 kcal/mol
+     Charging penalty:                        0.10 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  1.26 kcal/mol
+ Total Charge: 1
+ Chemistry Notes:   This compound has an ester and may undergo hydrolysis at high or low pH.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 4
+                                            73   Conj_Acid 13.91
+                                            74   Conj_Acid  8.16
+                                            34   Conj_Base -1.80
+                                            31   Conj_Base  4.28
+                                            66   Conj_Acid 12.47
+                                             1   Conj_Base  0.27
+                                            29   Conj_Base -2.93
+                                            40   Conj_Base  3.49
+ pKa penalty:                                 0.10 kcal/mol
+     Charging penalty:                        0.10 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included):  1.34 kcal/mol
+ Total Charge: 1
+ Chemistry Notes:   This compound has an ester and may undergo hydrolysis at high or low pH.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 5
+                                            40   Conj_Base  6.15
+                                            39   Conj_Base -2.19
+                                            30   Conj_Base  8.16
+                                            31   Conj_Base  8.14
+                                            34   Conj_Base  1.45
+                                            29   Conj_Base  0.95
+ pKa penalty:                                 2.27 kcal/mol
+     Charging penalty:                        0.03 kcal/mol
+     Neutralization penalty:                  2.24 kcal/mol
+ Overall Penalty (tautomerization included):  1.73 kcal/mol
+ Total Charge: -1
+ Chemistry Notes:   This compound has an ester and may undergo hydrolysis at high or low pH. This compound has an imine and may undergo hydrolysis.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 6
+                                            73   Conj_Acid 13.91
+                                            30   Conj_Base  8.16
+                                            31   Conj_Base  8.14
+                                            34   Conj_Base -1.31
+                                            66   Conj_Acid 12.67
+                                             1   Conj_Base  0.27
+                                            29   Conj_Base  0.95
+                                            40   Conj_Base  3.49
+ pKa penalty:                                 2.24 kcal/mol
+     Charging penalty:                        0.00 kcal/mol
+     Neutralization penalty:                  2.24 kcal/mol
+ Overall Penalty (tautomerization included):  2.36 kcal/mol
+ Total Charge: 0
+ Chemistry Notes:   This compound has an ester and may undergo hydrolysis at high or low pH.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 7
+                                            73   Conj_Acid  6.15
+                                            72   Conj_Acid 10.96
+                                            74   Conj_Acid  8.16
+                                            31   Conj_Base  4.28
+                                            34   Conj_Base  1.03
+                                            29   Conj_Base -2.93
+ pKa penalty:                                 1.83 kcal/mol
+     Charging penalty:                        0.10 kcal/mol
+     Neutralization penalty:                  1.74 kcal/mol
+ Overall Penalty (tautomerization included):  5.38 kcal/mol
+ Total Charge: 1
+ Chemistry Notes:   This compound has an ester and may undergo hydrolysis at high or low pH. This compound has an imine and may undergo hydrolysis.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 8
+                                            73   Conj_Acid  6.15
+                                            72   Conj_Acid 10.96
+                                            74   Conj_Acid  8.14
+                                            30   Conj_Base  4.80
+                                            34   Conj_Base  1.40
+                                            29   Conj_Base  0.49
+ pKa penalty:                                 1.84 kcal/mol
+     Charging penalty:                        0.10 kcal/mol
+     Neutralization penalty:                  1.74 kcal/mol
+ Overall Penalty (tautomerization included):  5.44 kcal/mol
+ Total Charge: 1
+ Chemistry Notes:   This compound has an ester and may undergo hydrolysis at high or low pH. This compound has an imine and may undergo hydrolysis.
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 9
+                                            73   Conj_Acid  6.15
+                                            72   Conj_Acid 10.96
+                                            30   Conj_Base  8.16
+                                            31   Conj_Base  8.14
+                                            34   Conj_Base  1.45
+                                            29   Conj_Base  0.95
+ pKa penalty:                                 3.97 kcal/mol
+     Charging penalty:                        0.00 kcal/mol
+     Neutralization penalty:                  3.97 kcal/mol
+ Overall Penalty (tautomerization included):  5.52 kcal/mol
+ Total Charge: 0
+ Chemistry Notes:   This compound has an ester and may undergo hydrolysis at high or low pH. This compound has an imine and may undergo hydrolysis.
+---------------------------
