@@ -1,11 +1,11 @@
 COMMAND:
- C:\Program Files\Schrodinger2017-2\epik-v4.0\bin\Windows-x64\epik_app -imae C:\Users\rustenba\AppData\Local\Temp\tmpm8qehuto\Erlotinib-input.mae -omae C:\GitHub\mcce-charges\epik_inhibitors\output-new\Erlotinib\Erlotinib-epik.mae -ms 100 -ph 7.4 -ma 150 -nt -p 4.5399929762484854e-05
+ C:\Program Files\Schrodinger2017-2\epik-v4.0\bin\Windows-x64\epik_app -imae C:\Users\rustenba\AppData\Local\Temp\tmpo5j6xqmm\Erlotinib-input.mae -omae C:\GitHub\mcce-charges\epik_inhibitors\output-new\Erlotinib\Erlotinib-epik.mae -ms 100 -ph 7.4 -ma 150 -nt -p 4.5399929762484854e-05
 SCHRODINGER: C:\Program Files\Schrodinger2017-2
 
 Running Epik version     4.0013
 Epik. Copyright Schrodinger, LLC. All rights reserved.
 
-Input file name:                        C:\Users\rustenba\AppData\Local\Temp\tmpm8qehuto\Erlotinib-input.mae
+Input file name:                        C:\Users\rustenba\AppData\Local\Temp\tmpo5j6xqmm\Erlotinib-input.mae
 Output file name:                       C:\GitHub\mcce-charges\epik_inhibitors\output-new\Erlotinib\Erlotinib-epik.mae
 Maximum number of states set to: 100
 Structure adjustment calculation requested.
@@ -15,7 +15,7 @@ Minimum probability set to 4.539993e-005
 
 Adjusting structures for pH 7.400000e+000 and minimum probability 4.539993e-005
 Solvent model name:                     water
-WARNING number of days until EPIK license expires: 6
+WARNING number of days until EPIK license expires: 4
 Jobcontrol is not being used for this specific Epik calculation.
 ---------------------------
 Processing Input Structure #1
